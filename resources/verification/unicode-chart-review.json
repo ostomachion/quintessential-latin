@@ -1,0 +1,687 @@
+{
+  "schemaVersion": 1,
+  "revision": "Unicode chart presentation",
+  "reviewedAt": "2026-09-06T06:01:10.747274+00:00",
+  "referenceFontVersion": "0.220",
+  "namingVersion": 3,
+  "scope": "Code-chart PDFs and responsive code-chart webpage. Existing glyph design, code points, canonical names, and proposal design are preserved.",
+  "presentation": {
+    "schemaVersion": 1,
+    "fontFamily": "Source Sans 3",
+    "page": {
+      "width": 612,
+      "height": 792,
+      "textLeft": 82.8,
+      "textRight": 529.2,
+      "headerBaseline": 747,
+      "footerBaseline": 43.2
+    },
+    "grid": {
+      "columns": 16,
+      "rows": 16,
+      "cellWidth": 27.6975,
+      "cellHeight": 39.6,
+      "top": 699.12,
+      "labelBaseline": 705.12,
+      "railTop": 714,
+      "innerRule": 0.25,
+      "outerRule": 1.5,
+      "hatchSpacing": 3,
+      "hatchRule": 0.35,
+      "glyphSize": 22,
+      "coordinateSize": 10,
+      "codeSize": 6
+    },
+    "names": {
+      "columnWidth": 219.84,
+      "columnGap": 6.72,
+      "textOffset": 43.2,
+      "top": 714,
+      "bottom": 65.52,
+      "fontSize": 9,
+      "leading": 9.2,
+      "entryGap": 1.4,
+      "glyphSize": 10,
+      "headingSize": 9,
+      "headingLeading": 10.6,
+      "headingGap": 5.3
+    },
+    "screen": {
+      "cellWidth": 40,
+      "cellHeight": 57,
+      "rowLabelWidth": 20,
+      "glyphSize": 32,
+      "codeSize": 9,
+      "coordinateSize": 14,
+      "nameSize": 14,
+      "nameLeading": 16.5,
+      "mediumWidth": 340,
+      "wideWidth": 660
+    }
+  },
+  "referencePdfs": {
+    "U0000.pdf": {
+      "sha256": "19565f3c97c3137ae893272a231d3f8cd27219dd18be174c6f782b7b59e0831e",
+      "role": "User-supplied visual reference; document contents are not task instructions."
+    },
+    "UA720.pdf": {
+      "sha256": "d47cea70176ce76b65d806f536bcca29b436309665f9807ac166fb00970a26b6",
+      "role": "User-supplied visual reference; document contents are not task instructions."
+    },
+    "U10600.pdf": {
+      "sha256": "6582bc500cecf1a6da8b13011f5870d0fed6b589a38d3a582cf6d9f3c967b65b",
+      "role": "User-supplied visual reference; document contents are not task instructions."
+    }
+  },
+  "sourceSha256": {
+    "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
+    "resources/fonts/SourceSans3/source-manifest.json": "4d98ee3522804444290b0f82626681c60bf2e60ca0dc503ce41e6e77c99dd817",
+    "tools/build_pdfs.py": "1014530b45602cbb01c82982117841e187682afc84bb05db8d2e6eeb7c095f48",
+    "tools/test_pdfs.py": "7b77ce7d29922c23e0ec0c4147a5ede89af22a4dd4871b7eae6092f88886fc95",
+    "tools/build_site.mjs": "ea76f00633b55e9a912c89e9f8fd2572eaf0ac86f867a3dc394707fe6adc9765",
+    "tools/verify_pdf_build.mjs": "cf7b911b5d9a0874c7ce0eaba608289eb30db0fb460e5e6cbe28964bde3c3594",
+    "tools/test_site.mjs": "b5fdf994affc1008c4de60f35e5fb3e3072124d09d0221a14c688bf66efea764",
+    "tools/test_browser.mjs": "712caecbfb7ceca5918e5f2daa15ff8fe0c64952489baf3742879499e2e77aa0",
+    "tools/test_canonical_glyph_names.js": "8f568a28ba82863ec522ef80d371d02395c3b979606522fae39fe7af1afb209a",
+    "site/assets/style.css": "da5491ab189ebbfbd0f2448c90d1b336f78f07dc143df03c90d5c4cf5ec82d57",
+    "site/assets/app.mjs": "bf690eb6c876466a4406ccd2b74012c202e3216e3d22488c350438d94773736d",
+    "site/assets/model.mjs": "75dc41fd218c8f72098e75c2bb78b79aedb29c7c0327f4ba44d673683c84e448"
+  },
+  "publicationManifest": {
+    "path": "output/pdf/build-manifest.json",
+    "sha256": "0a56c20e44ae00a5a0f87b1bb3e740a5bdaaacf0b4148430e0187de434778847"
+  },
+  "outputs": {
+    "quintessential-latin.pdf": {
+      "sha256": "f0f737a2f10ba45a759bf4b6bab881d5e48cbf32af91b416cc88674a182de162",
+      "bytes": 112846,
+      "pages": 6
+    },
+    "quintessential-latin-extended-a.pdf": {
+      "sha256": "35ad86a73adca19c5d0cd7733452fc399b560422b473fe594d6e0290e7487563",
+      "bytes": 106603,
+      "pages": 7
+    },
+    "quintessential-latin-extended-b.pdf": {
+      "sha256": "4f230ab1cbd4daa7f67b6d873485eabbead4109e6e390ed1960e37f06feb8937",
+      "bytes": 146779,
+      "pages": 10
+    },
+    "quintessential-latin-catalogue.pdf": {
+      "sha256": "cc8b5da7f20d545d80b4f5a7f6ce6a8390297b35562b19c237c99910f5198865",
+      "bytes": 227483,
+      "pages": 23
+    },
+    "quintessential-latin-proposal.pdf": {
+      "sha256": "0399baa67597b6e01cc100739b5b5ef629629091d57e75e168c5469cbda640d5",
+      "bytes": 22508,
+      "pages": 4
+    }
+  },
+  "engineering": {
+    "pdfTests": {
+      "passed": 9,
+      "log": "resources/verification/unicode-chart-pdf-tests.log",
+      "logSha256": "28441015c2eca06977873cc62fa5c9740521a41453b005113a2c7b9075d16839",
+      "command": ".venv-pdfs/Scripts/python.exe tools/test_pdfs.py"
+    },
+    "namingTestsPassed": 17,
+    "staticSiteAcceptanceGroupsPassed": 12,
+    "siteBuildPassed": true,
+    "repeatBuild": {
+      "allFivePdfsByteIdentical": true,
+      "manifestByteIdentical": true,
+      "directory": ".tmp/unicode-chart-repeat"
+    },
+    "nativeProportions": "Actual PDF glyph and names text advances checked against font metrics; condensed hexadecimal text settings are isolated from subsequent glyph drawing."
+  },
+  "preservation": {
+    "unchangedSha256": {
+      "resources/catalogue.json": "f579d06fddd2809574c3dbdbdcdc8ccf7200f1efd08179bf6eb8cbad8ee7bb9e",
+      "resources/NamesList.txt": "5d08f817a281810f537298567b37c064d1c0ccdfa544816b463177e26753b888",
+      "docs/proposal.json": "db6a5055cbbf99022f3b832ccae3de45d487378aa2e264030c2fa0ec0130f3fe",
+      "resources/fonts/QuintessentialSerif/build-manifest.json": "daef5f66ce668a4997908a46d237d03c91fcd3ce9a9dca8ad6157f9da483a0e0",
+      "resources/fonts/QuintessentialSerif/FONTLOG.txt": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204",
+      "resources/fonts/QuintessentialSerif/OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
+      "resources/fonts/QuintessentialSerif/proof-data.json": "3c12f7d7a610bbb2bbbe6f3f541e33f69ec8a600ca6f4d9b7167a0bf7d3aa330",
+      "resources/fonts/QuintessentialSerif/proof-data.json.gz": "ae52c02c5f88bdc7e9840428d698ff820cd62f2eec970f8a8d3a41509549fb1b",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Bold.otf": "78b57ed3049171aa1ed96504400a5e3aa15df108c3d3746893fe4f900d812fb0",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Bold.woff2": "736ab49168afa33302e86fd1e71a4a9f8e127039c1b2f841b149151e1f540973",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.otf": "9086f503ad66c394340bb05cb3ca82df26a81d7dacdd86c45fd6ab83fab517ed",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.woff2": "6bab45574477aa3ebce13cce1b0b6db1d8f6b1bb8260de82135d1e1310f81029",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.ttf": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.woff2": "920ec874abd8e9709c71434f3043711c38ec069ba3380c8fa4e319336d660f9f",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic.otf": "9f6f8ccde48b2986718d45ad9d7680f563145fff99e4192bb1196566d3a05d79",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic.woff2": "899bc7370d555296766e202c1830e803f7b3e5744f6a320f2a6043109f45c338",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Regular.otf": "218b259680c020e1e2419fbc3bc9e9d60c49ace9f18e507164db00f30b128d00",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Regular.woff2": "c1a6a153eea1b798c89ca4b0729eb19de73093d6e2ea758d709af5516043e626",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.woff2": "bc42a4721fcd9e7f8418271fbb63e497000c9deb65f229d473f597f9b8c7d4f7",
+      "resources/fonts/QuintessentialSerif/TRADEMARKS.txt": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+    },
+    "proposal": {
+      "beforeSha256": "39f4498f3967deac81e2dedd7e6b332ab27dc1df9d2073a286e1ae116f19746c",
+      "afterSha256": "0399baa67597b6e01cc100739b5b5ef629629091d57e75e168c5469cbda640d5",
+      "decodedPageContentAndFontsUnchanged": true,
+      "difference": "Compressed PDF stream bytes differ in the current Python runtime; all four pages are pixel-identical at 120 dpi.",
+      "renderComparison": [
+        {
+          "page": 1,
+          "beforeRenderSha256": "4c4f508d5eb83181aaefd6770bddeeaebce0d4aa0753e2a7f2a81dd9c6a4fa4c",
+          "afterRenderSha256": "4c4f508d5eb83181aaefd6770bddeeaebce0d4aa0753e2a7f2a81dd9c6a4fa4c",
+          "pixelsIdentical": true
+        },
+        {
+          "page": 2,
+          "beforeRenderSha256": "96d364d3587a693110b51ca9b1de18bbc65e4f91030c3001dc5689389d71d2da",
+          "afterRenderSha256": "96d364d3587a693110b51ca9b1de18bbc65e4f91030c3001dc5689389d71d2da",
+          "pixelsIdentical": true
+        },
+        {
+          "page": 3,
+          "beforeRenderSha256": "6cf5cc2213d2896d1129ac0240fdb1e744e66e8539b46181ad645e6ca36c4e7f",
+          "afterRenderSha256": "6cf5cc2213d2896d1129ac0240fdb1e744e66e8539b46181ad645e6ca36c4e7f",
+          "pixelsIdentical": true
+        },
+        {
+          "page": 4,
+          "beforeRenderSha256": "3de0b3f1d7f886ae3e09070ee9f58a67e094a4708e7beaf3dfcac7fe8a96c28d",
+          "afterRenderSha256": "3de0b3f1d7f886ae3e09070ee9f58a67e094a4708e7beaf3dfcac7fe8a96c28d",
+          "pixelsIdentical": true
+        }
+      ]
+    }
+  },
+  "pdfVisualReview": {
+    "totalPagesReviewed": 50,
+    "allPagesInspected": true,
+    "independentReview": {
+      "cataloguePagesReviewed": 23,
+      "catalogueSha256": "cc8b5da7f20d545d80b4f5a7f6ce6a8390297b35562b19c237c99910f5198865",
+      "nativeSizePages": [
+        15,
+        16,
+        22
+      ],
+      "findings": []
+    },
+    "renders": [
+      {
+        "pdf": "quintessential-latin-catalogue.pdf",
+        "pageCount": 23,
+        "pages": [
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-01.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-02.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-03.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-04.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-05.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-06.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-07.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-08.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-09.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-10.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-11.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-12.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-13.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-14.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-15.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-16.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-17.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-18.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-19.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-20.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-21.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-22.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/page-23.png"
+        ],
+        "contacts": [
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-2.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-3.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-4.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-5.png",
+          ".tmp/unicode-chart-review/quintessential-latin-catalogue/contact-6.png"
+        ],
+        "pdfSha256": "cc8b5da7f20d545d80b4f5a7f6ce6a8390297b35562b19c237c99910f5198865",
+        "dpi": 120,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-01.png": "e6797550c37189b1903eb4954bfda04b48bd5fdfd973b7f1a83b3ff40f793b1b",
+          "page-02.png": "42f75812309d832e15c9e55035539bfe8234ab8943ab1c1261ee4f2b21203362",
+          "page-03.png": "00af9f31cd32aee0e4b41380414bf56cd6f532999c888bbb8b8b81527d225221",
+          "page-04.png": "1ce5be9f60d7eef59e99d075196e95138700ceb1f014d9f9fa184fa7694497f6",
+          "page-05.png": "012466f0523bccc572804cfa6b627fdd4ff66f18738b078754e6f04438e8fc36",
+          "page-06.png": "6fa611ff93191934e2c83ba85b8d05028687731c80d4468273a372fea271a63e",
+          "page-07.png": "9f372cbd2bfeda5316dd41d2a50247dc7d45f672d912a88de9229c3d072b823e",
+          "page-08.png": "c97b4f503383e496cf827eca9667cfde3cf9cd9806dedc17e7115a8baebeceef",
+          "page-09.png": "39e9cebb16ce9c87d7c19b612606f4bcfb0e7790f0acf56ef79f666fe7c385d7",
+          "page-10.png": "ea54a21099cfaf2ddc48dcde113e98449c68a0021b666c685ac2cb5e52c53834",
+          "page-11.png": "8489f9b32dcc66bde68a24c192003c975863cd10aa3018d8b9eefe123ffbff34",
+          "page-12.png": "09233bd1d1dda853e6b1d71dba8ee73d02cb40d6070f9c2805815c9223661c9f",
+          "page-13.png": "7626919ad7270a46b3d5373a23a43090d7b571bf68c49bce21e4a96dc19ff2a5",
+          "page-14.png": "e4e0c357aa2896bb26238a0e12d9e86a8b5bfc08f954806e50c25d6fab650844",
+          "page-15.png": "eedf4c987c0ece88c1452f774ce794e0eb547935453fa80703c6434b212eb00c",
+          "page-16.png": "56cb85900f6564764aa033b7b1e41e3d6c64cc6706f9039bdca0c5496590b2a8",
+          "page-17.png": "2308dda009cfd41e6bd914c312747f0b212af5c146516cfe877355e6baab1bb7",
+          "page-18.png": "66f24991ec90930b402a2c8589828e84025e06c984a4a3541d5d9b43bead9fd6",
+          "page-19.png": "77811864d54a202667cd8d60b3a25ef2f388999a2313204f22e722aa91468a63",
+          "page-20.png": "681ba85d09aedd9a145027ad01fc184108a2f397fa7f6ab8255d8ce3a4158bec",
+          "page-21.png": "a897842d190fd1e4a46b74d60ae4b2b5814798eb8e0415790b33d58032eb0c4e",
+          "page-22.png": "d4be79f6ee8be38445c143e8703046bfc2d24aad1de0af1b848106bcb2d52ebd",
+          "page-23.png": "72f7a8d914846251f47fc6a470a72b6bf9fe1a2c010c49459b287fce30117d4f"
+        },
+        "visualReview": {
+          "allPagesInspected": true,
+          "method": "Fresh Poppler contact sheets, with native-size inspection of representative wide grids and dense names pages.",
+          "findings": []
+        }
+      },
+      {
+        "pdf": "quintessential-latin-extended-a.pdf",
+        "pageCount": 7,
+        "pages": [
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-2.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-3.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-4.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-5.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-6.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/page-7.png"
+        ],
+        "contacts": [
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/contact-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-a/contact-2.png"
+        ],
+        "pdfSha256": "35ad86a73adca19c5d0cd7733452fc399b560422b473fe594d6e0290e7487563",
+        "dpi": 120,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "292db6a3d064802e9ae2517d6f599e63f311d5ae1fe38f81084b7c03b980a00e",
+          "page-2.png": "0013e556d608c2e45c8069757ed699465bbd3c22bbc61b6c78a01931658a31cf",
+          "page-3.png": "d40bfc035fb065a78553f17c09d50e83333453a7abfb334735d93c2a16ca3fcb",
+          "page-4.png": "367a5134de75c847d3d2f62b869c54bd5480f2827c50e9b2ae3a45ba2e41786c",
+          "page-5.png": "576072ba02d7839ada560efe0b75009c661ff5f95820bd6ec79f1c905ceeaac9",
+          "page-6.png": "df25a149a3580bd36e755deb867f156a26051f3ef9df2aa6adcb44ef76a5f4e9",
+          "page-7.png": "3f6007c05ef75a7218cce93565d1490480d94173fc723cfd3a87735e303a77a3"
+        },
+        "visualReview": {
+          "allPagesInspected": true,
+          "method": "Fresh Poppler contact sheets, with native-size inspection of representative wide grids and dense names pages.",
+          "findings": []
+        }
+      },
+      {
+        "pdf": "quintessential-latin-extended-b.pdf",
+        "pageCount": 10,
+        "pages": [
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-01.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-02.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-03.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-04.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-05.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-06.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-07.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-08.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-09.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/page-10.png"
+        ],
+        "contacts": [
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/contact-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/contact-2.png",
+          ".tmp/unicode-chart-review/quintessential-latin-extended-b/contact-3.png"
+        ],
+        "pdfSha256": "4f230ab1cbd4daa7f67b6d873485eabbead4109e6e390ed1960e37f06feb8937",
+        "dpi": 120,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-01.png": "b6c380cbe5809343201a38a696b4963e3db4bc996eec9224ccc9fdd33511ca82",
+          "page-02.png": "8308cf2e3e0d8f86857fd28303b80e32db406f9607d97317e1eb581ce808bad6",
+          "page-03.png": "c1639441d14559faf3098b5c21c70f7151e5ab90832adbe5ac9d84a088641599",
+          "page-04.png": "25e5ba58b1372eda572457f4ca5b4a580030ebc27b28e78a3eeb687d0274e8e3",
+          "page-05.png": "8f1ac861280b7646790af200d2bfc14111dbb8a8b42630a5bb45aa61e98db928",
+          "page-06.png": "a567bf0a08223cf69a55c43c22e1f8067d182168b969ac4eaf69bcee37673260",
+          "page-07.png": "373e2eca921fab763a530cbc13c45c98a8c52758fe7e3f5592cb837554aa64ae",
+          "page-08.png": "a4f5c894d289f30a53f0fb946f0eb01c9e69890cbcc6a9324471a5d9f1dd5e1f",
+          "page-09.png": "7327e893c1ebcb50dfc837b50d6a2d3161b90c7fa89b02459f9d55657ca0e4c3",
+          "page-10.png": "752c88ddce5a0d388ce1294d4967fab8388db8db9d6bebc89abcfb81f76a595e"
+        },
+        "visualReview": {
+          "allPagesInspected": true,
+          "method": "Fresh Poppler contact sheets, with native-size inspection of representative wide grids and dense names pages.",
+          "findings": []
+        }
+      },
+      {
+        "pdf": "quintessential-latin-proposal.pdf",
+        "pageCount": 4,
+        "pages": [
+          ".tmp/unicode-chart-review/quintessential-latin-proposal/page-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin-proposal/page-2.png",
+          ".tmp/unicode-chart-review/quintessential-latin-proposal/page-3.png",
+          ".tmp/unicode-chart-review/quintessential-latin-proposal/page-4.png"
+        ],
+        "contacts": [
+          ".tmp/unicode-chart-review/quintessential-latin-proposal/contact-1.png"
+        ],
+        "pdfSha256": "0399baa67597b6e01cc100739b5b5ef629629091d57e75e168c5469cbda640d5",
+        "dpi": 120,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "4c4f508d5eb83181aaefd6770bddeeaebce0d4aa0753e2a7f2a81dd9c6a4fa4c",
+          "page-2.png": "96d364d3587a693110b51ca9b1de18bbc65e4f91030c3001dc5689389d71d2da",
+          "page-3.png": "6cf5cc2213d2896d1129ac0240fdb1e744e66e8539b46181ad645e6ca36c4e7f",
+          "page-4.png": "3de0b3f1d7f886ae3e09070ee9f58a67e094a4708e7beaf3dfcac7fe8a96c28d"
+        },
+        "visualReview": {
+          "allPagesInspected": true,
+          "method": "Fresh Poppler contact sheets, with native-size inspection of representative wide grids and dense names pages.",
+          "findings": []
+        }
+      },
+      {
+        "pdf": "quintessential-latin.pdf",
+        "pageCount": 6,
+        "pages": [
+          ".tmp/unicode-chart-review/quintessential-latin/page-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin/page-2.png",
+          ".tmp/unicode-chart-review/quintessential-latin/page-3.png",
+          ".tmp/unicode-chart-review/quintessential-latin/page-4.png",
+          ".tmp/unicode-chart-review/quintessential-latin/page-5.png",
+          ".tmp/unicode-chart-review/quintessential-latin/page-6.png"
+        ],
+        "contacts": [
+          ".tmp/unicode-chart-review/quintessential-latin/contact-1.png",
+          ".tmp/unicode-chart-review/quintessential-latin/contact-2.png"
+        ],
+        "pdfSha256": "f0f737a2f10ba45a759bf4b6bab881d5e48cbf32af91b416cc88674a182de162",
+        "dpi": 120,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "e6797550c37189b1903eb4954bfda04b48bd5fdfd973b7f1a83b3ff40f793b1b",
+          "page-2.png": "42f75812309d832e15c9e55035539bfe8234ab8943ab1c1261ee4f2b21203362",
+          "page-3.png": "00af9f31cd32aee0e4b41380414bf56cd6f532999c888bbb8b8b81527d225221",
+          "page-4.png": "1ce5be9f60d7eef59e99d075196e95138700ceb1f014d9f9fa184fa7694497f6",
+          "page-5.png": "012466f0523bccc572804cfa6b627fdd4ff66f18738b078754e6f04438e8fc36",
+          "page-6.png": "6fa611ff93191934e2c83ba85b8d05028687731c80d4468273a372fea271a63e"
+        },
+        "visualReview": {
+          "allPagesInspected": true,
+          "method": "Fresh Poppler contact sheets, with native-size inspection of representative wide grids and dense names pages.",
+          "findings": []
+        }
+      }
+    ]
+  },
+  "browser": {
+    "report": {
+      "base": "http://127.0.0.1:8768/quintessential-latin/",
+      "checks": 147,
+      "passed": [
+        "index.html: page title",
+        "index.html: shared weight control",
+        "index.html: shared italic control",
+        "index.html: native script font loaded",
+        "index.html: document fits desktop",
+        "charts.html: page title",
+        "charts.html: shared weight control",
+        "charts.html: shared italic control",
+        "charts.html: native script font loaded",
+        "charts.html: document fits desktop",
+        "proposal.html: page title",
+        "proposal.html: shared weight control",
+        "proposal.html: shared italic control",
+        "proposal.html: native script font loaded",
+        "proposal.html: document fits desktop",
+        "downloads.html: page title",
+        "downloads.html: shared weight control",
+        "downloads.html: shared italic control",
+        "downloads.html: native script font loaded",
+        "downloads.html: document fits desktop",
+        "Header and hero show the actual logo character",
+        "Weight changes the header logo outline",
+        "Weight changes the hero logo outline",
+        "Four numeric desktop screen grids",
+        "Four print grids",
+        "All 1024 code positions represented",
+        "All 832 assigned positions represented",
+        "All 832 names represented",
+        "Formal names are in numeric order",
+        "Initial posture is Roman",
+        "Weight responds to real keyboard input",
+        "Native Italic selected",
+        "600 Italic pending variants clearly shown",
+        "Selected weight and native posture reach chart glyphs",
+        "Successful font loading leaves no status beside Italic",
+        "Changing posture keeps controls in place",
+        "Preferences persist across navigation",
+        "Preferences persist across reload",
+        "Missing native Italic logo uses the shared pending state",
+        "Both project marks share the selected weight and native posture",
+        "Intermediate weight supported",
+        "Code search finds one exact character",
+        "Character details open",
+        "Copy preserves supplementary-plane scalar",
+        "Copy code uses Unicode notation",
+        "Escape closes character details",
+        "Empty search is explained",
+        "Arrow navigation moves one hexadecimal column",
+        "ArrowDown stops at row F within its hexadecimal column",
+        "ArrowUp stops at row 0 within its hexadecimal column",
+        "Character deep link resolves",
+        "charts.html: fits 320px viewport",
+        "320px: exactly the 4-column variant is visible",
+        "320px: all 832 assigned and 192 vacant positions appear once",
+        "320px: chart geometry fits its container",
+        "320px: only genuine block edges have heavy rails",
+        "320px: names use the intended flowing column count",
+        "320px: consecutive names read down the first column",
+        "320px Roman 400: every visible chart and names glyph fits",
+        "320px Roman 550: every visible chart and names glyph fits",
+        "320px Roman 700: every visible chart and names glyph fits",
+        "320px Italic 400: every visible chart and names glyph fits",
+        "320px Italic 400: all 600 pending names markers fit their glyph slots",
+        "320px Italic 550: every visible chart and names glyph fits",
+        "320px Italic 550: all 600 pending names markers fit their glyph slots",
+        "320px Italic 700: every visible chart and names glyph fits",
+        "320px Italic 700: all 600 pending names markers fit their glyph slots",
+        "index.html: fits 375px viewport",
+        "375px: posture keeps controls and logo spaces stable",
+        "charts.html: fits 375px viewport",
+        "375px: exactly the 8-column variant is visible",
+        "375px: all 832 assigned and 192 vacant positions appear once",
+        "375px: chart geometry fits its container",
+        "375px: only genuine block edges have heavy rails",
+        "375px: names use the intended flowing column count",
+        "375px: consecutive names read down the first column",
+        "375px Roman 400: every visible chart and names glyph fits",
+        "375px Roman 550: every visible chart and names glyph fits",
+        "375px Roman 700: every visible chart and names glyph fits",
+        "375px Italic 400: every visible chart and names glyph fits",
+        "375px Italic 400: all 600 pending names markers fit their glyph slots",
+        "375px Italic 550: every visible chart and names glyph fits",
+        "375px Italic 550: all 600 pending names markers fit their glyph slots",
+        "375px Italic 700: every visible chart and names glyph fits",
+        "375px Italic 700: all 600 pending names markers fit their glyph slots",
+        "proposal.html: fits 375px viewport",
+        "downloads.html: fits 375px viewport",
+        "index.html: fits 768px viewport",
+        "768px: posture keeps controls and logo spaces stable",
+        "charts.html: fits 768px viewport",
+        "768px: exactly the 16-column variant is visible",
+        "768px: all 832 assigned and 192 vacant positions appear once",
+        "768px: chart geometry fits its container",
+        "768px: only genuine block edges have heavy rails",
+        "768px: names use the intended flowing column count",
+        "768px: consecutive names read down the first column",
+        "768px Roman 400: every visible chart and names glyph fits",
+        "768px Roman 550: every visible chart and names glyph fits",
+        "768px Roman 700: every visible chart and names glyph fits",
+        "768px Italic 400: every visible chart and names glyph fits",
+        "768px Italic 400: all 600 pending names markers fit their glyph slots",
+        "768px Italic 550: every visible chart and names glyph fits",
+        "768px Italic 550: all 600 pending names markers fit their glyph slots",
+        "768px Italic 700: every visible chart and names glyph fits",
+        "768px Italic 700: all 600 pending names markers fit their glyph slots",
+        "proposal.html: fits 768px viewport",
+        "downloads.html: fits 768px viewport",
+        "index.html: fits 1440px viewport",
+        "1440px: posture keeps controls and logo spaces stable",
+        "charts.html: fits 1440px viewport",
+        "1440px: exactly the 16-column variant is visible",
+        "1440px: all 832 assigned and 192 vacant positions appear once",
+        "1440px: chart geometry fits its container",
+        "1440px: only genuine block edges have heavy rails",
+        "1440px: names use the intended flowing column count",
+        "1440px: consecutive names read down the first column",
+        "1440px Roman 400: every visible chart and names glyph fits",
+        "1440px Roman 550: every visible chart and names glyph fits",
+        "1440px Roman 700: every visible chart and names glyph fits",
+        "1440px Italic 400: every visible chart and names glyph fits",
+        "1440px Italic 400: all 600 pending names markers fit their glyph slots",
+        "1440px Italic 550: every visible chart and names glyph fits",
+        "1440px Italic 550: all 600 pending names markers fit their glyph slots",
+        "1440px Italic 700: every visible chart and names glyph fits",
+        "1440px Italic 700: all 600 pending names markers fit their glyph slots",
+        "proposal.html: fits 1440px viewport",
+        "downloads.html: fits 1440px viewport",
+        "375px: resizing retains the same focused character",
+        "320px: resizing retains the same focused character",
+        "1440px: resizing retains the same focused character",
+        "Closing character details after resize restores the visible originating chart cell",
+        "Printed control bar is hidden",
+        "Print posture annotation is current",
+        "Print weight annotation is current",
+        "Print exposes all four sixteen-column grids",
+        "Only charts select the named Letter print page",
+        "Printed continuation sheets use thin internal rails and heavy block edges",
+        "Printed grid sheets fit Letter without a leading blank page",
+        "Print Italic 400: pending names markers remain inside their glyph slots",
+        "Print Italic 700: pending names markers remain inside their glyph slots",
+        "Proposal retains its original print page styling",
+        "No JavaScript exceptions",
+        "No failed same-site asset requests",
+        "Charts work without JavaScript",
+        "Responsive charts work without JavaScript",
+        "Font load failure is explicit",
+        "375px font failure uses fitted markers for all names and an explicit explanation"
+      ],
+      "errors": [],
+      "failedResponses": []
+    },
+    "viewports": [
+      320,
+      375,
+      768,
+      1440
+    ],
+    "postures": [
+      "Roman",
+      "Italic"
+    ],
+    "weights": [
+      400,
+      550,
+      700
+    ],
+    "verified": "All 1024 positions, 832 assigned characters, 192 vacant cells, names order, glyph fit, 600 pending Italic markers, font failure, no-JavaScript use, copying, keyboard navigation, and focus restoration across layout and dialog changes.",
+    "reviewedScreenshots": {
+      ".tmp/browser-review/chart-sheet-320.png": "29f86430aadaec9455fcf4536964ec141af4e196eab9740450754f2a706e0cc7",
+      ".tmp/browser-review/chart-sheet-375.png": "1eef852d807a596ad5f51fd161b3fc7ec999870bb3e9030468fb8c244a7cb337",
+      ".tmp/browser-review/chart-sheet-768.png": "4784c391cf8a0a131e8b0b9d352941b2f921ba72082593113f6e68123b3e79c4",
+      ".tmp/browser-review/chart-sheet-1440.png": "e45f3960e9bd8be1e804ba357e0438e69381890a48e601792f5c148b09690ee5",
+      ".tmp/unicode-web-review/charts-top-1440.png": "d371879ff33b5a91729d361bde106f78b23753feee3cafb6662d5882ab8cb969",
+      ".tmp/unicode-web-review/charts-top-375.png": "552c66db0ff8a30e2cf1fc4a035be3c02674255af411da2732d3069649847fb9",
+      ".tmp/unicode-web-review/charts-top-320.png": "2aba04da89c66c945ea731dc8d81789fa93cb0239277703b7071a0f72cb2ee6e",
+      ".tmp/unicode-web-review/main-names-1440.png": "0a75d749e9f8ac81d74e1c0c83c6d2e53bf392b001e8fd40b58bf31b69b74007",
+      ".tmp/unicode-web-review/pending-names-1440.png": "b45543349e48a6b2962eef89ffbce5010899d053cf32a8de26583e47beb3d3c9",
+      ".tmp/unicode-web-review/main-names-375.png": "4f43752ce19d73e95b8b4338abc386d806a5227e29b50ea12f901e8eeff87c4f",
+      ".tmp/unicode-web-review/pending-names-375.png": "982ae8d27deb62835b69f5d1919e8db6638820aa69ed9d6671f5dc8320466f05",
+      ".tmp/unicode-web-review/font-failure-names-375.png": "e1f184a5d4a4976117f51bedad657db4cde4fdbf3816d053558f909842c143fb"
+    },
+    "printReview": {
+      "settings": {
+        "posture": "Italic",
+        "weight": 700
+      },
+      "pageSize": "Letter",
+      "all18PagesInspected": true,
+      "nativeSizePages": [
+        6
+      ],
+      "findings": [],
+      "renders": [
+        {
+          "pdf": "charts-browser-print.pdf",
+          "pageCount": 18,
+          "pages": [
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-01.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-02.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-03.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-04.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-05.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-06.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-07.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-08.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-09.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-10.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-11.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-12.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-13.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-14.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-15.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-16.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-17.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/page-18.png"
+          ],
+          "contacts": [
+            ".tmp/unicode-browser-print-review/charts-browser-print/contact-1.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/contact-2.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/contact-3.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/contact-4.png",
+            ".tmp/unicode-browser-print-review/charts-browser-print/contact-5.png"
+          ],
+          "pdfSha256": "4cd14fdc4bceae7350384277aa5c4329fddeacd47915208deeeb1a5868b1d991",
+          "dpi": 110,
+          "renderer": "pdftoppm version 26.07.0",
+          "renderedPageSha256": {
+            "page-01.png": "1b1c75597786027093d583f9e56c40c1f3b17a6763542b261ffa4d0e061d4307",
+            "page-02.png": "d61333de18cf725e6e89f25620cab302c0be5752cf028b75c4baa5e7f999c3ec",
+            "page-03.png": "7bcd431ea5fe16f3ad7b3eddaf64d3feb1487c553f35da441152552d340e5da5",
+            "page-04.png": "0eb021f43c9b283041f135edbbb238f6f5514cbca8278a765d6e21e87c4862a2",
+            "page-05.png": "8adbac53ad874560701ce99464e14f723c4a3a06b9bc71ff4ec83a71d20d09e6",
+            "page-06.png": "683f98f25ee744c4853626576406931699e9306be63339a610f621610ea669a9",
+            "page-07.png": "e29a1bc3469e9e7c926e62444760a0f2c546c769fae8cd40461a4d8e4d66fac0",
+            "page-08.png": "927810296cbe0110b0d45344a716dc27649a98ab9908ff9352aa5d64e41bdc01",
+            "page-09.png": "6e1e678d4ceecdc60399aa86bf15f072c6c2086c3e0584280aeaef202ebd5556",
+            "page-10.png": "5457595be9a652888ed91023877908f1d514c92126f175fee37de6fc92c89e5d",
+            "page-11.png": "cf9f8633564d90f5afee5a1b6427b9f838f452d11562292695b1485f4a2eb43f",
+            "page-12.png": "53af177a3c673bf8149d464e5d3ee1b24b140e96756179c1fbbd26767b3de083",
+            "page-13.png": "45af7c5f6a978490e1606f09cd6f9d67ebf94699be24c723e042d667d4edd08e",
+            "page-14.png": "e76119c9e9716a4a1677a09c846c0f344719fc569e820827c05d8416e1776e99",
+            "page-15.png": "73f48e3dc19264f64cd40ee3b12200b2ef5ad07eb5e643fa64ab688170b4db9b",
+            "page-16.png": "63a9d97e2f8b89e42696ca4a903fc8e09da24052938b6a688d7bbfb167429563",
+            "page-17.png": "5a6a444448833cfd954a157ff95cdfa0b93ec58b098640dc31448ec5757ac12f",
+            "page-18.png": "3b8e33a0b4c883ab557e886fc4e30260c8b8fea42e1f19ccb4916f578c2acda3"
+          }
+        }
+      ]
+    },
+    "builtAssetsSha256": {
+      "dist/charts.html": "bf412c76e6dd4e62603d1e91e3db47664a3e8bd4536037d25ffe0fecc732dae0",
+      "dist/assets/chart-presentation.css": "3c06687d39ed10b870d4634287fe0bc63c2a9d8b69b116d23c72b87dcd6c28e3",
+      "dist/assets/style.css": "da5491ab189ebbfbd0f2448c90d1b336f78f07dc143df03c90d5c4cf5ec82d57",
+      "dist/assets/app.mjs": "bf690eb6c876466a4406ccd2b74012c202e3216e3d22488c350438d94773736d",
+      "dist/assets/model.mjs": "75dc41fd218c8f72098e75c2bb78b79aedb29c7c0327f4ba44d673683c84e448"
+    }
+  },
+  "acceptance": {
+    "engineering": "Passed",
+    "agentVisualReview": "Passed",
+    "userVisualAcceptance": "Pending",
+    "publication": "Local build only; this revision has not been deployed."
+  },
+  "notes": [
+    "Review images and repeat-build files are regenerable temporary artifacts. Their hashes bind this record to the reviewed output.",
+    "Earlier verification records are retained as historical evidence and do not describe this revision."
+  ]
+}

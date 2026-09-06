@@ -5,6 +5,36 @@ It writes three block PDFs, the complete catalogue, and the UCSUR proposal under
 `output/pdf/`. Reference charts use Quintessential Serif 0.220, Roman 400, with
 embedded vector fonts. The original variable fonts remain unchanged.
 
+## Code-chart presentation
+
+`resources/chart-presentation.json` supplies the PDF and website builders with
+the shared chart geometry and typography. The three block documents and combined
+catalogue use Source Sans 3 3.052 for text; the proposal retains STIX Two Text.
+The bundled Source Sans TTF/WOFF2 files, their OFL license, upstream release,
+download URLs, and hashes are under `resources/fonts/SourceSans3`.
+
+Each publication grid has 16 hexadecimal columns and 16 rows. Main and
+Extended-A have one grid each; Extended-B continues across two. Cells measure
+27.6975 by 39.6 points, with 22-point Roman reference glyphs and 6-point codes.
+The grid's black interior rules are 0.25 points; block edges are 1.5 points.
+Unassigned cells contain vector diagonal hatching. Column labels sit above the
+grid, row labels outside it; continuation-facing edges remain thin.
+
+The compact cover precedes all of a block's charts, followed by names that flow
+down the left column and then the right. Existing family titles supply the
+subheadings without changing code-point order. Every name remains complete;
+headings stay with their first entry and individual entries never split between
+columns or pages. The combined PDF repeats this block sequence with continuous
+page numbers. Printed browser charts use Letter sheets and the selected font
+posture and weight; the downloadable reference PDFs remain Roman 400.
+
+The visual references are Unicode 17's Basic Latin (`U0000`), Latin Extended-D
+(`UA720`), and Linear A (`U10600`) charts supplied by the user, supplemented by
+[Cyrillic](https://www.unicode.org/charts/PDF/U0400.pdf) and
+[Latin Extended Additional](https://www.unicode.org/charts/PDF/U1E00.pdf) to
+verify full 16-column page geometry. Their design is the reference; publication
+text, character content, status, and attribution remain specific to this project.
+
 ## Build and automated checks
 
 Use the same Python 3.13 virtual environment as the font tools, or a separate PDF
@@ -64,7 +94,7 @@ these checks have passed.
 
 Every PDF build also writes `output/pdf/build-manifest.json`. It binds the raw
 SHA-256 hashes of the catalogue, proposal text, Roman reference and interface
-font sources, builder, and pinned PDF requirements to all five output PDF hashes,
+font sources, chart presentation definition, builder, and pinned PDF requirements to all five output PDF hashes,
 byte sizes, and page counts. Commit this generated manifest with the PDFs.
 
 The Node website build validates the manifest before changing `dist/`, so edits
@@ -75,6 +105,11 @@ then run the website build again. A hash match establishes freshness; it does no
 replace optical review of changed PDF bytes.
 
 ## Durable verification evidence
+
+The Unicode-style revision has its own review record in
+`resources/verification/unicode-chart-review.json`. Records below are retained
+as historical evidence for earlier PDF bytes. Agent inspection and user visual
+acceptance are recorded separately.
 
 The committed [PDF review record](../resources/verification/pdf-review.json)
 binds the completed review to the five exact PDF files and reference font. It

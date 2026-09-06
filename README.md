@@ -109,8 +109,12 @@ python tools/test_pdfs.py
 
 Outputs are in `output/pdf/`: three block charts, a combined catalogue, and
 the proposal. Reference charts use Roman 400, embedded fonts, and vector text.
-The eight grid sheets each contain 128 positions, followed by numeric
-two-column names lists. The website's print view reflects the selected posture
+The four grid sheets each contain 256 positions, followed by numeric
+two-column names lists with family subheadings. Source Sans 3 supplies the
+publication text. Grid geometry, running headers, diagonal vacancy hatching,
+and compact names follow the official Unicode code-chart format.
+The responsive page presents 16, 8, or 4 hexadecimal columns according to its
+available width. Its Letter-sized print view reflects the selected posture
 and weight. Poppler is used for visual PDF review.
 
 ## GitHub Pages

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "fontFamily": "Source Sans 3",
+  "page": {"width": 612, "height": 792, "textLeft": 82.8, "textRight": 529.2, "headerBaseline": 747, "footerBaseline": 43.2},
+  "grid": {"columns": 16, "rows": 16, "cellWidth": 27.6975, "cellHeight": 39.6, "top": 699.12, "labelBaseline": 705.12, "railTop": 714, "innerRule": 0.25, "outerRule": 1.5, "hatchSpacing": 3, "hatchRule": 0.35, "glyphSize": 22, "coordinateSize": 10, "codeSize": 6},
+  "names": {"columnWidth": 219.84, "columnGap": 6.72, "textOffset": 43.2, "top": 714, "bottom": 65.52, "fontSize": 9, "leading": 9.2, "entryGap": 1.4, "glyphSize": 10, "headingSize": 9, "headingLeading": 10.6, "headingGap": 5.3},
+  "screen": {"cellWidth": 40, "cellHeight": 57, "rowLabelWidth": 20, "glyphSize": 32, "codeSize": 9, "coordinateSize": 14, "nameSize": 14, "nameLeading": 16.5, "mediumWidth": 340, "wideWidth": 660}
+}

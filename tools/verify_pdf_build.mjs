@@ -5,9 +5,14 @@ import path from 'node:path';
 export const PDF_MANIFEST_PATH='output/pdf/build-manifest.json';
 export const PDF_SOURCE_PATHS=Object.freeze([
   'resources/catalogue.json',
+  'resources/chart-presentation.json',
   'docs/proposal.json',
   'resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf',
   'resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf',
+  'resources/fonts/SourceSans3/SourceSans3-Light.ttf',
+  'resources/fonts/SourceSans3/SourceSans3-Regular.ttf',
+  'resources/fonts/SourceSans3/SourceSans3-Bold.ttf',
+  'resources/fonts/SourceSans3/SourceSans3-It.ttf',
   'tools/build_pdfs.py',
   'tools/requirements-pdfs.txt',
 ]);

@@ -1,0 +1,45 @@
+{
+  "family": "Source Sans 3",
+  "version": "3.052",
+  "upstream": "https://github.com/adobe-fonts/source-sans",
+  "tag": "3.052R",
+  "license": "OFL-1.1",
+  "files": {
+    "SourceSans3-Light.ttf": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/TTF/SourceSans3-Light.ttf",
+      "sha256": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef"
+    },
+    "SourceSans3-Light.woff2": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/WOFF2/TTF/SourceSans3-Light.ttf.woff2",
+      "sha256": "1fd6d4d511c3161a5a3555efa585fbe18cde2f151a79bd0af4655c5093fca90c"
+    },
+    "SourceSans3-Regular.ttf": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/TTF/SourceSans3-Regular.ttf",
+      "sha256": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f"
+    },
+    "SourceSans3-Regular.woff2": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/WOFF2/TTF/SourceSans3-Regular.ttf.woff2",
+      "sha256": "53492fb3a0def77354f166a55d09b63a10855e91c206c7620a81cf56e97f8ec3"
+    },
+    "SourceSans3-Bold.ttf": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/TTF/SourceSans3-Bold.ttf",
+      "sha256": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a"
+    },
+    "SourceSans3-Bold.woff2": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/WOFF2/TTF/SourceSans3-Bold.ttf.woff2",
+      "sha256": "8d35c6d40e750a4ee23bbbba2bd604ad098d172907369b43281507e16b8e2e7a"
+    },
+    "SourceSans3-It.ttf": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/TTF/SourceSans3-It.ttf",
+      "sha256": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4"
+    },
+    "SourceSans3-It.woff2": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/WOFF2/TTF/SourceSans3-It.ttf.woff2",
+      "sha256": "4d80b3b801f4c457f1b4adbd3911d8501338e6d282141663770c38d3a2e97859"
+    },
+    "OFL.txt": {
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/3.052R/LICENSE.md",
+      "sha256": "89ad2c4f66dd29127527493e729c31e731f111cf10faf5774c3db9275ed0c22c"
+    }
+  }
+}

@@ -2,6 +2,44 @@
 
 Current reference font **0.220**, canonical naming **3**.
 
+## Unicode chart presentation
+
+The 6 September 2026 presentation revision brings the code-chart PDFs and
+responsive charts close to the supplied Unicode references. Letter pages use
+compact covers, four 16-by-16 grid sheets, external hexadecimal coordinates,
+black rules and diagonal vacancy hatching, thin continuation edges, and dense
+two-column names with family headings. Source Sans 3 supplies chart typography;
+Quintessential Serif retains its native glyph proportions.
+
+All **nine PDF tests**, **seventeen naming tests**, **twelve static-site acceptance
+groups**, and **147 browser checks** pass. The three block PDFs contain **6, 7,
+and 10 pages**; the combined catalogue contains **23**; the proposal contains
+**4**. All **50 publication pages** were visually inspected from fresh Poppler
+renders. An independent review covered all 23 combined pages, with native-size
+inspection of the widest grids and dense names. All five PDFs and their manifest
+reproduce byte for byte in a second build.
+
+The webpage shows 16, 8, or 4 columns according to its available width. Checks at
+320, 375, 768, and 1440 pixels cover every assigned and vacant position, both
+postures, weights 400/550/700, names flow, pending and failed-font markers,
+no-JavaScript content, copying, keyboard access, and focus restoration across
+responsive and dialog changes. Desktop and mobile screenshots and all **18
+pages** of an Italic 700 browser print were visually reviewed. No clipping,
+overlap, or pagination defects were found.
+
+Catalogue data, canonical names, proposal text, and the reference font files
+retain their pre-revision hashes. The rebuilt proposal has different compressed
+stream bytes in the current Python runtime, but its decoded page content and
+fonts are unchanged and all four pages are pixel-identical at 120 dpi.
+
+Evidence: [current chart review and hashes](../resources/verification/unicode-chart-review.json),
+[PDF test log](../resources/verification/unicode-chart-pdf-tests.log), and
+[publication manifest](../output/pdf/build-manifest.json). This revision is a
+local build; deployment and user visual acceptance remain separate. The records
+below describe earlier revisions and retain their historical counts and hashes.
+
+## Historical naming revision
+
 The 6 September 2026 naming revision gives all 832 characters the
 `QUINTESSENTIAL LATIN LETTER` prefix and simplifies 696 construction labels.
 All seventeen naming tests and the generated-export check pass. The allocation

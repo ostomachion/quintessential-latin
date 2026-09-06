@@ -16,5 +16,5 @@ export function glyphSize(entry, availableWidth = 48, maximum = 32) {
 }
 export function chartCode(start, row, column) { return start + column * 16 + row; }
 export function printableSheets(blocks) {
-  return blocks.flatMap(block => Array.from({length:(block.end - block.start + 1) / 128}, (_, index) => ({block, start:block.start + index * 128, end:block.start + index * 128 + 127})));
+  return blocks.flatMap(block => Array.from({length:Math.ceil((block.end - block.start + 1) / 256)}, (_, index) => ({block, start:block.start + index * 256, end:Math.min(block.end,block.start + index * 256 + 255)})));
 }
