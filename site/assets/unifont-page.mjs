@@ -1,4 +1,5 @@
 import {inspectorMarkup} from './unifont-model.mjs';
+import './unifont-pixels.mjs';
 const inspector=document.querySelector('#unifont-inspector');
 const status=document.querySelector('#unifont-selection-status');
 try{

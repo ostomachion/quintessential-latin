@@ -95,10 +95,26 @@ textarea{resize:vertical;width:100%;line-height:1.45}
 .structure-group{display:grid;grid-template-columns:140px minmax(0,1fr);gap:0 24px;border-top:1px solid var(--rule);padding-block:16px}
 .structure-group h3{margin:4px 0 0;break-after:avoid}
 .structure-examples{display:grid;grid-template-columns:repeat(var(--example-columns),minmax(0,1fr));gap:12px 16px}
-.structure-example{display:block;min-width:0;text-decoration:none;padding:4px}
+.structure-example{display:block;min-width:0;text-decoration:none;padding:4px;container-type:inline-size}
 .structure-example:hover .example-name{text-decoration:underline;text-underline-offset:3px}
-.structure-example .glyph-wrap{height:88px;display:flex;justify-content:flex-start}
+.structure-example .type-study{font-size:min(var(--study-size),60cqw);margin-bottom:6px}
 .structure-example .example-name{display:block;color:var(--muted);font-size:14px;line-height:1.3;overflow-wrap:anywhere}
+
+/* Font coordinates: 1000 units/em, ascent 762, descent 238; both weights
+   share these metrics. A one-em line box puts the real baseline at .762em. */
+:root{--study-xheight:.473em}
+html[data-posture="Italic"]{--study-xheight:.467em}
+.type-study{--study-baseline:1em;position:relative;display:block;font-size:var(--study-size,64px);height:1.4em;min-width:0;isolation:isolate}
+.type-study .glyph-wrap{position:absolute;top:calc(var(--study-baseline) - .762em);left:0;right:0;display:flex;justify-content:flex-start;max-width:none;height:1em;font-size:inherit}
+.type-study .glyph{font-size:inherit;line-height:1}
+.type-rule{position:absolute;left:0;right:0;z-index:-1;height:0;border-top:1px dashed #b8c2c6;pointer-events:none}
+.type-rule[data-metric="cap"]{top:calc(var(--study-baseline) - .657em)}
+.type-rule[data-metric="xheight"]{top:calc(var(--study-baseline) - var(--study-xheight))}
+.type-rule[data-metric="baseline"]{top:var(--study-baseline);border-top-style:solid;border-color:#7c8b91}
+.type-rule[data-metric="descender"]{top:calc(var(--study-baseline) + .238em)}
+.type-rule>span{position:absolute;left:0;top:0;transform:translateY(-50%);padding-right:8px;background:var(--paper);color:#526067;font:400 11px/1.1 'Source Sans 3',Arial,sans-serif;white-space:nowrap}
+.type-guide-key{color:var(--muted);font-size:12px;line-height:1.5;margin:20px 0 -8px}
+.type-guide-key strong{font-weight:600}
 
 .proposal-layout{display:grid;grid-template-columns:160px minmax(0,1fr);gap:28px;border-top:1px solid #000;padding-top:18px;margin-top:24px}
 .proposal-layout>nav,.proposal-layout>article{min-width:0}
@@ -128,7 +144,9 @@ body[data-page="downloads"] .main>section>p{font-size:15px}
 .dialog-top{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--rule);padding-bottom:10px}
 .dialog-top p{margin:0}
 .close-dialog{border:0;font-size:14px}
-.dialog-glyph{display:flex;justify-content:center;align-items:center;min-height:200px;padding:16px;overflow:hidden}
+.dialog-glyph{padding:20px 0 8px}
+.dialog-glyph .type-study{width:100%;height:max(170px,1.4em);--study-baseline:max(120px,1em)}
+.dialog-glyph .glyph-wrap{left:82px;right:10px;justify-content:center}
 .dialog-glyph .pending-label{font-size:16px;max-width:none}
 .character-dialog h2{font-size:16px;line-height:1.4;letter-spacing:0;font-weight:400}
 .dialog-meta{color:var(--muted);font-size:14px}
@@ -186,7 +204,7 @@ html:not(.enhanced) .font-bar input,html:not(.enhanced) .font-bar button{pointer
   .download-table{font-size:14px}.download-table th,.download-table td{padding:9px 12px 9px 0}
   .download-table td:last-child{font-size:13px}
   .site-footer{display:block}.site-footer p+div{margin-top:12px}.site-footer a{margin-left:0;margin-right:18px}
-  .character-dialog{padding:18px}.dialog-glyph{min-height:165px}.dialog-actions{gap:8px 12px}
+  .character-dialog{padding:18px}.dialog-actions{gap:8px 12px}
   .block-jump{display:grid}.result-list a{grid-template-columns:50px 52px minmax(0,1fr)}
 }
 @media print{

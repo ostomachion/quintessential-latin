@@ -1,4 +1,5 @@
 import {available,normalizeSettings,searchEntries,code,anchor,glyphSize} from './model.mjs';
+import {typeGuidesMarkup} from './type-guides.mjs';
 const storageKey='quintessential-latin-font';
 let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}');}catch{}
 let settings=normalizeSettings(saved),catalogue,byId,byCode,activeEntry,announcementTimer,fontRequest=0;
@@ -19,8 +20,15 @@ window.addEventListener('storage',event=>{if(event.key!==storageKey)return;try{s
 applySettings(false);
 function makeGlyph(entry,width=48,maximum=32){const wrap=document.createElement('span');wrap.className='glyph-wrap';wrap.dataset.form=entry.glyphId;wrap.dataset.italic=String(entry.postures.includes('Italic'));const character=document.createElement('span');character.className='glyph';character.textContent=String.fromCodePoint(entry.codePoint);character.setAttribute('aria-hidden','true');character.style.setProperty('--glyph-size',`${glyphSize(entry,width,maximum).toFixed(2)}px`);const pending=document.createElement('span');pending.className='pending-label';pending.textContent='Italic pending';wrap.append(character,pending);wrap.classList.toggle('is-pending',!available(entry,settings.italic));return wrap;}
 async function copy(text,success){try{await navigator.clipboard.writeText(text);announce(success);}catch{const helper=document.createElement('textarea');helper.value=text;helper.style.position='fixed';helper.style.opacity='0';document.body.append(helper);helper.select();let copied=false;try{copied=document.execCommand('copy');}catch{}helper.remove();announce(copied?success:'Copy is unavailable. Select and copy the character code.');}}
-function updateDialog(){if(!activeEntry)return;const entry=activeEntry;$('#dialog-code').textContent=code(entry.codePoint);$('#dialog-name').textContent=entry.name;$('#dialog-glyph').replaceChildren(makeGlyph(entry,Math.min(530,Math.max(230,innerWidth-120)),145));const family=catalogue.families.find(item=>item.id===entry.familyId),block=catalogue.blocks.find(item=>item.id===entry.blockId);$('#dialog-meta').textContent=`${block?.title||''} · ${family?.title||''}. ${entry.postures.includes('Italic')?'Roman and native Italic available.':'Roman available; native Italic pending.'}`;$('#character-permalink').href=`charts.html#${anchor(entry.codePoint)}`;}
-function openCharacter(entry,updateHistory=true,origin){if(!entry)return;dialogChartOrigin=origin?{code:origin.dataset.code,block:origin.closest(".chart-block")}:undefined;activeEntry=entry;updateDialog();if(!dialog.open)dialog.showModal();if(updateHistory)history.replaceState(null,'',`#${anchor(entry.codePoint)}`);}
+function sizeDialogStudy(){
+  const study=$('#dialog-glyph .type-study');
+  if(!study||!activeEntry||!dialog.open)return;
+  // Reserve the left gutter for metric labels, including on a narrow phone.
+  study.style.setProperty('--study-size',`${glyphSize(activeEntry,Math.max(40,study.clientWidth-92),145).toFixed(2)}px`);
+}
+function updateDialog(){if(!activeEntry)return;const entry=activeEntry;$('#dialog-code').textContent=code(entry.codePoint);$('#dialog-name').textContent=entry.name;const study=document.createElement('div');study.className='type-study';study.innerHTML=typeGuidesMarkup(true);study.append(makeGlyph(entry));$('#dialog-glyph').replaceChildren(study);sizeDialogStudy();const family=catalogue.families.find(item=>item.id===entry.familyId),block=catalogue.blocks.find(item=>item.id===entry.blockId);$('#dialog-meta').textContent=`${block?.title||''} · ${family?.title||''}. ${entry.postures.includes('Italic')?'Roman and native Italic available.':'Roman available; native Italic pending.'}`;$('#character-permalink').href=`charts.html#${anchor(entry.codePoint)}`;}
+function openCharacter(entry,updateHistory=true,origin){if(!entry)return;dialogChartOrigin=origin?{code:origin.dataset.code,block:origin.closest(".chart-block")}:undefined;activeEntry=entry;updateDialog();if(!dialog.open)dialog.showModal();sizeDialogStudy();if(updateHistory)history.replaceState(null,'',`#${anchor(entry.codePoint)}`);}
+window.addEventListener('resize',sizeDialogStudy);
 $('#close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('close',()=>{
   const origin=dialogChartOrigin;dialogChartOrigin=undefined;

@@ -221,3 +221,19 @@ The first border is (47,31); the glyph starts at (52,39), or (5,8) from that
 border. Horizontal gaps are 5,12,13,20,21,28; vertical gaps are 8,15,16,23.
 A chart is 560 × 544 pixels, matching `unihex2png`. Pending positions have no
 exported bitmap. The chart uses pending dots; unallocated positions are hatched.
+
+### Screen pixels
+
+The shared `site/assets/unifont-pixels.mjs` renderer aligns chart cells,
+inspector previews, native donors, and static family proofs to device pixels.
+Each source pixel occupies the nearest whole number of physical screen pixels
+at the requested enlargement, with a minimum of one. The nominal CSS size can
+therefore adjust at fractional display scaling or browser zoom. Glyph origins
+are snapped separately; coordinate grids and their labels move together.
+Alignment updates after font loading, selection, layout changes, scrolling,
+zoom, and moves between displays. Print and no-script pages retain the SVGs.
+
+Run `npm run test:unifont:pixels` after `npm run preview:unifont` to check
+physical pixel geometry and screenshot pixels at several display densities.
+This rendering code is included in the proof hashes, so changing it invalidates
+old presentation reviews without changing the glyph drawings or font files.

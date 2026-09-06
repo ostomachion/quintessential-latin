@@ -28,7 +28,7 @@ await test('Complete 1216-character repertoire, all 8px',()=>{
     assert.equal(glyph.bitmapSha256,sha256(glyph.line+'\n'));
   }
 });
-await test('Shared CSS changes invalidate inspected proofs without changing donor pixels',async()=>{
+await test('Shared CSS and screen alignment changes invalidate proofs without changing donor pixels',async()=>{
   const root=fileURLToPath(new URL('../',import.meta.url)),temporary=path.join(root,'.tmp');
   await mkdir(temporary,{recursive:true});
   const fixture=await mkdtemp(path.join(temporary,'unifont-invalidation-'));
@@ -39,10 +39,14 @@ await test('Shared CSS changes invalidate inspected proofs without changing dono
     const records=Object.fromEntries(metadata.glyphs.map(g=>[g.glyphId,{bitmapSha256:g.bitmapSha256,proofSha256:g.proofSha256,status:'inspected'}]));
     await writeFile(path.join(fixture,'resources/unifont/review.json'),JSON.stringify({records,userApproval:null}));
     assert.equal((await constructUnifont(fixture)).inspected,metadata.drawn);
-    await appendFile(path.join(fixture,'site/assets/style.css'),'\n/* proof dependency mutation */\n');
-    const changed=await constructUnifont(fixture);assert.equal(changed.inspected,0);
-    assert.deepEqual(changed.glyphs.map(g=>g.bitmapSha256),metadata.glyphs.map(g=>g.bitmapSha256));
-    assert(changed.glyphs.every((g,i)=>g.proofSha256!==metadata.glyphs[i].proofSha256));
+    for(const dependency of ['site/assets/style.css','site/assets/unifont-pixels.mjs']){
+      const target=path.join(fixture,dependency),original=await readFile(target);
+      await appendFile(target,'\n/* proof dependency mutation */\n');
+      const changed=await constructUnifont(fixture);assert.equal(changed.inspected,0);
+      assert.deepEqual(changed.glyphs.map(g=>g.bitmapSha256),metadata.glyphs.map(g=>g.bitmapSha256));
+      assert(changed.glyphs.every((g,i)=>g.proofSha256!==metadata.glyphs[i].proofSha256));
+      await writeFile(target,original);
+    }
   }finally{
     assert.equal(path.dirname(path.resolve(fixture)),path.resolve(temporary));
     assert(path.basename(fixture).startsWith('unifont-invalidation-'));
