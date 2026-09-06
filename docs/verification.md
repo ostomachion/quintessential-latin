@@ -89,5 +89,17 @@ restoration, exact font preservation and exporter consistency. Every generated
 site asset matches the working repository byte for byte. See the
 [clean-checkout record](../resources/verification/clean-checkout.json).
 
-Live GitHub Pages deployment is pending the first successful workflow run.
+The public repository is [ostomachion/quintessential-latin](https://github.com/ostomachion/quintessential-latin),
+with GitHub Issues enabled for contact. The
+[first Pages workflow](https://github.com/ostomachion/quintessential-latin/actions/runs/34006176899)
+completed successfully at **2026-09-06 02:20:25 UTC**, including the build,
+all naming/site checks, 76 browser checks on Linux, and deployment of only
+static website assets.
+
+The [live site](https://ostomachion.github.io/quintessential-latin/) passed all
+76 browser checks. All **38 public assets**, including five HTML pages and five
+PDF downloads, returned successfully and matched the validated local build byte
+for byte. The non-public .nojekyll hosting marker is excluded from the HTTP asset
+inventory. See [live asset hashes](../resources/verification/live-assets.json)
+and [live browser checks](../resources/verification/live-browser.json).
 Publication does not imply user visual acceptance.

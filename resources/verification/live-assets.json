@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checkedAt": "2026-09-06T02:21:21.414Z",
+  "base": "https://ostomachion.github.io/quintessential-latin/",
+  "method": "HTTPS GET of every generated deployment asset, verifying HTTP status and exact SHA-256 against dist; PDF and module MIME checks",
+  "assetCount": 38,
+  "excludedHostingMetadata": [
+    ".nojekyll"
+  ],
+  "assets": [
+    {
+      "path": "assets/app.mjs",
+      "status": 200,
+      "bytes": 11522,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "57033b23b635358eb774f34f337666df8a2d2123dbfb456a6933194bf81311b3"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "status": 200,
+      "bytes": 225,
+      "contentType": "image/svg+xml",
+      "sha256": "da78c04f1816a2b51032efde0d14c2816a839167e9e097087abb79acdccb90f8"
+    },
+    {
+      "path": "assets/model.mjs",
+      "status": 200,
+      "bytes": 1650,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "f922791acfc80b95b4094d5b7c8cc1337b999732afd0566687cf57556902b49e"
+    },
+    {
+      "path": "assets/style.css",
+      "status": 200,
+      "bytes": 22344,
+      "contentType": "text/css; charset=utf-8",
+      "sha256": "29a24a0677f96531ad63daf5a363e1034365467460715f5841834a33aab66b1b"
+    },
+    {
+      "path": "charts.html",
+      "status": 200,
+      "bytes": 1523969,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "e4a8ff28dc56c6c6a76c653660c499f20417cfe6372432f5b3f130a151c79133"
+    },
+    {
+      "path": "data/catalogue.json",
+      "status": 200,
+      "bytes": 974977,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "f56c99d6264e6ffac11704dbd12a9d506189e926559134be53a66e24383bdc68"
+    },
+    {
+      "path": "data/names-list.txt",
+      "status": 200,
+      "bytes": 67886,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "ac2e4c5b06ee5829b566c238e628715e79ecc884339b9f0efe05340f20d0affe"
+    },
+    {
+      "path": "data/quintessential-latin-allocation.json",
+      "status": 200,
+      "bytes": 1008558,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "4fb6bd07afb76175842c133fed87972d56e741bcfd36ef7457668fc637f332f7"
+    },
+    {
+      "path": "downloads.html",
+      "status": 200,
+      "bytes": 7510,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "7cde90112d3f46e01e984b21895e04fb36cd96899e6c585991ccd98bd5f6bace"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/FONTLOG.txt",
+      "status": 200,
+      "bytes": 42578,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/OFL.txt",
+      "status": 200,
+      "bytes": 4519,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Bold.otf",
+      "status": 200,
+      "bytes": 1518092,
+      "contentType": "font/otf",
+      "sha256": "8f0d8a1a9f03666953a461fd3d49865c4b8e92a193d5e974607b20d4b149fc07"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Bold.woff2",
+      "status": 200,
+      "bytes": 41188,
+      "contentType": "font/woff2",
+      "sha256": "4ecd77aa1975b2c0de4b1d146fd2d193f010ea26b74e09742590ab1c65b33c3b"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.otf",
+      "status": 200,
+      "bytes": 501196,
+      "contentType": "font/otf",
+      "sha256": "9086f503ad66c394340bb05cb3ca82df26a81d7dacdd86c45fd6ab83fab517ed"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.woff2",
+      "status": 200,
+      "bytes": 23344,
+      "contentType": "font/woff2",
+      "sha256": "6bab45574477aa3ebce13cce1b0b6db1d8f6b1bb8260de82135d1e1310f81029"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.ttf",
+      "status": 200,
+      "bytes": 148100,
+      "contentType": "font/ttf",
+      "sha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.woff2",
+      "status": 200,
+      "bytes": 22172,
+      "contentType": "font/woff2",
+      "sha256": "920ec874abd8e9709c71434f3043711c38ec069ba3380c8fa4e319336d660f9f"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Italic.otf",
+      "status": 200,
+      "bytes": 487500,
+      "contentType": "font/otf",
+      "sha256": "9f6f8ccde48b2986718d45ad9d7680f563145fff99e4192bb1196566d3a05d79"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Italic.woff2",
+      "status": 200,
+      "bytes": 20464,
+      "contentType": "font/woff2",
+      "sha256": "899bc7370d555296766e202c1830e803f7b3e5744f6a320f2a6043109f45c338"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Regular.otf",
+      "status": 200,
+      "bytes": 1395928,
+      "contentType": "font/otf",
+      "sha256": "7a282ab10725c4db51f41523d0d1d1fc4d76a6600ca4601df8d7aea87f825cf6"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Regular.woff2",
+      "status": 200,
+      "bytes": 34868,
+      "contentType": "font/woff2",
+      "sha256": "4b32046cb8d1fb11060ce12be666a155c840b3b3067d524d87729c80755c4667"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf",
+      "status": 200,
+      "bytes": 554064,
+      "contentType": "font/ttf",
+      "sha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/QuintessentialSerif-Variable.woff2",
+      "status": 200,
+      "bytes": 47628,
+      "contentType": "font/woff2",
+      "sha256": "b1ba879525b03d6298ff7026f0a4f490a690fad5466994cbee2992058a654369"
+    },
+    {
+      "path": "fonts/QuintessentialSerif/TRADEMARKS.txt",
+      "status": 200,
+      "bytes": 92,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+    },
+    {
+      "path": "fonts/STIXTwoText/FONTLOG.txt",
+      "status": 200,
+      "bytes": 42578,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204"
+    },
+    {
+      "path": "fonts/STIXTwoText/OFL.txt",
+      "status": 200,
+      "bytes": 4519,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+    },
+    {
+      "path": "fonts/STIXTwoText/STIXTwoText-Italic-VariableFont_wght.ttf",
+      "status": 200,
+      "bytes": 458124,
+      "contentType": "font/ttf",
+      "sha256": "efa7260126f8b13bd6dacb898f01f87d79e94fbb3ee5dc7e93ab2366a291fa84"
+    },
+    {
+      "path": "fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf",
+      "status": 200,
+      "bytes": 423048,
+      "contentType": "font/ttf",
+      "sha256": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072"
+    },
+    {
+      "path": "fonts/STIXTwoText/TRADEMARKS.txt",
+      "status": 200,
+      "bytes": 92,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 9707,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "3082e717242f8228fc139371c485076e76c01902b3af04d47737267b94145bce"
+    },
+    {
+      "path": "LICENSE.txt",
+      "status": 200,
+      "bytes": 1191,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "73076665099405171630fd8669318bb2372debe53afaf1ac3246399a1af5760a"
+    },
+    {
+      "path": "pdf/quintessential-latin-catalogue.pdf",
+      "status": 200,
+      "bytes": 147220,
+      "contentType": "application/pdf",
+      "sha256": "19de4d62ca56c44fc9402aa81dbb359072f6fa182c2747580b4c20225b8d1242"
+    },
+    {
+      "path": "pdf/quintessential-latin-extended-a.pdf",
+      "status": 200,
+      "bytes": 53632,
+      "contentType": "application/pdf",
+      "sha256": "80f606ab38d16e032ba49aed12ed113360dc2051f9988df21f42ea889a297e49"
+    },
+    {
+      "path": "pdf/quintessential-latin-extended-b.pdf",
+      "status": 200,
+      "bytes": 76287,
+      "contentType": "application/pdf",
+      "sha256": "58ca14c1ba39dedf5a8831dd75f2cd44c44aef65349e1cc06aadd40d397e5d93"
+    },
+    {
+      "path": "pdf/quintessential-latin-proposal.pdf",
+      "status": 200,
+      "bytes": 22282,
+      "contentType": "application/pdf",
+      "sha256": "98d995e5e36e1444b013cefe3e3ad363791ed0c4922d398c3e5083aa4b54fad1"
+    },
+    {
+      "path": "pdf/quintessential-latin.pdf",
+      "status": 200,
+      "bytes": 48248,
+      "contentType": "application/pdf",
+      "sha256": "30ef453f1a34d9eb85b59c74dc9650abdff5d27a8110feb287693787183f0f18"
+    },
+    {
+      "path": "proposal.html",
+      "status": 200,
+      "bytes": 14269,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "7f3b4ddbec719e7278970b94b223ec4e9406d0fe2ef8ee634d4bffbd1cc1ffc9"
+    },
+    {
+      "path": "specimens.html",
+      "status": 200,
+      "bytes": 558271,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "72f906b3c649469e853810531b3f0a9e109111e935e6ad4241ec1a13c2e8a2e8"
+    }
+  ]
+}
