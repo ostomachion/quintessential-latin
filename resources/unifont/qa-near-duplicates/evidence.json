@@ -1,0 +1,72 @@
+[
+  {
+    "path": ".tmp/unifont-near-audit/cross-family-01.png",
+    "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+    "clusterIds": [
+      "cross-01",
+      "cross-02",
+      "cross-03",
+      "cross-04",
+      "cross-05",
+      "cross-06",
+      "cross-07",
+      "cross-08",
+      "cross-09",
+      "cross-10",
+      "cross-11",
+      "cross-12"
+    ]
+  },
+  {
+    "path": ".tmp/unifont-near-audit/cross-family-02.png",
+    "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+    "clusterIds": [
+      "cross-13",
+      "cross-14",
+      "cross-15",
+      "cross-16",
+      "cross-17",
+      "cross-18",
+      "cross-19",
+      "cross-20",
+      "cross-21",
+      "cross-22",
+      "cross-23",
+      "cross-24"
+    ]
+  },
+  {
+    "path": ".tmp/unifont-near-audit/cross-family-03.png",
+    "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+    "clusterIds": [
+      "cross-25",
+      "cross-26",
+      "cross-27",
+      "cross-28",
+      "cross-29",
+      "cross-30",
+      "cross-31",
+      "cross-32",
+      "cross-33",
+      "cross-34",
+      "cross-35",
+      "cross-36"
+    ]
+  },
+  {
+    "path": ".tmp/unifont-near-audit/cross-family-04.png",
+    "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+    "clusterIds": [
+      "cross-37",
+      "cross-38",
+      "cross-39",
+      "cross-40",
+      "cross-41",
+      "cross-42",
+      "cross-43",
+      "cross-44",
+      "cross-45",
+      "cross-46"
+    ]
+  }
+]

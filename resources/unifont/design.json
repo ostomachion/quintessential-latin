@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "stage": "unextended",
+  "stage": "complete-repertoire",
   "upstreamVersion": "17.0.05",
   "height": 16,
   "defaultWidth": 8,
@@ -14,7 +14,10 @@
     "pairs.json",
     "stress.json",
     "unextended-branches.json",
-    "unextended-spines.json"
+    "unextended-spines.json",
+    "middle-branches.json",
+    "middle-shared-spines.json",
+    "double-middle-shared-spines.json"
   ],
   "pairGlyphIds": [
     "arm",
@@ -58,13 +61,13 @@
     "Native Latin terminal shapes govern each context: preserve exact donor details and do not add decorative bulbs, serifs or stroke thickening from the outline design.",
     "Use exact native a for spine with stem and exact native turned a for stem with spine. Shared spines combine turned-a upper connections with upright-a lower connections and a thin coordinated waist, balancing the body before adding extensions.",
     "The narrow central spine crossover is at row 9, as directed in the foundation feedback.",
-    "This batch completes forms without middle components. Further descendants require individual drawing and visual inspection."
+    "Every one of the 1216 allocated identities is drawn. Pair and quartet states preserve their base except for explicitly documented extension and attachment pixels."
   ],
-  "expectedDrawn": 148,
+  "expectedDrawn": 1216,
   "completeWithoutMiddle": 136,
   "expansionAuthorization": {
     "date": "2026-09-06",
-    "basis": "User reviewed the foundation, requested native simple terminals, smoother spine and double-bowl joins, narrow spine crossover one row higher, and instructed continuing with more glyphs. Follow-up explicitly requires the ordinary Unifont a for spine with stem and as the basis for other attached spine forms. Subsequent feedback requests a more symmetric shared body using both native a orientations and their stave connections.",
-    "scope": "Complete first group of 136 forms without middle components, retaining the 12 foundation stress forms."
+    "basis": "User approved the revised native a and turned-a spine language, then requested all remaining Unifont glyphs. Preserve the previously drawn 148 characters exactly.",
+    "scope": "Complete all 1216 characters across all 30 current families. Final aesthetic acceptance remains separate from construction and agent inspection."
   }
 }

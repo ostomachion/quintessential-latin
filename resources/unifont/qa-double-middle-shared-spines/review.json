@@ -1,0 +1,2386 @@
+{
+  "sourceSha256": "26baf03bd5bd57fb6749704cf03ee089b6ca3cf79575d279f578682f68203af7",
+  "reviewer": "foundation_stress",
+  "reviewStatus": "visually-inspected",
+  "glyphs": [
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-0",
+      "bitmapSha256": "973b0c322f865e151cd6d70961b1dbe6651f5e1c4aabb1d9c249a939371d4ea3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+      "bitmapSha256": "a40fcd678106abc518aeec4e37d4969414de6c3d7f77b845c806b59b9d7d02cb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+      "bitmapSha256": "2e68b67bbac03e32f25816241b5cf1260c982591cd21ff12285da8fbe9e6692f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-0-extended-middle-legs",
+      "bitmapSha256": "604c21ff105820c1a7d5acd8e901cb6a138c6a3f3440c12bbbba8a92d868cef7",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-2",
+      "bitmapSha256": "a317adcacd256160201b77f8763faaf4bee8d712cac340c85b7e854754995575",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+      "bitmapSha256": "084cb45669358a1cbc4c853cf4341b7359ca0e751cb645dbcf5c7749307c956f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+      "bitmapSha256": "19d581ee471f9ddc3f8da65434f28ff18a1430d0b242c14bf19327028f985c96",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-2-extended-middle-legs",
+      "bitmapSha256": "13cc7abad203f18ea7bd9bc388928b87d6330682e6bab1b2d793d655fb5b4c64",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-4",
+      "bitmapSha256": "b5d95311cdc6e3e2e55d7d69ed3486913e486a5c05b107c35ed6ca420ecc8e54",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+      "bitmapSha256": "880b5869d2a62733f9f62603efa1f773844eb2bd6ff7dacf0e03980b5f1cd707",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+      "bitmapSha256": "f5d6ce22322a07cccad7877c673f88591afbcec85f2b774d29473fe225223fcf",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-4-extended-middle-legs",
+      "bitmapSha256": "33bcbc43b85bcca993809fddd43b780ad9f01ce265fbed49278f9843926faa40",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-1",
+      "bitmapSha256": "436e8e96a9334238a244370f69bed248cf11c5ed9bbe5409b892437723ce767c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+      "bitmapSha256": "88ac38b862f42fa6a1feec4b854ad02053c4275cfdd85e05411c33b181df02e0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+      "bitmapSha256": "5c685125aa9973b16e69fbaa591885c1fc2418b3c4978196445b64a65c5d4130",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-1-extended-middle-legs",
+      "bitmapSha256": "572deecea30056f89e7767bcfa72f2b6ebe09a547db0ec5fba2ae7664dc2116b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-3",
+      "bitmapSha256": "4b261b6c314c4928659d6b7a16d1d82aa45ec3931e747880e55e3ef93276ee2b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+      "bitmapSha256": "f5cc42a10f64e455c6332b8fef72f70e7a77fc76b4dbe41f4b65ec763d737519",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+      "bitmapSha256": "63ff81a877ce811f897b2e381dc1c33dd7306c5f5a4242f6ef1a6ae07c744d58",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-3-extended-middle-legs",
+      "bitmapSha256": "cac2f065ecd4f8703cc60502a4977f8ec54d0c1bd4b0b3a3a786a4474aaffe99",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-5",
+      "bitmapSha256": "90b772cec52a10e51233789ca35529b57d4dff8b41f72a65c57ff6b1fe604826",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+      "bitmapSha256": "80afbea9007081d7067eae4ba7f8a5c163704d81d73fe5b2a95298c3bbe45fb0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+      "bitmapSha256": "89cdca80e692109330a5c3ef3d78534c7c8f58e7523cef0e3bdc2601116b0426",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-0-5-extended-middle-legs",
+      "bitmapSha256": "da96c35d284e1ce422ab099df9dc3ddca037c4f255bb7d94d1e6d9a9b2aaa685",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "proofSha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-0",
+      "bitmapSha256": "0607cf314fbac5a22c599164234127f53038c644c4a2811b9f14c06cfa662e85",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+      "bitmapSha256": "9b82bc01fb1fbdc5303fd5e4e9eafcebbe4154b0e1bfd0afe28c23cda5314473",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+      "bitmapSha256": "dbd4f0b29775791b57c31987831dca6529d6a7f2fab736a1318d75a0ddd17973",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-0-extended-middle-legs",
+      "bitmapSha256": "02223a89db5032f48a821cfc4ad0f3976a435df36b728f7a02684f7a4a6c025b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-2",
+      "bitmapSha256": "f5cea5002bbbb9e1f05efa6b8e394095620ac4cc747b33f439b5b686f950a5ac",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+      "bitmapSha256": "e86ab3df77cbadb51c1d0d956dc295d5bba128ce68c500f8343e764d70b67ba2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+      "bitmapSha256": "8744d92c153333b5ed1ec20d6326181452404505df37f7651a02f377535d0027",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-2-extended-middle-legs",
+      "bitmapSha256": "3314db92131748e5f7f5f7977d8da3e4b42e64a2e551a50cbda0f7f1159462e4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-4",
+      "bitmapSha256": "08c699ffebc7cd691cd3da62ebba6e57cd6b52039f7403242a0b1757b6e8bb7e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+      "bitmapSha256": "09ef4724c1b59f80fbc1e6ac74cc7bff7ac3bf77ec4267d79568eaed3f38129f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+      "bitmapSha256": "30e234e6d1d61cf4ff354ad7d7fa691bc1222b555154187d2940693c25624e70",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-4-extended-middle-legs",
+      "bitmapSha256": "4359a60864a861c411a1db100cd40b9297a5b32cc6e3673e0babd42b40d9bbc0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-1",
+      "bitmapSha256": "00f22712a1a89f5414dd7bc94da372b2817b93c41419bdb90ec03ff4e349a243",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+      "bitmapSha256": "044d270fcffcf1e71f950e1bd95ad78f1388d19ed8369fe64c59389b528c3984",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+      "bitmapSha256": "a2d8e2022dd25fee4630a9d21a3af93d007ca12d1fc9704f8f76d1eb98c6e47d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-1-extended-middle-legs",
+      "bitmapSha256": "ba952f690a915978b7b49b6d042abafdb3c176113ec307ca40f28b208581747f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-3",
+      "bitmapSha256": "47251e9228109e572a7be7cf7f0814acd281e53bb9a32619f6ead2e929a7215c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+      "bitmapSha256": "11626c93256d6882727c8a1132f85836753f5a790b1c6ce6cd9983611136a6a1",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+      "bitmapSha256": "b286e80260dec7e842ed0595d809ff58d6a0438e90472e469a6d4e88308e1ba7",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-3-extended-middle-legs",
+      "bitmapSha256": "15222773e5516f6ee92827b157896c0419ee66007142acb3b29047cdea410a9e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-5",
+      "bitmapSha256": "f98ae666b0629fc1e494e1988fa68f27a7b9dbca772dba63c46808fc80dbb7e5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+      "bitmapSha256": "342c2e0e6875a3b2f4df4d1ef9f3ce43695b17bdd8f58321461a9c9cc9c554f4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+      "bitmapSha256": "262a04e62ebfe49ef2404e48b270f259148c74250143ae9c36275d0a3810923a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-2-5-extended-middle-legs",
+      "bitmapSha256": "2ffd8cd633c441957649cb339d31c020f031e22cbbc22a04f654701277101840",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "proofSha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-0",
+      "bitmapSha256": "55dd890dadd6ad30bf26e622b0e90bc598d237d768520cdb4a78bcb8485d5a62",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+      "bitmapSha256": "9c6ac2383e516a85b16a798fc915aed820e56ae1b48d297503e32b4f17fd3444",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+      "bitmapSha256": "7988daff025e88b5a7a39a97b8d0c92845b0cd79c47444c0e249d40dae90697b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-0-extended-middle-legs",
+      "bitmapSha256": "211594ee709105f7508560f0d7b53ff43249778c6896bb928f06bd9baf9c81a5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-2",
+      "bitmapSha256": "859ea72b2a5ac1a515ba02955ff5cdaefad7e69b6be132c434760e3d8674dd32",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+      "bitmapSha256": "1ece849ad6539c7bd3f10caa57094a9ae96ef40beff21f1f83bd9fbfb12f54bd",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+      "bitmapSha256": "d8855ae04c9be260072fb8a6aa4fb62fedcc251edb90565dc126a4ef93a3f92c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-2-extended-middle-legs",
+      "bitmapSha256": "806fb1d663acde23219a2b3f6637cbf7e7f765cda51f30cebdcb0903191e3cec",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-4",
+      "bitmapSha256": "af79c6f50aa4682742f89e0bb99b3652930479793968e30d255e11423f1a538a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+      "bitmapSha256": "bf85815377a19dbda2ea363d0faef35d9728207d7cb4a92f626319f8a65aa144",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+      "bitmapSha256": "8a6743a8258e12eca2206745cc96923fe5dd1c172730b6f7251cd062ddeafd3f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-4-extended-middle-legs",
+      "bitmapSha256": "d9891810f32e26d8a92a3f99984f7f363efce0e1f743b55d68ac8c467f2502c7",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-1",
+      "bitmapSha256": "c7dfc5c1865c973db3fd3eb05c37300f7e604edf3923d456653e33dab111d6e1",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+      "bitmapSha256": "7766be3ca538db9a286a82ef87fb8c2bdab1c512c8c22bb85fa4e87f66e575a7",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+      "bitmapSha256": "c966e75880d13c064edb3dad51fa1ecdc14b8f7d27d82194593529c55370e026",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-1-extended-middle-legs",
+      "bitmapSha256": "191ef313812d33af6d8a420f7786791d102d77d91079fc8c77689d92b6c34834",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-3",
+      "bitmapSha256": "4ce05fc2dee6b18439122a956def750afadc95009f3217ade812be65db2bd81e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+      "bitmapSha256": "e51e957da247e21cac04c66fe3574cdf801d0930512fdd3d14b84831ac8bda21",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+      "bitmapSha256": "06263a519b4c6bb38da4665e8a5c36a0eaab2bd3ed50198c1d4d2ec07dfade65",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-3-extended-middle-legs",
+      "bitmapSha256": "cca860fbf35bde65e31db65939a16d10335aab1969c5f91d8dbe1c9f0cbcac22",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-5",
+      "bitmapSha256": "39a3d27b52cfd0768e1a6c2926fc37782da9f273ce0ed73231f0b8a8b883e007",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+      "bitmapSha256": "e4c16b5f268fefc7606aae8115ff95fdc947666ff1326a89c33b52e59cad0707",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+      "bitmapSha256": "7c8ed3adbf08302d4a5b8edba999b852ca41ae55b88758909932f97b1a39a3ce",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-4-5-extended-middle-legs",
+      "bitmapSha256": "e82f35f32b06547bb9e766dcc5e6bba2af7316def848cd029b7f361ff9a2506d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "proofSha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-0",
+      "bitmapSha256": "025b85d9a9712099c314d4830b30486ab2c009cb79d7afb9d3d3d853687ff92c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+      "bitmapSha256": "d786950f82eb6043e437208f308dc2f71ce8e5fbbd0ade738b3bdf5df6136b21",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+      "bitmapSha256": "7b1db7fc19e1cd42af8c3518aaac21a025eca0120d69680e0ae4f05433fef954",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-0-extended-middle-legs",
+      "bitmapSha256": "ea41ad8708cd50b9d98eda82327b2fd4ef3ebe7bddad9d06dbc140d2c1921593",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-2",
+      "bitmapSha256": "533479e68dc6bb86f85ec3a86afea10b4e666304ab61b39ab1c0a23365f05103",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+      "bitmapSha256": "e5ec62670832f8484508301252762c61395749d5093c226c5cf574f9b3fd497e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+      "bitmapSha256": "e085c4d29125c81946c247bb7bd9d2ea7e9ed05e221dab8370e784f42bca69bb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-2-extended-middle-legs",
+      "bitmapSha256": "5ebb56347d6ef20090f3d1942f8aafae932e6c1b3ee9d79ac067ad616842a5a2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-4",
+      "bitmapSha256": "962939775edda6d3422c0f22851bcce671a388813bb3182250f6a8e9e1344bef",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+      "bitmapSha256": "32940b2989d44177445bb0dc7f84f039474473a2cf7d70b352af4988f489d912",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+      "bitmapSha256": "4610a250fbc74485b2f56726f62be0f0413308d4a4b392900609bf38d95cca8b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-4-extended-middle-legs",
+      "bitmapSha256": "e8263b5878703f74c5dab962d755bd4986a673cc8e5da7af57ff680ce59a0c52",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-1",
+      "bitmapSha256": "4c89d1bba4ef3736f97f0019e5b179dd6dbe96f31c1a286758f915523293c470",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+      "bitmapSha256": "15bab9c4184096f6723046cf1b8cb80ca547c79c8ab3aede2ed0437f7d0fcd23",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+      "bitmapSha256": "fd60326f8c199219c3c71f4b3a80526cfb4a42827e035f1212cb784197a6ddd6",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-1-extended-middle-legs",
+      "bitmapSha256": "5aa08039d93032adc508d2c00fbdb51cd2b9ffe30063ecefe477add58caf0852",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-3",
+      "bitmapSha256": "aad956ca407002554e99c729024d77994a7f3759c4a113c8bab18a8be57ed81f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+      "bitmapSha256": "45b776523cf7f8ee42b4e2fb2754c46ffe9b30b02b3ac9afc2d0b285fb4109e4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+      "bitmapSha256": "59743fffafc681906ae5829b9ec60e6f94e433d00318458d3beb7e63b19226d2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-3-extended-middle-legs",
+      "bitmapSha256": "a551e54b5e81d1b1c9e29875be48e1e94531fd9392ef7e4df52b967f3f7af4db",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-5",
+      "bitmapSha256": "60b50a7edcf0d63e450b874bd4342b7adef9384a4e8fe1d9ad1398977dc38dc2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+      "bitmapSha256": "93b8bfac98fb01abc2625ba8514b637974277c64e0050ac77742935da221e75d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+      "bitmapSha256": "fb9c64e28fb53a687132f4dc86ddd3fee5bb6114ebff4039a980b8d47423276b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-1-5-extended-middle-legs",
+      "bitmapSha256": "fdf8a444818c40a98d9df92c6fae9d339e0dfd60c652efeb43e987b8005621d2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "proofSha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-0",
+      "bitmapSha256": "894149fcab43f62a6d7c7a453a3f62ddbbfeb6b13269a64e668105c8a9e7784b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+      "bitmapSha256": "ec84996420c802057f73509b3658b3e495b60318b495dea98a9336c8ae4ffb9b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+      "bitmapSha256": "379a819194208edcd3dc8a225ff17d9d8a1c355aa30d8fcd2817efb07add2849",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-0-extended-middle-legs",
+      "bitmapSha256": "e79b12c1ad4bda65d48620a46c4ddb9f1017f4f5cccef67822ecd463a88f97b9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-2",
+      "bitmapSha256": "740c54cd166628625acf040d2477ae596dad2c75776e472f041413e09587c91c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+      "bitmapSha256": "e85ccc0b4ea9d919a5344096b80509344e7d7ca33358b4effd0a498a5682bbc2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+      "bitmapSha256": "caf96a8a586933fe814eaabc437d8e0f8d0b40098f877ea2f8d866d95a875b2e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-2-extended-middle-legs",
+      "bitmapSha256": "5936893447a0e394e900fe58f63a5a5b03e046bd4aa6967eeac2e6fd8dffb5b5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-4",
+      "bitmapSha256": "a50d975ef0339dedcebb90549cb3a18e6f353bac4264a93b0a16e06105d98f7a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+      "bitmapSha256": "8301b041368d7df82c1bbe7e13f4b4947140eaab3077b05dd60c6f65c35733c0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+      "bitmapSha256": "a843339dfe6418cc947d11173f547ae3496c8375d6d9eade48c869573565b384",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-4-extended-middle-legs",
+      "bitmapSha256": "e1fd51f562ca25dd4b4c194b61b746ceacee4ff1a5ad660734721d9e735c5221",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-1",
+      "bitmapSha256": "baef243ce56255d7378ef78730418080e9c371d1dde827baf0e1a38ae996199b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+      "bitmapSha256": "237f30e92a700aceb2b479122ec7115b3ee1eeef94cba988f75ff64be01b166e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+      "bitmapSha256": "db1b11df227c148746bf590b6277f85070d2b37d0efd69032056f690e9659835",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-1-extended-middle-legs",
+      "bitmapSha256": "91e3437ba8555535669aa0256d3156cd2816554925f0c9dfa6c7ef3eae16d038",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-3",
+      "bitmapSha256": "7a8a6c2a6628ed0846669952f9d7d0db0e64e6f2c3afe71ea78cca4c4ab3799c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+      "bitmapSha256": "f5a3fe9d1f8e49d0443ab40fb2c2be9b3bbc9e9f35d44a452bdab414009e43b0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+      "bitmapSha256": "cd5b1faacb6c514e4edb9a3622f13720d107a519d8d09c5a32b78b801c2483d2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-3-extended-middle-legs",
+      "bitmapSha256": "052093a5becc0e3eac9c07f1d6caa7959eb725d3e6b0ed61bdd06279f738aa66",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-5",
+      "bitmapSha256": "3bd5debfba753b1927212c4e819c061985e5017a172d1b825cc3502ad3af7d09",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+      "bitmapSha256": "15ca43131a3d6b2fd7906f6fc0a5f26c1b84a41f755d3be78877fd7681033a5b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+      "bitmapSha256": "3c3b6cad66c50e412ebea522a7b89b4df6c30f76a3666cf7c4afed8aca44fe3d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-3-5-extended-middle-legs",
+      "bitmapSha256": "2f4e5c938c0c76f1dd32bfca83f90d4471f5f385bc060063f17f9ea8cdec3080",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "proofSha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-0",
+      "bitmapSha256": "cd6339dccccabe8cc1a5a6b968c0590d1888d3757cda7537541064533db991ad",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+      "bitmapSha256": "360168b271ca3ff062b73f9509d00dbf6bc7d3a76b6a8566dcdc5fbf1b4d0a78",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+      "bitmapSha256": "5b0953e733482ddd118efa2519c28c6b720adc2ffbab0664e01c5fe87ac4d3c9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-0-extended-middle-legs",
+      "bitmapSha256": "266c607e68a6e765d6d964533966404a00d853ebbe8461920676fee34224ef82",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-2",
+      "bitmapSha256": "c34102982e19080e9c47850966b6f521ad5f99a5dc26bee0e29d158511672488",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+      "bitmapSha256": "df9e5465bc66f35b58afc3e12fcaee354d576c508e0a271c693d573f5f59f3c9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+      "bitmapSha256": "505230a371374341612ae6b4591b80cce2abe64e10ed3abb82a172d38811f1ab",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-2-extended-middle-legs",
+      "bitmapSha256": "58f1554d7a6012b1a62b0f3444658dfabdad7d91ce86b642fa9e2a089fe3dc4f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-4",
+      "bitmapSha256": "3066810a23926034699b4a72323e9f85ce40a1daceff1199000eac519d2733bd",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+      "bitmapSha256": "33e3577352bf20f0fedf149d1b08db220f82a1e1fd3ca37b6a90e19e4234a71b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+      "bitmapSha256": "0126d624ad7d8bdf2cc50fbbcafdf60e4b42eddf74e69e0e60668f26303a7e90",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-4-extended-middle-legs",
+      "bitmapSha256": "1997c7b6396a801b919595bb2c9c9f93e238b2533f9f7e6ff289657e5dc258dd",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-1",
+      "bitmapSha256": "dda04ae35f02ad99d2712f139f7a2a8d81d41dd07a096fcc5e897fbab025142f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+      "bitmapSha256": "65c08ecaff1d13c79608308f082b0e07ad6ac0880e8bce0b7a5fbd2dd54a89ab",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+      "bitmapSha256": "1d1fae00370823bfd6c220fa09683df9f2791edb62ace2b7d01ac0171104fd0c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-1-extended-middle-legs",
+      "bitmapSha256": "8148a4f003dab15df0467e56d6bc022819aeeb41b4663b3e75316e831715bd1e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-3",
+      "bitmapSha256": "e93ba6c6c954a77cabf4816ce10901325e4b7deb8d061de72c41fbc00bdde619",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+      "bitmapSha256": "a56ad715d22576da958398428919dc8d2ffe521bceee826a0099ea7f6187d5e3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+      "bitmapSha256": "5622f8fcf3b14759027157bf32d356eefb97d9375a40d77a4ffe9fe35670dde5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-3-extended-middle-legs",
+      "bitmapSha256": "d1ae7d9ba3a53078bce0c217810b23ee1d32d77923b848cbbcf0414cbdaa573b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-5",
+      "bitmapSha256": "63018342dfba67e31e39543c8156ec87cd6be584a714c25bd7a803bd0a675b66",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+      "bitmapSha256": "80d3e808a17613093c9c6309414af329365b02d1c82fffe752dc4c873dfd8966",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+      "bitmapSha256": "86b1509d5c2358979502281deb2fe0a74815e5ad63fee8dee702d37a7b3a7551",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "left-double-arched-opposed-bowls-5-5-extended-middle-legs",
+      "bitmapSha256": "fec357c9d70889b295825e4ff9de4e1695d668c3ac4c4182bf7b6f3d6f0a1248",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "proofSha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-0",
+      "bitmapSha256": "24a68906d118f5dea31f7e1f9857cbc8e5bb0a17f677702a9ea01ac5539ed276",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+      "bitmapSha256": "a2e8c780f49baec19f6de5700c856fe8b1d2a0fb4a140dcac7417aa7578acd4a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+      "bitmapSha256": "4b2017e703d55878f799b44a059589c3365e3a8c05a84d66418e987fbbea1fc2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-0-extended-middle-legs",
+      "bitmapSha256": "cd41155327bff6062b7370be9197bd73ece9153902f5c8de9e0bfeaac079d26b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-2",
+      "bitmapSha256": "30322cdd70668557fd38e4ccdf26ca70051b98f488a5107cc7d69cffb14142ac",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+      "bitmapSha256": "8fede54fccc8f88ce8df031c6ec01b9482cb05bb0fbbf625454991ce9a737390",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+      "bitmapSha256": "e05872993ef96462c41c97ae2fab2506c558bf137d532cb6ef25472992d7cc14",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-2-extended-middle-legs",
+      "bitmapSha256": "48ff37194e91f75db303e4b1048d4b07d5323528ca5e19e95f67a750688c36f9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-4",
+      "bitmapSha256": "423b825ef7095377d49023657a6254f186325ea9a6d2b1c312fd228bc8313b27",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+      "bitmapSha256": "1a7d7d5030fe5e37e12cf50155f8f27e5cd6ba1505faf203b41f29f7660b7baf",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+      "bitmapSha256": "d35b7af0ca004db326560a25db7d77c7220e383263bae5033bae136279c2226e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-4-extended-middle-legs",
+      "bitmapSha256": "e16e16c426ae3f5840446e98e141f8e7cca3243c4aab9775e2468e26132318c6",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-1",
+      "bitmapSha256": "15176f0c648dbe41507ca1737968c47fd0701fb79baa0ebfaf73c05e4e306654",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+      "bitmapSha256": "a4e8b509de86266b17c971a303010d8065ebec66b31bcfea983e9f2614c193ce",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+      "bitmapSha256": "ce171b0c58f4f9bd17c9b15bb196663f2ebba2ca06e3198121a02f7deb0ad1ce",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-1-extended-middle-legs",
+      "bitmapSha256": "3b71be83ae9359726bca029c00e8b77b76a077a00c7b2fa1912de897e9bbdfce",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-3",
+      "bitmapSha256": "99a5ea6df08e513a8e31eeca2f3abbabd71e2b1795403ab752b64bbc4b9e7d8d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+      "bitmapSha256": "ac491c006c22d1894abd146d37c9f30664cc38d9fb8af7ee1cc956932ec03bac",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+      "bitmapSha256": "a78e5272627b0f1f9fb0402134c9ad5d3d96af795e9078c872ae909369cc2871",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-3-extended-middle-legs",
+      "bitmapSha256": "9177faedcb9e6c373bf846445e45012e3507165b99f6df557cfdf3d01d6f9b44",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-5",
+      "bitmapSha256": "37457db953605eb28a05104f697f365d2d2973a02adb1dd7be1d4d75a1fadd1b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+      "bitmapSha256": "5aeab78ee75d0722130bd1e8fa3ffaec49c208ab9726e569707443a435768776",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+      "bitmapSha256": "d5272c4f98e9c6e96ed5aa63a19af88871bcad7174967136325f230a48955ed1",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-0-5-extended-middle-legs",
+      "bitmapSha256": "9d5d0ef55c8c7795f31b2f74b7e4e9614e899217c6551b7bc331b01fc0f84d2f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "proofSha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-0",
+      "bitmapSha256": "ee17a9a463ea8b6b104b5cc0eb4ab091a6a33e61cdbfc0ec55a03b0646209c6d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+      "bitmapSha256": "62d294642eb226abe64cdd06ea549d94a5978347ad76a5b079b9984ec9f6a694",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+      "bitmapSha256": "237a042e53ef15ded5747b21ebb25c9bfca37fce16b73bdfcd4a8905c681081d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-0-extended-middle-legs",
+      "bitmapSha256": "ee6a58024f3781fcd7514f10cee1bd4d8fb8114c1972a686e5d6cfa288a4ba95",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-2",
+      "bitmapSha256": "96c3a051798ebd3d7ff0a345d46e5df33aeda1572348673ec4caa8117d73980d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+      "bitmapSha256": "62bbf331de0c42427a2ec740cf02f45e18df6b60b591e291af3f3960155f0410",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+      "bitmapSha256": "4f54bc14c1dac252cb688a4846ffff3866a9b31815954771bd1470d8e9f46ca3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-2-extended-middle-legs",
+      "bitmapSha256": "56153e4237c702351bfbf64cd5e9eb917cd450f8816abe019c49e7e3722c4a14",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-4",
+      "bitmapSha256": "5f3e02af3dcd3cfaf726a8fd90848bc9caf65c2e540922db2ebcef4311258679",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+      "bitmapSha256": "7866a3404f68fb43c6c08dadade85257b98097cfbe3598958801fd2ea25753b4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+      "bitmapSha256": "6115691e17cd77028322d9f990a9b9b9c6c600d50a85b7d0e506562618582a26",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-4-extended-middle-legs",
+      "bitmapSha256": "9b6d9719f5228d99f21b584ca0bb188a9ba592ffbd0433b9824be5c2b3d5ba06",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-1",
+      "bitmapSha256": "b798320653429fac6083ea81293d98f3aa9a08f382245cfd4a104fa02d5d05db",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+      "bitmapSha256": "b22dafe79cfb2527976bba07677a340191525883f47ca2e51b3a6ac59a85b558",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+      "bitmapSha256": "de7fa4e289e5a9b93a6c0a65b951316a40e05ace5d0743e61427781b458a780a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-1-extended-middle-legs",
+      "bitmapSha256": "35e7c44ba8b47e0388daadbda74edc13fb8487eaf0008d6e75baa22a58f84087",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-3",
+      "bitmapSha256": "d7c71874dc3442193d4fe2ffca19d9d04791f91a23837a74a7353a08d220ea7c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+      "bitmapSha256": "8a4a66749043c5acf8291186cc263e7be466709fe16929ca5bfabc00ed822b4a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+      "bitmapSha256": "afe8d3b660b8ab030adb1cc8ee8ca66986c062b514d26152709807a636c95a71",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-3-extended-middle-legs",
+      "bitmapSha256": "8d78cb28677fa8a6f7febfd2f8abe69edf04a2eb30311c05184c27330e27dffb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-5",
+      "bitmapSha256": "e63a4ae5c8924fb1e18d566ee171957b1088f9ded94ccefb84a47ec3c7636ae4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+      "bitmapSha256": "774ddbff8f20b6cb23333e0f29df158f280033e726d0ec25a1f461d4763f0f8a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+      "bitmapSha256": "63f1512c34b55b8c4127665dea284c86e56ab366c9ae03f87ba179ee6e23bafb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-2-5-extended-middle-legs",
+      "bitmapSha256": "6c98f94f0aadf6877df9d74c1a3d81bb572a7f63538c3296827aa849edc683d3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "proofSha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-0",
+      "bitmapSha256": "5a09f2f048a02bf3b6ca792a4fbfca8c304fe01d1fc9de91447517bb3ef97fc3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+      "bitmapSha256": "2ff2114a092f17dc637053d39a99c253b09365f97ff5ec3522e67644448b42ea",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+      "bitmapSha256": "90910fe4b25ecf6eedcc3f7d4d506b985ef118663884afe4774ce93a876f291d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-0-extended-middle-legs",
+      "bitmapSha256": "e21ba9dac83a4e08e812772a97871c51b04a534b99ec4d625e20d82ee36ac677",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-2",
+      "bitmapSha256": "b37545a6491058241f29a629cc0c7664fc87cd71d8e25944a462eac97ec4a198",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+      "bitmapSha256": "03b92c0b069be7a4e2acbb3de70a7bc65478d031936511b8f110543df201ad7a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+      "bitmapSha256": "20de737a950546c5f31d6ced49e13534ba75588ac14b53c3f8c48b594b8e8fc0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-2-extended-middle-legs",
+      "bitmapSha256": "1988ec26d4f94eeea6a76a995d3df4c04ed7b6f581971dd4ecb1fc818c723cab",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-4",
+      "bitmapSha256": "87b88f8e67d35d8876a834c5e1f68dc5e3f2eb7b130fdeaf1f4eef95bb129029",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+      "bitmapSha256": "e8ec28613d581c95be7d4af0774b60b150126cff761e991514ec24544cb43b7d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+      "bitmapSha256": "46a5a9cf07e5739b3bbf5dedda0c2f2e2bd7f8e8ab672f32a4dee413cb468363",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-4-extended-middle-legs",
+      "bitmapSha256": "74cb9a838b12f2f83101264f3e06ba3952fa4564d47fbd9a23c9d42d3f97567b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-1",
+      "bitmapSha256": "43b3a8cfbe2dfc635b499d7f125c5e8a6ba4561870f48fe32526acbd9d694a1f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+      "bitmapSha256": "3b5f1a9ce2f745644a2412acf8d4ac21ee10103ef9000b2e6bdd82d9a072017b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+      "bitmapSha256": "d07760265bead273247148194d920733290afcef3b8a5bf61de98d7e423251e5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-1-extended-middle-legs",
+      "bitmapSha256": "f11d754532943eb6ea46ebabd54b733d4a5b9090af94d0450f04d12e96fc8efb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-3",
+      "bitmapSha256": "b20c1803dc5380291efe542f0836d4ca3bbe4912a70c256658dd1fbeb70b0fcd",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+      "bitmapSha256": "e3b58e6eecce32cf079a817f0c73f246e8c2b250a907b3c5af7601c11dd0676b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+      "bitmapSha256": "39ef8ae78ffe6cf3275c2ebd211a9faaf2596e4166f0c0e7018e68b4532c1ff8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-3-extended-middle-legs",
+      "bitmapSha256": "03c9c1f77f9e8a36f8f08c45bbb034aec30e2bfbdae4210a4679142c16e44ffc",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-5",
+      "bitmapSha256": "2f01ce11b272a2d60863a8bed5bc14b4a65f474f96e34fd8c1db81d52601fcef",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+      "bitmapSha256": "7d4aa5d44a0d22b41939267f886ead13c629d141c3944391cd41bb1c47a43110",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+      "bitmapSha256": "c3c65558179d984206b5a04745820db252107b05bd86943d08cf3224073a06ec",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-4-5-extended-middle-legs",
+      "bitmapSha256": "86d3999dddef094be1f024414053fbb09a01a541b3cd6dd6defd5307697f0cea",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "proofSha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-0",
+      "bitmapSha256": "5cbea01427cf93ecebdc441a83bcb85a21b80a12b12a28bc88993c18a52c87bb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+      "bitmapSha256": "c940433df109a3d85189ccd6f8e47c71a1b98803825040487983b067935a720d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+      "bitmapSha256": "8f0e6375e646c97f04802144317534a4473e68e2cc3037228efce2fde9d02c8e",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-0-extended-middle-legs",
+      "bitmapSha256": "f9dec988c2f15e1ad3d7055fff2d830e18b0f9f110e055d0ac8c8bd2032f8634",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-2",
+      "bitmapSha256": "7f8ca008874343e8bf2472c36ef20f386f32ba5556ae927442f0bb57d510bb0d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+      "bitmapSha256": "533b0f3ee27c22531a55cdbdf248d5c5ebd22f694fc650fbd7ee003691114c63",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+      "bitmapSha256": "38b715e59084f199fd79dc3eef470475cb242d94a1df7e804384f4cd5177f0b8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-2-extended-middle-legs",
+      "bitmapSha256": "a26c3e5aeaa8232c2e1c5f99aabcef75c2d6f0ffa01ce7e2c873de2740f3100d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-4",
+      "bitmapSha256": "2b595003bfa6d794460ec02863c80b507d4d0f1e4205e78e6d034ba472181010",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+      "bitmapSha256": "a5392cc5400ecfc89376d484f2ea816931b34d68e2799e0e8745590ef19da6c8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+      "bitmapSha256": "b6bbdbe7337cde9a7ce18624b141e8831dd766414293316d043d00c5e497fcbb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-4-extended-middle-legs",
+      "bitmapSha256": "6e0a7d3646d1a2c3e6bd7979c48b250f63679030376d9a703ab417f12dc499a3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-1",
+      "bitmapSha256": "1a53e168748ff89f09d4c0decf8541180783ee4b7b2a9c97434e8672533fa4cb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+      "bitmapSha256": "7bd2e6b97141d360e56f1815a737323af75c9776f2216dfa0cca03c8e79d20c6",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+      "bitmapSha256": "135783219b99a0f613fa3b6dd71d01ca996cc89e4ad5d3a1b674a7f2342a76bc",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-1-extended-middle-legs",
+      "bitmapSha256": "4c983def9ad320cd22c07fa5d4e072565c072620b4cfdb234dab8c9a62356bce",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-3",
+      "bitmapSha256": "5e5f38ae81dd245d76767113903ccd6f6edf5b6cf70f018a75ffeded297b3232",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+      "bitmapSha256": "7719a2a27b4d2953226910b5815d98024b4a1ed648a92ece90e68b02aa36497d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+      "bitmapSha256": "e1270fbbfcbb8752918c4f32677aa6873315090825044097e01537dc43e553a0",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-3-extended-middle-legs",
+      "bitmapSha256": "a27e58a18528bdbbfcecbb2d6a9ce1bcfa909c5983c8597f42a90ba5c02ec2a3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-5",
+      "bitmapSha256": "2aea3670e49e0504ec8e464b19bb192b0ef46af4b64bd6d0f35edd8943f604d9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+      "bitmapSha256": "b581637e06f62c811f067ba218016b33927dab78d819adcfbbcad74d9a901cec",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+      "bitmapSha256": "eb9ae2eae361f201c98b8d31fadabf13f15b53c3e2de6bd37e65228985c1cbe1",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-1-5-extended-middle-legs",
+      "bitmapSha256": "5f32f48bdae0d337f461dc12dff1a70fc688ffdd47c09f5157e66832d687a8e3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "proofSha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-0",
+      "bitmapSha256": "b6dcc7c3e349df81ed5103266f2791c9d854bab2cd3ac2e5382e915075f35ad6",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+      "bitmapSha256": "ea49a56e98c8a42e0a23429192561b7912333acaee617cfde17bd0243b6d83eb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+      "bitmapSha256": "649a7bacf778870f5fca7a29d3e67ccc5377e2382c422a24292429b1a2af4ff8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-0-extended-middle-legs",
+      "bitmapSha256": "c18236f373e9f027b1fe1f7e436d67ea6318e118f4a9cfb721d594b5c31de283",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-2",
+      "bitmapSha256": "3e52070282b6c6ceb31ff6ff9388633b034964bed8b7475ff020c35ac657d3b3",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+      "bitmapSha256": "0ada101e61d917b725f65bbc212cda63ab9ee1f593009af4cd95189cab88959a",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+      "bitmapSha256": "70a33e31cc685b2c534219ca6de25ec5f37ed37aaad306114b022c35f75ab106",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-2-extended-middle-legs",
+      "bitmapSha256": "6c8d01419cab0634cf225a8dc8a58a983bf0bface95b82213bbc19c2fd5f2b54",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-4",
+      "bitmapSha256": "eca972057aef26ce0ba53ab67c80951ba9da66498ef63d05f9c0e74027cd27ac",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+      "bitmapSha256": "3c88a88a2ad40e97f0447f716293beb68f3b0b7e51e3474f942ec383eeaab14b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+      "bitmapSha256": "7ef0dc335b4be4b6762c09ae21f01d83c234b12df0b14a2a94d17bd3081892f8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-4-extended-middle-legs",
+      "bitmapSha256": "b21897d76a091eea9075582fc12fe64c386b0c02b68815498fae14eebed61034",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-1",
+      "bitmapSha256": "d32bcc6d57a5306518c697dc08f4536ba11acdd7584a02005ef113ffba89b04b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+      "bitmapSha256": "c9043e3d09cf27722ca1d27ad9a9762fa5092441beef3211674c991d0b688413",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+      "bitmapSha256": "89fd926ab6179b78bef6e18bba3edc94f83d5ec7d4d2a9114f7f3e898a2087e8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-1-extended-middle-legs",
+      "bitmapSha256": "76ab916a2bb2527b0cb6db45d341d091836264b916783acdaaccda2182f803cf",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-3",
+      "bitmapSha256": "15070ed193060bddbfd7ebba547f098dd4b6982886eb5082ae99abe50ed73b0d",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+      "bitmapSha256": "06dc860c4ddfa736b6b96e80091ef9530c7f20f54f12a72e8aa0b70f010c52db",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+      "bitmapSha256": "281b8ca6bdfc7d8356fcc0c80a523970fe0be7f13dc4e24c8af0776b6d24e2fb",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-3-extended-middle-legs",
+      "bitmapSha256": "6c7e7df5cb9749b2ec660526a2cf94ba316b5e5cdf1f13189cea349cf1dd8c73",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-5",
+      "bitmapSha256": "8909f791d02c3c4097adc475a47e1108f381e4e6acb44c8011cd9132145fdc93",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+      "bitmapSha256": "ea17aee8fcda835f42e773a955d314de763cc5ca77e93783c00bd84698a34e21",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+      "bitmapSha256": "2ecd73c33bf4c0f1e9992e6aa4b42392eb6ecd8e2dd902d4c055f0d63e5620f2",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-3-5-extended-middle-legs",
+      "bitmapSha256": "6f52daeda245d00ab513d63bb7197302282ee61f3f1906fa54edf33ef993e8f8",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "proofSha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-0",
+      "bitmapSha256": "7ae267d0d0e4142166dff0d8f9572fa64c3c3a04bd8f92b770c7a21992ae4d94",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+      "bitmapSha256": "d8dbe9ba974aaeef2a652f530dbe02e3b7edaa3426b7879161cc19eb39c5a5cc",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+      "bitmapSha256": "44ed36d1f01219b687f35cb18edcc2071fa5e403d60a4cba40eea4556b82f1ba",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-0-extended-middle-legs",
+      "bitmapSha256": "1860a0e9ebc57593b6500f3f608eb5f60a064bda1c40242ae61e075907d93e35",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-2",
+      "bitmapSha256": "d1de6b19eac47b6ccdd47e8b22a52e60d640fa54de04a26a022b6f1c546188e9",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+      "bitmapSha256": "20990f136af0c91083a45b23519391c27c1061356ecb59428d8d9d71f47f9674",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+      "bitmapSha256": "c82ddc60b92913f25ae946abb141ab24832d128385e78e1f94d8a3ea13f889ea",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-2-extended-middle-legs",
+      "bitmapSha256": "bd58d4488ec5b30892b14615ad8fc252ea870d17be9b9c20ba58a7521e2e4536",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-4",
+      "bitmapSha256": "9035f753792c53bfd014e3394ef7bbb413571aa1b2ac86ebe4f4a74119fcf520",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+      "bitmapSha256": "eb87a56477ca1a611ee5aa87682378f69c981554ddf2d75bb310f8c89ea60139",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+      "bitmapSha256": "56942b1624e4119a2e847ca8fe12a91579dc001c05f1bfbd0ec7f68697cc4484",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-4-extended-middle-legs",
+      "bitmapSha256": "106cc3046f40f8efec07d6196386d4418307efc5a24d49b077e83e40aaf2c4d5",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-1",
+      "bitmapSha256": "515282e64f2d77900d06448ff72e8b2fc4429534babba3ca3ad061f5a0d9206b",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+      "bitmapSha256": "4455f67bda72e9ef207f1d13e75d2e108a578eb0b9190c552d7f0a4701734146",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+      "bitmapSha256": "a389d74aae6dc0459d63d1bbf9f8c2efa3c70fc1442907191fbbd913889e346c",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-1-extended-middle-legs",
+      "bitmapSha256": "7e88f6487fb1a83ba65914de7791b85455f70635c2656cc9e4274d6d4ab1eda4",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-3",
+      "bitmapSha256": "6f77e8858230e5424bdb0741cd37e688f9f63e17fbe0aa5b3233426b3f42d8b6",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+      "bitmapSha256": "4a2cbf444b24bc51a5268bd28be322664ac94b0f681ebda0ea67994dd5b99041",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+      "bitmapSha256": "cde746129cd44f42269e2bfd12c35d4e5c13723492214b91b52073951696081f",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-3-extended-middle-legs",
+      "bitmapSha256": "b6a6b99d90103bea2f5d486fc8bca43bc7fb8eedf45dcb0f0ac0b73af62c9b48",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-5",
+      "bitmapSha256": "704c226ef84a79a337cdf52d410bbd5858e669b52ac3bdacae8938b544f5d402",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+      "bitmapSha256": "0731d7a194f9611c080fbc7d33cb3cd643e33863c1552a857a03f2f65ecef406",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+      "bitmapSha256": "55007da88e4c83011c071cd72638f5a17277d6c1e0bea4ea7df980bbd91b6143",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    },
+    {
+      "glyphId": "right-double-arched-opposed-bowls-5-5-extended-middle-legs",
+      "bitmapSha256": "3e334ad023ed01f479caead30f1b35f1d957ca66a24f4bd09eb0615366ce0112",
+      "proofPath": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "proofSha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "status": "visually-inspected"
+    }
+  ],
+  "proofs": [
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-01.png",
+      "sha256": "b587df8c0d0d044d330194fa6fc8748d3da6e660d9f01ca7fee5719785b519b6",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-0-0",
+        "left-double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-0-2",
+        "left-double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-0-4",
+        "left-double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-0-1",
+        "left-double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-0-3",
+        "left-double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-0-5",
+        "left-double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-02.png",
+      "sha256": "e837b25aa9c18609d34c2ac25d68c669de25bad3b1825d6bb0b8f78f2072cb82",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-2-0",
+        "left-double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-2-2",
+        "left-double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-2-4",
+        "left-double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-2-1",
+        "left-double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-2-3",
+        "left-double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-2-5",
+        "left-double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-2-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-03.png",
+      "sha256": "6764d8fee335c961f50af971c50e15557243a3feb6f28949ab152b15d7af0087",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-4-0",
+        "left-double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-4-2",
+        "left-double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-4-4",
+        "left-double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-4-1",
+        "left-double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-4-3",
+        "left-double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-4-5",
+        "left-double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-4-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-04.png",
+      "sha256": "a0f574697e8bfb77b7c05231ac55cde0b85d1b071a405b8897e0e9f3e665eef6",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-1-0",
+        "left-double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-1-2",
+        "left-double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-1-4",
+        "left-double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-1-1",
+        "left-double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-1-3",
+        "left-double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-1-5",
+        "left-double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-1-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-05.png",
+      "sha256": "a45f2f2e0de5a941e8c71de44343cda7a8824b0fc2f4f02422940f157e936d34",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-3-0",
+        "left-double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-3-2",
+        "left-double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-3-4",
+        "left-double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-3-1",
+        "left-double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-3-3",
+        "left-double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-3-5",
+        "left-double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-3-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-06.png",
+      "sha256": "cdcbedb0096d7c164807ea92c854ce705a0dd05a0dd08b5787ea7c07fb227202",
+      "glyphIds": [
+        "left-double-arched-opposed-bowls-5-0",
+        "left-double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-0-extended-middle-legs",
+        "left-double-arched-opposed-bowls-5-2",
+        "left-double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-2-extended-middle-legs",
+        "left-double-arched-opposed-bowls-5-4",
+        "left-double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-4-extended-middle-legs",
+        "left-double-arched-opposed-bowls-5-1",
+        "left-double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-1-extended-middle-legs",
+        "left-double-arched-opposed-bowls-5-3",
+        "left-double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-3-extended-middle-legs",
+        "left-double-arched-opposed-bowls-5-5",
+        "left-double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+        "left-double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-5-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-07.png",
+      "sha256": "f32364b5edabb47b858c4b0d6ad949da87c3b90cecffe318e346652ef669a7f9",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-0-0",
+        "right-double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-0-2",
+        "right-double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-0-4",
+        "right-double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-0-1",
+        "right-double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-0-3",
+        "right-double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-0-5",
+        "right-double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-0-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-08.png",
+      "sha256": "85c161eb6d236dab00abf6fe69b19dc3c4c0c1da2efac5c56feaab97e7b44b24",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-2-0",
+        "right-double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-2-2",
+        "right-double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-2-4",
+        "right-double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-2-1",
+        "right-double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-2-3",
+        "right-double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-2-5",
+        "right-double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-2-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-09.png",
+      "sha256": "a0230f06002e0d96a222f6792c32b8b1cab42b94416d66ee420f76f724b165c4",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-4-0",
+        "right-double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-4-2",
+        "right-double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-4-4",
+        "right-double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-4-1",
+        "right-double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-4-3",
+        "right-double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-4-5",
+        "right-double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-4-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-10.png",
+      "sha256": "222e7aae8bf2f034a6cf1b58151f8d44621b041f33696559a6525d0e13ae7dc6",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-1-0",
+        "right-double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-1-2",
+        "right-double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-1-4",
+        "right-double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-1-1",
+        "right-double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-1-3",
+        "right-double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-1-5",
+        "right-double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-1-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-11.png",
+      "sha256": "82f1daaf377fa3667841f80f952ebe1e5f3b1125ef6e1dae6fd01995f4a3b2a3",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-3-0",
+        "right-double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-3-2",
+        "right-double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-3-4",
+        "right-double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-3-1",
+        "right-double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-3-3",
+        "right-double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-3-5",
+        "right-double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-3-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": ".tmp\\double-middle-shared-spines\\page-12.png",
+      "sha256": "bfa6b81c8676d09ba369143e009cea34569aed6c796bdffb93aadabb04022f1e",
+      "glyphIds": [
+        "right-double-arched-opposed-bowls-5-0",
+        "right-double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-0-extended-middle-legs",
+        "right-double-arched-opposed-bowls-5-2",
+        "right-double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-2-extended-middle-legs",
+        "right-double-arched-opposed-bowls-5-4",
+        "right-double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-4-extended-middle-legs",
+        "right-double-arched-opposed-bowls-5-1",
+        "right-double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-1-extended-middle-legs",
+        "right-double-arched-opposed-bowls-5-3",
+        "right-double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-3-extended-middle-legs",
+        "right-double-arched-opposed-bowls-5-5",
+        "right-double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+        "right-double-arched-opposed-bowls-5-5-extended-middle-legs"
+      ]
+    }
+  ],
+  "reviewFindings": "All 288 glyphs inspected in 12 complete quartet sheets at native size, repeated native size, 2x and gridded 8x, with current STIX references. Arch/hip direction, four stave separation, native terminals, all independent extensions, and both shared-spine counters are intact. Root independently inspected the 48 natural compact-hook contacts through the annotated contact examples and accepted this engineering context: hooked and straight endings remain distinct, and the additional terminal counter remains separate from the two spine counters. User final aesthetic acceptance is pending."
+}

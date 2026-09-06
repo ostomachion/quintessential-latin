@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "foundation_donors",
+  "method": "Actual visual inspection of all 46 representative pairs on four comparison sheets at 1x, 2x and clear8x, including exact signed-difference overlay. Other 1414 cross-family pairs inherit a mechanical cluster mapping plus their individual family glyph inspection; no individual pair-view claim is made for them.",
+  "records": [
+    {
+      "clusterId": "cross-01",
+      "glyphIds": [
+        "arch",
+        "arch-right-descender"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-02",
+      "glyphIds": [
+        "arched-bowl",
+        "double-arch"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-03",
+      "glyphIds": [
+        "arched-bowl",
+        "arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-04",
+      "glyphIds": [
+        "arched-bowl",
+        "arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-05",
+      "glyphIds": [
+        "turned-arched-bowl",
+        "turned-double-arch"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-06",
+      "glyphIds": [
+        "turned-arched-bowl",
+        "turned-arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-07",
+      "glyphIds": [
+        "turned-arched-bowl",
+        "turned-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-08",
+      "glyphIds": [
+        "double-arch",
+        "double-arch-right-descender"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-09",
+      "glyphIds": [
+        "double-arch",
+        "double-arch-right-tail"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-10",
+      "glyphIds": [
+        "double-arch-extended-middle-legs",
+        "double-arch-right-tail-extended-middle-legs"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-11",
+      "glyphIds": [
+        "double-arch-right-descender",
+        "double-arch-right-tail"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-12",
+      "glyphIds": [
+        "double-arch-right-descender-extended-middle-legs",
+        "double-arch-right-tail-extended-middle-legs"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-01.png",
+        "sha256": "cf84facd712bcd8c7ff259682bc7f496146d1369238c377e98ac2a1f6041ca84",
+        "clusterIds": [
+          "cross-01",
+          "cross-02",
+          "cross-03",
+          "cross-04",
+          "cross-05",
+          "cross-06",
+          "cross-07",
+          "cross-08",
+          "cross-09",
+          "cross-10",
+          "cross-11",
+          "cross-12"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-13",
+      "glyphIds": [
+        "turned-arched-double-bowl",
+        "turned-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The single pixel at column 1 row 8 is the intended upper aperture: DOUBLE BOWL keeps two counters and SPINE opens the upper sweep while retaining the lower counter. The difference is visible at 1x, 2x and 8x; it is structurally meaningful, not an arbitrary differentiating mark."
+    },
+    {
+      "clusterId": "cross-14",
+      "glyphIds": [
+        "double-arched-arm",
+        "double-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-15",
+      "glyphIds": [
+        "turned-double-arched-arm",
+        "turned-double-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-16",
+      "glyphIds": [
+        "double-arched-bowl",
+        "triple-arch"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-17",
+      "glyphIds": [
+        "double-arched-bowl",
+        "triple-arch-right-descender"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-18",
+      "glyphIds": [
+        "double-arched-bowl",
+        "triple-arch-right-tail"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-19",
+      "glyphIds": [
+        "double-arched-bowl",
+        "double-arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-20",
+      "glyphIds": [
+        "double-arched-bowl",
+        "double-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-21",
+      "glyphIds": [
+        "double-arched-bowl",
+        "left-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-22",
+      "glyphIds": [
+        "double-arched-bowl-extended-right-middle-leg",
+        "triple-arch-right-tail-extended-right-middle-leg"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-23",
+      "glyphIds": [
+        "turned-double-arched-bowl",
+        "turned-triple-arch"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-24",
+      "glyphIds": [
+        "turned-double-arched-bowl",
+        "turned-double-arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-02.png",
+        "sha256": "c89faa7fd17b07c253a14cc58ffb6095baed385167f4882c22fce6f1aab5db64",
+        "clusterIds": [
+          "cross-13",
+          "cross-14",
+          "cross-15",
+          "cross-16",
+          "cross-17",
+          "cross-18",
+          "cross-19",
+          "cross-20",
+          "cross-21",
+          "cross-22",
+          "cross-23",
+          "cross-24"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-25",
+      "glyphIds": [
+        "turned-double-arched-bowl",
+        "turned-double-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-26",
+      "glyphIds": [
+        "turned-double-arched-bowl",
+        "right-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-27",
+      "glyphIds": [
+        "triple-arch",
+        "triple-arch-right-descender"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-28",
+      "glyphIds": [
+        "triple-arch",
+        "triple-arch-right-tail"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-29",
+      "glyphIds": [
+        "triple-arch-extended-right-middle-leg",
+        "triple-arch-right-tail-extended-right-middle-leg"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-30",
+      "glyphIds": [
+        "triple-arch",
+        "double-arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-31",
+      "glyphIds": [
+        "triple-arch",
+        "left-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-32",
+      "glyphIds": [
+        "turned-triple-arch",
+        "turned-double-arched-double-bowl"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The changed closure, waist or open sweep matches the named arch, bowl, double bowl, shoulder/hip or one-sided spine distinction. Counters and apertures remain open as intended and the changed pixels are visible in native repeats and clear 8x."
+    },
+    {
+      "clusterId": "cross-33",
+      "glyphIds": [
+        "turned-triple-arch",
+        "right-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-34",
+      "glyphIds": [
+        "triple-arch-right-descender",
+        "triple-arch-right-tail"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-35",
+      "glyphIds": [
+        "triple-arch-right-descender-extended-right-middle-leg",
+        "triple-arch-right-tail-extended-right-middle-leg"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The normal-height, descending and returned endpoints remain visibly distinct at native size and 8x. A return counter appears only when the designated neighboring extension closes it."
+    },
+    {
+      "clusterId": "cross-36",
+      "glyphIds": [
+        "triple-arch-right-descender",
+        "left-double-arched-opposed-bowls-0-2"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-03.png",
+        "sha256": "590fbf568d5edf85a27ed7f04ef18e5988eb6396968eed799c8f9a1cf2fed669",
+        "clusterIds": [
+          "cross-25",
+          "cross-26",
+          "cross-27",
+          "cross-28",
+          "cross-29",
+          "cross-30",
+          "cross-31",
+          "cross-32",
+          "cross-33",
+          "cross-34",
+          "cross-35",
+          "cross-36"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-37",
+      "glyphIds": [
+        "turned-triple-arch-left-ascender",
+        "right-double-arched-opposed-bowls-2-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-38",
+      "glyphIds": [
+        "triple-arch-right-tail",
+        "left-double-arched-opposed-bowls-0-4"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-39",
+      "glyphIds": [
+        "triple-arch-right-tail-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-4"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-40",
+      "glyphIds": [
+        "triple-arch-right-tail-extended-right-middle-leg",
+        "left-double-arched-opposed-bowls-0-4-extended-right-middle-leg"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-41",
+      "glyphIds": [
+        "turned-triple-arch-left-hook",
+        "right-double-arched-opposed-bowls-4-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-42",
+      "glyphIds": [
+        "turned-triple-arch-left-hook-extended-left-middle-leg",
+        "right-double-arched-opposed-bowls-4-0-extended-left-middle-leg"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-43",
+      "glyphIds": [
+        "double-arched-double-bowl",
+        "left-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-44",
+      "glyphIds": [
+        "turned-double-arched-double-bowl",
+        "turned-double-arched-bowled-spine"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The single pixel at column 1 row 8 is the intended upper aperture: DOUBLE BOWL keeps two counters and SPINE opens the upper sweep while retaining the lower counter. The difference is visible at 1x, 2x and 8x; it is structurally meaningful, not an arbitrary differentiating mark."
+    },
+    {
+      "clusterId": "cross-45",
+      "glyphIds": [
+        "turned-double-arched-double-bowl",
+        "right-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    },
+    {
+      "clusterId": "cross-46",
+      "glyphIds": [
+        "turned-double-arched-bowled-spine",
+        "right-double-arched-opposed-bowls-0-0"
+      ],
+      "status": "representative-visually-inspected",
+      "evidence": {
+        "path": ".tmp/unifont-near-audit/cross-family-04.png",
+        "sha256": "9c56db9124dd03e96d2c0e51ab773eb227d25c96bea1550c84a2093162620511",
+        "clusterIds": [
+          "cross-37",
+          "cross-38",
+          "cross-39",
+          "cross-40",
+          "cross-41",
+          "cross-42",
+          "cross-43",
+          "cross-44",
+          "cross-45",
+          "cross-46"
+        ]
+      },
+      "finding": "The compact shared spine retains two coordinated counters and a supported waist, while its neighbor has a simple arch, one bowl, separate double bowl, or one-sided spine. The exact listed head, waist and baseline changes remain visible in the native repeats and clear 8x comparison."
+    }
+  ]
+}

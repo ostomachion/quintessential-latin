@@ -48,10 +48,17 @@ await test('Every local link and asset resolves beneath the Pages repository pre
 await test('Unifont bitmap outputs match the catalogue and retain exact native STEM',async()=>{
   const metadata=JSON.parse(await read('resources/unifont/glyphs.json'));
   const source=await read('resources/unifont/quintessential-latin.hex'),glyphs=parseHex(source);
-  assert.equal(glyphs.size,metadata.drawn);assert.equal(metadata.drawn,148);
+  assert.equal(glyphs.size,metadata.drawn);assert.equal(metadata.drawn,1216);
   assert.equal(glyphs.get(0xf2a03).line,'0F2A03:000000000000180808080808083E0000');
   assert.equal(source,await read('dist/unifont/quintessential-latin.hex'));
   assert.equal(await read('resources/unifont/glyphs.json'),await read('dist/unifont/glyphs.json'));
+  const inspector=JSON.parse(await read('dist/unifont/inspector.json'));
+  assert.equal(inspector.glyphs.length,1216);
+  for(let i=0;i<metadata.glyphs.length;i++){
+    assert.deepEqual(inspector.glyphs[i].rows,metadata.glyphs[i].rows);
+    assert.equal(inspector.glyphs[i].line,metadata.glyphs[i].line);
+    assert.equal(inspector.glyphs[i].assessment.flagCount,metadata.glyphs[i].assessment.flags.length);
+  }
 });
 await test('Unifont chart pages align to 256 positions with complete batch proofs and one inspector',async()=>{
   const html=await read('dist/unifont.html'),metadata=JSON.parse(await read('resources/unifont/glyphs.json'));
@@ -63,8 +70,9 @@ await test('Unifont chart pages align to 256 positions with complete batch proof
   assert.equal((html.match(/class="bitmap-unallocated"/g)||[]).length,64);
   assert.equal((html.match(/class="bitmap-card"/g)||[]).length,1);
   assert(!html.includes('id="font-weight"'));assert(!html.includes('id="font-italic"'));
+  const proofs=new Map(await Promise.all([...new Set(metadata.glyphs.map(g=>g.familyId))].map(async family=>[family,await read('dist/unifont/proofs/'+family+'.html')])));
   for(const glyph of metadata.glyphs){
-    const proof=await read('dist/unifont/proofs/'+glyph.familyId+'.html');
+    const proof=proofs.get(glyph.familyId);
     assert(proof.includes('id="bitmap-'+glyph.codePoint.toString(16)+'"'));
     assert(proof.includes(glyph.line));
   }

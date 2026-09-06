@@ -2,7 +2,7 @@ import {inspectorMarkup} from './unifont-model.mjs';
 const inspector=document.querySelector('#unifont-inspector');
 const status=document.querySelector('#unifont-selection-status');
 try{
-  const response=await fetch(new URL('../unifont/glyphs.json',import.meta.url));
+  const response=await fetch(new URL('../unifont/inspector.json',import.meta.url));
   if(!response.ok)throw new Error('Bitmap metadata unavailable');
   const metadata=await response.json(),byCode=new Map(metadata.glyphs.map(glyph=>[glyph.codePoint,glyph]));
   const links=[...document.querySelectorAll('.bitmap-cell')];

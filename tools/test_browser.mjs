@@ -254,7 +254,7 @@ try {
   await navigate('unifont.html');
   check('Unifont is the active navigation tab',await page.locator('.site-nav [aria-current="page"]').innerText()==='Unifont');
   check('Bitmap page offers fixed dimensions instead of outline font controls',await page.locator('#font-weight,#font-italic').count()===0);
-  check('148 bitmaps and five complete Unifont sheets',await page.locator('.bitmap-ready').count()===148&&await page.locator('.unifont-grid').count()===5);
+  check('1216 bitmaps and five complete Unifont sheets',await page.locator('.bitmap-ready').count()===1216&&await page.locator('.unifont-grid').count()===5);
   const bitmapGeometry=await page.locator('.unifont-grid').first().evaluate(table=>{
     const tile=table.querySelector('td'),pixel=tile.querySelector('.bitmap'),edge=tile.querySelector('.unifont-tile-rules');
     const box=element=>element.getBoundingClientRect(),t=box(tile),p=box(pixel),e=box(edge),g=box(table);
@@ -289,7 +289,7 @@ try {
   await staticPage.setViewportSize({width:320,height:900});
   check('Responsive charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216&&await staticPage.locator('table[data-chart-kind="screen"]:visible').first().getAttribute('data-columns')==='4');
   await staticPage.goto(new URL('unifont.html',base).href);
-  check('Unifont bitmaps and proofs render without JavaScript',await staticPage.locator('.bitmap-cell svg').count()===148&&await staticPage.locator('.bitmap-enlarged:visible').count()===1);
+  check('Unifont bitmaps and proofs render without JavaScript',await staticPage.locator('.bitmap-cell svg').count()===1216&&await staticPage.locator('.bitmap-enlarged:visible').count()===1);
   await staticPage.locator('.unifont-sheet summary').last().click();
   check('Unifont sheets expand without JavaScript',await staticPage.locator('.unifont-grid').last().isVisible());
   await noJs.close();

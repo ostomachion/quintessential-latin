@@ -11,13 +11,16 @@ const metadata=await buildUnifont({check:true}),byId=new Map(metadata.glyphs.map
 const allocation=JSON.parse(await readFile(new URL('../resources/quintessential-latin-allocation.json',import.meta.url),'utf8'));
 const byAllocation=new Map(allocation.entries.map(entry=>[entry.glyphId,entry]));
 const donorInfo=JSON.parse(await readFile(new URL('../resources/unifont/donors.json',import.meta.url),'utf8'));
-await test('Complete 136-character group without middle components plus 12 stress glyphs, all 8px',()=>{
-  assert.equal(metadata.total,1216);assert.equal(metadata.drawn,148);assert.equal(metadata.stage,'unextended');assert.equal(metadata.userApproval,null);
+await test('Complete 1216-character repertoire, all 8px',()=>{
+  assert.equal(metadata.total,1216);assert.equal(metadata.drawn,1216);assert.equal(metadata.stage,'complete-repertoire');assert.equal(metadata.userApproval,null);
   assert.equal(metadata.glyphs.filter(glyph=>glyph.parts.length===1).length,16);
   assert.equal(metadata.glyphs.filter(glyph=>!glyph.parts.some(part=>part.middle)).length,136);
   assert.equal(metadata.foundationIds.length,39);
-  assert.equal(metadata.glyphs.filter(glyph=>!metadata.foundationIds.includes(glyph.glyphId)&&glyph.recipe).length,109);
-  assert.equal(metadata.groups.flatMap(group=>group.glyphIds).length,12);
+  assert.equal(metadata.glyphs.filter(glyph=>!glyph.parts.some(p=>p.middle)&&!metadata.foundationIds.includes(glyph.glyphId)&&glyph.recipe).length,109);
+  assert.equal(metadata.groups.filter(group=>group.glyphIds.length===2).length,156);
+  assert.equal(metadata.groups.filter(group=>group.glyphIds.length===4).length,192);
+  assert.equal(new Set(metadata.groups.flatMap(group=>group.glyphIds)).size,1080);
+  assert.equal(new Set(metadata.glyphs.map(g=>g.familyId)).size,30);
   for(const glyph of metadata.glyphs){
     assert.equal(glyph.width,8);assert.equal(glyph.rows.length,16);assert(glyph.rows.every(row=>row>=0&&row<=127));
     assert.equal(glyph.codePoint,byAllocation.get(glyph.glyphId).codePoint);assert.deepEqual(glyph.parts,byAllocation.get(glyph.glyphId).parts);
@@ -66,10 +69,10 @@ await test('HEX validity, MSB orientation, and SVG pixels roundtrip exactly',()=
   assert.equal(parseHex('0F2A00:8001'+'0000'.repeat(15)).get(0xf2a00).width,16);
   for(const bad of ['F2A00:'+'00'.repeat(16),'D800:'+'00'.repeat(16),'110000:'+'00'.repeat(16),'0131:FF',byId.get('stem').line+'\n'+byId.get('stem').line])assert.throws(()=>parseHex(bad));
 });
-await test('Every quartet changes only independently selected extension pixels',()=>{
+await test('Every pair and quartet changes only independently selected extension pixels',()=>{
   for(const group of metadata.groups){
     const glyphs=group.glyphIds.map(id=>byId.get(id)),base=glyphs[0];
-    assert.deepEqual(glyphs.map(g=>g.extensionState),[[false,false],[true,false],[false,true],[true,true]]);
+    assert.deepEqual(glyphs.map(g=>g.extensionState),group.glyphIds.length===2?[[false],[true]]:[[false,false],[true,false],[false,true],[true,true]]);
     for(const glyph of glyphs){
       const expectedRows=[...base.rows];
       for(const [x,y] of glyph.extensionPixels)expectedRows[y]|=1<<(7-x);
@@ -78,7 +81,7 @@ await test('Every quartet changes only independently selected extension pixels',
       assert.deepEqual(glyph.extensionState,actualState,glyph.glyphId);
       assert(glyph.rows.every((row,y)=>(row&base.rows[y])===base.rows[y]),'Extension must not erase its base');
     }
-    const combined=glyphs[1].rows.map((row,y)=>row|glyphs[2].rows[y]);assert.deepEqual(combined,glyphs[3].rows);
+    if(glyphs.length===4){const combined=glyphs[1].rows.map((row,y)=>row|glyphs[2].rows[y]);assert.deepEqual(combined,glyphs[3].rows);}
   }
 });
 await test('Long bowl closes at the immediate arm only; remote ascender leaves it open',()=>{
@@ -119,17 +122,52 @@ await test('All new recipes preserve their base outside documented extension and
   }
 });
 await test('New long bowls close only when their designated adjacent stem is extended',()=>{
-  const glyphs=metadata.glyphs.filter(g=>g.familyId==='hooked-arches');assert.equal(glyphs.length,12);
+  const glyphs=metadata.glyphs.filter(g=>g.parts.some(p=>p.long));assert.equal(glyphs.length,84);
   for(const glyph of glyphs){
     const bowl=glyph.parts.find(part=>part.long),checks=glyph.structuralChecks;
-    assert.equal(checks.closingNeighbor,bowl.closingNeighbor);
-    assert.equal(hasPixel(glyph.rows,8,...checks.closureGap),bowl.returnContact);
-    const enclosed=glyph.assessment.counterPixels.some(region=>region.some(([x,y])=>x===checks.counterSeed[0]&&y===checks.counterSeed[1]));
+    const closureGap=checks.closure?.openPixel||checks.closureGap,counterSeed=checks.closure?.counterSeed||checks.counterSeed;
+    assert.equal(checks.closure?.closingPartIndex??checks.closingNeighbor,bowl.closingNeighbor);
+    assert.equal(hasPixel(glyph.rows,8,...closureGap),bowl.returnContact);
+    const enclosed=glyph.assessment.counterPixels.some(region=>region.some(([x,y])=>x===counterSeed[0]&&y===counterSeed[1]));
     assert.equal(enclosed,bowl.returnContact,glyph.glyphId);
   }
 });
+await test('Every new middle extension follows its allocation direction and visual position',()=>{
+  const glyphs=metadata.glyphs.filter(g=>g.layout&&g.parts.some(p=>p.middle));assert.equal(glyphs.length,1068);
+  for(const glyph of glyphs){
+    const positions=glyph.layout.middleParts||glyph.layout.parts.filter(p=>glyph.parts[p.partIndex].middle);
+    assert(positions.every((p,i)=>i===0||p.column>positions[i-1].column),glyph.glyphId);
+    const expected=[];
+    for(const position of positions){
+      const part=glyph.parts[position.partIndex];assert(part.middle);assert.equal(part.kind,position.kind);
+      if(part.upper==='straight')for(const y of [3,4,5])expected.push([position.column,y]);
+      if(part.lower==='straight')for(const y of [14,15])expected.push([position.column,y]);
+    }
+    const sort=pixels=>pixels.map(p=>p.join(',')).sort();
+    assert.deepEqual(sort(glyph.extensionPixels),sort(expected),glyph.glyphId);
+  }
+});
+await test('All compact shared spines preserve their counters and document natural hook contacts',()=>{
+  for(const glyph of metadata.glyphs.filter(g=>g.layout&&g.familyId.includes('opposed'))){
+    const checks=glyph.structuralChecks;
+    if(checks.counterSeeds){
+      checks.counterSeeds.forEach(([sx,sy],i)=>{
+        const counter=glyph.assessment.counterPixels.find(region=>region.some(([x,y])=>x===sx&&y===sy));
+        assert.equal(counter?.length,checks.counterAreas[i],glyph.glyphId);
+      });
+      const contact=checks.terminalContact;
+      assert.equal(glyph.assessment.counters,contact?3:2,glyph.glyphId);
+      if(contact){
+        assert(!glyph.parts.some(p=>p.returnContact));
+        assert(glyph.assessment.counterPixels.some(region=>region.some(([x,y])=>x===contact.counterSeed[0]&&y===contact.counterSeed[1])));
+      }
+    }else{
+      assert.deepEqual(glyph.assessment.counterPixels.map(region=>region.length),checks.counterAreas,glyph.glyphId);
+    }
+  }
+});
 await test('All new end extensions match the ordered allocation parts and shared terminal masks',()=>{
-  for(const glyph of metadata.glyphs.filter(g=>g.recipe)){
+  for(const glyph of metadata.glyphs.filter(g=>g.recipe&&!g.parts.some(p=>p.middle))){
     const pixels=new Set(),add=(x,y)=>pixels.add(`${x},${y}`);
     glyph.parts.forEach((part,index)=>{
       const x=index===0?1:6;
@@ -177,4 +215,16 @@ await test('Current inspections include coordinate flags and near-duplicate comp
     assert.deepEqual(reviewed.proofSha256,glyphs.map(g=>g.proofSha256));
     assert.equal(reviewed.status,'inspected');
   }
+});
+if(process.argv.includes('--reviewed'))await test('Final repertoire has complete current visual and independent review evidence',async()=>{
+  assert.equal(metadata.inspected,1216);
+  const review=JSON.parse(await readFile(new URL('../resources/unifont/review.json',import.meta.url),'utf8'));
+  assert.equal(Object.keys(review.records).length,1216);
+  assert.equal(review.nearDuplicateReviews.length,metadata.nearDuplicates.length);
+  assert.equal(review.pendingDesignDecisions.length,0);
+  assert(review.independentReviews.length>=3);
+  for(const report of review.independentReviews)assert.equal(sha256(await readFile(new URL('../'+report.path,import.meta.url))),report.sha256,report.path);
+  const evidence=new Map();
+  for(const record of Object.values(review.records))evidence.set(record.evidence.path,record.evidence.sha256);
+  for(const [file,hash] of evidence)assert.equal(sha256(await readFile(new URL('../'+file,import.meta.url))),hash,file);
 });

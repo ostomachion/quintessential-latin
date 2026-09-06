@@ -20,6 +20,8 @@
     "test:preservation": "python tools/test_additions_font.py",
     "build:unifont": "node tools/build_unifont_glyphs.mjs",
     "test:unifont": "node tools/test_unifont.mjs",
+    "test:unifont:sources": "node resources/unifont/construct_middle_branches.mjs --check && python -X utf8 resources/unifont/generate_middle_shared_spines.py --check && node resources/unifont/generate-double-middle-shared-spines.mjs --check",
+    "test:unifont:review": "node tools/test_unifont.mjs --reviewed",
     "test:unifont:browser": "node tools/test_unifont_browser.mjs",
     "preview:unifont": "npm run build:unifont && node tools/build_site.mjs --unifont-only"
   },

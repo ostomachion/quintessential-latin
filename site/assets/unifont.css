@@ -84,6 +84,7 @@ body[data-page="unifont"] .main{max-width:1100px}
 .proof-family-list{columns:2;font-size:15px;line-height:1.8}
 .stress-proof{margin-block:36px}
 .stress-proof .foundation-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.pair-proof .foundation-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 .stress-proof .foundation-drawings{gap:10px;flex-wrap:wrap}
 .stress-proof .foundation-drawings figure:last-child{width:100%}
 .stress-proof .foundation-drawings .outline-reference{margin-bottom:0}

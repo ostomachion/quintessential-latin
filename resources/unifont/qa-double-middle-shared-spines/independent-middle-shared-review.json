@@ -1,0 +1,1812 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "foundation_stress",
+  "sourcePath": "resources/unifont/middle-shared-spines.json",
+  "sourceSha256": "efdeefa93e5cc13c6166f8842c40f12c5c2f3be77f0b7a769c2c20f66e41f54a",
+  "status": "independently-reviewed",
+  "findings": "Independently inspected all 12 complete sheets, covering 284 new forms and four preserved dense foundations, at native size, 2x and gridded 8x alongside current STIX references. The five-column shared cores retain balanced 6/6 counters and native cap/return connections; the three-column core retains its approved row-9 crossover and 2/3 counters. Outer terminal masks, compressed arch/hip entrances, contextual outer joins, and independent extension direction agree with the allocation. No actionable pixel or structural issues found. Source drawings were not edited.",
+  "proofs": [
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/left-arched-opposed-bowls-01.png",
+      "sha256": "3e9d8687d0b0b4e1c5042eefa182b6b16769fd2c50f34558929342dfb8d729a7",
+      "glyphIds": [
+        "left-arched-opposed-bowls-0-0",
+        "left-arched-opposed-bowls-0-0-extended-middle-legs",
+        "left-arched-opposed-bowls-0-2",
+        "left-arched-opposed-bowls-0-2-extended-middle-legs",
+        "left-arched-opposed-bowls-0-4",
+        "left-arched-opposed-bowls-0-4-extended-middle-legs",
+        "left-arched-opposed-bowls-0-1",
+        "left-arched-opposed-bowls-0-1-extended-middle-legs",
+        "left-arched-opposed-bowls-0-3",
+        "left-arched-opposed-bowls-0-3-extended-middle-legs",
+        "left-arched-opposed-bowls-0-5",
+        "left-arched-opposed-bowls-0-5-extended-middle-legs",
+        "left-arched-opposed-bowls-2-0",
+        "left-arched-opposed-bowls-2-0-extended-middle-legs",
+        "left-arched-opposed-bowls-2-2",
+        "left-arched-opposed-bowls-2-2-extended-middle-legs",
+        "left-arched-opposed-bowls-2-4",
+        "left-arched-opposed-bowls-2-4-extended-middle-legs",
+        "left-arched-opposed-bowls-2-1",
+        "left-arched-opposed-bowls-2-1-extended-middle-legs",
+        "left-arched-opposed-bowls-2-3",
+        "left-arched-opposed-bowls-2-3-extended-middle-legs",
+        "left-arched-opposed-bowls-2-5",
+        "left-arched-opposed-bowls-2-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/left-arched-opposed-bowls-02.png",
+      "sha256": "49ab8cbfb93ec1bc48f1b7343f87180337e99d5e5a0098017c7e74dcaf6cce4c",
+      "glyphIds": [
+        "left-arched-opposed-bowls-4-0",
+        "left-arched-opposed-bowls-4-0-extended-middle-legs",
+        "left-arched-opposed-bowls-4-2",
+        "left-arched-opposed-bowls-4-2-extended-middle-legs",
+        "left-arched-opposed-bowls-4-4",
+        "left-arched-opposed-bowls-4-4-extended-middle-legs",
+        "left-arched-opposed-bowls-4-1",
+        "left-arched-opposed-bowls-4-1-extended-middle-legs",
+        "left-arched-opposed-bowls-4-3",
+        "left-arched-opposed-bowls-4-3-extended-middle-legs",
+        "left-arched-opposed-bowls-4-5",
+        "left-arched-opposed-bowls-4-5-extended-middle-legs",
+        "left-arched-opposed-bowls-1-0",
+        "left-arched-opposed-bowls-1-0-extended-middle-legs",
+        "left-arched-opposed-bowls-1-2",
+        "left-arched-opposed-bowls-1-2-extended-middle-legs",
+        "left-arched-opposed-bowls-1-4",
+        "left-arched-opposed-bowls-1-4-extended-middle-legs",
+        "left-arched-opposed-bowls-1-1",
+        "left-arched-opposed-bowls-1-1-extended-middle-legs",
+        "left-arched-opposed-bowls-1-3",
+        "left-arched-opposed-bowls-1-3-extended-middle-legs",
+        "left-arched-opposed-bowls-1-5",
+        "left-arched-opposed-bowls-1-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/left-arched-opposed-bowls-03.png",
+      "sha256": "0185c03c48bd0c96b8ef9bdb51776dacd2fe7c5f6e4669c295fa17afe9dad9af",
+      "glyphIds": [
+        "left-arched-opposed-bowls-3-0",
+        "left-arched-opposed-bowls-3-0-extended-middle-legs",
+        "left-arched-opposed-bowls-3-2",
+        "left-arched-opposed-bowls-3-2-extended-middle-legs",
+        "left-arched-opposed-bowls-3-4",
+        "left-arched-opposed-bowls-3-4-extended-middle-legs",
+        "left-arched-opposed-bowls-3-1",
+        "left-arched-opposed-bowls-3-1-extended-middle-legs",
+        "left-arched-opposed-bowls-3-3",
+        "left-arched-opposed-bowls-3-3-extended-middle-legs",
+        "left-arched-opposed-bowls-3-5",
+        "left-arched-opposed-bowls-3-5-extended-middle-legs",
+        "left-arched-opposed-bowls-5-0",
+        "left-arched-opposed-bowls-5-0-extended-middle-legs",
+        "left-arched-opposed-bowls-5-2",
+        "left-arched-opposed-bowls-5-2-extended-middle-legs",
+        "left-arched-opposed-bowls-5-4",
+        "left-arched-opposed-bowls-5-4-extended-middle-legs",
+        "left-arched-opposed-bowls-5-1",
+        "left-arched-opposed-bowls-5-1-extended-middle-legs",
+        "left-arched-opposed-bowls-5-3",
+        "left-arched-opposed-bowls-5-3-extended-middle-legs",
+        "left-arched-opposed-bowls-5-5",
+        "left-arched-opposed-bowls-5-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/right-arched-opposed-bowls-01.png",
+      "sha256": "db780aa1532bcc8961139d4b5a9045c9049eb4deab0f8bed09fc3bd15a80ace8",
+      "glyphIds": [
+        "right-arched-opposed-bowls-0-0",
+        "right-arched-opposed-bowls-0-0-extended-middle-legs",
+        "right-arched-opposed-bowls-0-2",
+        "right-arched-opposed-bowls-0-2-extended-middle-legs",
+        "right-arched-opposed-bowls-0-4",
+        "right-arched-opposed-bowls-0-4-extended-middle-legs",
+        "right-arched-opposed-bowls-0-1",
+        "right-arched-opposed-bowls-0-1-extended-middle-legs",
+        "right-arched-opposed-bowls-0-3",
+        "right-arched-opposed-bowls-0-3-extended-middle-legs",
+        "right-arched-opposed-bowls-0-5",
+        "right-arched-opposed-bowls-0-5-extended-middle-legs",
+        "right-arched-opposed-bowls-2-0",
+        "right-arched-opposed-bowls-2-0-extended-middle-legs",
+        "right-arched-opposed-bowls-2-2",
+        "right-arched-opposed-bowls-2-2-extended-middle-legs",
+        "right-arched-opposed-bowls-2-4",
+        "right-arched-opposed-bowls-2-4-extended-middle-legs",
+        "right-arched-opposed-bowls-2-1",
+        "right-arched-opposed-bowls-2-1-extended-middle-legs",
+        "right-arched-opposed-bowls-2-3",
+        "right-arched-opposed-bowls-2-3-extended-middle-legs",
+        "right-arched-opposed-bowls-2-5",
+        "right-arched-opposed-bowls-2-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/right-arched-opposed-bowls-02.png",
+      "sha256": "3b3665c1ec0f29d28acb3703953213cbca7b0454630a708013afd58667d4adf4",
+      "glyphIds": [
+        "right-arched-opposed-bowls-4-0",
+        "right-arched-opposed-bowls-4-0-extended-middle-legs",
+        "right-arched-opposed-bowls-4-2",
+        "right-arched-opposed-bowls-4-2-extended-middle-legs",
+        "right-arched-opposed-bowls-4-4",
+        "right-arched-opposed-bowls-4-4-extended-middle-legs",
+        "right-arched-opposed-bowls-4-1",
+        "right-arched-opposed-bowls-4-1-extended-middle-legs",
+        "right-arched-opposed-bowls-4-3",
+        "right-arched-opposed-bowls-4-3-extended-middle-legs",
+        "right-arched-opposed-bowls-4-5",
+        "right-arched-opposed-bowls-4-5-extended-middle-legs",
+        "right-arched-opposed-bowls-1-0",
+        "right-arched-opposed-bowls-1-0-extended-middle-legs",
+        "right-arched-opposed-bowls-1-2",
+        "right-arched-opposed-bowls-1-2-extended-middle-legs",
+        "right-arched-opposed-bowls-1-4",
+        "right-arched-opposed-bowls-1-4-extended-middle-legs",
+        "right-arched-opposed-bowls-1-1",
+        "right-arched-opposed-bowls-1-1-extended-middle-legs",
+        "right-arched-opposed-bowls-1-3",
+        "right-arched-opposed-bowls-1-3-extended-middle-legs",
+        "right-arched-opposed-bowls-1-5",
+        "right-arched-opposed-bowls-1-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/right-arched-opposed-bowls-03.png",
+      "sha256": "e06e254667876aa0720894c2f5525d81ee1c325c34f8f973c8f89e5e5c2ed870",
+      "glyphIds": [
+        "right-arched-opposed-bowls-3-0",
+        "right-arched-opposed-bowls-3-0-extended-middle-legs",
+        "right-arched-opposed-bowls-3-2",
+        "right-arched-opposed-bowls-3-2-extended-middle-legs",
+        "right-arched-opposed-bowls-3-4",
+        "right-arched-opposed-bowls-3-4-extended-middle-legs",
+        "right-arched-opposed-bowls-3-1",
+        "right-arched-opposed-bowls-3-1-extended-middle-legs",
+        "right-arched-opposed-bowls-3-3",
+        "right-arched-opposed-bowls-3-3-extended-middle-legs",
+        "right-arched-opposed-bowls-3-5",
+        "right-arched-opposed-bowls-3-5-extended-middle-legs",
+        "right-arched-opposed-bowls-5-0",
+        "right-arched-opposed-bowls-5-0-extended-middle-legs",
+        "right-arched-opposed-bowls-5-2",
+        "right-arched-opposed-bowls-5-2-extended-middle-legs",
+        "right-arched-opposed-bowls-5-4",
+        "right-arched-opposed-bowls-5-4-extended-middle-legs",
+        "right-arched-opposed-bowls-5-1",
+        "right-arched-opposed-bowls-5-1-extended-middle-legs",
+        "right-arched-opposed-bowls-5-3",
+        "right-arched-opposed-bowls-5-3-extended-middle-legs",
+        "right-arched-opposed-bowls-5-5",
+        "right-arched-opposed-bowls-5-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-01.png",
+      "sha256": "d4b367b266d3d2696dd8f3421b8e54ad8120ee3e513650b97ff8946d581034ef",
+      "glyphIds": [
+        "double-arched-opposed-bowls-0-0",
+        "double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-0-extended-middle-legs",
+        "double-arched-opposed-bowls-0-2",
+        "double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-2-extended-middle-legs",
+        "double-arched-opposed-bowls-0-4",
+        "double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-4-extended-middle-legs",
+        "double-arched-opposed-bowls-0-1",
+        "double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-1-extended-middle-legs",
+        "double-arched-opposed-bowls-0-3",
+        "double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-3-extended-middle-legs",
+        "double-arched-opposed-bowls-0-5",
+        "double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-0-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-02.png",
+      "sha256": "f986161dbe059ffc824022a87f9f15df11be1da4f231352ebb8b6fcb8449b364",
+      "glyphIds": [
+        "double-arched-opposed-bowls-2-0",
+        "double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-0-extended-middle-legs",
+        "double-arched-opposed-bowls-2-2",
+        "double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-2-extended-middle-legs",
+        "double-arched-opposed-bowls-2-4",
+        "double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-4-extended-middle-legs",
+        "double-arched-opposed-bowls-2-1",
+        "double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-1-extended-middle-legs",
+        "double-arched-opposed-bowls-2-3",
+        "double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-3-extended-middle-legs",
+        "double-arched-opposed-bowls-2-5",
+        "double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-2-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-03.png",
+      "sha256": "df5d098190ea809565568f3406ff8b02ac7a309b1b96caadd7168e8165ddf68d",
+      "glyphIds": [
+        "double-arched-opposed-bowls-4-0",
+        "double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-0-extended-middle-legs",
+        "double-arched-opposed-bowls-4-2",
+        "double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-2-extended-middle-legs",
+        "double-arched-opposed-bowls-4-4",
+        "double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-4-extended-middle-legs",
+        "double-arched-opposed-bowls-4-1",
+        "double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-1-extended-middle-legs",
+        "double-arched-opposed-bowls-4-3",
+        "double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-3-extended-middle-legs",
+        "double-arched-opposed-bowls-4-5",
+        "double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-4-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-04.png",
+      "sha256": "30b5c9e08b4a7e8b0b52fa0e3a83b63e4fe276072ac857e4f950980b8172519a",
+      "glyphIds": [
+        "double-arched-opposed-bowls-1-0",
+        "double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-0-extended-middle-legs",
+        "double-arched-opposed-bowls-1-2",
+        "double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-2-extended-middle-legs",
+        "double-arched-opposed-bowls-1-4",
+        "double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-4-extended-middle-legs",
+        "double-arched-opposed-bowls-1-1",
+        "double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-1-extended-middle-legs",
+        "double-arched-opposed-bowls-1-3",
+        "double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-3-extended-middle-legs",
+        "double-arched-opposed-bowls-1-5",
+        "double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-1-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-05.png",
+      "sha256": "8d4bb82418c5e28b57ad40480b7d179258818b5cba483b1bef0c43239ff4d9d2",
+      "glyphIds": [
+        "double-arched-opposed-bowls-3-0",
+        "double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-0-extended-middle-legs",
+        "double-arched-opposed-bowls-3-2",
+        "double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-2-extended-middle-legs",
+        "double-arched-opposed-bowls-3-4",
+        "double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-4-extended-middle-legs",
+        "double-arched-opposed-bowls-3-1",
+        "double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-1-extended-middle-legs",
+        "double-arched-opposed-bowls-3-3",
+        "double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-3-extended-middle-legs",
+        "double-arched-opposed-bowls-3-5",
+        "double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-3-5-extended-middle-legs"
+      ]
+    },
+    {
+      "path": "resources/unifont/qa-middle-shared-spines/double-arched-opposed-bowls-06.png",
+      "sha256": "a682f5bb26230d556b84cf2fb10cbf84e758eac870e0f740eb67f7befcb95a67",
+      "glyphIds": [
+        "double-arched-opposed-bowls-5-0",
+        "double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-0-extended-middle-legs",
+        "double-arched-opposed-bowls-5-2",
+        "double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-2-extended-middle-legs",
+        "double-arched-opposed-bowls-5-4",
+        "double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-4-extended-middle-legs",
+        "double-arched-opposed-bowls-5-1",
+        "double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-1-extended-middle-legs",
+        "double-arched-opposed-bowls-5-3",
+        "double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-3-extended-middle-legs",
+        "double-arched-opposed-bowls-5-5",
+        "double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-5-extended-middle-legs"
+      ]
+    }
+  ],
+  "glyphs": [
+    {
+      "glyphId": "left-arched-opposed-bowls-0-0",
+      "bitmapSha256": "080e0dc622f72ba94cce497654dc7a2a69976e68bf0439072145ad2acd0f6a59",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-0-extended-middle-legs",
+      "bitmapSha256": "4ae0cdf2fbd66ab37928b55ddfdcc4a570bc00f489bfb4f87000052aadd72727",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-2",
+      "bitmapSha256": "91a475aa296e7eaabf0980393a462ed7302788415991797c2c4b69ac1faf5a8d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-2-extended-middle-legs",
+      "bitmapSha256": "9d2b85d0cefe4c2894de72240d851ec7cb2135f496b506f5714ba6951bba5b63",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-4",
+      "bitmapSha256": "ca01ff67fb73ca842b0f1a3b145ec1fa4ec54a39ec5dd791002029bf61473dc7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-4-extended-middle-legs",
+      "bitmapSha256": "31c581f9c36713daf9afa30a1311324a3ead0ad293ae4357aad1152534b1dcbd",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-1",
+      "bitmapSha256": "7b08dfdef2a059c2395186ac09a5d3f4f9dad76205918691c9e1ab6b2f1d7b1b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-1-extended-middle-legs",
+      "bitmapSha256": "5e4a23e2efa5b014f0070525b9a2c8922d2ca2a4c5516d017a9365a17859c29b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-3",
+      "bitmapSha256": "63180dac3f8ad20be3ec57702ebf8159d11f020807fa3b34fd787738e5482c9f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-3-extended-middle-legs",
+      "bitmapSha256": "1208aaba4d0e30d2c1bb496f4201288cd3170dac763c86fa9ad18c48c1d36157",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-5",
+      "bitmapSha256": "f5ee6153f7aa2f25c41f647022dead7d88a8599ba169aad95abf6a552a04d6d9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-0-5-extended-middle-legs",
+      "bitmapSha256": "162757af0846da86efa9ad6f8887691257b0df46411aa4157538b625a0bbf914",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-0",
+      "bitmapSha256": "5b511290a765bb282b67f679fa79f1f17a389104d75c67021da41e0c9e6df7e6",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-0-extended-middle-legs",
+      "bitmapSha256": "7876105344cbb7e210b60ca890981587c6dbe51578814db774c7ab800d8f769b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-2",
+      "bitmapSha256": "ae3dc533f52c0fe984e93121d5110cf513d78a547a8d6bf84a00c3a05a0e1d2c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-2-extended-middle-legs",
+      "bitmapSha256": "6b9c427da766c6e66cc74c066e473dd070e9ad6221b9949f0eac596da34bdf90",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-4",
+      "bitmapSha256": "0827611dc8b446d7375e60db3d0f15849ced367125405e040fe15eaa53210fd6",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-4-extended-middle-legs",
+      "bitmapSha256": "d45c659a6d71d2a8f8ccf7c850362185045558be0d59f9b30b711d3ee247fae9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-1",
+      "bitmapSha256": "80df6788d9bf365bf18c9b6f8d492999f08fe76eaa6973889a4e5d4b9abb3ff7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-1-extended-middle-legs",
+      "bitmapSha256": "263540040e60b73582c1eeb2f490fb9967e6825ba6a74aa2641577a424150ffe",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-3",
+      "bitmapSha256": "2f759ae4f709d080fd3d5bc0f6517bcb0bd60f1e52d94294ff52f3ce359c489b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-3-extended-middle-legs",
+      "bitmapSha256": "c6ee9de93376aa0eef9fc38fe847727a7a6c63150eb209cdff22b65e668c1fcc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-5",
+      "bitmapSha256": "02d4d8c77149e11b5e25733fc602d3331cd6030246bfae3448253724920c427f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-2-5-extended-middle-legs",
+      "bitmapSha256": "0d7b3ff33a0a0980525e1b178243d7d65c31959e046dcde15dace8651591ac15",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-0",
+      "bitmapSha256": "5025c24fa465f19b238bd0c0b6b21ef4fdffe8f9829fdb8908634d59c454ad56",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-0-extended-middle-legs",
+      "bitmapSha256": "d680f68245bfe5e1190261e04675ff32463eca95906716427f707f4e5ac331c9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-2",
+      "bitmapSha256": "18934c5861135eca84a1011281c1fe17b38f3cd3ece577b5482de15198e85220",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-2-extended-middle-legs",
+      "bitmapSha256": "18e80d21df271cd1c6e82f525e78f71bec26f07d36ccbcf1d1cde12d3754170d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-4",
+      "bitmapSha256": "2354c0411853aab0be415c93f423a967363b014407ed3cb564336cb196000e57",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-4-extended-middle-legs",
+      "bitmapSha256": "5b967cb8e2f7a28d0b0c59976b2c7f5034237140e50828f01776c3a9ae0f05b5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-1",
+      "bitmapSha256": "65ae7543383336ef4a2ff361948f4f64100f6a60fbcbd80334d24f461ed7e111",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-1-extended-middle-legs",
+      "bitmapSha256": "852ff74d82d5064d6d5218be730cd626d0493755b4a3a624852d261b3a7af918",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-3",
+      "bitmapSha256": "7cb15d38be27609570588a58fe4bbf7868895441771e46eac881cb8e49edb7c6",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-3-extended-middle-legs",
+      "bitmapSha256": "bcf3462dbb69683985f16789b9ff4006d84be522070d8dba9ca007a4ccb4fe2b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-5",
+      "bitmapSha256": "00d9b19ba94b79e1cbcbd2f9a2ed4f0068f7bd22e87e06f735393f6384185258",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-4-5-extended-middle-legs",
+      "bitmapSha256": "432a6820dadce9001d9316307794a8d696e30628485e36431a2ab63882f8a50c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-0",
+      "bitmapSha256": "f46cc0a41ac8f6c127444c65d815be1b8403fd4314cf87986a0aeeca75d7fe31",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-0-extended-middle-legs",
+      "bitmapSha256": "923b1a15bbf10527c5e22eaa3521ad2918a3049c416e3fbd4cf2471335cd919c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-2",
+      "bitmapSha256": "24eac15e7155464e613dd13dd7821b70eaeee16c67d994430b151e673aefbaf0",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-2-extended-middle-legs",
+      "bitmapSha256": "783c5f8adedf16b2553ae41e82f77d0ff328d64f9d26c5fc4c7f9787e59c3ff3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-4",
+      "bitmapSha256": "5441e5c7e991c501b4b80dbcb4f10a3d081b3ca7562284c08c151509cf02122f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-4-extended-middle-legs",
+      "bitmapSha256": "bfde9afb55d72d76eaba50bfd412af273ce8e6125c451ebe7a70f1e1e11fba53",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-1",
+      "bitmapSha256": "08dd935da57015d679af1d5282de3c5004258eff419bc28fc5fe28258e02030d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-1-extended-middle-legs",
+      "bitmapSha256": "130d05dd397c654c54940dd42008a580dba7178f108daf0d93d9ae87e04e963f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-3",
+      "bitmapSha256": "9ee5f26cd951864517c58219a23d8be082b3fb35906cf391e52162e5d0bd3b2e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-3-extended-middle-legs",
+      "bitmapSha256": "23145b1f8b82ea4efff61053fd141b045f8c36e43fe1a1623a10dee8e592d691",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-5",
+      "bitmapSha256": "13272a4455a71f3c8aefd096627e0db418ef6ad0c3f2625cf9d93bd67b9f4b34",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-5-extended-middle-legs",
+      "bitmapSha256": "e2d8f66fdf37a5a7e7a891236aca5b27ec5f546378964df45703ad9f8d8b43ed",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-0",
+      "bitmapSha256": "37caed803eeb370b65bfe1b068b09df6ba2b8625f25d3b8ca481ab142eb334e0",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-0-extended-middle-legs",
+      "bitmapSha256": "9de5d8ed2829608dea277ed89ab3fbbaea497bfdf2ddfc542ff0fa2cc170b40e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-2",
+      "bitmapSha256": "45b5430338728d4539863b608954e10ce75fffaa344eda40853120a8207b61d2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-2-extended-middle-legs",
+      "bitmapSha256": "d1c890e5d470bbddb7fd3060643efef05fb9399bde1bdda860d2f6620a5b049c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-4",
+      "bitmapSha256": "ee3f3f30f4ca51e1ca36ba426dfd5667920537db679e7a2bde4857bb58d2036d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-4-extended-middle-legs",
+      "bitmapSha256": "b31ae717ffcc8fbf8b494071c72b2511bdf8b5eebd43a772f3714d864ea70ac2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-1",
+      "bitmapSha256": "bd26726a5f7d61cec53a6276ead6f7ea94e9e9cc7481f2f6e73e44d0552cd0b2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-1-extended-middle-legs",
+      "bitmapSha256": "47b733ba38bf3ec1778836d73acacc49240fa04f5127626402282d77250de280",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-3",
+      "bitmapSha256": "81b04a1653df9add5b7a1552de3a38448b8899e04072256c397399130d5ebd05",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-3-extended-middle-legs",
+      "bitmapSha256": "00c8032dc2ce6ac62d95af253844def79a8a08ba6209a5febc6aa9720d11284a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-5",
+      "bitmapSha256": "200eb47f2e1abf26031549fda50fab3e45c7cc313aaa206064e901afa6b322e5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-5-extended-middle-legs",
+      "bitmapSha256": "9c60d764b1fb796d6474b128398065224ce182a91c70313a6c6ce0d61a6d18d7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-0",
+      "bitmapSha256": "5a3bfc47f3d1d0a680aaec8c9a96f32807701d1440579f221839dcf1ffdcb4a9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-0-extended-middle-legs",
+      "bitmapSha256": "3198974c2460322cc6d192a8ad3e5ff1505dd060a063aa07b1f3736b0a6d686f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-2",
+      "bitmapSha256": "99d3d4d1a084bba0732c2156e1d8d322d6b53e02ad94f4cfbab1b9827c845893",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-2-extended-middle-legs",
+      "bitmapSha256": "63cc03dd1d41967b2d32086551d7f47b21f98f784d7e54a08d83495ac153683c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-4",
+      "bitmapSha256": "e4ed69dda492bac11d10a911745b1cb565f5e496a72f0b3bea404501621f16bc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-4-extended-middle-legs",
+      "bitmapSha256": "1bfba3c0c37597749c995e8a5f884db0e98e20d548c550802b1d24ea572328f9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-1",
+      "bitmapSha256": "a08f88b32bfba813b3eb5dd934f49d1eb6db7383f10dfc5678903fbc590c37ec",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-1-extended-middle-legs",
+      "bitmapSha256": "21cf0e2f05c59cf3e2c9bf1dd04974aeca966c2baeb290f1337e91ffdf083215",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-3",
+      "bitmapSha256": "6b14982601e5e57fe0ef3bae37b7a011b9a42071693a565652f35733e7b49c14",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-3-extended-middle-legs",
+      "bitmapSha256": "7955282f3c164f728b48314518c850695d6a59932244f70d7349ecfac7bfc6a0",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-5",
+      "bitmapSha256": "8b801c515ec10324a22626fea5f3aa4fdf71ab675b53ef1a2bc5d4367465e88f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-5-extended-middle-legs",
+      "bitmapSha256": "dbb6b54d3624f4daf58f2a64321806ada00093966ede617743bd3dc6ccaf33f9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-0",
+      "bitmapSha256": "38ec9d613d0407d17de5f8c4bfbd0f87042e666a77b2e5deb7d111ed65207d76",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-0-extended-middle-legs",
+      "bitmapSha256": "63e7ca20ba755594d62a5e52886b433c3d3e0b77b19b7c6ff068b5c7b04b499d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-2",
+      "bitmapSha256": "804009bdcf2c87502fad5ffd5d074dbc574ad73d75d55e5bbcd55980531e2d6c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-2-extended-middle-legs",
+      "bitmapSha256": "a82f07200c5a3ac27ba7cf1852692793b9ebea4fa14678880d13e55046741d49",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-4",
+      "bitmapSha256": "e5d58bd89ba55d015d1ccf2bf4ba35979c9528bdff386ba3ccbdc477876dc0a1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-4-extended-middle-legs",
+      "bitmapSha256": "3570e412a7099754525161a964976eb82d7fd30fcc75127f61c9d38df3a31b30",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-1",
+      "bitmapSha256": "ccee151a3406bce756110848ac30669f24875fcd6c216c2fc75abe59aa0092f7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-1-extended-middle-legs",
+      "bitmapSha256": "2b2910ced593d06c3532ec5cf0cdbf23c8425308c216ad536b406436d0e020a1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-3",
+      "bitmapSha256": "c948f4bc0a21191d3a28e54a3c3bcf9ec40976aa1fbd32e05917e0889fdf34be",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-3-extended-middle-legs",
+      "bitmapSha256": "d7572a348ce8c7a4eb3799111c483f4e95a96b64c5687a38159628bd7929cf57",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-5",
+      "bitmapSha256": "9d0a01db5eaa9b0a60b2af1e1477fc48014af96c116804b60c1ad84147623c5d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-0-5-extended-middle-legs",
+      "bitmapSha256": "202a214e4a1b2cc9eb106c3f6639ba28db71f53b7988e64bb47d0ff244fd27d3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-0",
+      "bitmapSha256": "115ef0a6779c2b9f5525b6f46e7d4605dd4fb2349e0481073d373f63e069cfb9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-0-extended-middle-legs",
+      "bitmapSha256": "e89e336e5ee7ca3ca28871d4d59c92be7ba377c17ae656e4998e8e2d9d8fcbbb",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-2",
+      "bitmapSha256": "f4184cdcce5a8a8c7fc234dcfa5f6e2318c1d89e49f02c8818c8d0705ffbd807",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-2-extended-middle-legs",
+      "bitmapSha256": "370225ee4d4e1e919eb66a7de7b547f7910db6ff1be239438e13e7fdc90bbd46",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-4",
+      "bitmapSha256": "d6638a411e9b63edafa6a61b377cd84625d2de399ff50b5a181ef3926b56ba28",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-4-extended-middle-legs",
+      "bitmapSha256": "3f5c379ffb7ff050a868313e108dd58d4ec843eca916aff4a35b24f9629ec98f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-1",
+      "bitmapSha256": "0e7eda3eac6733ba5c7da392d0aeac8c623e890149281d59f0e0159a38f657a8",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-1-extended-middle-legs",
+      "bitmapSha256": "9907eca8162432457213ca3ca84ac6fcce5e930806d01e0f2330c58e6b7fde2f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-3",
+      "bitmapSha256": "b7201ef188d232305189d0bee72b47b8b49d92c84b87277838794ccc11bbde3c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-3-extended-middle-legs",
+      "bitmapSha256": "acfe57cb60dd0eb18620b7ada2581b0fd1611e08a6b20cb6a28a71ef01769237",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-5",
+      "bitmapSha256": "b4dc94ac616b94c82292797613545af35c80a189b49f5e063503c8772154d4b2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-2-5-extended-middle-legs",
+      "bitmapSha256": "e34df5bb48b7f477718d69c191bf5ce963f5e528e85f5af1ab6627e2f19e257f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-0",
+      "bitmapSha256": "835b1218bf158c4482bf9000bffa6bd51bd5112668c95875867cb4687d3b234c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-0-extended-middle-legs",
+      "bitmapSha256": "1ea4283401f1eeea3e27a8286ddc25674be1a4a25ad0fa7f0c4fe04169f3a674",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-2",
+      "bitmapSha256": "f3eec02e7d53c4a44f59541717dbb6a65d6d613245c730128248ee92920cc6a7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-2-extended-middle-legs",
+      "bitmapSha256": "b151b78073821b5fb5f7987f564e71b121fc07919e9f8c800a32aa5f75e1fd89",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-4",
+      "bitmapSha256": "87ace951b12a053756467da7a71f4f09894fb6b3f8da4a4daaf63a02ec9d264c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-4-extended-middle-legs",
+      "bitmapSha256": "ba5e2123679f1b6516ddbb8431140fb979ce5b49d844856ce952b633498e90af",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-1",
+      "bitmapSha256": "5c15823de6db93483f7575dbd412cacea267d0ecbb03f76bc319e99e69bd8c38",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-1-extended-middle-legs",
+      "bitmapSha256": "c5e19f4655784b88a1a0f99891597f7ae1f20a179c0a128bfba396d2f88d695f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-3",
+      "bitmapSha256": "40d28b93a122231460fe0b8f87db29a8d414392cd83e34017b4cc4056326755f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-3-extended-middle-legs",
+      "bitmapSha256": "e6c8e9eb513d0359ce1d7e159ed8e2f586781a1b6f7505089023eb2ecc7636da",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-5",
+      "bitmapSha256": "875e2e1b14af3a334e1bffb008a51642eeaa3eb7c9ed662a44db56edb179e667",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-4-5-extended-middle-legs",
+      "bitmapSha256": "35eff1c0925991a29347dea9ca4e3ce2d2c7c59afa6ccb01446a5e12f4c4bae3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-0",
+      "bitmapSha256": "3df7046ed1c8acf3d00cc5adf11d78d3df3a47bf8d6c5ad12d2bc9b6808c96b2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-0-extended-middle-legs",
+      "bitmapSha256": "29faf2040c27d2e8a2df2a8de4636609cd07986fe27827fa0ae6b0c142d56d83",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-2",
+      "bitmapSha256": "fafe3bdc79ed40af86c5c818aa44ba59165dfc6235864ffcdfd9849fc8d11d95",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-2-extended-middle-legs",
+      "bitmapSha256": "43414de8ff4254f9075555537302a00ec6ec35a25b8fa73a9c8ebc590db78af9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-4",
+      "bitmapSha256": "b6035b6f34ddbd34fe6d874786c7d26ee1a0dc9eb0b568b9b2d382c9bdeaab3a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-4-extended-middle-legs",
+      "bitmapSha256": "00f9faeb3d1f78981cc8e857404978000de11e47c7c33e73caaf136345683cfc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-1",
+      "bitmapSha256": "916de0d4c9d7dff140e1642349b858fd2036fa5708a2c75ab72577f87a010681",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-1-extended-middle-legs",
+      "bitmapSha256": "8ac9e82d00ddc743c3c41f6598fe9a02c2b28d6316b1ce94760f0985f53d33f0",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-3",
+      "bitmapSha256": "95af4942b3d8e7ab70695431c32a20679478e868c7893d85e25dd339ecef48d4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-3-extended-middle-legs",
+      "bitmapSha256": "de7308cdbc8d67956ba640215de318e7eec4d7b9c070e3a92f86445b5631a2c8",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-5",
+      "bitmapSha256": "a2d9f6c081261104e233991f6890a28630329a31eb7e668a2822a137e596c750",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-1-5-extended-middle-legs",
+      "bitmapSha256": "26454b222e1eab08ec737010ddf2fc0a8aabcd894261a65953944d8ae67f7a2f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-0",
+      "bitmapSha256": "f2c4933508893531ebe9853c65c48202ca0973cef8ba4f88e0fbf78d7ab8e57a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-0-extended-middle-legs",
+      "bitmapSha256": "64b681053413101d81d4a777ee4b88999e514767a08328db59d96f58abc93257",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-2",
+      "bitmapSha256": "e410a9bb264d2015b2adf8c978f17cc4fd6f04fdd6a99ddd3df9db9779fe3f33",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-2-extended-middle-legs",
+      "bitmapSha256": "04f500b300cf033ca704115ce10e6dc4e32e893f57c55f9d148953be19bccd42",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-4",
+      "bitmapSha256": "f062f529dbbf2cbca16915c0dcf8403c606dfd655b7ad86f1b36caa109d05b38",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-4-extended-middle-legs",
+      "bitmapSha256": "be84e485394d45bc0ded715bbe92c2cb1ca08c6483fb64106a7dbe2ea0ecba8f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-1",
+      "bitmapSha256": "3e2c89ea78b7146239b2863d381bf735adef57548f42c03c17771b7e2cef1097",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-1-extended-middle-legs",
+      "bitmapSha256": "91efd3b066458b1276d01ddc386151d55176ebe82f0a15506cc0f41b14f20489",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-3",
+      "bitmapSha256": "884aa531be0592f321ffe0ee89946b92bd465013545fbd78d819687e7c44069d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-3-extended-middle-legs",
+      "bitmapSha256": "ae25d2e2ef072efe79e4c6af35b66d2b84925a83db478016c85739c95a04048f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-5",
+      "bitmapSha256": "7c959a08c780bcac3462ce4eb018d51ccd3db4407a73685031a49f4edd522ce3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-3-5-extended-middle-legs",
+      "bitmapSha256": "3f74ea5c54b625441cce737b4fc8dbdf8092fe3f222916ed30526f5a0de6335c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-0",
+      "bitmapSha256": "50537d8b3a2a4a1cdcd4cfc02f262372b4954daee0d09bac755d3f1f8857ea16",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-0-extended-middle-legs",
+      "bitmapSha256": "d879f68cfe3d6b7d5481c7c8f3cccec2ea3043e48bba07d27d89c000c6414d66",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-2",
+      "bitmapSha256": "37be26347cfb1f1b8163df0dae06d97c8a760ef88e5496ec17e010415a3b8f78",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-2-extended-middle-legs",
+      "bitmapSha256": "d0f7b1ae9e5ec449c060de55dc343e7793d9b18bcb541ba74b5d2a456586affe",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-4",
+      "bitmapSha256": "a1a347e4e81a146e9113f449d2908769f2c910aa5034fb81cd6ebf48c3085b61",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-4-extended-middle-legs",
+      "bitmapSha256": "c1c7d215a737555ee9b48c9838aeb3bfca87f8055a917b649d37a29f6d0283d1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-1",
+      "bitmapSha256": "da2c9bce9715407f381b2e16a57c8b0bdf4232f0002191d92f82c8a91649a5df",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-1-extended-middle-legs",
+      "bitmapSha256": "8fc0080b2018167e08c84eef95d584d4b95d37845d8a24ad626848afc21ce429",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-3",
+      "bitmapSha256": "61a9865c85c436fdd7162e0280d04540ab9f7118cccd0ca6b1f5393f0f446891",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-3-extended-middle-legs",
+      "bitmapSha256": "e7bd99f3ced8e4f2a0bfec77ef4b35b5d974efbd496898527a26b7caf81f5542",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-5",
+      "bitmapSha256": "48ea8ec27394b19a818dc75733143456e8fadb0bba3fdaa404bc5ec5b045316c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "right-arched-opposed-bowls-5-5-extended-middle-legs",
+      "bitmapSha256": "59fff765e44991e62f809bfc94cad2cfddb86208a181d784e1532e33ae6fad8a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-0",
+      "bitmapSha256": "ee2c1c91e353e3467e5abb6bb4be88048d4c1b4cf9c506271b69e663ac9854cc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-0-extended-left-middle-leg",
+      "bitmapSha256": "62b2b8ed1493787c3b17b0b773afb8a27a27a867c0be0066ec92189da8f6a5b9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-0-extended-right-middle-leg",
+      "bitmapSha256": "d8a6696b0b91de2fdd67f4674bbd2ea1692f961f2585c5c819ec7a80198f64aa",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-0-extended-middle-legs",
+      "bitmapSha256": "28b28603989f275a15b3877bd6dc9287acb54ed4bbfb858c4338caed360d6630",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-2",
+      "bitmapSha256": "2a90894ed4eea74cad0607ace95a67c374bb7378b3dbaf62a82b5d9d0adc502f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-2-extended-left-middle-leg",
+      "bitmapSha256": "39982a9f4c9036d3eb0da80804f7c44dbf9f7da18c06c2d7f65d124c8df5ffb1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-2-extended-right-middle-leg",
+      "bitmapSha256": "e6db0b4a3398dc3d771640315e7bac6289679ec42b3f107b967650af1b8625a1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-2-extended-middle-legs",
+      "bitmapSha256": "e616d7d17a5f648cc4118c4fafedd9858e87723113dd7d4263b62576a3fc3464",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-4",
+      "bitmapSha256": "0ad49e14be7a3d6996513f72d0d83ea4c4e2416072854dbcde68ebe3cff9aa43",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-4-extended-left-middle-leg",
+      "bitmapSha256": "bd18f82d3d9de380220bb11c1161ba389a9ad183bdf2cd3b30d74d39a728a37f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-4-extended-right-middle-leg",
+      "bitmapSha256": "909841ff24ecb4f41fb451df7d1a0f4a4c4231667f826db7003f6d6486a9d7a0",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-4-extended-middle-legs",
+      "bitmapSha256": "ba4df37ae53b60a3ab3086065db6cd4090fb7a50f3f5b3fd5623096b851e009f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-1",
+      "bitmapSha256": "04119a5db84bbc9dce89f8ed954e9b20c49413b469206c70154a97d85156d7fb",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-1-extended-left-middle-leg",
+      "bitmapSha256": "577bb428d1bb538856a84c6a9ad2faa4c559d0cc9cfc1c161d53e769559a146c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-1-extended-right-middle-leg",
+      "bitmapSha256": "04c2272d3bd46e0435978d2e89cc559460653a60cd778075e769bb7b34aa71c5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-1-extended-middle-legs",
+      "bitmapSha256": "052517d44172a10d4a629c283c40bb22529d437168f3af0a358bdd2a97b377dc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-3",
+      "bitmapSha256": "be7d74a4b926f6464e833003da0fb1fdc248fe5fabebaa19aaca97966de1989e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-3-extended-left-middle-leg",
+      "bitmapSha256": "52104cf5b5f7257681101e660a2d94cde3e8a939ae9517495b89522e1487a077",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-3-extended-right-middle-leg",
+      "bitmapSha256": "81c5b70db1e6636073d49d1a6519eb9bb29778308b9edca15caef677b7181484",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-3-extended-middle-legs",
+      "bitmapSha256": "c1461b80a9c9f6e1df342ed5ef73542c0f4801b3d2020e733010d6f307ce0305",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-5",
+      "bitmapSha256": "ba798828ba316387a428ce569b785e6c46e94218e6b28691aa1f0861116cbb15",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-5-extended-left-middle-leg",
+      "bitmapSha256": "ab6422ea4d9d0bc723f59404e22610cc19e07a08b9039697cb297cb7c45f9f69",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-5-extended-right-middle-leg",
+      "bitmapSha256": "e20709be9f164ba48e7e028fbd98038471fa8797b3703b463059a02e79bf28bc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-0-5-extended-middle-legs",
+      "bitmapSha256": "712cad11b473aa87c3867f86baeb7728801a46ccd3bd857172a8661663de6bed",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-0",
+      "bitmapSha256": "1807555449fc4436addebe782d6a1e531863512d3827622bd65e1133f0784fff",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-0-extended-left-middle-leg",
+      "bitmapSha256": "710d035764243019d2141f9b67c2937ee438d88d9bddea6fd9fd37fc73e1b890",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-0-extended-right-middle-leg",
+      "bitmapSha256": "8f42f360141e765b5b0bd200128f9283c47e0cb0c474f4b5c1407af6cebd94ca",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-0-extended-middle-legs",
+      "bitmapSha256": "abf2a8649cfbba21a42e65238466cd46aec1c46520294cf7b2de6dd252f980b3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-2",
+      "bitmapSha256": "ac5130c4ca28a25af8b6bde89956330a84c3f86cdf5823aaa066cb00937e2d66",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-2-extended-left-middle-leg",
+      "bitmapSha256": "ec37fd801e6770d3c4d9baa50da3c0e54b406b5eaf1e5a6cc7f3ed7361beec37",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-2-extended-right-middle-leg",
+      "bitmapSha256": "1e03234aaf455b2b3d1a6926413429b242192299b3b1be909e6eb14d9494e5f4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-2-extended-middle-legs",
+      "bitmapSha256": "53fdb04648096604bdad8f41b4fcc6748e13b11caba045fbf83c347ebb26bc52",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-4",
+      "bitmapSha256": "96f0e05576fa4167ff539438c18ff74915ec616c110ad4cb527cd0d6edfda7fa",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-4-extended-left-middle-leg",
+      "bitmapSha256": "70b75f376678c061eef4065f1e7d5a53a3e83fc4e2f6599a0f19ad9d12f2faf2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-4-extended-right-middle-leg",
+      "bitmapSha256": "5ff73f5b4d5b07245518a520385c39e16b97b31c82d3c264747878dfc38c6b35",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-4-extended-middle-legs",
+      "bitmapSha256": "2e28456dd27f31f9189d6ba9e6169e695aa02b935538f1aeca638b48c92dd82a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-1",
+      "bitmapSha256": "fd206cbccc556e6fffe7121881b72b2e1e608d95a3c707103d7ad1f9eb426d94",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-1-extended-left-middle-leg",
+      "bitmapSha256": "096c9548d19286bd25a8d07a890f1f708b352d20909e2426ab54ada3d6d37562",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-1-extended-right-middle-leg",
+      "bitmapSha256": "cfafbe1b2536c77b1d945243e94f54a4c63cb6854347a78379016850588d78e7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-1-extended-middle-legs",
+      "bitmapSha256": "477a81aef28356dd3c0289841fff6eb791350b0c30e84f2237581a356eae005b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-3",
+      "bitmapSha256": "97ea10ca57f145d0fdc8e95ce1d1a948a1127fe2072539e086e37a71cf4e2541",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-3-extended-left-middle-leg",
+      "bitmapSha256": "e5ce57cdb7fa631a9dd001c75559bc1efda29d41bd6af5971bc2c627588ce5ad",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-3-extended-right-middle-leg",
+      "bitmapSha256": "d0ba5018163a85ccb5fdde28780f80cf15baf844b01c1dfa099dade6d1268752",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-3-extended-middle-legs",
+      "bitmapSha256": "e944e2bf0eecb75cb168120ebf4ba9d421c17f404115760ebcbdfede971b31a9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-5",
+      "bitmapSha256": "024e42b8a9884f69fc48ba00fef61e25653251c98de724e0740cf7918d29b11e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-5-extended-left-middle-leg",
+      "bitmapSha256": "50c2a2e2c51d080bffb546d51cf331c248f049c506bc520aed4d5b09a4a4ad31",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-5-extended-right-middle-leg",
+      "bitmapSha256": "52de9bd2357cbd355a01d3882fd5ddc66e6c7e55753f324d9dd0d1f11825933d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-2-5-extended-middle-legs",
+      "bitmapSha256": "d665947142ed5d90aad56a2dbd848257772049a710e5000c0e2bf3619271a892",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-0",
+      "bitmapSha256": "271e689a8fe4bfa62e2adf53259b95c12cdc91b9406aef5a79ad7d014f63ce66",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-0-extended-left-middle-leg",
+      "bitmapSha256": "cde687395f2ac4a94782b08934217ec0cc58107f0bb3d4cccc1b2f1ad3b80474",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-0-extended-right-middle-leg",
+      "bitmapSha256": "889ddd1358ca7ae0baa8bc4c70469e2b52e6f6508634951b5baa97388a97cfa4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-0-extended-middle-legs",
+      "bitmapSha256": "6dc6f3dc86d24a440f7aec663cf308cb5bd044b0577b097b411aef5f7257c1cd",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-2",
+      "bitmapSha256": "0624a8836729b44e6bfa67c93b57f7194971201856970bc29b469bab77627fdc",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-2-extended-left-middle-leg",
+      "bitmapSha256": "2ac536689cd8cf7b2a27bb6fbb144d043a56237a0fd5bc95dc94baf08a26142c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-2-extended-right-middle-leg",
+      "bitmapSha256": "9c2426f5fec027eaff16a3e40d1bb9a6510843ab735201a29cd6eb9eeeaf635b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-2-extended-middle-legs",
+      "bitmapSha256": "34500de88541b9114dbdd5705c0645690070bd79cb3dc922ba8328a2cc0e44a3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-4",
+      "bitmapSha256": "2332611789192751650bd01fbdfb64653f7fe0e44d212e2835b5c893a2036b63",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-4-extended-left-middle-leg",
+      "bitmapSha256": "1e814a884ef05c2cca964d11d31423e32b1cf7bfffd122c5b84f520c02ad3183",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-4-extended-right-middle-leg",
+      "bitmapSha256": "8cadbee63b362b6920025ad4965a15ebff847f3629deeacc3c28008301f871d9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-4-extended-middle-legs",
+      "bitmapSha256": "90c29ccd1636f36a6e9d09f1a7df6b32e248b836c9ef7ad7ed208038a20be451",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-1",
+      "bitmapSha256": "74179955c51b279ad626fd06e3fb6a3812560b8534bdfe2ccd1760429ddd5307",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-1-extended-left-middle-leg",
+      "bitmapSha256": "8fc281f0be8944e8a06166cf63bea363a9494c5c31ab637ee2068399df59fffa",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-1-extended-right-middle-leg",
+      "bitmapSha256": "f5a4d672daab16e2b1311645b824acce0a74ed3860222fff5dcf7e08d873e816",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-1-extended-middle-legs",
+      "bitmapSha256": "c81e5afaef436ee03fb7ad7636ce8fd5fa65465404393cb18705520b42809c5e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-3",
+      "bitmapSha256": "5e5e37d79af118d58559b6066ccd5376340749ec839de0c0b3506b006493244d",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-3-extended-left-middle-leg",
+      "bitmapSha256": "39037ec7f20350e47d27994c42f2f5099561cd14412b7d5bf47492947dcb3580",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-3-extended-right-middle-leg",
+      "bitmapSha256": "cddf65fbab13ee838d41c24f19c533c94ef144648df0bf21eeb4ecb5bacdd6a2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-3-extended-middle-legs",
+      "bitmapSha256": "6115ed6f39c694e589d64d659266cdeed710f653ffa0e80927ef3272c6c17f6a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-5",
+      "bitmapSha256": "095ef3d989c772a9e5b123abff7eb85ee0ca9971c838721ed2496eb7e8b72ae4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-5-extended-left-middle-leg",
+      "bitmapSha256": "0bd733002465e36bfc8c37b370c83b4c1f6ad8d980e32fbaf6962a76bb88be81",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-5-extended-right-middle-leg",
+      "bitmapSha256": "881e1c238de67eb48144e8cdf342db918b54c1562d1960319149b5adbc9cb695",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-4-5-extended-middle-legs",
+      "bitmapSha256": "90d4a6b0c9e2e4d35b834a91edf8af284952f3d404ee9dd5e352420abb67a276",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0",
+      "bitmapSha256": "a1c633cab9278d4cd4f03c91dcae573004fba00e2244708287039caa3843431b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+      "bitmapSha256": "5fa069bfb9520ace41ee4bab2ac8822d5ff27c345665fb3b34762364fae6e53e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+      "bitmapSha256": "a2ab854001e4ed6560e37e30c7191b015c8a35bec67dfceba8d5e2e873ecfee4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-middle-legs",
+      "bitmapSha256": "87d551f3af2e831026c8205aa038b9456051656cbbc92828a82ef91eceec10ed",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2",
+      "bitmapSha256": "b40fc410060cd7644cc017c0a51dba7281589d9459505cccef9579ee4efc3163",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+      "bitmapSha256": "59f6e6c3477cb008369a99e8fce8e8fb6dd6b46b277cedc48c2539355f201005",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+      "bitmapSha256": "c4450686dfecba0ac220bdf61828c8203909d078fc0b6fba2e35b5ed8c744b03",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-middle-legs",
+      "bitmapSha256": "d967dffb714014cdd72a39edb0005b31affb29266567d1ff3c59b8f68e97201e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4",
+      "bitmapSha256": "434b47e6d4ad65dd716dc1243f7392e10eac431f2c00f54d5a36e67f65c6b4a3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+      "bitmapSha256": "07a7af85828817040d819f8bf8b9bb15b1c3c68a54017d41a2cc6d8cbac81547",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+      "bitmapSha256": "9d850571b3445f19ab67e9dc17a26df5e1531dce0de1a3bc15b312b5c9d1206f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-middle-legs",
+      "bitmapSha256": "79886434f7662603fdfadbe9c94fa26282d785d518586c72e1490198061c2091",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1",
+      "bitmapSha256": "6d9bb63fd5aa3677adf8229ced90b3630e5f6d274c6d2cda15b8c030b4093439",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+      "bitmapSha256": "e650cc6fdcdb6082b4c51418026f6408f8cb0aa688b5ff11caff24d5a84a78b4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+      "bitmapSha256": "abb88c0877396a29a03631f5214ea85d2a23a0b0ff445ffcac4bbd886709a6e5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-middle-legs",
+      "bitmapSha256": "9a786d649671db910becf9ee9a71b77bb06d484f411f64058ced02aa90f44ff5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3",
+      "bitmapSha256": "91026e0cda5d09a9a508f6c0fa51a6f09c5bbab8db24c64e4c3a0c5bbb1cc138",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+      "bitmapSha256": "453d7a69535473f8c0de5661e6efd2a6f4d29bedbb638c8f665b7a5645e2a41e",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+      "bitmapSha256": "aaf9fa09c8a88bd16ec3b5048189b7b28aaff3da5a7db8234c53ea8f691dbeb3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-middle-legs",
+      "bitmapSha256": "2bdc432b1b8394280e29db864dbb4a5112da5f3fa624d5a3425b07023704ecd8",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5",
+      "bitmapSha256": "5e92335be746e49a6aa5f2655e91e9c3683d1053d273edb67aaf5990b9762fcd",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+      "bitmapSha256": "f3984acd691c8632f80c054d0e49aed0d54f22f87ef4d13fc1a6c37e00393f80",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+      "bitmapSha256": "1437baa821c6a99b4205568e82ed196c273f1dff7fc046c6d0af92c8ad4bf93a",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-middle-legs",
+      "bitmapSha256": "7e82d2daaa27cd2ccf89a540c3fa6296b3acc32a8f500a1aea7a9ad69ad39bc4",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0",
+      "bitmapSha256": "3a6223f806a2d29015605b2fa2c70773db54265331869a2e17d76a397810c3ad",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+      "bitmapSha256": "bfd9e8545a63e5f0b26e10b76942c1932a2b6a8a0f52185bafe0b90ae511531c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+      "bitmapSha256": "f5e957f1067b44d8d8d69c8d161ac9c36dcc110a9a7c1c8e9ea46c9f5e2f369b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-middle-legs",
+      "bitmapSha256": "e87b052d0bbddc216bbf3837cc2c7439bc176cc3084c782e17000bd6b5bbe671",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2",
+      "bitmapSha256": "5a21ec2e4ccaabe97ab6c91399dca9f532f7121fa52eeb8c459d35554630578b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+      "bitmapSha256": "97ff9e0dee64d19fdc783d294aa195c0cd1ad5acf8191234590370ef10646533",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+      "bitmapSha256": "e61ddd5e930c1a1bdf03609716b6a0b8c8c4e4a77a0f3556872a3bbbc3136f8b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-middle-legs",
+      "bitmapSha256": "2893155f3727966ed310ec8d3fb97e37efc5c1326caa5b18d6700eb931611697",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4",
+      "bitmapSha256": "fa8ebff10467f8f79e903ed850e230826c7a7979f9b53c873b475cdfe1686348",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+      "bitmapSha256": "5125a7fa77f4e57722f0bad483e344245fd9b0d051f693f5edbe524c7ef7e0a1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+      "bitmapSha256": "97901f587478602dfd4765c0d9407359ce4bc80d63b692f3c0841fe7ef8e0ea2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-middle-legs",
+      "bitmapSha256": "1f7255f3152b5f39bb8f994f99f5f74735c81e31597355c8d8c031c3080aa6c5",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1",
+      "bitmapSha256": "e3a327800d79a98bfd6417f8b1d558b612ec4c1adc3fc38d3a1e181ac23baabe",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+      "bitmapSha256": "992b0a39fabe33a613da36fef4d458a27d40c50721e312e16265f6cfa7461357",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+      "bitmapSha256": "734606e196f8a5d2ee481fad95ccc8a45bf2954f018c14c115876a516a3cecd7",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-middle-legs",
+      "bitmapSha256": "ad87682e0932b998489158742af631e401ade734ab3fa443b785bf248c214fd1",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3",
+      "bitmapSha256": "eba1eb211be709a9a0df164069bd41c134311f1764748f8c5a0eadba950be1b2",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+      "bitmapSha256": "060b2c2a53584882d4876381d6a2693ef0320f63a74e06d02d6b2b738c240aed",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+      "bitmapSha256": "9790f7321bc4d3ea9c1176bd8b4c0001fa231e47fa1976176ad6a4bb6394b1ef",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-middle-legs",
+      "bitmapSha256": "59e6b0cef0989fa0663d9f748d7a1a7156235fbe45cf28fd08a77ba213b4b80f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5",
+      "bitmapSha256": "359c58705a4c86e30289ecf278ada201b315825e326bc5b3453e72205ebffac9",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+      "bitmapSha256": "5ae1571f5b9f72fab1c6ec12f1eb68523ff45a2be795562635e4591702eebc6b",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+      "bitmapSha256": "877359b59293ce3fc225ed1702ca267ef128e8727fb52df620339842c4142eec",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-middle-legs",
+      "bitmapSha256": "ce6d228997247537aef62bfdb9bde486434d11a8ee9182c5def1da7565318b6c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0",
+      "bitmapSha256": "a1fc57f89b4daae93c70a1b4967f9bf621700203bb3bff2e282de717972afb11",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+      "bitmapSha256": "e65556530bb99eb38acf6512e4fd70b430229de40f8fc77e61c9ae2d41fc24cd",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+      "bitmapSha256": "6e15f1481469c9679a850ec9e2abb6756962ab80331a3e6c730bbae711189524",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-middle-legs",
+      "bitmapSha256": "e9280cd7e4e4b8294e9ae0ffa1b4431066fa1c51789a91940556d23e1d576723",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2",
+      "bitmapSha256": "82ef53a08cdcd543af2e68a4d4208206d01d391d118ec5357a5611d2d5e52b07",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+      "bitmapSha256": "ab08f533ca8389d392f3a1508cc97ba63825442561b28ecc421d9b6a0f785ddd",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+      "bitmapSha256": "9912c01486faa989ca608cb6b41083bf0cda2782047ba964cb3821a617a91a77",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-middle-legs",
+      "bitmapSha256": "85d8eb64507d8200dd29b0383bd136b857ea129f2a3d551b43251b083a3ff364",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4",
+      "bitmapSha256": "7c16d9b866ea8d915dbe96f9e537673999341b8f79f58e5e9cd844daf3a2e132",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+      "bitmapSha256": "4dc32f23a8e062ca9b7edb87de72820e482e4c40bf4480ee98a737d3e0c5750f",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+      "bitmapSha256": "b4cb99b8d96d6f3713a7ed94ff7c45f6506c5fddb37f2ba583af0ce9267ca338",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-middle-legs",
+      "bitmapSha256": "82473eb0f007422762caaa0c61444e32d42db2c6607ac219353eed980ce48f71",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1",
+      "bitmapSha256": "b5afd6260a9b57c0f206edb28e0e6d98c5356a59f962c3a69770ecd259467052",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+      "bitmapSha256": "d197c213900f42f614a714e5392916efe1c6030d6299e584fec4173d63db6bba",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+      "bitmapSha256": "013d1bea6afa1055b7ff6525dc946c4526c5c49f19d27feb94bf723f4dc3002c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-middle-legs",
+      "bitmapSha256": "cda69bac602c1e13d0e5f199ce255ef6d7b499041d8a9149553b1c39e7e8326c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3",
+      "bitmapSha256": "c6ad36ff22c077a7a2d596c7099f090f43eb1da95e6f0762971eff363c118326",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+      "bitmapSha256": "c35cb98e32c46b37481d5a55fa3cc45f92ca3c4e0cc108265cf3f0d41c7182ec",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+      "bitmapSha256": "6ab887cc70058b31d95b8a3fb7a548dd6235c10c288c7bad21f15b31754069cb",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-middle-legs",
+      "bitmapSha256": "82e706b62ad2e68f138ffbb2f0fb00c72e0de950aedd72e601e5612a36ab7fca",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5",
+      "bitmapSha256": "456524f7e5cdf641a45b8e77e910c111c6af24ee479cde10ca3625af2734087c",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+      "bitmapSha256": "aca0f7b7cb5b7022184e7077f88cf468fbeaaf414a6148464e1dd5c267dad749",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+      "bitmapSha256": "515dc62de987632b3f16eda38006bf0082fc40804724bf6d07ce569eddbb8db3",
+      "status": "independently-reviewed"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-middle-legs",
+      "bitmapSha256": "abd862fe0dbc5104f100e4a985f3b2553e79ac8cdabecde46d0de5433675339e",
+      "status": "independently-reviewed"
+    }
+  ]
+}

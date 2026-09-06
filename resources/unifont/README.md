@@ -1,8 +1,9 @@
 # Quintessential Latin Unifont drawings
 
-148 drawings, all **8 × 16 pixels**: the complete 136-character group without
-middle components, plus the 12 original stress glyphs. The current allocation
-contains 1,216 characters in 30 families. These are project drawings, not part
+All **1,216 drawings at 8 × 16 pixels**, across the current 30 families:
+136 forms without middle components, 156 short/extended pairs (312 glyphs),
+and 192 independent-extension quartets (768 glyphs). The previously approved
+148 bitmaps are preserved exactly. These are project drawings, not part
 of an official GNU Unifont release. Copyright (c) 2026 Josh Hufford; native donor
 attribution and OFL 1.1 are in `OFL.txt`.
 
@@ -21,6 +22,13 @@ Italic, additional weights, outline masters or PDFs.
   U+F2EBC–F2EBF, with explicit contact and extension pixels.
 - `unextended-branches.json`: 54 added shoulder, bowl and arch forms.
 - `unextended-spines.json`: 55 added double-bowl and spine forms.
+- `middle-branches.json`: 496 added shoulder, bowl, arch, double-bowl and
+  one-sided-spine forms; explicit compact templates and attachment masks.
+- `middle-shared-spines.json`: 284 added shared-spine forms with one arch
+  on either side or one on each side.
+- `double-middle-shared-spines.json`: 288 added shared-spine forms with
+  two arches on one side.
+- `approved-baseline.hex`: the pinned 148-character preservation baseline.
 - `donors.hex` and `donors.json`: 40 unmodified native donor bitmaps, names,
   individual checksums, original archive checksums and attribution.
 - `review.json`: inspection records bound to bitmap and proof-input hashes.
@@ -36,6 +44,8 @@ ID `special-ring` remains internal; its public structural name is BOWL.
 ```sh
 npm run build:unifont
 npm run test:unifont
+npm run test:unifont:sources
+npm run test:unifont:review
 node tools/build_unifont_glyphs.mjs --check
 npm run preview:unifont
 npm run test:unifont:browser
@@ -54,12 +64,24 @@ character includes native donors, the frozen current Roman STIX-based reference,
 1× and 2× views, gridded and clear 8× views, and repeated and mixed Latin strings.
 Static proofs work without JavaScript.
 
+Each middle-component family is arranged as complete pairs or quartets in
+the allocation's visual order: neither, left only, right only, both. The
+interactive inspector loads a compact metadata file; full coordinate flags
+and review evidence remain available in `glyphs.json` and `review.json`.
+
+The three middle-component source generators are stored beside their JSON
+drawings. `test:unifont:sources` reconstructs and compares these sources
+without writing files or resetting inspection records. Literal templates,
+outer masks and middle-extension masks must reproduce every exported drawing.
+
 ## Pixel conventions after foundation feedback
 
 Coordinates are zero-based. Body rows are 6–13, with the baseline below row 13.
 Ordinary ascenders reach row 3; descenders use rows 14–15. Column 0 is blank.
-Four staves may occupy columns 1, 3, 5 and 7. Every drawing is attempted at eight
-pixels; there are currently no 16-pixel exceptions.
+Four staves occupy columns 1, 3, 5 and 7. Three-stave branch forms follow
+native m/turned m at columns 1, 4 and 7; a three-stave shared spine instead
+reserves five columns for its paired counters. All drawings fit eight pixels;
+there are no 16-pixel exceptions.
 
 STEM and BOWL exactly remap native U+0131 DOTLESS I and U+006F O:
 
@@ -106,6 +128,21 @@ remain unchanged. Straight extensions on spines may fill (1,13) or (6,6) to carr
 the stave continuously through the rounded body corner; each repair is recorded
 in `recipe.joinPixels` and preserves the existing counter.
 
+Five-column shared cores retain equal six-pixel counters and the balanced
+two-row waist derived from both native a orientations. Three-column cores
+retain the approved row-9 crossover and two-/three-pixel counters. The native
+m shoulder and turned-m hip use one-pixel diagonal joins in each two-column
+interval, without repeated dotless-i feet beneath internal staves.
+
+In 48 states with two arches on one side of a shared spine, the ordinary
+outer hook meets its immediately neighboring extended stave. This makes a
+small terminal counter, distinct from the two unchanged spine counters.
+Examples: U+F2D1A (lower-right contact) and U+F2DD1 (upper-left contact).
+The hook remains visibly different from a straight ending. These are natural
+compact hook contacts, recorded in `structuralChecks.terminalContact`;
+they do not declare a long-bowl return contact. Their explicit coordinate
+proof is in `qa-double-middle-shared-spines/compact-hook-contacts.png`.
+
 ## Validation and inspection evidence
 
 Build checks reject missing batch identities, duplicate assignments or
@@ -126,9 +163,14 @@ proof renderers, proof CSS and the frozen outline font. Editing a shared source
 currently invalidates all drawing records conservatively. The static proof
 manifest also hashes the generated HTML. Inspection does not grant user acceptance.
 
-The 136 forms without middle parts are complete. Subsequent batches cover
-156 short/extended pairs (312 glyphs) and 192 independent-extension quartets
-(768 glyphs). Every descendant requires its own recorded visual inspection.
+All drawings have individual inspection records. Durable family contact
+sheets are retained in the `qa-*` directories, with per-glyph bitmap hashes
+and evidence image hashes. Browser verification additionally captures every
+static character proof and verifies its exact HEX pixels and integer sizes.
+The final review command requires all 1,216 current records, complete
+near-duplicate review records, and independent review evidence. Agent visual
+inspection, engineering verification and the user's final aesthetic acceptance
+are recorded separately.
 
 ## Pinned sources and chart geometry
 

@@ -41,7 +41,7 @@ try{
     check(`${width}px history restores selection`,await page.locator('.bitmap-cell[aria-current="true"]').getAttribute('href')==='unifont/proofs/stems.html#bitmap-f2a03');
   }
   await page.setViewportSize({width:1440,height:1000});
-  for(const proof of ['primitives','pairs','stress','expansions']){
+  for(const proof of ['primitives','pairs','stress','expansions',...new Set(metadata.glyphs.map(g=>g.familyId))]){
     await navigate(`unifont/proofs/${proof}.html`);
     const cards=page.locator('.foundation-card');
     if(proof==='expansions')check('Complete first-group proof contains all 136 drawings',await cards.count()===136);

@@ -7,6 +7,14 @@ import {rowsFromDrawing,rowHex,assessBitmap,pixelDiff} from './unifont_geometry.
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const sha256=value=>createHash('sha256').update(value).digest('hex');
+// Keep generated per-glyph and per-comparison records on separate lines.
+// Coordinates remain readable in the editable drawing sources and proofs.
+export function serializeUnifontRecords(value,compactFields){
+  return '{\n'+Object.entries(value).map(([key,item])=>{
+    const data=compactFields.includes(key)?'[\n'+item.map(record=>'    '+JSON.stringify(record)).join(',\n')+'\n  ]':JSON.stringify(item,null,2).replaceAll('\n','\n  ');
+    return '  '+JSON.stringify(key)+': '+data;
+  }).join(',\n')+'\n}\n';
+}
 export async function constructUnifont(root=ROOT){
   const sources={};
   async function read(name){const value=await readFile(path.join(root,name));sources[name]=sha256(value);return value;}
@@ -27,11 +35,17 @@ export async function constructUnifont(root=ROOT){
   for(const name of ['site/assets/model.mjs','site/assets/style.css','site/assets/unifont-model.mjs','site/assets/unifont.css','tools/unifont_proofs.mjs','tools/unifont_geometry.mjs'])await read(name);
   const bundles=await Promise.all(design.sourceFiles.map(name=>json('resources/unifont/'+name)));
   const byId=new Map(allocation.entries.map(entry=>[entry.glyphId,entry]));
-  const stressIds=bundles.flatMap(bundle=>(bundle.groups||[]).flatMap(group=>group.glyphIds));
+  if(byId.size!==1216||new Set(allocation.entries.map(entry=>entry.codePoint)).size!==1216||allocation.entries.some(entry=>entry.codePoint<0xf2a00||entry.codePoint>0xf2ebf))throw new Error('Allocation is not the unique complete 1216-character range');
+  for(const bundle of bundles)for(const name of bundle.sourceReferences||[])await read('resources/unifont/'+name);
+  const stressIds=bundles[design.sourceFiles.indexOf('stress.json')].groups.flatMap(group=>group.glyphIds);
   const foundationIds=[...allocation.entries.filter(entry=>entry.parts.length===1).map(entry=>entry.glyphId),...design.pairGlyphIds,...stressIds];
   const withoutMiddle=allocation.entries.filter(entry=>!entry.parts.some(part=>part.middle));
-  const expectedIds=new Set([...withoutMiddle.map(entry=>entry.glyphId),...stressIds]);
-  if(design.stage!=='unextended'||withoutMiddle.length!==design.completeWithoutMiddle||expectedIds.size!==design.expectedDrawn)throw new Error('Unexpected scope for the complete group without middle components');
+  const expectedIds=new Set(allocation.entries.map(entry=>entry.glyphId));
+  if(design.stage!=='complete-repertoire'||withoutMiddle.length!==design.completeWithoutMiddle||expectedIds.size!==1216||design.expectedDrawn!==1216)throw new Error('Unexpected scope for the complete repertoire');
+  const baselineBytes=await read('resources/unifont/approved-baseline.hex');
+  if(sha256(baselineBytes)!=='76e0a9f5f073ef4ddec768e82e66c94a38ccac8234254a3a66761ec6d76f3020')throw new Error('Approved 148-character baseline changed');
+  const baseline=parseHex(baselineBytes.toString('utf8'));
+  if(baseline.size!==148)throw new Error('Incomplete approved baseline');
   const seen=new Set(),bitmaps=new Map();
   const glyphs=bundles.flatMap(bundle=>bundle.glyphs).map(source=>{
     const entry=byId.get(source.glyphId);
@@ -48,10 +62,18 @@ export async function constructUnifont(root=ROOT){
     const assessment=assessBitmap(rows,8);
     for(const field of ['components','counters'])if(source.expected?.[field]!==undefined&&source.expected[field]!==assessment[field])throw new Error(`${source.glyphId}: expected ${source.expected[field]} ${field}, got ${assessment[field]}`);
     const line=entry.codePoint.toString(16).toUpperCase().padStart(6,'0')+':'+hex;
+    if(baseline.has(entry.codePoint)&&baseline.get(entry.codePoint).line!==line)throw new Error(`Approved bitmap changed: ${source.glyphId}`);
     return {...source,rows,line,hex,codePoint:entry.codePoint,name:entry.name,canonicalName:entry.canonicalName,familyId:entry.familyId,parts:entry.parts,bitmapSha256:sha256(line+'\n'),assessment};
   }).sort((a,b)=>a.codePoint-b.codePoint);
   if(seen.size!==expectedIds.size)throw new Error('Incomplete drawing source set');
   const byGlyph=new Map(glyphs.map(glyph=>[glyph.glyphId,glyph]));
+  for(const bundle of bundles)for(const source of bundle.glyphs){
+    const template=bundle.layoutTemplates?.[source.layout?.templateId];
+    if(!template)continue;
+    const rows=rowsFromDrawing(template.bodyRows,8);
+    for(const [x,y] of [...source.layout.outerMasks.flatMap(mask=>mask.pixels),...source.extensionPixels])rows[y]|=1<<(7-x);
+    if(rowHex(rows,8)!==byGlyph.get(source.glyphId).hex)throw new Error(`Component layout and drawing differ: ${source.glyphId}`);
+  }
   for(const glyph of glyphs){
     if(!glyph.recipe)continue;
     const {baseGlyphId,addPixels,removePixels,joinPixels}=glyph.recipe;
@@ -65,12 +87,21 @@ export async function constructUnifont(root=ROOT){
     }
     if(rowHex(rows,8)!==glyph.hex)throw new Error(`Recipe and editable drawing differ: ${glyph.glyphId}`);
   }
-  const groups=bundles.flatMap(bundle=>bundle.groups||[]).map(group=>{
+  const groupKeys=new Set();
+  const groups=bundles.flatMap(bundle=>bundle.groups||[]).filter(group=>{
+    const key=[...group.glyphIds].sort().join('|');
+    if(groupKeys.has(key))return false;
+    groupKeys.add(key);return true;
+  }).map(group=>{
     const base=byGlyph.get(group.glyphIds[0]);
     return {...group,differences:group.glyphIds.map(id=>({glyphId:id,pixels:pixelDiff(base.rows,byGlyph.get(id).rows)}))};
   });
   const nearDuplicates=[];
+  const popcount=Array.from({length:256},(_,n)=>n.toString(2).replaceAll('0','').length);
   for(let i=0;i<glyphs.length;i++)for(let j=i+1;j<glyphs.length;j++){
+    let distance=0;
+    for(let y=0;y<16&&distance<=4;y++)distance+=popcount[glyphs[i].rows[y]^glyphs[j].rows[y]];
+    if(distance>4)continue;
     const pixels=pixelDiff(glyphs[i].rows,glyphs[j].rows);
     if(pixels.length<=4)nearDuplicates.push({glyphIds:[glyphs[i].glyphId,glyphs[j].glyphId],pixels});
   }
@@ -87,7 +118,8 @@ export async function constructUnifont(root=ROOT){
 export async function buildUnifont({root=ROOT,check=false}={}){
   const result=await constructUnifont(root),hex=result.hex;
   delete result.hex;
-  const outputs={'quintessential-latin.hex':hex,'glyphs.json':JSON.stringify(result,null,2)+'\n'};
+  const inspector={glyphs:result.glyphs.map(({glyphId,codePoint,canonicalName,familyId,width,rows,line,notes,reviewStatus,assessment})=>({glyphId,codePoint,canonicalName,familyId,width,rows,line,notes,reviewStatus,assessment:{components:assessment.components,counters:assessment.counters,flagCount:assessment.flags.length}}))};
+  const outputs={'quintessential-latin.hex':hex,'glyphs.json':serializeUnifontRecords(result,['glyphs','groups','nearDuplicates']),'inspector.json':JSON.stringify(inspector)+'\n'};
   await mkdir(path.join(root,'resources/unifont'),{recursive:true});
   for(const [file,content] of Object.entries(outputs)){
     const target=path.join(root,'resources/unifont',file);
@@ -98,5 +130,5 @@ export async function buildUnifont({root=ROOT,check=false}={}){
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){
   const result=await buildUnifont({check:process.argv.includes('--check')});
-  console.log(`Unifont: ${result.drawn}/${result.total} drawn, all 8 x 16; ${result.inspected} inspected; complete ${result.withoutMiddle}-character group without middle components.`);
+  console.log(`Unifont: ${result.drawn}/${result.total} drawn, all 8 x 16; ${result.inspected} inspected; ${result.groups.filter(g=>g.glyphIds.length===2).length} pairs and ${result.groups.filter(g=>g.glyphIds.length===4).length} quartets.`);
 }
