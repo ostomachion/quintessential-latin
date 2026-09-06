@@ -4,8 +4,10 @@
 The pre-change capture supplies the old identity registry independently of the
 new construction code. Internal glyph names and their GID prefix stay fixed;
 only assigned characters move. The authorized s correction is the only old
-metrics and pair exception. The later Roman U+F2B18 optical revision also permits
-its outline to change, while retaining its advance, metrics, and effective pairs.
+metrics and pair exception. The later shared-spine optical revision permits the
+396 Roman forms with an internal spine to change their body counters and
+explicitly reviewed local joins, while retaining advances, metrics, effective
+pairs, and every other native region.
 """
 
 from __future__ import annotations
@@ -42,6 +44,16 @@ CHANGED_ID = "special-spine"
 CHANGED_NAME = "uF2B03"
 OPTICAL_REVISION_ID = "opposed-bowls-0-0"
 OPTICAL_REVISION_NAME = "uF2B1C"
+
+
+def has_internal_spine(entry):
+    """Select the structure independently of the production recipe dispatch."""
+    kinds = [part["kind"] for part in entry["parts"]]
+    return "spine" in kinds and 0 < kinds.index("spine") < len(kinds) - 1
+
+
+SHARED_SPINE_ENTRIES = tuple(entry for entry in ALLOCATION_ENTRIES if has_internal_spine(entry))
+SHARED_SPINE_NAMES = frozenset(entry["glyphName"] for entry in SHARED_SPINE_ENTRIES)
 OLD_CMAPS = {
     False: {**MAIN_SCRIPT_CMAP,
             **{code: f"u{code:X}" for code in range(0xF2B00, 0xF2BA0)},
@@ -187,6 +199,16 @@ class AdditionsBaselineTests(unittest.TestCase):
         self.assertEqual((revised["codePoint"], revised["glyphName"], revised["recipeCodePoint"],
                           revised["postures"]),
                          (0xF2B18, OPTICAL_REVISION_NAME, 0xF2B1C, ["Roman"]))
+        self.assertEqual(len(SHARED_SPINE_ENTRIES), 396)
+        self.assertEqual(len(SHARED_SPINE_NAMES), 396)
+        self.assertEqual(sum(entry["middleLegs"] for entry in SHARED_SPINE_ENTRIES), 180)
+        self.assertTrue(all(entry["postures"] == ["Roman"] for entry in SHARED_SPINE_ENTRIES))
+        historic_internal = {entry["glyphId"] for entry in captured["entries"] if has_internal_spine(entry)}
+        current_internal = {entry["glyphId"] for entry in SHARED_SPINE_ENTRIES if entry["oldCodePoint"] is not None}
+        self.assertEqual(len(historic_internal), 216)
+        self.assertEqual(current_internal, historic_internal)
+        self.assertTrue(all(entry["baseGlyphId"] in historic_internal
+                            for entry in SHARED_SPINE_ENTRIES if entry["middleLegs"]))
         self.assertEqual(sum(entry["middleLegs"] for entry in ALLOCATION_ENTRIES), 348)
         self.assertEqual(sum(entry["middleLegs"] and "Italic" in entry["postures"]
                              for entry in ALLOCATION_ENTRIES), 72)
@@ -202,6 +224,19 @@ class AdditionsBaselineTests(unittest.TestCase):
                 pair = left, right
                 self.assertEqual(before.get(pair, zero), after.get(pair, zero), pair)
 
+    def connection_metadata(self, name, weight):
+        from reviewed_spine_connections import interpolate_connection_metadata
+        if not hasattr(self, "_connection_masters"):
+            self._connection_masters = {}
+            for style, endpoint in (("Regular", 400), ("Bold", 700)):
+                source = Font.open(SOURCES / f"QuintessentialSerif-{style}.ufo")
+                self._connection_masters[endpoint] = {
+                    glyph: dict(source[glyph].lib["org.quintessential.construction"])
+                    for glyph in SHARED_SPINE_NAMES}
+                source.close()
+        return interpolate_connection_metadata(self._connection_masters[400][name],
+                                               self._connection_masters[700][name], weight)
+
     def test_all_prior_source_outlines_advances_and_semantic_pairs_are_preserved(self):
         for style, (_weight, italic) in STATIC_FACES.items():
             filename = f"QuintessentialSerif-{style}.ufo"
@@ -215,8 +250,12 @@ class AdditionsBaselineTests(unittest.TestCase):
                 for name in OLD_NAMES[italic]:
                     with self.subTest(style=style, glyph=name):
                         if name != CHANGED_NAME:
-                            if italic or name != OPTICAL_REVISION_NAME:
+                            if italic or name not in SHARED_SPINE_NAMES:
                                 self.assertEqual(outline(after, name), outline(before, name))
+                            else:
+                                from reviewed_spine_connections import assert_preserved_connections
+                                assert_preserved_connections(outline(before, name), outline(after, name),
+                                                             ALLOCATION_BY_NAME[name], after[name].lib["org.quintessential.construction"])
                             self.assertEqual(after[name].width, before[name].width)
                         expected = [ALLOCATION_BY_NAME[name]["codePoint"]] if name in ALLOCATION_BY_NAME else before[name].unicodes
                         self.assertEqual(after[name].unicodes, expected)
@@ -225,15 +264,20 @@ class AdditionsBaselineTests(unittest.TestCase):
                 before.close()
                 after.close()
 
-    def assert_compiled_preserved(self, before, after, italic):
+    def assert_compiled_preserved(self, before, after, italic, weight):
         self.assertEqual(before.getBestCmap(), {0x20: "space", **OLD_CMAPS[italic]})
         self.assertEqual(after.getBestCmap(), {0x20: "space", **POSTURE_CMAPS[italic]})
         self.assertEqual(tuple(after.getGlyphOrder()[:len(OLD_NAMES[italic])]), OLD_NAMES[italic])
         original, current = before.getGlyphSet(), after.getGlyphSet()
         for name in OLD_NAMES[italic]:
             if name != CHANGED_NAME:
-                if italic or name != OPTICAL_REVISION_NAME:
+                if italic or name not in SHARED_SPINE_NAMES:
                     self.assertEqual(outline(current, name), outline(original, name), name)
+                else:
+                    from reviewed_spine_connections import assert_preserved_connections
+                    assert_preserved_connections(outline(original, name), outline(current, name),
+                                                 ALLOCATION_BY_NAME[name], self.connection_metadata(name, weight),
+                                                 tolerance=1 / 64)
                 self.assertEqual(after["hmtx"][name], before["hmtx"][name], name)
         self.assert_pairs_preserved(effective_pairs(before), effective_pairs(after), OLD_NAMES[italic], ZERO_PAIR)
 
@@ -244,7 +288,7 @@ class AdditionsBaselineTests(unittest.TestCase):
             filename = f"QuintessentialSerif-{style}.otf"
             with self.subTest(style=style), TTFont(BASELINE / "resources/fonts/QuintessentialSerif" / filename) as before, \
                     TTFont(OUTPUT / filename) as after:
-                self.assert_compiled_preserved(before, after, italic)
+                self.assert_compiled_preserved(before, after, italic, _weight)
 
     def test_all_prior_variable_outlines_metrics_and_semantic_pairs_at_five_weights(self):
         if not COMPILED:
@@ -254,7 +298,7 @@ class AdditionsBaselineTests(unittest.TestCase):
                 with self.subTest(italic=italic, weight=weight), \
                         instantiated(BASELINE / "resources/fonts/QuintessentialSerif" / filename, weight) as before, \
                         instantiated(OUTPUT / filename, weight) as after:
-                    self.assert_compiled_preserved(before, after, italic)
+                    self.assert_compiled_preserved(before, after, italic, weight)
 
     def test_variable_axis_and_nonlinear_mapping_remain_unchanged(self):
         if not COMPILED:
@@ -831,9 +875,14 @@ class MiddleLegGeometryTests(unittest.TestCase):
             for entry in self.entries[italic]:
                 recipe, name = entry["recipeCodePoint"], entry["glyphName"]
                 counter_name = f"u{middle_counter_reference(recipe):X}"
+                # Shared-spine companions must contain the newly reviewed
+                # base's counters. All other families retain their independent
+                # historical counter reference, and all native shaft/arch tests
+                # below continue to use the historical baseline.
+                counter_sources = self.sources if name in SHARED_SPINE_NAMES else self.baseline
                 recordings = [tuple(outline(collection[italic, endpoint], key) for endpoint in (400, 700))
                               for collection, key in ((self.sources, name), (self.baseline, f"u{recipe:X}"),
-                                                      (self.baseline, counter_name))]
+                                                      (counter_sources, counter_name))]
                 for weight in SAMPLE_WEIGHTS:
                     values = [interpolate_recordings(*endpoints, interpolation_factor(weight)) for endpoints in recordings]
                     joins = self.sources[italic, 400][name].lib["org.quintessential.construction"]["middleFootJoins"]
@@ -850,9 +899,10 @@ class MiddleLegGeometryTests(unittest.TestCase):
                     for entry in self.entries[italic]:
                         recipe, name = entry["recipeCodePoint"], entry["glyphName"]
                         reference = middle_counter_reference(recipe)
+                        counter_set = current if name in SHARED_SPINE_NAMES else original
                         joins = self.sources[italic, 400][name].lib["org.quintessential.construction"]["middleFootJoins"]
                         self.assert_middle_geometry(outline(current, name), outline(original, f"u{recipe:X}"),
-                            outline(original, f"u{reference:X}"), recipe, (italic, weight, name, "compiled"), .75, len(joins))
+                            outline(counter_set, f"u{reference:X}"), recipe, (italic, weight, name, "compiled"), .75, len(joins))
                         self.assertEqual(font["hmtx"][name][0], baseline["hmtx"][f"u{recipe:X}"][0])
 
     def test_added_terminals_and_retained_arch_regions_use_rigid_native_curves(self):
@@ -900,7 +950,12 @@ class MiddleLegGeometryTests(unittest.TestCase):
                                       and (min(x for x, _ in segment) > divider if above else
                                            max(x for x, _ in segment) < divider)]
                             self.assertTrue(curves, (context, "captured compact terminal reference"))
-                            expected.extend(translated_quadratics(curves, metadata["sigmoidOffsetX"]))
+                            translated = translated_quadratics(curves, metadata["sigmoidOffsetX"])
+                            if name in SHARED_SPINE_NAMES:
+                                from reviewed_spine_connections import is_reviewed_connection_segment
+                                translated = [segment for segment in translated
+                                              if not is_reviewed_connection_segment(segment, entry, metadata)]
+                            expected.extend(translated)
                             continue
                         curves = [segment for segment in native[leg["donorCodePoint"]]
                                   if (min(y for _, y in segment) > 550 if above else max(y for _, y in segment) < -30)]
@@ -920,15 +975,27 @@ class MiddleLegGeometryTests(unittest.TestCase):
                     # The half of each native arch opposite its newly extended
                     # free cap is independently retained from the old parent.
                     directions = set(middle_directions(recipe))
+                    old_curves = quadratic_segments(self.baseline[italic, endpoint], f"u{recipe:X}")
+                    if name in SHARED_SPINE_NAMES:
+                        # The old height-only selection also included parts of
+                        # the edited body counters. Exclude those contours and
+                        # the explicitly reviewed local connection curves;
+                        # retain the historical arch and terminal requirements.
+                        old_counters = counter_recordings(outline(self.baseline[italic, endpoint], f"u{recipe:X}"))
+                        self.assertEqual(len(old_counters), 2, (context, "shared-spine body counters"))
+                        revised_curves = [segment for contour in old_counters
+                                          for segment in recording_quadratics(contour)]
+                        old_curves = [segment for segment in old_curves if segment not in revised_curves]
+                        from reviewed_spine_connections import is_reviewed_connection_segment
+                        old_curves = [segment for segment in old_curves
+                                      if not is_reviewed_connection_segment(segment, entry, metadata)]
                     if len(directions) == 1:
                         above = "descender" in directions
-                        old_curves = quadratic_segments(self.baseline[italic, endpoint], f"u{recipe:X}")
                         retained = [segment for segment in old_curves
                                     if (min(y for _, y in segment) > 300 if above else max(y for _, y in segment) < 200)]
                         self.assertTrue(retained, (context, "independent preserved arch selection"))
                         expected.extend(retained)
                     else:
-                        old_curves = quadratic_segments(self.baseline[italic, endpoint], f"u{recipe:X}")
                         left, right = sorted(leg["centerX"] for leg in metadata["extendedMiddleLegs"])
                         upper = [segment for segment in old_curves
                                  if max(x for x, _ in segment) < left - 80 and min(y for _, y in segment) > 300]

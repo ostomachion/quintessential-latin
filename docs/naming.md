@@ -1,6 +1,6 @@
 # Quintessential Latin naming
 
-Canonical naming version 2 describes visible construction from left to right.
+Canonical naming version 3 describes visible construction from left to right.
 Names do not assign pronunciation or language membership. The allocation stores
 ordered neutral component arrays as parts; the canonical naming function reads
 those arrays without editing them.
@@ -8,15 +8,20 @@ those arrays without editing them.
 The first named component is followed by "with", and further components by "and".
 A closing long bowl can imply the straight extension of its immediately adjoining
 upright. That implied extension is omitted from the name without changing the
-underlying component geometry. Adjacent matching outer and middle branches may
-collapse to "two arms", "two long arms", "two legs", or "two long legs".
+underlying component geometry. Interior uprights use the ordinary stem, ascender,
+and descender vocabulary. Equal adjacent uprights combine into count phrases such
+as "two stems", "three stems", and "two ascenders". Terminal arms and legs retain
+their connection-specific names.
 
 The seven stemless forms retain the names bowl, double bowl, open bowl, turned
 open bowl, double open bowl, turned double open bowl, and spine. The two explicit
 turned names distinguish opposite-facing stemless open forms. Other constructions
 use component order instead of a global turned modifier.
 
-The naming specification gives the complete primitive table, closure rules,
+Every full character name starts with QUINTESSENTIAL LATIN LETTER, including
+these seven stemless forms.
+
+The [naming specification](quintessential-latin-canonical-naming-spec-v3.md) gives the complete primitive table, closure rules,
 and structural examples. The implementation's nameParts(parts) function is the
 single naming authority. The source allocation, public catalogue, browser
 catalogue, Markdown name list, and NamesList.txt must remain consistent.

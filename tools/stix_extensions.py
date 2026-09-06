@@ -181,7 +181,9 @@ def _both_opposed_ports(font):
     contours[0] = [*outer[:first], ("lineTo", ((metadata["stemRightX"], corner[1]),)),
                    ("lineTo", (corner,)), *outer[last + 1:]]
     right_center = (metadata["stemRightInnerX"] + metadata["stemRightX"]) / 2
-    return sum(contours, []), metadata, left_center, right_center
+    from stix_arch_spine_joins import fair_spine_arch_port
+    terminal = fair_spine_arch_port(font, sum(contours, []), metadata, "right")
+    return terminal, metadata, left_center, right_center
 
 
 def _opposed(font, family_index, variant):

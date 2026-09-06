@@ -1,8 +1,14 @@
 # U+F2B18 optical design and project mark
 
-U+F2B18 **stem with spine and stem** is the project emblem. This is an unpublished
-optical revision of the 0.220 Roman reference, across weights 400–700. Its stable
-identity is `opposed-bowls-0-0`, with historical internal glyph name `uF2B1C`.
+U+F2B18 **stem with spine and stem** is the project emblem. This document records
+the initial optical revision of the 0.220 Roman reference across weights
+400–700. Its stable identity is `opposed-bowls-0-0`, with historical internal
+glyph name `uF2B1C`.
+
+The subsequent [shared-spine revision](shared-spine-optical-design.md) applies
+this reviewed treatment to all 396 related Roman constructions, including
+endings, arches, and extended middle legs. The scope and validation figures
+below describe the single-emblem stage and remain historical evidence.
 
 ![Regular and Bold before and after](images/f2b18-before-after.png)
 
@@ -51,16 +57,18 @@ axis are recorded below, independently of the design's control points.
 
 ## Scope and assets
 
-The refinement applies to this reviewed Roman construction. Its code point,
+The initial refinement applied to this Roman construction alone. Its code point,
 advance widths (526 Regular / 569 Bold), outer contour, bearings, and kerning
-remain preserved. Other character outlines and all native Italic forms retain
-their original geometry. The related forms remain candidates for individual
-optical review; this emblem is not a claim that the repertoire is finished.
+were preserved. Other character outlines and all native Italic forms retained
+their original geometry at that stage. Related ending, arch, and middle-leg
+constructions are now covered by the separate shared-spine revision; the emblem
+remains a representative form rather than a claim that the repertoire is finished.
 
-The Regular outline is exported directly from the compiled cmap into
-`site/assets/project-icon.svg` and `site/assets/favicon.svg`. These are outlined
-vectors, independent of installed fonts and specimen weight/posture controls.
-The mark appears in the site header, introduction, browser favicon, and README.
+The Roman outline is exported directly from the compiled cmap into
+`site/assets/project-icon.svg` at weight 400 and `site/assets/favicon.svg` at
+weight 500. These are outlined vectors for the README and browser favicon.
+The site header and introduction use live reference-font text with the shared
+weight and posture controls; the mark's native Italic form remains pending.
 The downloadable font formats and the affected PDF charts are rebuilt together.
 
 ## Verification

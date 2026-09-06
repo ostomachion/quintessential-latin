@@ -14,7 +14,7 @@ const names=new Set(),ids=new Set(),codes=new Set();
 const entries=allocation.entries.map(entry=>{
   if(["language","model","role"].some(key=>key in entry)) throw new Error("Allocation must describe neutral construction only.");
   const canonicalName=nameParts(entry.parts);
-  const name="QUINTESSENTIAL LATIN "+(entry.stemless?"":"LETTER ")+canonicalName.toUpperCase();
+  const name="QUINTESSENTIAL LATIN LETTER "+canonicalName.toUpperCase();
   if(entry.canonicalName!==canonicalName || entry.name!==name) throw new Error("Stale name: "+entry.glyphId);
   if(names.has(name)||ids.has(entry.glyphId)||codes.has(entry.codePoint))throw new Error("Duplicate catalogue identity.");
   names.add(name);ids.add(entry.glyphId);codes.add(entry.codePoint);
@@ -35,7 +35,7 @@ const browser="/* Generated neutral Quintessential Latin catalogue. Project-loca
 "function freeze(v){if(v&&typeof v==='object'){Object.values(v).forEach(freeze);Object.freeze(v);}return v;}return freeze({...catalogue,displayEntries:catalogue.displayOrder.map(id=>byId.get(id)),displayFamilies:catalogue.families,compareDisplay,sortForDisplay:items=>[...items].sort(compareDisplay)});});\n";
 const byId=new Map(entries.map(e=>[e.glyphId,e]));
 const namesList="; Quintessential Latin 0.220; proposed private-use allocation, not a registration.\n"+[...entries].sort((a,b)=>a.codePoint-b.codePoint).map(e=>e.codePoint.toString(16).toUpperCase()+"\t"+e.name).join("\n")+"\n";
-const namesMd="# Quintessential Latin character names\n\nGenerated from the neutral structural allocation with canonical naming version 2.\nThese are project-local private-use names and assignments, not registered UCSUR names.\n\n| Code point | Character name | Native font postures |\n| --- | --- | --- |\n"+allocation.displayOrder.map(id=>byId.get(id)).map(e=>"| U+"+e.codePoint.toString(16).toUpperCase()+" | "+e.name+" | "+e.postures.join(", ")+" |").join("\n")+"\n";
+const namesMd="# Quintessential Latin character names\n\nGenerated from the neutral structural allocation with canonical naming version "+allocation.namingVersion+".\nThese are project-local private-use names and assignments, not registered UCSUR names.\n\n| Code point | Character name | Native font postures |\n| --- | --- | --- |\n"+allocation.displayOrder.map(id=>byId.get(id)).map(e=>"| U+"+e.codePoint.toString(16).toUpperCase()+" | "+e.name+" | "+e.postures.join(", ")+" |").join("\n")+"\n";
 for(const [filename,text] of Object.entries({"resources/catalogue.json":json,"glyph-catalogue.js":browser,"resources/NamesList.txt":namesList,"resources/quintessential-latin-name-catalogue.md":namesMd})){
   const output=path.join(root,filename);
   if(check){if(!fs.existsSync(output)||fs.readFileSync(output,"utf8")!==text)throw new Error("Stale generated file: "+filename);}

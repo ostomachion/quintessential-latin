@@ -1,0 +1,2053 @@
+{
+  "schemaVersion": 1,
+  "revision": "shared-spine-2",
+  "opticalDesign": "compact-spine-3",
+  "connectionDesign": "shared-spine-joins-1",
+  "label": "Shared-spine revision 2",
+  "generatedAt": "2026-09-06T05:29:12+00:00",
+  "font": "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf",
+  "fontSha256": "8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521",
+  "fontFileModifiedAt": "2026-09-06T05:13:45.053138+00:00",
+  "allocationSha256": "d93efd5a9b205d335fcc1c9443d8eee788aa5eab67028fa84b9bc137cddb7804",
+  "exporterSha256": "5fd30dc6d8207398f4b58fba6054d421be3f0bfe1f1a6632599bf300d853f422",
+  "weights": [
+    400,
+    700
+  ],
+  "displayEmCssPx": 680,
+  "contextEmCssPx": [
+    24,
+    48
+  ],
+  "cases": [
+    {
+      "id": "case-01",
+      "order": 1,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B18",
+      "glyphId": "opposed-bowls-0-0",
+      "glyphName": "uF2B1C",
+      "canonicalName": "stem with spine and stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return"
+      ],
+      "svg": "01-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "370b9e676017b2628bc491d43a3b9ec975ad588f42276e3058284ba951e6eac2",
+      "width": 1160,
+      "height": 828,
+      "png": "01-opposed-bowls-0-0.png",
+      "pngSha256": "766b8c85e5403b6a8bbd4832387a1432c7e309f66bceb8dbde71126b301cf453",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-02",
+      "order": 2,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B1B",
+      "glyphId": "opposed-bowls-0-1",
+      "glyphName": "uF2B1D",
+      "canonicalName": "stem with spine and ascender",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Right upper extension: shaft-to-body transition"
+      ],
+      "svg": "02-opposed-bowls-0-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "d4d728ed73b7eada9af99f1b2314e593b6471d553c074e19052ce9cce304766c",
+      "width": 1160,
+      "height": 1001,
+      "png": "02-opposed-bowls-0-1.png",
+      "pngSha256": "0474991cd58d37bff7cc185adf41d7904f7de0b098ba66cced5b8838c80e0138",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-03",
+      "order": 3,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B19",
+      "glyphId": "opposed-bowls-0-2",
+      "glyphName": "uF2B1E",
+      "canonicalName": "stem with spine and descender",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "03-opposed-bowls-0-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "f9a95a6ec48097efc7e03e30745ca5f29507b6b56753a40bc32817d1ac360369",
+      "width": 1160,
+      "height": 994,
+      "png": "03-opposed-bowls-0-2.png",
+      "pngSha256": "effbdda28f8e774d2ce6e3402c48694cd84c5f786cf73af5fb988105650208f9",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-04",
+      "order": 4,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B1C",
+      "glyphId": "opposed-bowls-0-3",
+      "glyphName": "uF2B1F",
+      "canonicalName": "stem with spine and long stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "04-opposed-bowls-0-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "5b69a883a8f495325b2bc1226de8ec5e596b611bc135ee8859ee6447b67246fd",
+      "width": 1160,
+      "height": 1143,
+      "png": "04-opposed-bowls-0-3.png",
+      "pngSha256": "9729383520d69161bc842c6f36f7e88b9ca7cdc2b4c0f98f64ca6926bd25aa15",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-05",
+      "order": 5,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B1A",
+      "glyphId": "opposed-bowls-0-4",
+      "glyphName": "uF2B20",
+      "canonicalName": "stem with spine and tail",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "05-opposed-bowls-0-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "472834feee6dd45c9409d00f6794a445f9e2e2da4e20d791d29a71cb8d676c16",
+      "width": 1160,
+      "height": 1004,
+      "png": "05-opposed-bowls-0-4.png",
+      "pngSha256": "99f90484dd2a3348fbeaa3d40ea3053450818f359b70eab34824172164765f25",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-06",
+      "order": 6,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B1D",
+      "glyphId": "opposed-bowls-0-5",
+      "glyphName": "uF2B21",
+      "canonicalName": "stem with spine and long tail",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "06-opposed-bowls-0-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "c9b181f2ce64c01db8ca451118b482168021f4da1012a8b9c20f5f62727055b2",
+      "width": 1160,
+      "height": 1153,
+      "png": "06-opposed-bowls-0-5.png",
+      "pngSha256": "d542f370264ed3f48696af9011061cb52aa4c7242284e01f0ead21137de67321",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-07",
+      "order": 7,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B2A",
+      "glyphId": "opposed-bowls-1-0",
+      "glyphName": "uF2B22",
+      "canonicalName": "descender with spine and stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left lower extension: shaft-to-body transition"
+      ],
+      "svg": "07-opposed-bowls-1-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "545c7ff1049f0dc09647777df1cef9dfb88bf10c8b0c8dacb60525d409f881df",
+      "width": 1160,
+      "height": 994,
+      "png": "07-opposed-bowls-1-0.png",
+      "pngSha256": "f1a52a1e97891d9b7b9651e00522082aad9980d21df3ee08f797808f9163f167",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-08",
+      "order": 8,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B2B",
+      "glyphId": "opposed-bowls-1-2",
+      "glyphName": "uF2B24",
+      "canonicalName": "descender with spine and descender",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left lower extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "08-opposed-bowls-1-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "0b3eb0343004ea0dd3d506bb51322c9506fe59ffc91f94261fe03be6feeb293c",
+      "width": 1160,
+      "height": 994,
+      "png": "08-opposed-bowls-1-2.png",
+      "pngSha256": "659a2a8a2b6ada235f87debea39cd7730da606f1569965d2015ddd4f5c8736f8",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-09",
+      "order": 9,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B2C",
+      "glyphId": "opposed-bowls-1-4",
+      "glyphName": "uF2B26",
+      "canonicalName": "descender with spine and tail",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left lower extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal",
+        "Lower-hook closure throat beside the adjacent upright"
+      ],
+      "svg": "09-opposed-bowls-1-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "210dc5083d33645ddbf9a27b85a1c650869a4245bfcf20122f171e0628e87016",
+      "width": 1160,
+      "height": 1027,
+      "png": "09-opposed-bowls-1-4.png",
+      "pngSha256": "06213cb859ebf8fc9f6133085b2152ce666a16947c53b1150f021165b1d1cc15",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-10",
+      "order": 10,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B1E",
+      "glyphId": "opposed-bowls-2-0",
+      "glyphName": "uF2B28",
+      "canonicalName": "ascender with spine and stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper extension: shaft-to-body transition"
+      ],
+      "svg": "10-opposed-bowls-2-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "52443853e17badd557c90cca692c1d0840beacf18482c7c44c4a273c3e6d8b3c",
+      "width": 1160,
+      "height": 1001,
+      "png": "10-opposed-bowls-2-0.png",
+      "pngSha256": "7b31aaa64309dcdeb15476c1c8aea66d36106c1e47a9beb4d102493877cc0f97",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-11",
+      "order": 11,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B30",
+      "glyphId": "opposed-bowls-3-0",
+      "glyphName": "uF2B2E",
+      "canonicalName": "long stem with spine and stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper extension: shaft-to-body transition",
+        "Left lower extension: shaft-to-body transition"
+      ],
+      "svg": "11-opposed-bowls-3-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "57e60268c92544d948b36982e20c9b9448020e3662e9dd35fc7fd4ee147fe35a",
+      "width": 1160,
+      "height": 1143,
+      "png": "11-opposed-bowls-3-0.png",
+      "pngSha256": "56f1ba79289694a196a8898da2dda040719570d4b449b4a5d13838cde14e031a",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-12",
+      "order": 12,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B24",
+      "glyphId": "opposed-bowls-4-0",
+      "glyphName": "uF2B34",
+      "canonicalName": "hook with spine and stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper curved ending: neck and terminal"
+      ],
+      "svg": "12-opposed-bowls-4-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 3
+        }
+      },
+      "svgSha256": "33120ffeec4cdfaf7fcc09ccb530cc8d7627219bf6dee391bbe07a7379a249b3",
+      "width": 1160,
+      "height": 1009,
+      "png": "12-opposed-bowls-4-0.png",
+      "pngSha256": "a4e811827b6cdb4435c442cb2575c2c6466a90ed9806ba97788e0f1a68e7fd9b",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-13",
+      "order": 13,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B27",
+      "glyphId": "opposed-bowls-4-1",
+      "glyphName": "uF2B35",
+      "canonicalName": "hook with spine and ascender",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper curved ending: neck and terminal",
+        "Right upper extension: shaft-to-body transition",
+        "Upper-hook enclosure beside the adjacent upright"
+      ],
+      "svg": "13-opposed-bowls-4-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "488dab125661fbc7e8ee7ef43888b2d1e54b12e9e8c409d6e1eef7b993f78d9e",
+      "width": 1160,
+      "height": 1032,
+      "png": "13-opposed-bowls-4-1.png",
+      "pngSha256": "220a62257a542879f0c37a484ea47a3e2d120f7fcb4c850bbeb404969d2eb1e6",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-14",
+      "order": 14,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B3A",
+      "glyphId": "opposed-bowls-5-3",
+      "glyphName": "uF2B3D",
+      "canonicalName": "long hook with spine and long stem",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition",
+        "Upper-hook enclosure beside the adjacent upright"
+      ],
+      "svg": "14-opposed-bowls-5-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "660f1796098641ca6d7ab3f27a1ab9a586b7150ea6a52f28aa3fc7d9598ad188",
+      "width": 1160,
+      "height": 1174,
+      "png": "14-opposed-bowls-5-3.png",
+      "pngSha256": "c22045f74fbcd68b5628c1fecaeeb03c726eee7d848f4343ca14800ecedf1b5d",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-15",
+      "order": 15,
+      "group": "Body and native endings",
+      "codePoint": "U+F2B3B",
+      "glyphId": "opposed-bowls-5-5",
+      "glyphName": "uF2B3F",
+      "canonicalName": "long hook with spine and long tail",
+      "family": "opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal",
+        "Lower-hook closure throat beside the adjacent upright",
+        "Upper-hook enclosure beside the adjacent upright"
+      ],
+      "svg": "15-opposed-bowls-5-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "e2d97bfdbc06046da0ad06c643e78ecbbb78b4d9683052804a6e92f16dde49a7",
+      "width": 1160,
+      "height": 1207,
+      "png": "15-opposed-bowls-5-5.png",
+      "pngSha256": "90bbeb81d3a8d3e1c166ebd304122edb8272035f6a8f5bc5c4c321c206ba8ce7",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-16",
+      "order": 16,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B6C",
+      "glyphId": "left-arched-opposed-bowls-0-0",
+      "glyphName": "uF2B58",
+      "canonicalName": "two stems with spine and stem",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder"
+      ],
+      "svg": "16-left-arched-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "2da0b6288fe6da4d7260259a0c557e68e556fff0c029f3cb29664e107b090ea9",
+      "width": 1502,
+      "height": 851,
+      "png": "16-left-arched-opposed-bowls-0-0.png",
+      "pngSha256": "4ba068600323a77a65258781d156c4c6262683c334e30a926d63c56b48bd6963",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-17",
+      "order": 17,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B81",
+      "glyphId": "left-arched-opposed-bowls-1-1",
+      "glyphName": "uF2B5F",
+      "canonicalName": "descender with stem and spine and ascender",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition"
+      ],
+      "svg": "17-left-arched-opposed-bowls-1-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "f8f8cde03e14572a8a7d94ae4184daa110981346d5237268c2f56ce0a14a55d6",
+      "width": 1506,
+      "height": 1143,
+      "png": "17-left-arched-opposed-bowls-1-1.png",
+      "pngSha256": "0389d5a3240adbb17237bcbd62d625fb58ac53ad3117fc01d0125408d37e891d",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-18",
+      "order": 18,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B73",
+      "glyphId": "left-arched-opposed-bowls-2-2",
+      "glyphName": "uF2B66",
+      "canonicalName": "ascender with stem and spine and descender",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "18-left-arched-opposed-bowls-2-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "7c857fddc61c17da9a0d03b76c576e0778e59d6e0487a095b070ecee9619edf9",
+      "width": 1496,
+      "height": 1143,
+      "png": "18-left-arched-opposed-bowls-2-2.png",
+      "pngSha256": "046dd4a2bc095752ec3b38693c47eb325c41b9ff62c0ff994ae9592dabbd93da",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-19",
+      "order": 19,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B88",
+      "glyphId": "left-arched-opposed-bowls-3-3",
+      "glyphName": "uF2B6D",
+      "canonicalName": "long stem with stem and spine and long stem",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left upper extension: shaft-to-body transition",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "19-left-arched-opposed-bowls-3-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "344d95a2f34b09809b1137d2a1711b6aea24a440f6229a8b2a451eec4123c540",
+      "width": 1496,
+      "height": 1166,
+      "png": "19-left-arched-opposed-bowls-3-3.png",
+      "pngSha256": "1e737dceea64d1cf7deea56230a940d7831173aba761276523fb4bfd51f1b3ab",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-20",
+      "order": 20,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B7A",
+      "glyphId": "left-arched-opposed-bowls-4-4",
+      "glyphName": "uF2B74",
+      "canonicalName": "hook with stem and spine and tail",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left upper curved ending: neck and terminal",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "20-left-arched-opposed-bowls-4-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "aea411cdfd34afd85b0add043536bab74a47aee745f53d86e74241c57e771fed",
+      "width": 1400,
+      "height": 1184,
+      "png": "20-left-arched-opposed-bowls-4-4.png",
+      "pngSha256": "461ecbf5a5aeaeea82f8ac38caccad5998c41afda2edf69d9dea2a43ea479181",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-21",
+      "order": 21,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2B8F",
+      "glyphId": "left-arched-opposed-bowls-5-5",
+      "glyphName": "uF2B7B",
+      "canonicalName": "long hook with stem and spine and long tail",
+      "family": "left-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "21-left-arched-opposed-bowls-5-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "7e379438bfe953852fb3710546313760ca2c3b4632c343e396f720c191b25c83",
+      "width": 1404,
+      "height": 1184,
+      "png": "21-left-arched-opposed-bowls-5-5.png",
+      "pngSha256": "340faac243774faafa9a3c6c9dbd384aee88a73be0a273f037aade2915935342",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-22",
+      "order": 22,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BB4",
+      "glyphId": "right-arched-opposed-bowls-0-0",
+      "glyphName": "uF2B7C",
+      "canonicalName": "stem with spine and two stems",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch"
+      ],
+      "svg": "22-right-arched-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "a4630698770ff3f3cf746e7ad8f5b13533eb111f03560d7413f8be1ec91574f8",
+      "width": 1494,
+      "height": 851,
+      "png": "22-right-arched-opposed-bowls-0-0.png",
+      "pngSha256": "ea4287d379e42f88b48e685ebc712f71f55a2040b71fbde151c1accabce8ad82",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-23",
+      "order": 23,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BC9",
+      "glyphId": "right-arched-opposed-bowls-1-1",
+      "glyphName": "uF2B83",
+      "canonicalName": "descender with spine and stem and ascender",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition"
+      ],
+      "svg": "23-right-arched-opposed-bowls-1-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "7d355d96d8e1c5291c52c6bb1a058ffb61aea7c086dce284b7f5257871e4b26d",
+      "width": 1500,
+      "height": 1143,
+      "png": "23-right-arched-opposed-bowls-1-1.png",
+      "pngSha256": "bfc5b7f2be1f030b885ff52be2ee6044ba95d424fa4e3429d5838b5a5af0857b",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-24",
+      "order": 24,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BBB",
+      "glyphId": "right-arched-opposed-bowls-2-2",
+      "glyphName": "uF2B8A",
+      "canonicalName": "ascender with spine and stem and descender",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "24-right-arched-opposed-bowls-2-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "53796952031411c512ef13724fbccb42d7f62f704991c008fbe09b3bccfa1ec3",
+      "width": 1534,
+      "height": 1143,
+      "png": "24-right-arched-opposed-bowls-2-2.png",
+      "pngSha256": "c81f9ecfc9f45aa69539569e1a898329bfcd64b074b69081938a406f91a63403",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-25",
+      "order": 25,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BD0",
+      "glyphId": "right-arched-opposed-bowls-3-3",
+      "glyphName": "uF2B91",
+      "canonicalName": "long stem with spine and stem and long stem",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left upper extension: shaft-to-body transition",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "25-right-arched-opposed-bowls-3-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "071f2f9daf1dd9c7bcfaa682f86f619444a132df1d458950977c16e742809f19",
+      "width": 1536,
+      "height": 1166,
+      "png": "25-right-arched-opposed-bowls-3-3.png",
+      "pngSha256": "d7a9f36d34359719609d9e7e20d4f3b1684587f4ca3a3e2815a165b5b4d5be76",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-26",
+      "order": 26,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BC2",
+      "glyphId": "right-arched-opposed-bowls-4-4",
+      "glyphName": "uF2B98",
+      "canonicalName": "hook with spine and stem and tail",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left upper curved ending: neck and terminal",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "26-right-arched-opposed-bowls-4-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "ae187ab522e9980f168a7d9567d3d17d33bb4bfc1dfaecf93f8c93f35fa0f320",
+      "width": 1306,
+      "height": 1184,
+      "png": "26-right-arched-opposed-bowls-4-4.png",
+      "pngSha256": "ef46af8d67777ba5dc2a5426f5f4a21c50c4badf7c138be3bb40bb2da1d87ed1",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-27",
+      "order": 27,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2BD7",
+      "glyphId": "right-arched-opposed-bowls-5-5",
+      "glyphName": "uF2B9F",
+      "canonicalName": "long hook with spine and stem and long tail",
+      "family": "right-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "27-right-arched-opposed-bowls-5-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "6cea2418490eed185be8c4c02f2e6acf6a2b25d4e0bf9de6229d0e0a898a8b91",
+      "width": 1406,
+      "height": 1184,
+      "png": "27-right-arched-opposed-bowls-5-5.png",
+      "pngSha256": "985b0a1a2a5442bae43f2dd32e7289a794a4515626d3bcc62918140f67f4f484",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-28",
+      "order": 28,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CA8",
+      "glyphId": "left-double-arched-opposed-bowls-0-0",
+      "glyphName": "uF2C54",
+      "canonicalName": "three stems with spine and stem",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft"
+      ],
+      "svg": "28-left-double-arched-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "68f075224b9755c477cad8207a0e91e3ee54c7e26e4a6c6bfdcb8d27bc835b96",
+      "width": 1914,
+      "height": 851,
+      "png": "28-left-double-arched-opposed-bowls-0-0.png",
+      "pngSha256": "df2a013a5fbe1bc8a66d00854cb228c8dd5899d684da165c3026e8f43d01d2e5",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-29",
+      "order": 29,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CBD",
+      "glyphId": "left-double-arched-opposed-bowls-1-1",
+      "glyphName": "uF2C5B",
+      "canonicalName": "descender with two stems and spine and ascender",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition"
+      ],
+      "svg": "29-left-double-arched-opposed-bowls-1-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "d65d5d5abc81d9a3de25d6d721461c4051749824b8fdc7c67011841032ed7f9a",
+      "width": 1920,
+      "height": 1143,
+      "png": "29-left-double-arched-opposed-bowls-1-1.png",
+      "pngSha256": "9ac7f0c114c9a8664ab2d193b455aa69f02ca90efdc933a9e294745d36fe6a12",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-30",
+      "order": 30,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CAF",
+      "glyphId": "left-double-arched-opposed-bowls-2-2",
+      "glyphName": "uF2C62",
+      "canonicalName": "ascender with two stems and spine and descender",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "30-left-double-arched-opposed-bowls-2-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "30a506e2209ae0701572fa8ad174433160f876287f620051cbe608752da5f0c4",
+      "width": 1916,
+      "height": 1143,
+      "png": "30-left-double-arched-opposed-bowls-2-2.png",
+      "pngSha256": "5e13cd4241d43998c9e11145b1d0877ee120b52159081c7903affcd4de961c14",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-31",
+      "order": 31,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CC4",
+      "glyphId": "left-double-arched-opposed-bowls-3-3",
+      "glyphName": "uF2C69",
+      "canonicalName": "long stem with two stems and spine and long stem",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper extension: shaft-to-body transition",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "31-left-double-arched-opposed-bowls-3-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "5c88abbe45938a0196b0cf254ef4e2bcb9b58d62ddc3bc9d592d6852f1834754",
+      "width": 1916,
+      "height": 1166,
+      "png": "31-left-double-arched-opposed-bowls-3-3.png",
+      "pngSha256": "f9a2edbc5d7deb4d0d012d99926b43e652c3db5482baed1511e621b943132f76",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-32",
+      "order": 32,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CB6",
+      "glyphId": "left-double-arched-opposed-bowls-4-4",
+      "glyphName": "uF2C70",
+      "canonicalName": "hook with two stems and spine and tail",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper curved ending: neck and terminal",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "32-left-double-arched-opposed-bowls-4-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "8f96aa7a0e8e6f62b99e806d99259b73970b6ecb2481f146b84f666b068a432c",
+      "width": 1814,
+      "height": 1161,
+      "png": "32-left-double-arched-opposed-bowls-4-4.png",
+      "pngSha256": "67af743646fba3e2489b516209564eda14704f3f18bef5dd65a6ecfd23ce19ad",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-33",
+      "order": 33,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CCB",
+      "glyphId": "left-double-arched-opposed-bowls-5-5",
+      "glyphName": "uF2C77",
+      "canonicalName": "long hook with two stems and spine and long tail",
+      "family": "left-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "33-left-double-arched-opposed-bowls-5-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "1930ba4283bd1fb87f41507ac536a5cb137c187fb94be439f63b1f097ac53954",
+      "width": 1820,
+      "height": 1184,
+      "png": "33-left-double-arched-opposed-bowls-5-5.png",
+      "pngSha256": "c8d8ae98f5f2c8089dc3a44e432ec0d20abd2d6a19a4def2a70bdcb64aa524ea",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-34",
+      "order": 34,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CF0",
+      "glyphId": "right-double-arched-opposed-bowls-0-0",
+      "glyphName": "uF2C78",
+      "canonicalName": "stem with spine and three stems",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft"
+      ],
+      "svg": "34-right-double-arched-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "2db83d92b4c6884cc8e11ee0e046b0fde5d36400abc5d30c91dc1e68575b60c4",
+      "width": 1906,
+      "height": 852,
+      "png": "34-right-double-arched-opposed-bowls-0-0.png",
+      "pngSha256": "f49d30a96403f9687a1452711de3755be44d52ee60e7f1e714aa42b3469a29b4",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-35",
+      "order": 35,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2D05",
+      "glyphId": "right-double-arched-opposed-bowls-1-1",
+      "glyphName": "uF2C7F",
+      "canonicalName": "descender with spine and two stems and ascender",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition"
+      ],
+      "svg": "35-right-double-arched-opposed-bowls-1-1.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "dc25cba6b5d136da5a2cb11939c50587c7a487a84603516603de6c671eee635a",
+      "width": 1912,
+      "height": 1143,
+      "png": "35-right-double-arched-opposed-bowls-1-1.png",
+      "pngSha256": "eb20168dae115eb3200e8ca494e7dd61d8c3b5437720476a047680a2292a3040",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-36",
+      "order": 36,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CF7",
+      "glyphId": "right-double-arched-opposed-bowls-2-2",
+      "glyphName": "uF2C86",
+      "canonicalName": "ascender with spine and two stems and descender",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "36-right-double-arched-opposed-bowls-2-2.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "f9c0ecc961108daf8209878415ccd1dedba69d51c9e91562dff89606a217112d",
+      "width": 1954,
+      "height": 1143,
+      "png": "36-right-double-arched-opposed-bowls-2-2.png",
+      "pngSha256": "aeca19669ccde2cee4943cbd846e1b97c54f2a049a604145cfdbdd45f6ddd948",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-37",
+      "order": 37,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2D0C",
+      "glyphId": "right-double-arched-opposed-bowls-3-3",
+      "glyphName": "uF2C8D",
+      "canonicalName": "long stem with spine and two stems and long stem",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper extension: shaft-to-body transition",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition"
+      ],
+      "svg": "37-right-double-arched-opposed-bowls-3-3.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "5889dbcbe653cdf87f6166a7594236816079f346fcd99643c21da79111221dbf",
+      "width": 1956,
+      "height": 1166,
+      "png": "37-right-double-arched-opposed-bowls-3-3.png",
+      "pngSha256": "099f37f29e2c1b7832e8340cfc123618f937a0a393e597ef54048c4d351061f1",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-38",
+      "order": 38,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2CFE",
+      "glyphId": "right-double-arched-opposed-bowls-4-4",
+      "glyphName": "uF2C94",
+      "canonicalName": "hook with spine and two stems and tail",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper curved ending: neck and terminal",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "38-right-double-arched-opposed-bowls-4-4.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "8c67a37f83147c080d0bd67690c66363e820129271348e8c76a75df2950eca6e",
+      "width": 1724,
+      "height": 1161,
+      "png": "38-right-double-arched-opposed-bowls-4-4.png",
+      "pngSha256": "8b7f414962c4b6e759f3d7f90917fd24ed8fc9c91997890fd68eb972638f42ec",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-39",
+      "order": 39,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2D13",
+      "glyphId": "right-double-arched-opposed-bowls-5-5",
+      "glyphName": "uF2C9B",
+      "canonicalName": "long hook with spine and two stems and long tail",
+      "family": "right-double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left upper curved ending: neck and terminal",
+        "Left lower extension: shaft-to-body transition",
+        "Right upper extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal"
+      ],
+      "svg": "39-right-double-arched-opposed-bowls-5-5.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "4879653d1c2c62567c1991241d251fd799f57f7b892c1bd3ca5bbfb40a849dd2",
+      "width": 1824,
+      "height": 1184,
+      "png": "39-right-double-arched-opposed-bowls-5-5.png",
+      "pngSha256": "b4165e22e3bd43c1b179a8824d3dfe0a61c796f5e10b1d9bb49703a592617d33",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-40",
+      "order": 40,
+      "group": "Arch endings and valleys",
+      "codePoint": "U+F2D38",
+      "glyphId": "double-arched-opposed-bowls-0-0",
+      "glyphName": "uF2C9C",
+      "canonicalName": "two stems with spine and two stems",
+      "family": "double-arched-opposed-bowls",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch"
+      ],
+      "svg": "40-double-arched-opposed-bowls-0-0.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "eeed2a2c9b51fed059a8d2cb2123fb83291a115d27d78e8479dfa438da42e67f",
+      "width": 1932,
+      "height": 851,
+      "png": "40-double-arched-opposed-bowls-0-0.png",
+      "pngSha256": "e80763b9ede6c298c77384d9a4576f8d5c4c683b903aa820afa75e54c1b0ba38",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-41",
+      "order": 41,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2B90",
+      "glyphId": "left-arched-opposed-bowls-0-0-extended-middle-legs",
+      "glyphName": "uF2B58.middle",
+      "canonicalName": "stem with descender and spine and stem",
+      "family": "left-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "41-left-arched-opposed-bowls-0-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "7e6b8d45a22db270c3da093a45a2368fd872c282fdeed8a57cf3c9ba355db5f1",
+      "width": 1502,
+      "height": 994,
+      "png": "41-left-arched-opposed-bowls-0-0-extended-middle-legs.png",
+      "pngSha256": "de3661b011dff77f484d0ace8ab9f9482839de726850fe33b5a682ea7819dfa7",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-42",
+      "order": 42,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2BA3",
+      "glyphId": "left-arched-opposed-bowls-1-2-extended-middle-legs",
+      "glyphName": "uF2B60.middle",
+      "canonicalName": "two descenders with spine and descender",
+      "family": "left-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Left lower extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "42-left-arched-opposed-bowls-1-2-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 7
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 7
+        }
+      },
+      "svgSha256": "766e71ebd573dafb4b57228c82dc75bbefeab422e814fb63ff09841320ed03ec",
+      "width": 1494,
+      "height": 1017,
+      "png": "42-left-arched-opposed-bowls-1-2-extended-middle-legs.png",
+      "pngSha256": "1b236080eaaecec8ed2f28ea8d8c02af7996f76b0f3a048610663e7760359b0a",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-43",
+      "order": 43,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2B92",
+      "glyphId": "left-arched-opposed-bowls-0-4-extended-middle-legs",
+      "glyphName": "uF2B5C.middle",
+      "canonicalName": "stem with descender and spine and tail",
+      "family": "left-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Right lower curved ending: neck and terminal",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet",
+        "Lower-hook closure throat beside the adjacent upright"
+      ],
+      "svg": "43-left-arched-opposed-bowls-0-4-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "7dd4377e8fe69f142ee8c72b1d83d1d69fcb034c003d392e78cf8fe9eaaa8dda",
+      "width": 1404,
+      "height": 1027,
+      "png": "43-left-arched-opposed-bowls-0-4-extended-middle-legs.png",
+      "pngSha256": "aed2673e503e46254ef7063f8e78f0ba5f8e5a141b2064d6fb3de4ac6a5331f6",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-44",
+      "order": 44,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2BD8",
+      "glyphId": "right-arched-opposed-bowls-0-0-extended-middle-legs",
+      "glyphName": "uF2B7C.middle",
+      "canonicalName": "stem with spine and ascender and stem",
+      "family": "right-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "44-right-arched-opposed-bowls-0-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 4
+        }
+      },
+      "svgSha256": "c2325e9d73ebf6cf16b9ebe0d9145ebf5fc1db153e8eb919e126da59868876bc",
+      "width": 1494,
+      "height": 1001,
+      "png": "44-right-arched-opposed-bowls-0-0-extended-middle-legs.png",
+      "pngSha256": "2b9a7b8ce3100e57c4635a3406cd30c4c7dac8251a53ed545bb7ef38b5266da6",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-45",
+      "order": 45,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2BE4",
+      "glyphId": "right-arched-opposed-bowls-4-0-extended-middle-legs",
+      "glyphName": "uF2B94.middle",
+      "canonicalName": "hook with spine and ascender and stem",
+      "family": "right-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Left upper curved ending: neck and terminal",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "45-right-arched-opposed-bowls-4-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 3,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "fe93be248e5cf3a504e45c32106e979f3dc19bafc5c11745869e9e24dacdea39",
+      "width": 1400,
+      "height": 1032,
+      "png": "45-right-arched-opposed-bowls-4-0-extended-middle-legs.png",
+      "pngSha256": "a925f8f344e77faef8dd164aeae46cf4e947821aab006ebc3a3a102474045566",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-46",
+      "order": 46,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2CDE",
+      "glyphId": "left-double-arched-opposed-bowls-1-0-extended-middle-legs",
+      "glyphName": "uF2C5A.middle",
+      "canonicalName": "three descenders with spine and stem",
+      "family": "left-double-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left lower extension: shaft-to-body transition",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet",
+        "Joined middle-foot bar"
+      ],
+      "svg": "46-left-double-arched-opposed-bowls-1-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 8
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 8
+        }
+      },
+      "svgSha256": "37b54788bbe6ca74d988b07d593d38057b5ed3658b89a4409c8c464e524f9547",
+      "width": 1920,
+      "height": 1017,
+      "png": "46-left-double-arched-opposed-bowls-1-0-extended-middle-legs.png",
+      "pngSha256": "6b236a7a91d8b4dc77b3b7e59b8921c1a2c6b178c0d8692e36cd4d3df6d7210a",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-47",
+      "order": 47,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2CE0",
+      "glyphId": "left-double-arched-opposed-bowls-1-4-extended-middle-legs",
+      "glyphName": "uF2C5E.middle",
+      "canonicalName": "three descenders with spine and tail",
+      "family": "left-double-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left lower extension: shaft-to-body transition",
+        "Right lower curved ending: neck and terminal",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet",
+        "Joined middle-foot bar",
+        "Lower-hook closure throat beside the adjacent upright"
+      ],
+      "svg": "47-left-double-arched-opposed-bowls-1-4-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 8
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 4,
+          "outlineContours": 8
+        }
+      },
+      "svgSha256": "eeec34ab57c74f7254989e1dd0673b5080babec949064f3c83603a7ff662fe87",
+      "width": 1820,
+      "height": 1027,
+      "png": "47-left-double-arched-opposed-bowls-1-4-extended-middle-legs.png",
+      "pngSha256": "ad99cfe3f3e6edb272330b1a7b025551276d09f275dc0d2de37f22c6cdee6e90",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-48",
+      "order": 48,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2D14",
+      "glyphId": "right-double-arched-opposed-bowls-0-0-extended-middle-legs",
+      "glyphName": "uF2C78.middle",
+      "canonicalName": "stem with spine and two ascenders and stem",
+      "family": "right-double-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Repeated-arch neck and intervening shared shaft",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "48-right-double-arched-opposed-bowls-0-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 5
+        }
+      },
+      "svgSha256": "01d2eee41d95db830b4352e5bb7ab154c65c4665bfe1d47303ba7d69632f8b1c",
+      "width": 1906,
+      "height": 1002,
+      "png": "48-right-double-arched-opposed-bowls-0-0-extended-middle-legs.png",
+      "pngSha256": "8e9e0c41136c4d0393d9dab2f94b2063bf7ee241193948ce3f1e3b3e71f26e09",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-49",
+      "order": 49,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2D5C",
+      "glyphId": "double-arched-opposed-bowls-0-0-extended-middle-legs",
+      "glyphName": "uF2C9C.middle",
+      "canonicalName": "stem with descender and spine and ascender and stem",
+      "family": "double-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Outgoing arch returns and shaft entries",
+        "Lower valley between spine return and first outgoing arch",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet"
+      ],
+      "svg": "49-double-arched-opposed-bowls-0-0-extended-middle-legs.svg",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 2,
+          "outlineContours": 6
+        }
+      },
+      "svgSha256": "281a209c38fda7ca752d8318690d2e17cfb764ad652a40c8f34f70cb15cd8cf8",
+      "width": 1932,
+      "height": 1143,
+      "png": "49-double-arched-opposed-bowls-0-0-extended-middle-legs.png",
+      "pngSha256": "2655478c3fd9be7fe14583424c3f6e8230ad75e8dc777c414e03078861ebc1be",
+      "generatedAt": "2026-09-06T05:14:25+00:00",
+      "exporterSha256": "b8aab760d7e81819d3af0d56e8c909cda9e3700997f404d8c784575541dd943c"
+    },
+    {
+      "id": "case-50",
+      "order": 50,
+      "group": "Middle legs and closures",
+      "codePoint": "U+F2CDF",
+      "glyphId": "left-double-arched-opposed-bowls-1-2-extended-middle-legs",
+      "glyphName": "uF2C5C.middle",
+      "canonicalName": "three descenders with spine and descender",
+      "family": "left-double-arched-opposed-bowls-extended-middle-legs",
+      "connections": [
+        "Upper-left bowl-to-shaft shoulder",
+        "Lower-right bowl-to-shaft hip",
+        "Upper-right body return",
+        "Lower-left body return",
+        "Incoming arch crowns and shaft entries",
+        "Upper valley between the last incoming arch and spine shoulder",
+        "Repeated-arch neck and intervening shared shaft",
+        "Left lower extension: shaft-to-body transition",
+        "Right lower extension: shaft-to-body transition",
+        "Receiving shared shaft beside extended middle leg",
+        "Middle-leg exits and adjoining feet",
+        "Joined middle-foot bar",
+        "Five-space interaction: two body counters, two foot bridges, and terminal enclosure"
+      ],
+      "svg": "50-left-double-arched-opposed-bowls-1-2-extended-middle-legs.svg",
+      "generatedAt": "2026-09-06T05:29:12+00:00",
+      "exporterSha256": "5fd30dc6d8207398f4b58fba6054d421be3f0bfe1f1a6632599bf300d853f422",
+      "topology": {
+        "400": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 5,
+          "outlineContours": 9
+        },
+        "700": {
+          "connectedBodies": 1,
+          "enclosedSpaces": 5,
+          "outlineContours": 9
+        }
+      },
+      "svgSha256": "51fa38be27b0b90aac7a61bc991f9d5a7cfb26c1d7c3fdb01ba86ed465c97a2c",
+      "width": 1906,
+      "height": 1017,
+      "png": "50-left-double-arched-opposed-bowls-1-2-extended-middle-legs.png",
+      "pngSha256": "8f99d174ed32567454b5b84511319784316df04fb6a2ab0c7c1440da4ba2d7c0"
+    }
+  ],
+  "overview": {
+    "svg": "overview.svg",
+    "svgSha256": "bcbe4da78a0c6a60da667f587eea2cb2f854644db1583fe2d0a43091f26f17f2",
+    "width": 1160,
+    "height": 1261,
+    "displayEmCssPx": 220,
+    "glyphIds": [
+      "opposed-bowls-0-1",
+      "opposed-bowls-1-0",
+      "opposed-bowls-1-4",
+      "left-arched-opposed-bowls-0-0",
+      "double-arched-opposed-bowls-0-0"
+    ],
+    "png": "overview.png",
+    "pngSha256": "c94785566c810deafa7f16509d6ec10e81dedb40895c926e4f3cabfcef278945"
+  },
+  "indexSha256": "3675614d89cd1635df771c7918c2e86b0c28dfa29c31b4837fa105d8b7179ab6"
+}

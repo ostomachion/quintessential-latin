@@ -237,6 +237,8 @@ def _opposed(font, recipe, start, side, double):
     from stix_middle_terminals import opposed_terminal
     left, right = divmod(recipe - start, 6)
     terminal, metadata, centers = opposed_terminal(font, left, right, side=side)
+    from stix_arch_spine_joins import fair_spine_arch_port
+    terminal = fair_spine_arch_port(font, terminal, metadata, side)
     advance = metadata["advanceWidth"]
     if side == "both":
         left_variant = left // 2 * 4 + left % 2

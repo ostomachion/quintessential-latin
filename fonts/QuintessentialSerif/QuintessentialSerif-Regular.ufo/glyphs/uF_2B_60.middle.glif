@@ -68,8 +68,9 @@
       <point x="102.0" y="142.85714292857142"/>
     </contour>
     <contour>
-      <point x="481" y="400" type="line"/>
-      <point x="484" y="400" type="line"/>
+      <point x="448.292207" y="410.5" type="line"/>
+      <point x="460.194805" y="368"/>
+      <point x="484" y="400" type="qcurve" smooth="yes"/>
       <point x="507.805195" y="432"/>
       <point x="579.220779" y="485"/>
       <point x="625" y="485" type="qcurve" smooth="yes"/>
@@ -91,32 +92,40 @@
       <point x="398" y="400" type="line"/>
     </contour>
     <contour>
-      <point x="481" y="221" type="line"/>
-      <point x="527" y="233"/>
-      <point x="606" y="262"/>
-      <point x="656" y="310"/>
+      <point x="481" y="233" type="line"/>
+      <point x="494.5" y="240"/>
+      <point x="530.577778" y="255.422222"/>
+      <point x="569.988889" y="272.511111"/>
+      <point x="607.511111" y="291.488889"/>
+      <point x="637.922222" y="312.577778"/>
+      <point x="656" y="336"/>
       <point x="656" y="349" type="qcurve" smooth="yes"/>
       <point x="656" y="387"/>
       <point x="616" y="430"/>
       <point x="584" y="430" type="qcurve" smooth="yes"/>
-      <point x="558" y="430"/>
-      <point x="529.5" y="417" type="qcurve" smooth="yes"/>
-      <point x="504.681236" y="405.67916"/>
-      <point x="481" y="386.016454" type="qcurve"/>
+      <point x="573.2" y="430"/>
+      <point x="550.597" y="420.618"/>
+      <point x="528.21" y="405.14"/>
+      <point x="507.143" y="386.542"/>
+      <point x="488.5" y="367.8"/>
+      <point x="481" y="360" type="qcurve"/>
     </contour>
     <contour>
-      <point x="661" y="257" type="line"/>
-      <point x="616" y="246"/>
-      <point x="536" y="216"/>
-      <point x="486" y="168"/>
+      <point x="661" y="245" type="line"/>
+      <point x="647.5" y="238"/>
+      <point x="611.422222" y="222.577778"/>
+      <point x="572.011111" y="205.488889"/>
+      <point x="534.488889" y="186.511111"/>
+      <point x="504.077778" y="165.422222"/>
+      <point x="486" y="142"/>
       <point x="486" y="129" type="qcurve" smooth="yes"/>
-      <point x="486" y="92"/>
+      <point x="486" y="91"/>
       <point x="526" y="48"/>
       <point x="558" y="48" type="qcurve" smooth="yes"/>
-      <point x="584" y="48"/>
-      <point x="612.5" y="61" type="qcurve" smooth="yes"/>
-      <point x="637.318764" y="72.32084"/>
-      <point x="661" y="91.983546" type="qcurve"/>
+      <point x="576" y="48"/>
+      <point x="613.666667" y="63.083333"/>
+      <point x="648" y="88.5"/>
+      <point x="661" y="104" type="qcurve"/>
     </contour>
     <contour>
       <point x="481" y="-113" type="line" smooth="yes"/>
@@ -129,12 +138,12 @@
       <point x="661" y="-144"/>
       <point x="661" y="-113" type="qcurve" smooth="yes"/>
       <point x="661" y="63" type="line"/>
-      <point x="639.955782" y="42.710145"/>
-      <point x="600.612245" y="10.246377"/>
-      <point x="555.778912" y="-7"/>
-      <point x="526.5" y="-7" type="qcurve" smooth="yes"/>
-      <point x="514.99505" y="-7"/>
-      <point x="494.039604" y="4.607143"/>
+      <point x="638.469388" y="42.710145"/>
+      <point x="596.346939" y="10.246377"/>
+      <point x="548.346939" y="-7"/>
+      <point x="517" y="-7" type="qcurve" smooth="yes"/>
+      <point x="508.128713" y="-7"/>
+      <point x="491.970297" y="4.607143"/>
       <point x="485" y="18" type="qcurve"/>
       <point x="481" y="18" type="line"/>
     </contour>
@@ -159,13 +168,31 @@
         <integer>110</integer>
         <key>archSide</key>
         <string>left</string>
+        <key>archSpineJoinCoordinateFrame</key>
+        <string>sigmoid-source; add sigmoidOffsetX</string>
+        <key>archSpineJoinDesign</key>
+        <string>native-quadratic-continuation-1</string>
+        <key>archSpineJoinRegions</key>
+        <array>
+          <dict>
+            <key>bounds</key>
+            <array>
+              <integer>80</integer>
+              <integer>368</integer>
+              <integer>166</integer>
+              <real>410.5</real>
+            </array>
+            <key>side</key>
+            <string>left</string>
+          </dict>
+        </array>
         <key>bodyDonorCodePoints</key>
         <array>
           <integer>592</integer>
           <integer>97</integer>
         </array>
         <key>counterDesign</key>
-        <string>integrated-native-opposed-bowls-two-counters</string>
+        <string>gently-modulated-curved-spine-with-reinforced-shaft-joins</string>
         <key>extendedMiddleLegs</key>
         <array>
           <dict>
@@ -228,6 +255,10 @@
         <string>left</string>
         <key>middleTerminalSourceCodePoint</key>
         <integer>994096</integer>
+        <key>opticalReference</key>
+        <string>STIX Two Text a, turned a, b, p and alpha</string>
+        <key>opticalRevision</key>
+        <string>compact-spine-3</string>
         <key>recipeCodePoint</key>
         <integer>994144</integer>
         <key>rightLowerDonorCodePoint</key>

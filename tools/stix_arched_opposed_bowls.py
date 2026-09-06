@@ -22,7 +22,8 @@ def _left_terminal(font, right_variant):
     terminal = [("moveTo", ((right, cut_y),)), *outer[first + 1:-2],
                 ("lineTo", ((left, cut_y),)), ("closePath", ()),
                 *sum(contours[1:], [])]
-    return s.rounded_recording(terminal), metadata, (left + right) / 2
+    from stix_arch_spine_joins import fair_spine_arch_port
+    return fair_spine_arch_port(font, terminal, metadata, "left"), metadata, (left + right) / 2
 
 
 def _right_terminal(font, left_variant):
@@ -42,7 +43,8 @@ def _right_terminal(font, left_variant):
     inner, outer_x = metadata["stemRightInnerX"], metadata["stemRightX"]
     terminal = [*outer[:first], ("lineTo", ((outer_x, corner[1]),)),
                 ("lineTo", (corner,)), *outer[last + 1:], *sum(contours[1:], [])]
-    return s.rounded_recording(terminal), metadata, (inner + outer_x) / 2
+    from stix_arch_spine_joins import fair_spine_arch_port
+    return fair_spine_arch_port(font, terminal, metadata, "right"), metadata, (inner + outer_x) / 2
 
 
 def arched_opposed_bowls_outline(font, code_point):

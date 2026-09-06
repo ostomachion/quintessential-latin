@@ -1,21 +1,24 @@
 # Reference font development
 
 Quintessential Serif 0.220 is the reference build, with an unreleased optical
-revision to Roman U+F2B18. The four UFO masters
+revision across the 396 Roman constructions sharing U+F2B18's paired spine.
+The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.
 
 ## Invariants
 
 - All 832 Roman and 232 Italic mappings retain their explicit scalar values,
-  stable identities, advances, and kerning. Roman U+F2B18 has revised counters;
-  all other outlines retain their reference geometry.
+  stable identities, advances, and kerning. The shared-spine revision changes
+  the paired body counters of 396 Roman constructions and their reviewed
+  body-return, arch-port, and lower-hook closure segments. All remaining
+  segments, unrelated outlines, and native Italic geometry remain preserved.
 - Roman and Italic remain separate variable fonts with compatible 400/700
   endpoint masters, a wght axis, and the inherited nonlinear mapping.
 - Code points, stable construction IDs, internal glyph names, historical recipe
   keys, and display order are separate. Internal historical names are not
   public character names.
-- The allocation stores neutral structural components. Canonical naming v2
+- The allocation stores neutral structural components. Canonical naming
   reads those components and never rewrites the font outlines.
 - Middle-component companions follow their bases in specimen presentation.
   Numeric charts and names lists follow code order.
@@ -28,18 +31,27 @@ font software and neutral identity records, with exact fixture inventories.
 
 The 0.210 comparison retains all earlier outlines, advances, and effective
 pairs except the previously authorized stemless-spine terminal correction and
-pairs involving that identity. The subsequent U+F2B18 optical revision permits
-only that Roman outline to differ, while retaining its original outer contour,
-advance, sidebearings, and all pairs. Historical fixtures remain immutable.
+pairs involving that identity. The later shared-spine revision extends the
+U+F2B18 counter refinement to 396 explicitly identified Roman constructions.
+The deeper connection audit additionally permits the localized exterior body
+returns, arch-to-spine ports, and closed lower-hook joins documented in that
+revision. Comparisons isolate those segments and preserve every remaining
+curve and line, including unaffected endings, arch ribbons, enclosures, and
+middle-foot bridges. Advances, sidebearings, and all pairs remain unchanged.
+This adds no spacing exception. Historical fixtures and the original
+single-emblem review remain immutable.
 
 ## Project emblem
 
 U+F2B18, **stem with spine and stem**, is the project mark. Its stable identity
 is `opposed-bowls-0-0`; its internal historical font name is `uF2B1C`.
-The outline review is documented in [U+F2B18 optical design](f2b18-optical-design.md).
-The pilot refinement applies to this reviewed construction across Roman weights
-400–700. Related constructions retain their existing recipes until separately
-reviewed; the icon does not imply that the whole repertoire is optically final.
+The initial outline review is documented in
+[U+F2B18 optical design](f2b18-optical-design.md). The
+[shared-spine revision](shared-spine-optical-design.md) carries those paired
+curves and reinforced joins through the complete related construction family
+across Roman weights 400–700. Native endings, additional arches, and extended
+middle legs reuse that body without stretching it. The emblem does not imply
+that unrelated constructions are optically final.
 
 To regenerate the targeted editable masters and their downstream assets:
 
@@ -53,15 +65,28 @@ python tools/build_pdfs.py
 npm run build
 ```
 
-The targeted updater writes only the Regular and Bold target GLIFs. Never use
-the full foundation `--force` import for this refinement. The icon exporter
-reads the actual compiled Roman cmap and outline; its SVGs contain paths and
-need no installed font. Use `--check` to verify the exported assets.
+The targeted updater must write only the eligible Regular and Bold GLIFs: 396
+identities and 792 source files. It must preserve their advances and every
+kerning pair. Never use the full foundation `--force` import for this refinement. The icon exporter
+reads the actual compiled Roman cmap and outline at weight 400 for the README
+icon and weight 500 for the favicon. Its SVGs contain paths and need no installed
+font. The site header and introduction render the mark with the reference font
+and shared font controls. Use `--check` to verify the exported assets.
 
 When proof data changes, refresh its tracked gzip copy with `mtime=0`, and
 record the revised source and output hashes separately from historical evidence.
 The optical revision's isolated repeat-build record is generated with
-`python tools/verify_repeat_build.py --report resources/provenance/f2b18-repeat-build.json`.
+`python tools/verify_repeat_build.py --report resources/provenance/shared-spine-repeat-build.json`.
+The earlier `f2b18-*` records remain the historical single-emblem evidence.
+
+Generate the labeled connection proofs with
+`python tools/export_shared_spine_connections.py --expect-font-sha SHA256 --png`,
+substituting the compiled Roman TTF's exact digest. The exporter rejects a
+mismatching font before writing output. Its self-contained SVGs, optional
+PNGs, and index in `docs/images/shared-spine-connections/` show 50 paired
+Regular/Bold cases at 680px em, 24/48px contexts, and a five-class overview.
+Every sheet displays its font hash and UTC export time; the manifest records
+the image hashes and filled topology of every endpoint specimen.
 
 The independent 0.150 checks retain exactly 129 historical forms and all 16,641
 ordered pairs. Membership is encoded by stable font identity and does not

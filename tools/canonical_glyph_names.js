@@ -1,6 +1,6 @@
 "use strict";
 
-// Canonical naming v2 for neutral structural component arrays.
+// Canonical naming v3 for neutral structural component arrays.
 // Components describe visible construction independently of any language.
 const EXTENSIONS = ["none", "straight", "curved"];
 const PRIMITIVES = [
@@ -58,7 +58,9 @@ function nameParts(parts) {
         const free = part.kind === "leg" ? lower : upper;
         const joined = part.kind === "leg" ? upper : lower;
         if (free === "curved" || joined !== "none") throw new Error("Unsupported branch extension; returning branches use the long-bowl constructor.");
-        text = `${free === "straight" ? "long " : ""}${part.middle ? "middle " : ""}${part.kind}`;
+        text = part.middle
+          ? PRIMITIVES[EXTENSIONS.indexOf(lower)][EXTENSIONS.indexOf(upper)]
+          : `${free === "straight" ? "long " : ""}${part.kind}`;
         break;
       }
       case "bowl": text = part.long ? `long ${closed[index] ? "" : "open "}bowl` : `${part.turnedSpecial ? "turned " : ""}${part.open ? "open " : ""}bowl`; break;
@@ -69,18 +71,20 @@ function nameParts(parts) {
       case "double bowl": text = `${part.turnedSpecial ? "turned " : ""}double ${part.open ? "open " : ""}bowl`; break;
       default: throw new Error(`Unsupported semantic component: ${part.kind}`);
     }
-    return { kind: part.kind, middle: Boolean(part.middle), text };
+    return { upright: part.kind === "stem" || (["leg", "arm"].includes(part.kind) && Boolean(part.middle)), text };
   });
   const terms = [];
   for (let index = 0; index < named.length; index += 1) {
-    const left = named[index], right = named[index + 1];
-    const legPair = left.kind === "leg" && left.middle && right?.kind === "leg" && !right.middle;
-    const armPair = left.kind === "arm" && !left.middle && right?.kind === "arm" && right.middle;
-    const sameLength = right && left.text.startsWith("long ") === right.text.startsWith("long ");
-    if ((legPair || armPair) && sameLength) {
-      terms.push(`two ${left.text.startsWith("long ") ? "long " : ""}${left.kind}s`);
-      index += 1;
-    } else terms.push(left.text);
+    const current = named[index];
+    let count = 1;
+    while (current.upright && named[index + count]?.upright
+      && named[index + count].text === current.text) count += 1;
+    if (count > 1) {
+      const number = [null, null, "two", "three", "four", "five"][count];
+      if (!number) throw new Error(`Unsupported upright count: ${count}`);
+      terms.push(`${number} ${current.text}s`);
+      index += count - 1;
+    } else terms.push(current.text);
   }
   return formatParts(terms);
 }

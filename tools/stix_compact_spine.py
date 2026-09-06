@@ -1,12 +1,18 @@
-"""Optical counter design for the project's compact, two-stem spine emblem.
+"""Shared optical counter design for every spine between two upright stems.
 
 STIX a/turned-a provide the stress, lobe proportions and extremum tangents.
 Their independent counters are unsuitable as the two edges of a shared stroke:
 the adapted b shoulder pinches at its left join, and the diagonal nearly
 disappears. These counters are designed as a pair within the native silhouette.
-The short/short construction is the optical pilot; unreviewed family members
-continue using their preserved recipes.
+All stem endings, side arches, and extended middle legs inherit these counters
+from the common opposed-bowl body. Terminal enclosures remain independent.
 """
+
+
+def is_shared_spine_recipe(code):
+    """Identify the complete construction closure by stable recipe identity."""
+    return code is not None and any(start <= code <= end for start, end in (
+        (0xF2B1C, 0xF2B3F), (0xF2B58, 0xF2B9F), (0xF2C54, 0xF2CBF)))
 
 
 def _spine_edge(factor):
@@ -83,13 +89,16 @@ def _quadratic_counters(factor):
 def compact_spine_outline(font, recording, metadata):
     from import_stix_foundation import native_recording_contours, rounded_recording
 
-    if font["post"].italicAngle or (metadata["leftVariant"], metadata["rightVariant"]) != (0, 0):
-        raise ValueError("The compact-spine optical master requires two short Roman stems")
+    if font["post"].italicAngle or metadata["family"] != "opposed-bowls":
+        raise ValueError("The shared-spine optical master requires the Roman opposed-bowl body")
     left = metadata["stemLeftInnerX"]
     stem = left - metadata["stemLeftX"]
     factor = (stem - 83) / (143 - 83)
-    outer = list(native_recording_contours(recording))[0]
-    return rounded_recording([*outer, *_quadratic_counters(factor)]), {
+    contours = list(native_recording_contours(recording))
+    if len(contours) != 3 + metadata["terminalCounterCount"]:
+        raise RuntimeError("Expected one body, two spine counters, and the recorded terminal enclosures")
+    return rounded_recording([*contours[0], *_quadratic_counters(factor),
+                              *sum(contours[3:], [])]), {
         **metadata,
         "opticalRevision": "compact-spine-3",
         "counterDesign": "gently-modulated-curved-spine-with-reinforced-shaft-joins",

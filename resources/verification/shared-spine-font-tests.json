@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "revision": "shared-spine-2",
+  "status": "passed",
+  "checkedAt": "2026-09-06T05:28:10.299316+00:00",
+  "fontSha256": "8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521",
+  "manifestSha256": "daef5f66ce668a4997908a46d237d03c91fcd3ce9a9dca8ad6157f9da483a0e0",
+  "runs": [
+    {
+      "group": "compiled-family",
+      "methods": [
+        "test_extended_arches_preserve_native_curves_and_existing_endings",
+        "test_component_contours_stay_simple_and_keep_their_winding"
+      ],
+      "status": "passed",
+      "seconds": 281.896,
+      "log": ".tmp/shared-spine/connection-primary-compiled-tests.log",
+      "logSha256": "402a07c15a64765bcdb11301dc516f1dea627be43bf2491ac465cf274a106596"
+    },
+    {
+      "group": "font-packaging",
+      "methods": [
+        "test_static_faces_are_hinted_sparse_cff_fonts",
+        "test_static_faces_match_variable_endpoints_geometrically",
+        "test_woff2_files_preserve_sfnt_tables",
+        "test_proof_data_manifest_and_license_metadata"
+      ],
+      "status": "passed",
+      "seconds": 335.854,
+      "log": ".tmp/shared-spine/connection-packaging-tests.log",
+      "logSha256": "8184513cca5215753a310bac81084035f563f9909c366acdc4e1c0f7fc0681c9"
+    },
+    {
+      "group": "emblem",
+      "methods": [
+        "test_compiled_advance_and_outer_contour_preserved",
+        "test_optical_profiles_across_weight_axis",
+        "test_source_compatibility_and_preserved_silhouette",
+        "test_static_faces_match_variable_endpoints_geometrically"
+      ],
+      "status": "passed",
+      "seconds": 9.753,
+      "log": ".tmp/shared-spine/connection-emblem-tests.log",
+      "logSha256": "2a590002bc285512926b5c834ddbe52f3a91867d16afa95da51eb4a81947abeb"
+    },
+    {
+      "group": "full-family",
+      "methods": [
+        "test_every_compiled_weight_keeps_counter_congruence_and_original_geometry",
+        "test_every_source_weight_has_shared_counters_and_open_enclosures",
+        "test_source_family_closure_and_localized_connection_preservation"
+      ],
+      "status": "passed",
+      "seconds": 147.352,
+      "log": ".tmp/shared-spine/connection-draft-geometry.log",
+      "logSha256": "1f4a2aa4cc7f9f24c184a7b7edb8537ae7993a5aece0b284834418b2d09ebd10"
+    }
+  ],
+  "logArchive": "resources/verification/shared-spine-validation-logs.zip",
+  "inputSha256": {
+    "resources/verification/shared-spine-geometry.json": "44bd78f84a82c96266e3b39c3b4306329e79f9d3138a478f8529c983b5bca523",
+    "resources/verification/shared-spine-emblem-geometry.json": "6d0d4edeba447be1075aef8e0b3b3e1143c4ddb339fc0617f2a20a23b8d0f7b6",
+    "resources/verification/shared-spine-connection-regression.json": "ad48dca228df0b7440e403b5a9688885147cd2603af9a48c2a81ccfe3bbfccad",
+    "resources/verification/shared-spine-arch-ports.json": "be0460ba76b275b62094cff05784e9f1e8ee29bdcd67a67a395a03ae3517cef0",
+    "resources/verification/shared-spine-preservation.json": "1edbd7023aa4c47a8cc736c91da1298e0ed28c52115862266b3c4f652d8b9a1f",
+    "resources/provenance/shared-spine-repeat-build.json": "096ebb7f7d8afdebf1bc2f9a476f5bb194f386e8431d452f40b2a97f6cf4f92a",
+    "tools/test_quintessential_font.py": "9f80825c9f27a575bfb9b291e9220788fa09df802ad591b9a1fcea95eb2ceda0",
+    "resources/verification/shared-spine-validation-logs.zip": "46c941158cf463bfec07be5bbf3f5533463cb88a39a2cf17cea66a770eb35560"
+  },
+  "note": "The full-family suite used an independently compiled byte-identical final TTF; its report records the byte comparison and rechecked inputs. Additional source/compiled connection, preservation, dense arch-port, and repeat-build outcomes are in the bound reports."
+}

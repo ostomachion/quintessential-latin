@@ -1425,9 +1425,6 @@ def legacy_outline(donor, spec, italic=None):
     elif 0xF2B1C <= recipe_code <= 0xF2B3F:
         from stix_opposed_bowls import opposed_bowls_outline
         recording, construction = opposed_bowls_outline(donor, recipe_code)
-        if spec.glyph_id == "opposed-bowls-0-0":
-            from stix_compact_spine import compact_spine_outline
-            recording, construction = compact_spine_outline(donor, recording, construction)
         construction["method"] = spec.adaptation
     elif 0xF2B10 <= recipe_code <= 0xF2B1B or 0xF2B4C <= recipe_code <= 0xF2B57:
         from stix_bowled_spine import bowled_spine_outline

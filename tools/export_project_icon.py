@@ -11,18 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 def assets():
     with TTFont(ROOT / "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf") as font:
         name = font.getBestCmap()[0xF2B18]
-        glyphs = font.getGlyphSet()
-        bounds, path = BoundsPen(glyphs), SVGPathPen(glyphs)
-        glyphs[name].draw(bounds)
-        glyphs[name].draw(path)
-        x0, y0, x1, y1 = bounds.bounds
-        dx, dy = 300-(x0+x1)/2, 300+(y0+y1)/2
-        mark = f'<path fill="#365746" transform="translate({dx:g} {dy:g}) scale(1 -1)" d="{path.getCommands()}"/>'
-    title = '<title>Quintessential Latin</title><desc>U+F2B18, stem with spine and stem. Quintessential Serif, derived from STIX Two Text. SIL Open Font License 1.1.</desc>'
-    return {
-        "project-icon.svg": f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">{title}{mark}</svg>\n',
-        "favicon.svg": f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">{title}<rect width="600" height="600" rx="64" fill="#faf9f6"/>{mark}</svg>\n',
-    }
+        result = {}
+        for filename, weight in (("project-icon.svg", 400), ("favicon.svg", 500)):
+            glyphs = font.getGlyphSet(location={"wght": weight})
+            bounds, path = BoundsPen(glyphs), SVGPathPen(glyphs)
+            glyphs[name].draw(bounds)
+            glyphs[name].draw(path)
+            x0, y0, x1, y1 = bounds.bounds
+            dx, dy = 300-(x0+x1)/2, 300+(y0+y1)/2
+            mark = f'<path fill="#365746" transform="translate({dx:g} {dy:g}) scale(1 -1)" d="{path.getCommands()}"/>'
+            title = f'<title>Quintessential Latin</title><desc>U+F2B18, stem with spine and stem. Quintessential Serif, Roman weight {weight}, derived from STIX Two Text. SIL Open Font License 1.1.</desc>'
+            background = '<rect width="600" height="600" rx="64" fill="#faf9f6"/>' if filename == "favicon.svg" else ""
+            result[filename] = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">{title}{background}{mark}</svg>\n'
+    return result
 
 
 def main():

@@ -178,13 +178,46 @@ def preserve_bowl_counter_variations(font: TTFont) -> None:
                 variation.coordinates[start:end] = matches[0].coordinates[native_start:native_end]
 
 
-def preserve_revised_outer_variations(font: TTFont) -> None:
-    """Keep optically revised glyphs' outer contours exact through gvar packing.
+def shared_spine_counter_indices(glyph, reference) -> set[int]:
+    """Locate the two translated body counters after all arch/leg assembly."""
+    from import_stix_foundation import native_recording_contours
+
+    def contours(item):
+        pen = RecordingPen()
+        item.draw(pen)
+        return list(native_recording_contours(pen.value))
+
+    candidates = contours(glyph)
+    indices = set()
+    for template in contours(reference)[1:3]:
+        structure = [(op, len(points)) for op, points in template]
+        matches = []
+        for index, candidate in enumerate(candidates):
+            if [(op, len(points)) for op, points in candidate] != structure:
+                continue
+            dx = candidate[0][1][0][0] - template[0][1][0][0]
+            error = max(max(abs(x - rx - dx), abs(y - ry))
+                        for (_, points), (_, references) in zip(candidate, template)
+                        for (x, y), (rx, ry) in zip(points, references))
+            if error < 0.00001:
+                matches.append(index)
+        if len(matches) != 1:
+            raise RuntimeError(f"{glyph.name} must contain each shared spine counter exactly once")
+        indices.add(matches[0])
+    if len(indices) != 2:
+        raise RuntimeError(f"{glyph.name} must contain two distinct shared spine counters")
+    return indices
+
+
+def preserve_shared_spine_variations(font: TTFont) -> None:
+    """Keep the full shared construction exact when glyph topology changes.
 
     Editing a counter can switch the packer from dense to sparse deltas for the
     entire glyph. IUP then approximates unchanged outer points by fractional
-    deltas. Materialize the rounded source endpoint differences for that contour
-    alone; counter variation data and phantom metric points remain untouched.
+    deltas. Materialize rounded source endpoint differences for every contour:
+    the body counters must remain congruent regardless of ending complexity,
+    and arches and terminal enclosures must retain their original geometry.
+    Phantom metric points retain their compiled deltas.
     """
     italic = bool(font["head"].macStyle & 2)
     styles = ("Italic", "BoldItalic") if italic else ("Regular", "Bold")
@@ -197,6 +230,10 @@ def preserve_revised_outer_variations(font: TTFont) -> None:
                 continue
             if sources[1][name].lib.get("org.quintessential.construction", {}).get("opticalRevision") != revision:
                 raise RuntimeError(f"{name} has inconsistent optical revisions across source endpoints")
+            counters = [shared_spine_counter_indices(source[name], source["uF2B1C"])
+                        for source in sources]
+            if counters[0] != counters[1]:
+                raise RuntimeError(f"{name} has incompatible body counter placement")
             endpoints = []
             for source in sources:
                 pen = TTGlyphPen(source)
@@ -205,24 +242,29 @@ def preserve_revised_outer_variations(font: TTFont) -> None:
                 if not endpoint.endPtsOfContours:
                     raise RuntimeError(f"{name} has no outer contour to preserve")
                 endpoints.append(endpoint)
-            count = endpoints[0].endPtsOfContours[0] + 1
-            if endpoints[1].endPtsOfContours[0] + 1 != count:
-                raise RuntimeError(f"{name} has incompatible outer contour endpoints")
+            if endpoints[0].endPtsOfContours != endpoints[1].endPtsOfContours:
+                raise RuntimeError(f"{name} has incompatible contour endpoints")
             glyf = font["glyf"]
             points, ends, flags = glyf[name].getCoordinates(glyf)
-            expected_flags = [flag & 1 for flag in endpoints[0].flags[:count]]
-            if (not ends or ends[0] + 1 != count
-                    or points[:count] != endpoints[0].coordinates[:count]
-                    or [flag & 1 for flag in flags[:count]] != expected_flags
-                    or [flag & 1 for flag in endpoints[1].flags[:count]] != expected_flags):
-                raise RuntimeError(f"{name} compiled outer contour no longer matches its source")
+            if list(ends) != list(endpoints[0].endPtsOfContours):
+                raise RuntimeError(f"{name} compiled contour layout no longer matches its source")
             variations = font["gvar"].variations[name]
             if len(variations) != 1 or variations[0].axes != {AXIS_TAG: (0.0, 1.0, 1.0)}:
                 raise RuntimeError(f"{name} has an unsupported outer contour variation model")
-            variations[0].coordinates[:count] = [
-                (bold[0] - regular[0], bold[1] - regular[1])
-                for regular, bold in zip(endpoints[0].coordinates[:count], endpoints[1].coordinates[:count])
-            ]
+            start = 0
+            for index, end in enumerate(ends):
+                stop = end + 1
+                expected_flags = [flag & 1 for flag in endpoints[0].flags[start:stop]]
+                if (points[start:stop] != endpoints[0].coordinates[start:stop]
+                        or [flag & 1 for flag in flags[start:stop]] != expected_flags
+                        or [flag & 1 for flag in endpoints[1].flags[start:stop]] != expected_flags):
+                    raise RuntimeError(f"{name} compiled contour {index} differs from its source")
+                variations[0].coordinates[start:stop] = [
+                    (bold[0] - regular[0], bold[1] - regular[1])
+                    for regular, bold in zip(endpoints[0].coordinates[start:stop],
+                                             endpoints[1].coordinates[start:stop])
+                ]
+                start = stop
     finally:
         for source in sources:
             source.close()
@@ -231,7 +273,7 @@ def preserve_revised_outer_variations(font: TTFont) -> None:
 def normalize_variable_font(path: Path, italic: bool) -> None:
     with TTFont(path, recalcTimestamp=False) as font:
         preserve_bowl_counter_variations(font)
-        preserve_revised_outer_variations(font)
+        preserve_shared_spine_variations(font)
         timestamp = SOURCE_DATE_EPOCH + 2_082_844_800
         font["head"].created = timestamp
         font["head"].modified = timestamp
@@ -597,6 +639,7 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("stix_bowled_spine_italic_normal.py"),
         Path(__file__).with_name("stix_opposed_bowls.py"),
         Path(__file__).with_name("stix_compact_spine.py"),
+        Path(__file__).with_name("stix_arch_spine_joins.py"),
         Path(__file__).with_name("stix_arched_opposed_bowls.py"),
         Path(__file__).with_name("stix_extensions.py"),
         Path(__file__).with_name("stix_stemless.py"),

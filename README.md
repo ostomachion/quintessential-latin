@@ -13,9 +13,13 @@ Quintessential Serif 0.220 contains all 832 forms in Roman and 232 in native
 Italic, across weights 400–700. The 600 remaining Italic forms are pending.
 These are proposed private-use assignments, not Unicode or UCSUR registrations.
 
-U+F2B18 is the project mark. The working reference includes an optical refinement
-of its Roman joins and shared spine; see the
-[before-and-after design review](docs/f2b18-optical-design.md).
+U+F2B18 is the project mark. Its reviewed joins and paired spine curves are the
+basis of the [shared-spine refinement](docs/shared-spine-optical-design.md),
+covering all 396 related Roman constructions, including ending, arch, and
+extended-middle-leg variants. The [initial emblem review](docs/f2b18-optical-design.md)
+records the design decisions that established this treatment.
+The [connection proofs](docs/images/shared-spine-connections/index.html) show
+each join class at close range, with the exact compiled-font revision visible.
 
 | Block | Range | Assigned |
 | --- | --- | ---: |
@@ -38,10 +42,12 @@ npm run dev
 Open http://localhost:8767/quintessential-latin/. The preview also serves the
 root path. All site URLs work beneath the GitHub Pages project prefix.
 
-The five pages introduce the construction system, present numeric charts and
-names lists, provide editable specimens, explain the draft proposal, and offer
+The four pages introduce the construction system, present numeric charts and
+names lists, explain the draft proposal, and offer
 font/data/PDF downloads. Weight and native Italic preferences are shared across
-the pages. No language-specific transcription or backend is required.
+the pages, including both project marks. The marks follow the same native
+posture coverage as the charts; the favicon stays at Roman 500.
+No language-specific transcription or backend is required.
 
 Browser tests use Playwright Chromium:
 
@@ -84,7 +90,7 @@ node tools/export_glyph_catalogue.js --check
 
 Commit allocation and generated data together. The compact browser catalogue
 uses verified compiled-font coverage, not assumed coverage. Individual names
-follow [canonical naming version 2](docs/quintessential-latin-canonical-naming-spec-v2.md).
+follow [canonical naming version 3](docs/quintessential-latin-canonical-naming-spec-v3.md).
 
 `docs/proposal.json` supplies the website and PDF proposal from one text source.
 The proposed repertoire remains subject to registry review; publishing the

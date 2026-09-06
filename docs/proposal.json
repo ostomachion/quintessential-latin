@@ -53,9 +53,9 @@
       "id": "names",
       "title": "5. Names and ordering",
       "paragraphs": [
-        "The current canonical naming system is version 2. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Local closure and specified repeated-component abbreviations are resolved before names are serialized.",
-        "Names are unique across the 832-entry repertoire. The chart name is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER, except that the seven stemless forms use QUINTESSENTIAL LATIN without LETTER.",
-        "Code charts and formal names lists use numeric code order. Specimen browsing keeps companion families immediately after their bases. Code values, stable identities, internal font glyph names, and presentation order remain distinct."
+        "The current canonical naming system is version 3. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Interior uprights use the ordinary stem, ascender, and descender names. Local bowl closure and counts of equal adjacent uprights are resolved before names are serialized.",
+        "Names are unique across the 832-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER.",
+        "Code charts and formal names lists use numeric code order. Presentation families keep companion families immediately after their bases. Code values, stable identities, internal font glyph names, and presentation order remain distinct."
       ]
     },
     {
@@ -108,7 +108,8 @@
       "id": "revision-history",
       "title": "11. Revision history",
       "paragraphs": [
-        "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities."
+        "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities.",
+        "6 September 2026: naming version 3 gives every character the QUINTESSENTIAL LATIN LETTER prefix, uses ordinary upright names for interior components, and combines equal adjacent uprights into counts. Code points, construction identities, and the 0.220 reference fonts are unchanged."
       ]
     }
   ],

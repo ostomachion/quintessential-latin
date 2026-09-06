@@ -1,0 +1,924 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shared-spine connection proofs</title>
+<style>body{margin:0;background:#faf9f6;color:#242c27;font:18px/1.55 Georgia,serif}main{max-width:1160px;margin:auto;padding:36px 28px 80px}h1{font-weight:normal;font-size:42px;line-height:1.15}h2{font-size:27px;font-weight:normal}p{max-width:920px}code{font:14px/1.6 Consolas,monospace;overflow-wrap:anywhere}a{color:#365746}.revision{border-block:1px solid #d8dacf;padding:18px 0;margin:28px 0}nav{columns:2;column-gap:44px;margin:28px 0}nav a{display:block;break-inside:avoid;margin-bottom:6px}section{border-top:1px solid #d8dacf;padding:26px 0 18px;margin-top:24px}.sheet{overflow:auto;border:1px solid #d8dacf;background:#faf9f6}.sheet img{display:block;max-width:none}.meta{color:#667165;font-size:16px}.connections{padding-left:22px;columns:2;column-gap:36px;font-size:16px}.connections li{break-inside:avoid;margin-bottom:5px}summary{cursor:pointer;color:#365746;margin:14px 0}footer{margin-top:40px;color:#667165}@media(max-width:650px){main{padding:24px 16px}h1{font-size:34px}nav,.connections{columns:1}}</style>
+<main><h1>Shared-spine connection proofs</h1>
+<p>Review the body returns, shoulders, arch valleys, endings, and middle-leg connections at a fixed scale. Each paired sheet uses the compiled Regular and Bold outlines at 680 pixels per em, followed by 24 and 48 pixel contexts. Wide sheets scroll horizontally.</p>
+<div class="revision"><strong>Shared-spine revision 2</strong><br>Font SHA-256 <code>8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521</code><br>Exported <time>2026-09-06T05:29:12+00:00</time><br>50 connection cases · 100 endpoint specimens · <a href="manifest.json">Hash manifest</a></div>
+<p class="meta">These are self-contained outline proofs. A fresh font build requires a fresh export; the visible digest identifies the exact reviewed binary. The earlier full-family sheets and optical records remain separate snapshots.</p>
+<a href="overview.svg"><img src="overview.svg?sha=bcbe4da78a0c6a60da667f587eea2cb2f854644db1583fe2d0a43091f26f17f2" width="1160" height="1261" style="display:block;max-width:100%;height:auto" alt="Five representative connection classes, paired at Regular and Bold"></a>
+<nav aria-label="Connection cases">
+<a href="#case-01">01 · U+F2B18 · stem with spine and stem</a>
+<a href="#case-02">02 · U+F2B1B · stem with spine and ascender</a>
+<a href="#case-03">03 · U+F2B19 · stem with spine and descender</a>
+<a href="#case-04">04 · U+F2B1C · stem with spine and long stem</a>
+<a href="#case-05">05 · U+F2B1A · stem with spine and tail</a>
+<a href="#case-06">06 · U+F2B1D · stem with spine and long tail</a>
+<a href="#case-07">07 · U+F2B2A · descender with spine and stem</a>
+<a href="#case-08">08 · U+F2B2B · descender with spine and descender</a>
+<a href="#case-09">09 · U+F2B2C · descender with spine and tail</a>
+<a href="#case-10">10 · U+F2B1E · ascender with spine and stem</a>
+<a href="#case-11">11 · U+F2B30 · long stem with spine and stem</a>
+<a href="#case-12">12 · U+F2B24 · hook with spine and stem</a>
+<a href="#case-13">13 · U+F2B27 · hook with spine and ascender</a>
+<a href="#case-14">14 · U+F2B3A · long hook with spine and long stem</a>
+<a href="#case-15">15 · U+F2B3B · long hook with spine and long tail</a>
+<a href="#case-16">16 · U+F2B6C · two stems with spine and stem</a>
+<a href="#case-17">17 · U+F2B81 · descender with stem and spine and ascender</a>
+<a href="#case-18">18 · U+F2B73 · ascender with stem and spine and descender</a>
+<a href="#case-19">19 · U+F2B88 · long stem with stem and spine and long stem</a>
+<a href="#case-20">20 · U+F2B7A · hook with stem and spine and tail</a>
+<a href="#case-21">21 · U+F2B8F · long hook with stem and spine and long tail</a>
+<a href="#case-22">22 · U+F2BB4 · stem with spine and two stems</a>
+<a href="#case-23">23 · U+F2BC9 · descender with spine and stem and ascender</a>
+<a href="#case-24">24 · U+F2BBB · ascender with spine and stem and descender</a>
+<a href="#case-25">25 · U+F2BD0 · long stem with spine and stem and long stem</a>
+<a href="#case-26">26 · U+F2BC2 · hook with spine and stem and tail</a>
+<a href="#case-27">27 · U+F2BD7 · long hook with spine and stem and long tail</a>
+<a href="#case-28">28 · U+F2CA8 · three stems with spine and stem</a>
+<a href="#case-29">29 · U+F2CBD · descender with two stems and spine and ascender</a>
+<a href="#case-30">30 · U+F2CAF · ascender with two stems and spine and descender</a>
+<a href="#case-31">31 · U+F2CC4 · long stem with two stems and spine and long stem</a>
+<a href="#case-32">32 · U+F2CB6 · hook with two stems and spine and tail</a>
+<a href="#case-33">33 · U+F2CCB · long hook with two stems and spine and long tail</a>
+<a href="#case-34">34 · U+F2CF0 · stem with spine and three stems</a>
+<a href="#case-35">35 · U+F2D05 · descender with spine and two stems and ascender</a>
+<a href="#case-36">36 · U+F2CF7 · ascender with spine and two stems and descender</a>
+<a href="#case-37">37 · U+F2D0C · long stem with spine and two stems and long stem</a>
+<a href="#case-38">38 · U+F2CFE · hook with spine and two stems and tail</a>
+<a href="#case-39">39 · U+F2D13 · long hook with spine and two stems and long tail</a>
+<a href="#case-40">40 · U+F2D38 · two stems with spine and two stems</a>
+<a href="#case-41">41 · U+F2B90 · stem with descender and spine and stem</a>
+<a href="#case-42">42 · U+F2BA3 · two descenders with spine and descender</a>
+<a href="#case-43">43 · U+F2B92 · stem with descender and spine and tail</a>
+<a href="#case-44">44 · U+F2BD8 · stem with spine and ascender and stem</a>
+<a href="#case-45">45 · U+F2BE4 · hook with spine and ascender and stem</a>
+<a href="#case-46">46 · U+F2CDE · three descenders with spine and stem</a>
+<a href="#case-47">47 · U+F2CE0 · three descenders with spine and tail</a>
+<a href="#case-48">48 · U+F2D14 · stem with spine and two ascenders and stem</a>
+<a href="#case-49">49 · U+F2D5C · stem with descender and spine and ascender and stem</a>
+<a href="#case-50">50 · U+F2CDF · three descenders with spine and descender</a>
+</nav>
+<section id="case-01"><p class="meta">Body and native endings</p>
+<h2>01 · U+F2B18 · stem with spine and stem</h2>
+<p class="meta"><code>opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="01-opposed-bowls-0-0.svg?sha=370b9e676017b2628bc491d43a3b9ec975ad588f42276e3058284ba951e6eac2" width="1160" height="828" alt="stem with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="01-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="01-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-02"><p class="meta">Body and native endings</p>
+<h2>02 · U+F2B1B · stem with spine and ascender</h2>
+<p class="meta"><code>opposed-bowls-0-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Right upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="02-opposed-bowls-0-1.svg?sha=d4d728ed73b7eada9af99f1b2314e593b6471d553c074e19052ce9cce304766c" width="1160" height="1001" alt="stem with spine and ascender; Regular and Bold connection proof"></div>
+<p><a href="02-opposed-bowls-0-1.svg">Open full-size SVG</a>
+ · <a href="02-opposed-bowls-0-1.png">PNG</a>
+</p></section>
+<section id="case-03"><p class="meta">Body and native endings</p>
+<h2>03 · U+F2B19 · stem with spine and descender</h2>
+<p class="meta"><code>opposed-bowls-0-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="03-opposed-bowls-0-2.svg?sha=f9a95a6ec48097efc7e03e30745ca5f29507b6b56753a40bc32817d1ac360369" width="1160" height="994" alt="stem with spine and descender; Regular and Bold connection proof"></div>
+<p><a href="03-opposed-bowls-0-2.svg">Open full-size SVG</a>
+ · <a href="03-opposed-bowls-0-2.png">PNG</a>
+</p></section>
+<section id="case-04"><p class="meta">Body and native endings</p>
+<h2>04 · U+F2B1C · stem with spine and long stem</h2>
+<p class="meta"><code>opposed-bowls-0-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="04-opposed-bowls-0-3.svg?sha=5b69a883a8f495325b2bc1226de8ec5e596b611bc135ee8859ee6447b67246fd" width="1160" height="1143" alt="stem with spine and long stem; Regular and Bold connection proof"></div>
+<p><a href="04-opposed-bowls-0-3.svg">Open full-size SVG</a>
+ · <a href="04-opposed-bowls-0-3.png">PNG</a>
+</p></section>
+<section id="case-05"><p class="meta">Body and native endings</p>
+<h2>05 · U+F2B1A · stem with spine and tail</h2>
+<p class="meta"><code>opposed-bowls-0-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="05-opposed-bowls-0-4.svg?sha=472834feee6dd45c9409d00f6794a445f9e2e2da4e20d791d29a71cb8d676c16" width="1160" height="1004" alt="stem with spine and tail; Regular and Bold connection proof"></div>
+<p><a href="05-opposed-bowls-0-4.svg">Open full-size SVG</a>
+ · <a href="05-opposed-bowls-0-4.png">PNG</a>
+</p></section>
+<section id="case-06"><p class="meta">Body and native endings</p>
+<h2>06 · U+F2B1D · stem with spine and long tail</h2>
+<p class="meta"><code>opposed-bowls-0-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="06-opposed-bowls-0-5.svg?sha=c9b181f2ce64c01db8ca451118b482168021f4da1012a8b9c20f5f62727055b2" width="1160" height="1153" alt="stem with spine and long tail; Regular and Bold connection proof"></div>
+<p><a href="06-opposed-bowls-0-5.svg">Open full-size SVG</a>
+ · <a href="06-opposed-bowls-0-5.png">PNG</a>
+</p></section>
+<section id="case-07"><p class="meta">Body and native endings</p>
+<h2>07 · U+F2B2A · descender with spine and stem</h2>
+<p class="meta"><code>opposed-bowls-1-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="07-opposed-bowls-1-0.svg?sha=545c7ff1049f0dc09647777df1cef9dfb88bf10c8b0c8dacb60525d409f881df" width="1160" height="994" alt="descender with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="07-opposed-bowls-1-0.svg">Open full-size SVG</a>
+ · <a href="07-opposed-bowls-1-0.png">PNG</a>
+</p></section>
+<section id="case-08"><p class="meta">Body and native endings</p>
+<h2>08 · U+F2B2B · descender with spine and descender</h2>
+<p class="meta"><code>opposed-bowls-1-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="08-opposed-bowls-1-2.svg?sha=0b3eb0343004ea0dd3d506bb51322c9506fe59ffc91f94261fe03be6feeb293c" width="1160" height="994" alt="descender with spine and descender; Regular and Bold connection proof"></div>
+<p><a href="08-opposed-bowls-1-2.svg">Open full-size SVG</a>
+ · <a href="08-opposed-bowls-1-2.png">PNG</a>
+</p></section>
+<section id="case-09"><p class="meta">Body and native endings</p>
+<h2>09 · U+F2B2C · descender with spine and tail</h2>
+<p class="meta"><code>opposed-bowls-1-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+<li>Lower-hook closure throat beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="09-opposed-bowls-1-4.svg?sha=210dc5083d33645ddbf9a27b85a1c650869a4245bfcf20122f171e0628e87016" width="1160" height="1027" alt="descender with spine and tail; Regular and Bold connection proof"></div>
+<p><a href="09-opposed-bowls-1-4.svg">Open full-size SVG</a>
+ · <a href="09-opposed-bowls-1-4.png">PNG</a>
+</p></section>
+<section id="case-10"><p class="meta">Body and native endings</p>
+<h2>10 · U+F2B1E · ascender with spine and stem</h2>
+<p class="meta"><code>opposed-bowls-2-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="10-opposed-bowls-2-0.svg?sha=52443853e17badd557c90cca692c1d0840beacf18482c7c44c4a273c3e6d8b3c" width="1160" height="1001" alt="ascender with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="10-opposed-bowls-2-0.svg">Open full-size SVG</a>
+ · <a href="10-opposed-bowls-2-0.png">PNG</a>
+</p></section>
+<section id="case-11"><p class="meta">Body and native endings</p>
+<h2>11 · U+F2B30 · long stem with spine and stem</h2>
+<p class="meta"><code>opposed-bowls-3-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Left lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="11-opposed-bowls-3-0.svg?sha=57e60268c92544d948b36982e20c9b9448020e3662e9dd35fc7fd4ee147fe35a" width="1160" height="1143" alt="long stem with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="11-opposed-bowls-3-0.svg">Open full-size SVG</a>
+ · <a href="11-opposed-bowls-3-0.png">PNG</a>
+</p></section>
+<section id="case-12"><p class="meta">Body and native endings</p>
+<h2>12 · U+F2B24 · hook with spine and stem</h2>
+<p class="meta"><code>opposed-bowls-4-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="12-opposed-bowls-4-0.svg?sha=33120ffeec4cdfaf7fcc09ccb530cc8d7627219bf6dee391bbe07a7379a249b3" width="1160" height="1009" alt="hook with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="12-opposed-bowls-4-0.svg">Open full-size SVG</a>
+ · <a href="12-opposed-bowls-4-0.png">PNG</a>
+</p></section>
+<section id="case-13"><p class="meta">Body and native endings</p>
+<h2>13 · U+F2B27 · hook with spine and ascender</h2>
+<p class="meta"><code>opposed-bowls-4-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Upper-hook enclosure beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="13-opposed-bowls-4-1.svg?sha=488dab125661fbc7e8ee7ef43888b2d1e54b12e9e8c409d6e1eef7b993f78d9e" width="1160" height="1032" alt="hook with spine and ascender; Regular and Bold connection proof"></div>
+<p><a href="13-opposed-bowls-4-1.svg">Open full-size SVG</a>
+ · <a href="13-opposed-bowls-4-1.png">PNG</a>
+</p></section>
+<section id="case-14"><p class="meta">Body and native endings</p>
+<h2>14 · U+F2B3A · long hook with spine and long stem</h2>
+<p class="meta"><code>opposed-bowls-5-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+<li>Upper-hook enclosure beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="14-opposed-bowls-5-3.svg?sha=660f1796098641ca6d7ab3f27a1ab9a586b7150ea6a52f28aa3fc7d9598ad188" width="1160" height="1174" alt="long hook with spine and long stem; Regular and Bold connection proof"></div>
+<p><a href="14-opposed-bowls-5-3.svg">Open full-size SVG</a>
+ · <a href="14-opposed-bowls-5-3.png">PNG</a>
+</p></section>
+<section id="case-15"><p class="meta">Body and native endings</p>
+<h2>15 · U+F2B3B · long hook with spine and long tail</h2>
+<p class="meta"><code>opposed-bowls-5-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+<li>Lower-hook closure throat beside the adjacent upright</li>
+<li>Upper-hook enclosure beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="15-opposed-bowls-5-5.svg?sha=e2d97bfdbc06046da0ad06c643e78ecbbb78b4d9683052804a6e92f16dde49a7" width="1160" height="1207" alt="long hook with spine and long tail; Regular and Bold connection proof"></div>
+<p><a href="15-opposed-bowls-5-5.svg">Open full-size SVG</a>
+ · <a href="15-opposed-bowls-5-5.png">PNG</a>
+</p></section>
+<section id="case-16"><p class="meta">Arch endings and valleys</p>
+<h2>16 · U+F2B6C · two stems with spine and stem</h2>
+<p class="meta"><code>left-arched-opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="16-left-arched-opposed-bowls-0-0.svg?sha=2da0b6288fe6da4d7260259a0c557e68e556fff0c029f3cb29664e107b090ea9" width="1502" height="851" alt="two stems with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="16-left-arched-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="16-left-arched-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-17"><p class="meta">Arch endings and valleys</p>
+<h2>17 · U+F2B81 · descender with stem and spine and ascender</h2>
+<p class="meta"><code>left-arched-opposed-bowls-1-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="17-left-arched-opposed-bowls-1-1.svg?sha=f8f8cde03e14572a8a7d94ae4184daa110981346d5237268c2f56ce0a14a55d6" width="1506" height="1143" alt="descender with stem and spine and ascender; Regular and Bold connection proof"></div>
+<p><a href="17-left-arched-opposed-bowls-1-1.svg">Open full-size SVG</a>
+ · <a href="17-left-arched-opposed-bowls-1-1.png">PNG</a>
+</p></section>
+<section id="case-18"><p class="meta">Arch endings and valleys</p>
+<h2>18 · U+F2B73 · ascender with stem and spine and descender</h2>
+<p class="meta"><code>left-arched-opposed-bowls-2-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="18-left-arched-opposed-bowls-2-2.svg?sha=7c857fddc61c17da9a0d03b76c576e0778e59d6e0487a095b070ecee9619edf9" width="1496" height="1143" alt="ascender with stem and spine and descender; Regular and Bold connection proof"></div>
+<p><a href="18-left-arched-opposed-bowls-2-2.svg">Open full-size SVG</a>
+ · <a href="18-left-arched-opposed-bowls-2-2.png">PNG</a>
+</p></section>
+<section id="case-19"><p class="meta">Arch endings and valleys</p>
+<h2>19 · U+F2B88 · long stem with stem and spine and long stem</h2>
+<p class="meta"><code>left-arched-opposed-bowls-3-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="19-left-arched-opposed-bowls-3-3.svg?sha=344d95a2f34b09809b1137d2a1711b6aea24a440f6229a8b2a451eec4123c540" width="1496" height="1166" alt="long stem with stem and spine and long stem; Regular and Bold connection proof"></div>
+<p><a href="19-left-arched-opposed-bowls-3-3.svg">Open full-size SVG</a>
+ · <a href="19-left-arched-opposed-bowls-3-3.png">PNG</a>
+</p></section>
+<section id="case-20"><p class="meta">Arch endings and valleys</p>
+<h2>20 · U+F2B7A · hook with stem and spine and tail</h2>
+<p class="meta"><code>left-arched-opposed-bowls-4-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="20-left-arched-opposed-bowls-4-4.svg?sha=aea411cdfd34afd85b0add043536bab74a47aee745f53d86e74241c57e771fed" width="1400" height="1184" alt="hook with stem and spine and tail; Regular and Bold connection proof"></div>
+<p><a href="20-left-arched-opposed-bowls-4-4.svg">Open full-size SVG</a>
+ · <a href="20-left-arched-opposed-bowls-4-4.png">PNG</a>
+</p></section>
+<section id="case-21"><p class="meta">Arch endings and valleys</p>
+<h2>21 · U+F2B8F · long hook with stem and spine and long tail</h2>
+<p class="meta"><code>left-arched-opposed-bowls-5-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="21-left-arched-opposed-bowls-5-5.svg?sha=7e379438bfe953852fb3710546313760ca2c3b4632c343e396f720c191b25c83" width="1404" height="1184" alt="long hook with stem and spine and long tail; Regular and Bold connection proof"></div>
+<p><a href="21-left-arched-opposed-bowls-5-5.svg">Open full-size SVG</a>
+ · <a href="21-left-arched-opposed-bowls-5-5.png">PNG</a>
+</p></section>
+<section id="case-22"><p class="meta">Arch endings and valleys</p>
+<h2>22 · U+F2BB4 · stem with spine and two stems</h2>
+<p class="meta"><code>right-arched-opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="22-right-arched-opposed-bowls-0-0.svg?sha=a4630698770ff3f3cf746e7ad8f5b13533eb111f03560d7413f8be1ec91574f8" width="1494" height="851" alt="stem with spine and two stems; Regular and Bold connection proof"></div>
+<p><a href="22-right-arched-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="22-right-arched-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-23"><p class="meta">Arch endings and valleys</p>
+<h2>23 · U+F2BC9 · descender with spine and stem and ascender</h2>
+<p class="meta"><code>right-arched-opposed-bowls-1-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="23-right-arched-opposed-bowls-1-1.svg?sha=7d355d96d8e1c5291c52c6bb1a058ffb61aea7c086dce284b7f5257871e4b26d" width="1500" height="1143" alt="descender with spine and stem and ascender; Regular and Bold connection proof"></div>
+<p><a href="23-right-arched-opposed-bowls-1-1.svg">Open full-size SVG</a>
+ · <a href="23-right-arched-opposed-bowls-1-1.png">PNG</a>
+</p></section>
+<section id="case-24"><p class="meta">Arch endings and valleys</p>
+<h2>24 · U+F2BBB · ascender with spine and stem and descender</h2>
+<p class="meta"><code>right-arched-opposed-bowls-2-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="24-right-arched-opposed-bowls-2-2.svg?sha=53796952031411c512ef13724fbccb42d7f62f704991c008fbe09b3bccfa1ec3" width="1534" height="1143" alt="ascender with spine and stem and descender; Regular and Bold connection proof"></div>
+<p><a href="24-right-arched-opposed-bowls-2-2.svg">Open full-size SVG</a>
+ · <a href="24-right-arched-opposed-bowls-2-2.png">PNG</a>
+</p></section>
+<section id="case-25"><p class="meta">Arch endings and valleys</p>
+<h2>25 · U+F2BD0 · long stem with spine and stem and long stem</h2>
+<p class="meta"><code>right-arched-opposed-bowls-3-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="25-right-arched-opposed-bowls-3-3.svg?sha=071f2f9daf1dd9c7bcfaa682f86f619444a132df1d458950977c16e742809f19" width="1536" height="1166" alt="long stem with spine and stem and long stem; Regular and Bold connection proof"></div>
+<p><a href="25-right-arched-opposed-bowls-3-3.svg">Open full-size SVG</a>
+ · <a href="25-right-arched-opposed-bowls-3-3.png">PNG</a>
+</p></section>
+<section id="case-26"><p class="meta">Arch endings and valleys</p>
+<h2>26 · U+F2BC2 · hook with spine and stem and tail</h2>
+<p class="meta"><code>right-arched-opposed-bowls-4-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="26-right-arched-opposed-bowls-4-4.svg?sha=ae187ab522e9980f168a7d9567d3d17d33bb4bfc1dfaecf93f8c93f35fa0f320" width="1306" height="1184" alt="hook with spine and stem and tail; Regular and Bold connection proof"></div>
+<p><a href="26-right-arched-opposed-bowls-4-4.svg">Open full-size SVG</a>
+ · <a href="26-right-arched-opposed-bowls-4-4.png">PNG</a>
+</p></section>
+<section id="case-27"><p class="meta">Arch endings and valleys</p>
+<h2>27 · U+F2BD7 · long hook with spine and stem and long tail</h2>
+<p class="meta"><code>right-arched-opposed-bowls-5-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="27-right-arched-opposed-bowls-5-5.svg?sha=6cea2418490eed185be8c4c02f2e6acf6a2b25d4e0bf9de6229d0e0a898a8b91" width="1406" height="1184" alt="long hook with spine and stem and long tail; Regular and Bold connection proof"></div>
+<p><a href="27-right-arched-opposed-bowls-5-5.svg">Open full-size SVG</a>
+ · <a href="27-right-arched-opposed-bowls-5-5.png">PNG</a>
+</p></section>
+<section id="case-28"><p class="meta">Arch endings and valleys</p>
+<h2>28 · U+F2CA8 · three stems with spine and stem</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="28-left-double-arched-opposed-bowls-0-0.svg?sha=68f075224b9755c477cad8207a0e91e3ee54c7e26e4a6c6bfdcb8d27bc835b96" width="1914" height="851" alt="three stems with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="28-left-double-arched-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="28-left-double-arched-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-29"><p class="meta">Arch endings and valleys</p>
+<h2>29 · U+F2CBD · descender with two stems and spine and ascender</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-1-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="29-left-double-arched-opposed-bowls-1-1.svg?sha=d65d5d5abc81d9a3de25d6d721461c4051749824b8fdc7c67011841032ed7f9a" width="1920" height="1143" alt="descender with two stems and spine and ascender; Regular and Bold connection proof"></div>
+<p><a href="29-left-double-arched-opposed-bowls-1-1.svg">Open full-size SVG</a>
+ · <a href="29-left-double-arched-opposed-bowls-1-1.png">PNG</a>
+</p></section>
+<section id="case-30"><p class="meta">Arch endings and valleys</p>
+<h2>30 · U+F2CAF · ascender with two stems and spine and descender</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-2-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="30-left-double-arched-opposed-bowls-2-2.svg?sha=30a506e2209ae0701572fa8ad174433160f876287f620051cbe608752da5f0c4" width="1916" height="1143" alt="ascender with two stems and spine and descender; Regular and Bold connection proof"></div>
+<p><a href="30-left-double-arched-opposed-bowls-2-2.svg">Open full-size SVG</a>
+ · <a href="30-left-double-arched-opposed-bowls-2-2.png">PNG</a>
+</p></section>
+<section id="case-31"><p class="meta">Arch endings and valleys</p>
+<h2>31 · U+F2CC4 · long stem with two stems and spine and long stem</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-3-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="31-left-double-arched-opposed-bowls-3-3.svg?sha=5c88abbe45938a0196b0cf254ef4e2bcb9b58d62ddc3bc9d592d6852f1834754" width="1916" height="1166" alt="long stem with two stems and spine and long stem; Regular and Bold connection proof"></div>
+<p><a href="31-left-double-arched-opposed-bowls-3-3.svg">Open full-size SVG</a>
+ · <a href="31-left-double-arched-opposed-bowls-3-3.png">PNG</a>
+</p></section>
+<section id="case-32"><p class="meta">Arch endings and valleys</p>
+<h2>32 · U+F2CB6 · hook with two stems and spine and tail</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-4-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="32-left-double-arched-opposed-bowls-4-4.svg?sha=8f96aa7a0e8e6f62b99e806d99259b73970b6ecb2481f146b84f666b068a432c" width="1814" height="1161" alt="hook with two stems and spine and tail; Regular and Bold connection proof"></div>
+<p><a href="32-left-double-arched-opposed-bowls-4-4.svg">Open full-size SVG</a>
+ · <a href="32-left-double-arched-opposed-bowls-4-4.png">PNG</a>
+</p></section>
+<section id="case-33"><p class="meta">Arch endings and valleys</p>
+<h2>33 · U+F2CCB · long hook with two stems and spine and long tail</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-5-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="33-left-double-arched-opposed-bowls-5-5.svg?sha=1930ba4283bd1fb87f41507ac536a5cb137c187fb94be439f63b1f097ac53954" width="1820" height="1184" alt="long hook with two stems and spine and long tail; Regular and Bold connection proof"></div>
+<p><a href="33-left-double-arched-opposed-bowls-5-5.svg">Open full-size SVG</a>
+ · <a href="33-left-double-arched-opposed-bowls-5-5.png">PNG</a>
+</p></section>
+<section id="case-34"><p class="meta">Arch endings and valleys</p>
+<h2>34 · U+F2CF0 · stem with spine and three stems</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="34-right-double-arched-opposed-bowls-0-0.svg?sha=2db83d92b4c6884cc8e11ee0e046b0fde5d36400abc5d30c91dc1e68575b60c4" width="1906" height="852" alt="stem with spine and three stems; Regular and Bold connection proof"></div>
+<p><a href="34-right-double-arched-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="34-right-double-arched-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-35"><p class="meta">Arch endings and valleys</p>
+<h2>35 · U+F2D05 · descender with spine and two stems and ascender</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-1-1</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="35-right-double-arched-opposed-bowls-1-1.svg?sha=dc25cba6b5d136da5a2cb11939c50587c7a487a84603516603de6c671eee635a" width="1912" height="1143" alt="descender with spine and two stems and ascender; Regular and Bold connection proof"></div>
+<p><a href="35-right-double-arched-opposed-bowls-1-1.svg">Open full-size SVG</a>
+ · <a href="35-right-double-arched-opposed-bowls-1-1.png">PNG</a>
+</p></section>
+<section id="case-36"><p class="meta">Arch endings and valleys</p>
+<h2>36 · U+F2CF7 · ascender with spine and two stems and descender</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-2-2</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="36-right-double-arched-opposed-bowls-2-2.svg?sha=f9c0ecc961108daf8209878415ccd1dedba69d51c9e91562dff89606a217112d" width="1954" height="1143" alt="ascender with spine and two stems and descender; Regular and Bold connection proof"></div>
+<p><a href="36-right-double-arched-opposed-bowls-2-2.svg">Open full-size SVG</a>
+ · <a href="36-right-double-arched-opposed-bowls-2-2.png">PNG</a>
+</p></section>
+<section id="case-37"><p class="meta">Arch endings and valleys</p>
+<h2>37 · U+F2D0C · long stem with spine and two stems and long stem</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-3-3</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper extension: shaft-to-body transition</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="37-right-double-arched-opposed-bowls-3-3.svg?sha=5889dbcbe653cdf87f6166a7594236816079f346fcd99643c21da79111221dbf" width="1956" height="1166" alt="long stem with spine and two stems and long stem; Regular and Bold connection proof"></div>
+<p><a href="37-right-double-arched-opposed-bowls-3-3.svg">Open full-size SVG</a>
+ · <a href="37-right-double-arched-opposed-bowls-3-3.png">PNG</a>
+</p></section>
+<section id="case-38"><p class="meta">Arch endings and valleys</p>
+<h2>38 · U+F2CFE · hook with spine and two stems and tail</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-4-4</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="38-right-double-arched-opposed-bowls-4-4.svg?sha=8c67a37f83147c080d0bd67690c66363e820129271348e8c76a75df2950eca6e" width="1724" height="1161" alt="hook with spine and two stems and tail; Regular and Bold connection proof"></div>
+<p><a href="38-right-double-arched-opposed-bowls-4-4.svg">Open full-size SVG</a>
+ · <a href="38-right-double-arched-opposed-bowls-4-4.png">PNG</a>
+</p></section>
+<section id="case-39"><p class="meta">Arch endings and valleys</p>
+<h2>39 · U+F2D13 · long hook with spine and two stems and long tail</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-5-5</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right upper extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="39-right-double-arched-opposed-bowls-5-5.svg?sha=4879653d1c2c62567c1991241d251fd799f57f7b892c1bd3ca5bbfb40a849dd2" width="1824" height="1184" alt="long hook with spine and two stems and long tail; Regular and Bold connection proof"></div>
+<p><a href="39-right-double-arched-opposed-bowls-5-5.svg">Open full-size SVG</a>
+ · <a href="39-right-double-arched-opposed-bowls-5-5.png">PNG</a>
+</p></section>
+<section id="case-40"><p class="meta">Arch endings and valleys</p>
+<h2>40 · U+F2D38 · two stems with spine and two stems</h2>
+<p class="meta"><code>double-arched-opposed-bowls-0-0</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="40-double-arched-opposed-bowls-0-0.svg?sha=eeed2a2c9b51fed059a8d2cb2123fb83291a115d27d78e8479dfa438da42e67f" width="1932" height="851" alt="two stems with spine and two stems; Regular and Bold connection proof"></div>
+<p><a href="40-double-arched-opposed-bowls-0-0.svg">Open full-size SVG</a>
+ · <a href="40-double-arched-opposed-bowls-0-0.png">PNG</a>
+</p></section>
+<section id="case-41"><p class="meta">Middle legs and closures</p>
+<h2>41 · U+F2B90 · stem with descender and spine and stem</h2>
+<p class="meta"><code>left-arched-opposed-bowls-0-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="41-left-arched-opposed-bowls-0-0-extended-middle-legs.svg?sha=7e6b8d45a22db270c3da093a45a2368fd872c282fdeed8a57cf3c9ba355db5f1" width="1502" height="994" alt="stem with descender and spine and stem; Regular and Bold connection proof"></div>
+<p><a href="41-left-arched-opposed-bowls-0-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="41-left-arched-opposed-bowls-0-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-42"><p class="meta">Middle legs and closures</p>
+<h2>42 · U+F2BA3 · two descenders with spine and descender</h2>
+<p class="meta"><code>left-arched-opposed-bowls-1-2-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="42-left-arched-opposed-bowls-1-2-extended-middle-legs.svg?sha=766e71ebd573dafb4b57228c82dc75bbefeab422e814fb63ff09841320ed03ec" width="1494" height="1017" alt="two descenders with spine and descender; Regular and Bold connection proof"></div>
+<p><a href="42-left-arched-opposed-bowls-1-2-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="42-left-arched-opposed-bowls-1-2-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-43"><p class="meta">Middle legs and closures</p>
+<h2>43 · U+F2B92 · stem with descender and spine and tail</h2>
+<p class="meta"><code>left-arched-opposed-bowls-0-4-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Right lower curved ending: neck and terminal</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+<li>Lower-hook closure throat beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="43-left-arched-opposed-bowls-0-4-extended-middle-legs.svg?sha=7dd4377e8fe69f142ee8c72b1d83d1d69fcb034c003d392e78cf8fe9eaaa8dda" width="1404" height="1027" alt="stem with descender and spine and tail; Regular and Bold connection proof"></div>
+<p><a href="43-left-arched-opposed-bowls-0-4-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="43-left-arched-opposed-bowls-0-4-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-44"><p class="meta">Middle legs and closures</p>
+<h2>44 · U+F2BD8 · stem with spine and ascender and stem</h2>
+<p class="meta"><code>right-arched-opposed-bowls-0-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="44-right-arched-opposed-bowls-0-0-extended-middle-legs.svg?sha=c2325e9d73ebf6cf16b9ebe0d9145ebf5fc1db153e8eb919e126da59868876bc" width="1494" height="1001" alt="stem with spine and ascender and stem; Regular and Bold connection proof"></div>
+<p><a href="44-right-arched-opposed-bowls-0-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="44-right-arched-opposed-bowls-0-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-45"><p class="meta">Middle legs and closures</p>
+<h2>45 · U+F2BE4 · hook with spine and ascender and stem</h2>
+<p class="meta"><code>right-arched-opposed-bowls-4-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Left upper curved ending: neck and terminal</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="45-right-arched-opposed-bowls-4-0-extended-middle-legs.svg?sha=fe93be248e5cf3a504e45c32106e979f3dc19bafc5c11745869e9e24dacdea39" width="1400" height="1032" alt="hook with spine and ascender and stem; Regular and Bold connection proof"></div>
+<p><a href="45-right-arched-opposed-bowls-4-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="45-right-arched-opposed-bowls-4-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-46"><p class="meta">Middle legs and closures</p>
+<h2>46 · U+F2CDE · three descenders with spine and stem</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-1-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+<li>Joined middle-foot bar</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="46-left-double-arched-opposed-bowls-1-0-extended-middle-legs.svg?sha=37b54788bbe6ca74d988b07d593d38057b5ed3658b89a4409c8c464e524f9547" width="1920" height="1017" alt="three descenders with spine and stem; Regular and Bold connection proof"></div>
+<p><a href="46-left-double-arched-opposed-bowls-1-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="46-left-double-arched-opposed-bowls-1-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-47"><p class="meta">Middle legs and closures</p>
+<h2>47 · U+F2CE0 · three descenders with spine and tail</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-1-4-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right lower curved ending: neck and terminal</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+<li>Joined middle-foot bar</li>
+<li>Lower-hook closure throat beside the adjacent upright</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="47-left-double-arched-opposed-bowls-1-4-extended-middle-legs.svg?sha=eeec34ab57c74f7254989e1dd0673b5080babec949064f3c83603a7ff662fe87" width="1820" height="1027" alt="three descenders with spine and tail; Regular and Bold connection proof"></div>
+<p><a href="47-left-double-arched-opposed-bowls-1-4-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="47-left-double-arched-opposed-bowls-1-4-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-48"><p class="meta">Middle legs and closures</p>
+<h2>48 · U+F2D14 · stem with spine and two ascenders and stem</h2>
+<p class="meta"><code>right-double-arched-opposed-bowls-0-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="48-right-double-arched-opposed-bowls-0-0-extended-middle-legs.svg?sha=01d2eee41d95db830b4352e5bb7ab154c65c4665bfe1d47303ba7d69632f8b1c" width="1906" height="1002" alt="stem with spine and two ascenders and stem; Regular and Bold connection proof"></div>
+<p><a href="48-right-double-arched-opposed-bowls-0-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="48-right-double-arched-opposed-bowls-0-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-49"><p class="meta">Middle legs and closures</p>
+<h2>49 · U+F2D5C · stem with descender and spine and ascender and stem</h2>
+<p class="meta"><code>double-arched-opposed-bowls-0-0-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Outgoing arch returns and shaft entries</li>
+<li>Lower valley between spine return and first outgoing arch</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="49-double-arched-opposed-bowls-0-0-extended-middle-legs.svg?sha=281a209c38fda7ca752d8318690d2e17cfb764ad652a40c8f34f70cb15cd8cf8" width="1932" height="1143" alt="stem with descender and spine and ascender and stem; Regular and Bold connection proof"></div>
+<p><a href="49-double-arched-opposed-bowls-0-0-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="49-double-arched-opposed-bowls-0-0-extended-middle-legs.png">PNG</a>
+</p></section>
+<section id="case-50"><p class="meta">Middle legs and closures</p>
+<h2>50 · U+F2CDF · three descenders with spine and descender</h2>
+<p class="meta"><code>left-double-arched-opposed-bowls-1-2-extended-middle-legs</code></p>
+<details><summary>Connections in this case</summary><ul class="connections">
+<li>Upper-left bowl-to-shaft shoulder</li>
+<li>Lower-right bowl-to-shaft hip</li>
+<li>Upper-right body return</li>
+<li>Lower-left body return</li>
+<li>Incoming arch crowns and shaft entries</li>
+<li>Upper valley between the last incoming arch and spine shoulder</li>
+<li>Repeated-arch neck and intervening shared shaft</li>
+<li>Left lower extension: shaft-to-body transition</li>
+<li>Right lower extension: shaft-to-body transition</li>
+<li>Receiving shared shaft beside extended middle leg</li>
+<li>Middle-leg exits and adjoining feet</li>
+<li>Joined middle-foot bar</li>
+<li>Five-space interaction: two body counters, two foot bridges, and terminal enclosure</li>
+</ul></details>
+<div class="sheet"><img loading="lazy" src="50-left-double-arched-opposed-bowls-1-2-extended-middle-legs.svg?sha=51fa38be27b0b90aac7a61bc991f9d5a7cfb26c1d7c3fdb01ba86ed465c97a2c" width="1906" height="1017" alt="three descenders with spine and descender; Regular and Bold connection proof"></div>
+<p><a href="50-left-double-arched-opposed-bowls-1-2-extended-middle-legs.svg">Open full-size SVG</a>
+ · <a href="50-left-double-arched-opposed-bowls-1-2-extended-middle-legs.png">PNG</a>
+</p></section>
+<footer>Connection inspection and user aesthetic acceptance are separate outcomes. This proof index does not publish the font or website.</footer></main></html>

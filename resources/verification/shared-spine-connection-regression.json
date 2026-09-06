@@ -1,0 +1,931 @@
+{
+  "status": "passed",
+  "inputSha256": {
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1D_.glif": "f442ede882914fc8ccd879bf90f65528378aa057ce92c9dc22700612849d8009",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_22.glif": "b5d8004298be435301f302507370f7e3c229908dc9bfc8b239d16a410f658b5b",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_26.glif": "9306f2a5174fc28b60519f060a126d1cf07475af875a12ed55fea86fcb3fe1b0",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_3F_.glif": "1c62cdc3886f7b25e484aca852cfd38080802dabcc1fcee4943e6f10c85a9c1e",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1D_.glif": "2df06b980a785f7fc92aa691ff007c39099f3dc41543dbd1f5b10b94f7adce8a",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_22.glif": "24c01dca569418c05d40f19fa245a2fe78606203013bd66ddcfe120ff8448aa1",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_26.glif": "4f2d1f2239879f282d9279b1282c91a55b5054a3659a906b22d6d9ec5c3abba2",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_3F_.glif": "52f2313d1814bfffc4b259c8a89a5b3de1bd6787d3974eaf4ac351f5e3a88d52",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521",
+    "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
+    "tools/reviewed_spine_connections.py": "bbc67a85520baa63e53a56b00d9295f398bb6f4da0fc53ceef73c21e8d9081d9",
+    "tools/test_spine_connections.py": "6465ab94af6e75892dac78d77106f49fc216dbf8f34544f98735af00a96e68a5"
+  },
+  "connectionBoundaryHelperSha256": "bbc67a85520baa63e53a56b00d9295f398bb6f4da0fc53ceef73c21e8d9081d9",
+  "compiledChecks": true,
+  "measurements": [
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 53.13010235415598,
+        "receivingSpan": 32,
+        "stem": 83.0,
+        "minimumInk": 25.759137972512104,
+        "nativeEntryAngle": 50.906141113770495
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 43.66778014613036,
+        "receivingSpan": 32,
+        "stem": 83.0,
+        "minimumInk": 27.68900472132069,
+        "nativeEntryAngle": 41.00908690157022
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 41.00908690157022,
+        "receivingSpan": 32,
+        "stem": 83.0,
+        "minimumInk": 29.057096503652534,
+        "nativeEntryAngle": 41.00908690157022
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.05342842488455
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 53.13010235415598,
+        "receivingSpan": 32,
+        "stem": 83.0,
+        "minimumInk": 25.759137972512104,
+        "nativeEntryAngle": 50.906141113770495
+      },
+      "lower": {
+        "entryAngle": 41.00908690157022,
+        "receivingSpan": 32,
+        "stem": 83.0,
+        "minimumInk": 29.057096503652534,
+        "nativeEntryAngle": 41.00908690157022
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.05342842488455
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 54.906054518209935,
+        "receivingSpan": 32.63163034853204,
+        "stem": 92.473876953125,
+        "minimumInk": 27.09408629158867,
+        "nativeEntryAngle": 50.62774311205905
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 45.57597698186484,
+        "receivingSpan": 32.63163034853201,
+        "stem": 92.473876953125,
+        "minimumInk": 28.227362301342467,
+        "nativeEntryAngle": 40.81506814751718
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 43.05012263260973,
+        "receivingSpan": 32.63163034853201,
+        "stem": 92.473876953125,
+        "minimumInk": 29.97599890939833,
+        "nativeEntryAngle": 40.81506814751718
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.974961067791646
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 54.906054518209935,
+        "receivingSpan": 32.63163034853204,
+        "stem": 92.473876953125,
+        "minimumInk": 27.09408629158867,
+        "nativeEntryAngle": 50.62774311205905
+      },
+      "lower": {
+        "entryAngle": 43.05012263260973,
+        "receivingSpan": 32.63163034853201,
+        "stem": 92.473876953125,
+        "minimumInk": 29.97599890939833,
+        "nativeEntryAngle": 40.81506814751718
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.974961067791646
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 56.80109066057287,
+        "receivingSpan": 33.26326068294776,
+        "stem": 101.94775390625,
+        "minimumInk": 27.974300059454677,
+        "nativeEntryAngle": 50.34600870909202
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 47.58612993340649,
+        "receivingSpan": 33.26326068294773,
+        "stem": 101.94775390625,
+        "minimumInk": 28.909954218768842,
+        "nativeEntryAngle": 40.62255902619257
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 45.223884369272184,
+        "receivingSpan": 33.26326068294773,
+        "stem": 101.94775390625,
+        "minimumInk": 30.996010099302254,
+        "nativeEntryAngle": 40.62255902619257
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 30.840967611330306
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 56.80109066057287,
+        "receivingSpan": 33.26326068294776,
+        "stem": 101.94775390625,
+        "minimumInk": 27.974300059454677,
+        "nativeEntryAngle": 50.34600870909202
+      },
+      "lower": {
+        "entryAngle": 45.223884369272184,
+        "receivingSpan": 33.26326068294773,
+        "stem": 101.94775390625,
+        "minimumInk": 30.996010099302254,
+        "nativeEntryAngle": 40.62255902619257
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 30.840967611330306
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 58.822634831338355,
+        "receivingSpan": 33.894775390625,
+        "stem": 111.421630859375,
+        "minimumInk": 29.094744984764297,
+        "nativeEntryAngle": 50.060943938229286
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 49.70088077483918,
+        "receivingSpan": 33.894775390625,
+        "stem": 111.421630859375,
+        "minimumInk": 29.30458620431943,
+        "nativeEntryAngle": 40.43158110919493
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 47.536421463795165,
+        "receivingSpan": 33.894775390625,
+        "stem": 111.421630859375,
+        "minimumInk": 31.717968437212686,
+        "nativeEntryAngle": 40.43158110919493
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 31.68446808103499
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 58.822634831338355,
+        "receivingSpan": 33.894775390625,
+        "stem": 111.421630859375,
+        "minimumInk": 29.094744984764297,
+        "nativeEntryAngle": 50.060943938229286
+      },
+      "lower": {
+        "entryAngle": 47.536421463795165,
+        "receivingSpan": 33.894775390625,
+        "stem": 111.421630859375,
+        "minimumInk": 31.717968437212686,
+        "nativeEntryAngle": 40.43158110919493
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 31.68446808103499
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 60.97863623107292,
+        "receivingSpan": 34.52629009830224,
+        "stem": 120.8955078125,
+        "minimumInk": 29.750303885002587,
+        "nativeEntryAngle": 49.77245063850157
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 51.92280610557212,
+        "receivingSpan": 34.5262900983023,
+        "stem": 120.8955078125,
+        "minimumInk": 29.728212765150705,
+        "nativeEntryAngle": 40.242085842485686
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 49.993641017064576,
+        "receivingSpan": 34.5262900983023,
+        "stem": 120.8955078125,
+        "minimumInk": 32.50957710600233,
+        "nativeEntryAngle": 40.242085842485686
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 32.48721202738856
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 60.97863623107292,
+        "receivingSpan": 34.52629009830224,
+        "stem": 120.8955078125,
+        "minimumInk": 29.750303885002587,
+        "nativeEntryAngle": 49.77245063850157
+      },
+      "lower": {
+        "entryAngle": 49.993641017064576,
+        "receivingSpan": 34.5262900983023,
+        "stem": 120.8955078125,
+        "minimumInk": 32.50957710600233,
+        "nativeEntryAngle": 40.242085842485686
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 32.48721202738856
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 63.6736896649617,
+        "receivingSpan": 35.26313861930049,
+        "stem": 131.94775390625,
+        "minimumInk": 30.43538310380258,
+        "nativeEntryAngle": 49.431440754397606
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 54.65229479991824,
+        "receivingSpan": 35.26313861930049,
+        "stem": 131.94775390625,
+        "minimumInk": 30.283551254862807,
+        "nativeEntryAngle": 40.02284036293808
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 53.04897909142149,
+        "receivingSpan": 35.26313861930049,
+        "stem": 131.94775390625,
+        "minimumInk": 33.425049668712575,
+        "nativeEntryAngle": 40.02284036293808
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 33.36469878479349
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 63.6736896649617,
+        "receivingSpan": 35.26313861930049,
+        "stem": 131.94775390625,
+        "minimumInk": 30.43538310380258,
+        "nativeEntryAngle": 49.431440754397606
+      },
+      "lower": {
+        "entryAngle": 53.04897909142149,
+        "receivingSpan": 35.26313861930049,
+        "stem": 131.94775390625,
+        "minimumInk": 33.425049668712575,
+        "nativeEntryAngle": 40.02284036293808
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 33.36469878479349
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 66.5713071912546,
+        "receivingSpan": 36,
+        "stem": 143.0,
+        "minimumInk": 30.915856025711157,
+        "nativeEntryAngle": 49.08561677997488
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 57.52880770915151,
+        "receivingSpan": 36,
+        "stem": 143.0,
+        "minimumInk": 30.648493240135398,
+        "nativeEntryAngle": 39.80557109226519
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "compiled",
+      "lower": {
+        "entryAngle": 56.309932474020215,
+        "receivingSpan": 36,
+        "stem": 143.0,
+        "minimumInk": 34.23848547892598,
+        "nativeEntryAngle": 39.80557109226519
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 34.20549472147165
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "compiled",
+      "upper": {
+        "entryAngle": 66.5713071912546,
+        "receivingSpan": 36,
+        "stem": 143.0,
+        "minimumInk": 30.915856025711157,
+        "nativeEntryAngle": 49.08561677997488
+      },
+      "lower": {
+        "entryAngle": 56.309932474020215,
+        "receivingSpan": 36,
+        "stem": 143.0,
+        "minimumInk": 34.23848547892598,
+        "nativeEntryAngle": 39.80557109226519
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 34.20549472147165
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 53.353985507949716,
+        "receivingSpan": 32.0,
+        "stem": 83.0,
+        "minimumInk": 25.9722840931564,
+        "nativeEntryAngle": 50.906141113770495
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 42.607803122596316,
+        "receivingSpan": 32.0,
+        "stem": 83.0,
+        "minimumInk": 27.492530030122897,
+        "nativeEntryAngle": 41.00908690157022
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 42.00449499409766,
+        "receivingSpan": 32.0,
+        "stem": 83.0,
+        "minimumInk": 28.898480019504564,
+        "nativeEntryAngle": 41.00908690157022
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 28.870393351100063
+      }
+    },
+    {
+      "weight": 400,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 53.353985507949716,
+        "receivingSpan": 32.0,
+        "stem": 83.0,
+        "minimumInk": 25.9722840931564,
+        "nativeEntryAngle": 50.906141113770495
+      },
+      "lower": {
+        "entryAngle": 42.00449499409766,
+        "receivingSpan": 32.0,
+        "stem": 83.0,
+        "minimumInk": 28.898480019504564,
+        "nativeEntryAngle": 41.00908690157022
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 28.870393351100063
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 55.145182474355906,
+        "receivingSpan": 32.59211730957031,
+        "stem": 92.473876953125,
+        "minimumInk": 27.256445027074157,
+        "nativeEntryAngle": 50.62774311205905
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 44.73874722254199,
+        "receivingSpan": 32.59211730957031,
+        "stem": 92.473876953125,
+        "minimumInk": 28.100557833219693,
+        "nativeEntryAngle": 40.81506814751718
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 43.940040651107104,
+        "receivingSpan": 32.59211730957031,
+        "stem": 92.473876953125,
+        "minimumInk": 29.84934024460381,
+        "nativeEntryAngle": 40.81506814751718
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.83711068163479
+      }
+    },
+    {
+      "weight": 450,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 55.145182474355906,
+        "receivingSpan": 32.59211730957031,
+        "stem": 92.473876953125,
+        "minimumInk": 27.256445027074157,
+        "nativeEntryAngle": 50.62774311205905
+      },
+      "lower": {
+        "entryAngle": 43.940040651107104,
+        "receivingSpan": 32.59211730957031,
+        "stem": 92.473876953125,
+        "minimumInk": 29.84934024460381,
+        "nativeEntryAngle": 40.81506814751718
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 29.83711068163479
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 57.049367834779964,
+        "receivingSpan": 33.184234619140625,
+        "stem": 101.94775390625,
+        "minimumInk": 28.058319021883115,
+        "nativeEntryAngle": 50.34600870909202
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 46.99590492358179,
+        "receivingSpan": 33.184234619140625,
+        "stem": 101.94775390625,
+        "minimumInk": 28.814728931532223,
+        "nativeEntryAngle": 40.62255902619257
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 45.99992762214002,
+        "receivingSpan": 33.184234619140625,
+        "stem": 101.94775390625,
+        "minimumInk": 30.90102905760151,
+        "nativeEntryAngle": 40.62255902619257
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 30.76692639451697
+      }
+    },
+    {
+      "weight": 500,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 57.049367834779964,
+        "receivingSpan": 33.184234619140625,
+        "stem": 101.94775390625,
+        "minimumInk": 28.058319021883115,
+        "nativeEntryAngle": 50.34600870909202
+      },
+      "lower": {
+        "entryAngle": 45.99992762214002,
+        "receivingSpan": 33.184234619140625,
+        "stem": 101.94775390625,
+        "minimumInk": 30.90102905760151,
+        "nativeEntryAngle": 40.62255902619257
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 30.76692639451697
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 59.072956333219636,
+        "receivingSpan": 33.77635192871094,
+        "stem": 111.421630859375,
+        "minimumInk": 29.052046941003436,
+        "nativeEntryAngle": 50.060943938229286
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 49.38318332960275,
+        "receivingSpan": 33.77635192871094,
+        "stem": 111.421630859375,
+        "minimumInk": 29.311049658150136,
+        "nativeEntryAngle": 40.43158110919493
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 48.19067285070844,
+        "receivingSpan": 33.77635192871094,
+        "stem": 111.421630859375,
+        "minimumInk": 31.72449266251743,
+        "nativeEntryAngle": 40.43158110919493
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 31.6701521176683
+      }
+    },
+    {
+      "weight": 550,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 59.072956333219636,
+        "receivingSpan": 33.77635192871094,
+        "stem": 111.421630859375,
+        "minimumInk": 29.052046941003436,
+        "nativeEntryAngle": 50.060943938229286
+      },
+      "lower": {
+        "entryAngle": 48.19067285070844,
+        "receivingSpan": 33.77635192871094,
+        "stem": 111.421630859375,
+        "minimumInk": 31.72449266251743,
+        "nativeEntryAngle": 40.43158110919493
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 31.6701521176683
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 61.22199734282515,
+        "receivingSpan": 34.36846923828125,
+        "stem": 120.8955078125,
+        "minimumInk": 29.578633805811762,
+        "nativeEntryAngle": 49.77245063850157
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 51.90314529956669,
+        "receivingSpan": 34.36846923828125,
+        "stem": 120.8955078125,
+        "minimumInk": 29.776591940836873,
+        "nativeEntryAngle": 40.242085842485686
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 50.518113270318096,
+        "receivingSpan": 34.36846923828125,
+        "stem": 120.8955078125,
+        "minimumInk": 32.55820444926393,
+        "nativeEntryAngle": 40.242085842485686
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 32.53802237983472
+      }
+    },
+    {
+      "weight": 600,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 61.22199734282515,
+        "receivingSpan": 34.36846923828125,
+        "stem": 120.8955078125,
+        "minimumInk": 29.578633805811762,
+        "nativeEntryAngle": 49.77245063850157
+      },
+      "lower": {
+        "entryAngle": 50.518113270318096,
+        "receivingSpan": 34.36846923828125,
+        "stem": 120.8955078125,
+        "minimumInk": 32.55820444926393,
+        "nativeEntryAngle": 40.242085842485686
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 32.53802237983472
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 63.89478033303786,
+        "receivingSpan": 35.059234619140625,
+        "stem": 131.94775390625,
+        "minimumInk": 30.10852220631161,
+        "nativeEntryAngle": 49.431440754397606
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 55.01157626054705,
+        "receivingSpan": 35.059234619140625,
+        "stem": 131.94775390625,
+        "minimumInk": 30.416113508811456,
+        "nativeEntryAngle": 40.02284036293808
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 53.41236151358163,
+        "receivingSpan": 35.059234619140625,
+        "stem": 131.94775390625,
+        "minimumInk": 33.55986896176597,
+        "nativeEntryAngle": 40.02284036293808
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 33.50151946763945
+      }
+    },
+    {
+      "weight": 650,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 63.89478033303786,
+        "receivingSpan": 35.059234619140625,
+        "stem": 131.94775390625,
+        "minimumInk": 30.10852220631161,
+        "nativeEntryAngle": 49.431440754397606
+      },
+      "lower": {
+        "entryAngle": 53.41236151358163,
+        "receivingSpan": 35.059234619140625,
+        "stem": 131.94775390625,
+        "minimumInk": 33.55986896176597,
+        "nativeEntryAngle": 40.02284036293808
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 33.50151946763945
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-0-1",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 66.75245915945223,
+        "receivingSpan": 35.75,
+        "stem": 143.0,
+        "minimumInk": 30.499726367461083,
+        "nativeEntryAngle": 49.08561677997488
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-1-0",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 58.29902235011574,
+        "receivingSpan": 35.75,
+        "stem": 143.0,
+        "minimumInk": 30.84922735409636,
+        "nativeEntryAngle": 39.80557109226519
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-1-4",
+      "kind": "source",
+      "lower": {
+        "entryAngle": 56.50402275255134,
+        "receivingSpan": 35.75,
+        "stem": 143.0,
+        "minimumInk": 34.44084807092774,
+        "nativeEntryAngle": 39.80557109226519
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 34.416629621902985
+      }
+    },
+    {
+      "weight": 700,
+      "glyphId": "opposed-bowls-5-5",
+      "kind": "source",
+      "upper": {
+        "entryAngle": 66.75245915945223,
+        "receivingSpan": 35.75,
+        "stem": 143.0,
+        "minimumInk": 30.499726367461083,
+        "nativeEntryAngle": 49.08561677997488
+      },
+      "lower": {
+        "entryAngle": 56.50402275255134,
+        "receivingSpan": 35.75,
+        "stem": 143.0,
+        "minimumInk": 34.44084807092774,
+        "nativeEntryAngle": 39.80557109226519
+      },
+      "lowerHook": {
+        "outerShaftAngle": 0.0,
+        "innerShaftAngle": 0.0,
+        "minimumRibbon": 34.416629621902985
+      }
+    }
+  ]
+}

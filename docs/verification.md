@@ -1,10 +1,66 @@
 # Verification record
 
+Current reference font **0.220**, canonical naming **3**.
+
+The 6 September 2026 naming revision gives all 832 characters the
+`QUINTESSENTIAL LATIN LETTER` prefix and simplifies 696 construction labels.
+All seventeen naming tests and the generated-export check pass. The allocation
+is unchanged apart from names and naming version: code points, stable identities,
+component geometry, display order, and posture coverage are preserved.
+
+The site now has four pages after removing Specimens. Both project marks use
+the shared font controls and existing native-posture availability; U+F2B18's
+Italic form remains pending. The favicon is a fixed Roman weight-500 outline.
+The build, twelve static-site acceptance groups, and 73 browser checks pass,
+including logo weight changes and stable controls at 375, 768, and 1440 pixels.
+
+All five PDFs were regenerated for naming version 3 and all six PDF tests pass.
+The block PDFs contain 7, 9, and 14 pages; the combined catalogue contains 30;
+the proposal contains 4. All 64 pages were visually reviewed from fresh Poppler
+renders, with full-size inspection of representative dense names and final
+pages. No clipping, overlap, missing glyphs, or broken name wrapping was observed.
+Their current source and output hashes are in
+[the publication manifest](../output/pdf/build-manifest.json).
+
+## Shared-spine optical revision
+
+The current family refinement applies the reviewed U+F2B18 body to all 396
+related Roman constructions: 216 base forms and 180 extended-middle-leg
+companions. Revision 2 also corrects localized exterior body returns,
+arch-to-spine ports, and closed lower-hook joins. All remaining segments,
+advances, and spacing are preserved. See [shared-spine optical design](shared-spine-optical-design.md)
+for eligibility, preservation boundaries, and the final family evidence.
+
+The initial emblem's `f2b18-*` results remain historical and do not validate the
+expanded family by themselves. Final family geometry passes for all 396 forms
+at seven weights, with localized connection exceptions isolated from the
+remaining preserved segments. All 792 Regular
+and Bold specimens have been reviewed across 11 proof sheets.
+The [connection review](../resources/verification/shared-spine-connection-review.json)
+also covers 50 labeled cases at 680px em in both masters, with 24px and 48px
+contexts. It includes every enclosure count from two through five and the
+corrected body returns, arch valleys, and closed lower-tail connections.
+The [final font-test record](../resources/verification/shared-spine-font-tests.json)
+binds the relevant compiled tests and complementary reports to the final font.
+
+All five PDFs were rebuilt from the final family font and pass six acceptance
+tests. All 32 affected pages were rendered; the 16 affected block pages and
+four representative combined pages were inspected directly. Every affected
+combined page body matches its reviewed block page pixel for pixel. The final
+four-page site also passes 17 naming tests, 12 site acceptance groups, and 73
+browser checks. Desktop/mobile marks and small-size SVG, favicon, and native
+text renders were reviewed. These results are bound to the final assets in
+[family PDF review](../resources/verification/shared-spine-pdf-review.json) and
+[family browser review](../resources/verification/shared-spine-browser-review.json).
+
+## Historical extraction and publication
+
 Reference font **0.220**, canonical naming **2**, reviewed **6 September 2026**.
-The current working tree includes a subsequent, unpublished Roman U+F2B18
-optical revision and project icon. Its checks and visual review are recorded in
-[U+F2B18 optical design](f2b18-optical-design.md). User visual acceptance remains
-pending. The sections below describe the original extraction and publication;
+The first subsequent optical revision introduced the Roman U+F2B18 project
+icon. Its checks and visual review are recorded in
+[U+F2B18 optical design](f2b18-optical-design.md). The later shared-spine family
+revision is documented separately above. The sections below describe the
+original extraction and publication;
 their dated hashes are historical evidence, not hashes of the revised artifacts.
 
 ## Extraction and font preservation

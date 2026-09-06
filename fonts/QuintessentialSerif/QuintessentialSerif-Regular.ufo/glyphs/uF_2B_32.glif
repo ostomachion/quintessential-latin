@@ -32,36 +32,44 @@
       <point x="240" y="-235"/>
       <point x="196" y="-235" type="qcurve" smooth="yes"/>
       <point x="151.54491" y="-235"/>
-      <point x="92.502994" y="-205"/>
-      <point x="80" y="-195" type="qcurve"/>
+      <point x="80" y="-213"/>
+      <point x="80" y="-195" type="qcurve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="163" y="221" type="line"/>
-      <point x="209" y="233"/>
-      <point x="288" y="262"/>
-      <point x="338" y="310"/>
+      <point x="163" y="233" type="line"/>
+      <point x="176.5" y="240"/>
+      <point x="212.577778" y="255.422222"/>
+      <point x="251.988889" y="272.511111"/>
+      <point x="289.511111" y="291.488889"/>
+      <point x="319.922222" y="312.577778"/>
+      <point x="338" y="336"/>
       <point x="338" y="349" type="qcurve" smooth="yes"/>
       <point x="338" y="387"/>
       <point x="298" y="430"/>
       <point x="266" y="430" type="qcurve" smooth="yes"/>
-      <point x="240" y="430"/>
-      <point x="211.5" y="417" type="qcurve" smooth="yes"/>
-      <point x="186.681236" y="405.67916"/>
-      <point x="163" y="386.016454" type="qcurve"/>
+      <point x="255.2" y="430"/>
+      <point x="232.597" y="420.618"/>
+      <point x="210.21" y="405.14"/>
+      <point x="189.143" y="386.542"/>
+      <point x="170.5" y="367.8"/>
+      <point x="163" y="360" type="qcurve"/>
     </contour>
     <contour>
-      <point x="343" y="257" type="line"/>
-      <point x="298" y="246"/>
-      <point x="218" y="216"/>
-      <point x="168" y="168"/>
+      <point x="343" y="245" type="line"/>
+      <point x="329.5" y="238"/>
+      <point x="293.422222" y="222.577778"/>
+      <point x="254.011111" y="205.488889"/>
+      <point x="216.488889" y="186.511111"/>
+      <point x="186.077778" y="165.422222"/>
+      <point x="168" y="142"/>
       <point x="168" y="129" type="qcurve" smooth="yes"/>
-      <point x="168" y="92"/>
+      <point x="168" y="91"/>
       <point x="208" y="48"/>
       <point x="240" y="48" type="qcurve" smooth="yes"/>
-      <point x="266" y="48"/>
-      <point x="294.5" y="61" type="qcurve" smooth="yes"/>
-      <point x="319.318764" y="72.32084"/>
-      <point x="343" y="91.983546" type="qcurve"/>
+      <point x="258" y="48"/>
+      <point x="295.666667" y="63.083333"/>
+      <point x="330" y="88.5"/>
+      <point x="343" y="104" type="qcurve"/>
     </contour>
     <contour>
       <point x="216" y="-202" type="qcurve" smooth="yes"/>
@@ -70,16 +78,16 @@
       <point x="343" y="-91"/>
       <point x="343" y="-26" type="qcurve" smooth="yes"/>
       <point x="343" y="63" type="line"/>
-      <point x="321.955782" y="42.710145"/>
-      <point x="282.612245" y="10.246377"/>
-      <point x="237.778912" y="-7"/>
-      <point x="208.5" y="-7" type="qcurve" smooth="yes"/>
-      <point x="196.99505" y="-7"/>
-      <point x="176.039604" y="4.607143"/>
+      <point x="320.469388" y="42.710145"/>
+      <point x="278.346939" y="10.246377"/>
+      <point x="230.346939" y="-7"/>
+      <point x="199" y="-7" type="qcurve" smooth="yes"/>
+      <point x="190.128713" y="-7"/>
+      <point x="173.970297" y="4.607143"/>
       <point x="167" y="18" type="qcurve"/>
       <point x="163" y="18" type="line"/>
-      <point x="163" y="-155" type="line"/>
-      <point x="170.27451" y="-172"/>
+      <point x="163" y="-155" type="line" smooth="yes"/>
+      <point x="163" y="-176.15"/>
       <point x="195.215686" y="-202"/>
     </contour>
   </outline>
@@ -97,7 +105,7 @@
           <integer>97</integer>
         </array>
         <key>counterDesign</key>
-        <string>integrated-native-opposed-bowls-two-counters</string>
+        <string>gently-modulated-curved-spine-with-reinforced-shaft-joins</string>
         <key>family</key>
         <string>opposed-bowls</string>
         <key>glyphId</key>
@@ -112,12 +120,24 @@
         <integer>3</integer>
         <key>lowerBowlOffsetX</key>
         <integer>42</integer>
+        <key>lowerClosureDesign</key>
+        <string>shaft-tangent-native-quarter-return</string>
         <key>lowerClosureDonorCodePoint</key>
         <integer>98</integer>
+        <key>lowerClosureInnerAnchor</key>
+        <array>
+          <real>216.0</real>
+          <integer>-202</integer>
+        </array>
         <key>lowerClosureInnerJoin</key>
         <array>
           <real>163.0</real>
           <integer>-155</integer>
+        </array>
+        <key>lowerClosureOuterAnchor</key>
+        <array>
+          <real>196.0</real>
+          <integer>-235</integer>
         </array>
         <key>lowerClosureOuterJoin</key>
         <array>
@@ -126,6 +146,10 @@
         </array>
         <key>method</key>
         <string>Integrated two-shaft sigmoid with opposed native a/turned-a bellies, two enclosed counters and a shared diagonal waist; native upright shaft endings, independently selected on each side. Roman only; no side arches.</string>
+        <key>opticalReference</key>
+        <string>STIX Two Text a, turned a, b, p and alpha</string>
+        <key>opticalRevision</key>
+        <string>compact-spine-3</string>
         <key>recipeCodePoint</key>
         <integer>994098</integer>
         <key>rightLowerDonorCodePoint</key>

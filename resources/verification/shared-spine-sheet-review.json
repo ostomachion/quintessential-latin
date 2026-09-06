@@ -1,0 +1,43 @@
+{
+  "fontSha256": "8a44968388f0dda08eca132845136ecec09e3184554072438a42ab144f70c521",
+  "status": "reviewed",
+  "glyphs": 396,
+  "weights": [
+    400,
+    700
+  ],
+  "specimens": 792,
+  "emSizePixels": 108,
+  "sheetManifest": "docs/images/shared-spines/manifest.json",
+  "review": [
+    {
+      "sheets": "01-05",
+      "glyphs": 180,
+      "specimens": 360,
+      "result": "Fresh final-font review: consistent shared-spine weight, supported upper and lower shoulders, fair arch valleys, rounded extended body returns, and clear Bold counters. Closed hook returns and joined footbars remain legible."
+    },
+    {
+      "sheets": "06-11",
+      "glyphs": 216,
+      "specimens": 432,
+      "result": "Fresh final-font review: repeated left and right arches retain native rhythm; both bilateral ports remain supported; extended middle shafts and their footbars do not distort the spine or close counters."
+    }
+  ],
+  "finalization": "All 11 SVG and PNG sheets were regenerated from the final compiled Roman font and every Regular/Bold specimen was viewed again. This review supplements the 50 large connection proof cases.",
+  "limits": "Visual review is an engineering and optical assessment, not a claim of STIX editorial acceptance or user acceptance.",
+  "sheetPngSha256": {
+    "01-opposed-bowls.png": "6fb10392780e221b8c8cae8bbbcfc2375ed7b04a9abc6496f7d30fe9f18b1680",
+    "02-left-arched-opposed-bowls.png": "a43dfa8d9e3a15e7144dcc04cfe683717d1b5bad2611d29b2958cae6aebe61ca",
+    "03-left-arched-opposed-bowls-extended-middle-legs.png": "4edeed55602dc224f93b719f05c6874f76c5c6ddbf7d1ee76c5b64cbe6bc9a4d",
+    "04-right-arched-opposed-bowls.png": "857241f3bcbc899ec2ea5e3245aec00d638ae5c07973abe1dc2e97b771822acf",
+    "05-right-arched-opposed-bowls-extended-middle-legs.png": "2014a34a8d02981c2237dd2c7e44396d16e33f22e3128adc560cddc42b61bd57",
+    "06-left-double-arched-opposed-bowls.png": "e8963edf03d1c838b952069a8efcb34486eaf8737b2b5ac1a6b7ac3f129e75ab",
+    "07-left-double-arched-opposed-bowls-extended-middle-legs.png": "674caa874db9a0bf85dc8e487dbcbca66080691dea9dea856aaafcf17ae2774b",
+    "08-right-double-arched-opposed-bowls.png": "82ce52625ef92725185eac043eeb3c707e27927d3309533c5b54d23fb2d32348",
+    "09-right-double-arched-opposed-bowls-extended-middle-legs.png": "6b30a525ab43059aa5287966f256b4159b6043cfbf90788985ad4b4be9c1baea",
+    "10-double-arched-opposed-bowls.png": "6f737a694cd7f44e725810c2005dcc610e82b93d9a7521aa2c7626ac517dd585",
+    "11-double-arched-opposed-bowls-extended-middle-legs.png": "ad04b90c355701406080f91c1e8fee0c68c2569506189abd71c7cc482ec81819"
+  },
+  "connectionDesign": "shared-spine-joins-1",
+  "connectionProofManifest": "docs/images/shared-spine-connections/manifest.json"
+}

@@ -59,6 +59,16 @@ def _close_lower_hook(font, recording, metadata):
                                hook[0][1][0], anchor_first=True)
     inner = s.fitted_bowl_join(b_counter[1], b_counter[0], _shaft(metadata["stemLeftInnerX"]),
                                hook[3][1][-1], anchor_first=False)
+    # A closed tail is a continuous return into its descending shaft. The
+    # donor b's deliberate corner becomes a conspicuous elbow here, especially
+    # beside the narrow Bold enclosure. Ease only the two shaft-facing handles;
+    # keep the hook's horizontal tangents, both endpoints, and native depths.
+    outer_points = list(outer.operations[0][1])
+    outer_points[-2] = (outer.end[0], outer.end[1] - .45 * (outer.end[1] - outer.start[1]))
+    outer = s.NativePath(outer.start, ((outer.operations[0][0], tuple(outer_points)),))
+    inner_points = list(inner.operations[0][1])
+    inner_points[0] = (inner.start[0], inner.start[1] - .45 * (inner.start[1] - inner.end[1]))
+    inner = s.NativePath(inner.start, ((inner.operations[0][0], tuple(inner_points)),))
     outer_hook = _operation_index(recording, hook[14])
     inner_hook = _operation_index(recording, hook[4])
     inner_foot = _operation_index(recording, foot[17])
@@ -67,7 +77,9 @@ def _close_lower_hook(font, recording, metadata):
     counter = [("moveTo", (inner.end,)), *recording[inner_hook:inner_foot],
                ("lineTo", (inner.start,)), *inner.operations, ("closePath", ())]
     metadata.update(joinedLower="hook", lowerClosureDonorCodePoint=0x62,
-                    lowerClosureOuterJoin=outer.end, lowerClosureInnerJoin=inner.start)
+                    lowerClosureOuterJoin=outer.end, lowerClosureInnerJoin=inner.start,
+                    lowerClosureOuterAnchor=outer.start, lowerClosureInnerAnchor=inner.end,
+                    lowerClosureDesign="shaft-tangent-native-quarter-return")
     return outside, counter
 
 
@@ -140,10 +152,10 @@ def opposed_bowls_outline(font, code_point):
     shifted_d = _move(d, right_head_dx)
     shoulder_top = upper[15][1][-1]
     if right_extended:
-        # Bold's native upper lobe can extend past the ascending shaft's
-        # inner edge. Give its receiving quarter-join positive horizontal
-        # space instead of folding that curve back across the shaft.
-        shoulder_top = (min(shoulder_top[0], shifted_d[3][1][-1][0] - stem_width / 2),
+        # Reserve a short receiving quarter without compressing the rising
+        # shoulder into a near-vertical lump in Bold. A quarter-stem span
+        # keeps positive room at the ascender and a fair run into the apex.
+        shoulder_top = (min(shoulder_top[0], shifted_d[3][1][-1][0] - stem_width / 4),
                         shoulder_top[1])
     recording = [("moveTo", (head.start,)), *head.operations,
                  ("lineTo", ((stem_inner, b[2][1][-1][1]),)), b[3],
@@ -172,7 +184,9 @@ def opposed_bowls_outline(font, code_point):
     lower_bottom = lower[23][1][-1]
     if left_extended:
         lower_join = _move(p[15:17], left_foot_dx)
-        lower_bottom = (max(lower_bottom[0], lower_join[0][1][-1][0] + stem_width / 2),
+        # Match the upper return's receiving proportion. The former half-
+        # stem reservation squeezed Bold's exit into a steep hanging lobe.
+        lower_bottom = (max(lower_bottom[0], lower_join[0][1][-1][0] + stem_width / 4),
                         lower_bottom[1])
     recording.append(fit_operation(lower[23], lower[22][1][-1], lower[23][1][-1],
                                    corner, lower_bottom))
@@ -185,8 +199,8 @@ def opposed_bowls_outline(font, code_point):
         recording.append(lower[1])
     recording.extend([("lineTo", (head.start,)), ("closePath", ())])
 
-    # Two independent counters with opposite winding; the S between them is
-    # part of the single enclosing contour, never two overlapping spines.
+    # Native counter references establish the body before the paired optical
+    # counters replace them. The S remains part of one enclosing contour.
     upper_counter, _ = _counter(ta, stem_inner)
     from fontTools.misc.bezierTools import solveQuadratic, splitQuadraticAtT
     first_control, control, end = a[20][1]
@@ -229,5 +243,6 @@ def opposed_bowls_outline(font, code_point):
         terminal_counters.extend(counter)
     metadata["terminalCounterCount"] = int(left_kind == 2 and right_extended) + int(left_extended and right_kind > 0)
     recording.extend([*upper_counter, *lower_counter, *terminal_counters])
-    return s.rounded_recording(recording), {key: value for key, value in metadata.items()
-                                            if value is not None}
+    from stix_compact_spine import compact_spine_outline
+    return compact_spine_outline(font, s.rounded_recording(recording),
+                                 {key: value for key, value in metadata.items() if value is not None})

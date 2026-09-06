@@ -108,61 +108,61 @@ test("all closed-neighbor requirements are collected before naming a shared upri
   assert.equal(parts[1].lower, "straight");
 });
 
-test("middle roles and the four exact count abbreviations are preserved", () => {
+test("interior branches use upright primitives and retain terminal branch names", () => {
   cases([
-    [[stem(), leg("none", true), leg()], "stem with two legs"],
-    [[stem("straight"), leg("none", true), leg()], "ascender with two legs"],
-    [[stem(), leg("straight", true), leg("straight")], "stem with two long legs"],
-    [[arm(), arm("none", true), stem()], "two arms with stem"],
-    [[arm("straight"), arm("straight", true), stem()], "two long arms with stem"],
-    [[stem(), leg("straight", true), leg()], "stem with long middle leg and leg"],
-    [[stem(), leg("none", true), leg("straight")], "stem with middle leg and long leg"],
-    [[arm(), arm("straight", true), stem()], "arm with long middle arm and stem"],
-    [[arm("straight"), arm("none", true), stem()], "long arm with middle arm and stem"],
-    [[stem(), leg("none", true), body("shoulder")], "stem with middle leg and shoulder"],
-    [[body("hip"), arm("none", true), stem()], "hip with middle arm and stem"],
-    [[stem(), leg("none", true), bowl()], "stem with middle leg and bowl"],
-    [[bowl(), arm("none", true), stem()], "bowl with middle arm and stem"]
+    [[stem(), leg("none", true), leg()], "two stems with leg"],
+    [[stem("straight"), leg("none", true), leg()], "ascender with stem and leg"],
+    [[stem(), leg("straight", true), leg("straight")], "stem with descender and long leg"],
+    [[arm(), arm("none", true), stem()], "arm with two stems"],
+    [[arm("straight"), arm("straight", true), stem()], "long arm with ascender and stem"],
+    [[stem(), leg("straight", true), leg()], "stem with descender and leg"],
+    [[stem(), leg("none", true), leg("straight")], "two stems with long leg"],
+    [[arm(), arm("straight", true), stem()], "arm with ascender and stem"],
+    [[arm("straight"), arm("none", true), stem()], "long arm with two stems"],
+    [[stem(), leg("none", true), body("shoulder")], "two stems with shoulder"],
+    [[body("hip"), arm("none", true), stem()], "hip with two stems"],
+    [[stem(), leg("none", true), bowl()], "two stems with bowl"],
+    [[bowl(), arm("none", true), stem()], "bowl with two stems"]
   ]);
 });
 
-test("count rules require adjacent matching terminal and middle roles", () => {
+test("count rules combine equal adjacent uprights without crossing a body", () => {
   cases([
-    [[stem(), leg("none", true), leg("none", true)], "stem with middle leg and middle leg"],
-    [[arm("none", true), arm("none", true), stem()], "middle arm with middle arm and stem"],
-    [[stem(), leg("none", true), spine(), leg()], "stem with middle leg and spine and leg"],
-    [[arm(), spine(), arm("none", true), stem()], "arm with spine and middle arm and stem"],
-    [[stem(), leg("none", true), leg("none", true), leg()], "stem with middle leg and two legs"],
-    [[arm(), arm("none", true), arm("none", true), stem()], "two arms with middle arm and stem"]
+    [[stem(), leg("none", true), leg("none", true)], "three stems"],
+    [[arm("none", true), arm("none", true), stem()], "three stems"],
+    [[stem(), leg("none", true), spine(), leg()], "two stems with spine and leg"],
+    [[arm(), spine(), arm("none", true), stem()], "arm with spine and two stems"],
+    [[stem(), leg("none", true), leg("none", true), leg()], "three stems with leg"],
+    [[arm(), arm("none", true), arm("none", true), stem()], "arm with three stems"]
   ]);
 });
 
-test("Section 8 final long bowls close against the immediate middle leg", () => {
+test("Section 6 final long bowls close against the immediate interior upright", () => {
   cases([
-    [[stem(), leg("none", true), longBowl(1, "lower")], "stem with middle leg and long open bowl"],
-    [[stem("none", "straight"), leg("none", true), longBowl(1, "lower")], "descender with middle leg and long open bowl"],
-    [[stem(), leg("straight", true), longBowl(1, "lower")], "stem with middle leg and long bowl"],
-    [[stem("none", "straight"), leg("straight", true), longBowl(1, "lower")], "descender with middle leg and long bowl"]
+    [[stem(), leg("none", true), longBowl(1, "lower")], "two stems with long open bowl"],
+    [[stem("none", "straight"), leg("none", true), longBowl(1, "lower")], "descender with stem and long open bowl"],
+    [[stem(), leg("straight", true), longBowl(1, "lower")], "two stems with long bowl"],
+    [[stem("none", "straight"), leg("straight", true), longBowl(1, "lower")], "descender with stem and long bowl"]
   ]);
 });
 
-test("Section 8 initial long bowls close against the immediate middle arm", () => {
+test("Section 6 initial long bowls close against the immediate interior upright", () => {
   cases([
-    [[longBowl(1, "upper"), arm("none", true), stem()], "long open bowl with middle arm and stem"],
-    [[longBowl(1, "upper"), arm("none", true), stem("straight")], "long open bowl with middle arm and ascender"],
-    [[longBowl(1, "upper"), arm("straight", true), stem()], "long bowl with middle arm and stem"],
-    [[longBowl(1, "upper"), arm("straight", true), stem("straight")], "long bowl with middle arm and ascender"]
+    [[longBowl(1, "upper"), arm("none", true), stem()], "long open bowl with two stems"],
+    [[longBowl(1, "upper"), arm("none", true), stem("straight")], "long open bowl with stem and ascender"],
+    [[longBowl(1, "upper"), arm("straight", true), stem()], "long bowl with two stems"],
+    [[longBowl(1, "upper"), arm("straight", true), stem("straight")], "long bowl with stem and ascender"]
   ]);
 });
 
-test("changing every distant main-upright extension leaves middle-neighbor closure local", () => {
+test("changing every distant main-upright extension leaves interior-neighbor closure local", () => {
   for (const upper of ["none", "straight", "curved"]) {
     for (const lower of ["none", "straight", "curved"]) {
       for (const middleExtension of ["none", "straight"]) {
         const final = freeze([stem(upper, lower), leg(middleExtension, true), longBowl(1, "lower")]);
         const initial = freeze([longBowl(1, "upper"), arm(middleExtension, true), stem(upper, lower)]);
         const expected = middleExtension === "straight" ? "long bowl" : "long open bowl";
-        assert.ok(nameParts(final).endsWith(` and ${expected}`));
+        assert.ok(nameParts(final).endsWith(expected));
         assert.ok(nameParts(initial).startsWith(`${expected} with `));
         assert.equal(final[1].lower, middleExtension, "Closure omission must preserve the middle descent.");
         assert.equal(initial[1].upper, middleExtension, "Closure omission must preserve the middle ascent.");
@@ -186,9 +186,9 @@ test("formatting uses one with and any remaining and separators after abbreviati
   const fixtures = [
     [["stem"], "stem"],
     [["stem", "leg"], "stem with leg"],
-    [["stem", "middle leg", "long open bowl"], "stem with middle leg and long open bowl"],
+    [["two stems", "long open bowl"], "two stems with long open bowl"],
     [["stem", "spine", "stem"], "stem with spine and stem"],
-    [["two arms", "stem"], "two arms with stem"],
+    [["arm", "two stems"], "arm with two stems"],
     [["A", "B", "C", "D"], "A with B and C and D"]
   ];
   for (const [terms, expected] of fixtures) assert.equal(formatParts(freeze(terms)), expected);
@@ -198,8 +198,8 @@ test("formatting uses one with and any remaining and separators after abbreviati
 
 test("default extensions and explicit absent extensions name the same structure", () => {
   cases([
-    [[{ kind: "stem" }, { kind: "leg", middle: true }, { kind: "leg" }], "stem with two legs"],
-    [[{ kind: "arm" }, { kind: "arm", middle: true }, { kind: "stem" }], "two arms with stem"]
+    [[{ kind: "stem" }, { kind: "leg", middle: true }, { kind: "leg" }], "two stems with leg"],
+    [[{ kind: "arm" }, { kind: "arm", middle: true }, { kind: "stem" }], "arm with two stems"]
   ]);
   assert.equal(nameParts([{ kind: "stem" }]), nameParts([stem()]));
 });
@@ -207,25 +207,46 @@ test("default extensions and explicit absent extensions name the same structure"
 
 test("all 832 neutral structures retain unique canonical names without mutation", () => {
   assert.equal(allocation.entries.length, 832);
+  assert.equal(allocation.namingVersion, 3);
   const seen = new Set();
   for (const entry of allocation.entries) {
     assert.ok(!("model" in entry) && !("language" in entry) && !("role" in entry));
     const parts = freeze(structuredClone(entry.parts));
     const original = structuredClone(parts);
     assert.equal(canonicalName(parts), entry.canonicalName, entry.glyphId);
+    assert.equal(entry.name, `QUINTESSENTIAL LATIN LETTER ${entry.canonicalName.toUpperCase()}`, entry.glyphId);
+    assert.doesNotMatch(entry.canonicalName, /middle (?:arm|leg)/);
     assert.deepEqual(parts, original);
     assert.ok(!seen.has(entry.canonicalName), entry.glyphId);
     seen.add(entry.canonicalName);
   }
 });
-test("Special names and adjacent middle closures remain explicit structural fixtures", () => {
+test("requested code points use uniform letter names and simplified upright counts", () => {
+  const expected = new Map([
+    [0xF2A61, "QUINTESSENTIAL LATIN LETTER HIP WITH TWO ASCENDERS"],
+    [0xF2AA9, "QUINTESSENTIAL LATIN LETTER LONG ARM WITH TWO ASCENDERS"],
+    [0xF2C00, "QUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER"],
+    [0xF2A7C, "QUINTESSENTIAL LATIN LETTER TWO STEMS WITH LEG"]
+  ]);
+  for (const [codePoint, name] of expected) {
+    assert.equal(allocation.entries.find(entry => entry.codePoint === codePoint)?.name, name);
+  }
+  cases([
+    [[body("hip"), arm("straight", true), stem("straight")], "hip with two ascenders"],
+    [[arm("straight"), arm("straight", true), stem("straight")], "long arm with two ascenders"],
+    [[stem(), leg("none", true), leg("none", true), body("shoulder")], "three stems with shoulder"],
+    [[stem("none", "straight"), leg("straight", true), leg("straight")], "two descenders with long leg"],
+    [[body("hip"), arm("straight", true), arm("straight", true), stem("straight")], "hip with three ascenders"]
+  ]);
+});
+test("Special names and adjacent interior closures remain explicit structural fixtures", () => {
   const expected = {
     "special-ring":"bowl", "special-closed-double-bowl":"double bowl",
     "special-open-bowl":"open bowl", "special-turned-open-bowl":"turned open bowl",
     "special-double-open-bowl":"double open bowl", "special-turned-double-open-bowl":"turned double open bowl",
     "special-spine":"spine",
-    "triple-arch-right-tail-extended-middle-legs":"stem with long middle leg and middle leg and long bowl",
-    "turned-triple-arch-left-hook-extended-middle-legs":"long bowl with middle arm and long middle arm and stem"
+    "triple-arch-right-tail-extended-middle-legs":"stem with descender and stem and long bowl",
+    "turned-triple-arch-left-hook-extended-middle-legs":"long bowl with stem and ascender and stem"
   };
   for (const [id, name] of Object.entries(expected)) {
     const entry = allocation.entries.find(e => e.glyphId === id);

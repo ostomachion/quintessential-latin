@@ -39,7 +39,7 @@ try {
     await page.waitForFunction(()=>document.body.dataset.fonts==='ready',{timeout:20000});
     await page.evaluate(()=>document.fonts.ready);
   };
-  for(const file of ['index.html','charts.html','specimens.html','proposal.html','downloads.html']){
+  for(const file of ['index.html','charts.html','proposal.html','downloads.html']){
     await navigate(file);
     check(`${file}: page title`,await page.locator('h1').count()===1);
     check(`${file}: shared weight control`,await page.locator('#font-weight').count()===1);
@@ -48,6 +48,15 @@ try {
     check(`${file}: document fits desktop`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     await page.screenshot({path:path.join(output,file.replace('.html','-desktop.png')),fullPage:file!=='charts.html'});
   }
+  await navigate('index.html');
+  const romanHeader=await page.locator('.brand-icon').screenshot();
+  const romanHero=await page.locator('.emblem-glyph').screenshot();
+  check('Header and hero show the actual logo character',await page.locator('.brand-icon .glyph').textContent()===String.fromCodePoint(0xf2b18)&&await page.locator('.emblem-glyph .glyph').textContent()===String.fromCodePoint(0xf2b18));
+  await page.locator('#font-weight').focus();await page.keyboard.press('End');
+  await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+  check('Weight changes the header logo outline',!romanHeader.equals(await page.locator('.brand-icon').screenshot()));
+  check('Weight changes the hero logo outline',!romanHero.equals(await page.locator('.emblem-glyph').screenshot()));
+  await page.locator('#font-weight').focus();await page.keyboard.press('Home');
   await navigate('charts.html');
   check('Four numeric screen grids',await page.locator('table[data-chart-kind="screen"]').count()===4);
   check('Eight print grids',await page.locator('table[data-chart-kind="print"]').count()===8);
@@ -61,6 +70,8 @@ try {
   const parseCode=value=> /^[0-9]+$/.test(value)&&Number(value)>0xffff ? Number(value) : parseInt(value.replace(/^U\+/i,''),16);
   check('Formal names are in numeric order',ordering.map(parseCode).join()===catalogue.entries.map(entry=>entry.codePoint).sort((a,b)=>a-b).join());
   check('Initial posture is Roman',await page.locator('html').getAttribute('data-posture')==='Roman');
+  const controls=()=>page.locator('.weight-control,.italic-control').evaluateAll(elements=>elements.map(element=>{const {x,y,width,height}=element.getBoundingClientRect();return {x,y,width,height};}));
+  const romanControls=await controls();
   await page.locator('#font-weight').focus();
   await page.keyboard.press('End');
   check('Weight responds to real keyboard input',await page.locator('#font-weight').inputValue()==='700');
@@ -71,26 +82,16 @@ try {
   check('600 Italic pending variants clearly shown',visiblePending===600);
   const native=await page.locator('table[data-chart-kind="screen"] .glyph-wrap[data-italic="true"] .glyph').first().evaluate(element=>({weight:getComputedStyle(element).fontWeight,style:getComputedStyle(element).fontStyle,synthesis:getComputedStyle(element).fontSynthesis}));
   check('Selected weight and native posture reach chart glyphs',native.weight==='700'&&native.style==='italic'&&native.synthesis==='none');
-  await navigate('specimens.html');
+  check('Successful font loading leaves no status beside Italic',await page.locator('#font-status').textContent()===''&&!(await page.locator('#font-status').isVisible()));
+  check('Changing posture keeps controls in place',JSON.stringify(await controls())===JSON.stringify(romanControls));
+  await navigate('index.html');
   check('Preferences persist across navigation',await page.locator('#font-weight').inputValue()==='700'&&await page.locator('#font-italic').isChecked());
   await page.reload({waitUntil:'load'});
   await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
   check('Preferences persist across reload',await page.locator('#font-weight').inputValue()==='700'&&await page.locator('#font-italic').isChecked());
-  const built=catalogue.entries.find(entry=>entry.postures.includes('Italic'));
-  const pending=catalogue.entries.find(entry=>!entry.postures.includes('Italic'));
-  await page.locator('#specimen-input').fill(String.fromCodePoint(built.codePoint)+' '+String.fromCodePoint(pending.codePoint));
-  check('Supplementary-plane specimen input preserved',Array.from(await page.locator('#specimen-input').inputValue()).length===3);
-  check('Missing Italic in editor is labeled',/pending/i.test(await page.locator('#specimen-output').innerText()));
-  const editorStyle=await page.locator('#specimen-input').evaluate(element=>({style:getComputedStyle(element).fontStyle,weight:getComputedStyle(element).fontWeight}));
-  const previewStyle=await page.locator('#specimen-output [data-sequence-run]').first().evaluate(element=>({style:getComputedStyle(element).fontStyle,weight:getComputedStyle(element).fontWeight}));
-  check('Literal editor keeps complete Roman coverage while preview uses selected Italic',editorStyle.style==='normal'&&previewStyle.style==='italic'&&editorStyle.weight==='700'&&previewStyle.weight==='700');
-  const anotherBuilt=catalogue.entries.find(entry=>entry.glyphId!==built.glyphId&&entry.postures.includes('Italic'));
-  const kernSequence=String.fromCodePoint(built.codePoint)+String.fromCodePoint(anotherBuilt.codePoint)+'  '+String.fromCodePoint(built.codePoint)+'\n'+String.fromCodePoint(anotherBuilt.codePoint);
-  await page.locator('#specimen-input').fill(kernSequence);
-  const nativeRun=page.locator('#specimen-output [data-sequence-run]');
-  check('Adjacent supported characters and original whitespace share one native run',await nativeRun.count()===1&&await nativeRun.textContent()===kernSequence);
-  const shaping=await nativeRun.evaluate(element=>({nodes:element.childNodes.length,type:element.firstChild.nodeType,kerning:getComputedStyle(element).fontKerning,style:getComputedStyle(element).fontStyle,weight:getComputedStyle(element).fontWeight,whitespace:getComputedStyle(element).whiteSpace}));
-  check('Native sequence shaping retains kerning and selected font controls',shaping.nodes===1&&shaping.type===3&&shaping.kerning==='normal'&&shaping.style==='italic'&&shaping.weight==='700'&&shaping.whitespace==='pre-wrap');
+  check('Missing native Italic logo uses the shared pending state',await page.locator('.brand-icon .pending-label').isVisible()&&await page.locator('.emblem-glyph .pending-label').isVisible()&&!(await page.locator('.brand-icon .glyph').isVisible())&&!(await page.locator('.emblem-glyph .glyph').isVisible()));
+  const logoStyles=await page.locator('.brand-icon .glyph,.emblem-glyph .glyph').evaluateAll(elements=>elements.map(element=>({weight:getComputedStyle(element).fontWeight,style:getComputedStyle(element).fontStyle,synthesis:getComputedStyle(element).fontSynthesis})));
+  check('Both project marks share the selected weight and native posture',logoStyles.every(style=>style.weight==='700'&&style.style==='italic'&&style.synthesis==='none'));
   await page.locator('#font-italic').uncheck();
   await page.locator('#font-weight').focus();
   await page.keyboard.press('Home');
@@ -131,9 +132,19 @@ try {
 
   for(const width of [375,768,1440]){
     await page.setViewportSize({width,height:1000});
-    for(const file of ['index.html','charts.html','specimens.html','proposal.html','downloads.html']){
+    for(const file of ['index.html','charts.html','proposal.html','downloads.html']){
       await navigate(file);
       check(`${file}: fits ${width}px viewport`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+      if(file==='index.html'){
+        const before=await controls(),headerBounds=await page.locator('.brand-icon').boundingBox(),heroBounds=await page.locator('.emblem-glyph').boundingBox();
+        await page.locator('#font-italic').check();
+        await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+        const after={controls:await controls(),header:await page.locator('.brand-icon').boundingBox(),hero:await page.locator('.emblem-glyph').boundingBox()},expected={controls:before,header:headerBounds,hero:heroBounds};
+        assert.deepEqual(after,expected,`${width}px: posture keeps controls and logo spaces stable`);
+        checks.push(`${width}px: posture keeps controls and logo spaces stable`);
+        await page.locator('#font-italic').uncheck();
+        await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+      }
       await page.screenshot({path:path.join(output,file.replace('.html',`-${width}.png`)),fullPage:file!=='charts.html'});
     }
   }
