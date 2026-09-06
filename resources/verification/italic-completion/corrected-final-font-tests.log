@@ -1,0 +1,3 @@
+{"root": "C:\\Users\\User\\source\\repos\\ostomachion\\quintessential-latin\\.tmp\\italic-completion\\corrected-0230", "changedItalicGlyphs": 396, "endpointComparisons": 792, "orderedPairPlacements": 6922240}
+test_static_faces_match_variable_endpoints_geometrically (test_quintessential_font.QuintessentialFontTests.test_static_faces_match_variable_endpoints_geometrically) ... ok
+test_variable_kerning_clears_every_ordered_pair (test_quintessential_font.QuintessentialFontTests.test_variable_kerning_clears_every_ordered_pair) ... 

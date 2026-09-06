@@ -1,0 +1,7 @@
+Checking all1536 new static glyph instances against variable endpoints with the original unchanged geometry test
+test_static_faces_match_variable_endpoints_geometrically (test_quintessential_font.QuintessentialFontTests.test_static_faces_match_variable_endpoints_geometrically) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 603.146s
+
+OK

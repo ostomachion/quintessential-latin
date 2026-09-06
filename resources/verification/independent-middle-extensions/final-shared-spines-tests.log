@@ -1,0 +1,8 @@
+test_every_compiled_weight_keeps_counter_congruence_and_original_geometry (__main__.SharedSpineTests.test_every_compiled_weight_keeps_counter_congruence_and_original_geometry) ... ok
+test_every_source_weight_has_shared_counters_and_open_enclosures (__main__.SharedSpineTests.test_every_source_weight_has_shared_counters_and_open_enclosures) ... ok
+test_source_family_closure_and_localized_connection_preservation (__main__.SharedSpineTests.test_source_family_closure_and_localized_connection_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 263.851s
+
+OK

@@ -1,6 +1,16 @@
 """Extend free internal legs while retaining native arches and outside endings."""
 
 
+def _leg_selection(extensions, count):
+    """Validate the optional mask in final visual left-to-right order."""
+    if extensions is None:
+        return (True,) * count
+    if (not isinstance(extensions, (tuple, list)) or len(extensions) != count
+            or any(type(value) is not bool for value in extensions)):
+        raise ValueError(f"Expected {count} middle-leg extension booleans in left-to-right order")
+    return tuple(extensions)
+
+
 def _split_shared_middle_feet(font, recording, legs):
     """Keep neighboring p feet simple when their native bars share a contour.
 
@@ -113,43 +123,63 @@ def _caps(recording, above):
     return caps
 
 
-def _italic_middle_foot(font, recording):
-    """Keep Italic m's curved shaft; replace its short baseline cap locally."""
+def _italic_middle_foot(font, recording, expected=1, middle_leg_extensions=None):
+    """Keep each Italic m middle curve; replace only its baseline cap."""
     import import_stix_foundation as s
     contours = list(s.native_recording_contours(recording))
     candidates = [(i, contour) for i, contour in enumerate(contours)
                   if contour[0][0] == "moveTo" and contour[1][0] == "lineTo"
                   and contour[0][1][0][1] == contour[1][1][0][1] == 0
                   and contour[2][0] == "qCurveTo"]
-    if len(candidates) != 1:
-        raise RuntimeError("Could not find the native curved Italic middle shaft")
-    index, contour = candidates[0]
-    points = contour[2][1]
+    if len(candidates) != expected:
+        raise RuntimeError(f"Expected {expected} native curved Italic middle shafts, found {len(candidates)}")
+    selection = _leg_selection(middle_leg_extensions, expected)
+    selected = {index for (index, _), extend in zip(
+        sorted(candidates, key=lambda item: item[1][0][1][0][0]), selection) if extend}
     from fontTools.misc.bezierTools import splitQuadraticAtT
-    endpoint = tuple((points[0][i] + points[1][i]) / 2 for i in (0, 1))
-    _, (left, control, endpoint) = splitQuadraticAtT(contour[1][1][-1], points[0], endpoint, .5)
-    right_edge = (contour[-2][1][-1], "lineTo", contour[0][1])
-    right = s.shaft_point(right_edge, left[1])
-    body = s.NativePath(left, (("qCurveTo", (control, endpoint)), ("qCurveTo", points[1:]),
-                               *contour[3:-1], ("lineTo", (right,))))
-    terminal = s.native_terminal(font, 0x70, 20, False)
-    slope = (body.slope(True) + body.slope(False)) / 2
-    dx = body.center + slope * (20 - left[1]) - terminal.center
-    contours[index] = s.join_native_regions(body, terminal.translated(dx))
-    return sum(contours, []), [{"centerX": s.rounded(body.center), "centerY": left[1],
-                              "direction": "descender", "donorCodePoint": 0x70,
-                              "terminalOffsetX": s.rounded(dx), "shaftProfile": "native-curved"}]
+    changes = []
+    for index, contour in candidates:
+        if index not in selected:
+            continue
+        points = contour[2][1]
+        endpoint = tuple((points[0][i] + points[1][i]) / 2 for i in (0, 1))
+        _, (left, control, endpoint) = splitQuadraticAtT(contour[1][1][-1], points[0], endpoint, .5)
+        right_edge = (contour[-2][1][-1], "lineTo", contour[0][1])
+        right = s.shaft_point(right_edge, left[1])
+        body = s.NativePath(left, (("qCurveTo", (control, endpoint)), ("qCurveTo", points[1:]),
+                                   *contour[3:-1], ("lineTo", (right,))))
+        terminal = s.native_terminal(font, 0x70, 20, False)
+        slope = (body.slope(True) + body.slope(False)) / 2
+        dx = body.center + slope * (20 - left[1]) - terminal.center
+        contours[index] = s.join_native_regions(body, terminal.translated(dx))
+        changes.append({"centerX": s.rounded(body.center), "centerY": left[1],
+                        "direction": "descender", "donorCodePoint": 0x70,
+                        "terminalOffsetX": s.rounded(dx), "shaftProfile": "native-curved"})
+    return sum(contours, []), changes
 
 
-def extend_arch_legs(font, recording, shaft_count, turned, *, shared_arm=False):
+def extend_arch_legs(font, recording, shaft_count, turned, *, shared_arm=False,
+                     middle_leg_extensions=None):
     """Replace only the selected native free cap, never an arch ribbon."""
     import import_stix_foundation as s
+    selection = _leg_selection(middle_leg_extensions, shaft_count - (1 if shared_arm else 2))
     if shaft_count == 2 and not shared_arm:
         return recording, []
-    if font["post"].italicAngle and shaft_count == 3 and not turned:
-        if shared_arm:
-            raise ValueError("Italic second-arch terminal families are a separate increment")
-        return _italic_middle_foot(font, recording)
+    if font["post"].italicAngle and shaft_count >= 3 and not turned:
+        recording, changes = _italic_middle_foot(font, recording, shaft_count - 2,
+                                                selection[:-1] if shared_arm else selection)
+        if shared_arm and selection[-1]:
+            # The arm receives the native final m shaft. Its free cap also
+            # descends, while all native arch ribbons stay unchanged.
+            caps = _caps(recording, False)
+            if not caps:
+                raise RuntimeError("The native final Italic arch shaft has no free cap")
+            center, edges = max(caps, key=lambda cap: cap[0])
+            terminal = s.native_terminal(font, 0x70, 50, False)
+            recording, dx = s.splice_arch_terminal(recording, edges, 150, terminal, above=False)
+            changes.append({"centerX": s.rounded(center), "direction": "descender",
+                            "donorCodePoint": 0x70, "terminalOffsetX": dx})
+        return recording, changes
     if shaft_count == 2 and shared_arm:
         current_axes = sorted(center for center, _ in _caps(recording, turned))
         if not current_axes:
@@ -167,7 +197,9 @@ def extend_arch_legs(font, recording, shaft_count, turned, *, shared_arm=False):
         raise RuntimeError(f"Expected {shaft_count} native free-leg axes, found {axes}")
     targets = (axes[:-1] if turned else axes[1:]) if shared_arm else axes[1:-1]
     changes = []
-    for axis in targets:
+    for axis, extend in zip(targets, selection):
+        if not extend:
+            continue
         candidates = [(center, edges) for center, edges in _caps(recording, turned) if abs(center - axis) < 0.001]
         if len(candidates) != 1:
             raise RuntimeError(f"Expected one free internal arch cap at {axis}, found {len(candidates)}")
@@ -191,14 +223,18 @@ def _move_legs(legs, dx):
     return [dict(leg, centerX=leg["centerX"] + dx) for leg in legs]
 
 
-def _terminal_family(font, recipe, start, kind, double):
+def _terminal_family(font, recipe, start, kind, double, middle_leg_extensions=None):
     import import_stix_foundation as s
     from stix_arched_terminals import arched_terminal_outline
     from stix_extensions import _double_arch_terminal
     variant = recipe - start
     turned = variant % 4 >= 2
+    selection = _leg_selection(middle_leg_extensions, 2 if double else 1)
+    arch_selection = selection if kind == "arm" else (selection[1:] if turned else selection[:-1])
+    terminal_extended = selection[0] if turned else selection[-1]
     arch, _ = _arch(font, variant, double)
-    arch, legs = extend_arch_legs(font, arch, 3 if double else 2, turned, shared_arm=kind == "arm")
+    arch, legs = extend_arch_legs(font, arch, 3 if double else 2, turned, shared_arm=kind == "arm",
+                                  middle_leg_extensions=arch_selection)
     if kind == "arm":
         if double:
             from stix_extensions import _terminal
@@ -210,10 +246,11 @@ def _terminal_family(font, recipe, start, kind, double):
             metadata = {}
     else:
         from stix_middle_terminals import prepared_terminal
-        terminal, metadata, center = prepared_terminal(font, kind, turned)
+        terminal, metadata, center = prepared_terminal(font, kind, turned, extended=terminal_extended)
         if double:
             result, composed = _double_arch_terminal(font, variant, terminal, center, metadata["advanceWidth"],
-                                                     arch_override=arch)
+                                                     arch_override=arch,
+                                                     port_inset=metadata.get("sharedArchPortInset", 0))
         else:
             result, composed = arched_terminal_outline(font, 0xF2A5D + variant, terminal_override=terminal,
                                                        prepared_terminal_center=center,
@@ -221,8 +258,9 @@ def _terminal_family(font, recipe, start, kind, double):
                                                        prepared_port_inset=3 if kind == "spine" and font["post"].italicAngle and not turned else 0,
                                                        arch_override=arch)
         terminal_shift = 0 if turned else composed["terminalOffsetX"]
-        legs.append({"centerX": center + terminal_shift, "direction": "ascender" if turned else "descender",
-                     "donorCodePoint": 0x64 if turned else 0x70, "owner": "terminal"})
+        if terminal_extended:
+            legs.append({"centerX": center + terminal_shift, "direction": "ascender" if turned else "descender",
+                         "donorCodePoint": 0x64 if turned else 0x70, "owner": "terminal"})
     arch_shift = -composed["terminalOffsetX"] if turned else 0
     legs = [dict(leg, centerX=leg["centerX"] + (arch_shift if leg.get("owner") != "terminal" else 0)) for leg in legs]
     metadata.update(composed)
@@ -230,45 +268,54 @@ def _terminal_family(font, recipe, start, kind, double):
     return s.rounded_recording(result), metadata
 
 
-def _opposed(font, recipe, start, side, double):
+def _opposed(font, recipe, start, side, double, middle_leg_extensions=None):
     import import_stix_foundation as s
     from stix_arched_terminals import arched_terminal_outline
     from stix_extensions import _double_arch_terminal
     from stix_middle_terminals import opposed_terminal
     left, right = divmod(recipe - start, 6)
-    terminal, metadata, centers = opposed_terminal(font, left, right, side=side)
-    from stix_arch_spine_joins import fair_spine_arch_port
-    terminal = fair_spine_arch_port(font, terminal, metadata, side)
+    selection = _leg_selection(middle_leg_extensions, 2 if double or side == "both" else 1)
+    terminal_selection = selection if side == "both" else (selection[0] if side == "right" else selection[-1])
+    terminal, metadata, centers = opposed_terminal(font, left, right, side=side, extended=terminal_selection)
+    if not font["post"].italicAngle:
+        from stix_arch_spine_joins import fair_spine_arch_port
+        terminal = fair_spine_arch_port(font, terminal, metadata, side)
     advance = metadata["advanceWidth"]
     if side == "both":
         left_variant = left // 2 * 4 + left % 2
         right_variant = right // 2 * 4 + right % 2 + 2
         result, left_meta = arched_terminal_outline(font, 0xF2A5D + left_variant, terminal_override=terminal,
-                                                   prepared_terminal_center=centers[0], prepared_terminal_advance=advance)
+                                                   prepared_terminal_center=centers[0], prepared_terminal_advance=advance,
+                                                   prepared_port_inset=metadata.get("sharedArchPortInset", 0))
         offset = left_meta["terminalOffsetX"]
         result, right_meta = arched_terminal_outline(font, 0xF2A5D + right_variant, terminal_override=result,
                                                     prepared_terminal_center=centers[1] + offset,
                                                     prepared_terminal_advance=left_meta["advanceWidth"])
-        legs = [{"centerX": centers[0] + offset, "direction": "descender", "donorCodePoint": 0x70},
-                {"centerX": centers[1] + offset, "direction": "ascender", "donorCodePoint": 0x64}]
+        legs = [leg for leg, extend in zip(
+            ({"centerX": centers[0] + offset, "direction": "descender", "donorCodePoint": 0x70},
+             {"centerX": centers[1] + offset, "direction": "ascender", "donorCodePoint": 0x64}), selection) if extend]
         metadata.update(leftArch=left_meta, rightArch=right_meta, advanceWidth=right_meta["advanceWidth"], sigmoidOffsetX=offset)
     else:
         turned = side == "right"
         ending = right if turned else left
         variant = ending // 2 * 4 + ending % 2 + (2 if turned else 0)
         arch, _ = _arch(font, variant, double)
-        arch, legs = extend_arch_legs(font, arch, 3 if double else 2, turned)
+        arch, legs = extend_arch_legs(font, arch, 3 if double else 2, turned,
+                                      middle_leg_extensions=selection[1:] if turned else selection[:-1])
         center = centers[0]
         if double:
-            result, composed = _double_arch_terminal(font, variant, terminal, center, advance, arch_override=arch)
+            result, composed = _double_arch_terminal(font, variant, terminal, center, advance, arch_override=arch,
+                                                     port_inset=metadata.get("sharedArchPortInset", 0))
         else:
             result, composed = arched_terminal_outline(font, 0xF2A5D + variant, terminal_override=terminal,
                                                        prepared_terminal_center=center, prepared_terminal_advance=advance,
+                                                       prepared_port_inset=metadata.get("sharedArchPortInset", 0),
                                                        arch_override=arch)
         offset = 0 if turned else composed["terminalOffsetX"]
         legs = _move_legs(legs, -composed["terminalOffsetX"] if turned else 0)
-        legs.append({"centerX": center + offset, "direction": "ascender" if turned else "descender",
-                     "donorCodePoint": 0x64 if turned else 0x70})
+        if terminal_selection:
+            legs.append({"centerX": center + offset, "direction": "ascender" if turned else "descender",
+                         "donorCodePoint": 0x64 if turned else 0x70})
         metadata.update(composed)
         metadata["sigmoidOffsetX"] = offset
     metadata.update(extendedMiddleLegs=legs, leftVariant=left, rightVariant=right,
@@ -276,23 +323,28 @@ def _opposed(font, recipe, start, side, double):
     return s.rounded_recording(result), metadata
 
 
-def middle_legs_outline(font, recipe_code_point):
-    """Compose one companion from its preserved 0.210 recipe identity."""
+def middle_legs_outline(font, recipe_code_point, middle_leg_extensions=None):
+    """Extend selected middle legs in final visual left-to-right order.
+
+    None preserves the established all-extended outline and provenance.
+    Explicit booleans select independently from the unchanged native base.
+    """
     import import_stix_foundation as s
     from quintessential_font import LEGACY_GLYPH_BY_CODE
     code = recipe_code_point
+    selection = _leg_selection(middle_leg_extensions, 2 if 0xF2C00 <= code < 0xF2CC0 else 1)
     for start, kind, double in ((0xF2A45, "arm", False), (0xF2A5D, "bowl", False),
                                 (0xF2B40, "double-bowl", False), (0xF2B4C, "spine", False),
                                 (0xF2C00, "arm", True), (0xF2C18, "bowl", True),
                                 (0xF2C3C, "double-bowl", True), (0xF2C48, "spine", True)):
         if start <= code < start + 12:
-            result, metadata = _terminal_family(font, code, start, kind, double)
+            result, metadata = _terminal_family(font, code, start, kind, double, selection)
             break
     else:
         for start, side, double in ((0xF2B58, "left", False), (0xF2B7C, "right", False),
                                     (0xF2C54, "left", True), (0xF2C78, "right", True), (0xF2C9C, "both", False)):
             if start <= code < start + 36:
-                result, metadata = _opposed(font, code, start, side, double)
+                result, metadata = _opposed(font, code, start, side, double, selection)
                 break
         else:
             start = next((start for start in (0xF2A51, 0xF2A69, 0xF2A75, 0xF2C0C, 0xF2C24, 0xF2C30)
@@ -300,16 +352,23 @@ def middle_legs_outline(font, recipe_code_point):
             if start is None:
                 raise ValueError("A middle-leg companion requires an arch-added base")
             result, metadata = s.legacy_outline(font, LEGACY_GLYPH_BY_CODE[code])
-            result, legs = extend_arch_legs(font, result, 4 if code >= 0xF2C00 else 3, (code - start) % 4 >= 2)
+            result, legs = extend_arch_legs(font, result, 4 if code >= 0xF2C00 else 3, (code - start) % 4 >= 2,
+                                            middle_leg_extensions=selection)
             metadata["extendedMiddleLegs"] = legs
     metadata.pop("directDonorCodePoint", None)
     from stix_middle_hook_joins import close_middle_hooks
-    result, closures = close_middle_hooks(font, result, metadata, code)
+    hook_start = next((start for start in (0xF2A75, 0xF2C30) if start <= code < start + 12), None)
+    hook_neighbor_extended = hook_start is None or selection[0 if (code - hook_start) % 4 >= 2 else -1]
+    result, closures = close_middle_hooks(font, result, metadata, code) if hook_neighbor_extended else (result, [])
     metadata["middleHookJoins"] = closures
     result, splits = _split_shared_middle_feet(font, result, metadata["extendedMiddleLegs"])
     metadata["middleFootContourSplits"] = splits
     result, joins = _join_middle_feet(font, result, metadata["extendedMiddleLegs"])
     metadata["middleFootJoins"] = joins
     metadata.update(recipeCodePoint=code, middleLegs="extended", middleLegCount=len(metadata["extendedMiddleLegs"]))
+    if middle_leg_extensions is not None:
+        metadata.update(middleLegExtensions=list(selection), middleLegCount=len(selection),
+                        extendedMiddleLegCount=sum(selection),
+                        middleLegs="extended" if all(selection) else "partial" if any(selection) else "short")
     from stix_extensions import _plist_metadata
     return s.rounded_recording(result), _plist_metadata(metadata)

@@ -1,0 +1,2785 @@
+{
+  "schemaVersion": 1,
+  "revision": "Shared publication styling across the whole website",
+  "reviewedAt": "2026-09-06T06:27:26.493635+00:00",
+  "scope": [
+    "Introduction",
+    "Code charts",
+    "UCSUR proposal webpage",
+    "Downloads",
+    "Shared navigation, controls, footer, and character details",
+    "Browser print styling"
+  ],
+  "changes": [
+    "Source Sans 3 and white/black palette throughout",
+    "Compact 660px reading area aligned with the charts",
+    "Light page and section headings with fine rules",
+    "Responsive introduction, proposal index, tables, and character dialog",
+    "Fixed the proposal overflow at320px",
+    "Accurate Source Sans attribution and white browser theme color"
+  ],
+  "sourceSha256": {
+    "site/assets/style.css": "5c00bf7e17fcfb1b7115337e4efedc8675006fb9e7c631d873feb4b6f43ece17",
+    "tools/build_site.mjs": "be18e840de5ee36e6d734a358b4e92246f9ccd8a2819a64dba4913e10cc0094f",
+    "THIRD_PARTY_NOTICES.md": "51570658340754da062a47d4d42a1a2b006cddf079d29e5454b6067e344752a5"
+  },
+  "validationBaseline": {
+    "commit": "9929622ca28427b6e637efd416f9ececc2adfe1d",
+    "directory": "C:\\Users\\User\\source\\repos\\ostomachion\\quintessential-latin\\.tmp\\site-style-validation",
+    "reason": "Verify the style change against complete, matching font/catalogue/PDF inputs while a separate native-Italic build is in progress."
+  },
+  "validationNotes": [
+    "The source workspace contains a separate in-progress native-Italic implementation. No unfinished font/PDF inputs were regenerated or changed by the style task.",
+    "The isolated baseline preserves the last complete matching0.220 font/catalogue/PDF inputs and applies the final shared CSS plus only the theme-color and Source Sans attribution template changes.",
+    "All generated preview pages match that isolated build. The separate0.230 font build will inherit the same styling from the shared source files."
+  ],
+  "build": {
+    "isolatedSiteBuild": "Passed",
+    "namingTestsPassed": 17,
+    "staticSiteAcceptanceGroupsPassed": 12,
+    "exportFreshness": "Passed",
+    "pdfFreshness": "Passed against matching isolated baseline inputs",
+    "templateSha256": "44247e4963a9027904f0dcd6492f9948746a75ee886a2f8ec4f6e6001ddee393"
+  },
+  "presentationChecks": {
+    "base": "http://127.0.0.1:8767/quintessential-latin/",
+    "createdAt": "2026-09-06T06:23:57.072Z",
+    "checks": [
+      {
+        "name": "index.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: one page title",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "index.html 320px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "charts.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: one page title",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "charts.html 320px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: one page title",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 320px: proposal columns fit",
+        "pass": true
+      },
+      {
+        "name": "downloads.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: one page title",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 320px: readable tables fit",
+        "pass": true
+      },
+      {
+        "name": "index.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: one page title",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "index.html 375px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "charts.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: one page title",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "charts.html 375px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: one page title",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 375px: proposal columns fit",
+        "pass": true
+      },
+      {
+        "name": "downloads.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: one page title",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 375px: readable tables fit",
+        "pass": true
+      },
+      {
+        "name": "index.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: one page title",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "index.html 768px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "charts.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: one page title",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "charts.html 768px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: one page title",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 768px: proposal columns fit",
+        "pass": true
+      },
+      {
+        "name": "downloads.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: one page title",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 768px: readable tables fit",
+        "pass": true
+      },
+      {
+        "name": "index.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: one page title",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "index.html 1440px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "charts.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: one page title",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "charts.html 1440px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: one page title",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "proposal.html 1440px: proposal columns fit",
+        "pass": true
+      },
+      {
+        "name": "downloads.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: no document overflow",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: body uses Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: headings use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: controls use Source Sans 3",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: white body and root",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: one page title",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: native glyph font available",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: navigation has real page targets",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: navigation fits",
+        "pass": true
+      },
+      {
+        "name": "downloads.html 1440px: readable tables fit",
+        "pass": true
+      },
+      {
+        "name": "charts.html: HTTP success",
+        "pass": true
+      },
+      {
+        "name": "375px dialog: fits viewport",
+        "pass": true
+      },
+      {
+        "name": "375px dialog: white sans-serif presentation",
+        "pass": true
+      },
+      {
+        "name": "375px dialog: character details and native glyph present",
+        "pass": true
+      },
+      {
+        "name": "375px dialog: Escape closes",
+        "pass": true
+      },
+      {
+        "name": "No browser errors or failed local resources",
+        "pass": true
+      }
+    ],
+    "pages": [
+      {
+        "file": "index.html",
+        "width": 320,
+        "scrollWidth": 320,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 320,
+          "height": 1801.90625,
+          "top": 196,
+          "right": 320,
+          "bottom": 1997.90625,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 10,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": "page"
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "charts.html",
+        "width": 320,
+        "scrollWidth": 320,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 320,
+          "height": 59641.546875,
+          "top": 196,
+          "right": 320,
+          "bottom": 59837.546875,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1665,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": "page"
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "proposal.html",
+        "width": 320,
+        "scrollWidth": 320,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 320,
+          "height": 6803.703125,
+          "top": 196,
+          "right": 320,
+          "bottom": 6999.703125,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [
+          {
+            "className": "proposal-layout",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "proposal-toc",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "ARTICLE",
+            "withinMain": true,
+            "scrollFits": true
+          }
+        ],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": "page"
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "downloads.html",
+        "width": 320,
+        "scrollWidth": 320,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 320,
+          "height": 1997.296875,
+          "top": 196,
+          "right": 320,
+          "bottom": 2193.296875,
+          "left": 0
+        },
+        "tables": [
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          }
+        ],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": "page"
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "index.html",
+        "width": 375,
+        "scrollWidth": 375,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 375,
+          "height": 1709.15625,
+          "top": 196,
+          "right": 375,
+          "bottom": 1905.15625,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 10,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": "page"
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "charts.html",
+        "width": 375,
+        "scrollWidth": 375,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 375,
+          "height": 42702,
+          "top": 196,
+          "right": 375,
+          "bottom": 42898,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1665,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": "page"
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "proposal.html",
+        "width": 375,
+        "scrollWidth": 375,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 375,
+          "height": 6013.703125,
+          "top": 196,
+          "right": 375,
+          "bottom": 6209.703125,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [
+          {
+            "className": "proposal-layout",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "proposal-toc",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "ARTICLE",
+            "withinMain": true,
+            "scrollFits": true
+          }
+        ],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": "page"
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "downloads.html",
+        "width": 375,
+        "scrollWidth": 375,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 196,
+          "width": 375,
+          "height": 1796.921875,
+          "top": 196,
+          "right": 375,
+          "bottom": 1992.921875,
+          "left": 0
+        },
+        "tables": [
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          }
+        ],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": "page"
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "index.html",
+        "width": 768,
+        "scrollWidth": 768,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 12,
+          "y": 165,
+          "width": 744,
+          "height": 1135.90625,
+          "top": 165,
+          "right": 756,
+          "bottom": 1300.90625,
+          "left": 12
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 10,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": "page"
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "charts.html",
+        "width": 768,
+        "scrollWidth": 768,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 0,
+          "y": 165,
+          "width": 768,
+          "height": 23653.09375,
+          "top": 165,
+          "right": 768,
+          "bottom": 23818.09375,
+          "left": 0
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1665,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": "page"
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "proposal.html",
+        "width": 768,
+        "scrollWidth": 768,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 12,
+          "y": 165,
+          "width": 744,
+          "height": 3962.390625,
+          "top": 165,
+          "right": 756,
+          "bottom": 4127.390625,
+          "left": 12
+        },
+        "tables": [],
+        "proposal": [
+          {
+            "className": "proposal-layout",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "proposal-toc",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "ARTICLE",
+            "withinMain": true,
+            "scrollFits": true
+          }
+        ],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": "page"
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "downloads.html",
+        "width": 768,
+        "scrollWidth": 768,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 12,
+          "y": 165,
+          "width": 744,
+          "height": 1595.703125,
+          "top": 165,
+          "right": 756,
+          "bottom": 1760.703125,
+          "left": 12
+        },
+        "tables": [
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          }
+        ],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": "page"
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "index.html",
+        "width": 1440,
+        "scrollWidth": 1440,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 348,
+          "y": 128,
+          "width": 744,
+          "height": 1135.90625,
+          "top": 128,
+          "right": 1092,
+          "bottom": 1263.90625,
+          "left": 348
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 10,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": "page"
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "charts.html",
+        "width": 1440,
+        "scrollWidth": 1440,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 320,
+          "y": 128,
+          "width": 800,
+          "height": 23653.09375,
+          "top": 128,
+          "right": 1120,
+          "bottom": 23781.09375,
+          "left": 320
+        },
+        "tables": [],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1665,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": "page"
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "proposal.html",
+        "width": 1440,
+        "scrollWidth": 1440,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 348,
+          "y": 128,
+          "width": 744,
+          "height": 4654.609375,
+          "top": 128,
+          "right": 1092,
+          "bottom": 4782.609375,
+          "left": 348
+        },
+        "tables": [],
+        "proposal": [
+          {
+            "className": "proposal-layout",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "proposal-toc",
+            "withinMain": true,
+            "scrollFits": true
+          },
+          {
+            "className": "ARTICLE",
+            "withinMain": true,
+            "scrollFits": true
+          }
+        ],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": "page"
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": null
+          }
+        ],
+        "navWithinViewport": true
+      },
+      {
+        "file": "downloads.html",
+        "width": 1440,
+        "scrollWidth": 1440,
+        "fonts": {
+          "body": "\"Source Sans 3\", Arial, sans-serif",
+          "headings": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ],
+          "controls": [
+            "\"Source Sans 3\", Arial, sans-serif"
+          ]
+        },
+        "colors": {
+          "body": "rgb(255, 255, 255)",
+          "root": "rgb(255, 255, 255)"
+        },
+        "headingCount": 1,
+        "mainBounds": {
+          "x": 348,
+          "y": 128,
+          "width": 744,
+          "height": 1595.703125,
+          "top": 128,
+          "right": 1092,
+          "bottom": 1723.703125,
+          "left": 348
+        },
+        "tables": [
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          },
+          {
+            "withinMain": true,
+            "cellsFit": true,
+            "smallestText": 13
+          }
+        ],
+        "proposal": [],
+        "nativeFontReady": true,
+        "visibleGlyphCount": 1,
+        "glyphFontIsNative": true,
+        "nav": [
+          {
+            "href": "index.html",
+            "text": "Introduction",
+            "current": null
+          },
+          {
+            "href": "charts.html",
+            "text": "Code charts",
+            "current": null
+          },
+          {
+            "href": "proposal.html",
+            "text": "UCSUR proposal",
+            "current": null
+          },
+          {
+            "href": "downloads.html",
+            "text": "Downloads",
+            "current": "page"
+          }
+        ],
+        "navWithinViewport": true
+      }
+    ],
+    "screenshots": [
+      "index-320-top.png",
+      "index-320-full.png",
+      "charts-320-top.png",
+      "proposal-320-top.png",
+      "proposal-320-full.png",
+      "downloads-320-top.png",
+      "downloads-320-full.png",
+      "index-375-top.png",
+      "index-375-full.png",
+      "charts-375-top.png",
+      "proposal-375-top.png",
+      "proposal-375-full.png",
+      "downloads-375-top.png",
+      "downloads-375-full.png",
+      "index-768-top.png",
+      "index-768-full.png",
+      "charts-768-top.png",
+      "proposal-768-top.png",
+      "proposal-768-full.png",
+      "downloads-768-top.png",
+      "downloads-768-full.png",
+      "index-1440-top.png",
+      "index-1440-full.png",
+      "charts-1440-top.png",
+      "proposal-1440-top.png",
+      "proposal-1440-full.png",
+      "downloads-1440-top.png",
+      "downloads-1440-full.png",
+      "character-dialog-375.png"
+    ],
+    "errors": [],
+    "passed": 174,
+    "failed": 0,
+    "ok": true
+  },
+  "existingBrowserChecks": {
+    "base": "http://127.0.0.1:8768/quintessential-latin/",
+    "checks": 147,
+    "passed": [
+      "index.html: page title",
+      "index.html: shared weight control",
+      "index.html: shared italic control",
+      "index.html: native script font loaded",
+      "index.html: document fits desktop",
+      "charts.html: page title",
+      "charts.html: shared weight control",
+      "charts.html: shared italic control",
+      "charts.html: native script font loaded",
+      "charts.html: document fits desktop",
+      "proposal.html: page title",
+      "proposal.html: shared weight control",
+      "proposal.html: shared italic control",
+      "proposal.html: native script font loaded",
+      "proposal.html: document fits desktop",
+      "downloads.html: page title",
+      "downloads.html: shared weight control",
+      "downloads.html: shared italic control",
+      "downloads.html: native script font loaded",
+      "downloads.html: document fits desktop",
+      "Header and hero show the actual logo character",
+      "Weight changes the header logo outline",
+      "Weight changes the hero logo outline",
+      "Four numeric desktop screen grids",
+      "Four print grids",
+      "All 1024 code positions represented",
+      "All 832 assigned positions represented",
+      "All 832 names represented",
+      "Formal names are in numeric order",
+      "Initial posture is Roman",
+      "Weight responds to real keyboard input",
+      "Native Italic selected",
+      "600 Italic pending variants clearly shown",
+      "Selected weight and native posture reach chart glyphs",
+      "Successful font loading leaves no status beside Italic",
+      "Changing posture keeps controls in place",
+      "Preferences persist across navigation",
+      "Preferences persist across reload",
+      "Missing native Italic logo uses the shared pending state",
+      "Both project marks share the selected weight and native posture",
+      "Intermediate weight supported",
+      "Code search finds one exact character",
+      "Character details open",
+      "Copy preserves supplementary-plane scalar",
+      "Copy code uses Unicode notation",
+      "Escape closes character details",
+      "Empty search is explained",
+      "Arrow navigation moves one hexadecimal column",
+      "ArrowDown stops at row F within its hexadecimal column",
+      "ArrowUp stops at row 0 within its hexadecimal column",
+      "Character deep link resolves",
+      "charts.html: fits 320px viewport",
+      "320px: exactly the 4-column variant is visible",
+      "320px: all 832 assigned and 192 vacant positions appear once",
+      "320px: chart geometry fits its container",
+      "320px: only genuine block edges have heavy rails",
+      "320px: names use the intended flowing column count",
+      "320px: consecutive names read down the first column",
+      "320px Roman 400: every visible chart and names glyph fits",
+      "320px Roman 550: every visible chart and names glyph fits",
+      "320px Roman 700: every visible chart and names glyph fits",
+      "320px Italic 400: every visible chart and names glyph fits",
+      "320px Italic 400: all 600 pending names markers fit their glyph slots",
+      "320px Italic 550: every visible chart and names glyph fits",
+      "320px Italic 550: all 600 pending names markers fit their glyph slots",
+      "320px Italic 700: every visible chart and names glyph fits",
+      "320px Italic 700: all 600 pending names markers fit their glyph slots",
+      "index.html: fits 375px viewport",
+      "375px: posture keeps controls and logo spaces stable",
+      "charts.html: fits 375px viewport",
+      "375px: exactly the 8-column variant is visible",
+      "375px: all 832 assigned and 192 vacant positions appear once",
+      "375px: chart geometry fits its container",
+      "375px: only genuine block edges have heavy rails",
+      "375px: names use the intended flowing column count",
+      "375px: consecutive names read down the first column",
+      "375px Roman 400: every visible chart and names glyph fits",
+      "375px Roman 550: every visible chart and names glyph fits",
+      "375px Roman 700: every visible chart and names glyph fits",
+      "375px Italic 400: every visible chart and names glyph fits",
+      "375px Italic 400: all 600 pending names markers fit their glyph slots",
+      "375px Italic 550: every visible chart and names glyph fits",
+      "375px Italic 550: all 600 pending names markers fit their glyph slots",
+      "375px Italic 700: every visible chart and names glyph fits",
+      "375px Italic 700: all 600 pending names markers fit their glyph slots",
+      "proposal.html: fits 375px viewport",
+      "downloads.html: fits 375px viewport",
+      "index.html: fits 768px viewport",
+      "768px: posture keeps controls and logo spaces stable",
+      "charts.html: fits 768px viewport",
+      "768px: exactly the 16-column variant is visible",
+      "768px: all 832 assigned and 192 vacant positions appear once",
+      "768px: chart geometry fits its container",
+      "768px: only genuine block edges have heavy rails",
+      "768px: names use the intended flowing column count",
+      "768px: consecutive names read down the first column",
+      "768px Roman 400: every visible chart and names glyph fits",
+      "768px Roman 550: every visible chart and names glyph fits",
+      "768px Roman 700: every visible chart and names glyph fits",
+      "768px Italic 400: every visible chart and names glyph fits",
+      "768px Italic 400: all 600 pending names markers fit their glyph slots",
+      "768px Italic 550: every visible chart and names glyph fits",
+      "768px Italic 550: all 600 pending names markers fit their glyph slots",
+      "768px Italic 700: every visible chart and names glyph fits",
+      "768px Italic 700: all 600 pending names markers fit their glyph slots",
+      "proposal.html: fits 768px viewport",
+      "downloads.html: fits 768px viewport",
+      "index.html: fits 1440px viewport",
+      "1440px: posture keeps controls and logo spaces stable",
+      "charts.html: fits 1440px viewport",
+      "1440px: exactly the 16-column variant is visible",
+      "1440px: all 832 assigned and 192 vacant positions appear once",
+      "1440px: chart geometry fits its container",
+      "1440px: only genuine block edges have heavy rails",
+      "1440px: names use the intended flowing column count",
+      "1440px: consecutive names read down the first column",
+      "1440px Roman 400: every visible chart and names glyph fits",
+      "1440px Roman 550: every visible chart and names glyph fits",
+      "1440px Roman 700: every visible chart and names glyph fits",
+      "1440px Italic 400: every visible chart and names glyph fits",
+      "1440px Italic 400: all 600 pending names markers fit their glyph slots",
+      "1440px Italic 550: every visible chart and names glyph fits",
+      "1440px Italic 550: all 600 pending names markers fit their glyph slots",
+      "1440px Italic 700: every visible chart and names glyph fits",
+      "1440px Italic 700: all 600 pending names markers fit their glyph slots",
+      "proposal.html: fits 1440px viewport",
+      "downloads.html: fits 1440px viewport",
+      "375px: resizing retains the same focused character",
+      "320px: resizing retains the same focused character",
+      "1440px: resizing retains the same focused character",
+      "Closing character details after resize restores the visible originating chart cell",
+      "Printed control bar is hidden",
+      "Print posture annotation is current",
+      "Print weight annotation is current",
+      "Print exposes all four sixteen-column grids",
+      "Only charts select the named Letter print page",
+      "Printed continuation sheets use thin internal rails and heavy block edges",
+      "Printed grid sheets fit Letter without a leading blank page",
+      "Print Italic 400: pending names markers remain inside their glyph slots",
+      "Print Italic 700: pending names markers remain inside their glyph slots",
+      "Proposal retains its original print page styling",
+      "No JavaScript exceptions",
+      "No failed same-site asset requests",
+      "Charts work without JavaScript",
+      "Responsive charts work without JavaScript",
+      "Font load failure is explicit",
+      "375px font failure uses fitted markers for all names and an explicit explanation"
+    ],
+    "errors": [],
+    "failedResponses": []
+  },
+  "chartPreservation": {
+    "chartSpecificRulesUnchanged": true,
+    "actualGeometryAndTextMetricsUnchangedAtAllFourWidths": true,
+    "comparisons": [
+      {
+        "width": 320,
+        "before": {
+          ".chart-grid": {
+            "width": 180.5,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "1px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 288,
+            "height": 36,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 216,
+            "height": 33,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "after": {
+          ".chart-grid": {
+            "width": 180.5,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "1px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 288,
+            "height": 36,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 216,
+            "height": 33,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "same": true
+      },
+      {
+        "width": 375,
+        "before": {
+          ".chart-grid": {
+            "width": 340.5,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "1px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 343,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 271,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "after": {
+          ".chart-grid": {
+            "width": 340.5,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "1px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 343,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 271,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "same": true
+      },
+      {
+        "width": 768,
+        "before": {
+          ".chart-grid": {
+            "width": 661,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 322,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 250,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "after": {
+          ".chart-grid": {
+            "width": 661,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 322,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 250,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "same": true
+      },
+      {
+        "width": 1440,
+        "before": {
+          ".chart-grid": {
+            "width": 661,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 322,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 250,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "after": {
+          ".chart-grid": {
+            "width": 661,
+            "height": 940,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell": {
+            "width": 38.5,
+            "height": 56,
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .glyph": {
+            "width": 16.453125,
+            "height": 36.796875,
+            "fontSize": "32px",
+            "lineHeight": "36.8px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-cell .code": {
+            "width": 22.765625,
+            "height": 9.890625,
+            "fontSize": "9px",
+            "lineHeight": "9.9px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".chart-grid thead th:last-child": {
+            "width": 40,
+            "height": 26,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".chart-grid tbody th": {
+            "width": 20,
+            "height": 57.5,
+            "fontSize": "14px",
+            "lineHeight": "14px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "2px"
+          },
+          ".name-entry": {
+            "width": 322,
+            "height": 19.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .glyph": {
+            "width": 7.71875,
+            "height": 18.75,
+            "fontSize": "15px",
+            "lineHeight": "18.75px",
+            "fontFamily": "\"Quintessential Serif\"",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          },
+          ".name-entry .entry-name": {
+            "width": 250,
+            "height": 16.5,
+            "fontSize": "14px",
+            "lineHeight": "16.5px",
+            "fontFamily": "\"Source Sans 3\", Arial, sans-serif",
+            "borderTop": "0px",
+            "borderRight": "0px"
+          }
+        },
+        "same": true
+      }
+    ]
+  },
+  "visualReview": {
+    "allFourPagesReviewedAtWidths": [
+      320,
+      375,
+      768,
+      1440
+    ],
+    "all29ScreenCapturesInspected": true,
+    "mobileCharacterDialogReviewed": true,
+    "independentReview": "All page layouts and the printed charts inspected; no new clipping, collisions, or overflow found.",
+    "reviewedScreenshotSha256": {
+      "index-320-top.png": "3b389e72bf70171c83aa0edc8b32416ac1eea96263dc64bdfaa63878de7f2631",
+      "index-320-full.png": "a9eb66a6b0bba6bdd4199874dcb214a75f7162791c16a9c8fad637ba76dc5ec7",
+      "charts-320-top.png": "a6565fd71008c7091b30d2962a9fc195bfd22aa9b93869264f6262540a9ced5f",
+      "proposal-320-top.png": "b505dc935f7b73ff602f479a6e553dba7668179f38d3658c919e4d1af30d38a6",
+      "proposal-320-full.png": "914e3a9aafbfd2050157dcbe5c1dfc7f5438611db3deebdeda62e035ca9bf71d",
+      "downloads-320-top.png": "044aaa01ade8bf29d49721ab2fd2563e7b0581aeebf267770ddf597d5e58aadf",
+      "downloads-320-full.png": "1d62704a208d5498ca5b0debfea5028c497175bfa980137a1a11a94a50e6498b",
+      "index-375-top.png": "4f18a642a2ccb9bfc634af2bb5cb6b7423f51793234242bf98c5a2507e4c05c4",
+      "index-375-full.png": "65b362445c1683d5dea7426fdda2e976c25579f61b3e59096222390dfd7ee46a",
+      "charts-375-top.png": "24891ccbce5f13752bb05d5ebbc6c3ec8d968f4f448624a99200a5918e20d455",
+      "proposal-375-top.png": "811c61404b2aa2a1e26583d46dc5f99349f59c273a53e2ad6a970f5e78082185",
+      "proposal-375-full.png": "37e68f381605f2652901f3b10be41a649ead4e0a25df5a6d0cc010e600b32a02",
+      "downloads-375-top.png": "20216801d9c3b67083e87f2919b6bdc490eb3f101aa2ae3c900d2cce47856962",
+      "downloads-375-full.png": "91e755a00aeacdb9eaac75551eeaa90128e783946a3d4287d0c3d446b4a0d056",
+      "index-768-top.png": "1b898949d2e1b247ccd542e5e24b78e8669c20b4d68da1b3978a6af88b356cc6",
+      "index-768-full.png": "bd51d42f60792091185cd8855a4d8150701abbc8e530b1c1f538182859722de7",
+      "charts-768-top.png": "047686d7291ee4981d9b2779a218389a112fcde5ddbf30f4c7b3cc80c9fe5021",
+      "proposal-768-top.png": "d204a9592764bdcef556f9b10d185acfe08e67cb66c27f1ad03b3e7c6191e40e",
+      "proposal-768-full.png": "cc657238f2cf26bf575962b86304a0768fe93b4a82921dd47fc5e597b9929cd1",
+      "downloads-768-top.png": "08d06794d9549048f62c0dd081fdcb73a2ddd6c6ade12fc6b1f5df49bd748e7d",
+      "downloads-768-full.png": "ecf94e0440dade48939b9eee65a0b3150df8ee3ebef71af8a87e2e09fc7be156",
+      "index-1440-top.png": "044d8f3c9e124d96e579f5680a12550445f555bc71ca3045791e44f3692c6e4e",
+      "index-1440-full.png": "ff42dcc975dfce6cf1973367d159e2dca0f983cbefd8b3b6f8743d47c95b7419",
+      "charts-1440-top.png": "ba9dc61401e587c202585f5b1db1f5b9835a09030d85ec40bf61025f33f428bf",
+      "proposal-1440-top.png": "2365bf3a922f8603e9636cbbbd606f3a4bbcdd18633f9fa0f680dd7781bd65ea",
+      "proposal-1440-full.png": "adb6c479f617fcc8d193e706b6f7f1d10731b28b6b69330fe1cdbfc3092208b5",
+      "downloads-1440-top.png": "dd296db211d065893b07a3931081f4609ba7a1a0125b67e94d3048fd0d85d1d6",
+      "downloads-1440-full.png": "41f7c7caa3a74a97ddbd309259202658bf6127ffc63dcf7c0052b581e4edcdda",
+      "character-dialog-375.png": "5249500c6e494d91661b82514a9d0a04347d17cc65056fa35b8135bd09f972a6"
+    },
+    "printedPagesReviewed": 24,
+    "printRenders": [
+      {
+        "pdf": "index.pdf",
+        "pageCount": 1,
+        "pages": [
+          ".tmp/site-style-review/print-render/index/page-1.png"
+        ],
+        "contacts": [
+          ".tmp/site-style-review/print-render/index/contact-1.png"
+        ],
+        "pdfSha256": "1fac35411a03eeb7e15bbb3a1bb1944e1d07d4628c237fcfaa969002930a338d",
+        "dpi": 110,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "0d9b6c68fbd0c2f033c1d1b01c1e547e4e7c839c63c01004638f4b66417d8cde"
+        }
+      },
+      {
+        "pdf": "proposal.pdf",
+        "pageCount": 3,
+        "pages": [
+          ".tmp/site-style-review/print-render/proposal/page-1.png",
+          ".tmp/site-style-review/print-render/proposal/page-2.png",
+          ".tmp/site-style-review/print-render/proposal/page-3.png"
+        ],
+        "contacts": [
+          ".tmp/site-style-review/print-render/proposal/contact-1.png"
+        ],
+        "pdfSha256": "e597fd0577460db80088e08c7f5b81611246ac611a363b6f46a6ec61a8e2e2d5",
+        "dpi": 110,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "3471d596a7199c14a0da972515c1c8506261ad8515ff229559c2f1a356516135",
+          "page-2.png": "43a6e6c4bb930fd5305a5f70220297ffa409f925f0e23ffa02767acbf139cc9e",
+          "page-3.png": "948efbf86d715b3f925adfa93daadccc70808af7adc31b43f8513b9f9117fa05"
+        }
+      },
+      {
+        "pdf": "downloads.pdf",
+        "pageCount": 2,
+        "pages": [
+          ".tmp/site-style-review/print-render/downloads/page-1.png",
+          ".tmp/site-style-review/print-render/downloads/page-2.png"
+        ],
+        "contacts": [
+          ".tmp/site-style-review/print-render/downloads/contact-1.png"
+        ],
+        "pdfSha256": "61d8211c0896e90113c8cb3cfc1d587e9a8e90ea6d2eb280436f2ac711e33494",
+        "dpi": 110,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-1.png": "3b9935564d9edff16abb43669b8040b635be3a7b08104e40f7e448e8a3681d5c",
+          "page-2.png": "81bd617e77da988ece03b6fd7988f8f7d0b658573998faad2fe150159b4dae8a"
+        }
+      },
+      {
+        "pdf": "charts.pdf",
+        "pageCount": 18,
+        "pages": [
+          ".tmp/site-style-review/print-render/charts/page-01.png",
+          ".tmp/site-style-review/print-render/charts/page-02.png",
+          ".tmp/site-style-review/print-render/charts/page-03.png",
+          ".tmp/site-style-review/print-render/charts/page-04.png",
+          ".tmp/site-style-review/print-render/charts/page-05.png",
+          ".tmp/site-style-review/print-render/charts/page-06.png",
+          ".tmp/site-style-review/print-render/charts/page-07.png",
+          ".tmp/site-style-review/print-render/charts/page-08.png",
+          ".tmp/site-style-review/print-render/charts/page-09.png",
+          ".tmp/site-style-review/print-render/charts/page-10.png",
+          ".tmp/site-style-review/print-render/charts/page-11.png",
+          ".tmp/site-style-review/print-render/charts/page-12.png",
+          ".tmp/site-style-review/print-render/charts/page-13.png",
+          ".tmp/site-style-review/print-render/charts/page-14.png",
+          ".tmp/site-style-review/print-render/charts/page-15.png",
+          ".tmp/site-style-review/print-render/charts/page-16.png",
+          ".tmp/site-style-review/print-render/charts/page-17.png",
+          ".tmp/site-style-review/print-render/charts/page-18.png"
+        ],
+        "contacts": [
+          ".tmp/site-style-review/print-render/charts/contact-1.png",
+          ".tmp/site-style-review/print-render/charts/contact-2.png",
+          ".tmp/site-style-review/print-render/charts/contact-3.png",
+          ".tmp/site-style-review/print-render/charts/contact-4.png",
+          ".tmp/site-style-review/print-render/charts/contact-5.png"
+        ],
+        "pdfSha256": "0f9c948c47128c97d478bfc87a4b05875772be8c1a7efedff8cf10ff7a903b02",
+        "dpi": 110,
+        "renderer": "pdftoppm version 26.07.0",
+        "renderedPageSha256": {
+          "page-01.png": "440c75370d41c6ed8708c908150879f546611345c7b2676fe59eeea4165b06b8",
+          "page-02.png": "55e196565a8baf07ec1ccc4fe9a307582ceaa48c5ea500564be15b011aff3d2c",
+          "page-03.png": "1002b1838e33c113228a2d644d546acbbf6a4888578e7bb687639be000ee9a86",
+          "page-04.png": "741af9dcc1bfda393b600aad22f31b51170b3735f96a9c78555ae15f2e6662fa",
+          "page-05.png": "f6b1cced07141e154cbcc2355dfb91b9733e2fbafd0866787dcd44a1468b7ab7",
+          "page-06.png": "11880fc0bc4f3a85dee2b06359020baeebfefcd513f5b7e5cbe5b5949d87e493",
+          "page-07.png": "fb9226af4a5d072c2f428e7e21c5a34d84d3206fd5268e87f5efa62d4445b3fe",
+          "page-08.png": "9692ed425129dd0d85dfe43c2df9217e42e0b182b48d77786f6c63fbf95b6d22",
+          "page-09.png": "2c159f04b27c5669f83bcb074edfa7e34a7458c14df69dda93aaccf11c09d53e",
+          "page-10.png": "fba32360a1ba9e49d2b7220b12c72919c5c076c859ee96629d99c85d1d2f66d6",
+          "page-11.png": "3f3ca959824bab6748a2b72375db99402302d979aa50fa5c45a9a37b4088820c",
+          "page-12.png": "441e8a8d8fd06eddccfd9c4176b0c29ca69f88074529fca759585a48b3f4cec0",
+          "page-13.png": "58c6b08ee097361dde131148e80b88da8a62d50d477e430629486fc23ec2dfbf",
+          "page-14.png": "26d01b9ed32dd1cd9db83b320bb399e77423dbc418e8296ff489dd5ef18f92d3",
+          "page-15.png": "12b384a8ce3a93859f1c3ac894c802a1607c82651f3eb2bd4d3963b4caa729ab",
+          "page-16.png": "e3c2536f20ccef3920de940383d0abf5d69f40ea0641143b582e791edde80a76",
+          "page-17.png": "27beb4fcce4d3b177ab3d5e721371887b9e84fd59d57aa2baddb6d5a1798176f",
+          "page-18.png": "7d63c10890ca5fcbb1aea5f42afe9c9b7ef5f8810a0bce066a0fb9ddddc5eb86"
+        }
+      }
+    ],
+    "knownExistingPrintIssue": "Chromium PDF output has small white gaps in the repeating-gradient vacancy hatching, also present in the previous chart print. No change from the shared stylesheet revision."
+  },
+  "previewAssetsSha256": {
+    "index.html": "2c2ef998cfd8cb0bb0ca45686f98b743b3d69b7c462fb64f7f385f099e2cfb2b",
+    "charts.html": "c6952e83ca4e53d2473c3e3acdab43bf34416b6cb4fd06f85c4eb45a0a1e3d52",
+    "proposal.html": "7a27f18956cad05499d6302a18b52084bca0b21fddd34a370007f577d2bf3567",
+    "downloads.html": "4e546238927f75bc04b355dbeaaa82e022cc359d4ed2c2924f370b3745dbf220",
+    "assets/style.css": "5c00bf7e17fcfb1b7115337e4efedc8675006fb9e7c631d873feb4b6f43ece17",
+    "assets/chart-presentation.css": "3c06687d39ed10b870d4634287fe0bc63c2a9d8b69b116d23c72b87dcd6c28e3"
+  },
+  "acceptance": {
+    "engineering": "Passed on the specified coherent baseline",
+    "agentVisualReview": "Passed for this style revision",
+    "userVisualAcceptance": "Pending",
+    "deployment": "Local preview only"
+  },
+  "artifactsNote": "Screenshots, browser print PDFs, and the isolated validation snapshot are temporary review artifacts, not new publication downloads."
+}

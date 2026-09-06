@@ -2,7 +2,7 @@
 
 The publication builder reads the neutral catalogue and the shared proposal text.
 It writes three block PDFs, the complete catalogue, and the UCSUR proposal under
-`output/pdf/`. Reference charts use Quintessential Serif 0.220, Roman 400, with
+`output/pdf/`. Reference charts use Quintessential Serif 0.240, Roman 400, with
 embedded vector fonts. The original variable fonts remain unchanged.
 
 ## Code-chart presentation
@@ -14,7 +14,8 @@ The bundled Source Sans TTF/WOFF2 files, their OFL license, upstream release,
 download URLs, and hashes are under `resources/fonts/SourceSans3`.
 
 Each publication grid has 16 hexadecimal columns and 16 rows. Main and
-Extended-A have one grid each; Extended-B continues across two. Cells measure
+Extended-A have one grid each; Extended-B continues across four.
+The six grids cover 1,536 positions, with 1,216 assigned constructions. Cells measure
 27.6975 by 39.6 points, with 22-point Roman reference glyphs and 6-point codes.
 The grid's black interior rules are 0.25 points; block edges are 1.5 points.
 Unassigned cells contain vector diagonal hatching. Column labels sit above the
@@ -105,6 +106,13 @@ then run the website build again. A hash match establishes freshness; it does no
 replace optical review of changed PDF bytes.
 
 ## Durable verification evidence
+
+The current 0.240 publication review is recorded in
+`resources/verification/independent-middle-extensions-publication-review.json`.
+It binds all 70 reviewed PDF pages and the 26-page Italic 700 browser print to
+their exact bytes, records passing publication checks, and verifies that all
+five PDFs and their manifest reproduce byte for byte. The test logs are in
+`resources/verification/independent-middle-extensions/`.
 
 The Unicode-style revision has its own review record in
 `resources/verification/unicode-chart-review.json`. Records below are retained

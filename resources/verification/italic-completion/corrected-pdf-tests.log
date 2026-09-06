@@ -1,0 +1,14 @@
+test_actual_pdf_glyphs_and_names_keep_native_horizontal_proportions (__main__.PublicationPdfTests.test_actual_pdf_glyphs_and_names_keep_native_horizontal_proportions) ... ok
+test_complete_numeric_chart_and_names_coverage (__main__.PublicationPdfTests.test_complete_numeric_chart_and_names_coverage) ... ok
+test_five_final_outputs_and_bound_layout_evidence (__main__.PublicationPdfTests.test_five_final_outputs_and_bound_layout_evidence) ... ok
+test_glyph_ink_is_inside_cell_and_page (__main__.PublicationPdfTests.test_glyph_ink_is_inside_cell_and_page) ... ok
+test_names_family_headings_stay_with_complete_entries (__main__.PublicationPdfTests.test_names_family_headings_stay_with_complete_entries) ... ok
+test_native_font_embedding_and_vector_glyphs (__main__.PublicationPdfTests.test_native_font_embedding_and_vector_glyphs) ... ok
+test_proposal_contains_every_section_and_reference (__main__.PublicationPdfTests.test_proposal_contains_every_section_and_reference) ... ok
+test_reference_grid_geometry_rules_and_hatched_vacancies (__main__.PublicationPdfTests.test_reference_grid_geometry_rules_and_hatched_vacancies) ... ok
+test_text_stays_on_page_and_headers_are_present (__main__.PublicationPdfTests.test_text_stays_on_page_and_headers_are_present) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 13.723s
+
+OK

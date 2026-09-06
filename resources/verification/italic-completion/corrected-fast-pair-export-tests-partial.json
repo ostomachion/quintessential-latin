@@ -1,0 +1,90 @@
+{
+  "snapshotPath": ".tmp/italic-completion/corrected-0230",
+  "runStatus": "Intentionally stopped after8 completed posture/weight gates; independent run owns Italic600/700.",
+  "fullMethodCompleted": false,
+  "completedWeightGates": [
+    {
+      "posture": "Roman",
+      "weight": 400,
+      "pairs": 692224,
+      "boxCandidates": 4745,
+      "projectionSkips": 1075,
+      "exactChecks": 3670
+    },
+    {
+      "posture": "Roman",
+      "weight": 500,
+      "pairs": 692224,
+      "boxCandidates": 5771,
+      "projectionSkips": 1220,
+      "exactChecks": 4551
+    },
+    {
+      "posture": "Roman",
+      "weight": 550,
+      "pairs": 692224,
+      "boxCandidates": 13957,
+      "projectionSkips": 1150,
+      "exactChecks": 12807
+    },
+    {
+      "posture": "Roman",
+      "weight": 600,
+      "pairs": 692224,
+      "boxCandidates": 21060,
+      "projectionSkips": 1243,
+      "exactChecks": 19817
+    },
+    {
+      "posture": "Roman",
+      "weight": 700,
+      "pairs": 692224,
+      "boxCandidates": 31332,
+      "projectionSkips": 1228,
+      "exactChecks": 30104
+    },
+    {
+      "posture": "Italic",
+      "weight": 400,
+      "pairs": 692224,
+      "boxCandidates": 33077,
+      "projectionSkips": 27926,
+      "exactChecks": 5151
+    },
+    {
+      "posture": "Italic",
+      "weight": 500,
+      "pairs": 692224,
+      "boxCandidates": 56147,
+      "projectionSkips": 43947,
+      "exactChecks": 12200
+    },
+    {
+      "posture": "Italic",
+      "weight": 550,
+      "pairs": 692224,
+      "boxCandidates": 83462,
+      "projectionSkips": 58733,
+      "exactChecks": 24729
+    }
+  ],
+  "completedPairCount": 5537792,
+  "testModuleSha256": "90cb5bd219fdfbf5bb19d83b9f0372387089b967da03c60be9e17bdf78350150",
+  "fontSha256": {
+    "QuintessentialSerif-Variable.ttf": "514955831e39c7b0cc70b067d812d1c81c8f58c228071c5a8abed1f8dc0a42a4",
+    "QuintessentialSerif-Italic-Variable.ttf": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456"
+  },
+  "partialPairLog": {
+    "path": ".tmp/italic-completion/corrected-fast-pair-export-tests.log",
+    "sha256": "3bee937375df845f3458c7d7c9e00258a61eb129d524b1041ea365cc2fc91c4b"
+  },
+  "exportTests": {
+    "count": 2,
+    "seconds": 2.046,
+    "exitCode": 0,
+    "result": "OK",
+    "log": ".tmp/italic-completion/corrected-export-tests.log",
+    "logSha256": "a135703e60659f20179495891c9fe26fa3edbd33687d0e54a1fe359442832041"
+  },
+  "aggregateNote": "Combine only with independent corrected-italic-high-weight-pairs.log receipts after they pass; do not claim monolithic completed run."
+}

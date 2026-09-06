@@ -1,9 +1,10 @@
-"""All fixed Roman Extensions, composed from the completed STIX vocabulary.
+"""All fixed Extensions, composed from the completed STIX vocabulary.
 
 Double arches use the native m/turned-m middle shaft and arch ribbons. Triple
 arches repeat one native interior ribbon; bodies and outside endings translate
 rigidly. Bilateral opposed bowls join both existing native side-arch ports.
 No prior family helper, donor, body counter, or sigmoid width is modified.
+Italic uses its independently drawn shafts and ribbons in a separate helper.
 """
 
 
@@ -39,6 +40,11 @@ def _plist_metadata(value):
 def _terminal(font, kind, turned):
     """Return a completed terminal, its native receiving axis, and metadata."""
     import import_stix_foundation as s
+
+    if font["post"].italicAngle:
+        from stix_extensions_italic import italic_terminal
+        recording, metadata, center = italic_terminal(font, kind, turned)
+        return recording, center, metadata
 
     if kind == "spine":
         if turned:
@@ -88,10 +94,16 @@ def _terminal(font, kind, turned):
             *sum(contours[1:], [])], center, metadata
 
 
-def _double_arch_terminal(font, variant, terminal, center, advance, *, arm=False, arch_override=None):
+def _double_arch_terminal(font, variant, terminal, center, advance, *, arm=False, arch_override=None,
+                          port_inset=0):
     """Join the outer m/turned-m shaft through the established terminal port."""
     import import_stix_foundation as s
     from stix_repeated_arch import repeated_arch_outline
+
+    if font["post"].italicAngle:
+        from stix_extensions_italic import italic_double_arch_terminal
+        return italic_double_arch_terminal(font, variant, terminal, center, advance,
+                                            arm=arm, arch_override=arch_override, port_inset=port_inset)
 
     turned = variant % 4 >= 2
     arch, metadata = repeated_arch_outline(font, 0xF2A51 + variant)
@@ -228,11 +240,14 @@ def _opposed(font, family_index, variant):
 
 
 def extensions_outline(font, code_point):
-    """Return an endpoint outline and auditable recipe for one Roman Extension."""
+    """Return an endpoint outline and auditable recipe for one fixed Extension."""
     import import_stix_foundation as s
 
-    if font["post"].italicAngle or not 0xF2C00 <= code_point <= 0xF2CBF:
-        raise ValueError("Extensions require a fixed Roman U+F2C00-U+F2CBF assignment")
+    if font["post"].italicAngle:
+        from stix_extensions_italic import italic_extensions_outline
+        return italic_extensions_outline(font, code_point)
+    if not 0xF2C00 <= code_point <= 0xF2CBF:
+        raise ValueError("Extensions require a fixed U+F2C00-U+F2CBF assignment")
     index, (start, count, base) = next((i, spec) for i, spec in enumerate(EXTENSION_FAMILIES)
                                       if spec[0] <= code_point < spec[0] + spec[1])
     variant = code_point - start

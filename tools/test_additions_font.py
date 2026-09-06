@@ -52,7 +52,10 @@ def has_internal_spine(entry):
     return "spine" in kinds and 0 < kinds.index("spine") < len(kinds) - 1
 
 
-SHARED_SPINE_ENTRIES = tuple(entry for entry in ALLOCATION_ENTRIES if has_internal_spine(entry))
+# This historical increment required every internal end to extend together.
+# Mixed states have their own independent geometry/preservation suite.
+HISTORICAL_ENTRIES = tuple(entry for entry in ALLOCATION_ENTRIES if "middleLegExtensions" not in entry)
+SHARED_SPINE_ENTRIES = tuple(entry for entry in HISTORICAL_ENTRIES if has_internal_spine(entry))
 SHARED_SPINE_NAMES = frozenset(entry["glyphName"] for entry in SHARED_SPINE_ENTRIES)
 OLD_CMAPS = {
     False: {**MAIN_SCRIPT_CMAP,
@@ -189,7 +192,8 @@ class AdditionsBaselineTests(unittest.TestCase):
                 self.assertEqual(current["glyphName"], before["oldGlyphName"])
                 self.assertEqual(current["oldCodePoint"], before["oldCodePoint"])
                 self.assertEqual(current["recipeCodePoint"], before["oldCodePoint"])
-                self.assertEqual(current["postures"], before["postures"])
+                self.assertTrue(set(before["postures"]) <= set(current["postures"]))
+                self.assertEqual(current["postures"], ["Roman", "Italic"])
                 self.assertEqual(current["parts"], before["parts"])
                 self.assertEqual(current["familyId"], before["familyId"])
                 self.assertEqual(current["legacyIndex"], before["legacyIndex"])
@@ -198,23 +202,23 @@ class AdditionsBaselineTests(unittest.TestCase):
         revised = ALLOCATION_BY_ID[OPTICAL_REVISION_ID]
         self.assertEqual((revised["codePoint"], revised["glyphName"], revised["recipeCodePoint"],
                           revised["postures"]),
-                         (0xF2B18, OPTICAL_REVISION_NAME, 0xF2B1C, ["Roman"]))
+                         (0xF2B18, OPTICAL_REVISION_NAME, 0xF2B1C, ["Roman", "Italic"]))
         self.assertEqual(len(SHARED_SPINE_ENTRIES), 396)
         self.assertEqual(len(SHARED_SPINE_NAMES), 396)
         self.assertEqual(sum(entry["middleLegs"] for entry in SHARED_SPINE_ENTRIES), 180)
-        self.assertTrue(all(entry["postures"] == ["Roman"] for entry in SHARED_SPINE_ENTRIES))
+        self.assertTrue(all(entry["postures"] == ["Roman", "Italic"] for entry in SHARED_SPINE_ENTRIES))
         historic_internal = {entry["glyphId"] for entry in captured["entries"] if has_internal_spine(entry)}
         current_internal = {entry["glyphId"] for entry in SHARED_SPINE_ENTRIES if entry["oldCodePoint"] is not None}
         self.assertEqual(len(historic_internal), 216)
         self.assertEqual(current_internal, historic_internal)
         self.assertTrue(all(entry["baseGlyphId"] in historic_internal
                             for entry in SHARED_SPINE_ENTRIES if entry["middleLegs"]))
-        self.assertEqual(sum(entry["middleLegs"] for entry in ALLOCATION_ENTRIES), 348)
+        self.assertEqual(sum(entry["middleLegs"] for entry in HISTORICAL_ENTRIES), 348)
         self.assertEqual(sum(entry["middleLegs"] and "Italic" in entry["postures"]
-                             for entry in ALLOCATION_ENTRIES), 72)
+                             for entry in HISTORICAL_ENTRIES), 348)
         self.assertEqual(sum(entry["oldCodePoint"] is None and not entry["middleLegs"]
                              for entry in ALLOCATION_ENTRIES), 3)
-        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.220", "0.210"))
+        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.240", "0.220"))
 
     def assert_pairs_preserved(self, before, after, names, zero, changed_name=CHANGED_NAME):
         for left in names:
@@ -507,8 +511,8 @@ class MiddleLegGeometryTests(unittest.TestCase):
             filename = f"QuintessentialSerif-{style}.ufo"
             cls.sources[italic, weight] = Font.open(SOURCES / filename)
             cls.baseline[italic, weight] = Font.open(BASELINE / "fonts/QuintessentialSerif" / filename)
-        cls.entries = {italic: [entry for entry in ALLOCATION_ENTRIES
-                                if entry["middleLegs"] and ("Italic" if italic else "Roman") in entry["postures"]]
+        cls.entries = {italic: [entry for entry in HISTORICAL_ENTRIES
+                                if entry["middleLegs"] and (not italic or entry["recipeCodePoint"] in OLD_CMAPS[True])]
                        for italic in (False, True)}
         cls.native_stems, cls.native_stem_recordings, cls.native_stem_samples = {}, {}, {}
         for italic in (False, True):

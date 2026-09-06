@@ -8,7 +8,7 @@ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def create():
     allocation=json.loads((ROOT/"resources/quintessential-latin-allocation.json").read_text(encoding="utf-8"))
     proof=json.loads((FONTS/"proof-data.json").read_text(encoding="utf-8"))
-    result={"schemaVersion":1,"version":"0.220","sampledWeights":[400,500,600,700],"fontHashes":{},"entries":{}}
+    result={"schemaVersion":1,"version":proof["version"],"sampledWeights":[400,500,600,700],"fontHashes":{},"entries":{}}
     for posture,filename in (("Roman","QuintessentialSerif-Variable.ttf"),("Italic","QuintessentialSerif-Italic-Variable.ttf")):
         result["fontHashes"][filename]=digest(FONTS/filename)
         with TTFont(FONTS/filename) as font:

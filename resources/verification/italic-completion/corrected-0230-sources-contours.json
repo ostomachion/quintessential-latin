@@ -1,0 +1,24 @@
+{
+  "mode": "sources",
+  "glyphCount": 832,
+  "samples": [
+    {
+      "weight": 400,
+      "glyphCount": 832,
+      "contourCount": 3661
+    },
+    {
+      "weight": 700,
+      "glyphCount": 832,
+      "contourCount": 3661
+    }
+  ],
+  "errors": [],
+  "refinedContours": 282,
+  "maximumResolvedDifference": 0.05859375,
+  "sources": {
+    "Italic": "1a25d0da8d3e82619d554f9665bd8ee8dc62fe399aa4019d66157fb3706bd8f2",
+    "BoldItalic": "01fb085d08bd349a0854538b0b3629b72275c45c9feb4212df0176f3f2e8eff2"
+  },
+  "status": "passed"
+}

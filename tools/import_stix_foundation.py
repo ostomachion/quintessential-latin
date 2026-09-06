@@ -1290,8 +1290,9 @@ def kerning_profile(glyph) -> dict[int, tuple[float, float] | None]:
             for y in range(math.floor(bounds[1]), math.ceil(bounds[3]))}
 
 
-def pair_kerning(left, right, profiles=None) -> int:
-    left_bounds, right_bounds = glyph_bounds(left), glyph_bounds(right)
+def pair_kerning(left, right, profiles=None, bounds=None) -> int:
+    left_bounds, right_bounds = ((bounds[left.name], bounds[right.name]) if bounds is not None
+                                 else (glyph_bounds(left), glyph_bounds(right)))
     if left_bounds is None or right_bounds is None:
         return 0
     bottom = max(left_bounds[1], right_bounds[1])
@@ -1517,7 +1518,7 @@ def make_master(master, donor_path: Path) -> Font:
             recording, construction = stemless_outline(donor, spec.glyph_id)
         elif spec.middle_legs:
             from stix_middle_legs import middle_legs_outline
-            recording, construction = middle_legs_outline(donor, spec.recipe_code_point)
+            recording, construction = middle_legs_outline(donor, spec.recipe_code_point, spec.middle_leg_extensions)
         else:
             recording, construction = legacy_outline(donor, spec, master.italic)
         construction["method"] = spec.adaptation_for(master.italic)

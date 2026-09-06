@@ -1,0 +1,14 @@
+..F
+======================================================================
+FAIL: test_source_family_closure_and_localized_connection_preservation (__main__.SharedSpineTests.test_source_family_closure_and_localized_connection_preservation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\User\source\repos\ostomachion\quintessential-latin\tools\test_shared_spines.py", line 154, in test_source_family_closure_and_localized_connection_preservation
+    self.assertTrue(all(e["postures"] == ["Roman", "Italic"] for e in ENTRIES))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 180.878s
+
+FAILED (failures=1)

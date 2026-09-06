@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "directions": [
+    [
+      1000,
+      -213
+    ],
+    [
+      5,
+      -1
+    ],
+    [
+      4,
+      -1
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "boundaryChecks": [
+    {
+      "case": "diagonal boundary",
+      "offset": -20,
+      "certificate": true,
+      "originalOverlap": false
+    },
+    {
+      "case": "diagonal boundary",
+      "offset": -1,
+      "certificate": true,
+      "originalOverlap": false
+    },
+    {
+      "case": "diagonal boundary",
+      "offset": 0,
+      "certificate": false,
+      "originalOverlap": false
+    },
+    {
+      "case": "diagonal boundary",
+      "offset": 1,
+      "certificate": false,
+      "originalOverlap": true
+    },
+    {
+      "case": "diagonal boundary",
+      "offset": 20,
+      "certificate": false,
+      "originalOverlap": true
+    },
+    {
+      "case": "half-grid offset",
+      "advance": 0.0078125,
+      "integerOffset": 0,
+      "certificate": false,
+      "originalOverlap": false
+    },
+    {
+      "case": "half-grid offset",
+      "advance": 0.0234375,
+      "integerOffset": 2,
+      "certificate": false,
+      "originalOverlap": true
+    },
+    {
+      "case": "half-grid offset",
+      "advance": 0.0390625,
+      "integerOffset": 2,
+      "certificate": false,
+      "originalOverlap": true
+    },
+    {
+      "case": "half-grid offset",
+      "advance": -0.0078125,
+      "integerOffset": 0,
+      "certificate": false,
+      "originalOverlap": false
+    },
+    {
+      "case": "half-grid offset",
+      "advance": -0.0234375,
+      "integerOffset": -2,
+      "certificate": true,
+      "originalOverlap": false
+    },
+    {
+      "case": "half-grid offset",
+      "advance": -0.0390625,
+      "integerOffset": -2,
+      "certificate": true,
+      "originalOverlap": false
+    },
+    {
+      "case": "arbitrary precision",
+      "coordinateScale": 1000000000000000000000000000000,
+      "passed": true
+    }
+  ],
+  "randomConcaveComparisons": 5000,
+  "strictlySeparatedComparisons": 3849,
+  "falseNegativeOverlapResults": 0,
+  "proof": "Each sampled edge and each filled point lies in the convex hull of the integer vertices. A linear projection maps that hull into the cached inclusive minimum/maximum interval. Translating the right glyph by integer offset changes its projection by nx*offset. Strictly disjoint inclusive intervals certify disjoint hulls; equality and uncertain cases retain the unchanged overlap fallback.",
+  "scope": "Actual scratch benchmark helper functions extracted by AST, compared with independent reference functions on every case.",
+  "reviewedCandidate": "C:\\Users\\User\\source\\repos\\ostomachion\\quintessential-latin\\.tmp\\italic-completion\\benchmark-projection-overlap.py",
+  "reviewedCandidateSha256": "e1b775826cf7f08ce65ebd5cf0608f3f7b0d6f5f32b3c20a938a94beaad0e190",
+  "reviewedFunctionAstSha256": "b493ad90fee3ff50e987b4e7cf47bdca0e0ac1d27c464275aa2aec2b9f7dc672",
+  "scriptSha256": "e94714e55292d98e1e109a126ecff5fb28b960c822de174ca5fa7548aee48bfe"
+}

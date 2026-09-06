@@ -1,0 +1,17 @@
+{
+  "weight": 550,
+  "fontSha256": "ef1fcccc861639f49c3d0606d1dd23a6db3e4362d8aaa4b763476cf9c20cdc41",
+  "glyphs": 834,
+  "cmapEqual": true,
+  "glyphOrderEqual": true,
+  "changedOutlineOrAdvanceCount": 0,
+  "pairDigestEqual": true,
+  "pairDigest": "5c960ed9d43e21861634e4ea0e261ebd44c3358931aee08305bc1e247c26d70b",
+  "cacheInfo": "CacheInfo(hits=1, misses=1, maxsize=32, currsize=1)",
+  "cacheBytes": 39298258,
+  "cacheBuildSeconds": 19.131572599999345,
+  "cacheLoadSeconds": 3.510331400000723,
+  "details": [],
+  "independentMutationAndClose": "passed",
+  "status": "passed"
+}

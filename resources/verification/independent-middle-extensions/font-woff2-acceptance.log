@@ -1,0 +1,6 @@
+test_woff2_files_preserve_sfnt_tables (__main__.QuintessentialFontTests.test_woff2_files_preserve_sfnt_tables) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.922s
+
+OK

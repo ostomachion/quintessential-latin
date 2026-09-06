@@ -1,0 +1,9 @@
+test_all_1536_new_source_glyphs_are_compatible_and_keep_only_selected_ends (__main__.IndependentMiddleLegTests.test_all_1536_new_source_glyphs_are_compatible_and_keep_only_selected_ends) ... ok
+test_compiled_preservation_and_all_384_additions_at_five_weights_in_both_postures (__main__.IndependentMiddleLegTests.test_compiled_preservation_and_all_384_additions_at_five_weights_in_both_postures) ... ok
+test_every_prior_source_byte_outline_advance_pair_and_gid_is_exact (__main__.IndependentMiddleLegTests.test_every_prior_source_byte_outline_advance_pair_and_gid_is_exact) ... ok
+test_every_two_middle_base_has_all_four_independent_states (__main__.IndependentMiddleLegTests.test_every_two_middle_base_has_all_four_independent_states) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1098.943s
+
+OK

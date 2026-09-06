@@ -1,16 +1,16 @@
 {
   "title": "Quintessential Latin",
   "subtitle": "Proposal for registration in the Under-ConScript Unicode Registry",
-  "status": "Draft proposal · 6 September 2026 · Repertoire 0.220",
+  "status": "Draft proposal · 6 September 2026 · Reference font 0.240",
   "author": "Josh Hufford",
   "date": "2026-09-06",
-  "version": "0.220",
+  "version": "0.240",
   "sections": [
     {
       "id": "purpose",
       "title": "1. Purpose and scope",
       "paragraphs": [
-        "Quintessential Latin is a systematic repertoire of Latin-derived letterforms. It combines uprights, shoulders, hips, legs, arms, bowls, and spines into 832 named constructions. The repertoire is independent of any particular language or pronunciation system.",
+        "Quintessential Latin is a systematic repertoire of Latin-derived letterforms. It combines uprights, shoulders, hips, legs, arms, bowls, and spines into 1,216 named constructions. The repertoire is independent of any particular language or pronunciation system.",
         "This document proposes coordinated private-use assignments for the complete current repertoire in the Under-ConScript Unicode Registry (UCSUR). The assignments provide a stable way to exchange the constructions as text. This is a draft for review, not an announcement of registration or inclusion in the Unicode Standard.",
         "The proposal concerns construction identities and their interchange. It does not prescribe readings for every form or claim that every structural distinction has already been accepted as an independently encodable character."
       ]
@@ -19,14 +19,14 @@
       "id": "repertoire",
       "title": "2. Proposed allocation",
       "paragraphs": [
-        "The requested space comprises three blocks spanning 1,024 positions in Supplementary Private Use Area-A. The current repertoire occupies 832 positions; the remaining 192 positions have no character assignment in this proposal.",
-        "The UCSUR allocation table lists U+F2A00–U+F2DFF as unassigned when checked on 6 September 2026. This check establishes no reservation and does not exclude private use elsewhere."
+        "The requested space comprises three blocks spanning 1,536 positions in Supplementary Private Use Area-A. The current repertoire occupies 1,216 positions; the remaining 320 positions have no character assignment in this proposal.",
+        "The UCSUR roadmap shows no listed allocation at U+F2A00–U+F2FFF when checked on 6 September 2026. This indicates apparent availability in that table; it establishes no reservation and does not exclude private use elsewhere."
       ],
       "bullets": [
         "Quintessential Latin: U+F2A00–U+F2AFF; 196 characters at U+F2A00–U+F2AC3.",
         "Quintessential Latin Extended-A: U+F2B00–U+F2BFF; 252 characters at U+F2B00–U+F2BFB.",
-        "Quintessential Latin Extended-B: U+F2C00–U+F2DFF; 384 characters at U+F2C00–U+F2D7F.",
-        "Unallocated positions: U+F2AC4–U+F2AFF, U+F2BFC–U+F2BFF, and U+F2D80–U+F2DFF."
+        "Quintessential Latin Extended-B: U+F2C00–U+F2FFF; 768 characters at U+F2C00–U+F2D7F and U+F2E00–U+F2F7F.",
+        "Unallocated positions: U+F2AC4–U+F2AFF, U+F2BFC–U+F2BFF, U+F2D80–U+F2DFF, and U+F2F80–U+F2FFF."
       ]
     },
     {
@@ -35,7 +35,7 @@
       "paragraphs": [
         "A construction is described from left to right. An upright has independently specified upper and lower endings. Short, straight-extended, and curved endings yield the nine primitive names stem, ascender, hook, descender, long stem, long hook, tail, long tail, and long spine.",
         "A shoulder is an upper branch and a hip is its lower counterpart. A leg includes its upper connecting arch; an arm includes its lower connecting arch. Bowls, double bowls, and spines join these components into wider forms.",
-        "Long bowls distinguish open returns from returns closed by an immediately adjacent upright. Naming records local closure, not a remote feature elsewhere in the construction. Repeated arches and extended middle components form systematic companion families.",
+        "Long bowls distinguish open returns from returns closed by an immediately adjacent upright. Naming records local closure, not a remote feature elsewhere in the construction. Repeated arches and extended middle components form systematic companion families. Where two middle legs or arms occur, each can extend independently: neither, left only, right only, or both. Left and right refer to the final visible form, including reversed constructions.",
         "The seven stemless forms are bowl, double bowl, open bowl, turned open bowl, double open bowl, turned double open bowl, and spine. Their presence does not assign them digit or punctuation values."
       ]
     },
@@ -54,7 +54,7 @@
       "title": "5. Names and ordering",
       "paragraphs": [
         "The current canonical naming system is version 3. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Interior uprights use the ordinary stem, ascender, and descender names. Local bowl closure and counts of equal adjacent uprights are resolved before names are serialized.",
-        "Names are unique across the 832-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER.",
+        "Names are unique across the 1,216-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER.",
         "Code charts and formal names lists use numeric code order. Presentation families keep companion families immediately after their bases. Code values, stable identities, internal font glyph names, and presentation order remain distinct."
       ]
     },
@@ -72,8 +72,8 @@
       "id": "reference-font",
       "title": "7. Reference implementation",
       "paragraphs": [
-        "Quintessential Serif 0.220 is the reference typeface. It provides all 832 mapped constructions in Roman and 232 in native Italic. The two variable fonts support a continuous weight range from 400 to 700 and retain the reference design's nonlinear weight mapping.",
-        "The remaining 600 Italic variants are unbuilt. Their code points remain allocated; missing Italic coverage is not an unallocated character position. The website labels these variants explicitly and does not synthesize an Italic face.",
+        "Quintessential Serif 0.240 is the reference typeface. It provides all 1,216 mapped constructions in both Roman and native Italic. The two variable fonts support a continuous weight range from 400 to 700 and retain the reference design's nonlinear weight mapping.",
+        "All allocated characters have native Italic outlines. The two postures use their own STIX Two Text donors and compatible endpoint masters; the website does not synthesize an Italic face.",
         "Variable TTF and WOFF2 fonts and four static endpoint faces are supplied with editable UFO sources, designspaces, build tools, and regression fixtures. The reference fonts derive from the pinned STIX Two Text 2.13 b171 donors and retain the SIL Open Font License.",
         "Font development and character registration are separate processes. The reference design remains a work in progress; a rendered sample is not a prescribed exclusive glyph shape."
       ]
@@ -82,8 +82,8 @@
       "id": "charts",
       "title": "8. Accompanying charts and data",
       "paragraphs": [
-        "Each block has a reference PDF containing a title/range page, code grids, and a numeric names list. A combined catalogue contains all three blocks. The eight grid sheets each show 128 positions, allowing the widest constructions to remain legible.",
-        "Reference PDFs use Quintessential Serif 0.220, Roman 400. Each assigned position shows its representative glyph and hexadecimal code. Shading identifies unallocated positions.",
+        "Each block has a reference PDF containing a title/range page, code grids, and a numeric names list. A combined catalogue contains all three blocks. The six grid sheets each show 256 positions, with representative glyphs scaled to fit their cells.",
+        "Reference PDFs use Quintessential Serif 0.240, Roman 400. Each assigned position shows its representative glyph and hexadecimal code. Shading identifies unallocated positions.",
         "The downloadable allocation, compact browser catalogue, and names list are generated from one explicit source. Character names and code points agree across the PDFs, website, font mappings, and machine-readable downloads."
       ]
     },
@@ -109,7 +109,8 @@
       "title": "11. Revision history",
       "paragraphs": [
         "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities.",
-        "6 September 2026: naming version 3 gives every character the QUINTESSENTIAL LATIN LETTER prefix, uses ordinary upright names for interior components, and combines equal adjacent uprights into counts. Code points, construction identities, and the 0.220 reference fonts are unchanged."
+        "6 September 2026: naming version 3 gives every character the QUINTESSENTIAL LATIN LETTER prefix, uses ordinary upright names for interior components, and combines equal adjacent uprights into counts. Code points, construction identities, and the 0.220 reference fonts are unchanged.",
+        "6 September 2026: reference font and allocation version 0.240 add 384 constructions with independently extended middle components at U+F2E00–U+F2F7F. All preceding 832 identities and assignments are retained. Both native postures support the complete 1,216-character repertoire; canonical naming remains version 3."
       ]
     }
   ],
@@ -117,6 +118,10 @@
     {
       "title": "Under-ConScript Unicode Registry: allocation table",
       "url": "https://www.kreativekorp.com/ucsur/"
+    },
+    {
+      "title": "Under-ConScript Unicode Registry: roadmap",
+      "url": "https://www.kreativekorp.com/ucsur/roadmap.shtml"
     },
     {
       "title": "ConScript Unicode Registry: introduction and proposal precedents",

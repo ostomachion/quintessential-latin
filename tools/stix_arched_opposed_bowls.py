@@ -1,4 +1,4 @@
-"""The two single-side-arch opposed-bowl families, in native Roman STIX.
+"""The two single-side-arch opposed-bowl families, in native STIX postures.
 
 The middle shaft belongs to the compact sigmoid. Its incoming arch owns the
 outer third shaft and that side's ending choices. Only rigid translation is
@@ -10,6 +10,10 @@ def _left_terminal(font, right_variant):
     """Remove the shared left head at its native b shoulder port."""
     import import_stix_foundation as s
     from stix_opposed_bowls import opposed_bowls_outline
+
+    if font["post"].italicAngle:
+        from stix_opposed_bowls_italic import italic_opposed_terminal
+        return italic_opposed_terminal(font, right_variant, "left")
 
     recording, metadata = opposed_bowls_outline(font, 0xF2B28 + right_variant)
     contours = list(s.native_recording_contours(recording))
@@ -31,6 +35,10 @@ def _right_terminal(font, left_variant):
     import import_stix_foundation as s
     from stix_opposed_bowls import opposed_bowls_outline
 
+    if font["post"].italicAngle:
+        from stix_opposed_bowls_italic import italic_opposed_terminal
+        return italic_opposed_terminal(font, left_variant, "right")
+
     recording, metadata = opposed_bowls_outline(font, 0xF2B1C + left_variant * 6)
     contours = list(s.native_recording_contours(recording))
     outer = contours[0]
@@ -51,8 +59,8 @@ def arched_opposed_bowls_outline(font, code_point):
     import import_stix_foundation as s
     from stix_arched_terminals import arched_terminal_outline
 
-    if font["post"].italicAngle or not 0xF2B58 <= code_point <= 0xF2B9F:
-        raise ValueError("Arched opposed bowls require a Roman Abbreviations assignment")
+    if not 0xF2B58 <= code_point <= 0xF2B9F:
+        raise ValueError("Arched opposed bowls require an Abbreviations assignment")
     right_arch = code_point >= 0xF2B7C
     first = 0xF2B7C if right_arch else 0xF2B58
     left, right = divmod(code_point - first, 6)
@@ -63,7 +71,8 @@ def arched_opposed_bowls_outline(font, code_point):
     narrow_advance = metadata["advanceWidth"]
     recording, arch_metadata = arched_terminal_outline(
         font, 0xF2A5D + arch_variant, terminal_override=terminal,
-        prepared_terminal_center=shared_center, prepared_terminal_advance=narrow_advance)
+        prepared_terminal_center=shared_center, prepared_terminal_advance=narrow_advance,
+        prepared_port_inset=metadata.get("sharedArchPortInset", 0))
     offset = 0 if right_arch else arch_metadata["terminalOffsetX"]
     # Preserve the source-frame stem coordinates as an independently auditable
     # reference. Actual chart coordinates include the single rigid S offset.

@@ -205,7 +205,8 @@ def lower_terminal(font, recording, body_code, hook):
 def double_bowl_outline(font, code_point):
     import import_stix_foundation as s
     if font["post"].italicAngle:
-        raise ValueError("Double bowls are Roman only")
+        from stix_double_bowl_italic import italic_double_bowl_outline
+        return italic_double_bowl_outline(font, code_point)
     arched = 0xF2B40 <= code_point <= 0xF2B4B
     variant = code_point-(0xF2B40 if arched else 0xF2B04)
     if not 0 <= variant < 12:

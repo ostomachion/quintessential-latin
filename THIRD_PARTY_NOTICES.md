@@ -25,7 +25,7 @@ Original STIX font attribution: Copyright 2001-2021 The STIX Fonts Project Autho
 STIX Fonts is a trademark of The Institute of Electrical and Electronics Engineers, Inc.
 Quintessential Serif is the modified font family; no STIX endorsement is implied.
 
-The code charts use Source Sans 3 version 3.052, Copyright 2010-2022 Adobe,
+The website and code charts use Source Sans 3 version 3.052, Copyright 2010-2022 Adobe,
 under the SIL Open Font License 1.1. Four unmodified TTF and WOFF2 faces are
 pinned to the upstream `3.052R` release. Their original download URLs and
 SHA-256 hashes are recorded in `resources/fonts/SourceSans3/source-manifest.json`.

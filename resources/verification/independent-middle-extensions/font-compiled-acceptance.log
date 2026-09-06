@@ -1,0 +1,7 @@
+test_every_script_glyph_interpolates_at_sampled_weights (__main__.QuintessentialFontTests.test_every_script_glyph_interpolates_at_sampled_weights) ... ok
+test_component_contours_stay_simple_and_keep_their_winding (__main__.QuintessentialFontTests.test_component_contours_stay_simple_and_keep_their_winding) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 811.646s
+
+OK

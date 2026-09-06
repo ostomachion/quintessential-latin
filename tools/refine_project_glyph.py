@@ -16,7 +16,7 @@ from stix_compact_spine import is_shared_spine_recipe
 def main():
     _, donors = load_and_verify_donors()
     specs = [g for g in GLYPHS if is_shared_spine_recipe(g.recipe_code_point)]
-    assert len(specs) == 396 and all(g.roman_only for g in specs)
+    assert len(specs) == 396
     working, filenames = [], []
     for style, weight in (("Regular", 400), ("Bold", 700)):
         source = Font.open(SOURCES / f"QuintessentialSerif-{style}.ufo")

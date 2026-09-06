@@ -1,0 +1,437 @@
+{
+  "base": "http://127.0.0.1:8767/quintessential-latin/",
+  "records": [
+    {
+      "filename": "1440-roman-400-neither.png",
+      "width": 1440,
+      "state": "neither",
+      "codePoint": 994304,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2C00\n\nClose ×\n󲰀\nQUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 294.53125,
+        "width": 660,
+        "height": 410.9375,
+        "top": 294.53125,
+        "right": 1050,
+        "bottom": 705.46875,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲰀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "1440-roman-400-left.png",
+      "width": 1440,
+      "state": "left",
+      "codePoint": 994816,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2E00\n\nClose ×\n󲸀\nQUINTESSENTIAL LATIN LETTER STEM WITH DESCENDER AND STEM AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲸀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "1440-roman-400-right.png",
+      "width": 1440,
+      "state": "right",
+      "codePoint": 994817,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2E01\n\nClose ×\n󲸁\nQUINTESSENTIAL LATIN LETTER TWO STEMS WITH DESCENDER AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲸁",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "1440-roman-400-both.png",
+      "width": 1440,
+      "state": "both",
+      "codePoint": 994316,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2C0C\n\nClose ×\n󲰌\nQUINTESSENTIAL LATIN LETTER STEM WITH TWO DESCENDERS AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲰌",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "1440-italic-700-neither.png",
+      "width": 1440,
+      "state": "neither",
+      "codePoint": 994304,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2C00\n\nClose ×\n󲰀\nQUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 294.53125,
+        "width": 660,
+        "height": 410.9375,
+        "top": 294.53125,
+        "right": 1050,
+        "bottom": 705.46875,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲰀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "1440-italic-700-left.png",
+      "width": 1440,
+      "state": "left",
+      "codePoint": 994816,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2E00\n\nClose ×\n󲸀\nQUINTESSENTIAL LATIN LETTER STEM WITH DESCENDER AND STEM AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲸀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "1440-italic-700-right.png",
+      "width": 1440,
+      "state": "right",
+      "codePoint": 994817,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2E01\n\nClose ×\n󲸁\nQUINTESSENTIAL LATIN LETTER TWO STEMS WITH DESCENDER AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲸁",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "1440-italic-700-both.png",
+      "width": 1440,
+      "state": "both",
+      "codePoint": 994316,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2C0C\n\nClose ×\n󲰌\nQUINTESSENTIAL LATIN LETTER STEM WITH TWO DESCENDERS AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 390,
+        "y": 284.375,
+        "width": 660,
+        "height": 431.234375,
+        "top": 284.375,
+        "right": 1050,
+        "bottom": 715.609375,
+        "left": 390
+      },
+      "glyphs": [
+        {
+          "text": "󲰌",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "375-roman-400-neither.png",
+      "width": 375,
+      "state": "neither",
+      "codePoint": 994304,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2C00\n\nClose ×\n󲰀\nQUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲰀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "375-roman-400-left.png",
+      "width": 375,
+      "state": "left",
+      "codePoint": 994816,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2E00\n\nClose ×\n󲸀\nQUINTESSENTIAL LATIN LETTER STEM WITH DESCENDER AND STEM AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲸀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "375-roman-400-right.png",
+      "width": 375,
+      "state": "right",
+      "codePoint": 994817,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2E01\n\nClose ×\n󲸁\nQUINTESSENTIAL LATIN LETTER TWO STEMS WITH DESCENDER AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲸁",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "375-roman-400-both.png",
+      "width": 375,
+      "state": "both",
+      "codePoint": 994316,
+      "posture": "Roman",
+      "weight": 400,
+      "text": "U+F2C0C\n\nClose ×\n󲰌\nQUINTESSENTIAL LATIN LETTER STEM WITH TWO DESCENDERS AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲰌",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "normal",
+          "weight": "400"
+        }
+      ]
+    },
+    {
+      "filename": "375-italic-700-neither.png",
+      "width": 375,
+      "state": "neither",
+      "codePoint": 994304,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2C00\n\nClose ×\n󲰀\nQUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲰀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "375-italic-700-left.png",
+      "width": 375,
+      "state": "left",
+      "codePoint": 994816,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2E00\n\nClose ×\n󲸀\nQUINTESSENTIAL LATIN LETTER STEM WITH DESCENDER AND STEM AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲸀",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "375-italic-700-right.png",
+      "width": 375,
+      "state": "right",
+      "codePoint": 994817,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2E01\n\nClose ×\n󲸁\nQUINTESSENTIAL LATIN LETTER TWO STEMS WITH DESCENDER AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲸁",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    },
+    {
+      "filename": "375-italic-700-both.png",
+      "width": 375,
+      "state": "both",
+      "codePoint": 994316,
+      "posture": "Italic",
+      "weight": 700,
+      "text": "U+F2C0C\n\nClose ×\n󲰌\nQUINTESSENTIAL LATIN LETTER STEM WITH TWO DESCENDERS AND SHOULDER\n\nQuintessential Latin Extended-B · Double-arched shoulders and hips: extended middle components. Roman and native Italic available.\n\nCopy character\nCopy code\nPermanent link",
+      "box": {
+        "x": 16,
+        "y": 255.53125,
+        "width": 343,
+        "height": 488.921875,
+        "top": 255.53125,
+        "right": 359,
+        "bottom": 744.453125,
+        "left": 16
+      },
+      "glyphs": [
+        {
+          "text": "󲰌",
+          "fontFamily": "\"Quintessential Serif\"",
+          "style": "italic",
+          "weight": "700"
+        }
+      ]
+    }
+  ]
+}

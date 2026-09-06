@@ -3,6 +3,6 @@ from pathlib import Path
 import subprocess,sys
 ROOT=Path(__file__).resolve().parent.parent
 def main():
-    for filename in ("restore_font_proof.py","verify_font_preservation.py","test_project_glyph.py","test_shared_spines.py","test_spine_connections.py","test_quintessential_font.py","test_additions_font.py"):
+    for filename in ("restore_font_proof.py","verify_font_preservation.py","test_project_glyph.py","test_shared_spines.py","test_spine_connections.py","test_quintessential_font.py","test_additions_font.py","test_italic_completion.py","test_independent_middle_legs.py"):
         subprocess.run([sys.executable,str(ROOT/"tools"/filename),"-v"],cwd=ROOT,check=True)
 if __name__=="__main__":main()

@@ -1,0 +1,57 @@
+{
+  "suite": "tools/test_italic_completion.py",
+  "status": "passed",
+  "execution": "All seven methods rerun together on the final corrected 0.230 source and compiled fonts; passed.",
+  "methods": {
+    "test_full_coverage_changes_only_posture_availability": "passed",
+    "test_all_prior_editable_outlines_advances_and_pairs_are_exact": "passed",
+    "test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact": "passed",
+    "test_new_italic_endpoints_are_compatible_and_differ_from_roman": "passed",
+    "test_new_italic_shapes_have_connected_ink_and_open_counters_at_five_weights": "passed",
+    "test_new_italics_retain_rigid_native_italic_curves": "passed",
+    "test_new_middle_companions_keep_parent_advances_and_extend_every_internal_end": "passed"
+  },
+  "counts": {
+    "newItalicGlyphs": 600,
+    "romanGlyphs": 832,
+    "italicGlyphs": 832,
+    "compiledFilesWithFullCoverage": 12,
+    "sourceMastersPreserved": 4,
+    "priorRomanGlyphsPreserved": 832,
+    "priorItalicGlyphsPreserved": 232,
+    "compiledFacesPreserved": 14,
+    "variableWeights": [
+      400,
+      500,
+      550,
+      600,
+      700
+    ],
+    "newCompiledFilledShapeSamples": 3000,
+    "newNativeCurveMasterSamples": 1200,
+    "newMiddleCompanionMasterSamples": 552,
+    "newExtendedInternalEndsVerified": 936
+  },
+  "testSha256": "d20f076a7ad48b0d634224dac278cb50033b7fb77f137137e0b6d98157e1ced6",
+  "baselineSha256": "52289d17a64771b131661d5d64646fcd90377c3975592843f39549818a8d5940",
+  "fontHashes": {
+    "QuintessentialSerif-Bold.otf": "a3b8885422365ee966ae9580b6c2f61a56778df722801eebe6724ed9cd6cfe71",
+    "QuintessentialSerif-Bold.woff2": "dde8b02a0c299efa231adc22d58fb2782f2effe48b426adce1b3ab12d0cffb7f",
+    "QuintessentialSerif-BoldItalic.otf": "f6a95142caf1b6dd026fa38b42d76ab73dbf3cea4c6390f5460c40a493d251ef",
+    "QuintessentialSerif-BoldItalic.woff2": "638cdd1784cfbd6b697cc0e9d12e6a898e7d40f1b58fb3d14941b1ded83881d4",
+    "QuintessentialSerif-Italic-Variable.ttf": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456",
+    "QuintessentialSerif-Italic-Variable.woff2": "dce48ee8f13010c3d46a060fcbec42b0472f6182bf79f3713cfc049f526ee77e",
+    "QuintessentialSerif-Italic.otf": "0baa3877b638d62e3c877dbfed7e94606cbe24478ca724329ebd17e90ae5af05",
+    "QuintessentialSerif-Italic.woff2": "d5f7e6df94941f7600ddaa6016e77324edaa619a5d72453d8873271a27adbeeb",
+    "QuintessentialSerif-Regular.otf": "3c8d44b618b25f0d2efa329af7e85de9bfd684a6019116770092bfbf241f8c8f",
+    "QuintessentialSerif-Regular.woff2": "2b049d4020a19a3e4ed0d556a2a6434efccbe42ba3b9cebe9c0fa893a5423ace",
+    "QuintessentialSerif-Variable.ttf": "514955831e39c7b0cc70b067d812d1c81c8f58c228071c5a8abed1f8dc0a42a4",
+    "QuintessentialSerif-Variable.woff2": "88bd94b310dc10af02d7eb5beef7a5c79ea143bb0c8b98c2860c2a4c2fdd6296"
+  },
+  "logs": {
+    "completeSuite": "resources/verification/italic-completion/corrected-test-italic-completion.log",
+    "historicalPreservation": "resources/verification/italic-completion/test-additions.log"
+  },
+  "historicalPreservation": "passed",
+  "fontManifestSha256": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36"
+}

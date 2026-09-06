@@ -1,0 +1,7 @@
+test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact (__main__.ItalicCompletionTests.test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact) ... ok
+test_full_coverage_changes_only_posture_availability (__main__.ItalicCompletionTests.test_full_coverage_changes_only_posture_availability) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 161.689s
+
+OK

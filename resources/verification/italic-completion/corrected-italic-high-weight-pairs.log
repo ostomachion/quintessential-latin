@@ -1,0 +1,13 @@
+Before hashes: {"font": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456", "manifest": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36", "testModule": "90cb5bd219fdfbf5bb19d83b9f0372387089b967da03c60be9e17bdf78350150"}
+test_variable_kerning_clears_every_ordered_pair (test_quintessential_font.QuintessentialFontTests.test_variable_kerning_clears_every_ordered_pair) ... pair gate: preparing Italic 600
+pair gate: passed Italic 600; pairs=692224, boxCandidates=95761, projectionSkips=62798, exactChecks=32963
+pair gate: preparing Italic 700
+pair gate: passed Italic 700; pairs=692224, boxCandidates=115460, projectionSkips=72293, exactChecks=43167
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 394.518s
+
+OK
+After hashes: {"font": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456", "manifest": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36", "testModule": "90cb5bd219fdfbf5bb19d83b9f0372387089b967da03c60be9e17bdf78350150"}
+RESULT {"status": "passed", "snapshot": "C:\\Users\\User\\source\\repos\\ostomachion\\quintessential-latin\\.tmp\\italic-completion\\corrected-0230", "selection": {"posture": "Italic", "weights": [600, 700]}, "primaryTestMethod": "QuintessentialFontTests.test_variable_kerning_clears_every_ordered_pair", "primaryTestMethodSha256": "f7b141254d2c67959b235403f66ce19a7de6ce25752ffb47bf34f69f9cd657da", "methodUnmodified": true, "beforeSha256": {"font": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456", "manifest": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36", "testModule": "90cb5bd219fdfbf5bb19d83b9f0372387089b967da03c60be9e17bdf78350150"}, "afterSha256": {"font": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456", "manifest": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36", "testModule": "90cb5bd219fdfbf5bb19d83b9f0372387089b967da03c60be9e17bdf78350150"}, "hashesUnchanged": true, "unittest": {"testsRun": 1, "failures": 0, "errors": 0, "successful": true}, "weightResults": [{"weight": 600, "pairs": 692224, "boxCandidates": 95761, "projectionSkips": 62798, "exactChecks": 32963, "boundingBoxSkips": 596463}, {"weight": 700, "pairs": 692224, "boxCandidates": 115460, "projectionSkips": 72293, "exactChecks": 43167, "boundingBoxSkips": 576764}], "totalOrderedPairs": 1384448, "elapsedSeconds": 394.5187675999987}

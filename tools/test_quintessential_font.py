@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Validate all 832 Roman catalogue glyphs and the native Italic subset."""
+"""Validate all 1,216 catalogue glyphs in Roman and native Italic."""
 
 from __future__ import annotations
 
 import hashlib
+from functools import lru_cache
 from io import BytesIO
 import json
 import math
+import pickle
 from pathlib import Path
 import unittest
 
@@ -25,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
 OUTPUT = ROOT / "resources/fonts/QuintessentialSerif"
 DONORS = ROOT / "resources/fonts/STIXTwoText"
-VERSION = "0.220"
+VERSION = "0.240"
 
 MAIN_SCRIPT_CMAP = {code: f"u{code:X}" for code in range(0xF2A00, 0xF2A81)}
 SPECIAL_CMAP = {code: f"u{code:X}" for code in range(0xF2B00, 0xF2B04)}
@@ -69,6 +71,16 @@ POSTURE_CMAPS = {
     italic: {entry["codePoint"]: entry["glyphName"] for entry in INTERNAL_ORDER_ENTRIES
              if posture in entry["postures"]}
     for italic, posture in ((False, "Roman"), (True, "Italic"))
+}
+# The historical 232 Italics retain their GIDs. Added forms append after the
+# complete original prefix, which already included 72 middle-leg companions.
+def previously_italic(entry):
+    return (entry["stemless"] or entry["recipeCodePoint"] in LEGACY_POSTURE_CMAPS[True])
+
+POSTURE_CMAPS[True] = {
+    entry["codePoint"]: entry["glyphName"]
+    for stage in (0, 1, 2) for entry in INTERNAL_ORDER_ENTRIES
+    if (2 if "middleLegExtensions" in entry else 0 if previously_italic(entry) else 1) == stage
 }
 POSTURE_GLYPHS = {italic: tuple(cmap.values()) for italic, cmap in POSTURE_CMAPS.items()}
 LEGACY_SCRIPT_GLYPHS = tuple(f"u{code:X}" for code in range(0xF2A00, 0xF2A45))
@@ -491,10 +503,18 @@ def assert_outline_is_finite(test: unittest.TestCase, glyph_set, name: str) -> N
                 test.assertTrue(all(math.isfinite(float(value)) for value in operand), name)
 
 
+@lru_cache(maxsize=32)
+def instantiated_bytes(source: bytes, weight: int) -> bytes:
+    # Preserve interpolated floating coordinates: saving a TrueType font
+    # rounds them. Pickled in-memory state is lossless and keeps the dense
+    # GPOS cache compact; every caller unpickles an independent, closable font.
+    with TTFont(BytesIO(source), recalcTimestamp=False) as font:
+        instantiateVariableFont(font, {"wght": weight}, inplace=True)
+        return pickle.dumps(font, protocol=5)
+
+
 def instantiated(path: Path, weight: int) -> TTFont:
-    font = TTFont(path, recalcTimestamp=False)
-    instantiateVariableFont(font, {"wght": weight}, inplace=True)
-    return font
+    return pickle.loads(instantiated_bytes(path.read_bytes(), weight))
 
 
 def dflt_kern_lookups(font: TTFont) -> list:
@@ -684,6 +704,32 @@ def maximum_coordinate_delta(left, right) -> float:
     )
 
 
+_PAIR_PROJECTION_DIRECTIONS = (
+    (1000, -213), (5, -1), (4, -1), (3, -1),
+    (2, -1), (1, -1), (1, 0), (1, 1),
+)
+
+
+def pair_projections(paths):
+    """Bound the same flattened integer vertices along fixed integer axes."""
+    points = [point for path in paths for point in path]
+    return tuple(
+        (min(nx * x + ny * y for x, y in points),
+         max(nx * x + ny * y for x, y in points))
+        for nx, ny in _PAIR_PROJECTION_DIRECTIONS
+    )
+
+
+def projections_are_disjoint(left, right, offset):
+    """Certify separation exactly; touching or uncertain bands fall through."""
+    for (nx, _), (low, high), (other_low, other_high) in zip(
+            _PAIR_PROJECTION_DIRECTIONS, left, right):
+        shift = nx * offset
+        if high < other_low + shift or other_high + shift < low:
+            return True
+    return False
+
+
 def outlines_overlap(left_paths, right_paths, advance: float) -> bool:
     clipper = pyclipper.Pyclipper()
     clipper.AddPaths(left_paths, pyclipper.PT_SUBJECT, True)
@@ -810,27 +856,31 @@ class QuintessentialFontTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((DONORS / filename).read_bytes()).hexdigest(), digest)
 
     def test_master_pairs_are_interpolation_compatible(self):
-        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.220", "0.210"))
-        self.assertEqual(len(ALLOCATION_ENTRIES), 832)
-        self.assertEqual(len(ALLOCATION_BY_ID), 832)
-        self.assertEqual(len(ALLOCATION_BY_NAME), 832)
+        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.240", "0.220"))
+        self.assertEqual(len(ALLOCATION_ENTRIES), 1216)
+        self.assertEqual(len(ALLOCATION_BY_ID), 1216)
+        self.assertEqual(len(ALLOCATION_BY_NAME), 1216)
         self.assertEqual(len(LEGACY_ENTRIES), 481)
-        self.assertEqual(len(ADDED_ENTRIES), 351)
+        self.assertEqual(len(ADDED_ENTRIES), 735)
         self.assertEqual({entry["oldCodePoint"]: entry["glyphName"] for entry in LEGACY_ENTRIES},
                          LEGACY_RECIPE_CMAP)
         self.assertEqual([entry["glyphName"] for entry in ADDED_ENTRIES[:3]],
                          ["special-closed-double-bowl", "special-turned-open-bowl", "special-turned-double-open-bowl"])
         for entry in ADDED_ENTRIES[3:]:
             self.assertTrue(entry["middleLegs"])
-            self.assertEqual(entry["glyphName"], ALLOCATION_BY_ID[entry["baseGlyphId"]]["glyphName"] + ".middle")
+            suffix = ".middle"
+            if "middleLegExtensions" in entry:
+                self.assertIn(entry["middleLegExtensions"], ([True, False], [False, True]))
+                suffix += "Left" if entry["middleLegExtensions"][0] else "Right"
+            self.assertEqual(entry["glyphName"], ALLOCATION_BY_ID[entry["baseGlyphId"]]["glyphName"] + suffix)
             self.assertEqual(entry["recipeCodePoint"], ALLOCATION_BY_ID[entry["baseGlyphId"]]["oldCodePoint"])
         for italic in (False, True):
             self.assertEqual(POSTURE_GLYPHS[italic][:len(LEGACY_POSTURE_CMAPS[italic])],
                              tuple(LEGACY_POSTURE_CMAPS[italic].values()))
         self.assertEqual({italic: len(cmap) for italic, cmap in POSTURE_CMAPS.items()},
-                         {False: 832, True: 232})
+                         {False: 1216, True: 1216})
         self.assertEqual({italic: len(keys) for italic, keys in EXPECTED_PAIR_KEYS.items()},
-                         {False: 692224, True: 53824})
+                         {False: 1478656, True: 1478656})
         for light_style, bold_style, italic in MASTER_PAIRS:
             light = Font.open(SOURCES / f"QuintessentialSerif-{light_style}.ufo")
             bold = Font.open(SOURCES / f"QuintessentialSerif-{bold_style}.ufo")
@@ -2225,6 +2275,8 @@ class QuintessentialFontTests(unittest.TestCase):
     def test_variable_kerning_clears_every_ordered_pair(self):
         for italic, filename in VARIABLE_FILES.items():
             for weight in SAMPLE_WEIGHTS:
+                posture = "Italic" if italic else "Roman"
+                print(f"pair gate: preparing {posture} {weight}", flush=True)
                 with self.subTest(italic=italic, weight=weight), instantiated(OUTPUT / filename, weight) as font:
                     kern = pair_values(font)
                     glyph_set = font.getGlyphSet()
@@ -2236,6 +2288,8 @@ class QuintessentialFontTests(unittest.TestCase):
                         points = [point for path in paths for point in path]
                         bounds[name] = (min(x for x, _ in points), min(y for _, y in points),
                                         max(x for x, _ in points), max(y for _, y in points))
+                    projections = {name: pair_projections(paths) for name, paths in shapes.items()}
+                    box_candidates = projection_skips = exact_checks = 0
                     for left in POSTURE_GLYPHS[italic]:
                         for right in POSTURE_GLYPHS[italic]:
                             advance = font["hmtx"][left][0] + kern.get((left, right), 0)
@@ -2248,7 +2302,19 @@ class QuintessentialFontTests(unittest.TestCase):
                             if (left_max_x <= right_min_x + offset or right_max_x + offset <= left_min_x
                                     or left_max_y <= right_min_y or right_max_y <= left_min_y):
                                 continue
+                            box_candidates += 1
+                            # Every filled contour lies within these projection
+                            # bounds. Strict integer separation is an exact
+                            # certificate; no hull clipping or rounding is used.
+                            if projections_are_disjoint(projections[left], projections[right], offset):
+                                projection_skips += 1
+                                continue
+                            exact_checks += 1
                             self.assertFalse(outlines_overlap(shapes[left], shapes[right], advance), (italic, weight, left, right, kern.get((left, right), 0)))
+                    print(f"pair gate: passed {posture} {weight}; "
+                          f"pairs={len(POSTURE_GLYPHS[italic]) ** 2}, "
+                          f"boxCandidates={box_candidates}, projectionSkips={projection_skips}, "
+                          f"exactChecks={exact_checks}", flush=True)
 
     def test_woff2_files_preserve_sfnt_tables(self):
         basenames = [
@@ -2287,10 +2353,10 @@ class QuintessentialFontTests(unittest.TestCase):
             EXPECTED_AVAR,
         )
         self.assertEqual(tuple(glyph["codePoint"] for glyph in proof["glyphs"]), tuple(SCRIPT_CMAP))
-        self.assertEqual(len(proof["glyphs"]), 832)
+        self.assertEqual(len(proof["glyphs"]), 1216)
         proof_ids = {glyph["codePoint"]: glyph["id"] for glyph in proof["glyphs"]}
         self.assertEqual(proof_ids, {entry["codePoint"]: entry["glyphId"] for entry in ALLOCATION_ENTRIES})
-        self.assertEqual(len(set(proof_ids.values())), 832)
+        self.assertEqual(len(set(proof_ids.values())), 1216)
         legacy_codes = tuple(LEGACY_RECIPE_BY_ID[glyph["id"]] for glyph in proof["glyphs"]
                              if glyph["id"] in LEGACY_RECIPE_BY_ID)
         self.assertEqual(legacy_codes, tuple(LEGACY_RECIPE_CMAP))
@@ -2344,15 +2410,13 @@ class QuintessentialFontTests(unittest.TestCase):
                 if recipe_code in SPECIAL_CMAP and recipe_code != 0xF2B03:
                     self.assertEqual({reference["codePoint"] for reference in glyph["references"]},
                                      {(0x6F, 0x63, 0x25B, 0x73)[recipe_code - 0xF2B00]})
-                if recipe_code in OPPOSED_BOWL_CMAP:
-                    self.assertFalse(face["italic"])
+                if recipe_code in OPPOSED_BOWL_CMAP and not face["italic"]:
                     left, right = divmod(recipe_code - 0xF2B1C, 6)
                     expected = {0x250, 0x61, 0x62, (0x70, 0x62, 0x253)[left // 2],
                                 (0x251, 0x71, 0x261)[right // 2]}
                     self.assertEqual({reference["codePoint"] for reference in glyph["references"]},
                                      expected | ({0x70} if left % 2 else set()) | ({0x64} if right % 2 else set()))
-                if recipe_code in ARCHED_OPPOSED_BOWL_CMAP:
-                    self.assertFalse(face["italic"])
+                if recipe_code in ARCHED_OPPOSED_BOWL_CMAP and not face["italic"]:
                     right_arch = recipe_code >= 0xF2B7C
                     left, right = divmod(recipe_code - (0xF2B7C if right_arch else 0xF2B58), 6)
                     if right_arch:
@@ -2365,8 +2429,11 @@ class QuintessentialFontTests(unittest.TestCase):
                                     (0x6E, 0x68, 0x266)[left // 2]}
                         expected |= ({0x70} if left % 2 else set()) | ({0x64} if right % 2 else set())
                     self.assertEqual({reference["codePoint"] for reference in glyph["references"]}, expected)
+                if face["italic"] and recipe_code in (*OPPOSED_BOWL_CMAP, *ARCHED_OPPOSED_BOWL_CMAP):
+                    references = {reference["codePoint"] for reference in glyph["references"]}
+                    self.assertIn(0x250, references)
+                    self.assertNotIn(0x61, references)
                 if recipe_code in DOUBLE_BOWL_FAMILY_CMAP:
-                    self.assertFalse(face["italic"])
                     if recipe_code in DOUBLE_BOWL_CMAP:
                         variant = recipe_code - 0xF2B04
                         expected = double_bowl_references[variant]

@@ -1,4 +1,4 @@
-export const VERSION = '0.220';
+export const VERSION = '0.240';
 export const code = value => `U+${Number(value).toString(16).toUpperCase().padStart(5, '0')}`;
 export const anchor = value => `u-${Number(value).toString(16).toLowerCase()}`;
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));

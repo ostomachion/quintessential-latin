@@ -8,10 +8,10 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const catalogue=JSON.parse(await readFile(path.join(root,'resources/catalogue.json'),'utf8'));
 const read=relative=>readFile(path.join(root,relative),'utf8');
 let groups=0;const test=async(name,fn)=>{await fn();groups++;console.log(`PASS ${name}`);};
-await test('Mapped repertoire and native posture coverage',()=>{assert.equal(catalogue.entries.length,832);assert.equal(catalogue.entries.filter(entry=>available(entry,false)).length,832);assert.equal(catalogue.entries.filter(entry=>available(entry,true)).length,232);assert.equal(new Set(catalogue.entries.map(entry=>entry.codePoint)).size,832);assert.equal(new Set(catalogue.entries.map(entry=>entry.name)).size,832);});
+await test('Mapped repertoire and native posture coverage',()=>{assert.equal(catalogue.entries.length,1216);assert.equal(catalogue.entries.filter(entry=>available(entry,false)).length,1216);assert.equal(catalogue.entries.filter(entry=>available(entry,true)).length,1216);assert.equal(new Set(catalogue.entries.map(entry=>entry.codePoint)).size,1216);assert.equal(new Set(catalogue.entries.map(entry=>entry.name)).size,1216);});
 await test('Safe persisted controls with the complete variable axis',()=>{assert.deepEqual(normalizeSettings(null),{weight:400,italic:false});assert.deepEqual(normalizeSettings({weight:900,italic:true}),{weight:700,italic:true});assert.deepEqual(normalizeSettings({weight:200,italic:'false'}),{weight:400,italic:false});assert.deepEqual(normalizeSettings({weight:553,italic:true}),{weight:553,italic:true});});
 await test('Code, name, literal-character, and compound search',()=>{const entry=catalogue.entries[0];assert.equal(searchEntries(catalogue.entries,code(entry.codePoint))[0],entry);assert.equal(searchEntries(catalogue.entries,String.fromCodePoint(entry.codePoint))[0],entry);assert(searchEntries(catalogue.entries,entry.canonicalName).includes(entry));assert.equal(searchEntries(catalogue.entries,'no-such-glyph-name').length,0);assert(searchEntries(catalogue.entries,'bowl').every(entry=>/bowl/i.test(entry.name)));});
-await test('Unicode coordinates and four complete publication sheets',()=>{assert.equal(chartCode(0xf2a00,3,11),0xf2ab3);const sheets=printableSheets(catalogue.blocks);assert.equal(sheets.length,4);const codes=sheets.flatMap(sheet=>Array.from({length:256},(_,index)=>sheet.start+index));assert.equal(new Set(codes).size,1024);assert.equal(codes[0],0xf2a00);assert.equal(codes.at(-1),0xf2dff);});
+await test('Unicode coordinates and six complete publication sheets',()=>{assert.equal(chartCode(0xf2a00,3,11),0xf2ab3);const sheets=printableSheets(catalogue.blocks);assert.equal(sheets.length,6);const codes=sheets.flatMap(sheet=>Array.from({length:256},(_,index)=>sheet.start+index));assert.equal(new Set(codes).size,1536);assert.equal(codes[0],0xf2a00);assert.equal(codes.at(-1),0xf2fff);});
 await test('Long forms fit their allocated representative widths',()=>{for(const entry of catalogue.entries){const size=glyphSize(entry,47,30);assert(size>0&&size<=30);for(const metric of Object.values(entry.metrics)){const width=Math.max(metric.advance,metric.bounds[2])-Math.min(0,metric.bounds[0]);assert(width*size/1000<=47.01,entry.glyphId);}}});
 await test('HTML escaping protects generated text',()=>{assert.equal(escapeHtml('<a "x">&\''),'&lt;a &quot;x&quot;&gt;&amp;&#39;');});
 const pages=['index.html','charts.html','proposal.html','downloads.html'];
@@ -26,14 +26,14 @@ await test('Project marks use the controlled reference font and removed page is 
   for(const page of pages)assert(!/specimen/i.test(await read('dist/'+page)),page);
   await assert.rejects(()=>stat(path.join(root,'dist/specimens.html')),error=>error.code==='ENOENT');
 });
-await test('Responsive static variants, four print grids, and one numeric names list',async()=>{
+await test('Responsive static variants, six print grids, and one numeric names list',async()=>{
   const html=await read('dist/charts.html');
-  assert.equal((html.match(/data-chart-kind="screen"/g)||[]).length,28);
-  assert.equal((html.match(/data-chart-kind="print"/g)||[]).length,4);
-  for(const columns of [16,8,4])assert.equal((html.match(new RegExp(`data-chart-columns="${columns}"`,'g'))||[]).length,4);
+  assert.equal((html.match(/data-chart-kind="screen"/g)||[]).length,42);
+  assert.equal((html.match(/data-chart-kind="print"/g)||[]).length,6);
+  for(const columns of [16,8,4])assert.equal((html.match(new RegExp(`data-chart-columns="${columns}"`,'g'))||[]).length,6);
   const codes=[...html.matchAll(/data-name-codepoint="([A-F\d]+)"/g)].map(match=>parseInt(match[1],16));
-  assert.equal(codes.length,832);assert.deepEqual(codes,[...codes].sort((a,b)=>a-b));assert.equal(new Set(codes).size,832);
-  assert.equal((html.match(/class="vacant"/g)||[]).length,768);
+  assert.equal(codes.length,1216);assert.deepEqual(codes,[...codes].sort((a,b)=>a-b));assert.equal(new Set(codes).size,1216);
+  assert.equal((html.match(/class="vacant"/g)||[]).length,1280);
   for(const entry of catalogue.entries)assert.equal((html.match(new RegExp(`id="u-${entry.codePoint.toString(16)}"`,'g'))||[]).length,1);
   for(const family of catalogue.families)assert(html.includes(`<h4>${escapeHtml(family.title)}</h4>`));
   const presentation=JSON.parse(await read('resources/chart-presentation.json')),css=await read('dist/assets/chart-presentation.css');

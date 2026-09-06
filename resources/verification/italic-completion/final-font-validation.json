@@ -1,0 +1,182 @@
+{
+  "version": "0.230",
+  "status": "passed",
+  "fontManifestSha256": "fff1ec09d74a9d2545a82e5aaa05444737da7bb179431b2cd0530ad1eff83a36",
+  "execution": "The 41 primary methods other than individual contour simplicity passed across retained runs:38 before the correction, then the final corrected pair/WOFF2/metadata methods. The original individual-contour test exposed a shared-shoulder defect; corrected source and compiled contour checks supersede that failure. All792 changed static endpoint comparisons and the complete seven-method completion suite also passed against the corrected build. Superseded pair loops were interrupted after preserving completed methods. Final pair coverage aggregates every unique posture/weight case using an exact integer separation certificate and unchanged outline fallback; it is not represented as a single uninterrupted run.",
+  "primaryMethodsPassedAcrossRuns": [
+    "test_arch_bodies_preserve_their_native_free_side_curves",
+    "test_arched_arm_ribbons_and_bowl_counters_remain_native",
+    "test_arched_opposed_bowls_complete_the_block_with_three_connected_shafts",
+    "test_bowl_bodies_and_counters_preserve_their_native_donors",
+    "test_bowled_spine_outer_stem_terminals_preserve_native_donors",
+    "test_bowled_spines_are_distinct_connected_and_keep_one_counter",
+    "test_complete_arm_family_preserves_native_arm_regions",
+    "test_constructed_arch_terminals_preserve_their_native_donors",
+    "test_constructed_arm_terminals_preserve_their_native_donors",
+    "test_constructed_bowl_terminals_preserve_their_native_donors",
+    "test_constructed_master_advances_follow_their_upper_donors",
+    "test_direct_mappings_match_stix_at_sampled_weights",
+    "test_double_bowl_counter_roofs_depth_and_curved_shaft_approaches",
+    "test_double_bowl_families_are_distinct_connected_and_keep_two_counters",
+    "test_double_bowl_outer_lobes_waist_and_lower_counter_interiors_remain_native",
+    "test_double_bowl_outer_terminals_preserve_native_donors",
+    "test_every_arch_keeps_its_intended_cavity_at_sampled_weights",
+    "test_every_bowl_keeps_one_open_counter_at_sampled_weights",
+    "test_every_script_glyph_interpolates_at_sampled_weights",
+    "test_extended_arch_crowded_endings_remain_separate",
+    "test_extended_arch_terminals_preserve_complete_native_regions",
+    "test_extended_arches_preserve_native_curves_and_existing_endings",
+    "test_italic_constructed_stems_follow_the_native_axis_and_finish",
+    "test_italic_spines_keep_native_diagonal_bowls_bulbs_and_flat_bottoms",
+    "test_joined_arches_keep_native_width_sweeps_and_bowl_quarters",
+    "test_main_completion_has_connected_staves_counters_and_recorded_advances",
+    "test_master_pairs_are_interpolation_compatible",
+    "test_narrow_opposed_bowls_have_two_counters_and_independent_endings",
+    "test_outputs_preserve_donor_vertical_metric_selection",
+    "test_pinned_stix_donors_and_license",
+    "test_plain_bowl_keeps_b_baseline_and_upright_p_head",
+    "test_proof_data_manifest_and_license_metadata",
+    "test_repeated_arches_preserve_native_arch_curves_and_middle_staves",
+    "test_roman_bowled_spines_keep_native_bellies_and_orientation_specific_free_terminals",
+    "test_roman_turned_arm_uses_u_stem_and_retains_native_arm",
+    "test_static_faces_are_hinted_sparse_cff_fonts",
+    "test_static_faces_match_variable_endpoints_geometrically",
+    "test_symmetric_difference_area_accounts_for_nested_holes",
+    "test_variable_kerning_clears_every_ordered_pair",
+    "test_variable_structure_axis_names_and_sparse_coverage",
+    "test_woff2_files_preserve_sfnt_tables"
+  ],
+  "correctedContourSamples": 18305,
+  "correctedFilledGlyphSamples": 4160,
+  "correctedSourceContourSamples": 7322,
+  "correctedStaticEndpointComparisons": 792,
+  "correctedOrderedPairPlacements": 6922240,
+  "pairSamples": [
+    {
+      "posture": "Italic",
+      "weight": 400,
+      "pairs": 692224,
+      "boxCandidates": 33077,
+      "projectionSkips": 27926,
+      "exactChecks": 5151
+    },
+    {
+      "posture": "Italic",
+      "weight": 500,
+      "pairs": 692224,
+      "boxCandidates": 56147,
+      "projectionSkips": 43947,
+      "exactChecks": 12200
+    },
+    {
+      "posture": "Italic",
+      "weight": 550,
+      "pairs": 692224,
+      "boxCandidates": 83462,
+      "projectionSkips": 58733,
+      "exactChecks": 24729
+    },
+    {
+      "posture": "Italic",
+      "weight": 600,
+      "pairs": 692224,
+      "boxCandidates": 95761,
+      "projectionSkips": 62798,
+      "exactChecks": 32963
+    },
+    {
+      "posture": "Italic",
+      "weight": 700,
+      "pairs": 692224,
+      "boxCandidates": 115460,
+      "projectionSkips": 72293,
+      "exactChecks": 43167
+    },
+    {
+      "posture": "Roman",
+      "weight": 400,
+      "pairs": 692224,
+      "boxCandidates": 4745,
+      "projectionSkips": 1075,
+      "exactChecks": 3670
+    },
+    {
+      "posture": "Roman",
+      "weight": 500,
+      "pairs": 692224,
+      "boxCandidates": 5771,
+      "projectionSkips": 1220,
+      "exactChecks": 4551
+    },
+    {
+      "posture": "Roman",
+      "weight": 550,
+      "pairs": 692224,
+      "boxCandidates": 13957,
+      "projectionSkips": 1150,
+      "exactChecks": 12807
+    },
+    {
+      "posture": "Roman",
+      "weight": 600,
+      "pairs": 692224,
+      "boxCandidates": 21060,
+      "projectionSkips": 1243,
+      "exactChecks": 19817
+    },
+    {
+      "posture": "Roman",
+      "weight": 700,
+      "pairs": 692224,
+      "boxCandidates": 31332,
+      "projectionSkips": 1228,
+      "exactChecks": 30104
+    }
+  ],
+  "pairReceipts": [
+    "resources/verification/italic-completion/corrected-fast-pair-export-tests-partial.json",
+    "resources/verification/italic-completion/corrected-italic-high-weight-pairs.json"
+  ],
+  "historicalPreservationMethods": 16,
+  "italicCompletionMethods": 7,
+  "projectionFilter": {
+    "review": "resources/verification/italic-completion/projection-applied-certificate-review.json",
+    "benchmark": "resources/verification/italic-completion/benchmark-projection-overlap.json",
+    "semantics": "Strict integer projection separation certifies disjoint sampled fills. Touching and uncertain pairs retain the original outline intersection check. All ordered pairs and all original sample weights remain covered."
+  },
+  "logs": {
+    "corrected-test-italic-completion.log": {
+      "path": "resources/verification/italic-completion/corrected-test-italic-completion.log",
+      "sha256": "7086db05e2fffd27b73c0348f79799a4654af3f3cef7ef88490435e0dc723b7d"
+    },
+    "test-additions.log": {
+      "path": "resources/verification/italic-completion/test-additions.log",
+      "sha256": "b0e6d6d9e35f91b747eb7a102d0a02cd5fb0cfa198b3971e2f0c71d3dd21c5ae"
+    },
+    "corrected-pdf-tests.log": {
+      "path": "resources/verification/italic-completion/corrected-pdf-tests.log",
+      "sha256": "554b14ca39ed9476bcaf14b9642c0380a8543eee0f0f4431661beda366800e2e"
+    },
+    "corrected-italic-high-weight-pairs.log": {
+      "path": "resources/verification/italic-completion/corrected-italic-high-weight-pairs.log",
+      "sha256": "2847abd44d47e95835a1ae500d58b61426ed622496fda9bd431ab61555535c06"
+    },
+    "corrected-export-tests.log": {
+      "path": "resources/verification/italic-completion/corrected-export-tests.log",
+      "sha256": "a135703e60659f20179495891c9fe26fa3edbd33687d0e54a1fe359442832041"
+    },
+    "test-font-lossless.log": {
+      "path": "resources/verification/italic-completion/test-font-lossless.log",
+      "sha256": "d926358a5ec55aa118d66fd0c84879cef119a4cfe76f2928227a62bd943363eb"
+    },
+    "test-font-snapshot.log": {
+      "path": "resources/verification/italic-completion/test-font-snapshot.log",
+      "sha256": "e495b3a88df07c90bec7259ce1f0fa4720e2db5fece439fb72baa79d92d2350f"
+    },
+    "corrected-fast-pair-export-tests.log": {
+      "path": "resources/verification/italic-completion/corrected-fast-pair-export-tests.log",
+      "sha256": "3bee937375df845f3458c7d7c9e00258a61eb129d524b1041ea365cc2fc91c4b"
+    }
+  },
+  "scope": "This record is bound to the completed 832-character 0.230 increment; concurrent 0.240 middle-extension work has its own validation and preservation chain."
+}

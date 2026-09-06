@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2B0E" format="2">
+  <advance width="584"/>
+  <unicode hex="F2B08"/>
+  <outline>
+    <contour>
+      <point x="210" y="-12" type="qcurve" smooth="yes"/>
+      <point x="159" y="-12"/>
+      <point x="78" y="17"/>
+      <point x="30" y="75"/>
+      <point x="30" y="118" type="qcurve" smooth="yes"/>
+      <point x="30" y="160"/>
+      <point x="75" y="214"/>
+      <point x="148" y="243"/>
+      <point x="189" y="248" type="qcurve"/>
+      <point x="190" y="256" type="line"/>
+      <point x="147" y="265"/>
+      <point x="84" y="309"/>
+      <point x="84" y="352" type="qcurve" smooth="yes"/>
+      <point x="84" y="393"/>
+      <point x="143" y="451"/>
+      <point x="243" y="481"/>
+      <point x="303" y="481" type="qcurve" smooth="yes"/>
+      <point x="347.859813" y="481"/>
+      <point x="388.046729" y="446"/>
+      <point x="403" y="426" type="qcurve"/>
+      <point x="409" y="426" type="line"/>
+      <point x="449" y="473" type="line"/>
+      <point x="531" y="473" type="line"/>
+      <point x="442.667647" y="50" type="line"/>
+      <point x="440.361195" y="39" type="line" smooth="yes"/>
+      <point x="421.361195" y="-53"/>
+      <point x="348.361195" y="-170"/>
+      <point x="233.361195" y="-225"/>
+      <point x="150.361195" y="-225" type="qcurve" smooth="yes"/>
+      <point x="124.361195" y="-225"/>
+      <point x="66.361195" y="-218"/>
+      <point x="16.361195" y="-199"/>
+      <point x="-15.638805" y="-165"/>
+      <point x="-15.638805" y="-137" type="qcurve" smooth="yes"/>
+      <point x="-15.638805" y="-111"/>
+      <point x="16.361195" y="-75"/>
+      <point x="44.361195" y="-75" type="qcurve" smooth="yes"/>
+      <point x="72.361195" y="-75"/>
+      <point x="102.361195" y="-105"/>
+      <point x="124.361195" y="-144"/>
+      <point x="154.361195" y="-174"/>
+      <point x="182.361195" y="-174" type="qcurve" smooth="yes"/>
+      <point x="206.361195" y="-174"/>
+      <point x="250.361195" y="-145"/>
+      <point x="286.361195" y="-80"/>
+      <point x="297.361195" y="-27" type="qcurve" smooth="yes"/>
+      <point x="321.946561" y="85" type="line"/>
+      <point x="298.295879" y="39.883721"/>
+      <point x="247.841091" y="-12"/>
+    </contour>
+    <contour>
+      <point x="302" y="279" type="qcurve" smooth="yes"/>
+      <point x="356.823271" y="279" type="line"/>
+      <point x="356.823271" y="349.223404"/>
+      <point x="334.093766" y="440"/>
+      <point x="305" y="440" type="qcurve" smooth="yes"/>
+      <point x="269" y="440"/>
+      <point x="235" y="387"/>
+      <point x="235" y="355" type="qcurve" smooth="yes"/>
+      <point x="235" y="318"/>
+      <point x="275" y="279"/>
+    </contour>
+    <contour>
+      <point x="345.129154" y="223" type="qcurve"/>
+      <point x="297" y="223" type="line" smooth="yes"/>
+      <point x="239" y="223"/>
+      <point x="188" y="162"/>
+      <point x="188" y="127" type="qcurve" smooth="yes"/>
+      <point x="188" y="94"/>
+      <point x="226" y="62"/>
+      <point x="261" y="62" type="qcurve" smooth="yes"/>
+      <point x="283.31998" y="62"/>
+      <point x="313.366106" y="98.225"/>
+      <point x="335.686085" y="170.675"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>addedInVersion</key>
+        <string>0.230</string>
+        <key>advanceWidth</key>
+        <integer>584</integer>
+        <key>bodyDonorCodePoint</key>
+        <integer>593</integer>
+        <key>counterDesign</key>
+        <string>native-italic-bowl-epsilon-two-counters</string>
+        <key>counterJoinDonorCodePoint</key>
+        <integer>593</integer>
+        <key>family</key>
+        <string>double-bowls</string>
+        <key>glyphId</key>
+        <string>turned-double-bowl-lower-hook</string>
+        <key>lobeAnchor</key>
+        <string>native-bowl-free-extremum</string>
+        <key>lobeBottomY</key>
+        <integer>-12</integer>
+        <key>lobeDonorCodePoint</key>
+        <integer>603</integer>
+        <key>lobeOffsetX</key>
+        <integer>15</integer>
+        <key>lobeTopY</key>
+        <integer>481</integer>
+        <key>lowerDonorCodePoint</key>
+        <integer>609</integer>
+        <key>lowerOffsetX</key>
+        <real>2.361195445920316</real>
+        <key>method</key>
+        <string>Native Italic STIX Two Text bodies and endings, with independently drawn epsilon lobes for double bowls and turned-a diagonal counters for spines. Native arch ribbons translate rigidly; shared-shaft joins follow their receiving axes. Internal free legs retain native terminals.</string>
+        <key>nativePosture</key>
+        <string>Italic</string>
+        <key>recipeCodePoint</key>
+        <integer>994062</integer>
+        <key>sharedStemCenterX</key>
+        <real>417.59987088200836</real>
+        <key>sharedStemCenterY</key>
+        <integer>250</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

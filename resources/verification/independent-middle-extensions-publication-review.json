@@ -1,0 +1,920 @@
+{
+  "schemaVersion": 1,
+  "version": "0.240",
+  "allocationVersion": "0.240",
+  "namingVersion": 3,
+  "reviewedAtUtc": "2026-09-06T08:07:58.719755+00:00",
+  "publicationPages": 70,
+  "files": [
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "pageCount": 33,
+      "pages": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-01.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-02.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-03.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-04.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-05.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-06.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-07.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-08.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-09.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-10.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-11.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-12.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-13.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-14.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-15.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-16.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-17.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-18.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-19.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-20.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-21.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-22.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-23.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-24.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-25.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-26.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-27.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-28.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-29.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-30.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-31.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-32.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-33.png"
+      ],
+      "contacts": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-2.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-3.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-4.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-5.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-6.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-7.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-8.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-9.png"
+      ],
+      "pdfSha256": "cc7bfc41b1d59e89c6118a5b12484a60069dce4020a7938d0081bfdeef270752",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "df041f0eaa5ea7da86c10a426354480dea7b96722e6eee4ab0b06fb60f420a10",
+        "page-02.png": "6bbb2ba02a190a8df5782cd34d93552e959deb9e1b6f5a9c3f602dbf383a84c7",
+        "page-03.png": "cd298a9bf4893bf1fe18f47550322a338a3e56e1c660d117ba113d3cfb9b20e9",
+        "page-04.png": "427a03f8c91bc58c48d6a93b74fe0da4581fb0bc76f47b5d43e432fb672bc967",
+        "page-05.png": "25a664e5c566fed4cb0095ca473061bf6c94539e6d23ab1a7a9ef70acf6cf8d5",
+        "page-06.png": "5a2f48d6030a29be46448eb124f020331b476ae0686e85b0a948a1e35d7af54d",
+        "page-07.png": "43097e8d678c7f451c6f3115b0f0a0fa07d15677e3b0f5804ef9814192704fe8",
+        "page-08.png": "aeba3219393b4c256cad4c4ae374b8a7a7a4ca62ba8e7f4a5e3360e400333195",
+        "page-09.png": "a7b72ea00d3c42ddf60162ba108574925cd46f0ff18c5bdb7a275c770ac1d8ba",
+        "page-10.png": "c7dd72472e2d34d57b3be2f917a93abba8a4639b694817c0dbb1dee25066e299",
+        "page-11.png": "a0f457e8d58fae9ebbac8f3e7bf12e19311ae4073f4697689f60fcae595a9096",
+        "page-12.png": "98a25dd4796cc8699c20f2488d8e958f3bc4c7b1b6973799c0bc9219ce6b7131",
+        "page-13.png": "395b02cd695848500ea21320d839b486692af01c45f462ddd40d17e60a887b86",
+        "page-14.png": "120d6092c3f5812bfcd5f8f548b2fce712b2a7bd78c11cef2260865f30496360",
+        "page-15.png": "cbb24e8795c53901211189f450c1108fb01e73a2e388b1a5edc3b1d7bc608220",
+        "page-16.png": "88964d7223bb3d7521cf6038075c4ce5d0a6f51fb4d508a269086c47a8a30f04",
+        "page-17.png": "a95341959acd9d0245bec4f3fc336ba1e2c72c39e9a9e807084cb684bbc6bac4",
+        "page-18.png": "a68540b6df364fc3d6042773aaa046d2dcd9861965c91e30f423d5320942f578",
+        "page-19.png": "1243b16698102c2dce774104e5a918077615f75e4a3139207e3bd02ebcde8402",
+        "page-20.png": "e0fa07415564bfb6aa9939ed12878207b6ff17fd2bce5ab618501fc25feec9fc",
+        "page-21.png": "101946fcd39e827c03aac522410630bd89a8fb57c91a228cdb3a3fab02dc49b2",
+        "page-22.png": "534880875e4621baa79fd49f80f9f1b79fdd3e2fd75df9e603a6ce88ce3bc35d",
+        "page-23.png": "de63b7b8fbe41a75574834efc602b4421a7e15e6b53dc671664242d885451af1",
+        "page-24.png": "bbcd61c512333269fbc64b47530711ef645d68f4dc86146143d43d8601be87ae",
+        "page-25.png": "3df71fed787f3f15467b82bb6d21db42e1efd559de1346e6028f905bb0310bfe",
+        "page-26.png": "d3fdeae3325724434bb5bf8490a7a3cae26ce1b953ed10004908381ea1a4c21c",
+        "page-27.png": "407e60ee63da80f80efc3bc3f9960008c77e2b6ba9f080264814f47d69b47c60",
+        "page-28.png": "b60a19a5e5664820a4ea376209b18d5a1c44710c09ba3e4f21485dd2a3fd75c0",
+        "page-29.png": "149530539e51518a399a13a1e568fb6cb35bdff8160cf8a313093896ae1ff394",
+        "page-30.png": "792645cf1017f0fcc5a58bb0a8a0e55b7773fc2e736abefc4aadfb2f402a6690",
+        "page-31.png": "5858f579a86c897055cc51fc0598c008d4f8878fe30401863c9b799e7d966f1d",
+        "page-32.png": "bb49e7751f1d1b66e9fcd4e1add3fb447f314f7359ce2016a604b1009a6a225e",
+        "page-33.png": "6bcfc38b53ef5df39f88432ca05997ce6f510531f021872087c832a7380f8a90"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-a.pdf",
+      "pageCount": 7,
+      "pages": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-2.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-3.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-4.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-5.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-6.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/page-7.png"
+      ],
+      "contacts": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/contact-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-a/contact-2.png"
+      ],
+      "pdfSha256": "8e199d1717ac91026daf3b21b56953360ab9e245f5f3746516d97393fd388e2f",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "f71259509ef04d4f10fb16fdce57c19ecbc49632ca093f4388366e27c818aa3c",
+        "page-2.png": "6de0d25d7bfed0f440449a70a9a49c582829ab16dc995c9dfb4082607d72f3f8",
+        "page-3.png": "163217dd4c4fbecc11acd976b4a34bf731174c0abaa2bc1539e9222c1286c1c9",
+        "page-4.png": "6f9ee009014c0dfc03a76393d75b2874c5b0e75c6da2fe465738c1f1dc677dc2",
+        "page-5.png": "06dc4579a23174af3ee1bdca51a2a7c11bca2263ba4c13eab6975f70ee6526b6",
+        "page-6.png": "8022d265942836824f3624ae24817881ae6d8f1ab365639cba5febc5404906fd",
+        "page-7.png": "5339e648b156cde2220f137fda74f21f18da7bb9b4534207a87ec996c46fba75"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-b.pdf",
+      "pageCount": 20,
+      "pages": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-01.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-02.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-03.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-04.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-05.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-06.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-07.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-08.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-09.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-10.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-11.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-12.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-13.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-14.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-15.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-16.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-17.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-18.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-19.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/page-20.png"
+      ],
+      "contacts": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/contact-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/contact-2.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/contact-3.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/contact-4.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-extended-b/contact-5.png"
+      ],
+      "pdfSha256": "e61730ec1d8c91ea12e8d79630802f551c0df30de65d6e99713c0b0ffbd92509",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "69b57dbd3317296a652f99898f62db0f4e297a035a048801ac245c7236ea3059",
+        "page-02.png": "3ac32cb340cb2d04cbc19ba512b8b46fc087a9a50a8265d16b86a8723a4026a8",
+        "page-03.png": "7416cea6ae42923c177e575f5572016165662ed39e902564780680b87332713b",
+        "page-04.png": "553fb8d9ce52ac44e85738e77d803c5ce275055d9354fd46ae93c5dab4f2f554",
+        "page-05.png": "3b62731caebbe3c4f53724f5b8b2d9ba9984abd2926c5814a6f8ede272c297be",
+        "page-06.png": "2481ae44f50c0c9431e6a506822b19a52e7b8c58edb4174a6820405d1545faaf",
+        "page-07.png": "8499adfe561eaefd2c515917a7d1e1aa2ca09098ca1b8b70f01a4567be9e0504",
+        "page-08.png": "4d334616641bcf1359ac498a09f405a37d817751c5b6cc812797a1495862efc3",
+        "page-09.png": "7b20118eb7d1bac1f8aba06362e0e90331b544cbb327e7919df1c7ba2eeb3c66",
+        "page-10.png": "9133c0a2f37f78aca041d3142ee6113e07c76342257a4b46840ecca170dc2fe1",
+        "page-11.png": "ecf7a4dc4708e4f8fb8807150cfb5e393d027263833707569620c7ab576d16d1",
+        "page-12.png": "240b8c8a9f916ab0627750948d3bc435cd67a1d23a58cae33b8edd68fde26270",
+        "page-13.png": "d03ed5f033066c17cbd0bda2c4038d8f1e991550bd92183b6897bb39840a6d07",
+        "page-14.png": "20f61c7b85e9e6a45a8cc9d6071fffedbf476e88db550314fb1243bce440de29",
+        "page-15.png": "61bfeb453f11e37d541147d37a0707588c608696899970380ecf223bc547fd3d",
+        "page-16.png": "c4a5e55dee9ef602e6aabfa98883f32536c1fd0809f79acfea83f9648516d2aa",
+        "page-17.png": "cb6008899495d041f6dfccf8281b156da634a8de9ccd8939e6c1a27a94fdbd28",
+        "page-18.png": "6ea67ce50a98400565d61c2c718f1b389a9029008538379c0744addf0593ff70",
+        "page-19.png": "171aa745087564a9c6503ce61d4167872e0496a23075cfbb9ca234d8d207a841",
+        "page-20.png": "ce19b962db212c3d408331f75c126ceb20f36c52deb695cac33835c7f27cdcf1"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-proposal.pdf",
+      "pageCount": 4,
+      "pages": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-proposal/page-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-proposal/page-2.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-proposal/page-3.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-proposal/page-4.png"
+      ],
+      "contacts": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-proposal/contact-1.png"
+      ],
+      "pdfSha256": "6d4b1fdb53a9ba36ba5e2a146135c39f0eae44814ab5df91440198c722afeeb9",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "a413b7edd656d51cd8b476124e0c7cbc2fc01a02f43f22b847bfd54880818702",
+        "page-2.png": "173fb1be28e556926b60cba1d029e255a026632b70c89dfee8c871ab93b58149",
+        "page-3.png": "b6bab6a1d01b74c8085a353c5a71081731d7b645b3db6a9c6f79217145665df2",
+        "page-4.png": "1902243215fa1704657dcc56d8b57d9aefe0828cb7f6df1b782cf749968caa59"
+      }
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "pageCount": 6,
+      "pages": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-2.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-3.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-4.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-5.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/page-6.png"
+      ],
+      "contacts": [
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/contact-1.png",
+        ".tmp/independent-middle-extensions/pdf-review/quintessential-latin/contact-2.png"
+      ],
+      "pdfSha256": "6421ea8ca0ab257a068a7b8258974342fa3ccae3b2244f239bb17644093d8581",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "df041f0eaa5ea7da86c10a426354480dea7b96722e6eee4ab0b06fb60f420a10",
+        "page-2.png": "6bbb2ba02a190a8df5782cd34d93552e959deb9e1b6f5a9c3f602dbf383a84c7",
+        "page-3.png": "cd298a9bf4893bf1fe18f47550322a338a3e56e1c660d117ba113d3cfb9b20e9",
+        "page-4.png": "427a03f8c91bc58c48d6a93b74fe0da4581fb0bc76f47b5d43e432fb672bc967",
+        "page-5.png": "25a664e5c566fed4cb0095ca473061bf6c94539e6d23ab1a7a9ef70acf6cf8d5",
+        "page-6.png": "5a2f48d6030a29be46448eb124f020331b476ae0686e85b0a948a1e35d7af54d"
+      }
+    }
+  ],
+  "publicationBuildManifestSha256": "2148a5a1d8d894c7d606d593bc517cb228b33d601748341a2b62fcea8727fd98",
+  "sourceFontBuildManifestSha256": "3a7b1333668a0ba61510a944fdecfd8650cb34e611c3a01ca8d6dc47c922d31d",
+  "publicationReviews": [
+    {
+      "reviewer": "publication_integration",
+      "pagesInspected": 37,
+      "files": [
+        "quintessential-latin-extended-a.pdf",
+        "quintessential-latin-extended-b.pdf",
+        "quintessential-latin-proposal.pdf",
+        "quintessential-latin.pdf"
+      ],
+      "method": "Inspected all 10 contact sheets covering all 37 block and proposal pages, then original-resolution Extended-B pages 4, 12 and 18 and proposal page 1. Glyphs, numeric labels, names, headings, continuation edges, vacancies, and page bounds show no visible defects.",
+      "originalResolutionPages": {
+        "quintessential-latin-extended-b.pdf": [
+          4,
+          12,
+          18
+        ],
+        "quintessential-latin-proposal.pdf": [
+          1
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "version": "0.240",
+      "reviewedAt": "2026-09-06T08:03:47.982Z",
+      "reviewer": "catalogue_audit",
+      "pdf": {
+        "path": "output/pdf/quintessential-latin-catalogue.pdf",
+        "sha256": "cc7bfc41b1d59e89c6118a5b12484a60069dce4020a7938d0081bfdeef270752",
+        "pages": 33
+      },
+      "buildManifest": {
+        "path": "output/pdf/build-manifest.json",
+        "sha256": "2148a5a1d8d894c7d606d593bc517cb228b33d601748341a2b62fcea8727fd98"
+      },
+      "renderManifest": {
+        "path": ".tmp/independent-middle-extensions/pdf-review/manifest.json",
+        "sha256": "31a3967622ddab9ee2ce8d4ba470a9a81825f855844f3cc78724a2b0fb4832ff"
+      },
+      "reference": {
+        "font": "Quintessential Serif",
+        "posture": "Roman",
+        "weight": 400
+      },
+      "sourceFontHashes": {
+        "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "5b169adace7328e4980763fc9cd87c32a50f0daa360143500945986ba35beabb",
+        "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
+        "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
+        "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
+        "resources/fonts/SourceSans3/SourceSans3-Bold.ttf": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
+        "resources/fonts/SourceSans3/SourceSans3-It.ttf": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4"
+      },
+      "result": "Pass: all 33 pages visually reviewed; no clipping, overlap, missing glyphs, or other visible publication defects observed.",
+      "userVisualAcceptance": "Pending",
+      "scope": {
+        "contactReviewedPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "nativeResolutionPages": [
+          17,
+          18,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "changedChartPages": [
+          17,
+          18
+        ],
+        "newNamesAndContinuationPages": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      "renderer": {
+        "name": "pdftoppm version 26.07.0",
+        "dpi": 110,
+        "tool": "view_image",
+        "nativePagePixels": [
+          935,
+          1210
+        ],
+        "contactSheetPixels": [
+          918,
+          1244
+        ],
+        "limitation": "Every page was inspected through its contact sheet. The new F2E/F2F grids and all pages containing new F2E00-F2F7F names received additional original-resolution inspection at 110 DPI. Other pages were reviewed at contact-sheet scale, not at high print magnification.",
+        "finalContactSheetPixels": [
+          918,
+          622
+        ]
+      },
+      "observations": [
+        "All 33 pages have consistent headers, footers, page numbers, margins, and column alignment.",
+        "New F2E/F2F glyphs and their hexadecimal labels remain inside the chart cells. F2F80-F2FFF vacancies retain consistent hatch treatment.",
+        "Independent variants have separate names and code points; F2E00/F2E01 begin the new allocation on page 25.",
+        "Dense names pages wrap within their own columns without clipping, overprinting, or collisions with glyphs and code points.",
+        "Family headings remain with following entries; cross-column and cross-page continuations flow cleanly.",
+        "Local long-bowl names distinguish open and closed forms on page 27, matching the independent immediate-neighbor extension states.",
+        "The last continuation page ends cleanly at F2F7F. Sparse block-ending pages retain the established catalogue flow."
+      ],
+      "issues": [],
+      "contacts": [
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-1.png",
+          "sha256": "eafc792e1a80b1f765b7dbd2790004d72a31887fa732a6798b5dbf3ef06d27da",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-2.png",
+          "sha256": "1e424ca117c3e11aa1843a09e007a9249defa16a33a5d7259f7fce3641188892",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-3.png",
+          "sha256": "3cb4e4ca298eeec023907c5686194d5020e22f41c2337d0ade57cfecd6370d49",
+          "pages": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-4.png",
+          "sha256": "111cc739a66c7501c7a9da3ab95dbb8fc6bc01986182f536375cde5999775a96",
+          "pages": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-5.png",
+          "sha256": "579d332af56a9af4b15da1ce3536817043d1a10827eaf7a75af66c18c536f315",
+          "pages": [
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-6.png",
+          "sha256": "7b3845d18962728fec927b44ad2079d5d58ec0919f35cc4dd59c871f4a91e344",
+          "pages": [
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-7.png",
+          "sha256": "7c61be0398f2e57bea800b192ce42e2f7c56d6a909de4f9b1895e17a56ad65bf",
+          "pages": [
+            25,
+            26,
+            27,
+            28
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-8.png",
+          "sha256": "f5b40e40ca2096114f545cccf1361e2791be60c0d697bf36308d9b2c0d008787",
+          "pages": [
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        {
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-9.png",
+          "sha256": "d534e0721ba6ffb7001ccf70b84e8d809b84a96457b5ede49252d3be6394b660",
+          "pages": [
+            33
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-01.png",
+          "sha256": "df041f0eaa5ea7da86c10a426354480dea7b96722e6eee4ab0b06fb60f420a10",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 2,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-02.png",
+          "sha256": "6bbb2ba02a190a8df5782cd34d93552e959deb9e1b6f5a9c3f602dbf383a84c7",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 3,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-03.png",
+          "sha256": "cd298a9bf4893bf1fe18f47550322a338a3e56e1c660d117ba113d3cfb9b20e9",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 4,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-04.png",
+          "sha256": "427a03f8c91bc58c48d6a93b74fe0da4581fb0bc76f47b5d43e432fb672bc967",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 5,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-05.png",
+          "sha256": "25a664e5c566fed4cb0095ca473061bf6c94539e6d23ab1a7a9ef70acf6cf8d5",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 6,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-06.png",
+          "sha256": "5a2f48d6030a29be46448eb124f020331b476ae0686e85b0a948a1e35d7af54d",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 7,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-07.png",
+          "sha256": "43097e8d678c7f451c6f3115b0f0a0fa07d15677e3b0f5804ef9814192704fe8",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 8,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-08.png",
+          "sha256": "aeba3219393b4c256cad4c4ae374b8a7a7a4ca62ba8e7f4a5e3360e400333195",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 9,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-09.png",
+          "sha256": "a7b72ea00d3c42ddf60162ba108574925cd46f0ff18c5bdb7a275c770ac1d8ba",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 10,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-10.png",
+          "sha256": "c7dd72472e2d34d57b3be2f917a93abba8a4639b694817c0dbb1dee25066e299",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 11,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-11.png",
+          "sha256": "a0f457e8d58fae9ebbac8f3e7bf12e19311ae4073f4697689f60fcae595a9096",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 12,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-12.png",
+          "sha256": "98a25dd4796cc8699c20f2488d8e958f3bc4c7b1b6973799c0bc9219ce6b7131",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 13,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-13.png",
+          "sha256": "395b02cd695848500ea21320d839b486692af01c45f462ddd40d17e60a887b86",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 14,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-14.png",
+          "sha256": "120d6092c3f5812bfcd5f8f548b2fce712b2a7bd78c11cef2260865f30496360",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 15,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-15.png",
+          "sha256": "cbb24e8795c53901211189f450c1108fb01e73a2e388b1a5edc3b1d7bc608220",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 16,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-16.png",
+          "sha256": "88964d7223bb3d7521cf6038075c4ce5d0a6f51fb4d508a269086c47a8a30f04",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 17,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-17.png",
+          "sha256": "a95341959acd9d0245bec4f3fc336ba1e2c72c39e9a9e807084cb684bbc6bac4",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 18,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-18.png",
+          "sha256": "a68540b6df364fc3d6042773aaa046d2dcd9861965c91e30f423d5320942f578",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 19,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-19.png",
+          "sha256": "1243b16698102c2dce774104e5a918077615f75e4a3139207e3bd02ebcde8402",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 20,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-20.png",
+          "sha256": "e0fa07415564bfb6aa9939ed12878207b6ff17fd2bce5ab618501fc25feec9fc",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 21,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-21.png",
+          "sha256": "101946fcd39e827c03aac522410630bd89a8fb57c91a228cdb3a3fab02dc49b2",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 22,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-22.png",
+          "sha256": "534880875e4621baa79fd49f80f9f1b79fdd3e2fd75df9e603a6ce88ce3bc35d",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 23,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-23.png",
+          "sha256": "de63b7b8fbe41a75574834efc602b4421a7e15e6b53dc671664242d885451af1",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 24,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-24.png",
+          "sha256": "bbcd61c512333269fbc64b47530711ef645d68f4dc86146143d43d8601be87ae",
+          "inspection": "Contact sheet",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 25,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-25.png",
+          "sha256": "3df71fed787f3f15467b82bb6d21db42e1efd559de1346e6028f905bb0310bfe",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 26,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-26.png",
+          "sha256": "d3fdeae3325724434bb5bf8490a7a3cae26ce1b953ed10004908381ea1a4c21c",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 27,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-27.png",
+          "sha256": "407e60ee63da80f80efc3bc3f9960008c77e2b6ba9f080264814f47d69b47c60",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 28,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-28.png",
+          "sha256": "b60a19a5e5664820a4ea376209b18d5a1c44710c09ba3e4f21485dd2a3fd75c0",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 29,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-29.png",
+          "sha256": "149530539e51518a399a13a1e568fb6cb35bdff8160cf8a313093896ae1ff394",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 30,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-30.png",
+          "sha256": "792645cf1017f0fcc5a58bb0a8a0e55b7773fc2e736abefc4aadfb2f402a6690",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 31,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-31.png",
+          "sha256": "5858f579a86c897055cc51fc0598c008d4f8878fe30401863c9b799e7d966f1d",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 32,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-32.png",
+          "sha256": "bb49e7751f1d1b66e9fcd4e1add3fb447f314f7359ce2016a604b1009a6a225e",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        },
+        {
+          "page": 33,
+          "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-33.png",
+          "sha256": "6bcfc38b53ef5df39f88432ca05997ce6f510531f021872087c832a7380f8a90",
+          "inspection": "Contact sheet and original-resolution page PNG",
+          "result": "No visible defects observed"
+        }
+      ]
+    }
+  ],
+  "pdfChecks": 9,
+  "namingTests": 20,
+  "siteAcceptanceGroups": 12,
+  "pdfRepeatBuild": {
+    "status": "passed",
+    "outputs": {
+      "quintessential-latin-catalogue.pdf": "cc7bfc41b1d59e89c6118a5b12484a60069dce4020a7938d0081bfdeef270752",
+      "quintessential-latin-extended-a.pdf": "8e199d1717ac91026daf3b21b56953360ab9e245f5f3746516d97393fd388e2f",
+      "quintessential-latin-extended-b.pdf": "e61730ec1d8c91ea12e8d79630802f551c0df30de65d6e99713c0b0ffbd92509",
+      "quintessential-latin-proposal.pdf": "6d4b1fdb53a9ba36ba5e2a146135c39f0eae44814ab5df91440198c722afeeb9",
+      "quintessential-latin.pdf": "6421ea8ca0ab257a068a7b8258974342fa3ccae3b2244f239bb17644093d8581"
+    },
+    "manifestSha256": "2148a5a1d8d894c7d606d593bc517cb228b33d601748341a2b62fcea8727fd98"
+  },
+  "browserChecks": 152,
+  "browserPrintReview": {
+    "pdf": "charts-browser-print.pdf",
+    "pageCount": 26,
+    "pages": [
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-01.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-02.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-03.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-04.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-05.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-06.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-07.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-08.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-09.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-10.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-11.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-12.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-13.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-14.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-15.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-16.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-17.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-18.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-19.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-20.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-21.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-22.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-23.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-24.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-25.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/page-26.png"
+    ],
+    "contacts": [
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-1.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-2.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-3.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-4.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-5.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-6.png",
+      ".tmp/independent-middle-extensions/browser-print-review/charts-browser-print/contact-7.png"
+    ],
+    "pdfSha256": "209544c0b2bd190999d575f8a993808da0adfdbcdceedae5902d583f96665bcb",
+    "dpi": 110,
+    "renderer": "pdftoppm version 26.07.0",
+    "renderedPageSha256": {
+      "page-01.png": "8fdfc05635b1cc02635caa073989c8df0dee9b5e3679bf346cad78c8a23cb618",
+      "page-02.png": "c087f78be3717c6585c692cdb025bd57256d4132d91304424db42f4b908accb8",
+      "page-03.png": "251cecfad3ab8883893ebfbe5907300e3ae0d2c8e7ccc7e051172463b16d3ad3",
+      "page-04.png": "51b60811b6a82a621840ec8c0fe2e8039c6a82a37c4bc0c8138e3b93823820a5",
+      "page-05.png": "18ac8273b0b1f3728a173c9df302ad8c4b7cf40ba779b026d62ed1e86a363e0e",
+      "page-06.png": "a78fb9d3e1c23d6a004df0c829a5800fc114460e4e714771399f023011213699",
+      "page-07.png": "19d1aa2854b2c47071502ddc2c6fc210bb053f53373b0e66f1e6bb9b72e6f3a5",
+      "page-08.png": "3481d4bd0d405932cf7d6e727afd6cb89241c5b313aa572f198c30cdf54f7da5",
+      "page-09.png": "1a5775e7999babcb33b8b492abea256a8b92112dd5fd366977b83bf8e2302877",
+      "page-10.png": "86f4e0c5e6c1c2958db33c01ba8337a72477d36de0bc85922df9c33a047b3e8a",
+      "page-11.png": "7d5865bf12bb1e6cd5baffb46bc7fb79968157813679e0d55a318e6fcf06898a",
+      "page-12.png": "cd2b26a636d2566a3c4887414d9bff40ef0ee4b6b85911ac2b6255dc2de4a0bc",
+      "page-13.png": "c8f8d5444c8abae6bd2d1fbbbd8883b8f8aecb96d1e93f9ea581188ad93f7059",
+      "page-14.png": "7a3100469f88e179176aabbdc81fcce7f7a0528b95f8783239f49b3228956d25",
+      "page-15.png": "9b2131105c4dd648e9cc14bbf7341518c946e7152d676f85872d0d9877615fd5",
+      "page-16.png": "cc91d2d8d100eb7d827db3e1302ee701f0c11b7ef6f2ccdd3f47bfc35f9006e1",
+      "page-17.png": "6faa5a63d8cc626351879ddca4a5af51d3b62542a4036505192d584b40726c2f",
+      "page-18.png": "26e7957b00e8aa0410c24a3661a7451c799e966bd5ed24c6bc3ccfd9497613f0",
+      "page-19.png": "28c421562d7d086357670657b0dcbe9152e09cc635a2223262890eb76314fffc",
+      "page-20.png": "7b8468de3b771aefff4fac6ee9b6295103f6d7262fba841527ad4faeffbcf9ec",
+      "page-21.png": "6d3c2dd8797474cd183d468f84b3d2f5eb037c98ccdac7c90d2bf182ec4a48e7",
+      "page-22.png": "730cc3d5184e8e6986cda778260b1078a163773d2e51228cc6b2796ce30a6765",
+      "page-23.png": "7317b52793b4e698cf7d6f1d7d0ec661facc138d93e412ea7ed191d82545e5dc",
+      "page-24.png": "6ecfdb20dbb09e3dbdd89fcaf5b59fa6e0ee49114913f7cdf9ccaddc35c35ac3",
+      "page-25.png": "f210f85ec721f7747d282539f7799162d27b217032e8fc68cd2c00d0a15ca5c5",
+      "page-26.png": "dbf976590cd8ed4ae3fb760dc9848920f9d91813c3775254a157e256dffc1814"
+    },
+    "posture": "Italic",
+    "weight": 700,
+    "pagesInspectedViaContacts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "originalResolutionPages": [
+      12,
+      19,
+      20
+    ],
+    "result": "All 26 pages visually inspected. No clipping, missing glyphs, overlapping names, or broken pagination found."
+  },
+  "browserScreenReview": {
+    "viewports": [
+      1440,
+      375,
+      320
+    ],
+    "pages": [
+      "Introduction",
+      "Code charts",
+      "UCSUR proposal",
+      "Downloads"
+    ],
+    "screenshots": {
+      ".tmp/browser-review/index-1440.png": "eaaf967116c01ecc6b559436250425d98eeec818fce697b1b266e7a99d1873c4",
+      ".tmp/browser-review/charts-1440.png": "1610ea156d8948fb3f7f420af6aa4437d3d228b079ec4479ca6e27c8e0100e91",
+      ".tmp/browser-review/proposal-1440.png": "dff5ff528ec2995f7ce89bb923688b16724b3056315d16548832f9bb73e040ff",
+      ".tmp/browser-review/downloads-1440.png": "6ed608444d4a527a5f0bdc940342913c412e345bb16a1f96aa4469a1baf49b6e",
+      ".tmp/browser-review/index-375.png": "414acedec2362de54a298c18e1acc25b1601b1928e00bdb0ad9ad761da400145",
+      ".tmp/browser-review/charts-375.png": "b7b209a846f71f5d94371531247b7e14f2fe0b3b8c090d928a5fd0669be7ebec",
+      ".tmp/browser-review/proposal-375.png": "8506fc1406cd96d56355b3fcd5906184127e2a6190c5916a6e8c43bfcfc86fa4",
+      ".tmp/browser-review/downloads-375.png": "36f22c01f43ac70a4b366fd447ac221a668cb4fd93d21b85f1f5fb23fc735534",
+      ".tmp/browser-review/chart-sheet-320.png": "bb38c92a22ebee651c15ceee7ae77a0dc69eb56a2a321612eea5c266712a244f"
+    },
+    "mobileProposalDetail": {
+      "path": ".tmp/independent-middle-extensions/proposal-mobile-segments.png",
+      "sha256": "1a501d13a3bd05ed97d4a2697863b2111aded0f05accfffa26308babd9dab8ae"
+    },
+    "result": "Desktop and mobile page layouts remain legible and contained, with current counts, range, and font version."
+  },
+  "fourStateBrowserReview": {
+    "sourceReportSha256": "68bbf87de68585478ce6272f1d0238432b192223363a6432f5245917334da5bc",
+    "sampleBaseGlyphId": "double-arched-arm",
+    "states": [
+      "neither",
+      "left",
+      "right",
+      "both"
+    ],
+    "codePoints": [
+      "U+F2C00",
+      "U+F2E00",
+      "U+F2E01",
+      "U+F2C0C"
+    ],
+    "viewports": [
+      1440,
+      375
+    ],
+    "settings": [
+      {
+        "posture": "Roman",
+        "weight": 400
+      },
+      {
+        "posture": "Italic",
+        "weight": 700
+      }
+    ],
+    "nativeFontDialogStatesVerified": 16,
+    "screenshots": {
+      ".tmp/independent-middle-extensions/browser-states/1440-italic-700-both.png": "4812946dc60467aa87c819f60fbd9247ef1ab8fde53700b4712d112fec59bec4",
+      ".tmp/independent-middle-extensions/browser-states/1440-italic-700-left.png": "0e09b7f63efb49edf1915ee59667213d1bbd754b5baa2c09f0356eec67afe62e",
+      ".tmp/independent-middle-extensions/browser-states/1440-italic-700-neither.png": "fb28cbcf2497cbaa0770375ff5ba0b884e51fb7b7161743fcae01d7139f8c52e",
+      ".tmp/independent-middle-extensions/browser-states/1440-italic-700-right.png": "3fb0d39ac306ad4f743b6ea4d9d464fcd9384488e2eb1e45ab5ffc07085950e6",
+      ".tmp/independent-middle-extensions/browser-states/1440-roman-400-both.png": "571a589c18d876919842da97f30eb9da27103e289d98e532742950d7026e1178",
+      ".tmp/independent-middle-extensions/browser-states/1440-roman-400-left.png": "bf20a5e663b6afd3b7255849ccb8fc6a1feab764eb51d5a82fc620f07afe59dc",
+      ".tmp/independent-middle-extensions/browser-states/1440-roman-400-neither.png": "9035b7fad4ce63110175ee7bbe018663197fd8c27b8083efd57774453972321c",
+      ".tmp/independent-middle-extensions/browser-states/1440-roman-400-right.png": "cf07bfcf9df37414badddf8475fe7a63acdb872d9f1a8fd4f2738eb0942e4a17",
+      ".tmp/independent-middle-extensions/browser-states/375-italic-700-both.png": "8fff4fc576398282b7b638015db3cea888b5beef4cdff0da82a90f1117b6187c",
+      ".tmp/independent-middle-extensions/browser-states/375-italic-700-left.png": "4e0e8f5934ecbb763ac99cd46a68d2b9b0868d322f3a4f6e38ea87474497df1b",
+      ".tmp/independent-middle-extensions/browser-states/375-italic-700-neither.png": "abdeb96015e23d5f162b3362e06f17448fab99c47cfb1468111fff9adac6c5b4",
+      ".tmp/independent-middle-extensions/browser-states/375-italic-700-right.png": "7a41aca7defadf0879d5bab621e4bd37842e122d24fefe0e9e71e3aea29ff8f7",
+      ".tmp/independent-middle-extensions/browser-states/375-roman-400-both.png": "0c4b397ae470b50029fb975571d7028981efc281c8dac7ba30578169fa788aca",
+      ".tmp/independent-middle-extensions/browser-states/375-roman-400-left.png": "9a19eb2ba2c4d0da691cb34daf9657bdf03f6f5e384be0b7916507736572b056",
+      ".tmp/independent-middle-extensions/browser-states/375-roman-400-neither.png": "4bbb26261fede57bcbe1b1902902acac4670f4c45b0f935dde9d96d6b7fc20e1",
+      ".tmp/independent-middle-extensions/browser-states/375-roman-400-right.png": "aa7ab0aaea2f18810ea4a55804e454ddf165c3091de7e4e3dd654271dc2d6d69",
+      ".tmp/independent-middle-extensions/browser-states/contact-1440-italic-700.png": "6bbaf16a38252b1ee430c3e3ad434df4f43a2b3752d6384222aad9111c8c14b6",
+      ".tmp/independent-middle-extensions/browser-states/contact-1440-roman-400.png": "8c51cf9f98f655b73f200f260b4a2e05bc1a5aa63d2b1ad651c0d31952d5a5b1",
+      ".tmp/independent-middle-extensions/browser-states/contact-375-italic-700.png": "20f3fe64f511dd2178ec742b38f842071494f2841bb801fce4fb9ce5c41035ad",
+      ".tmp/independent-middle-extensions/browser-states/contact-375-roman-400.png": "cc8e272b014fa57c47eef49eef7282fb3a58fad853903f0a0a1673da4c5e5a1f"
+    },
+    "result": "All sixteen native-font dialog states inspected. Left-only, right-only, neither, and both extensions remain visibly distinct and dialogs fit desktop and phone widths."
+  },
+  "environmentRecovery": [
+    "Initial sandbox PDF manifest write returned Windows OSError 22; unchanged builder succeeded with standard escalation.",
+    "Initial browser suite returned spawn EPERM; unchanged browser suite succeeded with standard escalation."
+  ],
+  "deployment": "Local build only; no external publication or deployment performed.",
+  "userVisualAcceptance": "Pending"
+}

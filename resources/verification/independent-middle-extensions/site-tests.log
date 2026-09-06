@@ -1,0 +1,43 @@
+npm notice run quintessential-latin@0.240.0 test
+npm notice run node tools/test_canonical_glyph_names.js && node tools/test_site.mjs
+✔ all nine stem primitives and the ordinary body vocabulary (8.2193ms)
+✔ Section 4 short-form examples preserve left-to-right connection roles (0.9763ms)
+✔ upward bowls omit only the straight upper extension that actually closes them (1.2475ms)
+✔ downward bowls omit only the straight lower extension that actually closes them (0.5571ms)
+✔ all closed-neighbor requirements are collected before naming a shared upright (0.3719ms)
+✔ interior branches use upright primitives and retain terminal branch names (0.8115ms)
+✔ count rules combine equal adjacent uprights without crossing a body (0.6337ms)
+✔ Section 6 final long bowls close against the immediate interior upright (0.3941ms)
+✔ Section 6 initial long bowls close against the immediate interior upright (0.4558ms)
+✔ changing every distant main-upright extension leaves interior-neighbor closure local (2.7721ms)
+✔ one-sided and two-sided spines retain attachment features and never acquire opening qualifiers (1.1732ms)
+✔ formatting uses one with and any remaining and separators after abbreviation (0.7967ms)
+✔ default extensions and explicit absent extensions name the same structure (0.3427ms)
+✔ all 1216 neutral structures retain unique canonical names without mutation (37.7242ms)
+✔ all two-middle constructions include every independent extension state (15.4152ms)
+✔ independent additions preserve every prior allocation identity and display order (35.1429ms)
+✔ mixed middle states name visual sides and close only against the selected adjacent upright (1.0581ms)
+✔ requested code points use uniform letter names and simplified upright counts (0.6727ms)
+✔ Special names and adjacent interior closures remain explicit structural fixtures (0.4422ms)
+✔ unsupported long bowl adjacency and spine opening states fail (0.2906ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 126.8821
+PASS Mapped repertoire and native posture coverage
+PASS Safe persisted controls with the complete variable axis
+PASS Code, name, literal-character, and compound search
+PASS Unicode coordinates and six complete publication sheets
+PASS Long forms fit their allocated representative widths
+PASS HTML escaping protects generated text
+PASS Four progressive pages share the controls and semantic navigation
+PASS Project marks use the controlled reference font and removed page is absent
+PASS Responsive static variants, six print grids, and one numeric names list
+PASS Every local link and asset resolves beneath the Pages repository prefix
+PASS Curated deployment excludes proof data and source trees
+PASS PDF freshness binds current inputs and detects stale or altered publication artifacts
+12 site acceptance groups passed.

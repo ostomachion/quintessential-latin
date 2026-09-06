@@ -1,0 +1,24 @@
+Retained 5 completed methods; running 33 unfinished methods
+test_variable_kerning_clears_every_ordered_pair (test_quintessential_font.QuintessentialFontTests.test_variable_kerning_clears_every_ordered_pair) ... pair gate: preparing Roman 400
+pair gate: passed Roman 400; pairs=1478656, boxCandidates=6809, projectionSkips=1555, exactChecks=5254
+pair gate: preparing Roman 500
+pair gate: passed Roman 500; pairs=1478656, boxCandidates=8299, projectionSkips=1776, exactChecks=6523
+pair gate: preparing Roman 550
+pair gate: passed Roman 550; pairs=1478656, boxCandidates=26057, projectionSkips=1694, exactChecks=24363
+pair gate: preparing Roman 600
+pair gate: passed Roman 600; pairs=1478656, boxCandidates=40844, projectionSkips=1811, exactChecks=39033
+pair gate: preparing Roman 700
+pair gate: passed Roman 700; pairs=1478656, boxCandidates=62752, projectionSkips=1790, exactChecks=60962
+pair gate: preparing Italic 400
+pair gate: passed Italic 400; pairs=1478656, boxCandidates=62487, projectionSkips=53918, exactChecks=8569
+pair gate: preparing Italic 500
+pair gate: passed Italic 500; pairs=1478656, boxCandidates=108079, projectionSkips=85691, exactChecks=22388
+pair gate: preparing Italic 550
+pair gate: passed Italic 550; pairs=1478656, boxCandidates=164096, projectionSkips=115703, exactChecks=48393
+pair gate: preparing Italic 600
+pair gate: passed Italic 600; pairs=1478656, boxCandidates=187951, projectionSkips=123044, exactChecks=64907
+pair gate: preparing Italic 700
+pair gate: passed Italic 700; pairs=1478656, boxCandidates=224142, projectionSkips=140391, exactChecks=83751
+ok
+test_bowled_spines_are_distinct_connected_and_keep_one_counter (test_quintessential_font.QuintessentialFontTests.test_bowled_spines_are_distinct_connected_and_keep_one_counter) ... ok
+test_complete_arm_family_preserves_native_arm_regions (test_quintessential_font.QuintessentialFontTests.test_complete_arm_family_preserves_native_arm_regions) ... 

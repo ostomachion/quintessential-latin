@@ -1,0 +1,165 @@
+{
+  "status": "Bounded benchmark stopped after completed400/550 results to prioritize full ordered-pair run.",
+  "fontSha256": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456",
+  "directions": [
+    [
+      1000,
+      -213
+    ],
+    [
+      5,
+      -1
+    ],
+    [
+      4,
+      -1
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "scale": 64,
+  "curveSteps": 96,
+  "seed": 20260906,
+  "strictIntegerProjectionSeparation": true,
+  "benchmarkSourceSha256": "e1b775826cf7f08ce65ebd5cf0608f3f7b0d6f5f32b3c20a938a94beaad0e190",
+  "results": [
+    {
+      "weight": 400,
+      "glyphCount": 832,
+      "realBboxCandidatesTotal": 33077,
+      "fontAndShapePreparationSeconds": 29.508492599998135,
+      "projectionPreparationSeconds": 13.818245900001784,
+      "groups": {
+        "real": {
+          "sampleCount": 2000,
+          "originalPositiveResults": 0,
+          "rejected": 1669,
+          "fallthroughCount": 331,
+          "fallthroughRate": 0.16549999999999998,
+          "mismatches": 0,
+          "timingsSeconds": {
+            "original": [
+              10.491623599999002,
+              10.19953710000118,
+              10.68125339999824
+            ],
+            "filtered": [
+              1.5045516999998654,
+              1.6681613000000652,
+              1.5815881000016816
+            ]
+          },
+          "medianOriginalSeconds": 10.491623599999002,
+          "medianFilteredSeconds": 1.5815881000016816,
+          "speedup": 6.633600493066335
+        },
+        "deliberate": {
+          "sampleCount": 128,
+          "originalPositiveResults": 128,
+          "rejected": 0,
+          "fallthroughCount": 128,
+          "fallthroughRate": 1.0,
+          "mismatches": 0,
+          "timingsSeconds": {
+            "original": [
+              0.9126095999999961,
+              0.9517736999987392,
+              0.9616520000017772
+            ],
+            "filtered": [
+              0.730788400000165,
+              0.8166429999982938,
+              0.87697499999922
+            ]
+          },
+          "medianOriginalSeconds": 0.9517736999987392,
+          "medianFilteredSeconds": 0.8166429999982938,
+          "speedup": 1.1654709585470366
+        }
+      }
+    },
+    {
+      "weight": 550,
+      "glyphCount": 832,
+      "realBboxCandidatesTotal": 83462,
+      "fontAndShapePreparationSeconds": 26.61177939999834,
+      "projectionPreparationSeconds": 13.552599200000259,
+      "groups": {
+        "real": {
+          "sampleCount": 2000,
+          "originalPositiveResults": 0,
+          "rejected": 1420,
+          "fallthroughCount": 580,
+          "fallthroughRate": 0.29000000000000004,
+          "mismatches": 0,
+          "timingsSeconds": {
+            "original": [
+              11.95989340000233,
+              11.958392699998512,
+              11.091539000000921
+            ],
+            "filtered": [
+              3.131191899999976,
+              3.002458099999785,
+              2.876437300001271
+            ]
+          },
+          "medianOriginalSeconds": 11.958392699998512,
+          "medianFilteredSeconds": 3.002458099999785,
+          "speedup": 3.982867471156173
+        },
+        "deliberate": {
+          "sampleCount": 128,
+          "originalPositiveResults": 128,
+          "rejected": 0,
+          "fallthroughCount": 128,
+          "fallthroughRate": 1.0,
+          "mismatches": 0,
+          "timingsSeconds": {
+            "original": [
+              0.830175800001598,
+              1.1520366000004287,
+              1.0742562000014004
+            ],
+            "filtered": [
+              1.1690003000003344,
+              1.1532361999998102,
+              0.9800791000016034
+            ]
+          },
+          "medianOriginalSeconds": 1.0742562000014004,
+          "medianFilteredSeconds": 1.1532361999998102,
+          "speedup": 0.9315144633870991
+        }
+      }
+    }
+  ],
+  "mismatches": [],
+  "summary": {
+    "realCases": 4000,
+    "deliberateCases": 256,
+    "retainedDeliberateCollisions": 256,
+    "realSpeedups": {
+      "400": 6.633600493066335,
+      "550": 3.982867471156173
+    }
+  }
+}

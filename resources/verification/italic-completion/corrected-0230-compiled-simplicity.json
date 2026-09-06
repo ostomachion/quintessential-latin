@@ -1,0 +1,45 @@
+{
+  "mode": "compiled",
+  "glyphCount": 832,
+  "samples": [
+    {
+      "weight": 400,
+      "glyphCount": 832,
+      "contourCount": 3661
+    },
+    {
+      "weight": 500,
+      "glyphCount": 832,
+      "contourCount": 3661
+    },
+    {
+      "weight": 550,
+      "glyphCount": 832,
+      "contourCount": 3661
+    },
+    {
+      "weight": 600,
+      "glyphCount": 832,
+      "contourCount": 3661
+    },
+    {
+      "weight": 700,
+      "glyphCount": 832,
+      "contourCount": 3661
+    }
+  ],
+  "refinedContours": 430,
+  "maximumResolvedDifference": 0.0897216796875,
+  "font": ".tmp\\italic-completion\\corrected-0230\\resources\\fonts\\QuintessentialSerif\\QuintessentialSerif-Italic-Variable.ttf",
+  "sha256": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456",
+  "fileHashUnchanged": true,
+  "status": "passed",
+  "errors": [],
+  "checked": "Individual contour simplicity, minimum area and winding across five compiled weights",
+  "glyphSamples": 4160,
+  "contourSamples": 18305,
+  "rawDiagnostic": ".tmp/italic-completion/corrected-0230-compiled-contours.json",
+  "rawDiagnosticSha256": "a73c0f6365c53f980c55b21f7dac06f5f28d10c63f82fba6ab5d29d758aed1dd",
+  "separateFilledValidation": "corrected-0230-compiled-filled.json: new600 structural counts; previous232 compared to accepted native same-weight topology",
+  "excludedRawChecks": "30 filled-count mismatches from applying the new600 structural helper to previous native open and joined forms; zero contour/winding failures were excluded"
+}

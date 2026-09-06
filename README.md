@@ -2,16 +2,18 @@
 
 # Quintessential Latin
 
-A systematic repertoire of 832 Latin-derived constructions, with a reference
+A systematic repertoire of 1,216 Latin-derived constructions, with a reference
 font, code charts, and a draft proposal for the Under-ConScript Unicode Registry.
 
 **Author:** Josh Hufford  
 **Website:** https://ostomachion.github.io/quintessential-latin/  
 **Discussion:** https://github.com/ostomachion/quintessential-latin/issues
 
-Quintessential Serif 0.220 contains all 832 forms in Roman and 232 in native
-Italic, across weights 400–700. The 600 remaining Italic forms are pending.
+Quintessential Serif 0.240 contains all 1,216 forms in both Roman and native
+Italic, across weights 400–700.
 These are proposed private-use assignments, not Unicode or UCSUR registrations.
+The [independent middle extensions](docs/independent-middle-extensions.md) add
+left-only and right-only extensions wherever two middle components occur.
 
 U+F2B18 is the project mark. Its reviewed joins and paired spine curves are the
 basis of the [shared-spine refinement](docs/shared-spine-optical-design.md),
@@ -25,7 +27,7 @@ each join class at close range, with the exact compiled-font revision visible.
 | --- | --- | ---: |
 | Quintessential Latin | U+F2A00–U+F2AFF | 196 |
 | Quintessential Latin Extended-A | U+F2B00–U+F2BFF | 252 |
-| Quintessential Latin Extended-B | U+F2C00–U+F2DFF | 384 |
+| Quintessential Latin Extended-B | U+F2C00–U+F2FFF | 768 |
 
 ## Website development
 
@@ -73,8 +75,9 @@ python tools/test_fonts.py
 The font build regenerates the detailed proof file locally. The plain JSON is
 excluded from Git and the website. A small, checksummed gzip copy lets the full
 test runner restore the preserved proof in a fresh checkout without rebuilding. The complete acceptance checks can take
-substantial time because they enumerate 3,730,240 ordered-pair samples.
-See [font development](docs/font-development.md) for preservation boundaries.
+substantial time because they enumerate 14,786,560 ordered-pair samples.
+See [font development](docs/font-development.md) for preservation boundaries and
+[Italic completion](docs/italic-completion.md) for the construction and proof inventory.
 
 ## Catalogue and proposal
 
@@ -109,7 +112,7 @@ python tools/test_pdfs.py
 
 Outputs are in `output/pdf/`: three block charts, a combined catalogue, and
 the proposal. Reference charts use Roman 400, embedded fonts, and vector text.
-The four grid sheets each contain 256 positions, followed by numeric
+The six grid sheets each contain 256 positions, followed by numeric
 two-column names lists with family subheadings. Source Sans 3 supplies the
 publication text. Grid geometry, running headers, diagonal vacancy hatching,
 and compact names follow the official Unicode code-chart format.

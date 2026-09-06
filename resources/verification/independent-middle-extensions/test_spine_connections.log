@@ -1,0 +1,8 @@
+test_checks_reject_the_previous_compressed_and_cornered_connections (__main__.SpineConnectionTests.test_checks_reject_the_previous_compressed_and_cornered_connections) ... ok
+test_compiled_connections_at_seven_weights (__main__.SpineConnectionTests.test_compiled_connections_at_seven_weights) ... ok
+test_source_connections_at_seven_weights (__main__.SpineConnectionTests.test_source_connections_at_seven_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 59.086s
+
+OK

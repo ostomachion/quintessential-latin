@@ -1,0 +1,9 @@
+test_master_pairs_are_interpolation_compatible (__main__.QuintessentialFontTests.test_master_pairs_are_interpolation_compatible) ... ok
+test_variable_structure_axis_names_and_sparse_coverage (__main__.QuintessentialFontTests.test_variable_structure_axis_names_and_sparse_coverage) ... ok
+test_outputs_preserve_donor_vertical_metric_selection (__main__.QuintessentialFontTests.test_outputs_preserve_donor_vertical_metric_selection) ... ok
+test_pinned_stix_donors_and_license (__main__.QuintessentialFontTests.test_pinned_stix_donors_and_license) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 52.472s
+
+OK

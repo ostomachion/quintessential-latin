@@ -1,0 +1,389 @@
+{
+  "version": "0.230",
+  "allocationVersion": "0.220",
+  "namingVersion": 3,
+  "posture": "Roman",
+  "weight": 400,
+  "publicationPages": 50,
+  "files": [
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "pageCount": 23,
+      "pages": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-01.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-02.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-03.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-04.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-05.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-06.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-07.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-08.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-09.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-10.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-11.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-12.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-13.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-14.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-15.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-16.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-17.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-18.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-19.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-20.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-21.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-22.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/page-23.png"
+      ],
+      "contacts": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-3.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-4.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-5.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-6.png"
+      ],
+      "pdfSha256": "cad927ad51470e45a0133b3df2951ad647643b455ac067829825f5ae6076d26b",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "8b2a217ef6b490e5ce34a3a89d8a2b1905e9909741d6e96804fb5e891377ab9e",
+        "page-02.png": "172f170b3a8b3a231ab0b6a329a758f9a557ced03751ad5d4be525ff4aa9f323",
+        "page-03.png": "f0028a9951cb767f34a456b1e1ea88b64b7d1f510d46c8cba207e6747117e8f1",
+        "page-04.png": "3af3d5f8fc605feae319261fbd5b039103e8b0adae7d86ae039bb709bd3f868b",
+        "page-05.png": "e6f44cd04f059c913bd87fbd9ef8b9afd66daca349601d10bd0f3727c16623e7",
+        "page-06.png": "7e80db60cd95275bf72896cb5270d3182a7387d4d807fa22ff4a4291e11cdd45",
+        "page-07.png": "d0dbbd0533892910feb10eda8d4d8610837588a5a8a23d10762a73ec196291a3",
+        "page-08.png": "7def87231085b8d40db5952b2a50b32af45fb9dfb3c1ca24f77e021725cdff3c",
+        "page-09.png": "00fbf821021dea426d8a5845194154aba7554eff8516b8264766c9c9e061d0b7",
+        "page-10.png": "b512808833e7671ffd7c95ef9ad06386d155ac36e7a187c9d28241da9bd8f063",
+        "page-11.png": "e903d881cebc84743d133cb85dad1d83b9d6c6f727e012a5f1857e0f2767b516",
+        "page-12.png": "87e1017e7e745d60280ee9847160cfc44644b0c89ca29f6df09a413494ef0ae7",
+        "page-13.png": "a7e7e629e7a883b07b15aace6828ccd029a34c68121adc8a4a2897b85f6621d1",
+        "page-14.png": "8dadf6274630b01c06546d850d193bc5a9fd7cbb9bb9e494713c5b08b8b8750c",
+        "page-15.png": "64972833fe55d54e1ad0fef0b027a282d1a93fbadc5fb88b3ea47623d77c4e77",
+        "page-16.png": "c732ee320a7f43b8732ae83e03eb26695d78960597e25e744d7b2196d09196b3",
+        "page-17.png": "daf0bd04b5a6434113a2e2008b0d9b9dafb1cdcd441aa3236447ade1e6dedb72",
+        "page-18.png": "c32d585fdea38858d4101315d3aeb8bb9e96cc643ad43ac4f68be544defb2e31",
+        "page-19.png": "53a3e0ef39833a3bf59d967a4ff431e3e3e55ac4da3617d506761eefce5d140f",
+        "page-20.png": "42491580e003c74de7e54f0ed3662289cda9e06e96dae40b58f36fd09eb80994",
+        "page-21.png": "5806dd88a8cb1520ccb6ae1f18bd3b2775b3a8c6636a0fc985d16f474658dc34",
+        "page-22.png": "7075f81b05b9971b709d5e52dad8cb2eb191b3e92b0b3329a2f236a0f338908e",
+        "page-23.png": "08b12c3b6832ebef56b5fc17c3d5642ef7f208c520e1b89e270f429737f06ef3"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-a.pdf",
+      "pageCount": 7,
+      "pages": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-3.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-4.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-5.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-6.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/page-7.png"
+      ],
+      "contacts": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/contact-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-a/contact-2.png"
+      ],
+      "pdfSha256": "9274ba61033496a59258032bcd9513846dfcb78209de681b3518914cfdf7dc97",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "2311cc7ac0b5604d8e5a3dce531bb3bbb27c215a2240ab5f38eb2b2784203e72",
+        "page-2.png": "a2e8cd0900b2a14b84483a0fb5eb98a0b6dd3638939b08c1a6b3aca5756d147c",
+        "page-3.png": "c86d2425137a9edb7e0fbf4f2eb2121124e5ae8cecb62e967a58df72feb742bf",
+        "page-4.png": "dee7b230f0214f50a1a63607487e01886e41d5f1f1ebf21be4aabecbe2aa46c6",
+        "page-5.png": "6899f427f38268c3fc0bd153ebb948935690d0954c85cb27f8878adc9a6292d7",
+        "page-6.png": "69a7a7a818e6c62983c7cbc57e56b5e266b8945a039e8a30e2102711e66e6ba5",
+        "page-7.png": "5a8b24b8eeacc097ccb0acdef09de2db872776c8a9558bbf0603e508dc220fd1"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-b.pdf",
+      "pageCount": 10,
+      "pages": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-01.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-02.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-03.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-04.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-05.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-06.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-07.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-08.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-09.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/page-10.png"
+      ],
+      "contacts": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/contact-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/contact-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-extended-b/contact-3.png"
+      ],
+      "pdfSha256": "b13f3821f33e25e7eb95dd3053c119d825875c9230b0403c46a2c85c9e0cd3d1",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "3cd1d5bba18b625294e5fc2527fd28760438f58e156908d8e2c60d5cd457ec45",
+        "page-02.png": "832afc70174516b970968382328a5ed595b79e083c96a98d8ddc3e1cff09995d",
+        "page-03.png": "463ee14b548a8b8f304261886767a2b6448a816c91bfe912209cca8ee274cd64",
+        "page-04.png": "4f238fc3bae653f663ac7545a5f518698e06f522fa6e343f9d2994904e8f05b2",
+        "page-05.png": "21d4bb24d8dbfec4a7d2d6b3230abdf9360b5f54bfc88b18000ff314c75b7177",
+        "page-06.png": "4813b1172a6575669feed6b371f459196a2d73e904b6733bfee7d54d2b3d591e",
+        "page-07.png": "a44e24fd2da0e1598715a6a2ae204f3e3ab2c91b9edd319376aafddbaf5c5f7a",
+        "page-08.png": "1f7fa32406e9b3a2454258e583689848345058cf6126247bf53b748ce7545331",
+        "page-09.png": "201762d70cd8843b5a382c6df2e1b028fc28df7f45063faf28a9cc6dc0bdf7a9",
+        "page-10.png": "e4e126d6018473801993800e8be4bb05e271a07373554bc1e939985d2c81bf68"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-proposal.pdf",
+      "pageCount": 4,
+      "pages": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-proposal/page-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-proposal/page-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-proposal/page-3.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-proposal/page-4.png"
+      ],
+      "contacts": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-proposal/contact-1.png"
+      ],
+      "pdfSha256": "58a71752538b2cbb8c536c59a0b9b814ebafc43248d7ecef99a4d63dfc46a9be",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "0d56f45308c2f82dd0636a363a176dc339826a3a4dcefab999681842e672dd71",
+        "page-2.png": "9b0e34bb48ca118852786c6d2f2870a431ad595a59dd140e0518990f01955583",
+        "page-3.png": "353f468bd573dbdb0e5f63bd709191bbe14b36d0ad3053b5ec97ade3eb4124dd",
+        "page-4.png": "38ee2b4a42e7b95ce5012d6a0b22e14013a37b21826a14636088b102f272f24d"
+      }
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "pageCount": 6,
+      "pages": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-3.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-4.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-5.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/page-6.png"
+      ],
+      "contacts": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin/contact-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin/contact-2.png"
+      ],
+      "pdfSha256": "2ae449fe40c3cb50e25b41304814d54cc38c160b5286d0140321481b18c834ad",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "8b2a217ef6b490e5ce34a3a89d8a2b1905e9909741d6e96804fb5e891377ab9e",
+        "page-2.png": "172f170b3a8b3a231ab0b6a329a758f9a557ced03751ad5d4be525ff4aa9f323",
+        "page-3.png": "f0028a9951cb767f34a456b1e1ea88b64b7d1f510d46c8cba207e6747117e8f1",
+        "page-4.png": "3af3d5f8fc605feae319261fbd5b039103e8b0adae7d86ae039bb709bd3f868b",
+        "page-5.png": "e6f44cd04f059c913bd87fbd9ef8b9afd66daca349601d10bd0f3727c16623e7",
+        "page-6.png": "7e80db60cd95275bf72896cb5270d3182a7387d4d807fa22ff4a4291e11cdd45"
+      }
+    }
+  ],
+  "publicationReviews": [
+    {
+      "reviewer": "root",
+      "pdfs": [
+        "quintessential-latin-extended-a.pdf",
+        "quintessential-latin-extended-b.pdf",
+        "quintessential-latin-proposal.pdf",
+        "quintessential-latin.pdf"
+      ],
+      "pagesInspected": 27,
+      "method": "All eight contact sheets inspected, with original-size review of Extended-B grid page2, final names page10 and proposal page3. No clipping, overlap, missing glyphs or broken wrapping found."
+    },
+    {
+      "reviewer": "italic_extensions",
+      "reviewedAtUtc": "2026-09-06T06:40:07.170551+00:00",
+      "pdf": "output/pdf/quintessential-latin-catalogue.pdf",
+      "pdfSha256": "cad927ad51470e45a0133b3df2951ad647643b455ac067829825f5ae6076d26b",
+      "pageCount": 23,
+      "renderer": "pdftoppm version 26.07.0",
+      "dpi": 110,
+      "contactSheetsInspected": [
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-1.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-2.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-3.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-4.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-5.png",
+        ".tmp/italic-completion/pdf-review/quintessential-latin-catalogue/contact-6.png"
+      ],
+      "pagesInspectedViaContacts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "pagesInspectedAtFullResolution": [
+        1,
+        12,
+        14,
+        15,
+        16,
+        22,
+        23
+      ],
+      "renderedPageSha256": {
+        "page-01.png": "8b2a217ef6b490e5ce34a3a89d8a2b1905e9909741d6e96804fb5e891377ab9e",
+        "page-02.png": "172f170b3a8b3a231ab0b6a329a758f9a557ced03751ad5d4be525ff4aa9f323",
+        "page-03.png": "f0028a9951cb767f34a456b1e1ea88b64b7d1f510d46c8cba207e6747117e8f1",
+        "page-04.png": "3af3d5f8fc605feae319261fbd5b039103e8b0adae7d86ae039bb709bd3f868b",
+        "page-05.png": "e6f44cd04f059c913bd87fbd9ef8b9afd66daca349601d10bd0f3727c16623e7",
+        "page-06.png": "7e80db60cd95275bf72896cb5270d3182a7387d4d807fa22ff4a4291e11cdd45",
+        "page-07.png": "d0dbbd0533892910feb10eda8d4d8610837588a5a8a23d10762a73ec196291a3",
+        "page-08.png": "7def87231085b8d40db5952b2a50b32af45fb9dfb3c1ca24f77e021725cdff3c",
+        "page-09.png": "00fbf821021dea426d8a5845194154aba7554eff8516b8264766c9c9e061d0b7",
+        "page-10.png": "b512808833e7671ffd7c95ef9ad06386d155ac36e7a187c9d28241da9bd8f063",
+        "page-11.png": "e903d881cebc84743d133cb85dad1d83b9d6c6f727e012a5f1857e0f2767b516",
+        "page-12.png": "87e1017e7e745d60280ee9847160cfc44644b0c89ca29f6df09a413494ef0ae7",
+        "page-13.png": "a7e7e629e7a883b07b15aace6828ccd029a34c68121adc8a4a2897b85f6621d1",
+        "page-14.png": "8dadf6274630b01c06546d850d193bc5a9fd7cbb9bb9e494713c5b08b8b8750c",
+        "page-15.png": "64972833fe55d54e1ad0fef0b027a282d1a93fbadc5fb88b3ea47623d77c4e77",
+        "page-16.png": "c732ee320a7f43b8732ae83e03eb26695d78960597e25e744d7b2196d09196b3",
+        "page-17.png": "daf0bd04b5a6434113a2e2008b0d9b9dafb1cdcd441aa3236447ade1e6dedb72",
+        "page-18.png": "c32d585fdea38858d4101315d3aeb8bb9e96cc643ad43ac4f68be544defb2e31",
+        "page-19.png": "53a3e0ef39833a3bf59d967a4ff431e3e3e55ac4da3617d506761eefce5d140f",
+        "page-20.png": "42491580e003c74de7e54f0ed3662289cda9e06e96dae40b58f36fd09eb80994",
+        "page-21.png": "5806dd88a8cb1520ccb6ae1f18bd3b2775b3a8c6636a0fc985d16f474658dc34",
+        "page-22.png": "7075f81b05b9971b709d5e52dad8cb2eb191b3e92b0b3329a2f236a0f338908e",
+        "page-23.png": "08b12c3b6832ebef56b5fc17c3d5642ef7f208c520e1b89e270f429737f06ef3"
+      },
+      "findings": [],
+      "observations": [
+        "All 23 pages inspected in the six contact sheets; dense name lists, wide chart grids, updated cover text, and final page additionally inspected at full resolution.",
+        "No clipped glyphs or names, overlapping list entries, missing blocks, broken chart cells, or footer collisions were apparent.",
+        "Page headers, code ranges, sequence numbers, and block transitions remain consistent.",
+        "Cover text identifies reference font Quintessential Serif 0.230 and native Italic coverage; allocation and running-footer version 0.220 are intentionally retained."
+      ],
+      "status": "reviewed-no-actionable-layout-defects"
+    }
+  ],
+  "pdfChecks": 9,
+  "pdfRepeatBuild": {
+    "status": "passed",
+    "outputs": {
+      "quintessential-latin-catalogue.pdf": "cad927ad51470e45a0133b3df2951ad647643b455ac067829825f5ae6076d26b",
+      "quintessential-latin-extended-a.pdf": "9274ba61033496a59258032bcd9513846dfcb78209de681b3518914cfdf7dc97",
+      "quintessential-latin-extended-b.pdf": "b13f3821f33e25e7eb95dd3053c119d825875c9230b0403c46a2c85c9e0cd3d1",
+      "quintessential-latin-proposal.pdf": "58a71752538b2cbb8c536c59a0b9b814ebafc43248d7ecef99a4d63dfc46a9be",
+      "quintessential-latin.pdf": "2ae449fe40c3cb50e25b41304814d54cc38c160b5286d0140321481b18c834ad"
+    },
+    "manifestSha256": "6306148676cdabd8b0bbd253c7a21e8d158bfcd2a7b8c1097ca0cb8345cad1f5"
+  },
+  "browserChecks": 147,
+  "browserPrintReview": {
+    "reviewer": "italic_bodies",
+    "reviewedAtUtc": "2026-09-06T06:43:49.051135+00:00",
+    "pdf": ".tmp/browser-review/charts-browser-print.pdf",
+    "pdfSha256": "028bfdb8d919c8711e98f0d1641eb0708cdff5095f4b782eadde13d885e46fd7",
+    "pageCount": 18,
+    "renderer": "pdftoppm version 26.07.0",
+    "dpi": 110,
+    "posture": "Italic",
+    "weight": 700,
+    "fontVersion": "0.230",
+    "fontSha256": "ef1fcccc861639f49c3d0606d1dd23a6db3e4362d8aaa4b763476cf9c20cdc41",
+    "contactSheetsInspected": [
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-1.png",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-2.png",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-3.png",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-4.png",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-5.png"
+    ],
+    "contactSheetSha256": {
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-1.png": "8b38a28a6f4b3c852b5d25e27d104d19f8db1ed3c82a761d491b64fceb19b459",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-2.png": "f9a4e530f6585a20be043c108f9d1adbf7dd56ed152232585429d769ccdfc62b",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-3.png": "e3ff39b63bb0904074f7756d8970642d9af3d9f016319e780a6670335b714ddc",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-4.png": "915bc3085bfe620f4340d19b96f4c7656251e95ddc865dee5984adb3caa45d9b",
+      ".tmp/italic-completion/browser-print-review/charts-browser-print/contact-5.png": "ef6d59b11e94946c6a86ad7783e999efc42faa6c7777a84ce3e5a8da6a98b6a4"
+    },
+    "pagesInspectedViaContacts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "pagesInspectedAtFullResolution": [
+      5,
+      10,
+      11,
+      14,
+      17,
+      18
+    ],
+    "renderedPageSha256": {
+      "page-01.png": "b77a9e514ed4f602ccd2613b4976d5c0895ecba6ccac069a0dd4a6f9d4cb40d2",
+      "page-02.png": "86c07fcc56f31543724d11115d20a0a8834a87d15ec3ff4911f3b11b0b1cc6f1",
+      "page-03.png": "7cba50c511b601cf44b7faf8be91587b815edb963df016ac4e8b20dfaf600b70",
+      "page-04.png": "eb5a36df75a399890fea485cd609699852defe8831e938ab06530d4b9d863fe5",
+      "page-05.png": "7e0cf3eccc0ee4c57615f0afb6a30416e79492fe007a99d8856e71e45f7ef4db",
+      "page-06.png": "92bd004a4fcd8bc2b72c6f4cc2abe1af0918b32e1fa18841b5beaa26e933caae",
+      "page-07.png": "f3b1fc9f577e2c0ff7e4ccf23f6cb21f27de9552aae01e22bcbb56d5ff226703",
+      "page-08.png": "92da8e083d3d1d9e588ae95a6eaad3c18301a79eb686883e15c745bed45a4185",
+      "page-09.png": "bdd3e776665264c2bcb143cf529e545bb6cf869ad02b7b3cbb6ff8ee877bcaaf",
+      "page-10.png": "c0e12c89caecbd03f794488c3efdc7013dc5e8a96c481d2541d26d1b70cc7527",
+      "page-11.png": "3e20cd90d7ed7340b6d0425a1ed9ded91bf0b946f2e6e92df3ccf96a75ee9d59",
+      "page-12.png": "a0a336261b4a903a2836cde24afd340f35ac0f29f0985d10679bb6a43fa0f1e2",
+      "page-13.png": "9c7d3a2805d79e1914f0a6d0885149d246b73d287b12543b5a5441112de7ccec",
+      "page-14.png": "5601f9e8674992c256bdf41730c2006b4ef934caf323b490330fc266a6c819cb",
+      "page-15.png": "c364b3a98c00e2b475b06af40b9eab20d035ea98e914b0e420b46c5f3de5fc33",
+      "page-16.png": "9becff2b61c1f50f8044348efae3daffeff3a767b8df640c244bb5be73478a37",
+      "page-17.png": "16fee11a76d2937e28012f362ca9672867eac66db33df240f883e3b47ecc5001",
+      "page-18.png": "1a4a796dbe1c964817bc79a76732b8683a94ce3819cbb546b16aebed812bd2c7"
+    },
+    "findings": [],
+    "observations": [
+      "All 18 browser-print pages inspected through five contact sheets; new Italic block grids on pages 5, 10 and 11 and dense late name lists on pages 14 and 17 plus final page 18 additionally inspected at original 110 dpi resolution.",
+      "No clipped glyphs, missing assigned forms, overlapping names, broken chart borders or margin collisions were apparent.",
+      "The late multi-arch and extended-middle-leg glyphs remain visible in both chart cells and name lists. Reserved chart positions retain their intended hatching.",
+      "Chart footers identify Quintessential Serif 0.230, Italic 700. Final names end at U+F2D7F on page 18."
+    ],
+    "status": "reviewed-no-actionable-layout-defects"
+  },
+  "userVisualAcceptance": "Pending",
+  "correctedFontFollowup": {
+    "fontSha256": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456",
+    "referencePdfStatus": "All five Roman reference PDFs and their source hashes are unchanged by the Italic contour correction; all nine PDF tests rerun on the frozen 0.230 publication passed.",
+    "browserReviewScope": "The recorded browser checks and print review used the earlier 0.230 font identified in browserPrintReview. The correction preserves advances and global bounds; changed Italic shapes were independently reviewed in the final compiled-font proof sheets.",
+    "opticalReview": "resources/verification/italic-completion-review.json"
+  }
+}

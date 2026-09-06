@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "version": "0.240",
+  "reviewedAt": "2026-09-06T08:03:47.982Z",
+  "reviewer": "catalogue_audit",
+  "pdf": {
+    "path": "output/pdf/quintessential-latin-catalogue.pdf",
+    "sha256": "cc7bfc41b1d59e89c6118a5b12484a60069dce4020a7938d0081bfdeef270752",
+    "pages": 33
+  },
+  "buildManifest": {
+    "path": "output/pdf/build-manifest.json",
+    "sha256": "2148a5a1d8d894c7d606d593bc517cb228b33d601748341a2b62fcea8727fd98"
+  },
+  "renderManifest": {
+    "path": ".tmp/independent-middle-extensions/pdf-review/manifest.json",
+    "sha256": "31a3967622ddab9ee2ce8d4ba470a9a81825f855844f3cc78724a2b0fb4832ff"
+  },
+  "reference": {
+    "font": "Quintessential Serif",
+    "posture": "Roman",
+    "weight": 400
+  },
+  "sourceFontHashes": {
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "5b169adace7328e4980763fc9cd87c32a50f0daa360143500945986ba35beabb",
+    "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
+    "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
+    "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
+    "resources/fonts/SourceSans3/SourceSans3-Bold.ttf": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
+    "resources/fonts/SourceSans3/SourceSans3-It.ttf": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4"
+  },
+  "result": "Pass: all 33 pages visually reviewed; no clipping, overlap, missing glyphs, or other visible publication defects observed.",
+  "userVisualAcceptance": "Pending",
+  "scope": {
+    "contactReviewedPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "nativeResolutionPages": [
+      17,
+      18,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "changedChartPages": [
+      17,
+      18
+    ],
+    "newNamesAndContinuationPages": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  },
+  "renderer": {
+    "name": "pdftoppm version 26.07.0",
+    "dpi": 110,
+    "tool": "view_image",
+    "nativePagePixels": [
+      935,
+      1210
+    ],
+    "contactSheetPixels": [
+      918,
+      1244
+    ],
+    "limitation": "Every page was inspected through its contact sheet. The new F2E/F2F grids and all pages containing new F2E00-F2F7F names received additional original-resolution inspection at 110 DPI. Other pages were reviewed at contact-sheet scale, not at high print magnification.",
+    "finalContactSheetPixels": [
+      918,
+      622
+    ]
+  },
+  "observations": [
+    "All 33 pages have consistent headers, footers, page numbers, margins, and column alignment.",
+    "New F2E/F2F glyphs and their hexadecimal labels remain inside the chart cells. F2F80-F2FFF vacancies retain consistent hatch treatment.",
+    "Independent variants have separate names and code points; F2E00/F2E01 begin the new allocation on page 25.",
+    "Dense names pages wrap within their own columns without clipping, overprinting, or collisions with glyphs and code points.",
+    "Family headings remain with following entries; cross-column and cross-page continuations flow cleanly.",
+    "Local long-bowl names distinguish open and closed forms on page 27, matching the independent immediate-neighbor extension states.",
+    "The last continuation page ends cleanly at F2F7F. Sparse block-ending pages retain the established catalogue flow."
+  ],
+  "issues": [],
+  "contacts": [
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-1.png",
+      "sha256": "eafc792e1a80b1f765b7dbd2790004d72a31887fa732a6798b5dbf3ef06d27da",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-2.png",
+      "sha256": "1e424ca117c3e11aa1843a09e007a9249defa16a33a5d7259f7fce3641188892",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-3.png",
+      "sha256": "3cb4e4ca298eeec023907c5686194d5020e22f41c2337d0ade57cfecd6370d49",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-4.png",
+      "sha256": "111cc739a66c7501c7a9da3ab95dbb8fc6bc01986182f536375cde5999775a96",
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-5.png",
+      "sha256": "579d332af56a9af4b15da1ce3536817043d1a10827eaf7a75af66c18c536f315",
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-6.png",
+      "sha256": "7b3845d18962728fec927b44ad2079d5d58ec0919f35cc4dd59c871f4a91e344",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-7.png",
+      "sha256": "7c61be0398f2e57bea800b192ce42e2f7c56d6a909de4f9b1895e17a56ad65bf",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-8.png",
+      "sha256": "f5b40e40ca2096114f545cccf1361e2791be60c0d697bf36308d9b2c0d008787",
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/contact-9.png",
+      "sha256": "d534e0721ba6ffb7001ccf70b84e8d809b84a96457b5ede49252d3be6394b660",
+      "pages": [
+        33
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-01.png",
+      "sha256": "df041f0eaa5ea7da86c10a426354480dea7b96722e6eee4ab0b06fb60f420a10",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 2,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-02.png",
+      "sha256": "6bbb2ba02a190a8df5782cd34d93552e959deb9e1b6f5a9c3f602dbf383a84c7",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 3,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-03.png",
+      "sha256": "cd298a9bf4893bf1fe18f47550322a338a3e56e1c660d117ba113d3cfb9b20e9",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 4,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-04.png",
+      "sha256": "427a03f8c91bc58c48d6a93b74fe0da4581fb0bc76f47b5d43e432fb672bc967",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 5,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-05.png",
+      "sha256": "25a664e5c566fed4cb0095ca473061bf6c94539e6d23ab1a7a9ef70acf6cf8d5",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 6,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-06.png",
+      "sha256": "5a2f48d6030a29be46448eb124f020331b476ae0686e85b0a948a1e35d7af54d",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 7,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-07.png",
+      "sha256": "43097e8d678c7f451c6f3115b0f0a0fa07d15677e3b0f5804ef9814192704fe8",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 8,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-08.png",
+      "sha256": "aeba3219393b4c256cad4c4ae374b8a7a7a4ca62ba8e7f4a5e3360e400333195",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 9,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-09.png",
+      "sha256": "a7b72ea00d3c42ddf60162ba108574925cd46f0ff18c5bdb7a275c770ac1d8ba",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 10,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-10.png",
+      "sha256": "c7dd72472e2d34d57b3be2f917a93abba8a4639b694817c0dbb1dee25066e299",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 11,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-11.png",
+      "sha256": "a0f457e8d58fae9ebbac8f3e7bf12e19311ae4073f4697689f60fcae595a9096",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 12,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-12.png",
+      "sha256": "98a25dd4796cc8699c20f2488d8e958f3bc4c7b1b6973799c0bc9219ce6b7131",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 13,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-13.png",
+      "sha256": "395b02cd695848500ea21320d839b486692af01c45f462ddd40d17e60a887b86",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 14,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-14.png",
+      "sha256": "120d6092c3f5812bfcd5f8f548b2fce712b2a7bd78c11cef2260865f30496360",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 15,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-15.png",
+      "sha256": "cbb24e8795c53901211189f450c1108fb01e73a2e388b1a5edc3b1d7bc608220",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 16,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-16.png",
+      "sha256": "88964d7223bb3d7521cf6038075c4ce5d0a6f51fb4d508a269086c47a8a30f04",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 17,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-17.png",
+      "sha256": "a95341959acd9d0245bec4f3fc336ba1e2c72c39e9a9e807084cb684bbc6bac4",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 18,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-18.png",
+      "sha256": "a68540b6df364fc3d6042773aaa046d2dcd9861965c91e30f423d5320942f578",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 19,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-19.png",
+      "sha256": "1243b16698102c2dce774104e5a918077615f75e4a3139207e3bd02ebcde8402",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 20,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-20.png",
+      "sha256": "e0fa07415564bfb6aa9939ed12878207b6ff17fd2bce5ab618501fc25feec9fc",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 21,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-21.png",
+      "sha256": "101946fcd39e827c03aac522410630bd89a8fb57c91a228cdb3a3fab02dc49b2",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 22,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-22.png",
+      "sha256": "534880875e4621baa79fd49f80f9f1b79fdd3e2fd75df9e603a6ce88ce3bc35d",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 23,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-23.png",
+      "sha256": "de63b7b8fbe41a75574834efc602b4421a7e15e6b53dc671664242d885451af1",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 24,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-24.png",
+      "sha256": "bbcd61c512333269fbc64b47530711ef645d68f4dc86146143d43d8601be87ae",
+      "inspection": "Contact sheet",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 25,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-25.png",
+      "sha256": "3df71fed787f3f15467b82bb6d21db42e1efd559de1346e6028f905bb0310bfe",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 26,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-26.png",
+      "sha256": "d3fdeae3325724434bb5bf8490a7a3cae26ce1b953ed10004908381ea1a4c21c",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 27,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-27.png",
+      "sha256": "407e60ee63da80f80efc3bc3f9960008c77e2b6ba9f080264814f47d69b47c60",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 28,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-28.png",
+      "sha256": "b60a19a5e5664820a4ea376209b18d5a1c44710c09ba3e4f21485dd2a3fd75c0",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 29,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-29.png",
+      "sha256": "149530539e51518a399a13a1e568fb6cb35bdff8160cf8a313093896ae1ff394",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 30,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-30.png",
+      "sha256": "792645cf1017f0fcc5a58bb0a8a0e55b7773fc2e736abefc4aadfb2f402a6690",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 31,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-31.png",
+      "sha256": "5858f579a86c897055cc51fc0598c008d4f8878fe30401863c9b799e7d966f1d",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 32,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-32.png",
+      "sha256": "bb49e7751f1d1b66e9fcd4e1add3fb447f314f7359ce2016a604b1009a6a225e",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    },
+    {
+      "page": 33,
+      "path": ".tmp/independent-middle-extensions/pdf-review/quintessential-latin-catalogue/page-33.png",
+      "sha256": "6bcfc38b53ef5df39f88432ca05997ce6f510531f021872087c832a7380f8a90",
+      "inspection": "Contact sheet and original-resolution page PNG",
+      "result": "No visible defects observed"
+    }
+  ]
+}

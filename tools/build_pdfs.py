@@ -97,6 +97,7 @@ class Publication:
                              ('ChartBold', 'Bold'), ('ChartItalic', 'It')]:
             pdfmetrics.registerFont(ttfonts.TTFont(label, str(font_root / 'SourceSans3' / f'SourceSans3-{style}.ttf')))
         self.font = SourceFont(script_path)
+        self.font_version = self.font['name'].getDebugName(5).removeprefix('Version ')
         self.units = self.font['head'].unitsPerEm
         self.cmap = self.font.getBestCmap()
         glyph_set = self.font.getGlyphSet()
@@ -137,7 +138,7 @@ class Publication:
         c.line(MARGIN, FOOTER + 14, PAGE_W - MARGIN, FOOTER + 14)
         c.setFillColor(MUTED)
         c.setFont('STIX', 8)
-        c.drawString(MARGIN, FOOTER, f'Quintessential Latin 0.220 | Reference font: Roman 400 | Private use')
+        c.drawString(MARGIN, FOOTER, f'Quintessential Latin {self.data["version"]} | Reference font: Roman 400 | Private use')
         c.drawRightString(PAGE_W - MARGIN, FOOTER, str(self.page))
         self.page_records.append({'page': self.page, 'kind': kind, 'title': title,
                                   'start': low, 'end': high, 'codes': codes or []})
@@ -188,7 +189,7 @@ class Publication:
             ('Status', 'Draft private-use allocation for the Under-ConScript Unicode Registry (UCSUR). These characters are not part of the Unicode Standard. Publication of this document does not indicate registry submission or acceptance.'),
             ('Character code tables', 'The tables contain sixteen hexadecimal columns and sixteen rows per page. Combine a column heading with a row digit to find a character; its full hexadecimal code also appears below the reference glyph. Hatched cells indicate unallocated positions. A thin outside edge indicates that the table continues on another page.'),
             ('Character names', 'The names list follows the tables in ascending code point order, reading down the left column and then the right. Family subheadings organize related characters. Names and code points identify characters independently of their representative glyphs.'),
-            ('Fonts and representative glyphs', f'The reference font is Quintessential Serif {self.data["version"]}, Roman, weight 400. All {count} assignments in this block have Roman outlines; {italic} also have native Italic outlines. Italic is a font posture, not a separate character. Glyphs are representative forms; their appearance may vary with font posture and weight.'),
+            ('Fonts and representative glyphs', f'The reference font is Quintessential Serif {self.font_version}, Roman, weight 400. All {count} assignments in this block have Roman outlines; {italic} also have native Italic outlines. Italic is a font posture, not a separate character. Glyphs are representative forms; their appearance may vary with font posture and weight.'),
             ('Authorship and terms', 'Script and original publication: Josh Hufford. Original code and documentation are licensed under MIT. Quintessential Serif and the STIX Two Text interface font are distributed under the SIL Open Font License 1.1. Font notices accompany the downloads.'),
         ]
         for heading, body in topics:
@@ -436,4 +437,3 @@ def main():
 
 if __name__=='__main__':
     main()
-

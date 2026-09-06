@@ -58,7 +58,12 @@ def _bowl(font, kind, turned):
     from stix_double_bowl import fit_operation
     italic = bool(font["post"].italicAngle)
     if italic and kind == "double-bowl":
-        raise ValueError("Stemmed double bowls remain Roman only")
+        from stix_double_bowl_italic import italic_normal_double_terminal, italic_turned_double_terminal
+        build = italic_turned_double_terminal if turned else italic_normal_double_terminal
+        recording, metadata, center = build(font, extended=True)
+        metadata.update(freeLegDonorCodePoint=0x64 if turned else 0x70,
+                        freeLegOffsetX=metadata["upperOffsetX" if turned else "lowerOffsetX"])
+        return recording, metadata, center
     code = 0x251 if turned else 0x62
     cmap = font.getBestCmap()
     native = s.decomposed_recording(font, cmap[code])
@@ -142,11 +147,15 @@ def _bowl(font, kind, turned):
     return [*body, *sum(contours[1:], [])], metadata, center
 
 
-def prepared_terminal(font, kind, turned):
-    """Return the prepared terminal with a descender or turned ascender."""
+def prepared_terminal(font, kind, turned, extended=True):
+    """Return a native short terminal or its extended descender/ascender."""
     import import_stix_foundation as s
     if kind not in ("bowl", "double-bowl", "spine"):
         raise ValueError("Unsupported extended middle terminal family")
+    if not extended:
+        from stix_extensions import _terminal
+        recording, center, metadata = _terminal(font, kind, turned)
+        return s.rounded_recording(recording), _clean(metadata), center
     recording, metadata, center = _spine(font, turned) if kind == "spine" else _bowl(font, kind, turned)
     metadata.update(middleLegs="extended", extendedSharedStemDirection="ascender" if turned else "descender",
                     extendedSharedStemCenterX=center,
@@ -154,7 +163,7 @@ def prepared_terminal(font, kind, turned):
     return s.rounded_recording(recording), _clean(metadata), center
 
 
-def opposed_terminal(font, left_variant, right_variant, side="left"):
+def opposed_terminal(font, left_variant, right_variant, side="left", extended=True):
     """Keep the compact sigmoid while extending each incoming arch's free leg.
 
     Return one or two centers as a tuple in left-to-right source-frame order.
@@ -162,13 +171,32 @@ def opposed_terminal(font, left_variant, right_variant, side="left"):
     """
     import import_stix_foundation as s
     from stix_opposed_bowls import opposed_bowls_outline
-    if font["post"].italicAngle or side not in ("left", "right", "both"):
-        raise ValueError("Opposed middle terminals require a Roman side selection")
+    if side not in ("left", "right", "both"):
+        raise ValueError("Opposed middle terminals require a left/right side selection")
     if left_variant not in range(6) or right_variant not in range(6):
         raise ValueError("Opposed endings must be in range(6)")
-    source_left = 3 if side in ("left", "both") else left_variant
-    source_right = 1 if side in ("right", "both") else right_variant
+    from stix_middle_legs import _leg_selection
+    if side == "both":
+        selection = _leg_selection((extended, extended) if type(extended) is bool else extended, 2)
+    else:
+        selection = _leg_selection((extended,), 1)
+    source_left = 2 + selection[0] if side in ("left", "both") else left_variant
+    source_right = int(selection[-1]) if side in ("right", "both") else right_variant
     code = 0xF2B1C + source_left * 6 + source_right
+    if font["post"].italicAngle:
+        from stix_opposed_bowls_italic import italic_opposed_terminal
+        if side == "both":
+            recording, metadata, left, right = italic_opposed_terminal(font, 0, side, extended=selection)
+            centers = (left, right)
+        else:
+            recording, metadata, center = italic_opposed_terminal(
+                font, right_variant if side == "left" else left_variant, side, extended=selection[0])
+            centers = (center,)
+        metadata.update(middleLegs="extended", middleTerminalSide=side,
+                        middleTerminalSourceCodePoint=code,
+                        sourceLeftVariant=source_left, sourceRightVariant=source_right,
+                        sigmoidAdvanceWidth=metadata["advanceWidth"])
+        return recording, metadata, centers
     recording, metadata = opposed_bowls_outline(font, code)
     contours = list(s.native_recording_contours(recording))
     outer = contours[0]

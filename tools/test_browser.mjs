@@ -59,14 +59,14 @@ try {
   await page.locator('#font-weight').focus();await page.keyboard.press('Home');
   await navigate('charts.html');
   const visibleScreen='table[data-chart-kind="screen"]:visible';
-  check('Four numeric desktop screen grids',await page.locator(visibleScreen).count()===4);
-  check('Four print grids',await page.locator('table[data-chart-kind="print"]').count()===4);
+  check('Six numeric desktop screen grids',await page.locator(visibleScreen).count()===6);
+  check('Six print grids',await page.locator('table[data-chart-kind="print"]').count()===6);
   const screenCells=page.locator('table[data-chart-kind="screen"]:visible td[data-codepoint]');
-  check('All 1024 code positions represented',await page.locator('table[data-chart-kind="screen"]:visible td').count()===1024);
+  check('All 1536 code positions represented',await page.locator('table[data-chart-kind="screen"]:visible td').count()===1536);
   const assigned=page.locator('table[data-chart-kind="screen"]:visible td [data-glyph]');
-  check('All 832 assigned positions represented',await assigned.count()===832);
+  check('All 1216 assigned positions represented',await assigned.count()===1216);
   const names=page.locator('[data-name-codepoint]');
-  check('All 832 names represented',await names.count()===832);
+  check('All 1216 names represented',await names.count()===1216);
   const ordering=await names.evaluateAll(elements=>elements.map(element=>element.getAttribute('data-name-codepoint')));
   const parseCode=value=> /^[0-9]+$/.test(value)&&Number(value)>0xffff ? Number(value) : parseInt(value.replace(/^U\+/i,''),16);
   check('Formal names are in numeric order',ordering.map(parseCode).join()===catalogue.entries.map(entry=>entry.codePoint).sort((a,b)=>a-b).join());
@@ -80,7 +80,7 @@ try {
   await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
   check('Native Italic selected',await page.locator('html').getAttribute('data-posture')==='Italic');
   const visiblePending=await page.locator('table[data-chart-kind="screen"] .pending-label').evaluateAll(elements=>elements.filter(element=>element.getClientRects().length>0).length);
-  check('600 Italic pending variants clearly shown',visiblePending===600);
+  check('All 1216 native Italics display without pending markers',visiblePending===0&&await page.locator('table[data-chart-kind="screen"]:visible .glyph-wrap[data-italic="true"] .glyph:visible').count()===1216);
   const native=await page.locator('table[data-chart-kind="screen"]:visible .glyph-wrap[data-italic="true"] .glyph').first().evaluate(element=>({weight:getComputedStyle(element).fontWeight,style:getComputedStyle(element).fontStyle,synthesis:getComputedStyle(element).fontSynthesis}));
   check('Selected weight and native posture reach chart glyphs',native.weight==='700'&&native.style==='italic'&&native.synthesis==='none');
   check('Successful font loading leaves no status beside Italic',await page.locator('#font-status').textContent()===''&&!(await page.locator('#font-status').isVisible()));
@@ -90,7 +90,7 @@ try {
   await page.reload({waitUntil:'load'});
   await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
   check('Preferences persist across reload',await page.locator('#font-weight').inputValue()==='700'&&await page.locator('#font-italic').isChecked());
-  check('Missing native Italic logo uses the shared pending state',await page.locator('.brand-icon .pending-label').isVisible()&&await page.locator('.emblem-glyph .pending-label').isVisible()&&!(await page.locator('.brand-icon .glyph').isVisible())&&!(await page.locator('.emblem-glyph .glyph').isVisible()));
+  check('Native Italic logo appears in the header and hero',!(await page.locator('.brand-icon .pending-label').isVisible())&&!(await page.locator('.emblem-glyph .pending-label').isVisible())&&await page.locator('.brand-icon .glyph').isVisible()&&await page.locator('.emblem-glyph .glyph').isVisible());
   const logoStyles=await page.locator('.brand-icon .glyph,.emblem-glyph .glyph').evaluateAll(elements=>elements.map(element=>({weight:getComputedStyle(element).fontWeight,style:getComputedStyle(element).fontStyle,synthesis:getComputedStyle(element).fontSynthesis})));
   check('Both project marks share the selected weight and native posture',logoStyles.every(style=>style.weight==='700'&&style.style==='italic'&&style.synthesis==='none'));
   await page.locator('#font-italic').uncheck();
@@ -112,6 +112,19 @@ try {
   check('Copy code uses Unicode notation',await page.evaluate(()=>navigator.clipboard.readText())==='U+F2B00');
   await page.keyboard.press('Escape');
   check('Escape closes character details',!(await page.locator('#character-dialog').isVisible()));
+  const asymmetricNames=[];
+  for(const point of [0xF2E00,0xF2E01]){
+    await page.locator('#character-search').fill(`U+${point.toString(16).toUpperCase()}`);
+    await page.waitForTimeout(180);
+    const result=page.locator('#search-results [data-glyph]');
+    check(`U+${point.toString(16).toUpperCase()}: independent middle extension is searchable`,await result.count()===1);
+    asymmetricNames.push(await result.locator('.entry-name').textContent());
+    await result.click();
+    await page.locator('#copy-character').click();
+    check(`U+${point.toString(16).toUpperCase()}: copy keeps its independent identity`,await page.evaluate(()=>navigator.clipboard.readText())===String.fromCodePoint(point));
+    await page.keyboard.press('Escape');
+  }
+  check('The left-only and right-only forms have distinct displayed names',asymmetricNames[0]!==asymmetricNames[1]);
   await page.locator('#character-search').fill('xyz-no-such-construction');
   await page.waitForTimeout(180);
   check('Empty search is explained',/no|0/i.test(await page.locator('#result-count').innerText()));
@@ -146,7 +159,7 @@ try {
           overflow:tables.some(table=>table.closest('.chart-scroll').scrollWidth>table.closest('.chart-scroll').clientWidth+1)
         }));
         check(`${width}px: exactly the ${expectedColumns}-column variant is visible`,coverage.columns.every(columns=>columns===expectedColumns));
-        check(`${width}px: all 832 assigned and 192 vacant positions appear once`,coverage.assigned===832&&coverage.vacant===192&&new Set(coverage.codes).size===1024);
+        check(`${width}px: all 1216 assigned and 320 vacant positions appear once`,coverage.assigned===1216&&coverage.vacant===320&&new Set(coverage.codes).size===1536);
         check(`${width}px: chart geometry fits its container`,!coverage.overflow);
         const edges=await page.locator(visibleScreen).evaluateAll(tables=>tables.map(table=>{
           const sheet=table.closest('.reference-sheet'),row=table.tBodies[0].rows[1],width=element=>parseFloat(getComputedStyle(element).borderRightWidth);
@@ -165,8 +178,8 @@ try {
             const overflow=await page.locator(`${visibleScreen} .glyph,.name-entry .glyph`).evaluateAll(glyphs=>glyphs.filter(glyph=>glyph.getClientRects().length&&glyph.getBoundingClientRect().width>glyph.parentElement.getBoundingClientRect().width+1).map(glyph=>glyph.parentElement.dataset.form));
             check(`${width}px ${italic?'Italic':'Roman'} ${weight}: every visible chart and names glyph fits`,overflow.length===0);
             if(italic){
-              const pendingFits=await page.locator('.name-entry .pending-label:visible').evaluateAll(labels=>labels.length===600&&labels.every(label=>{const bounds=label.getBoundingClientRect(),slot=label.closest('.glyph-wrap').getBoundingClientRect();return bounds.width<=slot.width+1&&bounds.height<=slot.height+1&&getComputedStyle(label,'::after').content==='"–"';}));
-              check(`${width}px Italic ${weight}: all 600 pending names markers fit their glyph slots`,pendingFits&&await page.locator('.names-legend:visible').count()===3);
+              const pendingFits=await page.locator('.name-entry .pending-label:visible').evaluateAll(labels=>labels.length===0&&labels.every(label=>{const bounds=label.getBoundingClientRect(),slot=label.closest('.glyph-wrap').getBoundingClientRect();return bounds.width<=slot.width+1&&bounds.height<=slot.height+1&&getComputedStyle(label,'::after').content==='"–"';}));
+              check(`${width}px Italic ${weight}: all 1216 native names glyphs are present`,pendingFits&&await page.locator('.name-entry .glyph:visible').count()===1216&&await page.locator('.names-legend:visible').count()===0);
             }
           }
         }
@@ -213,7 +226,7 @@ try {
   check('Printed control bar is hidden',!(await page.locator('.font-bar').isVisible()));
   check('Print posture annotation is current',/Italic/.test(await page.locator('[data-print-posture]').first().innerText()));
   check('Print weight annotation is current',/700/.test(await page.locator('[data-print-weight]').first().innerText()));
-  check('Print exposes all four sixteen-column grids',await page.locator('table[data-chart-kind="print"]:visible').count()===4&&await page.locator(`${visibleScreen}`).count()===0);
+  check('Print exposes all six sixteen-column grids',await page.locator('table[data-chart-kind="print"]:visible').count()===6&&await page.locator(`${visibleScreen}`).count()===0);
   check('Only charts select the named Letter print page',await page.locator('body').evaluate(body=>getComputedStyle(body).page)==='code-charts');
   const continuationPrint=await page.locator('.print-sheet').evaluateAll(sheets=>sheets.map(sheet=>{const table=sheet.querySelector('table'),row=table.tBodies[0].rows[1],width=element=>parseFloat(getComputedStyle(element).borderRightWidth);return {before:sheet.dataset.continuesBefore==='true',after:sheet.dataset.continuesAfter==='true',left:width(row.cells[0]),right:width(row.cells[row.cells.length-1]),headerLeft:width(table.tHead.rows[0].cells[0]),headerRight:width(table.tHead.rows[0].cells[table.tHead.rows[0].cells.length-1]),inner:width(row.cells[1]),outer:parseFloat(getComputedStyle(table.tBodies[0].rows[0].cells[1]).borderTopWidth)};}));
   check('Printed continuation sheets use thin internal rails and heavy block edges',continuationPrint.every(edge=>edge.left===(edge.before?edge.inner:edge.outer)&&edge.right===(edge.after?edge.inner:edge.outer)&&edge.headerLeft===edge.left&&edge.headerRight===edge.right)&&continuationPrint[2].after&&continuationPrint[3].before);
@@ -222,8 +235,8 @@ try {
   for(const weight of [400,700]){
     await page.locator('#font-weight').evaluate((input,value)=>{input.value=String(value);input.dispatchEvent(new Event('input',{bubbles:true}));},weight);
     await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
-    const pendingPrintFits=await page.locator('.name-entry .pending-label:visible').evaluateAll(labels=>labels.length===600&&labels.every(label=>{const box=label.getBoundingClientRect(),slot=label.closest('.glyph-wrap').getBoundingClientRect();return box.width<=slot.width+1&&box.height<=slot.height+1;}));
-    check(`Print Italic ${weight}: pending names markers remain inside their glyph slots`,pendingPrintFits);
+    const pendingPrintFits=await page.locator('.name-entry .pending-label:visible').evaluateAll(labels=>labels.length===0&&labels.every(label=>{const box=label.getBoundingClientRect(),slot=label.closest('.glyph-wrap').getBoundingClientRect();return box.width<=slot.width+1&&box.height<=slot.height+1;}));
+    check(`Print Italic ${weight}: all 1216 native Italic names glyphs print`,pendingPrintFits&&await page.locator('.name-entry .glyph:visible').count()===1216);
   }
   await page.pdf({path:path.join(output,'charts-browser-print.pdf'),preferCSSPageSize:true,printBackground:true});
   await navigate('proposal.html');
@@ -236,9 +249,9 @@ try {
   const noJs=await browser.newContext({javaScriptEnabled:false,viewport:{width:1024,height:900}});
   const staticPage=await noJs.newPage();
   await staticPage.goto(new URL('charts.html',base).href);
-  check('Charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===832);
+  check('Charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216);
   await staticPage.setViewportSize({width:320,height:900});
-  check('Responsive charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===832&&await staticPage.locator('table[data-chart-kind="screen"]:visible').first().getAttribute('data-columns')==='4');
+  check('Responsive charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216&&await staticPage.locator('table[data-chart-kind="screen"]:visible').first().getAttribute('data-columns')==='4');
   await noJs.close();
 
   const fontFailure=await browser.newContext();
@@ -250,7 +263,7 @@ try {
   await failedPage.setViewportSize({width:375,height:1000});
   await failedPage.goto(new URL('charts.html',base).href);
   await failedPage.waitForFunction(()=>document.body.dataset.fonts==='error');
-  const failureMarkers=await failedPage.locator('.name-entry .glyph-wrap').evaluateAll(slots=>slots.length===832&&slots.every(slot=>{const marker=getComputedStyle(slot,'::after'),bounds=slot.getBoundingClientRect(),column=slot.parentElement.getBoundingClientRect();return marker.content==='"?"'&&parseFloat(marker.lineHeight)<=bounds.height+1&&bounds.width<=column.width+1&&bounds.height<=parseFloat(getComputedStyle(slot.closest('.name-entry')).lineHeight)+1;}));
+  const failureMarkers=await failedPage.locator('.name-entry .glyph-wrap').evaluateAll(slots=>slots.length===1216&&slots.every(slot=>{const marker=getComputedStyle(slot,'::after'),bounds=slot.getBoundingClientRect(),column=slot.parentElement.getBoundingClientRect();return marker.content==='"?"'&&parseFloat(marker.lineHeight)<=bounds.height+1&&bounds.width<=column.width+1&&bounds.height<=parseFloat(getComputedStyle(slot.closest('.name-entry')).lineHeight)+1;}));
   check('375px font failure uses fitted markers for all names and an explicit explanation',failureMarkers&&await failedPage.locator('.names-font-legend:visible').count()===3&&await failedPage.locator('#font-status').isVisible());
   await fontFailure.close();
   await writeFile(path.join(output,'report.json'),JSON.stringify({base,checks:checks.length,passed:checks,errors:failures,failedResponses:responses},null,2));

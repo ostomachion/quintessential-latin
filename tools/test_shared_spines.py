@@ -38,7 +38,8 @@ from test_quintessential_font import (
 )
 
 ENTRIES = tuple(e for e in ALLOCATION_ENTRIES
-                if any(p["kind"] == "spine" for p in e["parts"][1:-1]))
+                if "middleLegExtensions" not in e
+                and any(p["kind"] == "spine" for p in e["parts"][1:-1]))
 COMPILED = True
 BEFORE = ROOT / "tests/baselines/0.210"
 REPORT = {"familySize": len(ENTRIES), "weights": [], "sourcePreservation": [],
@@ -151,7 +152,7 @@ class SharedSpineTests(unittest.TestCase):
     def test_source_family_closure_and_localized_connection_preservation(self):
         self.assertEqual(len(ENTRIES), 396)
         self.assertEqual(sum(e["middleLegs"] for e in ENTRIES), 180)
-        self.assertTrue(all(e["postures"] == ["Roman"] for e in ENTRIES))
+        self.assertTrue(all(e["postures"] == ["Roman", "Italic"] for e in ENTRIES))
         for weight in (400, 700):
             preserved = 0
             for entry in ENTRIES:

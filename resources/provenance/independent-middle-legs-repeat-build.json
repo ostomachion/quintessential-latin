@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "seconds": 1555.836,
+  "manifestSha256": "3a7b1333668a0ba61510a944fdecfd8650cb34e611c3a01ca8d6dc47c922d31d",
+  "sourceFiles": 4925,
+  "outputs": {
+    "FONTLOG.txt": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204",
+    "OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
+    "proof-data.json": "7c31410d40d23453845cb82f7a9a47ca695e5b5c5227a6934c26e040fdf16d07",
+    "QuintessentialSerif-Bold.otf": "6dd665d27d644f3fc37c6f5603490d35809e201e3ee65e7cd4f41605511f914c",
+    "QuintessentialSerif-Bold.woff2": "2e650d385a69827d36f6c8f4767ebd7b33c7232b189fbf1446b7b8a9ca4e3492",
+    "QuintessentialSerif-BoldItalic.otf": "56732a863530dce8e1fa4446c3c01bc55dea3a2e043608a1de0b679c6c4ce650",
+    "QuintessentialSerif-BoldItalic.woff2": "8ffc39e92876809a7279fd7e0d67796d18e2a3fb37bd19fa7891537a75bdf434",
+    "QuintessentialSerif-Italic-Variable.ttf": "ab50c27d4dc55add2306365f5f75101c0e507e9755b704fa10a3942806c5f6e5",
+    "QuintessentialSerif-Italic-Variable.woff2": "a0802af58b2c2d6cecee6bb7c7fa74cc33e905c550c120a15b1a3f6a5b4767e5",
+    "QuintessentialSerif-Italic.otf": "b6cf90e63fb395248ac0aa4a8ca41b8b7228204abb0d34e1cb685ddd156328fd",
+    "QuintessentialSerif-Italic.woff2": "b3a19c9b65339af67a5cfeb08626c4eb0583f82ad32daee48a1281ad4436dad7",
+    "QuintessentialSerif-Regular.otf": "fc8b3dee124b807eda47a2d36ef1d58126400b1d1b710a6fab318bab7a8c6736",
+    "QuintessentialSerif-Regular.woff2": "21416d9e6508653c008a493db1fa2d0445523a5c281762df457370b4ae12689a",
+    "QuintessentialSerif-Variable.ttf": "5b169adace7328e4980763fc9cd87c32a50f0daa360143500945986ba35beabb",
+    "QuintessentialSerif-Variable.woff2": "810bfa5af1abc5f6939f872d4b2831043bcc11c3230f235b0387810d9cc9d8b9",
+    "TRADEMARKS.txt": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+  }
+}

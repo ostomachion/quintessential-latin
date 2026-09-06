@@ -15,9 +15,9 @@ DONORS = ROOT / "resources" / "fonts" / "STIXTwoText"
 DONOR_MANIFEST = DONORS / "source-manifest.json"
 
 FAMILY_NAME = "Quintessential Serif"
-VERSION = "0.220"
+VERSION = "0.240"
 VERSION_MAJOR = 0
-VERSION_MINOR = 220
+VERSION_MINOR = 240
 SOURCE_DATE_EPOCH = 1_788_480_000  # 2026-09-04 00:00:00 UTC.
 VENDOR_ID = "QLAT"
 
@@ -93,6 +93,7 @@ class GlyphSpec:
     recipe_code_point: int | None = None
     internal_name: str | None = None
     middle_legs: bool = False
+    middle_leg_extensions: tuple[bool, ...] | None = None
     stemless: bool = False
 
     @property
@@ -1091,6 +1092,7 @@ def _allocated_specs():
                           recipe_code_point=row["recipeCodePoint"], internal_name=row["glyphName"],
                           label=base.label + " with extended middle legs", direct_donor=None,
                           roman_stem_donor=None, middle_legs=True,
+                          middle_leg_extensions=tuple(row["middleLegExtensions"]) if "middleLegExtensions" in row else None,
                           references=(*base.references, ("middle-descender", 0x70, "lowercase p"),
                                       ("middle-ascender", 0x6C, "lowercase l")),
                           adaptation="Retain the base arch construction and outer endings; extend internal free legs with native terminal joins.")
@@ -1119,6 +1121,30 @@ _CANONICAL_LABELS = {
 }
 GLYPHS = tuple(replace(glyph, label=_CANONICAL_LABELS[glyph.glyph_id]) for glyph in _allocated_specs())
 
+# Preserve the complete pre-0.230 Italic GID prefix, including the later
+# middle-leg companions and stemless signs. New native forms append to it.
+INDEPENDENT_MIDDLE_IDS = frozenset(glyph.glyph_id for glyph in GLYPHS if glyph.middle_leg_extensions is not None)
+PREVIOUS_ITALIC_IDS = frozenset(glyph.glyph_id for glyph in GLYPHS
+                              if not glyph.roman_only and glyph.glyph_id not in INDEPENDENT_MIDDLE_IDS)
+ITALIC_ADDITION_IDS = frozenset(glyph.glyph_id for glyph in GLYPHS
+                              if glyph.roman_only and glyph.glyph_id not in INDEPENDENT_MIDDLE_IDS)
+def _complete_italic_spec(glyph):
+    if not glyph.roman_only:
+        return glyph
+    references = tuple((role, 0x250 if code == 0x61 else code,
+                        "native Italic turned a" if code == 0x61 else label)
+                       for role, code, label in glyph.references)
+    return replace(glyph, roman_only=False, italic_references=references,
+                   italic_adaptation="Native Italic STIX Two Text bodies and endings, with "
+                   "independently drawn epsilon lobes for double bowls and turned-a diagonal "
+                   "counters for spines. Native arch ribbons translate rigidly; shared-shaft "
+                   "joins follow their receiving axes. Internal free legs retain native terminals.")
+
+
+GLYPHS = tuple(_complete_italic_spec(glyph) for glyph in GLYPHS)
+ITALIC_ADDITIONS = tuple(glyph for glyph in GLYPHS if glyph.glyph_id in ITALIC_ADDITION_IDS)
+INDEPENDENT_MIDDLE_ADDITIONS = tuple(glyph for glyph in GLYPHS if glyph.glyph_id in INDEPENDENT_MIDDLE_IDS)
+
 GLYPH_ORDER = (".notdef", "space", *(glyph.glyph_name for glyph in GLYPHS))
 GLYPH_BY_NAME = {glyph.glyph_name: glyph for glyph in GLYPHS}
 EXPECTED_CODE_POINTS = (0x20, *(glyph.code_point for glyph in GLYPHS))
@@ -1126,7 +1152,10 @@ EXPECTED_CODE_POINTS = (0x20, *(glyph.code_point for glyph in GLYPHS))
 
 def glyphs_for_posture(italic: bool) -> tuple[GlyphSpec, ...]:
     """Return the explicitly built repertoire for this native posture."""
-    return tuple(glyph for glyph in GLYPHS if not (italic and glyph.roman_only))
+    if italic:
+        return (tuple(glyph for glyph in GLYPHS if glyph.glyph_id in PREVIOUS_ITALIC_IDS)
+                + ITALIC_ADDITIONS + INDEPENDENT_MIDDLE_ADDITIONS)
+    return GLYPHS
 
 
 def glyph_order_for_posture(italic: bool) -> tuple[str, ...]:

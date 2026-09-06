@@ -1,15 +1,20 @@
 # Reference font development
 
-Quintessential Serif 0.220 is the reference build, with an unreleased optical
-revision across the 396 Roman constructions sharing U+F2B18's paired spine.
+Quintessential Serif 0.240 is the reference build, adding 384 independently
+extended middle-component constructions in Roman and native Italic for 1,216
+forms in each posture. The preceding corrected 0.230 build's 832 forms and their
+pairs are preserved.
 The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.
 
 ## Invariants
 
-- All 832 Roman and 232 Italic mappings retain their explicit scalar values,
-  stable identities, advances, and kerning. The shared-spine revision changes
+- All preceding corrected 0.230 Roman and Italic mappings, 832 in each posture,
+  retain their explicit scalar
+  values, stable identities, outlines, advances, and effective kerning pairs.
+  New mappings occupy U+F2E00–U+F2F7F, after the previous glyph-order prefix.
+  The historical shared-spine revision changed
   the paired body counters of 396 Roman constructions and their reviewed
   body-return, arch-port, and lower-hook closure segments. All remaining
   segments, unrelated outlines, and native Italic geometry remain preserved.
@@ -22,6 +27,19 @@ STIX Two Text donors. Donor checksums are verified before compilation.
   reads those components and never rewrites the font outlines.
 - Middle-component companions follow their bases in specimen presentation.
   Numeric charts and names lists follow code order.
+
+The earlier [Italic completion](italic-completion.md) added the remaining 600 Italics
+with `python tools/complete_italic_sources.py`. It left every existing GLIF
+untouched, appended new Italic glyph IDs after the complete previous prefix, and
+added only pairs involving those new forms. All four masters received release
+version metadata. Allocation version 0.220 and naming version 3 remained unchanged;
+only posture availability expanded.
+
+The [independent middle extension revision](independent-middle-extensions.md)
+adds two asymmetric states for every form with two middle components.
+The `middleLegExtensions` tuple uses final visual left-to-right order; reversed
+forms must transform those positions before using their construction donors.
+Allocation and font version are 0.240; canonical naming stays at version 3.
 
 ## Preservation fixtures
 

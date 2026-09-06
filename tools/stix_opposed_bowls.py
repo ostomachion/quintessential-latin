@@ -113,7 +113,10 @@ def opposed_bowls_outline(font, code_point):
     from stix_bowled_spine import fit_operation
     from stix_bowled_spine_normal import _counter
 
-    if font["post"].italicAngle or not 0xF2B1C <= code_point <= 0xF2B3F:
+    if font["post"].italicAngle:
+        from stix_opposed_bowls_italic import italic_opposed_bowls_outline
+        return italic_opposed_bowls_outline(font, code_point)
+    if not 0xF2B1C <= code_point <= 0xF2B3F:
         raise ValueError("Opposed bowls require a narrow Roman assignment")
     left_variant, right_variant = divmod(code_point - 0xF2B1C, 6)
     left_kind, left_extended = divmod(left_variant, 2)

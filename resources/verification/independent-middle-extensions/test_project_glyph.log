@@ -1,0 +1,9 @@
+test_compiled_advance_and_outer_contour_preserved (__main__.ProjectGlyphTests.test_compiled_advance_and_outer_contour_preserved) ... ok
+test_optical_profiles_across_weight_axis (__main__.ProjectGlyphTests.test_optical_profiles_across_weight_axis) ... ok
+test_source_compatibility_and_preserved_silhouette (__main__.ProjectGlyphTests.test_source_compatibility_and_preserved_silhouette) ... ok
+test_static_faces_match_variable_endpoints_geometrically (__main__.ProjectGlyphTests.test_static_faces_match_variable_endpoints_geometrically) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 23.536s
+
+OK

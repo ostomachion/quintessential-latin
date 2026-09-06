@@ -1,8 +1,103 @@
 # Verification record
 
-Current reference font **0.220**, canonical naming **3**.
+Current reference font **0.240**, allocation **0.240**, canonical naming **3**.
 
-## Unicode chart presentation
+## Independent middle extensions
+
+The 6 September 2026 increment adds **384 constructions** with independently
+extended middle legs or arms, bringing the mapped repertoire to **1,216** in
+Roman and native Italic. The new assignments are U+F2E00–U+F2F7F; all preceding
+832 identities and assignments remain unchanged. Extended-B now ends at
+U+F2FFF, so the charts cover six 256-position sheets and 320 unallocated cells.
+
+See [construction and regeneration](independent-middle-extensions.md).
+All 192 four-state comparisons and 384 additions were visually inspected in
+[24 compiled-font proof sheets](images/independent-middle-legs/index.html),
+in both native postures at weights 400/550/700 with 16px and 24px contexts.
+No new visible defects were identified; the
+[optical review record](../resources/verification/independent-middle-extensions-optical-review.json)
+binds the inspections to the exact fonts and proof images.
+
+All **20 naming tests**, **12 site acceptance groups**, **152 browser checks**,
+and **9 PDF checks** pass. The four-page site contains all 1,216 characters in
+both native postures. The five refreshed publication PDFs contain **70 pages**
+(6 main, 7 Extended-A, 20 Extended-B, 33 combined, and 4 proposal); every page
+was visually inspected from fresh Poppler renders. All five PDFs and their
+manifest also reproduce byte for byte.
+
+The complete **26-page Italic 700 browser print** and desktop/mobile layouts
+were visually inspected. Sixteen native-font character dialogs compare the
+four middle-extension states in Roman 400 and Italic 700 at 1440px and 375px.
+No clipping, overlap, missing glyphs, or broken wrapping was found. See the
+[publication and browser review](../resources/verification/independent-middle-extensions-publication-review.json).
+All **384 additions** pass source and compiled geometry checks at five weights
+in both postures. Thirty current regression methods verify the additions and
+historical preservation, including all **832 preceding identities**, **3,336
+unchanged GLIF files**, outlines, advances, effective pairs, and glyph-order
+prefixes from the corrected 0.230 build. All 1,216 glyphs per posture also pass
+finite interpolation and individual contour simplicity/winding checks.
+
+All **14,786,560 ordered-pair samples** pass the overlap test. The **1,536 new
+static glyph instances** pass the existing endpoint geometry comparison; exact
+preservation carries forward the preceding static results. Global coverage,
+master compatibility, metrics, hinting, WOFF2 tables, and proof metadata pass.
+The [font verification record](../resources/verification/independent-middle-extensions/font-validation.json)
+records the scoped runs, retained completed methods, and exact input hashes.
+
+Source reconstruction is byte-identical. An isolated build from **4,925 source
+files** reproduces all **16 outputs and the build manifest** byte for byte in
+1,555.836 seconds. See the
+[repeat-build record](../resources/provenance/independent-middle-legs-repeat-build.json).
+Engineering checks are complete. The build is local; external publication and
+user visual acceptance remain separate.
+
+The following records describe earlier revisions and retain their historical
+counts and hashes.
+
+## Historical native Italic completion
+
+The 6 September 2026 increment adds all **600 remaining native Italics**.
+All **832 characters** now have Roman and Italic outlines across weights
+400–700. Character identities, names, code points, and display order are
+unchanged. The previous 232 Italics retain their glyph-order prefix.
+
+An independent capture of the actual preceding font verifies every previous
+outline, advance, mapping, and effective kerning pair across four source
+masters, four static faces, and ten variable instances. The new forms pass
+connected-ink and counter checks at five weights (**3,000 samples**), native
+curve checks in both masters, and checks of all 276 new middle-leg companions.
+The source updater reproduces all generated source files byte for byte.
+The final corrected build also passes 18,305 individual contour checks,
+4,160 filled-glyph checks, and all 6,922,240 ordered-pair placements.
+See [the final font validation record](../resources/verification/italic-completion/final-font-validation.json)
+for the split test runs and the resolved shared-shoulder defect.
+An isolated build from 3,388 manifested source files reproduced all 16 outputs
+and the manifest byte for byte in 743.881 seconds. Its
+[repeat-build record](../resources/provenance/italic-completion-repeat-build.json)
+and [independent preservation results](../resources/verification/italic-completion/new-suite-results.json)
+bind these checks to the delivered fonts.
+
+All 600 additions were visually reviewed in **28 compiled-font proof sheets**
+at weights 400/550/700, with 16px and 24px contexts. No actionable visual defects
+were found. See [construction and regeneration](italic-completion.md),
+[the proof index](images/italic-completion/index.html), and
+[the optical review record](../resources/verification/italic-completion-review.json).
+
+The four-page site build, seventeen naming tests, twelve site acceptance groups,
+147 browser checks, and nine PDF checks pass. The five refreshed PDFs contain
+50 pages in total. Every publication page was visually inspected from fresh
+Poppler renders; no clipping, overlap, missing glyphs, or broken wrapping was
+found. Agent optical review and engineering checks do not imply user visual
+acceptance. This increment is built locally; publication remains separate.
+All five PDFs and their manifest also reproduce byte for byte. The earlier 18-page browser print was visually reviewed in native Italic at
+weight 700. Its recorded font hash predates the contour correction; the final
+corrected shapes are covered by the compiled-font proof review.
+See [publication and browser review](../resources/verification/italic-completion-publication-review.json).
+
+The following records describe earlier revisions and retain their historical
+counts and hashes.
+
+## Historical Unicode chart presentation
 
 The 6 September 2026 presentation revision brings the code-chart PDFs and
 responsive charts close to the supplied Unicode references. Letter pages use

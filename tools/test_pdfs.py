@@ -47,7 +47,7 @@ class PublicationPdfTests(unittest.TestCase):
             self.assertEqual(len(expected),len(set(expected)),name)
             # Independently inspect actual PDF text, including correct Plane 15
             # copy/extraction through each embedded font's ToUnicode mapping.
-            extracted=Counter(ord(ch) for text in self.texts[name] for ch in text if 0xF2A00<=ord(ch)<=0xF2DFF)
+            extracted=Counter(ord(ch) for text in self.texts[name] for ch in text if 0xF2A00<=ord(ch)<=0xF2FFF)
             self.assertEqual(extracted,Counter({cp:2 for cp in expected}),name)
             name_text=' '.join(self.texts[name][p['page']-1] for p in names)
             normalized=re.sub(r'\s+',' ',name_text)
@@ -57,10 +57,10 @@ class PublicationPdfTests(unittest.TestCase):
             for p in charts:
                 self.assertEqual(p['start']%256,0)
                 self.assertEqual(p['end']-p['start'],255)
-            self.assertEqual(len(charts),4 if 'catalogue' in name else (2 if 'extended-b' in name else 1))
+            self.assertEqual(len(charts),6 if 'catalogue' in name else (4 if 'extended-b' in name else 1))
             if 'catalogue' not in name:
                 total_charts+=len(charts)
-        self.assertEqual(total_charts,4)
+        self.assertEqual(total_charts,6)
         combined=self.audit['files']['quintessential-latin-catalogue.pdf']['pages']
         self.assertEqual(sum(p['kind']=='cover' for p in combined),3)
 
@@ -136,7 +136,7 @@ class PublicationPdfTests(unittest.TestCase):
                     expected_families.append(entry['familyId'])
             self.assertEqual([h['familyId'] for h in headings],expected_families,name)
             if 'catalogue' in name:
-                self.assertEqual(len(headings),48)
+                self.assertEqual(len(headings),58)
             names_text=re.sub(r'\s+',' ',' '.join(self.texts[name][p['page']-1]
                                                   for p in item['pages'] if p['kind']=='names'))
             families={f['id']:f for f in self.data['families']}
@@ -227,7 +227,7 @@ class PublicationPdfTests(unittest.TestCase):
                     self.assertTrue(self.texts[name][index].strip().endswith(str(index+1)) or
                                     re.search(rf'\b{index+1}\b',self.texts[name][index]))
                     for char in page.chars:
-                        if len(char['text'])==1 and 0xF2A00<=ord(char['text'])<=0xF2DFF:
+                        if len(char['text'])==1 and 0xF2A00<=ord(char['text'])<=0xF2FFF:
                             continue # true script ink bounds are independently recorded above
                         self.assertGreaterEqual(char['x0'],40,(name,index+1,char['text']))
                         self.assertLessEqual(char['x1'],572,(name,index+1,char['text']))
@@ -241,9 +241,10 @@ class PublicationPdfTests(unittest.TestCase):
             self.assertIn(section['title'],text)
         for reference in proposal['references']:
             self.assertIn(reference['url'],text)
-        self.assertIn('232',text)
-        self.assertIn('600',text)
-        self.assertIn('832',text)
+        self.assertIn('1,216',text)
+        self.assertIn('native Italic',text)
+        self.assertIn('each can extend independently',text)
+        self.assertIn('U+F2E00',text)
         self.assertIn('not an announcement of registration',text)
 
 

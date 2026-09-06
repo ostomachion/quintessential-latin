@@ -1,0 +1,12 @@
+test_all_prior_editable_outlines_advances_and_pairs_are_exact (__main__.ItalicCompletionTests.test_all_prior_editable_outlines_advances_and_pairs_are_exact) ... ok
+test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact (__main__.ItalicCompletionTests.test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact) ... ok
+test_full_coverage_changes_only_posture_availability (__main__.ItalicCompletionTests.test_full_coverage_changes_only_posture_availability) ... ok
+test_new_italic_endpoints_are_compatible_and_differ_from_roman (__main__.ItalicCompletionTests.test_new_italic_endpoints_are_compatible_and_differ_from_roman) ... ok
+test_new_italic_shapes_have_connected_ink_and_open_counters_at_five_weights (__main__.ItalicCompletionTests.test_new_italic_shapes_have_connected_ink_and_open_counters_at_five_weights) ... ok
+test_new_italics_retain_rigid_native_italic_curves (__main__.ItalicCompletionTests.test_new_italics_retain_rigid_native_italic_curves) ... ok
+test_new_middle_companions_keep_parent_advances_and_extend_every_internal_end (__main__.ItalicCompletionTests.test_new_middle_companions_keep_parent_advances_and_extend_every_internal_end) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 373.637s
+
+OK

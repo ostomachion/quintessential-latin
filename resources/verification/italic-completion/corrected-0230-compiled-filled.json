@@ -1,0 +1,5621 @@
+{
+  "mode": "compiled",
+  "glyphCount": 832,
+  "samples": [
+    {
+      "weight": 400,
+      "glyphCount": 832,
+      "contourCount": 0
+    },
+    {
+      "weight": 500,
+      "glyphCount": 832,
+      "contourCount": 0
+    },
+    {
+      "weight": 550,
+      "glyphCount": 832,
+      "contourCount": 0
+    },
+    {
+      "weight": 600,
+      "glyphCount": 832,
+      "contourCount": 0
+    },
+    {
+      "weight": 700,
+      "glyphCount": 832,
+      "contourCount": 0
+    }
+  ],
+  "errors": [],
+  "refinedContours": 0,
+  "maximumResolvedDifference": 0,
+  "font": ".tmp\\italic-completion\\corrected-0230\\resources\\fonts\\QuintessentialSerif\\QuintessentialSerif-Italic-Variable.ttf",
+  "sha256": "be48bf4b26f3e8c154841c4df1feeadc92a6d04f0a248aad1605687587fe7456",
+  "fileHashUnchanged": true,
+  "status": "passed",
+  "previousCounts": {
+    "400": {
+      "uF2B00": {
+        "components": 1,
+        "counterAreas": [
+          79298.96899414062
+        ]
+      },
+      "special-closed-double-bowl": {
+        "components": 1,
+        "counterAreas": [
+          20335.845703125,
+          26101.487182617188
+        ]
+      },
+      "uF2B01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-double-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A00": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A04": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A05": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A06": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A07": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A08": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A09": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A11": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A12": {
+        "components": 1,
+        "counterAreas": [
+          3.642822265625
+        ]
+      },
+      "uF2A0B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A13": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A10": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A14": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A21": {
+        "components": 1,
+        "counterAreas": [
+          71983.81494140625
+        ]
+      },
+      "uF2A25": {
+        "components": 1,
+        "counterAreas": [
+          71983.81494140625
+        ]
+      },
+      "uF2A29": {
+        "components": 1,
+        "counterAreas": [
+          71983.81494140625
+        ]
+      },
+      "uF2A22": {
+        "components": 1,
+        "counterAreas": [
+          72094.15405273438
+        ]
+      },
+      "uF2A26": {
+        "components": 1,
+        "counterAreas": [
+          71990.48120117188
+        ]
+      },
+      "uF2A2A": {
+        "components": 1,
+        "counterAreas": [
+          71990.48120117188
+        ]
+      },
+      "uF2A23": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A27": {
+        "components": 1,
+        "counterAreas": [
+          71387.65881347656
+        ]
+      },
+      "uF2A2B": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A24": {
+        "components": 1,
+        "counterAreas": [
+          71154.69226074219
+        ]
+      },
+      "uF2A28": {
+        "components": 1,
+        "counterAreas": [
+          71154.69226074219
+        ]
+      },
+      "uF2A2C": {
+        "components": 1,
+        "counterAreas": [
+          71154.69226074219
+        ]
+      },
+      "uF2A15": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A19": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A16": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A17": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A18": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A20": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A31": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A35": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A32": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A36": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A33": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A37": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A30": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A34": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A38": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A39": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A41": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3A": {
+        "components": 1,
+        "counterAreas": [
+          101357.36999511719
+        ]
+      },
+      "uF2A3E": {
+        "components": 1,
+        "counterAreas": [
+          98895.15222167969
+        ]
+      },
+      "uF2A42": {
+        "components": 1,
+        "counterAreas": [
+          98895.15222167969
+        ]
+      },
+      "uF2A3B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A43": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3C": {
+        "components": 1,
+        "counterAreas": [
+          103255.84948730469
+        ]
+      },
+      "uF2A40": {
+        "components": 1,
+        "counterAreas": [
+          103255.84948730469
+        ]
+      },
+      "uF2A44": {
+        "components": 1,
+        "counterAreas": [
+          103255.84948730469
+        ]
+      },
+      "uF2A45": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A45.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5D": {
+        "components": 1,
+        "counterAreas": [
+          71977.55920410156
+        ]
+      },
+      "uF2A61": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A65": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A5E": {
+        "components": 1,
+        "counterAreas": [
+          71977.55920410156
+        ]
+      },
+      "uF2A62": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A66": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A5F": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A63": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A67": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A60": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A64": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A68": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A5D.middle": {
+        "components": 1,
+        "counterAreas": [
+          71977.55920410156
+        ]
+      },
+      "uF2A61.middle": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A65.middle": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A5E.middle": {
+        "components": 1,
+        "counterAreas": [
+          71977.55920410156
+        ]
+      },
+      "uF2A62.middle": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A66.middle": {
+        "components": 1,
+        "counterAreas": [
+          71943.32971191406
+        ]
+      },
+      "uF2A5F.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A63.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A67.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A60.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A64.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A68.middle": {
+        "components": 1,
+        "counterAreas": [
+          69912.17895507812
+        ]
+      },
+      "uF2A51": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A51.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A79": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A76": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A77": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A78": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A80": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75.middle": {
+        "components": 1,
+        "counterAreas": [
+          94276.05334472656
+        ]
+      },
+      "uF2A79.middle": {
+        "components": 1,
+        "counterAreas": [
+          94276.05334472656
+        ]
+      },
+      "uF2A7D.middle": {
+        "components": 1,
+        "counterAreas": [
+          94276.05334472656
+        ]
+      },
+      "uF2A76.middle": {
+        "components": 1,
+        "counterAreas": [
+          94275.98596191406
+        ]
+      },
+      "uF2A7A.middle": {
+        "components": 1,
+        "counterAreas": [
+          94275.98596191406
+        ]
+      },
+      "uF2A7E.middle": {
+        "components": 1,
+        "counterAreas": [
+          94275.98596191406
+        ]
+      },
+      "uF2A77.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2A7B.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2A7F.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2A78.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2A7C.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2A80.middle": {
+        "components": 1,
+        "counterAreas": [
+          95697.37841796875
+        ]
+      },
+      "uF2B10": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B14": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B18": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B11": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B15": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B19": {
+        "components": 1,
+        "counterAreas": [
+          29425.355590820312
+        ]
+      },
+      "uF2B12": {
+        "components": 1,
+        "counterAreas": [
+          29175.622314453125
+        ]
+      },
+      "uF2B16": {
+        "components": 1,
+        "counterAreas": [
+          28959.879638671875
+        ]
+      },
+      "uF2B1A": {
+        "components": 1,
+        "counterAreas": [
+          28742.575073242188
+        ]
+      },
+      "uF2B13": {
+        "components": 1,
+        "counterAreas": [
+          29175.622314453125
+        ]
+      },
+      "uF2B17": {
+        "components": 1,
+        "counterAreas": [
+          28959.879638671875
+        ]
+      },
+      "uF2B1B": {
+        "components": 1,
+        "counterAreas": [
+          28742.575073242188
+        ]
+      },
+      "uF2B4C": {
+        "components": 1,
+        "counterAreas": [
+          29255.520141601562
+        ]
+      },
+      "uF2B50": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B54": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B4D": {
+        "components": 1,
+        "counterAreas": [
+          29255.520141601562
+        ]
+      },
+      "uF2B51": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B55": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B4E": {
+        "components": 1,
+        "counterAreas": [
+          29276.542236328125
+        ]
+      },
+      "uF2B52": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B56": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B4F": {
+        "components": 1,
+        "counterAreas": [
+          29276.542236328125
+        ]
+      },
+      "uF2B53": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B57": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B4C.middle": {
+        "components": 1,
+        "counterAreas": [
+          29255.520141601562
+        ]
+      },
+      "uF2B50.middle": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B54.middle": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B4D.middle": {
+        "components": 1,
+        "counterAreas": [
+          29255.520141601562
+        ]
+      },
+      "uF2B51.middle": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B55.middle": {
+        "components": 1,
+        "counterAreas": [
+          29269.133422851562
+        ]
+      },
+      "uF2B4E.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.542236328125
+        ]
+      },
+      "uF2B52.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B56.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B4F.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.542236328125
+        ]
+      },
+      "uF2B53.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      },
+      "uF2B57.middle": {
+        "components": 1,
+        "counterAreas": [
+          29276.587646484375
+        ]
+      }
+    },
+    "500": {
+      "uF2B00": {
+        "components": 1,
+        "counterAreas": [
+          71701.17712402344
+        ]
+      },
+      "special-closed-double-bowl": {
+        "components": 1,
+        "counterAreas": [
+          16796.970703125,
+          21845.826904296875
+        ]
+      },
+      "uF2B01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-double-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A00": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A04": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A05": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A06": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A07": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A08": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A09": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A11": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A12": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A13": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A10": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A14": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A21": {
+        "components": 1,
+        "counterAreas": [
+          65707.89282226562
+        ]
+      },
+      "uF2A25": {
+        "components": 1,
+        "counterAreas": [
+          65707.89282226562
+        ]
+      },
+      "uF2A29": {
+        "components": 1,
+        "counterAreas": [
+          65707.89282226562
+        ]
+      },
+      "uF2A22": {
+        "components": 1,
+        "counterAreas": [
+          66065.24523925781
+        ]
+      },
+      "uF2A26": {
+        "components": 1,
+        "counterAreas": [
+          66018.66491699219
+        ]
+      },
+      "uF2A2A": {
+        "components": 1,
+        "counterAreas": [
+          66018.66491699219
+        ]
+      },
+      "uF2A23": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A27": {
+        "components": 1,
+        "counterAreas": [
+          64463.10437011719
+        ]
+      },
+      "uF2A2B": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A24": {
+        "components": 1,
+        "counterAreas": [
+          64424.55871582031
+        ]
+      },
+      "uF2A28": {
+        "components": 1,
+        "counterAreas": [
+          64424.55871582031
+        ]
+      },
+      "uF2A2C": {
+        "components": 1,
+        "counterAreas": [
+          64424.55871582031
+        ]
+      },
+      "uF2A15": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A19": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A16": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A17": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A18": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A20": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A31": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A35": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A32": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A36": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A33": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A37": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A30": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A34": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A38": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A39": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A41": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3A": {
+        "components": 1,
+        "counterAreas": [
+          91295.54626464844
+        ]
+      },
+      "uF2A3E": {
+        "components": 1,
+        "counterAreas": [
+          89802.60424804688
+        ]
+      },
+      "uF2A42": {
+        "components": 1,
+        "counterAreas": [
+          89966.23071289062
+        ]
+      },
+      "uF2A3B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A43": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3C": {
+        "components": 1,
+        "counterAreas": [
+          92948.70434570312
+        ]
+      },
+      "uF2A40": {
+        "components": 1,
+        "counterAreas": [
+          92948.70434570312
+        ]
+      },
+      "uF2A44": {
+        "components": 1,
+        "counterAreas": [
+          92948.70434570312
+        ]
+      },
+      "uF2A45": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A45.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5D": {
+        "components": 1,
+        "counterAreas": [
+          65661.31982421875
+        ]
+      },
+      "uF2A61": {
+        "components": 1,
+        "counterAreas": [
+          65599.94104003906
+        ]
+      },
+      "uF2A65": {
+        "components": 1,
+        "counterAreas": [
+          65598.53930664062
+        ]
+      },
+      "uF2A5E": {
+        "components": 1,
+        "counterAreas": [
+          65661.31982421875
+        ]
+      },
+      "uF2A62": {
+        "components": 1,
+        "counterAreas": [
+          65599.94104003906
+        ]
+      },
+      "uF2A66": {
+        "components": 1,
+        "counterAreas": [
+          65598.53930664062
+        ]
+      },
+      "uF2A5F": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A63": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A67": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A60": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A64": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A68": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A5D.middle": {
+        "components": 1,
+        "counterAreas": [
+          65661.31982421875
+        ]
+      },
+      "uF2A61.middle": {
+        "components": 1,
+        "counterAreas": [
+          65599.94104003906
+        ]
+      },
+      "uF2A65.middle": {
+        "components": 1,
+        "counterAreas": [
+          65598.53930664062
+        ]
+      },
+      "uF2A5E.middle": {
+        "components": 1,
+        "counterAreas": [
+          65661.31982421875
+        ]
+      },
+      "uF2A62.middle": {
+        "components": 1,
+        "counterAreas": [
+          65599.94104003906
+        ]
+      },
+      "uF2A66.middle": {
+        "components": 1,
+        "counterAreas": [
+          65598.53930664062
+        ]
+      },
+      "uF2A5F.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A63.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A67.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A60.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A64.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A68.middle": {
+        "components": 1,
+        "counterAreas": [
+          63641.40966796875
+        ]
+      },
+      "uF2A51": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A51.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A79": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A76": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A77": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A78": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A80": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A79.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A7D.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A76.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A7A.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A7E.middle": {
+        "components": 1,
+        "counterAreas": [
+          85140.23596191406
+        ]
+      },
+      "uF2A77.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2A7B.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2A7F.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2A78.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2A7C.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2A80.middle": {
+        "components": 1,
+        "counterAreas": [
+          85933.39343261719
+        ]
+      },
+      "uF2B10": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B14": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B18": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B11": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B15": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B19": {
+        "components": 1,
+        "counterAreas": [
+          26066.16455078125
+        ]
+      },
+      "uF2B12": {
+        "components": 1,
+        "counterAreas": [
+          26292.538330078125
+        ]
+      },
+      "uF2B16": {
+        "components": 1,
+        "counterAreas": [
+          25720.388427734375
+        ]
+      },
+      "uF2B1A": {
+        "components": 1,
+        "counterAreas": [
+          25944.792724609375
+        ]
+      },
+      "uF2B13": {
+        "components": 1,
+        "counterAreas": [
+          26292.538330078125
+        ]
+      },
+      "uF2B17": {
+        "components": 1,
+        "counterAreas": [
+          25720.388427734375
+        ]
+      },
+      "uF2B1B": {
+        "components": 1,
+        "counterAreas": [
+          25944.792724609375
+        ]
+      },
+      "uF2B4C": {
+        "components": 1,
+        "counterAreas": [
+          25911.229614257812
+        ]
+      },
+      "uF2B50": {
+        "components": 1,
+        "counterAreas": [
+          25907.315185546875
+        ]
+      },
+      "uF2B54": {
+        "components": 1,
+        "counterAreas": [
+          25905.77880859375
+        ]
+      },
+      "uF2B4D": {
+        "components": 1,
+        "counterAreas": [
+          25911.229614257812
+        ]
+      },
+      "uF2B51": {
+        "components": 1,
+        "counterAreas": [
+          25907.315185546875
+        ]
+      },
+      "uF2B55": {
+        "components": 1,
+        "counterAreas": [
+          25905.77880859375
+        ]
+      },
+      "uF2B4E": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B52": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B56": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B4F": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B53": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B57": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B4C.middle": {
+        "components": 1,
+        "counterAreas": [
+          25911.229614257812
+        ]
+      },
+      "uF2B50.middle": {
+        "components": 1,
+        "counterAreas": [
+          25907.315185546875
+        ]
+      },
+      "uF2B54.middle": {
+        "components": 1,
+        "counterAreas": [
+          25905.77880859375
+        ]
+      },
+      "uF2B4D.middle": {
+        "components": 1,
+        "counterAreas": [
+          25911.229614257812
+        ]
+      },
+      "uF2B51.middle": {
+        "components": 1,
+        "counterAreas": [
+          25907.315185546875
+        ]
+      },
+      "uF2B55.middle": {
+        "components": 1,
+        "counterAreas": [
+          25905.77880859375
+        ]
+      },
+      "uF2B4E.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B52.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B56.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B4F.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B53.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      },
+      "uF2B57.middle": {
+        "components": 1,
+        "counterAreas": [
+          25891.476684570312
+        ]
+      }
+    },
+    "550": {
+      "uF2B00": {
+        "components": 1,
+        "counterAreas": [
+          67956.58239746094
+        ]
+      },
+      "special-closed-double-bowl": {
+        "components": 1,
+        "counterAreas": [
+          15089.837280273438,
+          19801.652099609375
+        ]
+      },
+      "uF2B01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-double-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A00": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A04": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A05": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A06": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A07": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A08": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A09": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A11": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A12": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A13": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A10": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A14": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A21": {
+        "components": 1,
+        "counterAreas": [
+          62647.73083496094
+        ]
+      },
+      "uF2A25": {
+        "components": 1,
+        "counterAreas": [
+          62647.73083496094
+        ]
+      },
+      "uF2A29": {
+        "components": 1,
+        "counterAreas": [
+          62647.73083496094
+        ]
+      },
+      "uF2A22": {
+        "components": 1,
+        "counterAreas": [
+          63120.471923828125
+        ]
+      },
+      "uF2A26": {
+        "components": 1,
+        "counterAreas": [
+          63094.260498046875
+        ]
+      },
+      "uF2A2A": {
+        "components": 1,
+        "counterAreas": [
+          63094.260498046875
+        ]
+      },
+      "uF2A23": {
+        "components": 1,
+        "counterAreas": [
+          60559.95983886719
+        ]
+      },
+      "uF2A27": {
+        "components": 1,
+        "counterAreas": [
+          61062.63684082031
+        ]
+      },
+      "uF2A2B": {
+        "components": 1,
+        "counterAreas": [
+          60559.95983886719
+        ]
+      },
+      "uF2A24": {
+        "components": 1,
+        "counterAreas": [
+          61122.54699707031
+        ]
+      },
+      "uF2A28": {
+        "components": 1,
+        "counterAreas": [
+          61122.54699707031
+        ]
+      },
+      "uF2A2C": {
+        "components": 1,
+        "counterAreas": [
+          61122.54699707031
+        ]
+      },
+      "uF2A15": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A19": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A16": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A17": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A18": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A20": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A31": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A35": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A32": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A36": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A33": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A37": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A30": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A34": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A38": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A39": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A41": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3A": {
+        "components": 1,
+        "counterAreas": [
+          86381.31384277344
+        ]
+      },
+      "uF2A3E": {
+        "components": 1,
+        "counterAreas": [
+          85335.97680664062
+        ]
+      },
+      "uF2A42": {
+        "components": 1,
+        "counterAreas": [
+          85570.240234375
+        ]
+      },
+      "uF2A3B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A43": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3C": {
+        "components": 1,
+        "counterAreas": [
+          87884.03430175781
+        ]
+      },
+      "uF2A40": {
+        "components": 1,
+        "counterAreas": [
+          87884.03430175781
+        ]
+      },
+      "uF2A44": {
+        "components": 1,
+        "counterAreas": [
+          87884.03430175781
+        ]
+      },
+      "uF2A45": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A45.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5D": {
+        "components": 1,
+        "counterAreas": [
+          62572.3154296875
+        ]
+      },
+      "uF2A61": {
+        "components": 1,
+        "counterAreas": [
+          62495.328125
+        ]
+      },
+      "uF2A65": {
+        "components": 1,
+        "counterAreas": [
+          62496.423095703125
+        ]
+      },
+      "uF2A5E": {
+        "components": 1,
+        "counterAreas": [
+          62572.3154296875
+        ]
+      },
+      "uF2A62": {
+        "components": 1,
+        "counterAreas": [
+          62495.328125
+        ]
+      },
+      "uF2A66": {
+        "components": 1,
+        "counterAreas": [
+          62496.423095703125
+        ]
+      },
+      "uF2A5F": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A63": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A67": {
+        "components": 1,
+        "counterAreas": [
+          60550.85754394531
+        ]
+      },
+      "uF2A60": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A64": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A68": {
+        "components": 1,
+        "counterAreas": [
+          60550.85754394531
+        ]
+      },
+      "uF2A5D.middle": {
+        "components": 1,
+        "counterAreas": [
+          62572.3154296875
+        ]
+      },
+      "uF2A61.middle": {
+        "components": 1,
+        "counterAreas": [
+          62495.328125
+        ]
+      },
+      "uF2A65.middle": {
+        "components": 1,
+        "counterAreas": [
+          62496.423095703125
+        ]
+      },
+      "uF2A5E.middle": {
+        "components": 1,
+        "counterAreas": [
+          62572.3154296875
+        ]
+      },
+      "uF2A62.middle": {
+        "components": 1,
+        "counterAreas": [
+          62495.328125
+        ]
+      },
+      "uF2A66.middle": {
+        "components": 1,
+        "counterAreas": [
+          62496.423095703125
+        ]
+      },
+      "uF2A5F.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A63.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A67.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.85754394531
+        ]
+      },
+      "uF2A60.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A64.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.787353515625
+        ]
+      },
+      "uF2A68.middle": {
+        "components": 1,
+        "counterAreas": [
+          60550.85754394531
+        ]
+      },
+      "uF2A51": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A51.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A79": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A76": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A77": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A78": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A80": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A79.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A7D.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A76.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A7A.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A7E.middle": {
+        "components": 1,
+        "counterAreas": [
+          80639.1455078125
+        ]
+      },
+      "uF2A77.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2A7B.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2A7F.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2A78.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2A7C.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2A80.middle": {
+        "components": 1,
+        "counterAreas": [
+          81105.68664550781
+        ]
+      },
+      "uF2B10": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B14": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B18": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B11": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B15": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B19": {
+        "components": 1,
+        "counterAreas": [
+          24432.480102539062
+        ]
+      },
+      "uF2B12": {
+        "components": 1,
+        "counterAreas": [
+          24883.746215820312
+        ]
+      },
+      "uF2B16": {
+        "components": 1,
+        "counterAreas": [
+          24147.06005859375
+        ]
+      },
+      "uF2B1A": {
+        "components": 1,
+        "counterAreas": [
+          24581.05224609375
+        ]
+      },
+      "uF2B13": {
+        "components": 1,
+        "counterAreas": [
+          24883.746215820312
+        ]
+      },
+      "uF2B17": {
+        "components": 1,
+        "counterAreas": [
+          24147.06005859375
+        ]
+      },
+      "uF2B1B": {
+        "components": 1,
+        "counterAreas": [
+          24581.05224609375
+        ]
+      },
+      "uF2B4C": {
+        "components": 1,
+        "counterAreas": [
+          24285.551391601562
+        ]
+      },
+      "uF2B50": {
+        "components": 1,
+        "counterAreas": [
+          24271.752319335938
+        ]
+      },
+      "uF2B54": {
+        "components": 1,
+        "counterAreas": [
+          24271.234985351562
+        ]
+      },
+      "uF2B4D": {
+        "components": 1,
+        "counterAreas": [
+          24285.551391601562
+        ]
+      },
+      "uF2B51": {
+        "components": 1,
+        "counterAreas": [
+          24271.752319335938
+        ]
+      },
+      "uF2B55": {
+        "components": 1,
+        "counterAreas": [
+          24271.234985351562
+        ]
+      },
+      "uF2B4E": {
+        "components": 1,
+        "counterAreas": [
+          24244.956176757812
+        ]
+      },
+      "uF2B52": {
+        "components": 1,
+        "counterAreas": [
+          24244.98193359375
+        ]
+      },
+      "uF2B56": {
+        "components": 1,
+        "counterAreas": [
+          24244.921752929688
+        ]
+      },
+      "uF2B4F": {
+        "components": 1,
+        "counterAreas": [
+          24244.956176757812
+        ]
+      },
+      "uF2B53": {
+        "components": 1,
+        "counterAreas": [
+          24244.98193359375
+        ]
+      },
+      "uF2B57": {
+        "components": 1,
+        "counterAreas": [
+          24244.921752929688
+        ]
+      },
+      "uF2B4C.middle": {
+        "components": 1,
+        "counterAreas": [
+          24285.551391601562
+        ]
+      },
+      "uF2B50.middle": {
+        "components": 1,
+        "counterAreas": [
+          24271.752319335938
+        ]
+      },
+      "uF2B54.middle": {
+        "components": 1,
+        "counterAreas": [
+          24271.234985351562
+        ]
+      },
+      "uF2B4D.middle": {
+        "components": 1,
+        "counterAreas": [
+          24285.551391601562
+        ]
+      },
+      "uF2B51.middle": {
+        "components": 1,
+        "counterAreas": [
+          24271.752319335938
+        ]
+      },
+      "uF2B55.middle": {
+        "components": 1,
+        "counterAreas": [
+          24271.234985351562
+        ]
+      },
+      "uF2B4E.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.956176757812
+        ]
+      },
+      "uF2B52.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.98193359375
+        ]
+      },
+      "uF2B56.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.921752929688
+        ]
+      },
+      "uF2B4F.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.956176757812
+        ]
+      },
+      "uF2B53.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.98193359375
+        ]
+      },
+      "uF2B57.middle": {
+        "components": 1,
+        "counterAreas": [
+          24244.921752929688
+        ]
+      }
+    },
+    "600": {
+      "uF2B00": {
+        "components": 1,
+        "counterAreas": [
+          64249.26843261719
+        ]
+      },
+      "special-closed-double-bowl": {
+        "components": 1,
+        "counterAreas": [
+          13424.455810546875,
+          17813.656982421875
+        ]
+      },
+      "uF2B01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-double-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A00": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A04": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A05": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A06": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A07": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A08": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A09": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A11": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A12": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A13": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A10": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A14": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A21": {
+        "components": 1,
+        "counterAreas": [
+          59640.70349121094
+        ]
+      },
+      "uF2A25": {
+        "components": 1,
+        "counterAreas": [
+          59640.70349121094
+        ]
+      },
+      "uF2A29": {
+        "components": 1,
+        "counterAreas": [
+          59640.70349121094
+        ]
+      },
+      "uF2A22": {
+        "components": 1,
+        "counterAreas": [
+          60222.44140625
+        ]
+      },
+      "uF2A26": {
+        "components": 1,
+        "counterAreas": [
+          60210.80187988281
+        ]
+      },
+      "uF2A2A": {
+        "components": 1,
+        "counterAreas": [
+          60210.80187988281
+        ]
+      },
+      "uF2A23": {
+        "components": 1,
+        "counterAreas": [
+          57514.2041015625
+        ]
+      },
+      "uF2A27": {
+        "components": 1,
+        "counterAreas": [
+          57704.28356933594
+        ]
+      },
+      "uF2A2B": {
+        "components": 1,
+        "counterAreas": [
+          57514.2041015625
+        ]
+      },
+      "uF2A24": {
+        "components": 1,
+        "counterAreas": [
+          57862.14599609375
+        ]
+      },
+      "uF2A28": {
+        "components": 1,
+        "counterAreas": [
+          57862.14599609375
+        ]
+      },
+      "uF2A2C": {
+        "components": 1,
+        "counterAreas": [
+          57862.14599609375
+        ]
+      },
+      "uF2A15": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A19": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A16": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A17": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A18": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A20": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A31": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A35": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A32": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A36": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A33": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A37": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A30": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A34": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A38": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A39": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A41": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3A": {
+        "components": 1,
+        "counterAreas": [
+          81535.2080078125
+        ]
+      },
+      "uF2A3E": {
+        "components": 1,
+        "counterAreas": [
+          80926.54797363281
+        ]
+      },
+      "uF2A42": {
+        "components": 1,
+        "counterAreas": [
+          81218.39990234375
+        ]
+      },
+      "uF2A3B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A43": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3C": {
+        "components": 1,
+        "counterAreas": [
+          82875.01940917969
+        ]
+      },
+      "uF2A40": {
+        "components": 1,
+        "counterAreas": [
+          82875.01940917969
+        ]
+      },
+      "uF2A44": {
+        "components": 1,
+        "counterAreas": [
+          82875.01940917969
+        ]
+      },
+      "uF2A45": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A45.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5D": {
+        "components": 1,
+        "counterAreas": [
+          59532.41943359375
+        ]
+      },
+      "uF2A61": {
+        "components": 1,
+        "counterAreas": [
+          59440.67028808594
+        ]
+      },
+      "uF2A65": {
+        "components": 1,
+        "counterAreas": [
+          59438.611328125
+        ]
+      },
+      "uF2A5E": {
+        "components": 1,
+        "counterAreas": [
+          59532.41943359375
+        ]
+      },
+      "uF2A62": {
+        "components": 1,
+        "counterAreas": [
+          59440.67028808594
+        ]
+      },
+      "uF2A66": {
+        "components": 1,
+        "counterAreas": [
+          59438.611328125
+        ]
+      },
+      "uF2A5F": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A63": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A67": {
+        "components": 1,
+        "counterAreas": [
+          57487.37609863281
+        ]
+      },
+      "uF2A60": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A64": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A68": {
+        "components": 1,
+        "counterAreas": [
+          57487.37609863281
+        ]
+      },
+      "uF2A5D.middle": {
+        "components": 1,
+        "counterAreas": [
+          59532.30261230469
+        ]
+      },
+      "uF2A61.middle": {
+        "components": 1,
+        "counterAreas": [
+          59440.44299316406
+        ]
+      },
+      "uF2A65.middle": {
+        "components": 1,
+        "counterAreas": [
+          59438.921875
+        ]
+      },
+      "uF2A5E.middle": {
+        "components": 1,
+        "counterAreas": [
+          59532.30261230469
+        ]
+      },
+      "uF2A62.middle": {
+        "components": 1,
+        "counterAreas": [
+          59440.44299316406
+        ]
+      },
+      "uF2A66.middle": {
+        "components": 1,
+        "counterAreas": [
+          59438.921875
+        ]
+      },
+      "uF2A5F.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A63.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A67.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.37609863281
+        ]
+      },
+      "uF2A60.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A64.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.3720703125
+        ]
+      },
+      "uF2A68.middle": {
+        "components": 1,
+        "counterAreas": [
+          57487.37609863281
+        ]
+      },
+      "uF2A51": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A51.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A79": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A76": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A77": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A78": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A80": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A79.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A7D.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A76.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A7A.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A7E.middle": {
+        "components": 1,
+        "counterAreas": [
+          76190.90612792969
+        ]
+      },
+      "uF2A77.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2A7B.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2A7F.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2A78.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2A7C.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2A80.middle": {
+        "components": 1,
+        "counterAreas": [
+          76316.18469238281
+        ]
+      },
+      "uF2B10": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B14": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B18": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B11": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B15": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B19": {
+        "components": 1,
+        "counterAreas": [
+          22832.84033203125
+        ]
+      },
+      "uF2B12": {
+        "components": 1,
+        "counterAreas": [
+          23499.98388671875
+        ]
+      },
+      "uF2B16": {
+        "components": 1,
+        "counterAreas": [
+          22605.024780273438
+        ]
+      },
+      "uF2B1A": {
+        "components": 1,
+        "counterAreas": [
+          23243.223876953125
+        ]
+      },
+      "uF2B13": {
+        "components": 1,
+        "counterAreas": [
+          23499.98388671875
+        ]
+      },
+      "uF2B17": {
+        "components": 1,
+        "counterAreas": [
+          22605.024780273438
+        ]
+      },
+      "uF2B1B": {
+        "components": 1,
+        "counterAreas": [
+          23243.223876953125
+        ]
+      },
+      "uF2B4C": {
+        "components": 1,
+        "counterAreas": [
+          22690.83154296875
+        ]
+      },
+      "uF2B50": {
+        "components": 1,
+        "counterAreas": [
+          22668.513671875
+        ]
+      },
+      "uF2B54": {
+        "components": 1,
+        "counterAreas": [
+          22667.309692382812
+        ]
+      },
+      "uF2B4D": {
+        "components": 1,
+        "counterAreas": [
+          22690.83154296875
+        ]
+      },
+      "uF2B51": {
+        "components": 1,
+        "counterAreas": [
+          22668.513671875
+        ]
+      },
+      "uF2B55": {
+        "components": 1,
+        "counterAreas": [
+          22667.309692382812
+        ]
+      },
+      "uF2B4E": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B52": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B56": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B4F": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B53": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B57": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B4C.middle": {
+        "components": 1,
+        "counterAreas": [
+          22690.83154296875
+        ]
+      },
+      "uF2B50.middle": {
+        "components": 1,
+        "counterAreas": [
+          22668.513671875
+        ]
+      },
+      "uF2B54.middle": {
+        "components": 1,
+        "counterAreas": [
+          22667.309692382812
+        ]
+      },
+      "uF2B4D.middle": {
+        "components": 1,
+        "counterAreas": [
+          22690.83154296875
+        ]
+      },
+      "uF2B51.middle": {
+        "components": 1,
+        "counterAreas": [
+          22668.513671875
+        ]
+      },
+      "uF2B55.middle": {
+        "components": 1,
+        "counterAreas": [
+          22667.309692382812
+        ]
+      },
+      "uF2B4E.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B52.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B56.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B4F.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B53.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      },
+      "uF2B57.middle": {
+        "components": 1,
+        "counterAreas": [
+          22630.505249023438
+        ]
+      }
+    },
+    "700": {
+      "uF2B00": {
+        "components": 1,
+        "counterAreas": [
+          55740.79162597656
+        ]
+      },
+      "special-closed-double-bowl": {
+        "components": 1,
+        "counterAreas": [
+          9700.43896484375,
+          13391.334838867188
+        ]
+      },
+      "uF2B01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "special-turned-double-open-bowl": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2B03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A00": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A01": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A02": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A03": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A04": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A05": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A06": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A07": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A08": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A09": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A11": {
+        "components": 1,
+        "counterAreas": [
+          0.036376953125,
+          1.64892578125
+        ]
+      },
+      "uF2A0A": {
+        "components": 2,
+        "counterAreas": []
+      },
+      "uF2A0E": {
+        "components": 2,
+        "counterAreas": []
+      },
+      "uF2A12": {
+        "components": 2,
+        "counterAreas": []
+      },
+      "uF2A0B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A13": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A0C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A10": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A14": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A21": {
+        "components": 1,
+        "counterAreas": [
+          52826.447998046875
+        ]
+      },
+      "uF2A25": {
+        "components": 1,
+        "counterAreas": [
+          52826.447998046875
+        ]
+      },
+      "uF2A29": {
+        "components": 1,
+        "counterAreas": [
+          52826.447998046875
+        ]
+      },
+      "uF2A22": {
+        "components": 1,
+        "counterAreas": [
+          53636.9853515625
+        ]
+      },
+      "uF2A26": {
+        "components": 1,
+        "counterAreas": [
+          53640.03271484375
+        ]
+      },
+      "uF2A2A": {
+        "components": 1,
+        "counterAreas": [
+          53640.03271484375
+        ]
+      },
+      "uF2A23": {
+        "components": 1,
+        "counterAreas": [
+          50548.16052246094
+        ]
+      },
+      "uF2A27": {
+        "components": 1,
+        "counterAreas": [
+          50029.7265625
+        ]
+      },
+      "uF2A2B": {
+        "components": 1,
+        "counterAreas": [
+          50548.16052246094
+        ]
+      },
+      "uF2A24": {
+        "components": 1,
+        "counterAreas": [
+          50419.35559082031
+        ]
+      },
+      "uF2A28": {
+        "components": 1,
+        "counterAreas": [
+          50419.35559082031
+        ]
+      },
+      "uF2A2C": {
+        "components": 1,
+        "counterAreas": [
+          50419.35559082031
+        ]
+      },
+      "uF2A15": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A19": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A16": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A17": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A18": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A1C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A20": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A31": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A35": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A32": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A36": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A2F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A33": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A37": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A30": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A34": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A38": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A39": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A41": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3A": {
+        "components": 1,
+        "counterAreas": [
+          70517.73315429688
+        ]
+      },
+      "uF2A3E": {
+        "components": 1,
+        "counterAreas": [
+          70836.97424316406
+        ]
+      },
+      "uF2A42": {
+        "components": 1,
+        "counterAreas": [
+          71249.52954101562
+        ]
+      },
+      "uF2A3B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A43": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A3C": {
+        "components": 1,
+        "counterAreas": [
+          71418.99890136719
+        ]
+      },
+      "uF2A40": {
+        "components": 1,
+        "counterAreas": [
+          71418.99890136719
+        ]
+      },
+      "uF2A44": {
+        "components": 1,
+        "counterAreas": [
+          71418.99890136719
+        ]
+      },
+      "uF2A45": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A45.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A49.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A46.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A47.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A48.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A4C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A50.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5D": {
+        "components": 1,
+        "counterAreas": [
+          52623.07751464844
+        ]
+      },
+      "uF2A61": {
+        "components": 1,
+        "counterAreas": [
+          52491.864013671875
+        ]
+      },
+      "uF2A65": {
+        "components": 1,
+        "counterAreas": [
+          52491.773681640625
+        ]
+      },
+      "uF2A5E": {
+        "components": 1,
+        "counterAreas": [
+          52623.07751464844
+        ]
+      },
+      "uF2A62": {
+        "components": 1,
+        "counterAreas": [
+          52491.864013671875
+        ]
+      },
+      "uF2A66": {
+        "components": 1,
+        "counterAreas": [
+          52491.773681640625
+        ]
+      },
+      "uF2A5F": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A63": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A67": {
+        "components": 1,
+        "counterAreas": [
+          50471.027099609375
+        ]
+      },
+      "uF2A60": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A64": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A68": {
+        "components": 1,
+        "counterAreas": [
+          50471.027099609375
+        ]
+      },
+      "uF2A5D.middle": {
+        "components": 1,
+        "counterAreas": [
+          52623.07751464844
+        ]
+      },
+      "uF2A61.middle": {
+        "components": 1,
+        "counterAreas": [
+          52491.864013671875
+        ]
+      },
+      "uF2A65.middle": {
+        "components": 1,
+        "counterAreas": [
+          52491.773681640625
+        ]
+      },
+      "uF2A5E.middle": {
+        "components": 1,
+        "counterAreas": [
+          52623.07751464844
+        ]
+      },
+      "uF2A62.middle": {
+        "components": 1,
+        "counterAreas": [
+          52491.864013671875
+        ]
+      },
+      "uF2A66.middle": {
+        "components": 1,
+        "counterAreas": [
+          52491.773681640625
+        ]
+      },
+      "uF2A5F.middle": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A63.middle": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A67.middle": {
+        "components": 1,
+        "counterAreas": [
+          50471.027099609375
+        ]
+      },
+      "uF2A60.middle": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A64.middle": {
+        "components": 1,
+        "counterAreas": [
+          50470.87194824219
+        ]
+      },
+      "uF2A68.middle": {
+        "components": 1,
+        "counterAreas": [
+          50471.027099609375
+        ]
+      },
+      "uF2A51": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A51.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A55.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A59.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A52.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A56.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A53.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A57.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A54.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A58.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A5C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A69.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6D.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A71.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6A.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6E.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A72.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6B.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6F.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A73.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A6C.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A70.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A74.middle": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A79": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7D": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A76": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7A": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7E": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A77": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7B": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7F": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A78": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A7C": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A80": {
+        "components": 1,
+        "counterAreas": []
+      },
+      "uF2A75.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.59814453125
+        ]
+      },
+      "uF2A79.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.59814453125
+        ]
+      },
+      "uF2A7D.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.59814453125
+        ]
+      },
+      "uF2A76.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.79833984375
+        ]
+      },
+      "uF2A7A.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.79833984375
+        ]
+      },
+      "uF2A7E.middle": {
+        "components": 1,
+        "counterAreas": [
+          65986.79833984375
+        ]
+      },
+      "uF2A77.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2A7B.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2A7F.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2A78.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2A7C.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2A80.middle": {
+        "components": 1,
+        "counterAreas": [
+          65288.89123535156
+        ]
+      },
+      "uF2B10": {
+        "components": 1,
+        "counterAreas": [
+          19221.648071289062
+        ]
+      },
+      "uF2B14": {
+        "components": 1,
+        "counterAreas": [
+          19220.718383789062
+        ]
+      },
+      "uF2B18": {
+        "components": 1,
+        "counterAreas": [
+          19220.718383789062
+        ]
+      },
+      "uF2B11": {
+        "components": 1,
+        "counterAreas": [
+          19221.648071289062
+        ]
+      },
+      "uF2B15": {
+        "components": 1,
+        "counterAreas": [
+          19220.718383789062
+        ]
+      },
+      "uF2B19": {
+        "components": 1,
+        "counterAreas": [
+          19220.718383789062
+        ]
+      },
+      "uF2B12": {
+        "components": 1,
+        "counterAreas": [
+          20358.845825195312
+        ]
+      },
+      "uF2B16": {
+        "components": 1,
+        "counterAreas": [
+          19124.46728515625
+        ]
+      },
+      "uF2B1A": {
+        "components": 1,
+        "counterAreas": [
+          20211.236206054688
+        ]
+      },
+      "uF2B13": {
+        "components": 1,
+        "counterAreas": [
+          20358.845825195312
+        ]
+      },
+      "uF2B17": {
+        "components": 1,
+        "counterAreas": [
+          19124.46728515625
+        ]
+      },
+      "uF2B1B": {
+        "components": 1,
+        "counterAreas": [
+          20211.236206054688
+        ]
+      },
+      "uF2B4C": {
+        "components": 1,
+        "counterAreas": [
+          19093.118896484375
+        ]
+      },
+      "uF2B50": {
+        "components": 1,
+        "counterAreas": [
+          19047.559326171875
+        ]
+      },
+      "uF2B54": {
+        "components": 1,
+        "counterAreas": [
+          19044.891967773438
+        ]
+      },
+      "uF2B4D": {
+        "components": 1,
+        "counterAreas": [
+          19093.118896484375
+        ]
+      },
+      "uF2B51": {
+        "components": 1,
+        "counterAreas": [
+          19047.559326171875
+        ]
+      },
+      "uF2B55": {
+        "components": 1,
+        "counterAreas": [
+          19044.891967773438
+        ]
+      },
+      "uF2B4E": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B52": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B56": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B4F": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B53": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B57": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B4C.middle": {
+        "components": 1,
+        "counterAreas": [
+          19093.118896484375
+        ]
+      },
+      "uF2B50.middle": {
+        "components": 1,
+        "counterAreas": [
+          19047.559326171875
+        ]
+      },
+      "uF2B54.middle": {
+        "components": 1,
+        "counterAreas": [
+          19044.891967773438
+        ]
+      },
+      "uF2B4D.middle": {
+        "components": 1,
+        "counterAreas": [
+          19093.118896484375
+        ]
+      },
+      "uF2B51.middle": {
+        "components": 1,
+        "counterAreas": [
+          19047.559326171875
+        ]
+      },
+      "uF2B55.middle": {
+        "components": 1,
+        "counterAreas": [
+          19044.891967773438
+        ]
+      },
+      "uF2B4E.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B52.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B56.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B4F.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B53.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      },
+      "uF2B57.middle": {
+        "components": 1,
+        "counterAreas": [
+          18983.008178710938
+        ]
+      }
+    }
+  },
+  "previousCountsFontSha256": "ef1fcccc861639f49c3d0606d1dd23a6db3e4362d8aaa4b763476cf9c20cdc41"
+}
