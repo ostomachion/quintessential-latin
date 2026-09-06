@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A4D" format="2">
+  <advance width="761"/>
+  <unicode hex="F2A4D"/>
+  <outline>
+    <contour>
+      <point x="303" y="0" type="line"/>
+      <point x="18" y="0" type="line"/>
+      <point x="18" y="40" type="line"/>
+      <point x="59" y="40"/>
+      <point x="88" y="63"/>
+      <point x="88" y="104" type="qcurve" smooth="yes"/>
+      <point x="88" y="499" type="line" smooth="yes"/>
+      <point x="88" y="607"/>
+      <point x="213" y="717"/>
+      <point x="316" y="717" type="qcurve" smooth="yes"/>
+      <point x="354" y="717"/>
+      <point x="418" y="702"/>
+      <point x="456" y="664"/>
+      <point x="456" y="631" type="qcurve" smooth="yes"/>
+      <point x="456" y="600"/>
+      <point x="418" y="574"/>
+      <point x="398" y="574" type="qcurve" smooth="yes"/>
+      <point x="371" y="574"/>
+      <point x="346" y="602"/>
+      <point x="331" y="640"/>
+      <point x="309" y="668"/>
+      <point x="286" y="668" type="qcurve" smooth="yes"/>
+      <point x="258" y="668"/>
+      <point x="231" y="626"/>
+      <point x="231" y="576" type="qcurve" smooth="yes"/>
+      <point x="231" y="401" type="line"/>
+      <point x="235" y="401" type="line"/>
+      <point x="276" y="444"/>
+      <point x="344" y="485"/>
+      <point x="390" y="485" type="qcurve" smooth="yes"/>
+      <point x="429" y="485"/>
+      <point x="488" y="461"/>
+      <point x="528" y="413"/>
+      <point x="549" y="342"/>
+      <point x="549" y="295" type="qcurve" smooth="yes"/>
+      <point x="549" y="112" type="line" smooth="yes"/>
+      <point x="549" y="72"/>
+      <point x="575" y="40"/>
+      <point x="619" y="40" type="qcurve"/>
+      <point x="619" y="0" type="line"/>
+      <point x="341" y="0" type="line"/>
+      <point x="341" y="40" type="line"/>
+      <point x="372" y="40"/>
+      <point x="399" y="54"/>
+      <point x="406" y="84"/>
+      <point x="406" y="109" type="qcurve" smooth="yes"/>
+      <point x="406" y="247" type="line" smooth="yes"/>
+      <point x="406" y="285"/>
+      <point x="398" y="350"/>
+      <point x="366" y="389"/>
+      <point x="329" y="389" type="qcurve" smooth="yes"/>
+      <point x="303" y="389"/>
+      <point x="261" y="371"/>
+      <point x="231" y="346" type="qcurve"/>
+      <point x="231" y="108" type="line" smooth="yes"/>
+      <point x="231" y="84"/>
+      <point x="239" y="54"/>
+      <point x="269" y="40"/>
+      <point x="303" y="40" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="551" y="378" type="line"/>
+      <point x="578" y="413"/>
+      <point x="612" y="462"/>
+      <point x="651" y="488"/>
+      <point x="682" y="488" type="qcurve" smooth="yes"/>
+      <point x="721" y="488"/>
+      <point x="759" y="444"/>
+      <point x="759" y="406" type="qcurve" smooth="yes"/>
+      <point x="759" y="363"/>
+      <point x="721" y="325"/>
+      <point x="698" y="325" type="qcurve" smooth="yes"/>
+      <point x="676" y="325"/>
+      <point x="645" y="346"/>
+      <point x="623" y="367"/>
+      <point x="615" y="367" type="qcurve" smooth="yes"/>
+      <point x="599" y="367"/>
+      <point x="566" y="342"/>
+      <point x="549" y="322" type="qcurve"/>
+      <point x="509" y="322" type="line"/>
+      <point x="511" y="378" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>761</integer>
+        <key>archBaseCodePoint</key>
+        <integer>993821</integer>
+        <key>archDonorCodePoint</key>
+        <integer>614</integer>
+        <key>method</key>
+        <string>Native arch and outer endings of U+F2A1D joined to the detached native arm of lowercase r; the terminal curves remain rigid and the advance follows the constructed span.</string>
+        <key>sharedStemOwner</key>
+        <string>arch</string>
+        <key>terminalDonorCodePoint</key>
+        <integer>114</integer>
+        <key>terminalOffsetX</key>
+        <integer>312</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

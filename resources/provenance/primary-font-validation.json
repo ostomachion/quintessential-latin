@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "methodCount": 42,
+  "passedMethodCount": 42,
+  "mode": "Initial passing methods retained; interrupted initial invocation superseded by complete independent method coverage against identical inputs",
+  "testModuleSha256": "dc5dacf6304680dfbd0fda353cbceee3666680759cee8b7a3547c4071d6138ae",
+  "initialLogSha256": "62dc7db75abfabfdfab0ae1a89811c82ae9457ca7cd40b42857eb8e8288f3ff5",
+  "preservedPassingMethods": [
+    "test_arch_bodies_preserve_their_native_free_side_curves",
+    "test_arched_arm_ribbons_and_bowl_counters_remain_native",
+    "test_arched_opposed_bowls_complete_the_block_with_three_connected_shafts",
+    "test_bowl_bodies_and_counters_preserve_their_native_donors"
+  ],
+  "results": [
+    {
+      "method": "test_symmetric_difference_area_accounts_for_nested_holes",
+      "exitCode": 0,
+      "seconds": 1.241,
+      "logSha256": "615b1e40918d085319ce5221d53e1de1746ef886ebcab63f506eee55bc0e936a"
+    },
+    {
+      "method": "test_pinned_stix_donors_and_license",
+      "exitCode": 0,
+      "seconds": 1.255,
+      "logSha256": "0d9f40dafadbba810207c5380f3b16d00d4230dc86ea9181cd561e71256c8748"
+    },
+    {
+      "method": "test_master_pairs_are_interpolation_compatible",
+      "exitCode": 0,
+      "seconds": 10.737,
+      "logSha256": "64903c748b67a73a95c6f29d444cc86d62798c23b83884873f42a10ebfef3644"
+    },
+    {
+      "method": "test_main_completion_has_connected_staves_counters_and_recorded_advances",
+      "exitCode": 0,
+      "seconds": 108.322,
+      "logSha256": "fdc9484eb21700a3d98916b1b6c0f838305bca0fa6b31095b941605f50c501aa"
+    },
+    {
+      "method": "test_double_bowl_families_are_distinct_connected_and_keep_two_counters",
+      "exitCode": 0,
+      "seconds": 77.655,
+      "logSha256": "0103019360e18a9522a85e169d39c7e446d66a88faa3cc0fac784104ec1db917"
+    },
+    {
+      "method": "test_narrow_opposed_bowls_have_two_counters_and_independent_endings",
+      "exitCode": 0,
+      "seconds": 73.951,
+      "logSha256": "3fa1e259867cbdb90cdb6e97ada5af6f5ec58d82d239d7294cf2d89a97d57cd2"
+    },
+    {
+      "method": "test_bowled_spines_are_distinct_connected_and_keep_one_counter",
+      "exitCode": 0,
+      "seconds": 82.145,
+      "logSha256": "5879215d378654a7ace725b045e46b6dbed34c84a7f8f806aaf1bf061a1fd05b"
+    },
+    {
+      "method": "test_bowled_spine_outer_stem_terminals_preserve_native_donors",
+      "exitCode": 0,
+      "seconds": 113.141,
+      "logSha256": "883ac659ad57e7afa149c8479cfc3d3327ebcba9106340ceda8a8e9627b4ea89"
+    },
+    {
+      "method": "test_roman_bowled_spines_keep_native_bellies_and_orientation_specific_free_terminals",
+      "exitCode": 0,
+      "seconds": 74.753,
+      "logSha256": "3823d2b21619c2de17b8fc83cc44ad7bab52f3c406c00a9b2147b3363ade79fc"
+    },
+    {
+      "method": "test_italic_spines_keep_native_diagonal_bowls_bulbs_and_flat_bottoms",
+      "exitCode": 0,
+      "seconds": 10.449,
+      "logSha256": "442bb4fd8acabe3260e301a7e0fe0e16f8bcd8ed73395fe950d390bf17c261c9"
+    },
+    {
+      "method": "test_double_bowl_outer_terminals_preserve_native_donors",
+      "exitCode": 0,
+      "seconds": 82.0,
+      "logSha256": "39d00e3fc5bae5d2b3297c6c15d15189aec1ab1c733ff25cb9157ca0b6e68f77"
+    },
+    {
+      "method": "test_double_bowl_outer_lobes_waist_and_lower_counter_interiors_remain_native",
+      "exitCode": 0,
+      "seconds": 73.806,
+      "logSha256": "0215dd0b461dab74e6753bbde6b5d58e8f06bd0b904e5720e0c77e8f737671a3"
+    },
+    {
+      "method": "test_double_bowl_counter_roofs_depth_and_curved_shaft_approaches",
+      "exitCode": 0,
+      "seconds": 76.09,
+      "logSha256": "a9df1ff857e64844f51f0296930472808d9d7f146d2e952aa223809efcbb351c"
+    },
+    {
+      "method": "test_repeated_arches_preserve_native_arch_curves_and_middle_staves",
+      "exitCode": 0,
+      "seconds": 105.412,
+      "logSha256": "ee8cf3b88b660f62575e26a6bce3ddb20c55f4ea5e4d5fd4dc637fb9799f8f25"
+    },
+    {
+      "method": "test_outputs_preserve_donor_vertical_metric_selection",
+      "exitCode": 0,
+      "seconds": 1.068,
+      "logSha256": "505964fe8f89359157cb70cc77cda564ff59d68defa55961c7d1e793a867e8ee"
+    },
+    {
+      "method": "test_constructed_master_advances_follow_their_upper_donors",
+      "exitCode": 0,
+      "seconds": 11.628,
+      "logSha256": "ef79f8b33d2c2cd0f1ac81eebd64b4af2816d15a78561755c190faa7752dae68"
+    },
+    {
+      "method": "test_italic_constructed_stems_follow_the_native_axis_and_finish",
+      "exitCode": 0,
+      "seconds": 8.768,
+      "logSha256": "b297687764c85e123f46cc43ff4846b018e2ff0b3c03eeb2dfa203fc0533127c"
+    },
+    {
+      "method": "test_variable_structure_axis_names_and_sparse_coverage",
+      "exitCode": 0,
+      "seconds": 4.109,
+      "logSha256": "98fe7b45f5ac401bedb5e5556612955e8823a3452ac96fbc4e6c2a07c2845d50"
+    },
+    {
+      "method": "test_every_script_glyph_interpolates_at_sampled_weights",
+      "exitCode": 0,
+      "seconds": 73.69,
+      "logSha256": "1704b3a6645ad61d36b969199f16f16e8816fd969037951adf5439cefdfcad88"
+    },
+    {
+      "method": "test_component_contours_stay_simple_and_keep_their_winding",
+      "exitCode": 0,
+      "seconds": 182.857,
+      "logSha256": "d72562fde5e17efc232760c1cf5ec3521d46b92e9d182b0bd45aa76b8038ada2"
+    },
+    {
+      "method": "test_every_arch_keeps_its_intended_cavity_at_sampled_weights",
+      "exitCode": 0,
+      "seconds": 74.467,
+      "logSha256": "37b1caae425dff6296b022062fa2ac86a8910e55482a4ec0b933ceb19fe34b81"
+    },
+    {
+      "method": "test_constructed_arch_terminals_preserve_their_native_donors",
+      "exitCode": 0,
+      "seconds": 97.85,
+      "logSha256": "627328662554454b3c95d49409444e9ed7ca30d88e01c6d22afa48fcd8a16191"
+    },
+    {
+      "method": "test_plain_bowl_keeps_b_baseline_and_upright_p_head",
+      "exitCode": 0,
+      "seconds": 91.6,
+      "logSha256": "32cf924cda8747af06fc65db2c072ab220f46d7ccebbb2921e9acaadfa07b0fe"
+    },
+    {
+      "method": "test_extended_arches_preserve_native_curves_and_existing_endings",
+      "exitCode": 0,
+      "seconds": 151.204,
+      "logSha256": "4b1a26632e23fad49243a83b1f7f8d7783bd8fa2c285972b7d7fd94f84b3ca06"
+    },
+    {
+      "method": "test_extended_arch_terminals_preserve_complete_native_regions",
+      "exitCode": 0,
+      "seconds": 108.182,
+      "logSha256": "1c2a061e6d64afc404a98c50a66472effecb4eacd1138fd559ee269ced91b6d0"
+    },
+    {
+      "method": "test_extended_arch_crowded_endings_remain_separate",
+      "exitCode": 0,
+      "seconds": 70.836,
+      "logSha256": "e717cf74ebf8a1dfb6060d666a7842fdef8cb5df3ab77175797a63af2cb23fdd"
+    },
+    {
+      "method": "test_joined_arches_keep_native_width_sweeps_and_bowl_quarters",
+      "exitCode": 0,
+      "seconds": 105.683,
+      "logSha256": "8e3e93843f79eee5fdddd2cac25a95f2304c4e018c61aaaa879290556d1ea1e2"
+    },
+    {
+      "method": "test_every_bowl_keeps_one_open_counter_at_sampled_weights",
+      "exitCode": 0,
+      "seconds": 72.071,
+      "logSha256": "52177ee894ecb6b1bb14bac895b03fdb3abef2af1683434b27a9ce0e497860d0"
+    },
+    {
+      "method": "test_constructed_bowl_terminals_preserve_their_native_donors",
+      "exitCode": 0,
+      "seconds": 98.772,
+      "logSha256": "2fba692c3cf2d1262b5b6673dd2e7574dec1a5ef9762c8ef57c075e6c157b716"
+    },
+    {
+      "method": "test_direct_mappings_match_stix_at_sampled_weights",
+      "exitCode": 0,
+      "seconds": 97.63,
+      "logSha256": "0b15790ac8ea88c3d4c8a61d6d38347e41d8fe0988f46c9fea109606e8b7e247"
+    },
+    {
+      "method": "test_roman_turned_arm_uses_u_stem_and_retains_native_arm",
+      "exitCode": 0,
+      "seconds": 77.558,
+      "logSha256": "fc6138acebff152ae23873106a9be45dd27a18ea8b52fcf6278fcb02ed0c467b"
+    },
+    {
+      "method": "test_complete_arm_family_preserves_native_arm_regions",
+      "exitCode": 0,
+      "seconds": 97.42,
+      "logSha256": "a1c3bc9f5df40fbe19ca46f3620b384071146ac54717a979f56cb4c240ccd6c6"
+    },
+    {
+      "method": "test_constructed_arm_terminals_preserve_their_native_donors",
+      "exitCode": 0,
+      "seconds": 95.732,
+      "logSha256": "5f7b70d49f38464e45e7f77c324d127d649d9136c12fd11c84dfc428a30981fe"
+    },
+    {
+      "method": "test_static_faces_are_hinted_sparse_cff_fonts",
+      "exitCode": 0,
+      "seconds": 1.835,
+      "logSha256": "d1cc51231a903fd7ac89b96e242258c64b5d290e9b0850b68fcff8924c2f0585"
+    },
+    {
+      "method": "test_static_faces_match_variable_endpoints_geometrically",
+      "exitCode": 0,
+      "seconds": 303.995,
+      "logSha256": "b0799152b16db5213268b61334d2723679804c7ad0af453ba582268492c5bda7"
+    },
+    {
+      "method": "test_variable_kerning_clears_every_ordered_pair",
+      "exitCode": 0,
+      "seconds": 278.825,
+      "logSha256": "4b7fe9ff621cce47488f8a020086cc56ed933c6340c23b2d39c5c347c31b4633"
+    },
+    {
+      "method": "test_woff2_files_preserve_sfnt_tables",
+      "exitCode": 0,
+      "seconds": 1.6,
+      "logSha256": "a61e4dba80591f9917bf4e0e3b8411e58bdccc63d81e00c20b140bca484c9463"
+    },
+    {
+      "method": "test_proof_data_manifest_and_license_metadata",
+      "exitCode": 0,
+      "seconds": 1.864,
+      "logSha256": "fa975d8ceadf3a8243085d842ddc85e22e7cd0fd3bd66399358a73ed0c4e13a9"
+    }
+  ],
+  "seconds": 664.436,
+  "workers": 6,
+  "inputs": {
+    "tools/test_quintessential_font.py": "dc5dacf6304680dfbd0fda353cbceee3666680759cee8b7a3547c4071d6138ae",
+    "tools/test_additions_font.py": "75c82d6c54099a7c7780a99674ea09e97ead08032765ef175f7e223b687b00ef",
+    "tools/font_geometry_helpers.py": "c09a13459a6c0d3826dc4dd6aa06ffa943f77526386629a2180a4a3adf5068cf",
+    "resources/fonts/QuintessentialSerif/build-manifest.json": "129208493886588d5334bf76d6046ea688f6a916786a313e4552acf60015a1cd"
+  },
+  "inputsUnchanged": true,
+  "logsArchive": {
+    "file": "resources/provenance/font-validation-logs.zip",
+    "bytes": 15142,
+    "sha256": "34e92656c63d606974d452aff1a45c1b5be63560645ffb0592ee2d386eb97e8a"
+  }
+}

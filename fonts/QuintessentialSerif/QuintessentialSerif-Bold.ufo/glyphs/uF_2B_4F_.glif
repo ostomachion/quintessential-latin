@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2B4F" format="2">
+  <advance width="843"/>
+  <unicode hex="F2B5D"/>
+  <outline>
+    <contour>
+      <point x="159" y="-11" type="qcurve" smooth="yes"/>
+      <point x="104" y="-11"/>
+      <point x="33" y="42"/>
+      <point x="33" y="103" type="qcurve" smooth="yes"/>
+      <point x="33" y="145"/>
+      <point x="69" y="202"/>
+      <point x="127" y="240"/>
+      <point x="197" y="265"/>
+      <point x="267" y="283"/>
+      <point x="295" y="291" type="qcurve"/>
+      <point x="295" y="339" type="line" smooth="yes"/>
+      <point x="295" y="403"/>
+      <point x="269" y="442"/>
+      <point x="233" y="442" type="qcurve" smooth="yes"/>
+      <point x="203" y="442"/>
+      <point x="182" y="414"/>
+      <point x="182" y="371" type="qcurve" smooth="yes"/>
+      <point x="182" y="337"/>
+      <point x="142" y="307"/>
+      <point x="116" y="307" type="qcurve" smooth="yes"/>
+      <point x="94" y="307"/>
+      <point x="55" y="340"/>
+      <point x="55" y="374" type="qcurve" smooth="yes"/>
+      <point x="55" y="404"/>
+      <point x="101" y="455"/>
+      <point x="186" y="486"/>
+      <point x="244" y="486" type="qcurve" smooth="yes"/>
+      <point x="338" y="486"/>
+      <point x="438" y="414"/>
+      <point x="438" y="331" type="qcurve" smooth="yes"/>
+      <point x="438" y="59" type="line"/>
+      <point x="293" y="59" type="line"/>
+      <point x="269.863309" y="37.125"/>
+      <point x="234.194245" y="5.40625"/>
+      <point x="192.741007" y="-11"/>
+    </contour>
+    <contour>
+      <point x="295" y="252" type="line"/>
+      <point x="256" y="240"/>
+      <point x="203" y="213"/>
+      <point x="176" y="169"/>
+      <point x="176" y="131" type="qcurve" smooth="yes"/>
+      <point x="176" y="94"/>
+      <point x="199" y="60"/>
+      <point x="222" y="60" type="qcurve" smooth="yes"/>
+      <point x="244" y="60"/>
+      <point x="262" y="70.5" type="qcurve" smooth="yes"/>
+      <point x="275.839743" y="78.573184"/>
+      <point x="295" y="96.99181" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="438" y="250" type="line"/>
+      <point x="438" y="195" type="line" smooth="yes"/>
+      <point x="438" y="148"/>
+      <point x="455" y="102"/>
+      <point x="487" y="88"/>
+      <point x="508" y="88" type="qcurve" smooth="yes"/>
+      <point x="540" y="88"/>
+      <point x="582" y="110"/>
+      <point x="610" y="133" type="qcurve"/>
+      <point x="610" y="300" type="line" smooth="yes"/>
+      <point x="610.0" y="324.99999975000003"/>
+      <point x="610.0" y="375.00000024999997"/>
+      <point x="610.0" y="400.0" type="qcurve" smooth="yes"/>
+      <point x="610" y="595" type="line" smooth="yes"/>
+      <point x="610" y="624"/>
+      <point x="580" y="637"/>
+      <point x="561.372549" y="637" type="qcurve" smooth="yes"/>
+      <point x="548.627451" y="637"/>
+      <point x="530" y="635"/>
+      <point x="530" y="635" type="qcurve"/>
+      <point x="530" y="675" type="line"/>
+      <point x="687" y="706" type="line"/>
+      <point x="753" y="706" type="line"/>
+      <point x="753" y="400" type="line" smooth="yes"/>
+      <point x="753.0" y="375.00000024999997"/>
+      <point x="753.0" y="324.99999975000003"/>
+      <point x="753.0" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="753" y="135" type="line" smooth="yes"/>
+      <point x="753" y="88"/>
+      <point x="781" y="60"/>
+      <point x="821" y="60" type="qcurve" smooth="yes"/>
+      <point x="827" y="60" type="line"/>
+      <point x="827" y="23" type="line"/>
+      <point x="654" y="-6" type="line"/>
+      <point x="615" y="-6" type="line"/>
+      <point x="615" y="81" type="line"/>
+      <point x="611" y="81" type="line"/>
+      <point x="579" y="47"/>
+      <point x="528" y="7"/>
+      <point x="477" y="-10"/>
+      <point x="443" y="-10" type="qcurve" smooth="yes"/>
+      <point x="368" y="-10"/>
+      <point x="295" y="67"/>
+      <point x="295" y="166" type="qcurve" smooth="yes"/>
+      <point x="295" y="250" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>843</integer>
+        <key>archBaseCodePoint</key>
+        <integer>993816</integer>
+        <key>archDonorCodePoint</key>
+        <integer>117</integer>
+        <key>bodyDonorCodePoint</key>
+        <integer>593</integer>
+        <key>counterDesign</key>
+        <string>native-a-belly-with-upright-shaft</string>
+        <key>counterStemX</key>
+        <integer>295</integer>
+        <key>family</key>
+        <string>arched-bowled-spines</string>
+        <key>freeTerminalDonorCodePoint</key>
+        <integer>97</integer>
+        <key>freeTerminalOffsetX</key>
+        <integer>0</integer>
+        <key>freeTerminalOffsetY</key>
+        <integer>0</integer>
+        <key>freeTerminalTurned</key>
+        <false/>
+        <key>glyphId</key>
+        <string>turned-arched-bowled-spine-ascender</string>
+        <key>method</key>
+        <string>Native a/turned-a diagonal belly with a separate enclosed counter, native upright stem endings, a flat lower epsilon finish in upper-bowled forms and a's native upper ball in lower-bowled forms; fitted stem joins.</string>
+        <key>recipeCodePoint</key>
+        <integer>994127</integer>
+        <key>shaftOffsetX</key>
+        <integer>-64</integer>
+        <key>sharedStemCenterX</key>
+        <real>366.5</real>
+        <key>sharedStemOwner</key>
+        <string>terminal</string>
+        <key>spineDonorCodePoint</key>
+        <integer>97</integer>
+        <key>spineOffsetX</key>
+        <integer>0</integer>
+        <key>terminalDonorCodePoint</key>
+        <integer>593</integer>
+        <key>terminalOffsetX</key>
+        <integer>-212</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

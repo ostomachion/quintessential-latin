@@ -1,0 +1,10 @@
+.tmp/
+.tmp-*/
+.venv*/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+playwright-report/
+test-results/
+resources/fonts/QuintessentialSerif/proof-data.json

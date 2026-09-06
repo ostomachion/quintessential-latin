@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="700" default="400">
+      <map input="400" output="92"/>
+      <map input="500" output="110"/>
+      <map input="600" output="128"/>
+      <map input="700" output="149"/>
+      <labels ordering="0">
+        <label uservalue="400" name="Regular" elidable="true"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="600" name="SemiBold"/>
+        <label uservalue="700" name="Bold"/>
+      </labels>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="QuintessentialSerif-Italic.ufo" name="Quintessential Serif Italic" familyname="Quintessential Serif" stylename="Italic">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="92"/>
+      </location>
+    </source>
+    <source filename="QuintessentialSerif-BoldItalic.ufo" name="Quintessential Serif BoldItalic" familyname="Quintessential Serif" stylename="BoldItalic">
+      <location>
+        <dimension name="Weight" xvalue="149"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Quintessential Serif Italic" familyname="Quintessential Serif" stylename="Italic" postscriptfontname="QuintessentialSerif-Italic" stylemapfamilyname="Quintessential Serif" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" uservalue="400"/>
+      </location>
+    </instance>
+    <instance name="Quintessential Serif Medium Italic" familyname="Quintessential Serif" stylename="Medium Italic" postscriptfontname="QuintessentialSerif-MediumItalic" stylemapfamilyname="Quintessential Serif" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" uservalue="500"/>
+      </location>
+    </instance>
+    <instance name="Quintessential Serif SemiBold Italic" familyname="Quintessential Serif" stylename="SemiBold Italic" postscriptfontname="QuintessentialSerif-SemiBoldItalic" stylemapfamilyname="Quintessential Serif" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" uservalue="600"/>
+      </location>
+    </instance>
+    <instance name="Quintessential Serif Bold Italic" familyname="Quintessential Serif" stylename="Bold Italic" postscriptfontname="QuintessentialSerif-BoldItalic" stylemapfamilyname="Quintessential Serif" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" uservalue="700"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

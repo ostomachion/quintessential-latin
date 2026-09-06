@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A10" format="2">
+  <advance width="403"/>
+  <unicode hex="F2A1A"/>
+  <outline>
+    <contour>
+      <point x="221.3635" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="285.751431" y="608" type="line"/>
+      <point x="285.751431" y="608"/>
+      <point x="288.751431" y="628"/>
+      <point x="288.751431" y="640" type="qcurve" smooth="yes"/>
+      <point x="288.751431" y="650"/>
+      <point x="277.751431" y="670"/>
+      <point x="257.751431" y="670" type="qcurve" smooth="yes"/>
+      <point x="244.751431" y="670"/>
+      <point x="223.751431" y="668"/>
+      <point x="223.751431" y="668" type="qcurve"/>
+      <point x="223.751431" y="694" type="line"/>
+      <point x="361.751431" y="705" type="line"/>
+      <point x="383.751431" y="705" type="line"/>
+      <point x="303.443738" y="300" type="line" smooth="yes"/>
+      <point x="301.95655865" y="292.5"/>
+      <point x="298.89943036022225" y="277.5"/>
+      <point x="295.7754606844444" y="262.5"/>
+      <point x="292.59922797866665" y="247.5"/>
+      <point x="289.38531059888885" y="232.5"/>
+      <point x="286.1482869011111" y="217.5"/>
+      <point x="282.9027352413333" y="202.5"/>
+      <point x="279.66323397555556" y="187.5"/>
+      <point x="276.44436145977784" y="172.5"/>
+      <point x="273.26069605" y="157.5"/>
+      <point x="271.694431" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="219.27676" y="-101" type="line"/>
+      <point x="218.27676" y="-108"/>
+      <point x="215.27676" y="-132"/>
+      <point x="215.27676" y="-143" type="qcurve" smooth="yes"/>
+      <point x="215.27676" y="-160"/>
+      <point x="256.27676" y="-193"/>
+      <point x="316.27676" y="-193" type="qcurve"/>
+      <point x="309.27676" y="-220" type="line"/>
+      <point x="113.27676" y="-220" type="line"/>
+      <point x="189.345839" y="150" type="line" smooth="yes"/>
+      <point x="191.0591065" y="158.33333333333331"/>
+      <point x="194.55400193801444" y="174.99999999999997"/>
+      <point x="198.10070528960904" y="191.66666666666663"/>
+      <point x="201.6840828181584" y="208.33333333333331"/>
+      <point x="205.28900078703703" y="224.99999999999994"/>
+      <point x="208.9003254596193" y="241.66666666666663"/>
+      <point x="212.50292309927983" y="258.33333333333326"/>
+      <point x="216.081659969393" y="274.9999999999999"/>
+      <point x="219.62140233333332" y="291.66666666666663"/>
+    </contour>
+    <contour>
+      <point x="30" y="-10" type="qcurve" smooth="yes"/>
+      <point x="7" y="-10"/>
+      <point x="-25" y="19"/>
+      <point x="-25" y="48" type="qcurve" smooth="yes"/>
+      <point x="-25" y="81"/>
+      <point x="9" y="111"/>
+      <point x="28" y="111" type="qcurve" smooth="yes"/>
+      <point x="44" y="111"/>
+      <point x="63" y="93"/>
+      <point x="72" y="74"/>
+      <point x="73" y="74" type="qcurve" smooth="yes"/>
+      <point x="88" y="74"/>
+      <point x="127" y="123"/>
+      <point x="167" y="197"/>
+      <point x="203" y="274"/>
+      <point x="226" y="331"/>
+      <point x="229" y="338" type="qcurve"/>
+      <point x="208" y="224" type="line"/>
+      <point x="199" y="206"/>
+      <point x="173" y="149"/>
+      <point x="140" y="84"/>
+      <point x="101" y="26"/>
+      <point x="56" y="-10"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>403.0</real>
+        <key>armDonorCodePoint</key>
+        <integer>633</integer>
+        <key>glyphId</key>
+        <string>turned-arm-ascender-descender</string>
+        <key>lowerCutY</key>
+        <real>150.0</real>
+        <key>lowerDonorCodePoint</key>
+        <integer>112</integer>
+        <key>lowerOffsetX</key>
+        <real>108.27676</real>
+        <key>method</key>
+        <string>Native turned-r arm with the l ascender and straight p descender.</string>
+        <key>recipeCodePoint</key>
+        <integer>993808</integer>
+        <key>upperCutY</key>
+        <real>300.0</real>
+        <key>upperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>upperOffsetX</key>
+        <real>128.751431</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

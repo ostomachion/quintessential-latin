@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A07" format="2">
+  <advance width="327"/>
+  <unicode hex="F2A0E"/>
+  <outline>
+    <contour>
+      <point x="92.0" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="92" y="595" type="line" smooth="yes"/>
+      <point x="92.0" y="624.0000004999999"/>
+      <point x="77.0" y="630.5" type="qcurve" smooth="yes"/>
+      <point x="61.999998846153886" y="637.0"/>
+      <point x="43.372549" y="637.0" type="qcurve" smooth="yes"/>
+      <point x="30.62744634314037" y="637.0"/>
+      <point x="21.313726" y="636.0" type="qcurve" smooth="yes"/>
+      <point x="16.656862750000002" y="635.49999975"/>
+      <point x="12.0" y="635.0"/>
+      <point x="12.0" y="635.0" type="qcurve"/>
+      <point x="12" y="675" type="line"/>
+      <point x="169" y="706" type="line"/>
+      <point x="235" y="706" type="line"/>
+      <point x="235" y="300" type="line" smooth="yes"/>
+      <point x="235.0" y="289.99999994999996"/>
+      <point x="234.91733333333335" y="269.9999999051112"/>
+      <point x="234.77166666666668" y="249.99999990222219"/>
+      <point x="234.58100000000002" y="229.99999992933334"/>
+      <point x="234.36333333333334" y="209.99999997444445"/>
+      <point x="234.13666666666668" y="190.00000002555558"/>
+      <point x="233.919" y="170.00000007066666"/>
+      <point x="233.72833333333338" y="150.00000009777776"/>
+      <point x="233.5826666666667" y="130.00000009488886"/>
+      <point x="233.50000000000006" y="110.00000005000001"/>
+      <point x="233.5" y="100.0" type="qcurve" smooth="yes"/>
+      <point x="233.5" y="-2" type="line" smooth="yes"/>
+      <point x="233.5" y="-83.00000141964281"/>
+      <point x="205.5" y="-134.5" type="qcurve" smooth="yes"/>
+      <point x="177.4999987412799" y="-186.000000895503"/>
+      <point x="130.5" y="-210.5" type="qcurve" smooth="yes"/>
+      <point x="83.49999954081635" y="-235.0"/>
+      <point x="24.5" y="-235.0" type="qcurve" smooth="yes"/>
+      <point x="-32.4999995" y="-235.0"/>
+      <point x="-72.5" y="-214.0" type="qcurve" smooth="yes"/>
+      <point x="-112.5" y="-193.0000002625"/>
+      <point x="-112.5" y="-142.0" type="qcurve" smooth="yes"/>
+      <point x="-112.5" y="-117.00000048387099"/>
+      <point x="-97.0" y="-102.0" type="qcurve" smooth="yes"/>
+      <point x="-81.5000005" y="-87.0"/>
+      <point x="-58.5" y="-87.0" type="qcurve" smooth="yes"/>
+      <point x="-32.50000000000001" y="-87.0"/>
+      <point x="-18.5" y="-101.0" type="qcurve" smooth="yes"/>
+      <point x="-4.500000000000005" y="-114.99999999999999"/>
+      <point x="4.5" y="-133.0" type="qcurve" smooth="yes"/>
+      <point x="13.499999549999927" y="-150.99999909999985"/>
+      <point x="23.0" y="-165.0" type="qcurve" smooth="yes"/>
+      <point x="32.4999998392857" y="-179.0"/>
+      <point x="50.5" y="-179.0" type="qcurve" smooth="yes"/>
+      <point x="82.4999995" y="-179.0"/>
+      <point x="88.0" y="-143.0" type="qcurve" smooth="yes"/>
+      <point x="93.5" y="-107.00000327272701"/>
+      <point x="93.5" y="-25.0" type="qcurve" smooth="yes"/>
+      <point x="93.5" y="100" type="line" smooth="yes"/>
+      <point x="93.5" y="110.00000004999998"/>
+      <point x="93.41733333333332" y="130.00000009488892"/>
+      <point x="93.27166666666666" y="150.00000009777781"/>
+      <point x="93.081" y="170.00000007066666"/>
+      <point x="92.86333333333332" y="190.00000002555555"/>
+      <point x="92.63666666666666" y="209.99999997444442"/>
+      <point x="92.419" y="229.99999992933334"/>
+      <point x="92.22833333333332" y="249.99999990222224"/>
+      <point x="92.08266666666668" y="269.9999999051111"/>
+      <point x="92.0" y="289.99999995"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>327.0</real>
+        <key>glyphId</key>
+        <string>ascender-tail</string>
+        <key>lowerCutY</key>
+        <real>100.0</real>
+        <key>lowerDonorCodePoint</key>
+        <integer>567</integer>
+        <key>lowerDonorGlyph</key>
+        <string>uni0237</string>
+        <key>lowerOffsetX</key>
+        <real>1.5</real>
+        <key>method</key>
+        <string>Native lowercase-l head joined to the native dotless-j lower hook.</string>
+        <key>recipeCodePoint</key>
+        <integer>993799</integer>
+        <key>upperCutY</key>
+        <real>300.0</real>
+        <key>upperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>upperDonorGlyph</key>
+        <string>l</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

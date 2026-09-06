@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A18" format="2">
+  <advance width="631"/>
+  <unicode hex="F2A18"/>
+  <outline>
+    <contour>
+      <point x="398.0" y="400.0" type="qcurve" smooth="yes"/>
+      <point x="398" y="595" type="line" smooth="yes"/>
+      <point x="398" y="624"/>
+      <point x="368" y="637"/>
+      <point x="349.372549" y="637" type="qcurve" smooth="yes"/>
+      <point x="336.627451" y="637"/>
+      <point x="318" y="635"/>
+      <point x="318" y="635" type="qcurve"/>
+      <point x="318" y="675" type="line"/>
+      <point x="475" y="706" type="line"/>
+      <point x="541" y="706" type="line"/>
+      <point x="541" y="400" type="line" smooth="yes"/>
+      <point x="541.0" y="375.00000024999997"/>
+      <point x="541.0" y="324.99999975000003"/>
+      <point x="541.0" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="541" y="135" type="line" smooth="yes"/>
+      <point x="541" y="88"/>
+      <point x="569" y="60"/>
+      <point x="609" y="60" type="qcurve" smooth="yes"/>
+      <point x="615" y="60" type="line"/>
+      <point x="615" y="23" type="line"/>
+      <point x="442" y="-6" type="line"/>
+      <point x="403" y="-6" type="line"/>
+      <point x="403" y="81" type="line"/>
+      <point x="399" y="81" type="line"/>
+      <point x="367" y="47"/>
+      <point x="316" y="7"/>
+      <point x="265" y="-10"/>
+      <point x="231" y="-10" type="qcurve" smooth="yes"/>
+      <point x="156" y="-10"/>
+      <point x="83" y="67"/>
+      <point x="83" y="166" type="qcurve" smooth="yes"/>
+      <point x="83" y="359" type="line" smooth="yes"/>
+      <point x="83" y="390"/>
+      <point x="71" y="417"/>
+      <point x="40" y="424"/>
+      <point x="13" y="424" type="qcurve"/>
+      <point x="13" y="465" type="line"/>
+      <point x="179" y="478" type="line"/>
+      <point x="226" y="478" type="line"/>
+      <point x="226" y="195" type="line" smooth="yes"/>
+      <point x="226" y="148"/>
+      <point x="243" y="102"/>
+      <point x="275" y="88"/>
+      <point x="296" y="88" type="qcurve" smooth="yes"/>
+      <point x="328" y="88"/>
+      <point x="370" y="110"/>
+      <point x="398" y="133" type="qcurve"/>
+      <point x="398" y="300" type="line" smooth="yes"/>
+      <point x="398.0" y="324.99999975000003"/>
+      <point x="398.0" y="375.00000024999997"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>archDonorCodePoint</key>
+        <integer>117</integer>
+        <key>method</key>
+        <string>Native u arch and baseline finish with the l ascender on the right; the u advance is retained.</string>
+        <key>upperBodyCutY</key>
+        <real>300.0</real>
+        <key>upperCutY</key>
+        <real>400.0</real>
+        <key>upperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>upperOffsetX</key>
+        <integer>306</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

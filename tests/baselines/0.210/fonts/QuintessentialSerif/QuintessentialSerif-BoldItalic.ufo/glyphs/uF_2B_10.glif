@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2B10" format="2">
+  <advance width="529"/>
+  <unicode hex="F2B10"/>
+  <outline>
+    <contour>
+      <point x="103.237346" y="350.0" type="qcurve" smooth="yes"/>
+      <point x="108.163147" y="373" type="line" smooth="yes"/>
+      <point x="109.163147" y="378"/>
+      <point x="110.163147" y="387"/>
+      <point x="110.163147" y="392" type="qcurve" smooth="yes"/>
+      <point x="110.163147" y="407"/>
+      <point x="93.163147" y="421"/>
+      <point x="72.163147" y="421" type="qcurve" smooth="yes"/>
+      <point x="62.163147" y="421"/>
+      <point x="43.163147" y="419"/>
+      <point x="43.163147" y="419" type="qcurve"/>
+      <point x="43.163147" y="459" type="line"/>
+      <point x="211.163147" y="474" type="line"/>
+      <point x="253.163147" y="474" type="line"/>
+      <point x="250.215778" y="460" type="line" smooth="yes"/>
+      <point x="249.99021410714283" y="458.92857142857144"/>
+      <point x="249.65410253178965" y="456.7857142857142"/>
+      <point x="249.41369093347723" y="454.6428571428571"/>
+      <point x="249.25125382751176" y="452.5"/>
+      <point x="249.14906572919938" y="450.3571428571429"/>
+      <point x="249.08940115384615" y="448.21428571428567"/>
+      <point x="249.05453461675822" y="446.07142857142856"/>
+      <point x="249.02674063324176" y="443.92857142857144"/>
+      <point x="248.98829371860285" y="441.7857142857142"/>
+      <point x="248.92146838814756" y="439.6428571428571"/>
+      <point x="248.8085391571821" y="437.5"/>
+      <point x="248.63178054101255" y="435.3571428571429"/>
+      <point x="248.37346705494502" y="433.21428571428567"/>
+      <point x="248.01587321428568" y="431.07142857142856"/>
+      <point x="247.777778" y="430.0" type="qcurve" smooth="yes"/>
+      <point x="246" y="422" type="line"/>
+      <point x="260" y="422" type="line"/>
+      <point x="255" y="400" type="line"/>
+      <point x="194" y="136" type="line" smooth="yes"/>
+      <point x="192" y="126"/>
+      <point x="187" y="98"/>
+      <point x="187" y="84" type="qcurve" smooth="yes"/>
+      <point x="187" y="73.150943"/>
+      <point x="233" y="61"/>
+      <point x="289" y="61" type="qcurve" smooth="yes"/>
+      <point x="326" y="61"/>
+      <point x="385" y="89"/>
+      <point x="428" y="127"/>
+      <point x="440" y="141" type="qcurve"/>
+      <point x="471" y="118" type="line"/>
+      <point x="446" y="80"/>
+      <point x="380" y="20"/>
+      <point x="295" y="-13"/>
+      <point x="238" y="-13" type="qcurve" smooth="yes"/>
+      <point x="155" y="-13"/>
+      <point x="50" y="35"/>
+      <point x="50" y="87" type="qcurve" smooth="yes"/>
+      <point x="50" y="100"/>
+      <point x="55" y="132"/>
+      <point x="58" y="144" type="qcurve" smooth="yes"/>
+      <point x="93.294118" y="300" type="line" smooth="yes"/>
+      <point x="93.765460375" y="302.08333337499994"/>
+      <point x="94.66252345075758" y="306.2500000861743"/>
+      <point x="95.52204827651516" y="310.41666676609856"/>
+      <point x="96.3514446578283" y="314.58333342171727"/>
+      <point x="97.15812240025251" y="318.75000005997475"/>
+      <point x="97.94949130934344" y="322.91666668781573"/>
+      <point x="98.73296119065657" y="327.0833333121844"/>
+      <point x="99.51594184974746" y="331.24999994002525"/>
+      <point x="100.30584309217173" y="335.41666657828284"/>
+      <point x="101.11007472348484" y="339.58333323390156"/>
+      <point x="101.93604654924242" y="343.7499999138257"/>
+      <point x="102.79116837499998" y="347.91666662499995"/>
+    </contour>
+    <contour>
+      <point x="194" y="182" type="qcurve"/>
+      <point x="198" y="220" type="line"/>
+      <point x="263" y="231"/>
+      <point x="336" y="264"/>
+      <point x="366" y="315"/>
+      <point x="366" y="353" type="qcurve" smooth="yes"/>
+      <point x="366" y="385"/>
+      <point x="345" y="413"/>
+      <point x="327" y="413" type="qcurve" smooth="yes"/>
+      <point x="308" y="413"/>
+      <point x="269" y="395"/>
+      <point x="236" y="366" type="qcurve"/>
+      <point x="240" y="414" type="line"/>
+      <point x="281" y="448"/>
+      <point x="351" y="481"/>
+      <point x="399" y="481" type="qcurve" smooth="yes"/>
+      <point x="434" y="481"/>
+      <point x="486" y="461"/>
+      <point x="515" y="416"/>
+      <point x="515" y="380" type="qcurve" smooth="yes"/>
+      <point x="515" y="336"/>
+      <point x="474" y="275"/>
+      <point x="406" y="234"/>
+      <point x="321" y="207"/>
+      <point x="233" y="190"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>529</integer>
+        <key>bodyDonorCodePoint</key>
+        <integer>592</integer>
+        <key>counterDesign</key>
+        <string>native-italic-turned-a-bowl</string>
+        <key>family</key>
+        <string>bowled-spines</string>
+        <key>freeTerminalDonorCodePoint</key>
+        <integer>603</integer>
+        <key>freeTerminalOffsetX</key>
+        <integer>43</integer>
+        <key>freeTerminalOffsetY</key>
+        <integer>-1</integer>
+        <key>freeTerminalTurned</key>
+        <false/>
+        <key>method</key>
+        <string>Native Italic turned-a diagonal bowl, rigidly half-turned for the lower-bowled direction; native Italic stem endings and carefully fitted joins. Upper-bowled forms have a flat lower epsilon finish; lower-bowled forms keep the native turned-a ball at the top. The single-storey Italic a is not a bowl donor.</string>
+        <key>sharedStemCenterX</key>
+        <real>151.1614047716989</real>
+        <key>sharedStemCenterY</key>
+        <integer>250</integer>
+        <key>spineDonorCodePoint</key>
+        <integer>592</integer>
+        <key>spineOffsetX</key>
+        <integer>0</integer>
+        <key>spineOffsetY</key>
+        <integer>0</integer>
+        <key>spineTurned</key>
+        <false/>
+        <key>upperDonorCodePoint</key>
+        <integer>112</integer>
+        <key>upperOffsetX</key>
+        <real>-14.836853140862246</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "family": "STIX Two Text",
+  "upstream": {
+    "project": "STIX Fonts Project",
+    "repositoryUrl": "https://github.com/stipub/stixfonts",
+    "releaseTag": "v2.13b171",
+    "releaseVersion": "2.13 b171",
+    "releaseUrl": "https://github.com/stipub/stixfonts/releases/tag/v2.13b171",
+    "sourceCommit": "744a22a4dd626cd14d75728aef34fc8ad7c85db0",
+    "romanDesignspaceUrl": "https://github.com/stipub/stixfonts/blob/v2.13b171/source/STIXTwoTextVF-Roman.designspace",
+    "italicDesignspaceUrl": "https://github.com/stipub/stixfonts/blob/v2.13b171/source/STIXTwoTextVF-Italic.designspace",
+    "googleFontsFamilyUrl": "https://fonts.google.com/specimen/STIX+Two+Text"
+  },
+  "license": {
+    "spdx": "OFL-1.1",
+    "reservedFontNames": [
+      "TM Math"
+    ],
+    "licenseFile": "OFL.txt",
+    "fontlogFile": "FONTLOG.txt",
+    "trademarkFile": "TRADEMARKS.txt"
+  },
+  "attribution": {
+    "copyright": "Copyright 2001-2021 The STIX Fonts Project Authors (https://github.com/stipub/stixfonts)",
+    "designRevision": "Tiro Typeworks Ltd.",
+    "trademarkNotice": "STIX Fonts™ is a trademark of The Institute of Electrical and Electronics Engineers, Inc."
+  },
+  "axisModel": {
+    "axes": [
+      {
+        "tag": "wght",
+        "name": "Weight",
+        "minimum": 400,
+        "default": 400,
+        "maximum": 700,
+        "sourceDesignspaceMap": [
+          {
+            "user": 400,
+            "source": 92
+          },
+          {
+            "user": 500,
+            "source": 110
+          },
+          {
+            "user": 600,
+            "source": 128
+          },
+          {
+            "user": 700,
+            "source": 149
+          }
+        ],
+        "compiledAvarSegments": [
+          {
+            "from": -1.0,
+            "to": -1.0
+          },
+          {
+            "from": 0.0,
+            "to": 0.0
+          },
+          {
+            "from": 0.33331298828125,
+            "to": 0.3157958984375
+          },
+          {
+            "from": 0.66668701171875,
+            "to": 0.631591796875
+          },
+          {
+            "from": 1.0,
+            "to": 1.0
+          }
+        ]
+      }
+    ],
+    "absentAxes": [
+      "wdth",
+      "opsz"
+    ]
+  },
+  "donors": [
+    {
+      "style": "Roman",
+      "filename": "STIXTwoText-VariableFont_wght.ttf",
+      "bytes": 423048,
+      "sha256": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
+      "installedSourceFilename": "STIXTwoText-VariableFont_wght.ttf",
+      "internalFamilyName": "STIX Two Text",
+      "internalSubfamilyName": "Regular",
+      "postScriptName": "STIXTwoText",
+      "versionName": "Version 2.13 b171",
+      "sfntFlavor": "TrueType",
+      "glyphCount": 2209,
+      "namedInstances": [
+        {
+          "name": "Regular",
+          "wght": 400
+        },
+        {
+          "name": "Medium",
+          "wght": 500
+        },
+        {
+          "name": "SemiBold",
+          "wght": 600
+        },
+        {
+          "name": "Bold",
+          "wght": 700
+        }
+      ],
+      "requiredTablesPresent": [
+        "fvar",
+        "avar",
+        "STAT",
+        "gvar",
+        "HVAR",
+        "GPOS"
+      ],
+      "hinting": {
+        "classification": "unhinted",
+        "glyphInstructionProgramCount": 0,
+        "hasFpgmTable": false,
+        "hasCvtTable": false
+      },
+      "canonicalTaggedReference": {
+        "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/fonts/variable_ttf/STIXTwoText%5Bwght%5D.ttf",
+        "bytes": 418956,
+        "sha256": "7962b8b7811e6a896c9a91a0bccbb5241047770eb24d4997c5cb5fe21d5c0df2"
+      }
+    },
+    {
+      "style": "Italic",
+      "filename": "STIXTwoText-Italic-VariableFont_wght.ttf",
+      "bytes": 458124,
+      "sha256": "efa7260126f8b13bd6dacb898f01f87d79e94fbb3ee5dc7e93ab2366a291fa84",
+      "installedSourceFilename": "STIXTwoText-Italic-VariableFont_wght.ttf",
+      "internalFamilyName": "STIX Two Text",
+      "internalSubfamilyName": "Italic",
+      "postScriptName": "STIXTwoText-Italic",
+      "versionName": "Version 2.13 b171",
+      "sfntFlavor": "TrueType",
+      "glyphCount": 2226,
+      "namedInstances": [
+        {
+          "name": "Italic",
+          "wght": 400
+        },
+        {
+          "name": "Medium Italic",
+          "wght": 500
+        },
+        {
+          "name": "SemiBold Italic",
+          "wght": 600
+        },
+        {
+          "name": "Bold Italic",
+          "wght": 700
+        }
+      ],
+      "requiredTablesPresent": [
+        "fvar",
+        "avar",
+        "STAT",
+        "gvar",
+        "HVAR",
+        "GPOS"
+      ],
+      "hinting": {
+        "classification": "unhinted",
+        "glyphInstructionProgramCount": 0,
+        "hasFpgmTable": false,
+        "hasCvtTable": false
+      },
+      "canonicalTaggedReference": {
+        "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/fonts/variable_ttf/STIXTwoText-Italic%5Bwght%5D.ttf",
+        "bytes": 454368,
+        "sha256": "88c0e2e316eaff56eddc9e51e4850317e2a1e490bbf758b2dec4793aedba9c74"
+      }
+    }
+  ],
+  "provenanceNote": "The pinned TTFs are byte-for-byte copies of the installed Google Fonts-style files inspected on 2026-09-04. Their version, cmap, one-axis model, nonlinear avar mapping, and named instances match the official v2.13b171 tagged fonts. The canonical tagged files retain 12 additional unencoded glyphs, so their reference hashes and sizes are recorded separately.",
+  "documents": [
+    {
+      "filename": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/OFL.txt",
+      "bytes": 4519,
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+    },
+    {
+      "filename": "FONTLOG.txt",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/FONTLOG.txt",
+      "bytes": 42578,
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204"
+    },
+    {
+      "filename": "TRADEMARKS.txt",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/TRADEMARKS.txt",
+      "bytes": 92,
+      "sha256": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+    }
+  ]
+}

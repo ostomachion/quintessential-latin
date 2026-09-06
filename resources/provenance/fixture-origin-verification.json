@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "fixtures": {
+    "0.210": {
+      "fileCount": 1319,
+      "fixtureManifestSha256": "0d0cad2df564f65cedd0958a75cbfa2d375cab50dac17b55acb376bc4e1d0a2f",
+      "allFilesMatchHistoricalRecordedHashes": true
+    },
+    "0.150": {
+      "fileCount": 559,
+      "fixtureManifestSha256": "686a895ab5a7313ae835494ab1ccc6e61ab1b762410b9c99cd51671fa5bbe989",
+      "allFilesMatchHistoricalRecordedHashes": true
+    }
+  },
+  "primarySuiteByteIdentical": true,
+  "focusedMetadataMethodsAdapted": [
+    "AdditionsBaselineTests.test_capture_and_independent_semantic_registry_are_intact",
+    "AdditionsBaselineTests.test_semantic_migration_keeps_all_old_identities_names_and_postures",
+    "StemlessSpecialGeometryTests.test_seven_special_assignments_and_posture_specific_native_direct_forms"
+  ],
+  "remainingFocusedMethodsAstIdentical": true,
+  "specialGeometryAssertionsAstIdentical": true
+}

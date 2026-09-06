@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A61" format="2">
+  <advance width="849.559344"/>
+  <unicode hex="F2A61"/>
+  <outline>
+    <contour>
+      <point x="351.238938" y="200" type="line"/>
+      <point x="381" y="318" type="line"/>
+      <point x="381" y="318"/>
+      <point x="388" y="347"/>
+      <point x="388" y="360" type="qcurve" smooth="yes"/>
+      <point x="388" y="372"/>
+      <point x="377" y="388"/>
+      <point x="365" y="388" type="qcurve" smooth="yes"/>
+      <point x="347" y="388"/>
+      <point x="306" y="350"/>
+      <point x="266" y="289"/>
+      <point x="230" y="223"/>
+      <point x="203" y="165"/>
+      <point x="196" y="148" type="qcurve"/>
+      <point x="216" y="288" type="line"/>
+      <point x="231" y="313"/>
+      <point x="270" y="379"/>
+      <point x="323" y="440"/>
+      <point x="396" y="481"/>
+      <point x="446" y="481" type="qcurve" smooth="yes"/>
+      <point x="483" y="481"/>
+      <point x="522" y="459"/>
+      <point x="536" y="423"/>
+      <point x="536" y="403" type="qcurve" smooth="yes"/>
+      <point x="536" y="384"/>
+      <point x="528" y="339"/>
+      <point x="525" y="328" type="qcurve" smooth="yes"/>
+      <point x="493" y="200" type="line"/>
+    </contour>
+    <contour>
+      <point x="164" y="0" type="line"/>
+      <point x="22" y="0" type="line"/>
+      <point x="151" y="595" type="line"/>
+      <point x="151" y="595"/>
+      <point x="156" y="618"/>
+      <point x="156" y="627" type="qcurve" smooth="yes"/>
+      <point x="156" y="641"/>
+      <point x="140" y="655"/>
+      <point x="121" y="655" type="qcurve" smooth="yes"/>
+      <point x="113" y="655"/>
+      <point x="92" y="653"/>
+      <point x="92" y="653" type="qcurve"/>
+      <point x="92" y="695" type="line"/>
+      <point x="258" y="706" type="line"/>
+      <point x="313" y="706" type="line"/>
+      <point x="248" y="439" type="line"/>
+      <point x="210" y="298" type="line"/>
+      <point x="232" y="298" type="line"/>
+    </contour>
+    <contour>
+      <point x="534.559344" y="417" type="line"/>
+      <point x="541.559344" y="417" type="line"/>
+      <point x="567.559344" y="441"/>
+      <point x="607.559344" y="469"/>
+      <point x="648.559344" y="481"/>
+      <point x="675.559344" y="481" type="qcurve" smooth="yes"/>
+      <point x="736.559344" y="481"/>
+      <point x="820.559344" y="394"/>
+      <point x="820.559344" y="304" type="qcurve" smooth="yes"/>
+      <point x="820.559344" y="231"/>
+      <point x="778.559344" y="114"/>
+      <point x="697.559344" y="31"/>
+      <point x="579.559344" y="-14"/>
+      <point x="503.559344" y="-14" type="qcurve" smooth="yes"/>
+      <point x="406.559344" y="-14"/>
+      <point x="323.559344" y="23" type="qcurve"/>
+      <point x="400.420504" y="417" type="line"/>
+    </contour>
+    <contour>
+      <point x="540.559344" y="47" type="qcurve" smooth="yes"/>
+      <point x="583.559344" y="47"/>
+      <point x="642.559344" y="115"/>
+      <point x="672.559344" y="232"/>
+      <point x="672.559344" y="305" type="qcurve" smooth="yes"/>
+      <point x="672.559344" y="369"/>
+      <point x="640.559344" y="412"/>
+      <point x="618.559344" y="412" type="qcurve" smooth="yes"/>
+      <point x="594.559344" y="412"/>
+      <point x="553.559344" y="381"/>
+      <point x="523.559344" y="336"/>
+      <point x="515.559344" y="314" type="qcurve"/>
+      <point x="470.559344" y="77" type="line"/>
+      <point x="480.559344" y="68"/>
+      <point x="521.559344" y="47"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>849.559344</real>
+        <key>archBaseCodePoint</key>
+        <integer>993817</integer>
+        <key>archDonorCodePoint</key>
+        <integer>104</integer>
+        <key>method</key>
+        <string>Native arch and outer endings of U+F2A19 joined to the native bowl and counter of lowercase b; the terminal curves remain rigid and the advance follows the constructed span.</string>
+        <key>sharedStemOwner</key>
+        <string>terminal</string>
+        <key>terminalDonorCodePoint</key>
+        <integer>98</integer>
+        <key>terminalOffsetX</key>
+        <real>291.559344</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

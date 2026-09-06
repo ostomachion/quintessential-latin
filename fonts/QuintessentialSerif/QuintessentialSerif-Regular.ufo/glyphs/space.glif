@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="space" format="2">
+  <advance width="235"/>
+  <unicode hex="0020"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>donorCodePoint</key>
+        <integer>32</integer>
+        <key>donorGlyph</key>
+        <string>space</string>
+        <key>method</key>
+        <string>Native STIX Two space advance, unchanged.</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

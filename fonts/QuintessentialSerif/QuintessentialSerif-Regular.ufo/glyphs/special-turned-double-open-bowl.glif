@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="special-turned-double-open-bowl" format="2">
+  <advance width="398"/>
+  <unicode hex="F2A05"/>
+  <outline>
+    <contour>
+      <point x="177" y="-10" type="qcurve" smooth="yes"/>
+      <point x="91" y="-10"/>
+      <point x="17" y="39"/>
+      <point x="17" y="73" type="qcurve" smooth="yes"/>
+      <point x="17" y="91"/>
+      <point x="43" y="112"/>
+      <point x="60" y="112" type="qcurve" smooth="yes"/>
+      <point x="77" y="112"/>
+      <point x="96" y="94"/>
+      <point x="108" y="68"/>
+      <point x="125" y="43"/>
+      <point x="154" y="25"/>
+      <point x="180" y="25" type="qcurve" smooth="yes"/>
+      <point x="224.8" y="25"/>
+      <point x="276" y="66.04878"/>
+      <point x="276" y="127" type="qcurve" smooth="yes"/>
+      <point x="276" y="180"/>
+      <point x="219" y="229"/>
+      <point x="154" y="229" type="qcurve" smooth="yes"/>
+      <point x="115" y="229" type="line"/>
+      <point x="115" y="276" type="line"/>
+      <point x="153" y="276" type="line" smooth="yes"/>
+      <point x="187" y="276"/>
+      <point x="241" y="291"/>
+      <point x="273" y="332"/>
+      <point x="273" y="371" type="qcurve" smooth="yes"/>
+      <point x="273" y="399.5"/>
+      <point x="229.046512" y="431"/>
+      <point x="183" y="431" type="qcurve" smooth="yes"/>
+      <point x="140" y="431"/>
+      <point x="71" y="405"/>
+      <point x="45" y="376" type="qcurve"/>
+      <point x="27" y="391" type="line"/>
+      <point x="43" y="417"/>
+      <point x="85" y="460"/>
+      <point x="146" y="486"/>
+      <point x="189" y="486" type="qcurve" smooth="yes"/>
+      <point x="234" y="486"/>
+      <point x="310" y="459"/>
+      <point x="355" y="408"/>
+      <point x="355" y="372" type="qcurve" smooth="yes"/>
+      <point x="355" y="336"/>
+      <point x="319" y="291"/>
+      <point x="268" y="265"/>
+      <point x="246" y="257" type="qcurve"/>
+      <point x="246" y="253" type="line"/>
+      <point x="271" y="249"/>
+      <point x="325" y="220"/>
+      <point x="363" y="167"/>
+      <point x="363" y="127" type="qcurve" smooth="yes"/>
+      <point x="363" y="76"/>
+      <point x="310" y="16"/>
+      <point x="225" y="-10"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>398</integer>
+        <key>bodyDesign</key>
+        <string>native-reversed-epsilon-lobes-with-turned-opening-terminals</string>
+        <key>bodyDonorCodePoint</key>
+        <integer>604</integer>
+        <key>counterCount</key>
+        <integer>0</integer>
+        <key>family</key>
+        <string>stemless-specials</string>
+        <key>glyphId</key>
+        <string>special-turned-double-open-bowl</string>
+        <key>lowerTerminalDonorCodePoint</key>
+        <integer>603</integer>
+        <key>lowerTerminalOffsetX</key>
+        <integer>392</integer>
+        <key>lowerTerminalOffsetY</key>
+        <integer>476</integer>
+        <key>lowerTerminalTurned</key>
+        <true/>
+        <key>method</key>
+        <string>Native stemless bowl vocabulary; no language reading.</string>
+        <key>posture</key>
+        <string>Roman</string>
+        <key>terminalDesign</key>
+        <string>thin-upper-finish-and-lower-ball</string>
+        <key>upperTerminalDonorCodePoint</key>
+        <integer>604</integer>
+        <key>upperTerminalOffsetX</key>
+        <integer>12</integer>
+        <key>upperTerminalOffsetY</key>
+        <integer>476</integer>
+        <key>upperTerminalReflectedY</key>
+        <true/>
+        <key>upperTerminalReversed</key>
+        <true/>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

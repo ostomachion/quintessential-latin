@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2B00" format="2">
+  <advance width="548"/>
+  <unicode hex="F2B00"/>
+  <outline>
+    <contour>
+      <point x="274" y="-10" type="qcurve" smooth="yes"/>
+      <point x="156" y="-10"/>
+      <point x="32" y="110"/>
+      <point x="32" y="240" type="qcurve" smooth="yes"/>
+      <point x="32" y="310"/>
+      <point x="84" y="421"/>
+      <point x="193" y="485"/>
+      <point x="277" y="485" type="qcurve" smooth="yes"/>
+      <point x="397" y="485"/>
+      <point x="516" y="359"/>
+      <point x="516" y="251" type="qcurve" smooth="yes"/>
+      <point x="516" y="166"/>
+      <point x="460" y="49"/>
+      <point x="353" y="-10"/>
+    </contour>
+    <contour>
+      <point x="277" y="39" type="qcurve" smooth="yes"/>
+      <point x="310" y="39"/>
+      <point x="348" y="84"/>
+      <point x="364" y="174"/>
+      <point x="364" y="243" type="qcurve" smooth="yes"/>
+      <point x="364" y="337"/>
+      <point x="319" y="437"/>
+      <point x="269" y="437" type="qcurve" smooth="yes"/>
+      <point x="221" y="437"/>
+      <point x="184" y="336"/>
+      <point x="184" y="250" type="qcurve" smooth="yes"/>
+      <point x="184" y="143"/>
+      <point x="228" y="39"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>donorCodePoint</key>
+        <integer>111</integer>
+        <key>donorGlyph</key>
+        <string>o</string>
+        <key>method</key>
+        <string>Native STIX Two outline and advance, unchanged; reserved standalone sign without a language reading.</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

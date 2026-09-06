@@ -1,0 +1,141 @@
+{
+  "title": "Quintessential Latin",
+  "subtitle": "Proposal for registration in the Under-ConScript Unicode Registry",
+  "status": "Draft proposal · 6 September 2026 · Repertoire 0.220",
+  "author": "Josh Hufford",
+  "date": "2026-09-06",
+  "version": "0.220",
+  "sections": [
+    {
+      "id": "purpose",
+      "title": "1. Purpose and scope",
+      "paragraphs": [
+        "Quintessential Latin is a systematic repertoire of Latin-derived letterforms. It combines uprights, shoulders, hips, legs, arms, bowls, and spines into 832 named constructions. The repertoire is independent of any particular language or pronunciation system.",
+        "This document proposes coordinated private-use assignments for the complete current repertoire in the Under-ConScript Unicode Registry (UCSUR). The assignments provide a stable way to exchange the constructions as text. This is a draft for review, not an announcement of registration or inclusion in the Unicode Standard.",
+        "The proposal concerns construction identities and their interchange. It does not prescribe readings for every form or claim that every structural distinction has already been accepted as an independently encodable character."
+      ]
+    },
+    {
+      "id": "repertoire",
+      "title": "2. Proposed allocation",
+      "paragraphs": [
+        "The requested space comprises three blocks spanning 1,024 positions in Supplementary Private Use Area-A. The current repertoire occupies 832 positions; the remaining 192 positions have no character assignment in this proposal.",
+        "The UCSUR allocation table lists U+F2A00–U+F2DFF as unassigned when checked on 6 September 2026. This check establishes no reservation and does not exclude private use elsewhere."
+      ],
+      "bullets": [
+        "Quintessential Latin: U+F2A00–U+F2AFF; 196 characters at U+F2A00–U+F2AC3.",
+        "Quintessential Latin Extended-A: U+F2B00–U+F2BFF; 252 characters at U+F2B00–U+F2BFB.",
+        "Quintessential Latin Extended-B: U+F2C00–U+F2DFF; 384 characters at U+F2C00–U+F2D7F.",
+        "Unallocated positions: U+F2AC4–U+F2AFF, U+F2BFC–U+F2BFF, and U+F2D80–U+F2DFF."
+      ]
+    },
+    {
+      "id": "construction",
+      "title": "3. Construction principles",
+      "paragraphs": [
+        "A construction is described from left to right. An upright has independently specified upper and lower endings. Short, straight-extended, and curved endings yield the nine primitive names stem, ascender, hook, descender, long stem, long hook, tail, long tail, and long spine.",
+        "A shoulder is an upper branch and a hip is its lower counterpart. A leg includes its upper connecting arch; an arm includes its lower connecting arch. Bowls, double bowls, and spines join these components into wider forms.",
+        "Long bowls distinguish open returns from returns closed by an immediately adjacent upright. Naming records local closure, not a remote feature elsewhere in the construction. Repeated arches and extended middle components form systematic companion families.",
+        "The seven stemless forms are bowl, double bowl, open bowl, turned open bowl, double open bowl, turned double open bowl, and spine. Their presence does not assign them digit or punctuation values."
+      ]
+    },
+    {
+      "id": "identity",
+      "title": "4. Character identity and composition",
+      "paragraphs": [
+        "Each allocated construction is represented by one Unicode scalar value in the proposed private-use map. The component vocabulary describes its visible structure; it is not a sequence of separately encoded combining marks.",
+        "Concatenating primitive character codes does not request automatic formation of a compound construction. Compounds already in the repertoire have their own explicit assignments. No decomposition or normalization equivalence between these codes is specified.",
+        "Opposite-facing forms have distinct assignments where the repertoire includes them. Roman and Italic are typographic postures of the same mapped construction. Font weight and posture never change its stored code point.",
+        "Canonical names describe structure independently of pronunciation. Uppercase names in the charts are a documentation convention and do not define an uppercase character repertoire."
+      ]
+    },
+    {
+      "id": "names",
+      "title": "5. Names and ordering",
+      "paragraphs": [
+        "The current canonical naming system is version 2. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Local closure and specified repeated-component abbreviations are resolved before names are serialized.",
+        "Names are unique across the 832-entry repertoire. The chart name is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER, except that the seven stemless forms use QUINTESSENTIAL LATIN without LETTER.",
+        "Code charts and formal names lists use numeric code order. Specimen browsing keeps companion families immediately after their bases. Code values, stable identities, internal font glyph names, and presentation order remain distinct."
+      ]
+    },
+    {
+      "id": "text-behavior",
+      "title": "6. Reference text behavior",
+      "paragraphs": [
+        "The reference implementation presents text horizontally from left to right. Every allocated form is a spacing character in the font, with its own advance. The font includes U+0020 SPACE and kerning between reference glyphs.",
+        "No uppercase/lowercase pairings, case conversions, special word-breaking rules, or combining behavior are proposed. There is no separately specified punctuation or numeral system.",
+        "Private-use characters retain the Unicode properties assigned to private-use code points by the Unicode Standard. This proposal does not install new normative Unicode properties or normalization mappings.",
+        "Applications must preserve supplementary-plane scalar values. In UTF-16, a mapped character occupies a surrogate pair; editing and copying must keep that pair intact."
+      ]
+    },
+    {
+      "id": "reference-font",
+      "title": "7. Reference implementation",
+      "paragraphs": [
+        "Quintessential Serif 0.220 is the reference typeface. It provides all 832 mapped constructions in Roman and 232 in native Italic. The two variable fonts support a continuous weight range from 400 to 700 and retain the reference design's nonlinear weight mapping.",
+        "The remaining 600 Italic variants are unbuilt. Their code points remain allocated; missing Italic coverage is not an unallocated character position. The website labels these variants explicitly and does not synthesize an Italic face.",
+        "Variable TTF and WOFF2 fonts and four static endpoint faces are supplied with editable UFO sources, designspaces, build tools, and regression fixtures. The reference fonts derive from the pinned STIX Two Text 2.13 b171 donors and retain the SIL Open Font License.",
+        "Font development and character registration are separate processes. The reference design remains a work in progress; a rendered sample is not a prescribed exclusive glyph shape."
+      ]
+    },
+    {
+      "id": "charts",
+      "title": "8. Accompanying charts and data",
+      "paragraphs": [
+        "Each block has a reference PDF containing a title/range page, code grids, and a numeric names list. A combined catalogue contains all three blocks. The eight grid sheets each show 128 positions, allowing the widest constructions to remain legible.",
+        "Reference PDFs use Quintessential Serif 0.220, Roman 400. Each assigned position shows its representative glyph and hexadecimal code. Shading identifies unallocated positions.",
+        "The downloadable allocation, compact browser catalogue, and names list are generated from one explicit source. Character names and code points agree across the PDFs, website, font mappings, and machine-readable downloads."
+      ]
+    },
+    {
+      "id": "open-questions",
+      "title": "9. Matters for registry review",
+      "paragraphs": [
+        "The suitability of each construction distinction for separate registration remains open to review. This proposal intentionally records the complete implemented inventory so that reviewers can assess the distinctions against consistent names, reference glyphs, and a working interchange map.",
+        "Readings, handwriting conventions, language-specific spelling systems, and any future punctuation or numeral assignments are outside the current proposal. No broad user community, historical tradition, or accepted registry status is asserted.",
+        "Future repertoire changes must identify additions, removals, or reassignments explicitly. A font design change alone does not create a new character."
+      ]
+    },
+    {
+      "id": "availability",
+      "title": "10. Availability and contact",
+      "paragraphs": [
+        "The project source, reference fonts, chart PDFs, and proposal are available from the public Quintessential Latin repository and website. Corrections and technical discussion can be submitted through GitHub Issues.",
+        "Author: Josh Hufford. Repository: https://github.com/ostomachion/quintessential-latin. Website: https://ostomachion.github.io/quintessential-latin/. Contact: https://github.com/ostomachion/quintessential-latin/issues."
+      ]
+    },
+    {
+      "id": "revision-history",
+      "title": "11. Revision history",
+      "paragraphs": [
+        "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Under-ConScript Unicode Registry: allocation table",
+      "url": "https://www.kreativekorp.com/ucsur/"
+    },
+    {
+      "title": "ConScript Unicode Registry: introduction and proposal precedents",
+      "url": "https://www.evertype.com/standards/csur/"
+    },
+    {
+      "title": "The Unicode Standard: code chart conventions",
+      "url": "https://www.unicode.org/charts/About.html"
+    },
+    {
+      "title": "Unicode code chart reference: Miscellaneous Technical",
+      "url": "https://www.unicode.org/charts/PDF/U2300.pdf"
+    },
+    {
+      "title": "STIX Two Text 2.13 b171 source release",
+      "url": "https://github.com/stipub/stixfonts/releases/tag/v2.13b171"
+    },
+    {
+      "title": "SIL Open Font License 1.1",
+      "url": "https://openfontlicense.org/open-font-license-official-text/"
+    }
+  ]
+}

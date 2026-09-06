@@ -1,0 +1,8 @@
+# Preserve exact donor, master, fixture, and manifested source bytes on every OS.
+* -text
+*.ttf binary
+*.otf binary
+*.woff2 binary
+*.pdf binary
+*.png binary
+*.gz binary

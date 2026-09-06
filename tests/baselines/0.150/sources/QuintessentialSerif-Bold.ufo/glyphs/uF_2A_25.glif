@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A25" format="2">
+  <advance width="571"/>
+  <unicode hex="F2A25"/>
+  <outline>
+    <contour>
+      <point x="161" y="706" type="line"/>
+      <point x="215" y="706" type="line"/>
+      <point x="215" y="402" type="line"/>
+      <point x="219" y="402" type="line"/>
+      <point x="245" y="432"/>
+      <point x="318" y="485"/>
+      <point x="371" y="485" type="qcurve" smooth="yes"/>
+      <point x="425" y="485"/>
+      <point x="499" y="435"/>
+      <point x="538" y="337"/>
+      <point x="538" y="264" type="qcurve" smooth="yes"/>
+      <point x="538" y="168"/>
+      <point x="468" y="47"/>
+      <point x="344" y="-11"/>
+      <point x="262" y="-11" type="qcurve" smooth="yes"/>
+      <point x="188" y="-11"/>
+      <point x="94" y="20"/>
+      <point x="72" y="30" type="qcurve"/>
+      <point x="72" y="577" type="line" smooth="yes"/>
+      <point x="72" y="611"/>
+      <point x="57" y="630"/>
+      <point x="29" y="630" type="qcurve" smooth="yes"/>
+      <point x="16" y="630"/>
+      <point x="0" y="628"/>
+      <point x="0" y="628" type="qcurve"/>
+      <point x="0" y="671" type="line"/>
+    </contour>
+    <contour>
+      <point x="215" y="343" type="qcurve"/>
+      <point x="215" y="86" type="line"/>
+      <point x="225" y="69"/>
+      <point x="263" y="41"/>
+      <point x="291" y="41" type="qcurve" smooth="yes"/>
+      <point x="326" y="41"/>
+      <point x="366" y="92"/>
+      <point x="383" y="181"/>
+      <point x="383" y="237" type="qcurve" smooth="yes"/>
+      <point x="383" y="288"/>
+      <point x="368" y="357"/>
+      <point x="335" y="392"/>
+      <point x="308" y="392" type="qcurve" smooth="yes"/>
+      <point x="276" y="392"/>
+      <point x="228" y="357"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>donorCodePoint</key>
+        <integer>98</integer>
+        <key>donorGlyph</key>
+        <string>b</string>
+        <key>method</key>
+        <string>Native STIX Two lowercase-b outline and advance, unchanged.</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

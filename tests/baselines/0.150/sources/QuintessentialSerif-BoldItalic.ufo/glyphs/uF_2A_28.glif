@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A28" format="2">
+  <advance width="575"/>
+  <unicode hex="F2A28"/>
+  <outline>
+    <contour>
+      <point x="316" y="71" type="line"/>
+      <point x="284" y="27"/>
+      <point x="221" y="-14"/>
+      <point x="176" y="-14" type="qcurve" smooth="yes"/>
+      <point x="110" y="-14"/>
+      <point x="30" y="74"/>
+      <point x="30" y="168" type="qcurve" smooth="yes"/>
+      <point x="30" y="237"/>
+      <point x="72" y="351"/>
+      <point x="144" y="435"/>
+      <point x="236" y="481"/>
+      <point x="286" y="481" type="qcurve" smooth="yes"/>
+      <point x="317" y="481"/>
+      <point x="359" y="464"/>
+      <point x="378" y="447" type="qcurve"/>
+      <point x="383" y="447" type="line"/>
+      <point x="411" y="592" type="line"/>
+      <point x="411" y="592"/>
+      <point x="414" y="614"/>
+      <point x="414" y="624" type="qcurve" smooth="yes"/>
+      <point x="414" y="637"/>
+      <point x="402" y="655"/>
+      <point x="379" y="655" type="qcurve" smooth="yes"/>
+      <point x="370" y="655"/>
+      <point x="348" y="653"/>
+      <point x="348" y="653" type="qcurve"/>
+      <point x="348" y="694" type="line"/>
+      <point x="522" y="705" type="line"/>
+      <point x="568" y="705" type="line"/>
+      <point x="463.540309" y="180" type="line" smooth="yes"/>
+      <point x="462.7941683125" y="176.25"/>
+      <point x="461.52151682638885" y="168.75"/>
+      <point x="460.4478412361111" y="161.25"/>
+      <point x="459.5541398680555" y="153.75"/>
+      <point x="458.8214110486111" y="146.25"/>
+      <point x="458.2306531041666" y="138.75"/>
+      <point x="457.7628643611111" y="131.25"/>
+      <point x="457.39904314583333" y="123.75"/>
+      <point x="457.12018778472213" y="116.25"/>
+      <point x="456.9072966041667" y="108.75"/>
+      <point x="456.74136793055555" y="101.25"/>
+      <point x="456.6034000902778" y="93.75"/>
+      <point x="456.4743914097222" y="86.25"/>
+      <point x="456.33534021527777" y="78.75"/>
+      <point x="456.16724483333337" y="71.25000000000001"/>
+      <point x="455.9511035902778" y="63.75"/>
+      <point x="455.66791481250004" y="56.25"/>
+      <point x="455.2986768263888" y="48.750000000000014"/>
+      <point x="454.8243879583334" y="41.25"/>
+      <point x="454.2260465347222" y="33.75"/>
+      <point x="453.4846508819445" y="26.25"/>
+      <point x="452.5811993263888" y="18.75"/>
+      <point x="451.4966901944445" y="11.25"/>
+      <point x="450.21212181249996" y="3.75"/>
+      <point x="449.459481" y="0.0" type="qcurve" smooth="yes"/>
+      <point x="430.593284" y="-94" type="line"/>
+      <point x="430.593284" y="-94"/>
+      <point x="427.593284" y="-112"/>
+      <point x="427.593284" y="-126" type="qcurve" smooth="yes"/>
+      <point x="427.593284" y="-151"/>
+      <point x="452.593284" y="-177"/>
+      <point x="496.593284" y="-177" type="qcurve"/>
+      <point x="491.593284" y="-220" type="line"/>
+      <point x="256.593284" y="-220" type="line"/>
+      <point x="325" y="71" type="line"/>
+    </contour>
+    <contour>
+      <point x="230" y="68" type="qcurve" smooth="yes"/>
+      <point x="255" y="68"/>
+      <point x="293" y="95"/>
+      <point x="320" y="142"/>
+      <point x="326" y="170" type="qcurve" smooth="yes"/>
+      <point x="341" y="229"/>
+      <point x="358" y="325"/>
+      <point x="358" y="349" type="qcurve" smooth="yes"/>
+      <point x="358" y="369"/>
+      <point x="345" y="409"/>
+      <point x="317" y="436"/>
+      <point x="294" y="436" type="qcurve" smooth="yes"/>
+      <point x="265" y="436"/>
+      <point x="221" y="389"/>
+      <point x="191" y="312"/>
+      <point x="176" y="220"/>
+      <point x="176" y="175" type="qcurve" smooth="yes"/>
+      <point x="176" y="110"/>
+      <point x="205" y="68"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>bodyCutY</key>
+        <real>180.0</real>
+        <key>bowlAttachmentY</key>
+        <integer>71</integer>
+        <key>bowlDonorCodePoint</key>
+        <integer>100</integer>
+        <key>method</key>
+        <string>Native d bowl, counter and ascender with the straight q descender; the d advance is retained.</string>
+        <key>terminalDonorCodePoint</key>
+        <integer>113</integer>
+        <key>terminalEntryY</key>
+        <real>0.0</real>
+        <key>terminalOffsetX</key>
+        <real>13.593284</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

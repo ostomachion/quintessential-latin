@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="special-closed-double-bowl" format="2">
+  <advance width="424"/>
+  <unicode hex="F2A01"/>
+  <outline>
+    <contour>
+      <point x="208" y="-10.5" type="qcurve" smooth="yes"/>
+      <point x="162.320225" y="-10.5"/>
+      <point x="82.623596" y="13.409774"/>
+      <point x="35" y="71.191729"/>
+      <point x="35" y="122" type="qcurve" smooth="yes"/>
+      <point x="35" y="162"/>
+      <point x="73" y="217"/>
+      <point x="128" y="249"/>
+      <point x="153" y="253" type="qcurve"/>
+      <point x="153" y="257" type="line"/>
+      <point x="131" y="265"/>
+      <point x="80" y="291"/>
+      <point x="44" y="336"/>
+      <point x="44" y="372" type="qcurve" smooth="yes"/>
+      <point x="44" y="408"/>
+      <point x="92" y="459"/>
+      <point x="170" y="486"/>
+      <point x="215" y="486" type="qcurve" smooth="yes"/>
+      <point x="260" y="486"/>
+      <point x="336" y="459"/>
+      <point x="381" y="408"/>
+      <point x="381" y="372" type="qcurve" smooth="yes"/>
+      <point x="381" y="336"/>
+      <point x="345" y="291"/>
+      <point x="294" y="265"/>
+      <point x="272" y="257" type="qcurve"/>
+      <point x="272" y="253" type="line"/>
+      <point x="297" y="249"/>
+      <point x="351" y="220"/>
+      <point x="389" y="167"/>
+      <point x="389" y="127" type="qcurve" smooth="yes"/>
+      <point x="389" y="75.813869"/>
+      <point x="337.424731" y="15.594891"/>
+      <point x="254.709677" y="-10.5"/>
+    </contour>
+    <contour>
+      <point x="212.5" y="451" type="qcurve" smooth="yes"/>
+      <point x="168.244186" y="451"/>
+      <point x="126" y="409"/>
+      <point x="126" y="371" type="qcurve" smooth="yes"/>
+      <point x="126" y="332"/>
+      <point x="149.066667" y="291"/>
+      <point x="188.7125" y="276"/>
+      <point x="212.5" y="276" type="qcurve" smooth="yes"/>
+      <point x="237.008333" y="276"/>
+      <point x="275.933333" y="291"/>
+      <point x="299" y="332"/>
+      <point x="299" y="371" type="qcurve" smooth="yes"/>
+      <point x="299" y="409"/>
+      <point x="256.755814" y="451"/>
+    </contour>
+    <contour>
+      <point x="212.5" y="229" type="qcurve" smooth="yes"/>
+      <point x="164.815574" y="229"/>
+      <point x="123" y="184"/>
+      <point x="123" y="131" type="qcurve" smooth="yes"/>
+      <point x="123" y="77"/>
+      <point x="175.3125" y="45"/>
+      <point x="216" y="45" type="qcurve" smooth="yes"/>
+      <point x="256.133333" y="45"/>
+      <point x="302" y="78"/>
+      <point x="302" y="127" type="qcurve" smooth="yes"/>
+      <point x="302" y="180"/>
+      <point x="260.184426" y="229"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>424</integer>
+        <key>bodyDesign</key>
+        <string>upright-native-epsilon-wings-with-two-rounded-counters</string>
+        <key>counterCount</key>
+        <integer>2</integer>
+        <key>counterJoinDesign</key>
+        <string>fitted-native-inner-quarters-with-horizontal-waist-tangents</string>
+        <key>family</key>
+        <string>stemless-specials</string>
+        <key>glyphId</key>
+        <string>special-closed-double-bowl</string>
+        <key>leftDonorCodePoint</key>
+        <integer>603</integer>
+        <key>lowerCounterBottomY</key>
+        <real>45.0</real>
+        <key>lowerCounterWaistY</key>
+        <real>229.0</real>
+        <key>method</key>
+        <string>Native stemless bowl vocabulary; no language reading.</string>
+        <key>posture</key>
+        <string>Roman</string>
+        <key>rightDonorCodePoint</key>
+        <integer>604</integer>
+        <key>rightDonorOffsetX</key>
+        <integer>26</integer>
+        <key>upperCounterTopY</key>
+        <real>451.0</real>
+        <key>upperCounterWaistY</key>
+        <real>276.0</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A0A" format="2">
+  <advance width="442"/>
+  <unicode hex="F2A13"/>
+  <outline>
+    <contour>
+      <point x="107.666667" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="115" y="333" type="line" smooth="yes"/>
+      <point x="118" y="349"/>
+      <point x="124" y="382"/>
+      <point x="124" y="395" type="qcurve" smooth="yes"/>
+      <point x="124" y="409"/>
+      <point x="111" y="425"/>
+      <point x="91" y="425" type="qcurve" smooth="yes"/>
+      <point x="83" y="425"/>
+      <point x="60" y="423"/>
+      <point x="60" y="423" type="qcurve"/>
+      <point x="60" y="465" type="line"/>
+      <point x="220" y="476" type="line"/>
+      <point x="271" y="476" type="line"/>
+      <point x="232.866667" y="300" type="line" smooth="yes"/>
+      <point x="231.8510419375" y="295.3125"/>
+      <point x="229.981071509375" y="285.9375"/>
+      <point x="228.25060609687503" y="276.5625"/>
+      <point x="226.63964854374998" y="267.1875"/>
+      <point x="225.12820169375" y="257.8125"/>
+      <point x="223.69626839062497" y="248.4375"/>
+      <point x="222.323851478125" y="239.0625"/>
+      <point x="220.99095379999997" y="229.6875"/>
+      <point x="219.67757820000003" y="220.3125"/>
+      <point x="218.36372752187498" y="210.9375"/>
+      <point x="217.029404609375" y="201.5625"/>
+      <point x="215.65461230625002" y="192.1875"/>
+      <point x="214.21935345625002" y="182.8125"/>
+      <point x="212.703630903125" y="173.4375"/>
+      <point x="211.087447490625" y="164.0625"/>
+      <point x="209.3508060625" y="154.6875"/>
+      <point x="208.411369" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="161.113849" y="-86" type="line"/>
+      <point x="160.113849" y="-93"/>
+      <point x="157.113849" y="-118"/>
+      <point x="157.113849" y="-124" type="qcurve" smooth="yes"/>
+      <point x="157.113849" y="-145"/>
+      <point x="198.113849" y="-178"/>
+      <point x="258.113849" y="-178" type="qcurve"/>
+      <point x="249.113849" y="-220" type="line"/>
+      <point x="-10.886151" y="-220" type="line"/>
+      <point x="68.354995" y="150" type="line" smooth="yes"/>
+      <point x="69.35889475000002" y="154.6875"/>
+      <point x="71.51776675027669" y="164.0625"/>
+      <point x="73.8067120408366" y="173.4375"/>
+      <point x="76.20644563291016" y="182.8125"/>
+      <point x="78.69768253772786" y="192.1875"/>
+      <point x="81.26113776652018" y="201.5625"/>
+      <point x="83.87752633051758" y="210.9375"/>
+      <point x="86.52756324095051" y="220.3125"/>
+      <point x="89.19196350904947" y="229.6875"/>
+      <point x="91.85144214604492" y="239.0625"/>
+      <point x="94.48671416316732" y="248.4375"/>
+      <point x="97.07849457164714" y="257.8125"/>
+      <point x="99.60749838271485" y="267.1875"/>
+      <point x="102.05444060760091" y="276.5625"/>
+      <point x="104.4000362575358" y="285.9375"/>
+      <point x="106.62500034375" y="295.3125"/>
+    </contour>
+    <contour>
+      <point x="195" y="83" type="qcurve"/>
+      <point x="240" y="284" type="line"/>
+      <point x="250" y="304"/>
+      <point x="269" y="356"/>
+      <point x="293" y="408"/>
+      <point x="327" y="452"/>
+      <point x="374" y="479"/>
+      <point x="408" y="479" type="qcurve" smooth="yes"/>
+      <point x="440" y="479"/>
+      <point x="480" y="444"/>
+      <point x="480" y="406" type="qcurve" smooth="yes"/>
+      <point x="480" y="369"/>
+      <point x="436" y="328"/>
+      <point x="410" y="328" type="qcurve" smooth="yes"/>
+      <point x="389" y="328"/>
+      <point x="368" y="350"/>
+      <point x="361" y="372"/>
+      <point x="359" y="372" type="qcurve" smooth="yes"/>
+      <point x="340" y="372"/>
+      <point x="300" y="326"/>
+      <point x="263" y="254"/>
+      <point x="230" y="174"/>
+      <point x="203" y="103"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>442.0</real>
+        <key>armDonorCodePoint</key>
+        <integer>114</integer>
+        <key>glyphId</key>
+        <string>arm-descender</string>
+        <key>lowerCutY</key>
+        <real>150.0</real>
+        <key>lowerDonorCodePoint</key>
+        <integer>112</integer>
+        <key>lowerOffsetX</key>
+        <real>-6.886151</real>
+        <key>method</key>
+        <string>Native r arm and head joined to the straight p descender.</string>
+        <key>recipeCodePoint</key>
+        <integer>993802</integer>
+        <key>upperCutY</key>
+        <real>300.0</real>
+        <key>upperOffsetX</key>
+        <integer>0</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

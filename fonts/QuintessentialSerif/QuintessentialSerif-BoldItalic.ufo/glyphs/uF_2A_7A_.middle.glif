@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A7A.middle" format="2">
+  <advance width="860"/>
+  <unicode hex="F2ABC"/>
+  <outline>
+    <contour>
+      <point x="427.859541" y="-148" type="line"/>
+      <point x="438.918095" y="-157"/>
+      <point x="484.128355" y="-178"/>
+      <point x="505" y="-178" type="qcurve" smooth="yes"/>
+      <point x="521" y="-178"/>
+      <point x="548" y="-143"/>
+      <point x="571" y="-84"/>
+      <point x="591" y="-11"/>
+      <point x="600" y="26" type="qcurve" smooth="yes"/>
+      <point x="664" y="301" type="line"/>
+      <point x="664" y="301"/>
+      <point x="671" y="333"/>
+      <point x="671" y="351" type="qcurve" smooth="yes"/>
+      <point x="671" y="367"/>
+      <point x="662" y="388"/>
+      <point x="651" y="388" type="qcurve" smooth="yes"/>
+      <point x="636" y="388"/>
+      <point x="598" y="349"/>
+      <point x="557" y="287"/>
+      <point x="520" y="216"/>
+      <point x="491" y="149"/>
+      <point x="485" y="126" type="qcurve"/>
+      <point x="499" y="309" type="line"/>
+      <point x="526" y="309" type="line"/>
+      <point x="547" y="346"/>
+      <point x="592" y="409"/>
+      <point x="643" y="455"/>
+      <point x="703" y="481"/>
+      <point x="739" y="481" type="qcurve" smooth="yes"/>
+      <point x="783" y="481"/>
+      <point x="818" y="441"/>
+      <point x="818" y="405" type="qcurve" smooth="yes"/>
+      <point x="818" y="387"/>
+      <point x="812" y="350"/>
+      <point x="808" y="334" type="qcurve" smooth="yes"/>
+      <point x="753" y="100" type="line" smooth="yes"/>
+      <point x="741" y="50"/>
+      <point x="710" y="-46"/>
+      <point x="668" y="-130"/>
+      <point x="610" y="-194"/>
+      <point x="533" y="-230"/>
+      <point x="483" y="-230" type="qcurve" smooth="yes"/>
+      <point x="370.64388" y="-230"/>
+      <point x="274.067623" y="-193" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="73.876712" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="117.712329" y="350" type="line" smooth="yes"/>
+      <point x="118.4429226" y="353.33333329999994"/>
+      <point x="119.76670487619047" y="359.99999992520634"/>
+      <point x="120.97288515238095" y="366.666666571746"/>
+      <point x="122.07964316190476" y="373.3333332360634"/>
+      <point x="123.10515863809522" y="379.99999991460317"/>
+      <point x="124.06761131428571" y="386.66666660380946"/>
+      <point x="124.98518092380952" y="393.333333300127"/>
+      <point x="125.87604719999999" y="400.0"/>
+      <point x="126.75838987619048" y="406.66666669987296"/>
+      <point x="127.65038868571428" y="413.3333333961904"/>
+      <point x="128.57022336190477" y="420.00000008539683"/>
+      <point x="129.53607363809525" y="426.66666676393646"/>
+      <point x="130.56611924761907" y="433.3333334282539"/>
+      <point x="131.67853992380952" y="440.00000007479366"/>
+      <point x="132.89151539999997" y="446.66666669999995"/>
+      <point x="133.558182" y="450.0" type="qcurve" smooth="yes"/>
+      <point x="162.358182" y="594" type="line"/>
+      <point x="162.358182" y="594"/>
+      <point x="165.358182" y="615"/>
+      <point x="165.358182" y="627" type="qcurve" smooth="yes"/>
+      <point x="165.358182" y="637"/>
+      <point x="154.358182" y="656"/>
+      <point x="134.358182" y="656" type="qcurve" smooth="yes"/>
+      <point x="121.358182" y="656"/>
+      <point x="102.358182" y="654"/>
+      <point x="102.358182" y="654" type="qcurve"/>
+      <point x="102.358182" y="694" type="line"/>
+      <point x="281.358182" y="705" type="line"/>
+      <point x="322.358182" y="705" type="line"/>
+      <point x="272.245139" y="450" type="line" smooth="yes"/>
+      <point x="271.69924525" y="447.22222224999996"/>
+      <point x="270.4214157540547" y="441.66666673232874"/>
+      <point x="268.9785350189119" y="436.1111111992254"/>
+      <point x="267.3898918480694" y="430.55555565274756"/>
+      <point x="265.67477504502534" y="425.0000000949528"/>
+      <point x="263.85247341327766" y="419.44444452789884"/>
+      <point x="261.94227575632414" y="413.8888889536432"/>
+      <point x="259.9634708776628" y="408.33333337424347"/>
+      <point x="257.93534758079153" y="402.7777777917574"/>
+      <point x="255.87719466920836" y="397.2222222082425"/>
+      <point x="253.8083009464113" y="391.6666666257564"/>
+      <point x="251.74795521589812" y="386.11111104635677"/>
+      <point x="249.71544628116683" y="380.5555554721011"/>
+      <point x="247.73006294571533" y="374.9999999050472"/>
+      <point x="245.81109401304167" y="369.44444434725244"/>
+      <point x="243.9778282866437" y="363.88888880077474"/>
+      <point x="242.24955457001937" y="358.3333332676713"/>
+      <point x="240.64556166666665" y="352.7777777499999"/>
+      <point x="239.916201" y="350.0" type="qcurve" smooth="yes"/>
+      <point x="226" y="297" type="line"/>
+      <point x="218" y="153" type="line"/>
+      <point x="217.313725" y="150" type="line" smooth="yes"/>
+      <point x="216.27391518181815" y="145.4545455"/>
+      <point x="214.1286206667543" y="136.36363645409466"/>
+      <point x="211.9367546407964" y="127.27272737212623"/>
+      <point x="209.7158163721638" y="118.18181826311043"/>
+      <point x="207.4833051290759" y="109.09090913606312"/>
+      <point x="205.25672017975208" y="99.99999999999999"/>
+      <point x="203.05356079241173" y="90.9090908639369"/>
+      <point x="200.89132623527428" y="81.81818173688957"/>
+      <point x="198.78751577655896" y="72.72727262787376"/>
+      <point x="196.7596286844854" y="63.636363545905326"/>
+      <point x="194.82516422727272" y="54.54545449999999"/>
+      <point x="193.914195" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="166.657997" y="-86" type="line"/>
+      <point x="165.657997" y="-93"/>
+      <point x="162.657997" y="-118"/>
+      <point x="162.657997" y="-124" type="qcurve" smooth="yes"/>
+      <point x="162.657997" y="-145"/>
+      <point x="203.657997" y="-178"/>
+      <point x="263.657997" y="-178" type="qcurve"/>
+      <point x="254.657997" y="-220" type="line"/>
+      <point x="-5.342003" y="-220" type="line"/>
+      <point x="52.482617" y="50" type="line" smooth="yes"/>
+      <point x="54.2673275" y="58.333333249999995"/>
+      <point x="57.81122926666667" y="74.99999989444441"/>
+      <point x="61.34629953333333" y="91.66666662222222"/>
+      <point x="64.88770896666666" y="108.33333337777779"/>
+      <point x="68.45062823333333" y="125.00000010555557"/>
+      <point x="72.050228" y="141.66666675"/>
+    </contour>
+    <contour>
+      <point x="274.067623" y="-193" type="line"/>
+      <point x="319.684824" y="20" type="line" smooth="yes"/>
+      <point x="320.1800810625" y="22.3124999375"/>
+      <point x="321.2759371395089" y="26.937499896763395"/>
+      <point x="322.4547422555803" y="31.562499914620535"/>
+      <point x="323.6960507075893" y="36.18749996763393"/>
+      <point x="324.9794167924107" y="40.81250003236607"/>
+      <point x="326.2843948069196" y="45.43750008537947"/>
+      <point x="327.59053904799106" y="50.06250010323661"/>
+      <point x="328.8774038125" y="54.68750006250001"/>
+      <point x="329.5" y="57.0" type="qcurve" smooth="yes"/>
+      <point x="336.5" y="83"/>
+      <point x="342" y="104" type="qcurve" smooth="yes"/>
+      <point x="353" y="146"/>
+      <point x="368" y="201"/>
+      <point x="378" y="243"/>
+      <point x="387" y="283"/>
+      <point x="393" y="310" type="qcurve"/>
+      <point x="394" y="312"/>
+      <point x="399" y="341"/>
+      <point x="399" y="355" type="qcurve" smooth="yes"/>
+      <point x="399" y="369"/>
+      <point x="390" y="388"/>
+      <point x="377" y="388" type="qcurve" smooth="yes"/>
+      <point x="357" y="388"/>
+      <point x="309" y="338"/>
+      <point x="262" y="257"/>
+      <point x="222" y="163"/>
+      <point x="208" y="120" type="qcurve"/>
+      <point x="214" y="312" type="line"/>
+      <point x="242" y="312" type="line"/>
+      <point x="256" y="335"/>
+      <point x="295" y="392"/>
+      <point x="347" y="447"/>
+      <point x="415" y="482"/>
+      <point x="457" y="482" type="qcurve" smooth="yes"/>
+      <point x="491" y="482"/>
+      <point x="525" y="460"/>
+      <point x="538" y="428"/>
+      <point x="538" y="411" type="qcurve" smooth="yes"/>
+      <point x="538" y="392"/>
+      <point x="530" y="357"/>
+      <point x="529" y="355" type="qcurve"/>
+      <point x="510" y="294" type="line"/>
+      <point x="493" y="154" type="line"/>
+      <point x="470.324675" y="57" type="line" smooth="yes"/>
+      <point x="469.78409056250007" y="54.68750006250001"/>
+      <point x="468.6578779062501" y="50.06250010323661"/>
+      <point x="467.50621746875" y="45.43750008537946"/>
+      <point x="466.34700125000006" y="40.81250003236607"/>
+      <point x="465.19812125" y="36.18749996763393"/>
+      <point x="464.07746946874994" y="31.562499914620535"/>
+      <point x="463.00293790625" y="26.937499896763395"/>
+      <point x="461.99241856250006" y="22.3124999375"/>
+      <point x="461.528963" y="20.0" type="qcurve" smooth="yes"/>
+      <point x="418.840946" y="-193" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>860</integer>
+        <key>archCount</key>
+        <integer>2</integer>
+        <key>archDonorCodePoint</key>
+        <integer>625</integer>
+        <key>extendedMiddleLegs</key>
+        <array>
+          <dict>
+            <key>centerX</key>
+            <real>399.912338</real>
+            <key>centerY</key>
+            <real>57.0</real>
+            <key>direction</key>
+            <string>descender</string>
+            <key>donorCodePoint</key>
+            <integer>112</integer>
+            <key>shaftProfile</key>
+            <string>native-curved</string>
+            <key>terminalOffsetX</key>
+            <real>272.285161</real>
+          </dict>
+        </array>
+        <key>glyphId</key>
+        <string>double-arch-left-ascender-descender-right-tail-extended-middle-legs</string>
+        <key>leftLowerBodyCutY</key>
+        <real>150.0</real>
+        <key>leftLowerCutY</key>
+        <real>50.0</real>
+        <key>leftLowerDonorCodePoint</key>
+        <integer>112</integer>
+        <key>leftLowerOffsetX</key>
+        <real>-1.342003</real>
+        <key>leftUpperBodyCutY</key>
+        <real>350.0</real>
+        <key>leftUpperCutY</key>
+        <real>450.0</real>
+        <key>leftUpperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>leftUpperOffsetX</key>
+        <real>17.358182</real>
+        <key>method</key>
+        <string>Retain the base arch construction and outer endings; extend internal free legs with native terminal joins.</string>
+        <key>middleFootContourSplits</key>
+        <array/>
+        <key>middleFootJoins</key>
+        <array/>
+        <key>middleHookJoins</key>
+        <array>
+          <dict>
+            <key>direction</key>
+            <string>lower</string>
+            <key>donorCodePoint</key>
+            <integer>98</integer>
+            <key>hookDonorCodePoint</key>
+            <integer>625</integer>
+            <key>hookOffsetX</key>
+            <integer>0</integer>
+            <key>innerAnchor</key>
+            <array>
+              <integer>505</integer>
+              <integer>-178</integer>
+            </array>
+            <key>innerJoin</key>
+            <array>
+              <real>427.8595409622642</real>
+              <integer>-148</integer>
+            </array>
+            <key>middleStemCenterX</key>
+            <real>399.912338</real>
+            <key>outerAnchor</key>
+            <array>
+              <integer>483</integer>
+              <integer>-230</integer>
+            </array>
+            <key>outerJoin</key>
+            <array>
+              <real>274.0676230875</real>
+              <integer>-193</integer>
+            </array>
+            <key>removedTerminalDonorCodePoint</key>
+            <integer>112</integer>
+            <key>terminalDesign</key>
+            <string>native-bowl-quarter-closure-without-facing-ball-or-serif</string>
+          </dict>
+        </array>
+        <key>middleLegCount</key>
+        <integer>1</integer>
+        <key>middleLegs</key>
+        <string>extended</string>
+        <key>recipeCodePoint</key>
+        <integer>993914</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A5C" format="2">
+  <advance width="846"/>
+  <unicode hex="F2A5C"/>
+  <outline>
+    <contour>
+      <point x="662" y="72" type="line"/>
+      <point x="622" y="37"/>
+      <point x="545" y="-12"/>
+      <point x="494" y="-12" type="qcurve" smooth="yes"/>
+      <point x="462" y="-12"/>
+      <point x="407" y="20"/>
+      <point x="375" y="87"/>
+      <point x="375" y="140" type="qcurve" smooth="yes"/>
+      <point x="375" y="380" type="line" smooth="yes"/>
+      <point x="375" y="412"/>
+      <point x="353" y="427"/>
+      <point x="331" y="427" type="qcurve" smooth="yes"/>
+      <point x="321" y="427"/>
+      <point x="306" y="425"/>
+      <point x="306" y="425" type="qcurve"/>
+      <point x="306" y="454" type="line"/>
+      <point x="432" y="482" type="line"/>
+      <point x="458" y="482" type="line"/>
+      <point x="458" y="159" type="line" smooth="yes"/>
+      <point x="458" y="95"/>
+      <point x="504" y="52"/>
+      <point x="538" y="52" type="qcurve" smooth="yes"/>
+      <point x="577" y="52"/>
+      <point x="641" y="96"/>
+      <point x="663" y="116" type="qcurve"/>
+      <point x="663" y="300" type="line" smooth="yes"/>
+      <point x="663.0" y="324.99999975000003"/>
+      <point x="663.0" y="375.00000024999997"/>
+      <point x="663.0" y="400.0" type="qcurve" smooth="yes"/>
+      <point x="663" y="603" type="line" smooth="yes"/>
+      <point x="663" y="634"/>
+      <point x="640" y="646"/>
+      <point x="621" y="646" type="qcurve" smooth="yes"/>
+      <point x="608" y="646"/>
+      <point x="589" y="644"/>
+      <point x="589" y="644" type="qcurve"/>
+      <point x="589" y="671" type="line"/>
+      <point x="721" y="706" type="line"/>
+      <point x="746" y="706" type="line"/>
+      <point x="746" y="400" type="line" smooth="yes"/>
+      <point x="746.0" y="375.00000024999997"/>
+      <point x="746.0" y="324.99999975000003"/>
+      <point x="746.0" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="746" y="250" type="line" smooth="yes"/>
+      <point x="746.0" y="241.666666625"/>
+      <point x="746.1164772727274" y="224.99999991382575"/>
+      <point x="746.3267045454546" y="208.3333332339015"/>
+      <point x="746.6098484848485" y="191.66666657828281"/>
+      <point x="746.9450757575758" y="174.99999994002525"/>
+      <point x="747.311553030303" y="158.33333331218435"/>
+      <point x="747.688446969697" y="141.66666668781565"/>
+      <point x="748.0549242424244" y="125.00000005997478"/>
+      <point x="748.3901515151513" y="108.33333342171719"/>
+      <point x="748.6732954545454" y="91.66666676609849"/>
+      <point x="748.8835227272727" y="75.00000008617428"/>
+      <point x="749.0" y="58.33333337500001"/>
+      <point x="749.0" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="749" y="-1" type="line" smooth="yes"/>
+      <point x="749" y="-74"/>
+      <point x="710" y="-166"/>
+      <point x="645" y="-216"/>
+      <point x="563" y="-235"/>
+      <point x="519" y="-235" type="qcurve" smooth="yes"/>
+      <point x="483" y="-235"/>
+      <point x="425" y="-222"/>
+      <point x="383" y="-200"/>
+      <point x="361" y="-170"/>
+      <point x="361" y="-154" type="qcurve" smooth="yes"/>
+      <point x="361" y="-131"/>
+      <point x="386" y="-109"/>
+      <point x="404" y="-109" type="qcurve" smooth="yes"/>
+      <point x="423" y="-109"/>
+      <point x="451" y="-137"/>
+      <point x="478" y="-174"/>
+      <point x="513" y="-202"/>
+      <point x="539" y="-202" type="qcurve" smooth="yes"/>
+      <point x="579" y="-202"/>
+      <point x="635" y="-169"/>
+      <point x="666" y="-91"/>
+      <point x="666" y="-26" type="qcurve" smooth="yes"/>
+      <point x="666" y="72" type="line"/>
+    </contour>
+    <contour>
+      <point x="220" y="-12" type="qcurve" smooth="yes"/>
+      <point x="162" y="-12"/>
+      <point x="91" y="62"/>
+      <point x="91" y="153" type="qcurve" smooth="yes"/>
+      <point x="91" y="380" type="line" smooth="yes"/>
+      <point x="91" y="412"/>
+      <point x="69" y="427"/>
+      <point x="47" y="427" type="qcurve" smooth="yes"/>
+      <point x="37" y="427"/>
+      <point x="22" y="425"/>
+      <point x="22" y="425" type="qcurve"/>
+      <point x="22" y="454" type="line"/>
+      <point x="148" y="482" type="line"/>
+      <point x="174" y="482" type="line"/>
+      <point x="174" y="165" type="line" smooth="yes"/>
+      <point x="174" y="119"/>
+      <point x="197" y="71"/>
+      <point x="237" y="52"/>
+      <point x="260" y="52" type="qcurve" smooth="yes"/>
+      <point x="293" y="52"/>
+      <point x="358" y="99"/>
+      <point x="383" y="121" type="qcurve"/>
+      <point x="394" y="71" type="line"/>
+      <point x="379" y="71" type="line"/>
+      <point x="338" y="31"/>
+      <point x="260" y="-12"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>846</integer>
+        <key>archCount</key>
+        <integer>2</integer>
+        <key>archDonorCodePoint</key>
+        <integer>623</integer>
+        <key>method</key>
+        <string>Native turned m double-arch body and middle stave with lowercase l right upper ending, single-story g right lower ending; native curves and body advance are retained, and outer hooks stay free.</string>
+        <key>rightArchAttachmentY</key>
+        <integer>72</integer>
+        <key>rightLowerBodyCutY</key>
+        <real>250.0</real>
+        <key>rightLowerCutY</key>
+        <real>50.0</real>
+        <key>rightLowerDonorCodePoint</key>
+        <integer>609</integer>
+        <key>rightLowerOffsetX</key>
+        <integer>308</integer>
+        <key>rightUpperBodyCutY</key>
+        <real>300.0</real>
+        <key>rightUpperCutY</key>
+        <real>400.0</real>
+        <key>rightUpperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>rightUpperOffsetX</key>
+        <integer>563</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

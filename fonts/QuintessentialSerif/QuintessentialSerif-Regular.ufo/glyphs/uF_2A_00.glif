@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A00" format="2">
+  <advance width="285"/>
+  <unicode hex="F2A07"/>
+  <outline>
+    <contour>
+      <point x="257" y="0" type="line"/>
+      <point x="32" y="0" type="line"/>
+      <point x="32" y="28" type="line"/>
+      <point x="66" y="28"/>
+      <point x="95" y="41"/>
+      <point x="102" y="73"/>
+      <point x="102" y="101" type="qcurve" smooth="yes"/>
+      <point x="102" y="380" type="line" smooth="yes"/>
+      <point x="102" y="412"/>
+      <point x="80" y="427"/>
+      <point x="58" y="427" type="qcurve" smooth="yes"/>
+      <point x="48" y="427"/>
+      <point x="33" y="425"/>
+      <point x="33" y="425" type="qcurve"/>
+      <point x="33" y="454" type="line"/>
+      <point x="159" y="482" type="line"/>
+      <point x="185" y="482" type="line"/>
+      <point x="185" y="101" type="line" smooth="yes"/>
+      <point x="185" y="72"/>
+      <point x="193" y="40"/>
+      <point x="224" y="28"/>
+      <point x="257" y="28" type="qcurve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>285.0</real>
+        <key>donorCodePoint</key>
+        <integer>305</integer>
+        <key>donorGlyph</key>
+        <string>dotlessi</string>
+        <key>glyphId</key>
+        <string>stem</string>
+        <key>method</key>
+        <string>Native STIX Two dotless-i outline and advance, unchanged.</string>
+        <key>recipeCodePoint</key>
+        <integer>993792</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

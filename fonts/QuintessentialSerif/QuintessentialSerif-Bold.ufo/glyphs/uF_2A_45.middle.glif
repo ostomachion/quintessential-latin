@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A45.middle" format="2">
+  <advance width="771"/>
+  <unicode hex="F2A58"/>
+  <outline>
+    <contour>
+      <point x="416.0" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="416" y="268" type="line" smooth="yes"/>
+      <point x="416" y="315"/>
+      <point x="398" y="368"/>
+      <point x="362" y="389"/>
+      <point x="335" y="389" type="qcurve" smooth="yes"/>
+      <point x="312" y="389"/>
+      <point x="276" y="375"/>
+      <point x="244" y="351"/>
+      <point x="227" y="337" type="qcurve"/>
+      <point x="221" y="400" type="line"/>
+      <point x="239" y="400" type="line"/>
+      <point x="277" y="438"/>
+      <point x="348" y="485"/>
+      <point x="393" y="485" type="qcurve" smooth="yes"/>
+      <point x="472" y="485"/>
+      <point x="559" y="389"/>
+      <point x="559" y="290" type="qcurve" smooth="yes"/>
+      <point x="559" y="150" type="line" smooth="yes"/>
+      <point x="559.0" y="125.00000025000001"/>
+      <point x="559.0" y="74.99999974999999"/>
+      <point x="559.0" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="559" y="-101" type="line" smooth="yes"/>
+      <point x="559" y="-133"/>
+      <point x="575" y="-167"/>
+      <point x="617" y="-179"/>
+      <point x="656" y="-179" type="qcurve"/>
+      <point x="656" y="-220" type="line"/>
+      <point x="343" y="-220" type="line"/>
+      <point x="343" y="-180" type="line"/>
+      <point x="390" y="-180"/>
+      <point x="416" y="-150"/>
+      <point x="416" y="-108" type="qcurve" smooth="yes"/>
+      <point x="416" y="50" type="line" smooth="yes"/>
+      <point x="416.0" y="74.99999974999999"/>
+      <point x="416.0" y="125.00000025000001"/>
+    </contour>
+    <contour>
+      <point x="309" y="0" type="line"/>
+      <point x="25" y="0" type="line"/>
+      <point x="25" y="40" type="line"/>
+      <point x="58" y="40"/>
+      <point x="87" y="53"/>
+      <point x="94" y="85"/>
+      <point x="94" y="112" type="qcurve" smooth="yes"/>
+      <point x="94" y="369" type="line" smooth="yes"/>
+      <point x="94" y="397"/>
+      <point x="74" y="414"/>
+      <point x="53" y="414" type="qcurve" smooth="yes"/>
+      <point x="40" y="414"/>
+      <point x="26" y="412"/>
+      <point x="26" y="412" type="qcurve"/>
+      <point x="26" y="453" type="line"/>
+      <point x="180" y="482" type="line"/>
+      <point x="235" y="482" type="line"/>
+      <point x="235" y="386" type="line"/>
+      <point x="238" y="360" type="line"/>
+      <point x="238" y="112" type="line" smooth="yes"/>
+      <point x="238" y="85"/>
+      <point x="246" y="53"/>
+      <point x="276" y="40"/>
+      <point x="309" y="40" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="561" y="378" type="line"/>
+      <point x="588" y="413"/>
+      <point x="622" y="462"/>
+      <point x="661" y="488"/>
+      <point x="692" y="488" type="qcurve" smooth="yes"/>
+      <point x="731" y="488"/>
+      <point x="769" y="444"/>
+      <point x="769" y="406" type="qcurve" smooth="yes"/>
+      <point x="769" y="363"/>
+      <point x="731" y="325"/>
+      <point x="708" y="325" type="qcurve" smooth="yes"/>
+      <point x="686" y="325"/>
+      <point x="655" y="346"/>
+      <point x="633" y="367"/>
+      <point x="625" y="367" type="qcurve" smooth="yes"/>
+      <point x="609" y="367"/>
+      <point x="576" y="342"/>
+      <point x="559" y="322" type="qcurve"/>
+      <point x="519" y="322" type="line"/>
+      <point x="521" y="378" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>771</integer>
+        <key>archBaseCodePoint</key>
+        <integer>993813</integer>
+        <key>archDonorCodePoint</key>
+        <integer>110</integer>
+        <key>extendedMiddleLegs</key>
+        <array>
+          <dict>
+            <key>centerX</key>
+            <real>487.5</real>
+            <key>direction</key>
+            <string>descender</string>
+            <key>donorCodePoint</key>
+            <integer>112</integer>
+            <key>terminalOffsetX</key>
+            <integer>329</integer>
+          </dict>
+        </array>
+        <key>glyphId</key>
+        <string>arched-arm-extended-middle-legs</string>
+        <key>method</key>
+        <string>Retain the base arch construction and outer endings; extend internal free legs with native terminal joins.</string>
+        <key>middleFootContourSplits</key>
+        <array/>
+        <key>middleFootJoins</key>
+        <array/>
+        <key>middleHookJoins</key>
+        <array/>
+        <key>middleLegCount</key>
+        <integer>1</integer>
+        <key>middleLegs</key>
+        <string>extended</string>
+        <key>recipeCodePoint</key>
+        <integer>993861</integer>
+        <key>sharedStemOwner</key>
+        <string>arch</string>
+        <key>terminalDonorCodePoint</key>
+        <integer>114</integer>
+        <key>terminalOffsetX</key>
+        <integer>322</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

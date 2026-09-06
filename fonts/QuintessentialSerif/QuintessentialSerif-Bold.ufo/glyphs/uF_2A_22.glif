@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A22" format="2">
+  <advance width="586"/>
+  <unicode hex="F2A1F"/>
+  <outline>
+    <contour>
+      <point x="327" y="-220" type="line"/>
+      <point x="14" y="-220" type="line"/>
+      <point x="14" y="-180" type="line"/>
+      <point x="61" y="-180"/>
+      <point x="87" y="-150"/>
+      <point x="87" y="-108" type="qcurve" smooth="yes"/>
+      <point x="87" y="363" type="line" smooth="yes"/>
+      <point x="87" y="393.183673"/>
+      <point x="74" y="416"/>
+      <point x="49" y="416" type="qcurve" smooth="yes"/>
+      <point x="39" y="416"/>
+      <point x="17" y="414"/>
+      <point x="17" y="414" type="qcurve"/>
+      <point x="17" y="456" type="line"/>
+      <point x="171" y="484" type="line"/>
+      <point x="228" y="484" type="line"/>
+      <point x="228" y="402" type="line"/>
+      <point x="233" y="402" type="line"/>
+      <point x="272" y="441"/>
+      <point x="343" y="486"/>
+      <point x="392" y="486" type="qcurve" smooth="yes"/>
+      <point x="440.4" y="486"/>
+      <point x="513" y="439"/>
+      <point x="553" y="340"/>
+      <point x="553" y="261" type="qcurve" smooth="yes"/>
+      <point x="553" y="175.587379"/>
+      <point x="493" y="54"/>
+      <point x="393" y="-11"/>
+      <point x="332.318182" y="-11" type="qcurve" smooth="yes"/>
+      <point x="304" y="-11"/>
+      <point x="256" y="0"/>
+      <point x="233" y="15" type="qcurve"/>
+      <point x="230" y="15" type="line"/>
+      <point x="230" y="-101" type="line" smooth="yes"/>
+      <point x="230" y="-133"/>
+      <point x="246" y="-167"/>
+      <point x="288" y="-179"/>
+      <point x="327" y="-179" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="307" y="45" type="qcurve" smooth="yes"/>
+      <point x="345.780488" y="45"/>
+      <point x="397" y="128"/>
+      <point x="397" y="233" type="qcurve" smooth="yes"/>
+      <point x="397" y="319"/>
+      <point x="359" y="392"/>
+      <point x="322" y="392" type="qcurve" smooth="yes"/>
+      <point x="291.90099" y="392"/>
+      <point x="246" y="359"/>
+      <point x="230" y="343" type="qcurve"/>
+      <point x="230" y="94.520295" type="line"/>
+      <point x="237" y="85"/>
+      <point x="258" y="61"/>
+      <point x="287.4" y="45"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>586.0</real>
+        <key>donorCodePoint</key>
+        <integer>112</integer>
+        <key>donorGlyph</key>
+        <string>p</string>
+        <key>glyphId</key>
+        <string>bowl-descender</string>
+        <key>method</key>
+        <string>Native STIX Two lowercase-p outline and advance, unchanged.</string>
+        <key>recipeCodePoint</key>
+        <integer>993826</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

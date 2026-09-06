@@ -1,0 +1,257 @@
+{
+  "version": "0.220",
+  "namingVersion": 2,
+  "posture": "Roman",
+  "weight": 400,
+  "fontToolsVersion": "4.64.0",
+  "sourceFontSha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e",
+  "engine": "Poppler pdftoppm",
+  "dpi": 110,
+  "engineering": "Six automated PDF tests pass; every mapped scalar occurs once in its grid and once in its names list, with complete uppercase names. All fonts are embedded vectors; source and output hashes, numeric order, page text bounds and true glyph ink bounds pass.",
+  "reproducibility": "All five PDFs reproduced byte for byte in a second output directory.",
+  "agentOpticalReview": "Complete: all 68 pages directly reviewed through 18 four-page contact sheets, with native-resolution inspection of final base names page, dense Extended-B names, Extended-B grid and proposal references. No clipping, overlap, missing glyphs, broken tables or unreadable names observed.",
+  "independentRootReview": "Root inspected base grid page 2, final base names page 7, dense Extended-B names page 14 and proposal page 1; no requested changes.",
+  "userVisualAcceptance": "Pending",
+  "totalPages": 68,
+  "testsLog": "resources/verification/pdf-tests.log",
+  "files": [
+    {
+      "path": "output/pdf/quintessential-latin-catalogue.pdf",
+      "sha256": "19de4d62ca56c44fc9402aa81dbb359072f6fa182c2747580b4c20225b8d1242",
+      "pages": 32,
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "renderedPageSha256": {
+        "page-01.png": "30b131ea8daaaa7a9a96b4e4e760485126cc488a256e909fb943b1f80ea80d5d",
+        "page-02.png": "da433f44103f32fa3616342aab8d68c694be761766db4d8f687e5acf2533ea44",
+        "page-03.png": "552c8783f10848827554a4adb27f16bb4d7cef19b0e8e227359c226ca311f4ad",
+        "page-04.png": "5298b7dd94b903d01d1045db651c8fe2dae5fe82346d4f7d66b4cd0c6d9e6325",
+        "page-05.png": "b4c94e054a0dacb8ee0a9d17e0b78ed651921e7fc29be797796aaf6942ebc166",
+        "page-06.png": "123feef30ef4fab2924f8a8a3ce3757dc3aadf0a707fb7b30a95e487011f5ba3",
+        "page-07.png": "05d15627ad59c2fc81a143bfe825807a5ab7c52f719bedf1340ed1767eee416a",
+        "page-08.png": "9af1ed73b4623787ed9506e3c61533c007d3aaf1b3e02f132adb9c880d595abe",
+        "page-09.png": "13a8ddc2cee13874a89137f316a57822d8dbbfe82bdaf3381c126b469de4641c",
+        "page-10.png": "8d506ff52cd0ccd915fa6be50386fa4c2263ba4f9a908736052b650819a9e386",
+        "page-11.png": "802e234569b355e057952444cbab3b452b5008d19214d8d4eba3306d26ecc50a",
+        "page-12.png": "7613c49ed46dd9a13b3186622283873735870fa880d51cd496c97fca17d2b8ed",
+        "page-13.png": "2c22815fc2d82f46c77390aaf7c6f0d30dd3c04728f7ace450029ba50aeb61c6",
+        "page-14.png": "335e4bbe166f03da8c7aae053a4d8edc040c2b8ab5b34693f0acf68eddb83474",
+        "page-15.png": "d3c7ac73f2c451e928380117befc34e710fc1d9fdc5834ca4497e8454bde74e0",
+        "page-16.png": "763044dbc5663c3bae94f2083c5beee928ce0e26d478d878b03af8950d92d625",
+        "page-17.png": "c8f06e9ab54a0239e3a5fc5ed3537a419bd7d5163060b5275969ab6a0a9878a1",
+        "page-18.png": "f8fb5dd33e807558b0676b4b6ebcb454ecef04d2ef3c75f6c3700c0705b9febb",
+        "page-19.png": "1c0f2d05dff77bf9aa60314d1442b501543de83e394aadab75ddda1c90ed28e0",
+        "page-20.png": "dbaf6eecd7b2d9765b9fc91c29e13511a724ecb27d5f10da79b8e9e24508e020",
+        "page-21.png": "8ab07b0456282840bcca7924d8da8b112db842c7887b99de98dc6b03612037aa",
+        "page-22.png": "bdbbe9899a2409f973bf84d08d0fa0e350f15a0df6f39bcd8092180987941032",
+        "page-23.png": "f5ea1af8da3437633c82792edda96fd09a1bbe1dde34a9653eeae9b98e8006d2",
+        "page-24.png": "bb7809abb284bd7950186f69df00f30e88bbcb51f6035f4139aa183f6ec2a457",
+        "page-25.png": "5cebb04898fe106eee3613926a442677ca3ebf267e508309bafe93f1464c18a2",
+        "page-26.png": "754870057ee65751d8d214d2e7843c01376aef8ed3e70d748ec9800911c2f74b",
+        "page-27.png": "035356624f8d26951c33b6e6955b4a42c5b41073236ca8575d8582a0cbc36bfc",
+        "page-28.png": "b2835d4b3163dfb77813737b778d4c1c533e4defe382abc085736849dac4047e",
+        "page-29.png": "868cda67cde50b6e2ab19454c7e335a21fca634733eb55cad3ccaaa2874a1ed9",
+        "page-30.png": "f7d5921e74b227c04fb75629387d71f80d0199dbac3c699c795dfd319b66c250",
+        "page-31.png": "110192448121b2c403b85044b5d5391540b2dbc43e50e7d5105e4f3ab984000d",
+        "page-32.png": "297b5d08bfe05e2a73291b203a38f9d6b4ace908eebda603353eb49d79dc0ab1"
+      },
+      "temporaryReviewArtifacts": {
+        "regenerable": true,
+        "directory": ".tmp/pdf-review/quintessential-latin-catalogue",
+        "contactSheets": [
+          "contact-1.png",
+          "contact-2.png",
+          "contact-3.png",
+          "contact-4.png",
+          "contact-5.png",
+          "contact-6.png",
+          "contact-7.png",
+          "contact-8.png"
+        ],
+        "note": "Ignored review images; regenerate with tools/render_pdf_review.py. Their archived hashes describe the actual previously reviewed render."
+      }
+    },
+    {
+      "path": "output/pdf/quintessential-latin-extended-a.pdf",
+      "sha256": "80f606ab38d16e032ba49aed12ed113360dc2051f9988df21f42ea889a297e49",
+      "pages": 9,
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "renderedPageSha256": {
+        "page-1.png": "8ca307fc872bf2206ab03e35076c03fa6728cd4345a51ae8c77ddb83e1695ae3",
+        "page-2.png": "75ab0f65ac15ca89cfd51244f1bdff3922bf93ebff7430abc0a03ca658ed9786",
+        "page-3.png": "a1eaecaa936c6b12ae3596dd22196c5c00d5ff990ab0aab6231ec0b7827f4e4f",
+        "page-4.png": "d6607fbd702ac026c5d40027247a13ce813cc69865d2f0016bc3b9946bbb2e6c",
+        "page-5.png": "bde582d86019d804f65e682ce50dcf286cd623ca0c4596ae00c6d2dac427dfb0",
+        "page-6.png": "223d4dbc14ec909a99a31170d06913e6e53913a51224b5ce931225df065eae13",
+        "page-7.png": "6e3605371e5a140fec7e92dceee5001be38fdde46899b397c38e31a0244d1875",
+        "page-8.png": "6b19a3f03fab927decdba08eaef106169c4d2604fe93dc96d92e34ab469cdd88",
+        "page-9.png": "25030dbf01e14a31bc475d2d148e3d87f5bf941a5b5e013a4fc3642e4073c2f0"
+      },
+      "temporaryReviewArtifacts": {
+        "regenerable": true,
+        "directory": ".tmp/pdf-review/quintessential-latin-extended-a",
+        "contactSheets": [
+          "contact-1.png",
+          "contact-2.png",
+          "contact-3.png"
+        ],
+        "note": "Ignored review images; regenerate with tools/render_pdf_review.py. Their archived hashes describe the actual previously reviewed render."
+      }
+    },
+    {
+      "path": "output/pdf/quintessential-latin-extended-b.pdf",
+      "sha256": "58ca14c1ba39dedf5a8831dd75f2cd44c44aef65349e1cc06aadd40d397e5d93",
+      "pages": 16,
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "renderedPageSha256": {
+        "page-01.png": "4412c27431fe46e491efc598d39458ed0faed97ba15d280cbc4def2941905209",
+        "page-02.png": "fd3db605dfebd4eca780893138c17470254d36839d2922270d18a3acdc38d298",
+        "page-03.png": "e12bdd59e16b2224edb2f08b359f742a699341ee11058ea1656a4b39bae5e2ed",
+        "page-04.png": "fae2e937a5d8c3faf261fbe44fa69d54699f2ed1e90a859228e446afe3c0f275",
+        "page-05.png": "c47623235b6b8df805b19be7f1bbf5e6ab0396f5b5b87dde8320baca017e6ee0",
+        "page-06.png": "88b5e2451bee4e935b7b2ebfc0d47a1701e0d5177e0e7dd9c108efcf7808be7b",
+        "page-07.png": "1c6fd2ac25be09bca61ef335bbd993cff9d5e95d7646e344f4524b4e8957aec0",
+        "page-08.png": "b730e36e87d5b975b9b67e1631121b56965f536584b7f439f4483ee0931aa462",
+        "page-09.png": "b0ddf08736520bf40c2a815f8fadcbcabf039132f2cd99cbe20355b20265355d",
+        "page-10.png": "889fbc65e78f53deda734bf39cf0362cb712a297f1136f8f2dde08c819e0868d",
+        "page-11.png": "c9a9fffb515fdb305613dc0c853958c81a5acf45d8982380b229cfaf73ca2927",
+        "page-12.png": "5fefa2561d60dc7422f0b3fb496b9900e923438bba2e573d5419570820a5ed7a",
+        "page-13.png": "f31690227bec3c3ee757d74fd919cbbe32b3a9a8c24811500bc376c4f1064570",
+        "page-14.png": "9c4a7d8092aa3be9aca14c364b7131e5e96a54280c1314176199a39cdd5cb3af",
+        "page-15.png": "1eb5524b8d726e85c625a9cbc50c5ee3d13047be078f1344548f73da7603df4b",
+        "page-16.png": "bcc55f49f5b8d3f14de09a4d2d059f18e7cf1efee08d9de5a480c04afdda830f"
+      },
+      "temporaryReviewArtifacts": {
+        "regenerable": true,
+        "directory": ".tmp/pdf-review/quintessential-latin-extended-b",
+        "contactSheets": [
+          "contact-1.png",
+          "contact-2.png",
+          "contact-3.png",
+          "contact-4.png"
+        ],
+        "note": "Ignored review images; regenerate with tools/render_pdf_review.py. Their archived hashes describe the actual previously reviewed render."
+      }
+    },
+    {
+      "path": "output/pdf/quintessential-latin-proposal.pdf",
+      "sha256": "98d995e5e36e1444b013cefe3e3ad363791ed0c4922d398c3e5083aa4b54fad1",
+      "pages": 4,
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "renderedPageSha256": {
+        "page-1.png": "6f03d6e4a2dfbe35032a3363b7007299ce27956848715007ad5ae63582e38639",
+        "page-2.png": "c02efed1896b84836018d1c2e8550e7dd21ace20ad5be02dd7b29cd34f3e3a62",
+        "page-3.png": "7d992aece6e01dc2d3da6a52847616ea245c880d47a3fc5a0d5555afd6b7b00a",
+        "page-4.png": "7abab8d02c1d8bc636b3d8d39c88e395469287de14e56aa1304c397bbeacb5f6"
+      },
+      "temporaryReviewArtifacts": {
+        "regenerable": true,
+        "directory": ".tmp/pdf-review/quintessential-latin-proposal",
+        "contactSheets": [
+          "contact-1.png"
+        ],
+        "note": "Ignored review images; regenerate with tools/render_pdf_review.py. Their archived hashes describe the actual previously reviewed render."
+      }
+    },
+    {
+      "path": "output/pdf/quintessential-latin.pdf",
+      "sha256": "30ef453f1a34d9eb85b59c74dc9650abdff5d27a8110feb287693787183f0f18",
+      "pages": 7,
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "renderedPageSha256": {
+        "page-1.png": "30b131ea8daaaa7a9a96b4e4e760485126cc488a256e909fb943b1f80ea80d5d",
+        "page-2.png": "da433f44103f32fa3616342aab8d68c694be761766db4d8f687e5acf2533ea44",
+        "page-3.png": "552c8783f10848827554a4adb27f16bb4d7cef19b0e8e227359c226ca311f4ad",
+        "page-4.png": "5298b7dd94b903d01d1045db651c8fe2dae5fe82346d4f7d66b4cd0c6d9e6325",
+        "page-5.png": "b4c94e054a0dacb8ee0a9d17e0b78ed651921e7fc29be797796aaf6942ebc166",
+        "page-6.png": "123feef30ef4fab2924f8a8a3ce3757dc3aadf0a707fb7b30a95e487011f5ba3",
+        "page-7.png": "05d15627ad59c2fc81a143bfe825807a5ab7c52f719bedf1340ed1767eee416a"
+      },
+      "temporaryReviewArtifacts": {
+        "regenerable": true,
+        "directory": ".tmp/pdf-review/quintessential-latin",
+        "contactSheets": [
+          "contact-1.png",
+          "contact-2.png"
+        ],
+        "note": "Ignored review images; regenerate with tools/render_pdf_review.py. Their archived hashes describe the actual previously reviewed render."
+      }
+    }
+  ],
+  "renderingInstructions": "docs/pdf-development.md",
+  "archiveNote": "This is the existing completed optical review of unchanged publication PDFs. Archiving this record or rerendering scratch images does not constitute a new optical review or user acceptance.",
+  "rendererCommand": "python tools/render_pdf_review.py",
+  "testsLogSha256": "02349181528fe788a312100b947e98d60a76acaeba4e6aa2544d930b8d2ddc8b"
+}

@@ -1,0 +1,2244 @@
+{
+  "kind": "font-only-preservation-subset",
+  "version": "0.150",
+  "fileCount": 559,
+  "files": {
+    "sources/QuintessentialSerif-Italic.designspace": {
+      "sha256": "184ab3e8c55615593e63bfc93fc13f83be20106c65f858334372a98b97eb0ebf",
+      "bytes": 2585
+    },
+    "sources/QuintessentialSerif-Roman.designspace": {
+      "sha256": "62c6abcf9a9f72541fa18db7e8c3458d6e5f1bac9c3bba1ed0c0bba83918bfcd",
+      "bytes": 2509
+    },
+    "sources/QuintessentialSerif-Bold.ufo/fontinfo.plist": {
+      "sha256": "d8db45bd40c7ee4381b0832d25843f753555aebe22da2b2a27d89ce1b0464462",
+      "bytes": 4442
+    },
+    "sources/QuintessentialSerif-Bold.ufo/kerning.plist": {
+      "sha256": "f73a248221756cd6545df9377abc2189f7db0a5698c2b89fc1ab75bfbd7bfd96",
+      "bytes": 855601
+    },
+    "sources/QuintessentialSerif-Bold.ufo/layercontents.plist": {
+      "sha256": "a13ddf884de30309bc36869760d222267e2adbc05f5e04e482c013b1ff5ece86",
+      "bytes": 287
+    },
+    "sources/QuintessentialSerif-Bold.ufo/lib.plist": {
+      "sha256": "bc05e9640f77f4a33c459ce891ce3c1260225ee719f8f516fc6bee51f1da236f",
+      "bytes": 5280
+    },
+    "sources/QuintessentialSerif-Bold.ufo/metainfo.plist": {
+      "sha256": "b6aa7bbbf391fb84be27fb95ce735b293b9738b0213c6bcc634edde9490b979b",
+      "bytes": 318
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/fontinfo.plist": {
+      "sha256": "5540ebdddf244ca125ea79606b162776db0900666b479bb297bd552bb285464a",
+      "bytes": 4477
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/kerning.plist": {
+      "sha256": "dd348de9cb67a990d058be441d732e67f31efe604c83a61444aea6c8db45e8b4",
+      "bytes": 855520
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/layercontents.plist": {
+      "sha256": "a13ddf884de30309bc36869760d222267e2adbc05f5e04e482c013b1ff5ece86",
+      "bytes": 287
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/lib.plist": {
+      "sha256": "215ca1b323c3f95f4564e5bf77d985c315438a0af6ff150cd613518f3a99df0a",
+      "bytes": 5288
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/metainfo.plist": {
+      "sha256": "b6aa7bbbf391fb84be27fb95ce735b293b9738b0213c6bcc634edde9490b979b",
+      "bytes": 318
+    },
+    "sources/QuintessentialSerif-Italic.ufo/fontinfo.plist": {
+      "sha256": "6ab6b7cc5284f4ffa92cb80278e3064c37f7fae3e3cd428ad0787204b420e4f6",
+      "bytes": 4456
+    },
+    "sources/QuintessentialSerif-Italic.ufo/kerning.plist": {
+      "sha256": "8a904c16bf04c437b10e2ccff7362976713b5e3be4301ac58fa65eab4c634b16",
+      "bytes": 854913
+    },
+    "sources/QuintessentialSerif-Italic.ufo/layercontents.plist": {
+      "sha256": "a13ddf884de30309bc36869760d222267e2adbc05f5e04e482c013b1ff5ece86",
+      "bytes": 287
+    },
+    "sources/QuintessentialSerif-Italic.ufo/lib.plist": {
+      "sha256": "6054d508b181977c780a6f29f2955b477048a6c52b6edb34b338e7428cf353e1",
+      "bytes": 5287
+    },
+    "sources/QuintessentialSerif-Italic.ufo/metainfo.plist": {
+      "sha256": "b6aa7bbbf391fb84be27fb95ce735b293b9738b0213c6bcc634edde9490b979b",
+      "bytes": 318
+    },
+    "sources/QuintessentialSerif-Regular.ufo/fontinfo.plist": {
+      "sha256": "aed5d3c4f27c2822a6993a1b35ff0e26c07df2619447441d6a034b7dce382eab",
+      "bytes": 4457
+    },
+    "sources/QuintessentialSerif-Regular.ufo/kerning.plist": {
+      "sha256": "84c41fb5f736b44f38bddd5e8e605367954329064184095be27558b14032e707",
+      "bytes": 855036
+    },
+    "sources/QuintessentialSerif-Regular.ufo/layercontents.plist": {
+      "sha256": "a13ddf884de30309bc36869760d222267e2adbc05f5e04e482c013b1ff5ece86",
+      "bytes": 287
+    },
+    "sources/QuintessentialSerif-Regular.ufo/lib.plist": {
+      "sha256": "6c8ac90c8a08e35a1b32c6ced4c36e4a270a5c7902480cd7b9a168482711c4f5",
+      "bytes": 5279
+    },
+    "sources/QuintessentialSerif-Regular.ufo/metainfo.plist": {
+      "sha256": "b6aa7bbbf391fb84be27fb95ce735b293b9738b0213c6bcc634edde9490b979b",
+      "bytes": 318
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/contents.plist": {
+      "sha256": "8cdf5d4bccd499b1d2c315c30aaa52c4f9df146bac829a1bb7dd4024f94becf7",
+      "bytes": 7703
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/space.glif": {
+      "sha256": "f34e4a92facb7742b070801a1e70f46ad45c30293899c697de47641c7fcb6c66",
+      "bytes": 488
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_00.glif": {
+      "sha256": "6ac3146f1355eb2318363ea3da28797a2f9d49367ee38daeb11707f808bb8ba4",
+      "bytes": 1403
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_01.glif": {
+      "sha256": "0c6bde8f981a41ea7fc9b4a6cf84d24feea8c22f2259f0ac30a3ab240ad21018",
+      "bytes": 1398
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_02.glif": {
+      "sha256": "ebcfb2acaecc2fb033dfffa326fa77cb748aca000a389f8da1bf734dceb97821",
+      "bytes": 5430
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_03.glif": {
+      "sha256": "c00af5a60b461daaf5815ad247a527a284503fb8a2f4bdc7f23b7fce10191ed6",
+      "bytes": 3456
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_04.glif": {
+      "sha256": "9625b36d8acf7a64a72f55b4b633dea120e1317aa61a26ac5fb6977fd2bcac05",
+      "bytes": 2698
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_05.glif": {
+      "sha256": "0976b599a7b53f4d4700daf869f0f81ecb7971e331dc1ac0050869211e02a9a8",
+      "bytes": 3806
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_06.glif": {
+      "sha256": "8e220f75d15bda83b82fd556316174c53e5d80e4f5b7a60fe60ff8f46d428600",
+      "bytes": 1701
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_07.glif": {
+      "sha256": "98c0e777f6edf0b8551b87b1fc12818acac73b817f21e70ed38ee03c77576f98",
+      "bytes": 4181
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_08.glif": {
+      "sha256": "96f658e60862eacf6ecdc95e2c0ccfb9fcca8b29bda43b5a58a4eaa837fc2014",
+      "bytes": 2132
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_09.glif": {
+      "sha256": "db3289c0c2efafcedd7beaf91592a1107983a51c54c953534a76c0b4264d57e4",
+      "bytes": 2132
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0A_.glif": {
+      "sha256": "8bd8d01a9921478e54da03fd6e1a03209ac77ac6e91cdeaaad64cb04cd267a1f",
+      "bytes": 2685
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0B_.glif": {
+      "sha256": "8e236a0425be8760abe0874edd10ccc9cf9d0e5cc27b71e58fc2c1908b1d9479",
+      "bytes": 2215
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0C_.glif": {
+      "sha256": "6f036043d5b03b1b47e1135a7617ab2d47cdcad652ebae37066f6ac33095b784",
+      "bytes": 2241
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0D_.glif": {
+      "sha256": "bc4b3ac93aff676a679312d9f506d6689c0e5d19da95f1d19a2ed4b7b6cf9d05",
+      "bytes": 2302
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0E_.glif": {
+      "sha256": "e3cc16db3bdd624ad9cc34b385d7a63ba46fc9e8f853271c774fbd69119e0b36",
+      "bytes": 2916
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_0F_.glif": {
+      "sha256": "8da1597bcb0816f724bcd2249c9bd91cba9cb787808db098fd9872fb5e3ae594",
+      "bytes": 2220
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_10.glif": {
+      "sha256": "bd0b66f7eb1eb8e51a6b658436874531e5479eff9df8e43c953f0e519a6fa83f",
+      "bytes": 2564
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_11.glif": {
+      "sha256": "ab19804865862730013f3233b03824194a097f0a4f0087a6bbe5c12abe5adb56",
+      "bytes": 2798
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_12.glif": {
+      "sha256": "62b27da4cb7c160bd49bc8770bc3b145e1b1c95ad84b9888f814b1486720a870",
+      "bytes": 3400
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_13.glif": {
+      "sha256": "eecf6e750e1f5476abe87b00665a8589018fc92fdfffc7477c3a69b38bb4bc62",
+      "bytes": 2518
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_14.glif": {
+      "sha256": "9b34d0d297b39c32accb8cb357cfbb346f64f6ce09c4af46ab84a51fb2452973",
+      "bytes": 2862
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_15.glif": {
+      "sha256": "079d786fc7fed5f2bde9f6597c89c87c19f10602c53bf402f255d6b273880312",
+      "bytes": 2646
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_16.glif": {
+      "sha256": "5b3fa24621066e7f43f29a0cd9715de2b79c159a7c695df09db624533ef49fab",
+      "bytes": 3736
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_17.glif": {
+      "sha256": "97e79f2eaba414aeae94736c48502f15fcc85d594101b52b9730385c2dda86c7",
+      "bytes": 2173
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_18.glif": {
+      "sha256": "73d1fdde6f11cb2efd563a55c1f2b0256e9245c3c440fa8aa166ced20455a55a",
+      "bytes": 2921
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_19.glif": {
+      "sha256": "7e7864d4ed531fd3da1370bafc642363f506171cca6aceee264a1c3bf9bd7f4c",
+      "bytes": 2529
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1A_.glif": {
+      "sha256": "1646f3c0624543ed554249a945ae51f761734fee82806fbb2e4185e0b6e966d1",
+      "bytes": 3202
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1B_.glif": {
+      "sha256": "2e618dddd6a4236e14bf00cc816c46d86091e3927602e8c668333b34ec6282f7",
+      "bytes": 3211
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1C_.glif": {
+      "sha256": "d19c57a860d3b4ea20cc1f3e4e876a8677ee2c2500fb93a94d553bc69abb02d2",
+      "bytes": 3906
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1D_.glif": {
+      "sha256": "031e68f1c0af92c7df98b3521638896303421cd6a491c94721da7268418b0b4b",
+      "bytes": 2882
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1E_.glif": {
+      "sha256": "27f03564865056a0ff9de06f99a24fc39f7ea08e905c4cce39d2a28ba5850ac9",
+      "bytes": 3528
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_1F_.glif": {
+      "sha256": "deb8fc8a33570414ac751daabf807b29b3b736595c61f67e2bc823840acfeb36",
+      "bytes": 4000
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_20.glif": {
+      "sha256": "1dd6c7848d2f614de9ac730e19fdd5e94fd5381540b56c3b0566b336436d988b",
+      "bytes": 4771
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_21.glif": {
+      "sha256": "2edbd989873bfe0140fc756e21718e5383a24065d128581b54e47c9f8fb917b0",
+      "bytes": 3763
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_22.glif": {
+      "sha256": "1318e3ce95e4a2bf3437364be0cea76325b7d7134d3163b1d7edeeafe377e3bd",
+      "bytes": 2604
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_23.glif": {
+      "sha256": "9e57822eb1bfe9fba89c9c3a9030f5cf17562c1da240344f38e0550995367146",
+      "bytes": 2148
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_24.glif": {
+      "sha256": "2dac89a51831751d46f04d748e84c7ea4eb06d6af6f8566af4df7095c316eb34",
+      "bytes": 2468
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_25.glif": {
+      "sha256": "fc7137b2e880e529b6ce0466a16f8ac90f064f83f39e04a571779799dc056f4d",
+      "bytes": 2139
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_26.glif": {
+      "sha256": "41226d8e0b5990167c16daaa6c5ca903ea3907005f8f6d572bed517f537e9069",
+      "bytes": 2597
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_27.glif": {
+      "sha256": "c80b33167c4d4486611b477f83380afa0ea3fcf3aaea7855b1676cbe5dcd259e",
+      "bytes": 2243
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_28.glif": {
+      "sha256": "808b148c9259e6f64840c203731c42079f23e685df28d232de69623072947d14",
+      "bytes": 3063
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_29.glif": {
+      "sha256": "b05051052dce71bf699d48cc51720aa2e24209e7e67719975cad3cd3530b5c3d",
+      "bytes": 3462
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2A_.glif": {
+      "sha256": "6e43b292f671053010a51f5b43ebeb984db4c9e67bdbeb5e74476030d1dafff9",
+      "bytes": 4530
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2B_.glif": {
+      "sha256": "ab14b0327e945282645aa9d3fc604134c398cde7c38e849044eb930db637b1f7",
+      "bytes": 3217
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2C_.glif": {
+      "sha256": "8c31740a3c04e0c1539416aced5207bac71b5d07cdb2cd98ba025e8234149116",
+      "bytes": 3533
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2D_.glif": {
+      "sha256": "6d3b519852fbad11a14eb17565b061779263cdc39dd46c6317de952576265731",
+      "bytes": 3194
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2E_.glif": {
+      "sha256": "9ed8008489ae6019cf46997cc7a9b069ca577ce199fefc2f5ef75657043bc5b8",
+      "bytes": 4825
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_2F_.glif": {
+      "sha256": "2960ba64caf117f81c50a2a6e0a6dc8ba4e53527e396fa1834719c734b8c3535",
+      "bytes": 3008
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_30.glif": {
+      "sha256": "275ea4882bac68c9694a1aed24ac21f63b829a710fca66abd95a411b8ecffaba",
+      "bytes": 3815
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_31.glif": {
+      "sha256": "cc79d0d513ffe1471fb64373b7bad0da1e9328861ff950c4132dd682511513ea",
+      "bytes": 3223
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_32.glif": {
+      "sha256": "d30f0eb94fd3ca5e43add3cf066150ddee8e70fa5cf5bb349825432d6d5e1ea7",
+      "bytes": 4433
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_33.glif": {
+      "sha256": "5d6b18f24b74c2504dcf388adaa5a4fb6dde41f650c6985249d9c5e6b14d63fc",
+      "bytes": 4008
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_34.glif": {
+      "sha256": "bd47502ebc6107cb58eb8e305ed1b8286b32f7b8ffe9158ca6e506cf7987b27f",
+      "bytes": 4726
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_35.glif": {
+      "sha256": "bf0b6c26df4a6ed3fc47971191585de7a74b5c4478bc96178179194d5de18c0c",
+      "bytes": 3574
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_36.glif": {
+      "sha256": "46762ac5a92ea5a733662695178bcdfa519edbaaf789e81ae9a191e135cd24a8",
+      "bytes": 4784
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_37.glif": {
+      "sha256": "7f0274f47852e869e6c2e3d5677d2934778a26a169ad4d7de9eba5cb6a6f4349",
+      "bytes": 4886
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_38.glif": {
+      "sha256": "37888749ae66c6a8e67535e8e7e7567afaa4c09a6f050d34cddc59b29b7b59fc",
+      "bytes": 5693
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_39.glif": {
+      "sha256": "48cce8779db7634d2746d399f7ff88106be7376c25aa9970614255910a875662",
+      "bytes": 2796
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3A_.glif": {
+      "sha256": "3e3ec656a36ee62cf2634030095b7ea37c6b87a671ebdad59fd2aed1a00e0028",
+      "bytes": 2733
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3B_.glif": {
+      "sha256": "d0bbf90507fc86c3b5fdd8503e39830454a2890e297d4ed147f0884f677768ad",
+      "bytes": 3358
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3C_.glif": {
+      "sha256": "a6f35764814ab2101516c132f7067d136fbb59080e81c3674cfb6b8bb143c910",
+      "bytes": 4092
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3D_.glif": {
+      "sha256": "ab73e8600eba8ac46491d0baac7b1cf86b515f7ca369b23e6bd4ac449d72b977",
+      "bytes": 2834
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3E_.glif": {
+      "sha256": "6000fb1bf2aaae5eb0fe12d16d54b689987562b8d7d2e1b7af51c62024bee270",
+      "bytes": 2808
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_3F_.glif": {
+      "sha256": "0224344282023a6498bc84f3296c7ab5b27879231723d501a8a449ab2bdf1006",
+      "bytes": 4358
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_40.glif": {
+      "sha256": "f54be29cbbcd53e1210ad79aa770f223013b7472a406853e2261a7e48a20dedd",
+      "bytes": 4982
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_41.glif": {
+      "sha256": "a56f42c54752cbc1f86ae8c5cab7d3c68994607bb3355a1bdf697694c2e1463a",
+      "bytes": 3185
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_42.glif": {
+      "sha256": "c868ae26c3340d5e4039f05d89f80d46b49bcea2d14fadb0cb9b8feb043a97b8",
+      "bytes": 3161
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_43.glif": {
+      "sha256": "9a1b0ef64f7efeaf70cedc39a656e6fa4a0f7f5f683d1142b48601f625cb7be5",
+      "bytes": 5236
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_44.glif": {
+      "sha256": "047ed8526b7ab6b1d672e508cc813d83c73a1494f42df65d0a08340c3b9ffef8",
+      "bytes": 5962
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_45.glif": {
+      "sha256": "ed5a0dc2d5e478646e55411e5897f17b12fb3287c9512a554c0e0eb4013bdbe6",
+      "bytes": 3848
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_46.glif": {
+      "sha256": "4590f31a7c668374aaed930866e637caa90b70d6c91cf58cc29f9377f13dc987",
+      "bytes": 4717
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_47.glif": {
+      "sha256": "73349a42b43134c5e627d2e217bc16dd318e533dc62fb497730adcc8dab23110",
+      "bytes": 3354
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_48.glif": {
+      "sha256": "f1523f39569aa68264a5ce29a7f8d0d3c151367fb52274b084a5312be2aba1e5",
+      "bytes": 3871
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_49.glif": {
+      "sha256": "e369d447304f9e9d6da422d89c808bc03ceda321c3fe1247f4c86e185dca9572",
+      "bytes": 3731
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4A_.glif": {
+      "sha256": "7bcfffcdda871d55a68a1332c86fdce54a9dba86308e21a2daca034bdd18aaa2",
+      "bytes": 4179
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4B_.glif": {
+      "sha256": "14895163b9e663b0f666b5c94873d54b88fd9878c10a1a677c572257de806691",
+      "bytes": 4157
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4C_.glif": {
+      "sha256": "2fed2cfda25dafbfbdc3279a3a18224cf51cd0696ead3a4c1f95f5d124c64f69",
+      "bytes": 4585
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4D_.glif": {
+      "sha256": "c4bdd5b083793cd1deb1b550cffc95eb441b42110f7b96bc488b90a25d2a5118",
+      "bytes": 4045
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4E_.glif": {
+      "sha256": "001f97eb27559b0c5c9515aadc3008c32c43a0322b558ccce971df68c2b428a5",
+      "bytes": 4493
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_4F_.glif": {
+      "sha256": "300920f7573b20ccb17b9f250cc463287de23bc87b25f48a23b9c5f37d3d00a0",
+      "bytes": 4871
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_50.glif": {
+      "sha256": "440b957988071226d11bd07003d08631c1ac6fd24cdc509fd6743ebbfd4acedc",
+      "bytes": 5388
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_51.glif": {
+      "sha256": "8027780a8183a9ecc59c6eb4ab92d69d903f48e3bc31ab5db3324a1b6df4aa4d",
+      "bytes": 3839
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_52.glif": {
+      "sha256": "76df8ebb5e737927b4274c20af23ae4f6224c292fc7b6a329d74e73a6a0c1aad",
+      "bytes": 4688
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_53.glif": {
+      "sha256": "b5e3d8a576872d4059060ff009f63fc872efcb4d730de7712192d6f8a23f1ab0",
+      "bytes": 3455
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_54.glif": {
+      "sha256": "9a43e9a2765b3738b7669c97e1c2fc77289da5de3f06433c29ca43c79ebe5a88",
+      "bytes": 4316
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_55.glif": {
+      "sha256": "82b95515e790d10bd3975ccd0957a9641fefb277f31e86b94632ce14c21ec774",
+      "bytes": 4613
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_56.glif": {
+      "sha256": "c027cb4241ed833af14882dc77312d380a12b9e10ea8b064e53cb7cfe71f203e",
+      "bytes": 5324
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_57.glif": {
+      "sha256": "1173bf10d78ed9250e7e06c3b5d0b101d724d12cb27c99fb734b883504cfdbbf",
+      "bytes": 4811
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_58.glif": {
+      "sha256": "298143db25dd6b6be23077c9256084e6d3200d73380e8bc30588adc115fd069a",
+      "bytes": 5540
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_59.glif": {
+      "sha256": "356a60920d38eb1de5fd38f4c7af3653da06a21bc0df272c53e5d412cc42e3c9",
+      "bytes": 4956
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5A_.glif": {
+      "sha256": "1e4546145197af396694b0e55853256a2536300228c43d0705ac953b0560c2ce",
+      "bytes": 5667
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5B_.glif": {
+      "sha256": "dc03bb58e5afd6a31aa363340968d3e2ad3fc5b4259685becfaa6f7925dd45bd",
+      "bytes": 5251
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5C_.glif": {
+      "sha256": "151a18dd95b09a6a123c3b8a6e9a52e58509fab6de2d7fc265a0d0dda68e8cf5",
+      "bytes": 5980
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5D_.glif": {
+      "sha256": "a1fde259aa85f6c704a6c46c3271a2f92847976e768c48c5ec1311703606ecbe",
+      "bytes": 3951
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5E_.glif": {
+      "sha256": "8f72bb42c88569b99ee9a7fd5367423d8db3878708b0184e056d1d225df5f368",
+      "bytes": 4820
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_5F_.glif": {
+      "sha256": "53296cf203ec2b065a2788acf4d0f6d95de59f2a57adb6b7dda7f9a749513252",
+      "bytes": 3644
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_60.glif": {
+      "sha256": "cb97dfa5a2f842290157c417170dd5426c3d1217f1193031141cde19cea6cf5f",
+      "bytes": 4161
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_61.glif": {
+      "sha256": "7a645ea948702c1cd1ee25c45782e34d5fb0ea4f08f73b20c1589e880aab4e66",
+      "bytes": 3865
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_62.glif": {
+      "sha256": "6831cf3658defcf6825c86b2bde37d092dd3fb66996ac0fa89244055f87e37fd",
+      "bytes": 4313
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_63.glif": {
+      "sha256": "fc3b55128e12febc5283858bc227b952032d5188b890fd43e988618ad3fff816",
+      "bytes": 4358
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_64.glif": {
+      "sha256": "7ecbb4e7c314376a6e64733cb26f571a301d2d14780f7665c5f3fa61674bb66f",
+      "bytes": 4786
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_65.glif": {
+      "sha256": "7a65d0be9356812ce93b33f02bd71232dd144967c0cbf26aa53b6b43b5c45097",
+      "bytes": 4179
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_66.glif": {
+      "sha256": "0e960d78405f55649e1c78cfe013e4e4cf8387507674c952bf80eb47a2b5719b",
+      "bytes": 4627
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_67.glif": {
+      "sha256": "5e81a8a9e49f40769124116ff2743f6fc578afcbe0e1934b04eca74aca924ba8",
+      "bytes": 5161
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_68.glif": {
+      "sha256": "5354639fe0b556abced1e7025fc3ce56996292bd0575e895336a84b8235f51dc",
+      "bytes": 5678
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_69.glif": {
+      "sha256": "ec05fc3815306e5b25beaf36ff21a8816c657f679898cf13d8bc47a982386940",
+      "bytes": 4693
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6A_.glif": {
+      "sha256": "d99690a2bac2dddafdf95951bbbbca143476b38332e8d391d86993bbe7ec1fa6",
+      "bytes": 5404
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6B_.glif": {
+      "sha256": "ca549b53ea61bcd780955e11f13c60e26521d4c604b662ca485047dea8d95ff1",
+      "bytes": 4306
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6C_.glif": {
+      "sha256": "03e73e03ac3cc45244eb4f7922bf4951d1f5334bdc0e1eaa653cc3a83b5db2f5",
+      "bytes": 5035
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6D_.glif": {
+      "sha256": "c928c64f5d38cf8b822c01e01e4103f1be8c29df718f642075dce96114dd0091",
+      "bytes": 5329
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6E_.glif": {
+      "sha256": "079dcad0b3f6e5e36f5a0123b6ff8404e97fcbec64e00bed70d630481899a146",
+      "bytes": 6040
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_6F_.glif": {
+      "sha256": "eb67dc1975a44185dec568fba41612d3102a3ae017105ddeb47a8e360c1900a4",
+      "bytes": 5530
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_70.glif": {
+      "sha256": "39429696eab2d53161df23fc5dcc0575c89163ab4af035aa465c72859e1ae3a2",
+      "bytes": 6259
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_71.glif": {
+      "sha256": "9e9ca724a5839a9df446466a72bf784750daf84a332772259b482333800dee70",
+      "bytes": 5672
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_72.glif": {
+      "sha256": "e931d879b09829e3e94d252ad637342b3f46079bd28276e71ae130569d59791c",
+      "bytes": 6383
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_73.glif": {
+      "sha256": "4c2a6606efb8f8f0702fcbd2ffdb487c8e1a60ed76c372e043ffea254de7f574",
+      "bytes": 5970
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_74.glif": {
+      "sha256": "338570245e5c79787b22e4186a26a2877322fd395c319e39932d736501dda92d",
+      "bytes": 6699
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_75.glif": {
+      "sha256": "b7bf1acd6a63ccad2c4e55f9340f605f6354728bc56bb3c2fe1a2a09171a3f90",
+      "bytes": 3938
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_76.glif": {
+      "sha256": "0c11c11eb516744bbd290e8719961f43a137c94fbebbaf61619ca3df9894e528",
+      "bytes": 4781
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_77.glif": {
+      "sha256": "11f00bbb52f7ed7637741a6f4e57782eac28dde0f6e731c834617d77e3136930",
+      "bytes": 4649
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_78.glif": {
+      "sha256": "3f7b00472d36783109feb6f718f1fe1cd08a8dddd479528c35efc80cc8ea4b5b",
+      "bytes": 5378
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_79.glif": {
+      "sha256": "e03e47e8add56050c2388645c304211aa949b6734d0111efddd5fe879afc172a",
+      "bytes": 5755
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7A_.glif": {
+      "sha256": "89397268b36f99d4c64cf6cadc8a5a700a0567da71fbf7ecd092813992edda4b",
+      "bytes": 6466
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7B_.glif": {
+      "sha256": "76fab1ba575b712359ad5a11b3be2719dae90cd69d2d029d12d0afa8f9bd7ffc",
+      "bytes": 5873
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7C_.glif": {
+      "sha256": "728deab6e3342b1d80b7edeba0df4f3c6d3f1574baba9392840b1dc399bdf46e",
+      "bytes": 6602
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7D_.glif": {
+      "sha256": "e85e44f18d2f073421853e7cf27358157f629594f307cc125ce3ed5e48f5d0d3",
+      "bytes": 6116
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7E_.glif": {
+      "sha256": "81b9283eb02a6ce581d92aa9917a774993d203cd1631f49398cf95adc26a99c7",
+      "bytes": 6827
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_7F_.glif": {
+      "sha256": "cf7c9ebf69a156b5a19a6248a6e23c11fc7b6f68730adad5a138ccd05ef816db",
+      "bytes": 6313
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/uF_2A_80.glif": {
+      "sha256": "c0a320b644b72adf3fa668cfed9f0c3f469ee88552468ecf038755db21c577d5",
+      "bytes": 7042
+    },
+    "sources/QuintessentialSerif-Regular.ufo/glyphs/_notdef.glif": {
+      "sha256": "ac2f09565fe19e1eac9556687a2d375018b4dc4392ae19053f39607226644599",
+      "bytes": 2725
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/contents.plist": {
+      "sha256": "8cdf5d4bccd499b1d2c315c30aaa52c4f9df146bac829a1bb7dd4024f94becf7",
+      "bytes": 7703
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/space.glif": {
+      "sha256": "275629f574a5ab394a2a33229c20bbe35674dd29c01c4fbc226b383493faac1c",
+      "bytes": 488
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_00.glif": {
+      "sha256": "a13d3e307c3dde8b715ba7cea1dd4aee6f978d4dfdd0c66791edf25b4d2fff94",
+      "bytes": 1824
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_01.glif": {
+      "sha256": "cb6eee93343c34f434b7bf6529ed3ccbc9102f19388853c1fbe009754135c892",
+      "bytes": 1865
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_02.glif": {
+      "sha256": "ca6ecf5c0e23cf981741bdb369c0168ae40d2aa49a9dc0a654bfd9204cdbf790",
+      "bytes": 6136
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_03.glif": {
+      "sha256": "3c6888ac0f60dff41550d70046c94c4345f2f4e313f5968f129524e14f57c5b9",
+      "bytes": 3434
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_04.glif": {
+      "sha256": "6cda4d5a8044ac8feb3fe02efa8d4c284b8df1ea91278bb4654475d1ed79d36d",
+      "bytes": 3584
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_05.glif": {
+      "sha256": "6658919e6e9e0b46e928d368028fbdd81836d700ed2956bd978e3067bfb7ff8a",
+      "bytes": 5234
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_06.glif": {
+      "sha256": "411cb5fb015de269d2ae538f0cb98e6cd88efcda740565f71dc51f3c27783eb0",
+      "bytes": 1967
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_07.glif": {
+      "sha256": "b8d7b7723e3ba6ee2849b50a35eb22abf546d128556acb50ea61070e220e8b0e",
+      "bytes": 5680
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_08.glif": {
+      "sha256": "932273d1ab8887307ac230918b75634c2eef8dee247ced9c339481d7990c8338",
+      "bytes": 2437
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_09.glif": {
+      "sha256": "b0caab875e87f5c3c051ea628f3786c6d4ee3092fc80d1c822aa100fb078c5a3",
+      "bytes": 2103
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0A_.glif": {
+      "sha256": "98a3fad4dba56199f101a95770983fed1ed1155480a9f6440ab2f0a1b2432466",
+      "bytes": 4470
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0B_.glif": {
+      "sha256": "900cdbaffa2224e1900279f8cfbac8ef7b4cab9995cc4413253056a81418b525",
+      "bytes": 2499
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0C_.glif": {
+      "sha256": "b6c5bcfe92962a7d710dd1c0c4c8757779d1c3743b37358bd14abb273ed2ea9b",
+      "bytes": 4916
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0D_.glif": {
+      "sha256": "634369fdad65cd54650e18ebfaa5d6033406ba22a27c02a3cd74ecd0423d623f",
+      "bytes": 3793
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0E_.glif": {
+      "sha256": "238de06266bd7c85377e1b164f606c221edd774cc5703584460a86c8b7690fc5",
+      "bytes": 4040
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_0F_.glif": {
+      "sha256": "fb5f2321b350ff9357271403dc0781550cdbe8a0952e6438e2cb468b8b443f1d",
+      "bytes": 3723
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_10.glif": {
+      "sha256": "aa930f4bffae38c9c992786b24db1268107178b22e612c54e356542b25e10bba",
+      "bytes": 4009
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_11.glif": {
+      "sha256": "7e4ca0a5ca770ac329fff79a14a0d88f1528f5e0f41fdd49ac671c9b7d9a23cc",
+      "bytes": 4711
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_12.glif": {
+      "sha256": "5f889cc59bbef3ffd32d3132e73d37667fcc66c3b2537c3346c16ed5fd13fdd2",
+      "bytes": 5141
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_13.glif": {
+      "sha256": "27c4ec93e1f74e529abc675a61252845369e6749aac710c8ae2d3df7eb9cb692",
+      "bytes": 4139
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_14.glif": {
+      "sha256": "0095049ba4530765282744908869cf02b6e567b8c38f4a596fb83beb8e4bfea5",
+      "bytes": 5070
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_15.glif": {
+      "sha256": "15609aae861d9d6976e2cd83a8ca5bdad3033c02081514cc0328ec7d4197638b",
+      "bytes": 2989
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_16.glif": {
+      "sha256": "75e1a0852020c980a88a5b986fb0b220d59bc7d7eccd29548e8a163fbd38a8ed",
+      "bytes": 5002
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_17.glif": {
+      "sha256": "29c8a942bbf38a00ae36615062c17d5a25480eebfc7b037dccb0e9b2196e6828",
+      "bytes": 2938
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_18.glif": {
+      "sha256": "31fb8de3a41658ef97504ef99a1c0f6600e2c63deac0787fe859c63a0973cf70",
+      "bytes": 5105
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_19.glif": {
+      "sha256": "cd254625b8ccea104df42abdba1765c0743423e8305a10f69cdb1e584fae782a",
+      "bytes": 3063
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1A_.glif": {
+      "sha256": "0bf1a4e4bdc0459ea54e500c3025c088367353b79324cc499c4089bdad093fe4",
+      "bytes": 4941
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1B_.glif": {
+      "sha256": "cfede16198e1eb99372ff987c3c3af848e8ade085c651470518adb152e657c10",
+      "bytes": 4086
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1C_.glif": {
+      "sha256": "f9529db2c3db03ffd161b5a4c9be1b6a7267415490ad5df34f2423cb77580f8e",
+      "bytes": 6282
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1D_.glif": {
+      "sha256": "4706ab62f1ffc8e6a5fdf9348e4dd9bdb61dc09c66a4aacffb524e7cdfae247d",
+      "bytes": 3396
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1E_.glif": {
+      "sha256": "826d77012285effe70e8b504fd1be5f7218eb065907316d6ab247de34f9b5f38",
+      "bytes": 5312
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_1F_.glif": {
+      "sha256": "1f6c2d3fc124cc25525fd165da7e64fd6e10c5a88a9208e12246fc52410bcc58",
+      "bytes": 4756
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_20.glif": {
+      "sha256": "94e766a55a53d236c1b0a4660639bc03025550b7b94f79bef495e1532fa7b710",
+      "bytes": 6946
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_21.glif": {
+      "sha256": "4457d6c400a7569b29c39129ff7fc0afd1f120c3f9d2530644f8074b3a661237",
+      "bytes": 4601
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_22.glif": {
+      "sha256": "758d41b81e3c98ecd79b5c92035c898cc7f75e5bda4ecac0e5c5a17f8cf11764",
+      "bytes": 2736
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_23.glif": {
+      "sha256": "9717dc415a591365b45e9b9665ef1c7e0bd1a745ecb478e236c094318906ebf2",
+      "bytes": 2839
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_24.glif": {
+      "sha256": "a412eb94b540bb79b3700b7a13c8e22f71eab6dfc011c42d2cc4d5336ef6fa45",
+      "bytes": 3206
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_25.glif": {
+      "sha256": "fd6a6a00e8e3af0e69b4af08c292ea031d36e75ac5f1d237e4390214fae8107d",
+      "bytes": 2257
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_26.glif": {
+      "sha256": "84a85f9566fab30be38f5869868228dad2a3c7d24ed05fc6fdd614fd1bf0a405",
+      "bytes": 2776
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_27.glif": {
+      "sha256": "916a4f9f5338197548df0daa8047322f7b2fb8a8bc392e623b59f3711e3f3a6f",
+      "bytes": 2381
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_28.glif": {
+      "sha256": "2df41fd9f2352c037235e4293fe110df6d54aab72a6e851bf70c5300b82b415b",
+      "bytes": 4411
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_29.glif": {
+      "sha256": "62bf095d826f7d976d4c8de5cc179c2bcb8bde33256484e58cf3e9a4ab8c0519",
+      "bytes": 4234
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2A_.glif": {
+      "sha256": "ca77dfc3d11bf816a4ace8e3243fbbfa053a6dc55001eddf371480ce780795b5",
+      "bytes": 4756
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2B_.glif": {
+      "sha256": "632716bb9a10cccae064be16713c62ebb9e701ff5c4851cd60d07f26e2c5ba57",
+      "bytes": 4454
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2C_.glif": {
+      "sha256": "0cffab5b437cc358c6295175fa5f3657ed0122081de410a1e4d6ba2f79cdb518",
+      "bytes": 5016
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2D_.glif": {
+      "sha256": "d3af6aa17da1772b5982aba760cc797f5064c9cf5843e3f88cf91c90473a0e71",
+      "bytes": 4260
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2E_.glif": {
+      "sha256": "4c3967984893bf4af609fd5739250f3875a41677a106f8c452ee759daba4f26d",
+      "bytes": 6813
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_2F_.glif": {
+      "sha256": "b47e3af23836bc9f0ce110f6d34da0c79cd04475e1013d61cffbf01a9c175b11",
+      "bytes": 4859
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_30.glif": {
+      "sha256": "99afa092a3f10ad27889b60709a8d8a57462f19ce49fb93b7038f04e798b5369",
+      "bytes": 7085
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_31.glif": {
+      "sha256": "0a1de1ea2514b2a8bef908a46269c42f5ca39ff6ae95be36b4773cfe9323d8ff",
+      "bytes": 4471
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_32.glif": {
+      "sha256": "a8d0aba550bbf59cda8e1be4065c2fe4cf8d1b1033953eed59a16d533df2ac7a",
+      "bytes": 6885
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_33.glif": {
+      "sha256": "a8180d0305434b199d91e7d48117d1524a0c9d36ff5c482e112659b104a1ad75",
+      "bytes": 6056
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_34.glif": {
+      "sha256": "fb2639b5c1172c3c0408c664435324771122cf22ccc3c672828c7ea30b16d4f4",
+      "bytes": 8275
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_35.glif": {
+      "sha256": "7817e6fa1bd64ac3c9dc8a759b6f3f1bb49e399bed5c4f8426e2ddbd458b9a8f",
+      "bytes": 4743
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_36.glif": {
+      "sha256": "0dfee27321acbf7d65d33cb7b23be469ada9f22b5673a5828f68092af7cd7cbc",
+      "bytes": 7221
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_37.glif": {
+      "sha256": "6c8bd557745d326feca6153e86d9596426d6041e4426d48bbccfde456d5a83db",
+      "bytes": 6728
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_38.glif": {
+      "sha256": "ae39c22722ff130e131d98a61e1841303920445f7a7d638b35b7c5ab51f78495",
+      "bytes": 8954
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_39.glif": {
+      "sha256": "0aa7da536eb3540ded5a3cb7b133d3729fa10e987fe7bb20f14041d7bded86aa",
+      "bytes": 3104
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3A_.glif": {
+      "sha256": "440f1be3de72dc06328f0bdb28e82fa192aff278b63e606bd28e5cb077e6cec3",
+      "bytes": 3451
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3B_.glif": {
+      "sha256": "8dc73102e2387ea61f5f7e3333d7fb621783e431ac7cbe9a58b576a6eaa7218a",
+      "bytes": 5581
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3C_.glif": {
+      "sha256": "d61f983d117f9e6f16444cc278054efd71dfe7e570191ec2c23f72f3d6ec5ed2",
+      "bytes": 7529
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3D_.glif": {
+      "sha256": "9155153b58803078d5839fe73f136726151580b999264114a7bc1dbab4c93a4a",
+      "bytes": 3152
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3E_.glif": {
+      "sha256": "ef380cc0710936a2be4469e1eaa174a41fc68b8dae683f5d5317999dc14043f9",
+      "bytes": 3489
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_3F_.glif": {
+      "sha256": "85b6cd0e9c86bfe19ba484ac07510c1751e0d8637e0e895cffa87eaf21a65a89",
+      "bytes": 6778
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_40.glif": {
+      "sha256": "807ff80bdaad2df09a4c9a8cde40d6712c4db6d65e6836f32ef8b061b8f28204",
+      "bytes": 8703
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_41.glif": {
+      "sha256": "05211f50789ec5811c2bb25ca2cc58c19db328f5633e9e2b575045997c75ee60",
+      "bytes": 3424
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_42.glif": {
+      "sha256": "b58cb556aff8cef46e9328c10684612008a02e54cee9a550a010083cf736ff8c",
+      "bytes": 3764
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_43.glif": {
+      "sha256": "157cd2b2e2017ba8662723190a6622282d893674cd303c1478f950c60fb959e1",
+      "bytes": 7450
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_44.glif": {
+      "sha256": "d04c52f845548cc884a1ece4650e41cb30db9ad4b8e2d5c847f3e7a392089e77",
+      "bytes": 9390
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_45.glif": {
+      "sha256": "64cecc242e35b346bb6f1f05349291e0a531452f5bdc9c8202b3c81ee60ea767",
+      "bytes": 4528
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_46.glif": {
+      "sha256": "25260db637381ec29a45b2a3511ee90bcbec946c2f846e3bf55f4c2e5f11376e",
+      "bytes": 6318
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_47.glif": {
+      "sha256": "eb2add9f3356649cd102ba420be1db1294dbd06c7dd1402f0beb44237ca8f1ca",
+      "bytes": 4647
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_48.glif": {
+      "sha256": "2771a96ab2f417945dbfa46742b9734a80b864534bc0e66e028381f0c07ef9f2",
+      "bytes": 6558
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_49.glif": {
+      "sha256": "06b2d417a098b3ffb4e25aa372cdfb90923806a4a546a78db33f6a01b5b3b5b0",
+      "bytes": 4602
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4A_.glif": {
+      "sha256": "488ae516a80c57b921189254b0997f4cf0f00c331caea04539cbcbe890f22a5f",
+      "bytes": 6252
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4B_.glif": {
+      "sha256": "744f9fb39c4dd202b65108498ec189e4a584a8c7a014072d876ed17d3c623bd8",
+      "bytes": 5408
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4C_.glif": {
+      "sha256": "76e3496ba0295ad9d3001f0db27cb804e605d2a7d283c7111ce27f9b7b410658",
+      "bytes": 7319
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4D_.glif": {
+      "sha256": "5c39d563c36c7cc97dc45f06782bca1d01d14ea41d3644547a192c431ba21042",
+      "bytes": 4896
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4E_.glif": {
+      "sha256": "f7c262a0c7f4c82a4bfedaa42129ce29976204fb537853ad0bbf12e851ddacb1",
+      "bytes": 6611
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_4F_.glif": {
+      "sha256": "87101a0da70086c639b4c7bf58c4656f1fa13928eb43b2462d38f67e3b00305e",
+      "bytes": 6044
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_50.glif": {
+      "sha256": "166c3067c1d2daa734cda28d6fdc648828b1ce4e364836786890283357cb0533",
+      "bytes": 7955
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_51.glif": {
+      "sha256": "135e748915a8f31a168410bff976bae72daca8d99bf7cebcf4b79ae04a0a82b1",
+      "bytes": 4284
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_52.glif": {
+      "sha256": "c9b68fcf1db09eda2b9e65083025011a7399472355d0416898b81209ad72a5d4",
+      "bytes": 6262
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_53.glif": {
+      "sha256": "5bd76237b737417bc163eddb7cd169f3af06b4b91091352b6a9c0951f168b610",
+      "bytes": 4232
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_54.glif": {
+      "sha256": "0a2b492b18a21fdd448a4a3085af39fd21ea744ce88718d9009d736190d83d35",
+      "bytes": 6544
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_55.glif": {
+      "sha256": "7dc04b2a7a43f4f1733f07bc3345eb9e2a70a4213715b6c3c2f7b9fd41b9cc5e",
+      "bytes": 7021
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_56.glif": {
+      "sha256": "ad681136dd941a44d7285df625a66f74e33dba48297c00b2d72492f566e83592",
+      "bytes": 8848
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_57.glif": {
+      "sha256": "ef472d2cf9ee80a5b69f9344d4d38f775d1a505d61db81dbc4cbfffadb3fea54",
+      "bytes": 6140
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_58.glif": {
+      "sha256": "29559bc54b7914f5fabc604a9869e9e8e13d740a477fec844c27c205593a3328",
+      "bytes": 8320
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_59.glif": {
+      "sha256": "6ac215fcdecbf5cc7f6d353e21cb5023f890d4a7e223d1b5588213c7ea1143b6",
+      "bytes": 6840
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5A_.glif": {
+      "sha256": "4f94781757f0a02aa4e0db2c7259c348946cb8bab85819e9d19cd8649afde17e",
+      "bytes": 8667
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5B_.glif": {
+      "sha256": "c0bf412de8b9a221036ba1486a6debdd1914e27e654ac630a545582932324de2",
+      "bytes": 7155
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5C_.glif": {
+      "sha256": "cb62dd128d06383dd3a66beecd281d5065e9cac57d08198e07771839f1fa2b28",
+      "bytes": 9335
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5D_.glif": {
+      "sha256": "ea3195ece9200c2f2a9487d11fab67adb7d3eab44a6db8b2b361904c0d59f92c",
+      "bytes": 4196
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5E_.glif": {
+      "sha256": "2a44bebafbb51e8b3ff98411cc82be3cce8c1ec9c22dca156dc60456eb2bcdac",
+      "bytes": 5986
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_5F_.glif": {
+      "sha256": "0a7053eec6fd2ca6ea96060adf51d73a9d32164564fc5101f4e64673c2e8a9f6",
+      "bytes": 4805
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_60.glif": {
+      "sha256": "18333ebcbd68f32426c8fa2ffb1d513688a1c9f9cf084b3da85ae704eb3358b1",
+      "bytes": 6716
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_61.glif": {
+      "sha256": "6a93668652c73b51a6e27807ca48979e7d94ea05a15392d688c59355c75d0b17",
+      "bytes": 4271
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_62.glif": {
+      "sha256": "d3f2d892e71563ad279ecd4acd92475069b2d6754876c6e442e0747940fefba2",
+      "bytes": 5921
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_63.glif": {
+      "sha256": "f66630e9cd9f51de158e48ae7b1b945d7dfae500db2a5974175c80a79cf579ad",
+      "bytes": 5559
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_64.glif": {
+      "sha256": "2b318df93af7c748669830a7de27e7a882c3a8eadb680438ba59755e99449808",
+      "bytes": 7465
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_65.glif": {
+      "sha256": "104f816117ba5a5a02aca5dd81a25125f2dd82f8a05d9c638ff8918a0e1693f3",
+      "bytes": 4535
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_66.glif": {
+      "sha256": "ba91bdac8d0ec0224283facb5bd60c0eb7f8311b031745883fde29f98f64fe2a",
+      "bytes": 6250
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_67.glif": {
+      "sha256": "2c3f8920fa6e64c5d491a4e0b4ca22aa7f3913e5a023a16c7fc6501e9f8116f2",
+      "bytes": 6195
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_68.glif": {
+      "sha256": "6e40ab71581ac428e514b62327beb84fd3ebf13ba31823eaaa6ef4b86513f248",
+      "bytes": 8106
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_69.glif": {
+      "sha256": "978580aaa626b8043b23852edd0f9b2ea1a35df8733833f37972a75d9ff48bd0",
+      "bytes": 6126
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6A_.glif": {
+      "sha256": "1a8346097e2b5b0851ad73a8ee600bc005e6e3c5b14ce9f34058710dbac7f2b9",
+      "bytes": 7966
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6B_.glif": {
+      "sha256": "3e78f9521969106626604eef706734fb8310d75bd420de48ebae5e7db7086198",
+      "bytes": 6345
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6C_.glif": {
+      "sha256": "9a52fa86f097378dcf3353c100431b8ab1aaa6dbe7849f36fed88c528a28a9a8",
+      "bytes": 8525
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6D_.glif": {
+      "sha256": "0da4894fe765070ed38b60550856557af136e20f99c480d0c0558bcacc15fea9",
+      "bytes": 8725
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6E_.glif": {
+      "sha256": "0d1c8403070825f3cb8920fc8b1b73c9b9966be59e662a3ab5c8adcf35f24a17",
+      "bytes": 10552
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_6F_.glif": {
+      "sha256": "5f68a63b15610666fe66db7b3d622aa77c6def3b5715a0021189bfd9191c2299",
+      "bytes": 8121
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_70.glif": {
+      "sha256": "b7c7aa42048e2570d34ac3d02374c8ba5d8b06ca3feb0312f1f354a42a6b65d2",
+      "bytes": 10301
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_71.glif": {
+      "sha256": "f3df8b8eb23738e9234a770170093031e73464eb5494b7b5b1dd9a742a7168a8",
+      "bytes": 8544
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_72.glif": {
+      "sha256": "d2d5aed754856cfbc5cb7d1afa0bd181e2e6500f26d0ec79f0612096025779ac",
+      "bytes": 10371
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_73.glif": {
+      "sha256": "7915c86477aba1a521e3775dad3eda7d4c085cc5f5bfd3413e786bb03f57848a",
+      "bytes": 9136
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_74.glif": {
+      "sha256": "cc130caf5b4ba7815c6d5f1b8e12e2e218ad5e39de30abf0d61427dd09ff0db8",
+      "bytes": 11316
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_75.glif": {
+      "sha256": "490123d29bf47e33efdfd5bc8e5cc987aee844adb7fdbb3c71c51935c6e58f41",
+      "bytes": 4499
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_76.glif": {
+      "sha256": "e324f880f514be307075440a4f6555c9a1cf290bf6c24cf069aedce3cb49c4a6",
+      "bytes": 6521
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_77.glif": {
+      "sha256": "03030979e3645fb10101d20f5019aaeeb6ceed20230625335800c25b03a4b942",
+      "bytes": 6758
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_78.glif": {
+      "sha256": "6cc84f0506fe484e7acf2f76b46b0ef1f3677591d5506b4873a64e7848a368a9",
+      "bytes": 8938
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_79.glif": {
+      "sha256": "8460285a52daed6755bf11a4b203413ef8431a4c35ae27af294eacf1621b2d68",
+      "bytes": 7253
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7A_.glif": {
+      "sha256": "cc4d97a6cb9be4f0f57646964726d4e81fd4a8866a9280fc4ee7f02ee3cf1193",
+      "bytes": 9141
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7B_.glif": {
+      "sha256": "5f9d6c6d805311ed6c11c33f0066832ddc0cd2625ad559f88af504dba3c2c82d",
+      "bytes": 8534
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7C_.glif": {
+      "sha256": "94317eed8739853ec276dfca1408e29695c238ecf2e3eda2311e24316b40d3b9",
+      "bytes": 10714
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7D_.glif": {
+      "sha256": "37afe14cf7f1780d22a3a65b163ad3e61102b74055e991b3c9a768c96d428332",
+      "bytes": 7065
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7E_.glif": {
+      "sha256": "80499016728d0b3c1d09e9d98b62cc0de23aafde11ee55cf3b0bfcc83d407f66",
+      "bytes": 8953
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_7F_.glif": {
+      "sha256": "06ea198ed2480a01bcfa9c459663964415bef8e133311d21bd02fa43ce1bd696",
+      "bytes": 9549
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/uF_2A_80.glif": {
+      "sha256": "4505856b02dcc3fc083da106f0a59dcd93982f0d258ec9166e14e92f9ad13535",
+      "bytes": 11729
+    },
+    "sources/QuintessentialSerif-Italic.ufo/glyphs/_notdef.glif": {
+      "sha256": "ac2f09565fe19e1eac9556687a2d375018b4dc4392ae19053f39607226644599",
+      "bytes": 2725
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/contents.plist": {
+      "sha256": "8cdf5d4bccd499b1d2c315c30aaa52c4f9df146bac829a1bb7dd4024f94becf7",
+      "bytes": 7703
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/space.glif": {
+      "sha256": "275629f574a5ab394a2a33229c20bbe35674dd29c01c4fbc226b383493faac1c",
+      "bytes": 488
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_00.glif": {
+      "sha256": "f5929ea09827bd68e6ea1458395bc9025f1c4f9ebe57cc187d6191f1e693c5eb",
+      "bytes": 1814
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_01.glif": {
+      "sha256": "a15c85392f0eb11b1d0a8819523522813593a56b8c475aaf69b5ba7c7e829064",
+      "bytes": 1855
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_02.glif": {
+      "sha256": "42dbce256e7c33850d7a9bbf776ad216c2f3d6f475c72df44c83573b827e27a9",
+      "bytes": 6183
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_03.glif": {
+      "sha256": "bf8f37e64ce832c75e2818e105ef25f020075cac4fbb8aafbcdeb71a2fc1b9ff",
+      "bytes": 3497
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_04.glif": {
+      "sha256": "8e95a28eee20f3bf79417731d1382545342fb4e8447fa2bf15f9c7694cf90c3f",
+      "bytes": 3597
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_05.glif": {
+      "sha256": "5ebd611209219e861dbf737eb064c54fe153c353878df73cc3cd4feae75f8597",
+      "bytes": 5251
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_06.glif": {
+      "sha256": "9882a490086c6d81e13b498c0d646f4466d5ea2ac8399c7a2940012afa035459",
+      "bytes": 1964
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_07.glif": {
+      "sha256": "005aeb58553d0cf0ee3247ff91bdf03fccd0b655222729eb93f907f289bd758d",
+      "bytes": 5673
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_08.glif": {
+      "sha256": "7d5eea92fadeddd0bd834f900d0609ddabfcdf34b59ee2db3a881f059b09ec7c",
+      "bytes": 2433
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_09.glif": {
+      "sha256": "5bb99871f9813619a4771348b94045c1d479592cd0a356c54f20dfa3400c80a1",
+      "bytes": 2103
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0A_.glif": {
+      "sha256": "fe5812a91ff7001fbf0bb7a9cda6445da2444a7e9e71a8a4c49f043a87e82f6a",
+      "bytes": 4464
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0B_.glif": {
+      "sha256": "a4db357ddab72c230f8814ab3c3a84c2cf76f69f967f74b27d04f7e6ba891f74",
+      "bytes": 2505
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0C_.glif": {
+      "sha256": "94d91f75a4082c49193eac0e5e9a9624ec8f81a42566f9a475bdc0c17b14840e",
+      "bytes": 4918
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0D_.glif": {
+      "sha256": "1908b9bfb25f478b2aafd69936fb4125537f13fee844543c5927458af10ae86d",
+      "bytes": 3772
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0E_.glif": {
+      "sha256": "c6ca2bcefbece52bc9e1622ca20dd474a71a36f51cbdc016668c6e4d8193f926",
+      "bytes": 4031
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_0F_.glif": {
+      "sha256": "dbb888c21bcd17d78cded95e12b2af38995312de133f2eb3b84f87d2733222ce",
+      "bytes": 3741
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_10.glif": {
+      "sha256": "db4b896968574a2b24ceb8ff8953bffa88980e219a6c8372b016b21ddf773a7b",
+      "bytes": 4041
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_11.glif": {
+      "sha256": "15017c3895e77c6972d5a4a42c04194c5aaa59351d6a8b749b10e0f1a9add872",
+      "bytes": 4711
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_12.glif": {
+      "sha256": "f80a0cf27d160a905b5a56a6955cfc4f486ab28f6f9028bd8f66802a6ac8e9e7",
+      "bytes": 5141
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_13.glif": {
+      "sha256": "4e3984e797331db81b17f156b226a23d7dbfdb8177774553bf14bcd43caf1c13",
+      "bytes": 4118
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_14.glif": {
+      "sha256": "9a1a971252c47b767bae2f72ebe7a20dc48f7b121958b1a763f38e820da49309",
+      "bytes": 5049
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_15.glif": {
+      "sha256": "5fe7c9d8fbf1635989575ada77922b14773bd587a73d04c80963057cae44a247",
+      "bytes": 2988
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_16.glif": {
+      "sha256": "2edc80f9c2da45aad766a2587ae9be30997b9c22bbd32fff73a9479ee060d688",
+      "bytes": 4995
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_17.glif": {
+      "sha256": "746f47de1049895f176aa2a556de28679d436b6f3777abf31aadeb71e19eb44a",
+      "bytes": 2953
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_18.glif": {
+      "sha256": "df0c7029d546764b875ed7cf3529a7d7034707f5bec99e09e94fc746995ca224",
+      "bytes": 5106
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_19.glif": {
+      "sha256": "50f6262e9ca889ac1504f21c989712be85af55c64f4bd5a9c6cad4afa17272a8",
+      "bytes": 3077
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1A_.glif": {
+      "sha256": "77721afec7b09524b379f37a8ff6d0f068a2f966cb26ab61a45413868e255b4f",
+      "bytes": 4966
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1B_.glif": {
+      "sha256": "001dfbf7ad2fd9bb142f5a67a8e709bdcdece2b599b8858022e81173cd76d6ff",
+      "bytes": 4089
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1C_.glif": {
+      "sha256": "3a0c6c4ede28f1c2df6198f7bd720ba1c0e2968da9035e8141c53d9f3d3c8fde",
+      "bytes": 6284
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1D_.glif": {
+      "sha256": "d36410f285141efdab8b2dd7704d4f3e2e89a99bdfeb5b101929c26431616891",
+      "bytes": 3410
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1E_.glif": {
+      "sha256": "a0ab12386eb2710317e99896d24126bb81220c9b48f08e8b1e549f2591c9d211",
+      "bytes": 5314
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_1F_.glif": {
+      "sha256": "a29f653a13be7ee31ade8ace50a80dae29a0327ba5b992a0ef0d243f877444f0",
+      "bytes": 4777
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_20.glif": {
+      "sha256": "4bc4c05f88d4ac39e8a7e6046b5b6c6068c7ba5a3523f14061bc7ffca2f5a3a9",
+      "bytes": 6953
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_21.glif": {
+      "sha256": "d3fe1b6427b08f1d8cb1c887f80d17c4aad1c555400ea38869a7990c9db6b9b9",
+      "bytes": 4596
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_22.glif": {
+      "sha256": "77098bfccb3ef9530c475428295f74c755a08e974f91b25150be37f9fcda466d",
+      "bytes": 2736
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_23.glif": {
+      "sha256": "a778864c350a4d705de83f64868f0f72382c18d91acdab79650cba27cedc9d2a",
+      "bytes": 2840
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_24.glif": {
+      "sha256": "6660c637426df2c2bbfbdb32759dd11810a712de5fccd433e67c8057a68a22a8",
+      "bytes": 3206
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_25.glif": {
+      "sha256": "408b9418d2e894be77959237e26dc99183406a4a340c61c23de8780685c31e14",
+      "bytes": 2257
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_26.glif": {
+      "sha256": "f423720e6b431b3790940ffba06f3a0f51da330dfe0d4dd42755cd86165adc70",
+      "bytes": 2779
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_27.glif": {
+      "sha256": "fbd30343dc6976c70caf321631d40c46008b28e68c3f2c23b6cc788224c3f781",
+      "bytes": 2380
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_28.glif": {
+      "sha256": "80899b88e79fb3cf55e503cc968fa32af06b947b794263d91beff1ba24d7647e",
+      "bytes": 4473
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_29.glif": {
+      "sha256": "7b8a8a6cd5cd10b79d70eef761dddacf2fcea1ccf6dada7d5eb7240346c50b9f",
+      "bytes": 4232
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2A_.glif": {
+      "sha256": "7e0a16325b9817ed933cd7ff096df1ee4fa34d5e060d51985ad34213256f16c1",
+      "bytes": 4785
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2B_.glif": {
+      "sha256": "ca61907e3f496beaa87d24ac4e4d9eb6d51122aab6dbeacb2fc9ff2c721a25e0",
+      "bytes": 4452
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2C_.glif": {
+      "sha256": "f3fb7e584013df0498b70f3757f86beae04e3f0c647cc52be41b5c4b54970ac6",
+      "bytes": 5013
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2D_.glif": {
+      "sha256": "577dd5b735146bfa220f056e123ad46767ccdb000dae9d0be822cbcbbf332933",
+      "bytes": 4241
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2E_.glif": {
+      "sha256": "cd66b827d23f9c386d709c77728f30fbc31400effae52b54a1a5743b686b2529",
+      "bytes": 6907
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_2F_.glif": {
+      "sha256": "6b8b8f9d800344a85c0eefbebced44b903eea6c24381def046c38e3645ecbee7",
+      "bytes": 4852
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_30.glif": {
+      "sha256": "f7fa9ffa6b89f0aecf583a2307a0594c33a92c581f4c895d460aac318a32a838",
+      "bytes": 7064
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_31.glif": {
+      "sha256": "1d1cb189a933635586980cb2d117519bce232ff12295a81a8200c149f5855eee",
+      "bytes": 4487
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_32.glif": {
+      "sha256": "4b732ff35b915f1efe8f9d8ee0f949790eb1339ed982d9bca2c9ef007f9ead35",
+      "bytes": 7065
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_33.glif": {
+      "sha256": "3d24566143b610a6e581ee1cd742679b9b93a015559b0e07c4f6d757c8f17d2a",
+      "bytes": 6037
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_34.glif": {
+      "sha256": "fefb6478b6fb0362b84a62a62a1f808ef071ce4194bab817a1ac7aed637966f0",
+      "bytes": 8255
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_35.glif": {
+      "sha256": "d59b4384c115254337fe8b7a511c251ac95bf81a97608ac653249a68917dbb5e",
+      "bytes": 4759
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_36.glif": {
+      "sha256": "72083a74edacc707a85339a3ac475408afeecaa6bf158b12621f92116a397a1c",
+      "bytes": 7371
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_37.glif": {
+      "sha256": "1bd487ee5f4dc74ad141ecff11eb6c88267c31641e8b0084597ebfc04964ee3a",
+      "bytes": 6727
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_38.glif": {
+      "sha256": "5418e0578203af7dcf72c987b534ba41183c09487e12998e5c6770e228f2e156",
+      "bytes": 8939
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_39.glif": {
+      "sha256": "14ad5bda05a6a1fd9577ab4007ba2b36d1b3cf3145fe41fb78fbc75ce5a22090",
+      "bytes": 3100
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3A_.glif": {
+      "sha256": "a583da71a1656dfe4d66df9d711e82df52785e7d0381d25b2ffd47ac3ab9f18c",
+      "bytes": 3457
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3B_.glif": {
+      "sha256": "3e376a98d28d92ea9047208d8ba0fef5eba2e765f43bb523a2fbe880cb970970",
+      "bytes": 5567
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3C_.glif": {
+      "sha256": "a0feeae15404da5b7cd86dbf27c5d78f604e28fcd420b4af7395adfc4e782f12",
+      "bytes": 7519
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3D_.glif": {
+      "sha256": "0acee6e82f03d3438558bb82f52c3329b4dc0bfe6bce862627c79492585b959c",
+      "bytes": 3151
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3E_.glif": {
+      "sha256": "ca7bbffe35d76618eda73da62c71e742e788565aa04dcd16a418fe7bdb43a7c7",
+      "bytes": 3517
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_3F_.glif": {
+      "sha256": "a1b1717fe40aea20f80cc40df39ff00833792884aab32dd45e0722c45ab0b6f9",
+      "bytes": 6752
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_40.glif": {
+      "sha256": "13d09146d42cc90afd34e0e23644c0cee44ad32ee314f85718dba1475b563c43",
+      "bytes": 8680
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_41.glif": {
+      "sha256": "c111192bf3fa37afbf3764e9c86805dd2a0c2940df6fb7c5483485e17c8f8076",
+      "bytes": 3423
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_42.glif": {
+      "sha256": "674976b7e2996d81022d3574c108047d42b8d7717846496e8cca196a081c3e6a",
+      "bytes": 3793
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_43.glif": {
+      "sha256": "ec40b673e33c999cf7a471b07c6aa33fb3ac2717e804c1f94a4467bfaa365a78",
+      "bytes": 7442
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_44.glif": {
+      "sha256": "823e962fed5d29f640c075304cadf61e5eb7eef48f66ac7c17e2ae61696868f8",
+      "bytes": 9386
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_45.glif": {
+      "sha256": "811a939283ff59d3bc1d0e7c904b23ade865db7c07151320eea60f5da636aceb",
+      "bytes": 4527
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_46.glif": {
+      "sha256": "119cdca51cbbb4393ccc3d1a18e10c671248de95220fb8ea1ff5519ad47c7b9e",
+      "bytes": 6311
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_47.glif": {
+      "sha256": "9dfc5ba40030784deec3b7920d1b9fd9f172f83ae889a6712d8d57685d2df6b9",
+      "bytes": 4667
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_48.glif": {
+      "sha256": "1d0d43a1b358e57caaed58f2f297355e68889ed86866ad302dbd4ae209f96b38",
+      "bytes": 6573
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_49.glif": {
+      "sha256": "70ae9e6bba78f9e123c5328109c85c7df13b850ac929b30b398f02b48eda683e",
+      "bytes": 4616
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4A_.glif": {
+      "sha256": "acbee74fbe2c77e3916cad12c8493dd3f523e1b817ab6303de948bac3f1e1b8d",
+      "bytes": 6277
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4B_.glif": {
+      "sha256": "10142f9f189d1afd69d9a478b40735012a75b67a2f2c642b3fe7572ed17f60dc",
+      "bytes": 5419
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4C_.glif": {
+      "sha256": "429e8506204a694197366483811ce999739817642196af5420ddc28b718e1a8e",
+      "bytes": 7325
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4D_.glif": {
+      "sha256": "713c56e17f4c19b076031433b1899b48e74edb005932cc7d4bf8f04de83dd1de",
+      "bytes": 4910
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4E_.glif": {
+      "sha256": "971047248a7ff7cd1b65461ce34d679f67f7e19eb207bf88f615a72951579b1a",
+      "bytes": 6614
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_4F_.glif": {
+      "sha256": "6fa9858d748c17ec9079a378de3beb21974c09803bf2c11ecbc74b34dcba189e",
+      "bytes": 6059
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_50.glif": {
+      "sha256": "6078f5db75a5767a0f5666176d18e98d5cf7a4264c29fb915595b5de1f2268e1",
+      "bytes": 7965
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_51.glif": {
+      "sha256": "bd99c61e4b5eafceebf6ee67f42076d2a0dc3885cf9946a179a620ec67a677d8",
+      "bytes": 4270
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_52.glif": {
+      "sha256": "ea48a82c33692fb8ab5ca559e920d41c4d27e5456c907b1000be7982a1004300",
+      "bytes": 6233
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_53.glif": {
+      "sha256": "4c158cb22c50903d6ff12cb00f069a880ee243525b716be38505e96b8347be1d",
+      "bytes": 4273
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_54.glif": {
+      "sha256": "42c5965617edff8a707fbcd5d6640d9f427ae13361424bad5a7ff167a30941f3",
+      "bytes": 6581
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_55.glif": {
+      "sha256": "ac0d740b76a88e27041cb80c682147ee51b86eed6a6ded81b64fb9ff518fad84",
+      "bytes": 7026
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_56.glif": {
+      "sha256": "d77af6b71cf34cb15ab1debe19892a802465ef3e65f52eac62c1b9bb8a136387",
+      "bytes": 8851
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_57.glif": {
+      "sha256": "c45ad028b207400d79f808dcfeb443106158a86e774828cf9acee4e560fdfccc",
+      "bytes": 6160
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_58.glif": {
+      "sha256": "8b954cbf916dd71c62f40be79010af301dfd5a6c090b93bf00e545cfc5e38475",
+      "bytes": 8336
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_59.glif": {
+      "sha256": "54e7d3e9b6ff67a7e800301e6afe77e5b10a862fd81df4f60fbda383ecb50210",
+      "bytes": 6852
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5A_.glif": {
+      "sha256": "f9f76eccfe7fef5d13e88657161b839f92a9266e96c298f4a5121c68480588fb",
+      "bytes": 8677
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5B_.glif": {
+      "sha256": "82f5def7e2fec712877307eae627296b78c2151643b8cee304b73c99e68b6353",
+      "bytes": 7183
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5C_.glif": {
+      "sha256": "5633b1b484e2a634d92c2efcaa970c03ea2543d0b5e0ba1a58cad36b20a1ad48",
+      "bytes": 9364
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5D_.glif": {
+      "sha256": "2e32930ff2737987cfb889cca86860d780290822461168f4c3bfc13356fa7fc9",
+      "bytes": 4208
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5E_.glif": {
+      "sha256": "3f69a59d2fdd8e0e0cc9783bd3d2f10c0df958ed439bc5ae5d0c557d5925a87b",
+      "bytes": 5992
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_5F_.glif": {
+      "sha256": "880618cd5ee7cd334bf739696d8c3318df95bdc79708346857164971d6e91406",
+      "bytes": 4768
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_60.glif": {
+      "sha256": "2b056c9402a9f360788de9a0052e180f8d996a048329273b9c17b05c9988bda9",
+      "bytes": 6681
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_61.glif": {
+      "sha256": "3c645f8e9b74dd3bb64f812f9eb33e3352a3aecd2e437e72e9f8025a34bbaff2",
+      "bytes": 4277
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_62.glif": {
+      "sha256": "015f99eb7922c3b9e8dca9f4cbf8e9268e13a0b2eba304e35ba4606720a9f4d5",
+      "bytes": 5938
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_63.glif": {
+      "sha256": "684e813bc3ac8226ab1f1ef562630065b4b9775d625e17e3296f65098a379f81",
+      "bytes": 5535
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_64.glif": {
+      "sha256": "1609e88b0a97228b7566c1916f16c1f4aeaae7ea7e185b3520207b2cffcb511b",
+      "bytes": 7450
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_65.glif": {
+      "sha256": "2729007591205af580c9f9940796f9ad68c177ec33e8e37ce3d9e98f2cabb648",
+      "bytes": 4541
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_66.glif": {
+      "sha256": "ed342172a56f6e68e6cb59c6676874d560a94fd8753b43ca2fc92b06d54ada0c",
+      "bytes": 6245
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_67.glif": {
+      "sha256": "a7b80974001cce60f5f187b70a8536efb17f17f6465b9813350f9e6308ed14a8",
+      "bytes": 6157
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_68.glif": {
+      "sha256": "ac81a92288e44c7d571dc548ccc76532daf8e104e5891180aa07c2eb2c913df3",
+      "bytes": 8070
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_69.glif": {
+      "sha256": "4603e49649060ae3bfa312c512b2acb5212fc72bd73bd9eda0365f5ff1b7c107",
+      "bytes": 6117
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6A_.glif": {
+      "sha256": "78c752d646c0b09cec629b81824dcc21f82a68fc7478279ce2ad18bbb51c36e3",
+      "bytes": 7942
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6B_.glif": {
+      "sha256": "13c98e03fbc4d997e74632c70180c9aa003732316a8ad77d45cc66dfa9976933",
+      "bytes": 6376
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6C_.glif": {
+      "sha256": "3745b31e9d2e1e027a8b594ba2ac452b138755b84ae10c9d2bb7588d106960c7",
+      "bytes": 8552
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6D_.glif": {
+      "sha256": "260829030f3c2a828f2ab82029f6b2cabaa57be76afe749b194fe7b577283b2b",
+      "bytes": 8735
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6E_.glif": {
+      "sha256": "c81e33078e59555556d379575a72f2b56ca8d675fc1efa76fe6c0919d1e76a53",
+      "bytes": 10560
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_6F_.glif": {
+      "sha256": "d07c1fc2f1d7ae611652d3aa07958da95a363cd66d58cb74ea93d709a50946f3",
+      "bytes": 8131
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_70.glif": {
+      "sha256": "f98c104c5ccec758dec4566c30e1f63c723f2c40f00aca271e79ea082e0c1f07",
+      "bytes": 10307
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_71.glif": {
+      "sha256": "7e46455c4a9bc09f2e64e031d8e9e7f780c3c672fe9129b71211492f29761afa",
+      "bytes": 8561
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_72.glif": {
+      "sha256": "a452c9692190391b87ab67e878c21616ca76bfe2e811d5303295f057567a9db3",
+      "bytes": 10386
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_73.glif": {
+      "sha256": "38a7f55309536f3ab57e06887988acb9bdc98dcfae83394c4fc63aff63ef23ea",
+      "bytes": 9154
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_74.glif": {
+      "sha256": "430df1a2705648ee3656833edda75bd245c4a5d465932d713e790a7838094873",
+      "bytes": 11335
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_75.glif": {
+      "sha256": "da092920e8569f900b151bb66aa0fc74d9ca485db19e0e00a3b64f5b3ffedef2",
+      "bytes": 4489
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_76.glif": {
+      "sha256": "1c0809ee54b6acd15a30b50673fd66076d9dbbd5014c955c56b658867beafb99",
+      "bytes": 6506
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_77.glif": {
+      "sha256": "f7acf9f00473b268265c5509b74204cd3b34a7e7074a0aa6be2dae4d6c637a08",
+      "bytes": 6803
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_78.glif": {
+      "sha256": "76e755daaed2444c243c0245cfb363ed5b5822fb7311d7423afdfcca05e6dc43",
+      "bytes": 8979
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_79.glif": {
+      "sha256": "af04527a28572a2c1faff0045e11edf5b1cc59fd04d1a5cc9566220d5e9ade3e",
+      "bytes": 7237
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7A_.glif": {
+      "sha256": "5285502aebcfc12652d659e6eddf91700ee3ee0d8bd4c65c8ddff05cfb845c04",
+      "bytes": 9122
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7B_.glif": {
+      "sha256": "0478e6ba4b15ac455091d95480b142e23cc5535dd1f4f3b72069049a00dd1404",
+      "bytes": 8558
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7C_.glif": {
+      "sha256": "5b8fc77044f30dbccd4c74d7cd98742135a934fcf0fd59d0a019c8714dd3678f",
+      "bytes": 10734
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7D_.glif": {
+      "sha256": "5675d491e7d6166edd5be43fd495d1c7833f7a8d4e58d0ed7a7c4187e2087588",
+      "bytes": 7058
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7E_.glif": {
+      "sha256": "3eb6f5da7ebe1fe2678548220c7a31647080fb6e61c924e45e359fc2908d2e25",
+      "bytes": 8943
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_7F_.glif": {
+      "sha256": "2c7b0e72a56aab677e3fdc77d58490997e8ae298dd4667f6c46df666e1e71768",
+      "bytes": 9581
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2A_80.glif": {
+      "sha256": "cd33b5577064117c36e09318191ed978516eba7c16ffca29ee51e994a1433802",
+      "bytes": 11762
+    },
+    "sources/QuintessentialSerif-BoldItalic.ufo/glyphs/_notdef.glif": {
+      "sha256": "ac2f09565fe19e1eac9556687a2d375018b4dc4392ae19053f39607226644599",
+      "bytes": 2725
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/contents.plist": {
+      "sha256": "8cdf5d4bccd499b1d2c315c30aaa52c4f9df146bac829a1bb7dd4024f94becf7",
+      "bytes": 7703
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/space.glif": {
+      "sha256": "f34e4a92facb7742b070801a1e70f46ad45c30293899c697de47641c7fcb6c66",
+      "bytes": 488
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_00.glif": {
+      "sha256": "a5f7edf9ac326bb21afac4740038e5a0b36b3c89677fa66352757e122c389740",
+      "bytes": 1419
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_01.glif": {
+      "sha256": "1233160a59947473fc0dba8c8156c1e05aa488075d2b53199a8e7d45dee15c60",
+      "bytes": 1435
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_02.glif": {
+      "sha256": "3af3bddb05fc2c2703a4b6e075979a906649ff256751f858dac10cf7cd7a04a2",
+      "bytes": 5512
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_03.glif": {
+      "sha256": "c3d95ab4d6eec8c555ab312752d6b4ef532508b79da6b7970befae01bcb5d20a",
+      "bytes": 3653
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_04.glif": {
+      "sha256": "76cca84926658d64f4595e572eb0dacea77d402cd271d2d50fc9387527ada0c5",
+      "bytes": 2702
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_05.glif": {
+      "sha256": "cf9f4a324935bf0d8369b6a76818e7e4aea847541115ef7992d51313b2b260b9",
+      "bytes": 3806
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_06.glif": {
+      "sha256": "247fd228e2836289021b8cd467d4546727b9c11018a1ebcdbc0822fe207ee1ef",
+      "bytes": 1697
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_07.glif": {
+      "sha256": "2842964e46f2f79a932a608e254deaf587ef1c59e30b51d359c2cc880880f64c",
+      "bytes": 4387
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_08.glif": {
+      "sha256": "eb9dde2b3a3cca3583ed263833d5da667e6cd4601c68c20c5467a004c1ebb7ac",
+      "bytes": 2127
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_09.glif": {
+      "sha256": "353810c6500c5b7002ee2dc1579bab2c747f27d8dfb4217d4deefccd08897f5e",
+      "bytes": 2129
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0A_.glif": {
+      "sha256": "28fc8b83187074936104fca60369a7942b9917a385c70dc9f603725e43795ca0",
+      "bytes": 2677
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0B_.glif": {
+      "sha256": "8e10c57c82917d64e454d0292d6fbe9855086b4c3d73fc46cb6af366d3e9164a",
+      "bytes": 2225
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0C_.glif": {
+      "sha256": "e2fd044c16c744a8470c46c34204173a1a7729ea2e20c59bf79215f8bebd6ff4",
+      "bytes": 2266
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0D_.glif": {
+      "sha256": "a661c0c3532b9476e8884291b44c9dd209a84c8bf0bcc0f4664496b50701d2be",
+      "bytes": 2312
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0E_.glif": {
+      "sha256": "6cb86ab418e03ab2cfb958efd8b145def771f299f0f3ca3476ce659b99cefdaa",
+      "bytes": 2921
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_0F_.glif": {
+      "sha256": "7c29f9805c4c0d8335cf185d4e002baf01074430ddbf8113e7d0712733fd3ad3",
+      "bytes": 2230
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_10.glif": {
+      "sha256": "509035a8943c314a943d62dcba3870b85975b82bed4da452d334b5a829cd75d6",
+      "bytes": 2589
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_11.glif": {
+      "sha256": "5675d964df889ea9261abc75d107f1fb4e17b331b3904078c1e4f7e9e651fc47",
+      "bytes": 2794
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_12.glif": {
+      "sha256": "334286662dde4448c92d0203e367ed949f5ad79f7ccdbd9c56bc528f04a0c4d8",
+      "bytes": 3391
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_13.glif": {
+      "sha256": "8cffc5ba3d5f1926bd1fcb2daa0f82bc2a81137f47092122be00d973ff861363",
+      "bytes": 2565
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_14.glif": {
+      "sha256": "98b4e925be4784be5b3ea7243acb1c0f131c594206ef76c1df7a44cc96a60fff",
+      "bytes": 2924
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_15.glif": {
+      "sha256": "68949af9f78429bd00d139fc92c7de07b5fd66292118cdc66566d56df0ce2b5a",
+      "bytes": 2642
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_16.glif": {
+      "sha256": "e85a3829d6faecf1095ddb50f06369faa1b0c8181c242f08a536bbd64cdc2e0f",
+      "bytes": 3857
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_17.glif": {
+      "sha256": "c5b1763b0f43f35187d722cf75ab041531cd27fe81913c99eea514e68f3823fc",
+      "bytes": 2175
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_18.glif": {
+      "sha256": "1a6531e276c4306eb22e7fdf051f2dea268e7488e80e91d174bcef493c124c8c",
+      "bytes": 2937
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_19.glif": {
+      "sha256": "6e39d8efe00ad17c0b88c605750d14575457a1f75b3c15deb28be85979406f0e",
+      "bytes": 2528
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1A_.glif": {
+      "sha256": "a43a375a86e951dd5fb17bf57796079b6ca662b194d52ba716d6de252ce6ce17",
+      "bytes": 3195
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1B_.glif": {
+      "sha256": "7460b8ce660250c3e93d2de52466cdefd63c0ebfda92b2b3f563531124080273",
+      "bytes": 3383
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1C_.glif": {
+      "sha256": "dda3fea9278825237d705960ca595856042e891560d3043bdf7b1e9a323bfea7",
+      "bytes": 4079
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1D_.glif": {
+      "sha256": "e7127a99861bc7d6762b2f83869b53f9bb70ffd65db5f7a5ad6e96136f7b41f9",
+      "bytes": 2881
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1E_.glif": {
+      "sha256": "d2fb0c0508681eb3dd83a6e47d81097649683a92e043dfc5eab04ce1a4d9a16b",
+      "bytes": 3521
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_1F_.glif": {
+      "sha256": "888aab619d46f0b7182cc8188558857f6dc2598cdbb3f59ebb29c702fbb514a2",
+      "bytes": 3992
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_20.glif": {
+      "sha256": "af64690a363beb0fc32400d30eb4381b3924bddd5271807714081468ee9179a5",
+      "bytes": 4777
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_21.glif": {
+      "sha256": "c3f17692ac8730347583ce9494a47faa1bfe2a4cdd67b2c7df002ffa0a4cb5d0",
+      "bytes": 3767
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_22.glif": {
+      "sha256": "d6140b377162e2730c5b40c951c9cdc01c3a4a90d843a77985705183961a0e69",
+      "bytes": 2649
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_23.glif": {
+      "sha256": "724a5db1a95011e55445d1fe0c9ccb83f802e439b75e3328d65b04af3391f6b2",
+      "bytes": 2151
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_24.glif": {
+      "sha256": "2293e2b87f875295675b148bd76a9171f8a1134a7bdc6314a56effd9b0eb6c45",
+      "bytes": 2471
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_25.glif": {
+      "sha256": "d0c14cdc3f2311468f64aac0ba2fab7d7c86f85a0901475959d69af329c5cba5",
+      "bytes": 2139
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_26.glif": {
+      "sha256": "d1d2094bdfdfa1b3070a21caac7707befa314c4af4af6bd31958042d86d31563",
+      "bytes": 2658
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_27.glif": {
+      "sha256": "4c7a38f9f99505d06413f4ecacdd6432c4165d55a498cb6ecb4477d0bb92bb65",
+      "bytes": 2246
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_28.glif": {
+      "sha256": "0e789275feae02dadf2e0b6b2d694c8489760ac6c07f274c7686933b0ddd7839",
+      "bytes": 3066
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_29.glif": {
+      "sha256": "10af59b8e13206de18ae6e112eaa92d78357db5124e4f4d2b38a61c5036cb0d3",
+      "bytes": 3463
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2A_.glif": {
+      "sha256": "0d69f97fbbd987767f824b267fe0719695f507ea9ab151111984e693b5646f36",
+      "bytes": 4427
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2B_.glif": {
+      "sha256": "cc5fd87eab336dfb51b4281d112cf5ee09d80a1fd891322a4d5b4fa5ac0092b6",
+      "bytes": 3219
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2C_.glif": {
+      "sha256": "0f65c541c7a8408aa5bbf93e9c0ddd92e2558aee9a57220ca9d4a16c9cc747b0",
+      "bytes": 3535
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2D_.glif": {
+      "sha256": "3576069d810383ebae565f3bcbb49c558d47b85034378a19e8ab72b3762e8a6b",
+      "bytes": 3190
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2E_.glif": {
+      "sha256": "77fd3d002cacd8dd5f32617b5d0cd8c97e115f4f79916e388288caac60c965b9",
+      "bytes": 4993
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_2F_.glif": {
+      "sha256": "33b1a0deb09570e7999a20b7429d787e5e6c98d44e9ca9c2e3f20637265a80c6",
+      "bytes": 3021
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_30.glif": {
+      "sha256": "fb985a50115f8819c6867e580f4f366e4ccfb9c1b4a1e555891c5bb9e5c2d80b",
+      "bytes": 3842
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_31.glif": {
+      "sha256": "1d2dbb326423bdac1d24099ca18724e306507af5b79827aebcd08f1ec9f4657d",
+      "bytes": 3221
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_32.glif": {
+      "sha256": "df3bce07840ec75aac58de0c6fbfdda821bda99a8236bd5ca4fb1cc773418ddb",
+      "bytes": 4426
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_33.glif": {
+      "sha256": "c83d9690643621cb6beedd0f9c0cd637852501e7d4dcd09235953c6d178cefd4",
+      "bytes": 4181
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_34.glif": {
+      "sha256": "772410fe758daed9f303ddd3ffd9dd7dff9d266c50a979459f7cd5171f7df60c",
+      "bytes": 4900
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_35.glif": {
+      "sha256": "1f2fcdbf00e2221728c1ce9468f27b367415da82af9d2620fb0208e228089cd7",
+      "bytes": 3572
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_36.glif": {
+      "sha256": "fc3857198dec3f7f13ee36a2e4df1a9b545da5a0266389e8c59b82ba2693c987",
+      "bytes": 4777
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_37.glif": {
+      "sha256": "226fdb4318f09e3d5b2a34d68eaabc2d7f94572a2edd135f2d9a6c2f399311c2",
+      "bytes": 4889
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_38.glif": {
+      "sha256": "6e1eea4628380204d025b40fbad2cc7152f887dacd76abbaf3821c2d3d8c7ca6",
+      "bytes": 5710
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_39.glif": {
+      "sha256": "04ffd3268050560926f248ae4817d06db81336fb24d74e2832e1a8bf16fcecd0",
+      "bytes": 2790
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3A_.glif": {
+      "sha256": "9e0ac53ee85983dffeaa68b4c9f448df05c9af3d0344cb9bb65ed5a16868e6f8",
+      "bytes": 2730
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3B_.glif": {
+      "sha256": "50c44b20fed534680ffaf9c784a1f37bd82208032547d9013694867f62ee946d",
+      "bytes": 3360
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3C_.glif": {
+      "sha256": "c95ae91a83f140bf12502f60e76b64d2395d6964345faa782774fc6de72d885f",
+      "bytes": 4084
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3D_.glif": {
+      "sha256": "b798a74fadb245cd7b591bd2945307bf051972812e7008561fa24dc380c1fe94",
+      "bytes": 2830
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3E_.glif": {
+      "sha256": "d8fcecb9f6e07dc8ec1452452270bca061f042574611b5472a5bd23bfa862ba4",
+      "bytes": 2805
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_3F_.glif": {
+      "sha256": "623745fd8314ae466135ad8988d7d3e7e52bd0fada84b34d77ad234e5975941c",
+      "bytes": 4520
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_40.glif": {
+      "sha256": "90c0f33ec26baedf4b3a30a6c34df37e65e161d786ee5af3c55ff7f1561eda41",
+      "bytes": 5131
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_41.glif": {
+      "sha256": "5efd4933f960d5aa65364dad8b9564091d446342db7fc3257a91f77b5fea4be7",
+      "bytes": 3181
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_42.glif": {
+      "sha256": "c20b38c4cce838c8f6abd887f2c61510cfc8974d17313fe5698ccf59d197c289",
+      "bytes": 3158
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_43.glif": {
+      "sha256": "21299e761c15e341dd135d6bf6a86b5ab364c2c68dd466c6945d9121cf60de24",
+      "bytes": 5228
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_44.glif": {
+      "sha256": "b29e4624d8d3531cfffc2c1c7e2f01ca0d7d63b1a41a964c9db1bfd8d9d28f3f",
+      "bytes": 5944
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_45.glif": {
+      "sha256": "9570e7e046a5cd06964265b6033735bbc08c30dd047a704384402b738b405b3a",
+      "bytes": 3844
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_46.glif": {
+      "sha256": "d419c321140c1d768c40a9d39ac4441d3ef38e2381728bae438d413dc59f299d",
+      "bytes": 4842
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_47.glif": {
+      "sha256": "2b229c9eeec5b71f195dc3eca162adbb87984594e4664117729bf7b18c2852be",
+      "bytes": 3366
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_48.glif": {
+      "sha256": "59953a2d98b65414a83b8c47c2489a24faaacc12e9561bd1e1f299a088e8ce4f",
+      "bytes": 3897
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_49.glif": {
+      "sha256": "0216d153e82303510487adeab730f9e97d70a8cc5257cdb570efff073faf5e3e",
+      "bytes": 3730
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4A_.glif": {
+      "sha256": "6e9b45897f6804756657cd025baa486cc6ea6c044f8572d4f316ee4034bc4fb7",
+      "bytes": 4172
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4B_.glif": {
+      "sha256": "4e1d2e143b0f1b4e7db6b42e2b29d490dba52cd4213a81bf23deb67b5f8b4625",
+      "bytes": 4335
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4C_.glif": {
+      "sha256": "3598133e59f3c82be8ca605638c04dc1292eec279ea1a878bcc6442e93e008b4",
+      "bytes": 4764
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4D_.glif": {
+      "sha256": "8e9d62739ad2be1af769b79b6a79d604c2540412a9d05f7d99528c19c294c4de",
+      "bytes": 4044
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4E_.glif": {
+      "sha256": "e7cd001ea5bb425d0813978195160298cc29c12b604b71d1cce58a2c8ee7960c",
+      "bytes": 4486
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_4F_.glif": {
+      "sha256": "c7b045be09ae4ef07ae2d43f4fdaa3c586f8838f0e4c6d9f8e594d69a0ed71c7",
+      "bytes": 4878
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_50.glif": {
+      "sha256": "2b81662f0915e16849a708ab814e48372a6b4045854e8b344c6730e7d4d390e6",
+      "bytes": 5409
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_51.glif": {
+      "sha256": "14d82518f755d433937ac542c8d3fd5c14f9056a9f5daefd560f50233925154e",
+      "bytes": 3862
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_52.glif": {
+      "sha256": "cb28ebf6be5797555d83b70648db955bd1bf2404ec5d4d93988f99b8a9c5507e",
+      "bytes": 4706
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_53.glif": {
+      "sha256": "04fcb0f4ca5b3f24fd172c4348618118e02c8d0ce6190deada2c5bbb102b292f",
+      "bytes": 3458
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_54.glif": {
+      "sha256": "04a5d69cdcf27e43cbe7ee2e451464a8cc00d33a8ab4de781cdf5260cc0a75e9",
+      "bytes": 4333
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_55.glif": {
+      "sha256": "4538d1c638d5b915b38661e8add1898e72456f0a18c91091aaf206de98797c8d",
+      "bytes": 4646
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_56.glif": {
+      "sha256": "05845295fa91c5fe4e64429517fbb6676bd5dd84b05634d53c6bd241724b2aab",
+      "bytes": 5352
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_57.glif": {
+      "sha256": "f1831d7ca2a7af489dbd1adff037e12bebafdcd25023066772af2de5237d8364",
+      "bytes": 4813
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_58.glif": {
+      "sha256": "1d2ab511adf2cfe716f51923440a5f457fcc751ef69a35d1276d40287c754a46",
+      "bytes": 5556
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_59.glif": {
+      "sha256": "a1482c05ef05811a267d7bd7c0fe06fc78042b8d87f48b724d369d4a05b95d11",
+      "bytes": 4975
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5A_.glif": {
+      "sha256": "66708bfd2121e751b7c6addbb6575828fa8ee32996fd55bf3b6b7319ea65fa81",
+      "bytes": 5681
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5B_.glif": {
+      "sha256": "cee196122b5ce7852e28515abc5f04cbb5d7813974b498b1fa415c0d704bd413",
+      "bytes": 5251
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5C_.glif": {
+      "sha256": "0238b7fc46af5539254817f1587e9dde139fdd2e3099d8912ba5fcc4c78cf7a9",
+      "bytes": 5994
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5D_.glif": {
+      "sha256": "920df5f93ed081770da303007c48d98f5769af1e10fd8b2f9e666955583a300e",
+      "bytes": 3947
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5E_.glif": {
+      "sha256": "db8964439e8ebfb340275fbf7d61c1a024d5f5df25c4e6e56459511768b94492",
+      "bytes": 4945
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_5F_.glif": {
+      "sha256": "2b40b216bf1a033968f2640be6cdceaa347074073a1b70520a89cc00e6c09ae3",
+      "bytes": 3649
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_60.glif": {
+      "sha256": "37bcb715d31e1607261936990439d3baa5912d4debe2cc3a732285836004e149",
+      "bytes": 4180
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_61.glif": {
+      "sha256": "74b39e1cd72b599067b52b419d31719dc2c45929856313cb700ea462337979b7",
+      "bytes": 3863
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_62.glif": {
+      "sha256": "321dabea922be2fa84db3af7f59c1a8764af2bbc1ff4f421ab5f4a1cb5db0fa7",
+      "bytes": 4305
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_63.glif": {
+      "sha256": "53575b967baec67ce251186cb61c052d2068152b304e0555037a75871948eab4",
+      "bytes": 4516
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_64.glif": {
+      "sha256": "64738651bc94adbbe4618fe38b842d310a3649288febba5c53812aa3594294d5",
+      "bytes": 4945
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_65.glif": {
+      "sha256": "3cadb179adce87b376457be6dee61be08a832963264595d7a9181dde95dcdc51",
+      "bytes": 4177
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_66.glif": {
+      "sha256": "b490b1a7b374f1702616bc3c72a0a3222036eb591d61d32baa53042ee04cbe99",
+      "bytes": 4619
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_67.glif": {
+      "sha256": "8741924aba74c5225512d624dffc43ec63c4e87d384aa0ac13d7ca68150ce86e",
+      "bytes": 5161
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_68.glif": {
+      "sha256": "5b40867c89b4858a74321d70cfccde1768b696e1eac904dda44c3f26309d3d19",
+      "bytes": 5692
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_69.glif": {
+      "sha256": "e317f3a64853378b1811e137528c2bbd7fd649d1eb4732fe04e1354cf515a537",
+      "bytes": 4716
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6A_.glif": {
+      "sha256": "66c5bb98b9d81d535ccced675a848a98420945c4b098364792253d6137bea5ff",
+      "bytes": 5422
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6B_.glif": {
+      "sha256": "f9dee32275974571c32fd95b80ef4a081e7029b18d554849baca066c50ac8d1b",
+      "bytes": 4323
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6C_.glif": {
+      "sha256": "d32ba84438df12c4167e9e6de6332249cd626389fd99409872f0e1f42ede2142",
+      "bytes": 5066
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6D_.glif": {
+      "sha256": "a519ebac70b344924305d08a16560573e03a37bd7a3dbbde8a4004f40ee850e7",
+      "bytes": 5362
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6E_.glif": {
+      "sha256": "cd4e3dc335b9e7a4069fa29d10bf65fbc12ce2f1a9e48758b2de4463a6ba9e27",
+      "bytes": 6068
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_6F_.glif": {
+      "sha256": "f0bf86f3108930f86efeeb75cc411cb1770da079459982282ef2be1ba1c534a2",
+      "bytes": 5546
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_70.glif": {
+      "sha256": "95a8e754f322bf8d9b99876603dd6fe966faeba4612ae90ea34563b6b2c1f55a",
+      "bytes": 6289
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_71.glif": {
+      "sha256": "f072ff30bf2114b7dcd1680a0fde7e19f806c8beffc8ea814b295924b3f54587",
+      "bytes": 5691
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_72.glif": {
+      "sha256": "00ed1eec39f0efc0512bcb633ea17334289716e2f4ac90825ffb109e490668a0",
+      "bytes": 6397
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_73.glif": {
+      "sha256": "76c812a320196d60b85721e62141777d09a5edbdc60201025dc4e30d829bf61c",
+      "bytes": 5984
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_74.glif": {
+      "sha256": "5947af5c9b1cfe1c2fc62cfa1d3eceff4154cf5eba87cd710e6909071c8b4cff",
+      "bytes": 6727
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_75.glif": {
+      "sha256": "7bf26869996447fe44677ced3bb9bd0583cc6795d22039c97ced8c37e63513f6",
+      "bytes": 3932
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_76.glif": {
+      "sha256": "c4f6ebd8ae19ba7118b99c4ca5d4ba0f1de7a13ae3d62d6a046fdfec0748225f",
+      "bytes": 4770
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_77.glif": {
+      "sha256": "354558b0a0bd8d570c1f0d63bbc9caa35c1591b59458e8414b1e268dfc3ab8b9",
+      "bytes": 4655
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_78.glif": {
+      "sha256": "1c7188c2b9388a12a02d4f40cfb0a7046511c98415f6872d8c534a5a85a6e190",
+      "bytes": 5398
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_79.glif": {
+      "sha256": "9e58b9d5a79c2bdbd07c51f4630da6efb7b27ec28b50fde6acec0c13f81187ee",
+      "bytes": 5747
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7A_.glif": {
+      "sha256": "5b018486582fca11e21c4d8829b6f9750cf7c2a26ac4b18d1350a76a83e53b51",
+      "bytes": 6453
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7B_.glif": {
+      "sha256": "3e22183b3adf38163580dc94d91643ec14c0e40a05630fdbd01a6d76bdb578e6",
+      "bytes": 5878
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7C_.glif": {
+      "sha256": "9c7fd4a0063905fe69f0888bfb5cb5ee1fbbdb72cc50e509ab5a2b95f7909a46",
+      "bytes": 6621
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7D_.glif": {
+      "sha256": "f13b43e984873ad82054204d8c47772836be57f5e316c29e2545c086b4b5ac13",
+      "bytes": 6098
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7E_.glif": {
+      "sha256": "f534416a5ebaf1edd342498d3f7ccade4eac8d1f215e0a18a679dc156c961ba6",
+      "bytes": 6804
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_7F_.glif": {
+      "sha256": "fe262988db53cf72c93d356dad6d468382e6d425113350ea5b4181a3d5dd7b4c",
+      "bytes": 6316
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/uF_2A_80.glif": {
+      "sha256": "ad8b247004464c0ace9c2475d8ef1418b12181b1f181ff8334e3e7723cf34024",
+      "bytes": 7059
+    },
+    "sources/QuintessentialSerif-Bold.ufo/glyphs/_notdef.glif": {
+      "sha256": "ac2f09565fe19e1eac9556687a2d375018b4dc4392ae19053f39607226644599",
+      "bytes": 2725
+    },
+    "outputs/FONTLOG.txt": {
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204",
+      "bytes": 42578
+    },
+    "outputs/OFL.txt": {
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
+      "bytes": 4519
+    },
+    "outputs/QuintessentialSerif-Bold.otf": {
+      "sha256": "f44d6e907e35e80909445359b905ccb1a4701044ba66d3bf841431e069e97e4c",
+      "bytes": 146532
+    },
+    "outputs/QuintessentialSerif-BoldItalic.otf": {
+      "sha256": "8dc9f168744c21689f91d48da235d2715db49b4cf97ea9255034d5e1b43ebe6f",
+      "bytes": 247252
+    },
+    "outputs/QuintessentialSerif-Italic-Variable.ttf": {
+      "sha256": "2e906b6586582e13f2b124efc932fce041bef4bddff208f359eb5b57733d0359",
+      "bytes": 74040
+    },
+    "outputs/QuintessentialSerif-Italic.otf": {
+      "sha256": "d502f334e6d980e789680efff5bf54671f256f6130387c24a9845915222d5582",
+      "bytes": 240800
+    },
+    "outputs/QuintessentialSerif-Regular.otf": {
+      "sha256": "0d18f93fe355bc4cd85c5cf2a3e4e8e4399839843a0c2924354d65e1986e0e5b",
+      "bytes": 143668
+    },
+    "outputs/QuintessentialSerif-Variable.ttf": {
+      "sha256": "9370e5f6cba4802d495a96d9453e830e0b63eaaa9fcd3f46e13ac79ab87f0347",
+      "bytes": 60808
+    },
+    "outputs/TRADEMARKS.txt": {
+      "sha256": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4",
+      "bytes": 92
+    }
+  },
+  "sourceBuildManifestSha256": "40b8d12dec1c142d987dc62b35e2d1cddc4b7a9fdb336b108026777a5ed48602"
+}

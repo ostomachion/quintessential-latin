@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>762</integer>
+    <key>capHeight</key>
+    <integer>657</integer>
+    <key>copyright</key>
+    <string>Copyright 2001-2021 The STIX Fonts Project Authors (https://github.com/stipub/stixfonts). Modified 2026 for Quintessential Serif.</string>
+    <key>descender</key>
+    <integer>-238</integer>
+    <key>familyName</key>
+    <string>Quintessential Serif</string>
+    <key>italicAngle</key>
+    <real>0.0</real>
+    <key>openTypeHeadCreated</key>
+    <string>2026/09/04 00:00:00</string>
+    <key>openTypeHheaAscender</key>
+    <integer>762</integer>
+    <key>openTypeHheaCaretOffset</key>
+    <integer>0</integer>
+    <key>openTypeHheaCaretSlopeRise</key>
+    <integer>1000</integer>
+    <key>openTypeHheaCaretSlopeRun</key>
+    <integer>0</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-238</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>250</integer>
+    <key>openTypeNameDescription</key>
+    <string>A sparse experimental script font derived from STIX Two Text 2.13 b171; U+F2A00-U+F2A2C implement the complete Stems, Arms, Arches and Bowls families.</string>
+    <key>openTypeNameDesigner</key>
+    <string>Original STIX Two design: Ross Mills, John Hudson and Paul Hanslow, Tiro Typeworks Ltd; with prior portions by MicroPress Inc. and Coen Hoffman.</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>https://www.stixfonts.org</string>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. See the accompanying OFL.txt.</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://openfontlicense.org</string>
+    <key>openTypeNameManufacturer</key>
+    <string>The STIX Fonts Project Authors; modified for Quintessential Serif</string>
+    <key>openTypeNameUniqueID</key>
+    <string>0.150;QLAT;QuintessentialSerif-Regular</string>
+    <key>openTypeNameVersion</key>
+    <string>Version 0.150</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>762</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-238</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>250</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>QLAT</string>
+    <key>openTypeOS2WeightClass</key>
+    <integer>400</integer>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1047</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>441</integer>
+    <key>postscriptBlueFuzz</key>
+    <integer>1</integer>
+    <key>postscriptBlueScale</key>
+    <real>0.039625</real>
+    <key>postscriptBlueShift</key>
+    <integer>7</integer>
+    <key>postscriptBlueValues</key>
+    <array>
+      <integer>-16</integer>
+      <integer>0</integer>
+      <integer>465</integer>
+      <integer>485</integer>
+      <integer>649</integer>
+      <integer>669</integer>
+      <integer>704</integer>
+      <integer>722</integer>
+    </array>
+    <key>postscriptFontName</key>
+    <string>QuintessentialSerif-Regular</string>
+    <key>postscriptForceBold</key>
+    <false/>
+    <key>postscriptFullName</key>
+    <string>Quintessential Serif Regular</string>
+    <key>postscriptOtherBlues</key>
+    <array>
+      <integer>-242</integer>
+      <integer>-220</integer>
+    </array>
+    <key>postscriptStemSnapH</key>
+    <array>
+      <integer>28</integer>
+    </array>
+    <key>postscriptStemSnapV</key>
+    <array>
+      <integer>83</integer>
+    </array>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-78</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>51</integer>
+    <key>styleMapFamilyName</key>
+    <string>Quintessential Serif</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Regular</string>
+    <key>trademark</key>
+    <string>STIX Fonts is a trademark of The Institute of Electrical and Electronics Engineers, Inc.</string>
+    <key>unitsPerEm</key>
+    <integer>1000</integer>
+    <key>versionMajor</key>
+    <integer>0</integer>
+    <key>versionMinor</key>
+    <integer>150</integer>
+    <key>xHeight</key>
+    <integer>473</integer>
+  </dict>
+</plist>

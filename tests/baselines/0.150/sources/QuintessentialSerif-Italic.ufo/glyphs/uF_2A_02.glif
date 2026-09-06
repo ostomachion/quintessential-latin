@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A02" format="2">
+  <advance width="271"/>
+  <unicode hex="F2A02"/>
+  <outline>
+    <contour>
+      <point x="115.260976" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="140" y="447" type="line" smooth="yes"/>
+      <point x="147.99999786619733" y="497.9999895845072"/>
+      <point x="159.0" y="541.5" type="qcurve" smooth="yes"/>
+      <point x="169.9999995" y="585.0"/>
+      <point x="189.0" y="618.0" type="qcurve" smooth="yes"/>
+      <point x="202.00000120000004" y="642.0000012923077"/>
+      <point x="221.5" y="663.0" type="qcurve" smooth="yes"/>
+      <point x="240.99999961930587" y="683.9999995900217"/>
+      <point x="270.0" y="697.5" type="qcurve" smooth="yes"/>
+      <point x="298.99999949999994" y="711.0"/>
+      <point x="342.0" y="711.0" type="qcurve" smooth="yes"/>
+      <point x="372.9999988947369" y="711.0"/>
+      <point x="394.0" y="701.5" type="qcurve" smooth="yes"/>
+      <point x="415.00000072570197" y="692.0000001717062"/>
+      <point x="426.0" y="676.0" type="qcurve" smooth="yes"/>
+      <point x="437.0" y="659.9999987727273"/>
+      <point x="437.0" y="638.0" type="qcurve" smooth="yes"/>
+      <point x="437.0" y="615.9999995000001"/>
+      <point x="425.0" y="605.0" type="qcurve" smooth="yes"/>
+      <point x="412.9999994545455" y="594.0"/>
+      <point x="397.0" y="594.0" type="qcurve" smooth="yes"/>
+      <point x="376.9999996086957" y="594.0"/>
+      <point x="368.0" y="605.5" type="qcurve" smooth="yes"/>
+      <point x="358.9999992561984" y="617.0000014504132"/>
+      <point x="357.0" y="633.0" type="qcurve" smooth="yes"/>
+      <point x="354.00000016666667" y="651.9999994444445"/>
+      <point x="349.5" y="667.0" type="qcurve" smooth="yes"/>
+      <point x="345.0" y="682.0"/>
+      <point x="327.0" y="682.0" type="qcurve" smooth="yes"/>
+      <point x="289.00000022500006" y="682.0"/>
+      <point x="267.0" y="642.0" type="qcurve" smooth="yes"/>
+      <point x="244.99999925000006" y="601.9999990454547"/>
+      <point x="234.0" y="538.0" type="qcurve" smooth="yes"/>
+      <point x="195.121413" y="300" type="line" smooth="yes"/>
+      <point x="194.35568446874998" y="295.3125"/>
+      <point x="192.71880022250977" y="285.9375"/>
+      <point x="190.9883462230957" y="276.5625"/>
+      <point x="189.17521194755858" y="267.1875"/>
+      <point x="187.2902868729492" y="257.8125"/>
+      <point x="185.34446047631837" y="248.4375"/>
+      <point x="183.34862223471677" y="239.0625"/>
+      <point x="181.3136616251953" y="229.6875"/>
+      <point x="179.25046812480468" y="220.3125"/>
+      <point x="177.16993121059573" y="210.9375"/>
+      <point x="175.0829403596191" y="201.5625"/>
+      <point x="173.00038504892578" y="192.1875"/>
+      <point x="170.93315475556642" y="182.8125"/>
+      <point x="168.8921389565918" y="173.4375"/>
+      <point x="166.8882271290527" y="164.0625"/>
+      <point x="164.93230875" y="154.6875"/>
+      <point x="163.984275" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="157.916859" y="120" type="line"/>
+      <point x="157.916859" y="120.0"/>
+      <point x="156.66685925000002" y="112.24999974999999"/>
+      <point x="155.416859" y="104.5" type="qcurve" smooth="yes"/>
+      <point x="152.916859" y="89.00000359999919"/>
+      <point x="152.916859" y="78.0" type="qcurve" smooth="yes"/>
+      <point x="152.916859" y="59.0"/>
+      <point x="170.916859" y="59.0" type="qcurve" smooth="yes"/>
+      <point x="196.9168585" y="59.0"/>
+      <point x="215.916859" y="78.5" type="qcurve" smooth="yes"/>
+      <point x="234.91685876923088" y="97.99999925000013"/>
+      <point x="246.916859" y="111.0" type="qcurve"/>
+      <point x="266.916859" y="96" type="line"/>
+      <point x="249.91686338188916" y="72.00000548031426"/>
+      <point x="229.916859" y="47.5" type="qcurve" smooth="yes"/>
+      <point x="209.91685950000002" y="23.0000005"/>
+      <point x="184.916859" y="7.0" type="qcurve" smooth="yes"/>
+      <point x="159.91685928125" y="-9.0"/>
+      <point x="126.916859" y="-9.0" type="qcurve" smooth="yes"/>
+      <point x="96.916859" y="-9.0"/>
+      <point x="80.416859" y="4.5" type="qcurve" smooth="yes"/>
+      <point x="63.916859" y="18.0"/>
+      <point x="63.916859" y="44.0" type="qcurve" smooth="yes"/>
+      <point x="63.916859" y="56.999996571428056"/>
+      <point x="67.416859" y="77.5" type="qcurve" smooth="yes"/>
+      <point x="70.91685849999999" y="98.0000005"/>
+      <point x="80.916859" y="142.0" type="qcurve" smooth="yes"/>
+      <point x="82.631145" y="150" type="line" smooth="yes"/>
+      <point x="83.86740876923078" y="155.76923076923077"/>
+      <point x="86.43006032314901" y="167.30769230769232"/>
+      <point x="89.05939398038991" y="178.8461538461538"/>
+      <point x="91.7339088788689" y="190.38461538461536"/>
+      <point x="94.4321041565013" y="201.9230769230769"/>
+      <point x="97.1324789512024" y="213.46153846153845"/>
+      <point x="99.81353240088757" y="225.0"/>
+      <point x="102.45376364347216" y="236.53846153846152"/>
+      <point x="105.03167181687148" y="248.07692307692307"/>
+      <point x="107.5257560590009" y="259.61538461538464"/>
+      <point x="109.91451550777576" y="271.1538461538462"/>
+      <point x="112.17644930111135" y="282.69230769230774"/>
+      <point x="114.29005657692309" y="294.2307692307693"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>lowerCutY</key>
+        <real>150.0</real>
+        <key>lowerDonorCodePoint</key>
+        <integer>305</integer>
+        <key>lowerDonorGlyph</key>
+        <string>dotlessi</string>
+        <key>lowerOffsetX</key>
+        <real>11.916859</real>
+        <key>method</key>
+        <string>Long-s upper hook without its cross stroke, joined to the native dotless-i baseline finish; the italic has no descending swash.</string>
+        <key>upperCutY</key>
+        <real>300.0</real>
+        <key>upperDonorCodePoint</key>
+        <integer>383</integer>
+        <key>upperDonorGlyph</key>
+        <string>longs</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

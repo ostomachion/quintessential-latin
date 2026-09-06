@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2B05" format="2">
+  <advance width="586"/>
+  <unicode hex="F2B03"/>
+  <outline>
+    <contour>
+      <point x="327" y="-220" type="line"/>
+      <point x="14" y="-220" type="line"/>
+      <point x="14" y="-180" type="line"/>
+      <point x="61" y="-180"/>
+      <point x="87" y="-150"/>
+      <point x="87" y="-108" type="qcurve" smooth="yes"/>
+      <point x="87" y="363" type="line" smooth="yes"/>
+      <point x="87" y="393.183673"/>
+      <point x="74" y="416"/>
+      <point x="49" y="416" type="qcurve" smooth="yes"/>
+      <point x="39" y="416"/>
+      <point x="17" y="414"/>
+      <point x="17" y="414" type="qcurve"/>
+      <point x="17" y="456" type="line"/>
+      <point x="171" y="484" type="line"/>
+      <point x="228" y="484" type="line"/>
+      <point x="228" y="402" type="line"/>
+      <point x="233" y="402" type="line"/>
+      <point x="257.037736" y="441"/>
+      <point x="300.798742" y="486"/>
+      <point x="331" y="486" type="qcurve" smooth="yes"/>
+      <point x="403" y="486"/>
+      <point x="497" y="459"/>
+      <point x="542" y="409"/>
+      <point x="542" y="372" type="qcurve" smooth="yes"/>
+      <point x="542" y="337"/>
+      <point x="507" y="292"/>
+      <point x="454" y="265"/>
+      <point x="425" y="256" type="qcurve"/>
+      <point x="425" y="248" type="line"/>
+      <point x="449" y="242"/>
+      <point x="509" y="217"/>
+      <point x="553" y="166"/>
+      <point x="553" y="122" type="qcurve" smooth="yes"/>
+      <point x="553" y="74"/>
+      <point x="490" y="14"/>
+      <point x="395" y="-14"/>
+      <point x="345" y="-14" type="qcurve" smooth="yes"/>
+      <point x="313.065904" y="-14"/>
+      <point x="258.936842" y="-1.730769"/>
+      <point x="233" y="15" type="qcurve"/>
+      <point x="230" y="15" type="line"/>
+      <point x="230" y="-101" type="line" smooth="yes"/>
+      <point x="230" y="-133"/>
+      <point x="246" y="-167"/>
+      <point x="288" y="-179"/>
+      <point x="327" y="-179" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="230" y="279" type="qcurve"/>
+      <point x="292" y="279" type="line" smooth="yes"/>
+      <point x="325" y="279"/>
+      <point x="374" y="288.612121"/>
+      <point x="401" y="317.448485"/>
+      <point x="401" y="344.806061" type="qcurve" smooth="yes"/>
+      <point x="401" y="370.684848"/>
+      <point x="373" y="401"/>
+      <point x="338" y="401" type="qcurve" smooth="yes"/>
+      <point x="300.83871" y="401"/>
+      <point x="233.019355" y="313.857143"/>
+    </contour>
+    <contour>
+      <point x="230" y="223" type="line"/>
+      <point x="232.447368" y="165.577778"/>
+      <point x="288.736842" y="71"/>
+      <point x="323" y="71" type="qcurve" smooth="yes"/>
+      <point x="360" y="71"/>
+      <point x="405" y="103"/>
+      <point x="405" y="139" type="qcurve" smooth="yes"/>
+      <point x="405" y="183"/>
+      <point x="356" y="223"/>
+      <point x="306" y="223" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>586</integer>
+        <key>bodyDonorCodePoint</key>
+        <integer>112</integer>
+        <key>bowlHairline</key>
+        <integer>85</integer>
+        <key>counterDesign</key>
+        <string>native-bowl-epsilon-v2</string>
+        <key>counterJoinDonorCodePoint</key>
+        <integer>98</integer>
+        <key>counterStemX</key>
+        <integer>230</integer>
+        <key>family</key>
+        <string>double-bowls</string>
+        <key>glyphId</key>
+        <string>double-bowl-descender</string>
+        <key>lobeAnchor</key>
+        <string>native-bowl-free-extremum</string>
+        <key>lobeBottomY</key>
+        <integer>-14</integer>
+        <key>lobeDonorCodePoint</key>
+        <integer>604</integer>
+        <key>lobeOffsetX</key>
+        <integer>143</integer>
+        <key>lobeTopY</key>
+        <integer>486</integer>
+        <key>method</key>
+        <string>Native reversed-epsilon lobes and fitted b counter curves with a p descender; Roman only.</string>
+        <key>recipeCodePoint</key>
+        <integer>994053</integer>
+        <key>upperCounterTopY</key>
+        <integer>401</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

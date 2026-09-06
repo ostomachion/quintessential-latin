@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A35" format="2">
+  <advance width="562"/>
+  <unicode hex="F2A35"/>
+  <outline>
+    <contour>
+      <point x="399.0" y="150.0" type="qcurve" smooth="yes"/>
+      <point x="399" y="270" type="line" smooth="yes"/>
+      <point x="399" y="311"/>
+      <point x="387" y="380"/>
+      <point x="348" y="421"/>
+      <point x="307" y="421" type="qcurve" smooth="yes"/>
+      <point x="278" y="421"/>
+      <point x="220" y="393"/>
+      <point x="183" y="359" type="qcurve"/>
+      <point x="183" y="97" type="line" smooth="yes"/>
+      <point x="183" y="71"/>
+      <point x="191" y="41"/>
+      <point x="223" y="29"/>
+      <point x="257" y="29" type="qcurve"/>
+      <point x="257" y="0" type="line"/>
+      <point x="30" y="0" type="line"/>
+      <point x="30" y="29" type="line"/>
+      <point x="69" y="29"/>
+      <point x="100" y="51"/>
+      <point x="100" y="93" type="qcurve" smooth="yes"/>
+      <point x="100" y="483" type="line" smooth="yes"/>
+      <point x="100" y="592"/>
+      <point x="190" y="713"/>
+      <point x="287" y="713" type="qcurve" smooth="yes"/>
+      <point x="324" y="713"/>
+      <point x="380" y="697"/>
+      <point x="412" y="666"/>
+      <point x="412" y="643" type="qcurve" smooth="yes"/>
+      <point x="412" y="621"/>
+      <point x="387" y="600"/>
+      <point x="369" y="600" type="qcurve" smooth="yes"/>
+      <point x="350" y="600"/>
+      <point x="323" y="623"/>
+      <point x="300" y="653"/>
+      <point x="270" y="676"/>
+      <point x="246" y="676" type="qcurve" smooth="yes"/>
+      <point x="217" y="676"/>
+      <point x="183" y="637"/>
+      <point x="183" y="590" type="qcurve" smooth="yes"/>
+      <point x="183" y="403" type="line"/>
+      <point x="186" y="403" type="line"/>
+      <point x="233" y="447"/>
+      <point x="308" y="485"/>
+      <point x="348" y="485" type="qcurve" smooth="yes"/>
+      <point x="391" y="485"/>
+      <point x="444" y="451"/>
+      <point x="472" y="396"/>
+      <point x="482" y="331"/>
+      <point x="482" y="300" type="qcurve" smooth="yes"/>
+      <point x="482" y="150" type="line" smooth="yes"/>
+      <point x="482.0" y="125.00000025000001"/>
+      <point x="482.0" y="74.99999974999999"/>
+      <point x="482.0" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="482" y="-113" type="line" smooth="yes"/>
+      <point x="482" y="-145"/>
+      <point x="498" y="-179"/>
+      <point x="540" y="-191"/>
+      <point x="579" y="-191" type="qcurve"/>
+      <point x="579" y="-220" type="line"/>
+      <point x="326" y="-220" type="line"/>
+      <point x="326" y="-192" type="line"/>
+      <point x="373" y="-192"/>
+      <point x="399" y="-161"/>
+      <point x="399" y="-119" type="qcurve" smooth="yes"/>
+      <point x="399" y="50" type="line" smooth="yes"/>
+      <point x="399.0" y="74.99999974999999"/>
+      <point x="399.0" y="125.00000025000001"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>archDonorCodePoint</key>
+        <integer>615</integer>
+        <key>method</key>
+        <string>Native heng with hook arch and left head with the complete p descender finish on the right; the native arch advance is retained.</string>
+        <key>rightLowerBodyCutY</key>
+        <real>150.0</real>
+        <key>rightLowerCutY</key>
+        <real>50.0</real>
+        <key>rightLowerDonorCodePoint</key>
+        <integer>112</integer>
+        <key>rightLowerOffsetX</key>
+        <integer>304</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

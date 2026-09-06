@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A1F" format="2">
+  <advance width="631"/>
+  <unicode hex="F2A1F"/>
+  <outline>
+    <contour>
+      <point x="399" y="81" type="line"/>
+      <point x="367" y="47"/>
+      <point x="316" y="7"/>
+      <point x="265" y="-10"/>
+      <point x="231" y="-10" type="qcurve" smooth="yes"/>
+      <point x="156" y="-10"/>
+      <point x="83" y="67"/>
+      <point x="83" y="166" type="qcurve" smooth="yes"/>
+      <point x="83" y="359" type="line" smooth="yes"/>
+      <point x="83" y="390"/>
+      <point x="71" y="417"/>
+      <point x="40" y="424"/>
+      <point x="13" y="424" type="qcurve"/>
+      <point x="13" y="465" type="line"/>
+      <point x="179" y="478" type="line"/>
+      <point x="226" y="478" type="line"/>
+      <point x="226" y="195" type="line" smooth="yes"/>
+      <point x="226" y="148"/>
+      <point x="243" y="102"/>
+      <point x="275" y="88"/>
+      <point x="296" y="88" type="qcurve" smooth="yes"/>
+      <point x="328" y="88"/>
+      <point x="370" y="110"/>
+      <point x="398" y="133" type="qcurve"/>
+      <point x="398" y="363" type="line" smooth="yes"/>
+      <point x="398" y="392"/>
+      <point x="383" y="418"/>
+      <point x="346" y="424"/>
+      <point x="313" y="424" type="qcurve"/>
+      <point x="313" y="465" type="line"/>
+      <point x="500" y="478" type="line"/>
+      <point x="541" y="478" type="line"/>
+      <point x="541" y="250" type="line" smooth="yes"/>
+      <point x="541.0" y="243.33333330000002"/>
+      <point x="541.1260317460317" y="229.9999999252064"/>
+      <point x="541.35873015873" y="216.666666571746"/>
+      <point x="541.6803174603175" y="203.33333323606348"/>
+      <point x="542.0730158730157" y="189.99999991460317"/>
+      <point x="542.5190476190476" y="176.6666666038095"/>
+      <point x="543.000634920635" y="163.33333330012695"/>
+      <point x="543.4999999999999" y="150.0"/>
+      <point x="543.999365079365" y="136.666666699873"/>
+      <point x="544.4809523809524" y="123.33333339619048"/>
+      <point x="544.926984126984" y="110.00000008539683"/>
+      <point x="545.3196825396826" y="96.66666676393653"/>
+      <point x="545.64126984127" y="83.33333342825397"/>
+      <point x="545.8739682539682" y="70.00000007479365"/>
+      <point x="546.0" y="56.666666699999986"/>
+      <point x="546.0" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="546" y="28" type="line" smooth="yes"/>
+      <point x="546" y="-41"/>
+      <point x="512" y="-141"/>
+      <point x="445" y="-205"/>
+      <point x="349" y="-235"/>
+      <point x="287" y="-235" type="qcurve" smooth="yes"/>
+      <point x="259" y="-235"/>
+      <point x="195" y="-227"/>
+      <point x="138" y="-208"/>
+      <point x="103" y="-173"/>
+      <point x="103" y="-145" type="qcurve" smooth="yes"/>
+      <point x="103" y="-116"/>
+      <point x="136" y="-84"/>
+      <point x="160" y="-84" type="qcurve" smooth="yes"/>
+      <point x="188" y="-84"/>
+      <point x="222" y="-115"/>
+      <point x="248" y="-157"/>
+      <point x="275" y="-188"/>
+      <point x="296" y="-188" type="qcurve" smooth="yes"/>
+      <point x="323" y="-188"/>
+      <point x="372" y="-164"/>
+      <point x="403" y="-103"/>
+      <point x="403" y="-48" type="qcurve" smooth="yes"/>
+      <point x="403" y="81" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>archAttachmentY</key>
+        <integer>81</integer>
+        <key>archDonorCodePoint</key>
+        <integer>117</integer>
+        <key>lowerBodyCutY</key>
+        <real>250.0</real>
+        <key>lowerCutY</key>
+        <real>50.0</real>
+        <key>lowerDonorCodePoint</key>
+        <integer>609</integer>
+        <key>lowerOffsetX</key>
+        <integer>45</integer>
+        <key>method</key>
+        <string>Native u arch and heads with the broad single-story-g lower hook on the right; the u advance is retained.</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

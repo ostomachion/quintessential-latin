@@ -1,0 +1,25 @@
+{
+  "name": "quintessential-latin",
+  "version": "0.220.0",
+  "private": true,
+  "description": "Quintessential Latin repertoire, reference font, code charts, and UCSUR proposal",
+  "author": "Josh Hufford",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node tools/export_glyph_catalogue.js --check && node tools/build_site.mjs",
+    "dev": "node tools/serve_site.mjs",
+    "test": "node tools/test_canonical_glyph_names.js && node tools/test_site.mjs",
+    "test:browser": "node tools/test_browser.mjs",
+    "build:pdf": "python tools/build_pdfs.py",
+    "test:pdf": "python tools/test_pdfs.py",
+    "build:font": "python tools/build_quintessential_font.py",
+    "test:font": "python tools/test_fonts.py",
+    "test:preservation": "python tools/test_additions_font.py"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

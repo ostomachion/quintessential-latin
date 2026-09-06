@@ -1,0 +1,27 @@
+name: Validate reference fonts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fonts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: tools/requirements-fonts.txt
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - run: python -m pip install -r tools/requirements-fonts.txt
+      - run: python tools/build_quintessential_font.py
+      - run: python tools/test_quintessential_font.py
+      - run: python tools/test_additions_font.py
+      - run: git diff --exit-code -- '*.otf' '*.ttf' '*.woff2'

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A3A" format="2">
+  <advance width="636"/>
+  <unicode hex="F2A43"/>
+  <outline>
+    <contour>
+      <point x="94" y="-194" type="qcurve"/>
+      <point x="94" y="369" type="line" smooth="yes"/>
+      <point x="94" y="397"/>
+      <point x="74" y="414"/>
+      <point x="53" y="414" type="qcurve" smooth="yes"/>
+      <point x="40" y="414"/>
+      <point x="26" y="412"/>
+      <point x="26" y="412" type="qcurve"/>
+      <point x="26" y="453" type="line"/>
+      <point x="180" y="482" type="line"/>
+      <point x="235" y="482" type="line"/>
+      <point x="235" y="400" type="line"/>
+      <point x="239" y="400" type="line"/>
+      <point x="277" y="438"/>
+      <point x="350" y="485"/>
+      <point x="401" y="485" type="qcurve" smooth="yes"/>
+      <point x="474" y="485"/>
+      <point x="559" y="389"/>
+      <point x="559" y="290" type="qcurve" smooth="yes"/>
+      <point x="559" y="-10" type="line" smooth="yes"/>
+      <point x="559" y="-88"/>
+      <point x="501" y="-187"/>
+      <point x="405" y="-235"/>
+      <point x="347" y="-235" type="qcurve" smooth="yes"/>
+      <point x="248.463158" y="-235"/>
+      <point x="123.294737" y="-204"/>
+    </contour>
+    <contour>
+      <point x="373" y="-179" type="qcurve" smooth="yes"/>
+      <point x="403" y="-179"/>
+      <point x="416" y="-114"/>
+      <point x="416" y="-41" type="qcurve" smooth="yes"/>
+      <point x="416" y="268" type="line" smooth="yes"/>
+      <point x="416" y="315"/>
+      <point x="398" y="368"/>
+      <point x="363" y="389"/>
+      <point x="338" y="389" type="qcurve" smooth="yes"/>
+      <point x="310" y="389"/>
+      <point x="259" y="365"/>
+      <point x="238" y="345" type="qcurve"/>
+      <point x="238" y="-134" type="line"/>
+      <point x="255.763158" y="-151"/>
+      <point x="323.263158" y="-179"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>636.0</real>
+        <key>archDonorCodePoint</key>
+        <integer>331</integer>
+        <key>closureDonorCodePoint</key>
+        <integer>98</integer>
+        <key>closureInnerJoin</key>
+        <array>
+          <real>238.0</real>
+          <integer>-134</integer>
+        </array>
+        <key>closureOuterJoin</key>
+        <array>
+          <real>94.0</real>
+          <integer>-194</integer>
+        </array>
+        <key>glyphId</key>
+        <string>arch-left-descender-right-tail</string>
+        <key>joinedTerminal</key>
+        <string>lower</string>
+        <key>method</key>
+        <string>Native eng arch and lower sweep closed into the extended left shaft using the lower bowl joins of b; the free hook tip and facing foot are replaced, and the native arch width and advance are retained.</string>
+        <key>recipeCodePoint</key>
+        <integer>993850</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A4F.middle" format="2">
+  <advance width="674"/>
+  <unicode hex="F2A60"/>
+  <outline>
+    <contour>
+      <point x="194" y="97" type="line"/>
+      <point x="169" y="60"/>
+      <point x="128" y="12"/>
+      <point x="89" y="-12"/>
+      <point x="65" y="-12" type="qcurve" smooth="yes"/>
+      <point x="36" y="-12"/>
+      <point x="7" y="19"/>
+      <point x="7" y="44" type="qcurve" smooth="yes"/>
+      <point x="7" y="73"/>
+      <point x="35" y="98"/>
+      <point x="51" y="98" type="qcurve" smooth="yes"/>
+      <point x="68" y="98"/>
+      <point x="92" y="81"/>
+      <point x="110" y="64"/>
+      <point x="116" y="64" type="qcurve" smooth="yes"/>
+      <point x="133" y="64"/>
+      <point x="177" y="116"/>
+      <point x="195" y="146" type="qcurve"/>
+      <point x="235" y="146" type="line"/>
+      <point x="234" y="97" type="line"/>
+    </contour>
+    <contour>
+      <point x="195.0" y="450.0" type="qcurve" smooth="yes"/>
+      <point x="195" y="603" type="line" smooth="yes"/>
+      <point x="195" y="634"/>
+      <point x="172" y="646"/>
+      <point x="153" y="646" type="qcurve" smooth="yes"/>
+      <point x="140" y="646"/>
+      <point x="121" y="644"/>
+      <point x="121" y="644" type="qcurve"/>
+      <point x="121" y="671" type="line"/>
+      <point x="253" y="706" type="line"/>
+      <point x="278" y="706" type="line"/>
+      <point x="278" y="450" type="line" smooth="yes"/>
+      <point x="278.0" y="412.5"/>
+      <point x="278.0" y="337.5"/>
+      <point x="278.0" y="300.0" type="qcurve" smooth="yes"/>
+      <point x="278" y="186" type="line" smooth="yes"/>
+      <point x="278" y="135"/>
+      <point x="301" y="78"/>
+      <point x="342" y="54"/>
+      <point x="368" y="54" type="qcurve" smooth="yes"/>
+      <point x="406" y="54"/>
+      <point x="461" y="88"/>
+      <point x="491" y="114" type="qcurve"/>
+      <point x="491" y="377" type="line" smooth="yes"/>
+      <point x="491" y="404"/>
+      <point x="477" y="428"/>
+      <point x="442" y="435"/>
+      <point x="410" y="435" type="qcurve"/>
+      <point x="410" y="463" type="line"/>
+      <point x="550" y="478" type="line"/>
+      <point x="574" y="478" type="line"/>
+      <point x="574" y="250" type="line" smooth="yes"/>
+      <point x="574.0" y="243.33333330000002"/>
+      <point x="574.1008253968255" y="229.9999999252064"/>
+      <point x="574.2869841269841" y="216.666666571746"/>
+      <point x="574.544253968254" y="203.33333323606348"/>
+      <point x="574.8584126984127" y="189.99999991460317"/>
+      <point x="575.2152380952381" y="176.6666666038095"/>
+      <point x="575.600507936508" y="163.33333330012695"/>
+      <point x="576.0" y="150.0"/>
+      <point x="576.399492063492" y="136.666666699873"/>
+      <point x="576.7847619047619" y="123.33333339619048"/>
+      <point x="577.1415873015872" y="110.00000008539683"/>
+      <point x="577.455746031746" y="96.66666676393653"/>
+      <point x="577.7130158730158" y="83.33333342825397"/>
+      <point x="577.8991746031745" y="70.00000007479365"/>
+      <point x="577.9999999999999" y="56.666666699999986"/>
+      <point x="578.0" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="578" y="-1" type="line" smooth="yes"/>
+      <point x="578" y="-74"/>
+      <point x="539" y="-166"/>
+      <point x="474" y="-216"/>
+      <point x="392" y="-235"/>
+      <point x="348" y="-235" type="qcurve" smooth="yes"/>
+      <point x="312" y="-235"/>
+      <point x="254" y="-222"/>
+      <point x="212" y="-200"/>
+      <point x="190" y="-170"/>
+      <point x="190" y="-154" type="qcurve" smooth="yes"/>
+      <point x="190" y="-131"/>
+      <point x="215" y="-109"/>
+      <point x="233" y="-109" type="qcurve" smooth="yes"/>
+      <point x="252" y="-109"/>
+      <point x="280" y="-137"/>
+      <point x="307" y="-174"/>
+      <point x="342" y="-202"/>
+      <point x="368" y="-202" type="qcurve" smooth="yes"/>
+      <point x="408" y="-202"/>
+      <point x="464" y="-169"/>
+      <point x="495" y="-91"/>
+      <point x="495" y="-26" type="qcurve" smooth="yes"/>
+      <point x="495" y="72" type="line"/>
+      <point x="490" y="72" type="line"/>
+      <point x="464" y="46"/>
+      <point x="413" y="9"/>
+      <point x="358" y="-10"/>
+      <point x="326" y="-10" type="qcurve" smooth="yes"/>
+      <point x="264" y="-10"/>
+      <point x="195" y="71"/>
+      <point x="195" y="173" type="qcurve" smooth="yes"/>
+      <point x="195" y="300" type="line" smooth="yes"/>
+      <point x="195.0" y="337.5"/>
+      <point x="195.0" y="412.5"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <integer>674</integer>
+        <key>archBaseCodePoint</key>
+        <integer>993823</integer>
+        <key>archDonorCodePoint</key>
+        <integer>117</integer>
+        <key>extendedMiddleLegs</key>
+        <array>
+          <dict>
+            <key>centerX</key>
+            <real>236.5</real>
+            <key>direction</key>
+            <string>ascender</string>
+            <key>donorCodePoint</key>
+            <integer>108</integer>
+            <key>terminalOffsetX</key>
+            <integer>-9</integer>
+          </dict>
+        </array>
+        <key>glyphId</key>
+        <string>turned-arched-arm-tail-extended-middle-legs</string>
+        <key>method</key>
+        <string>Retain the base arch construction and outer endings; extend internal free legs with native terminal joins.</string>
+        <key>middleFootContourSplits</key>
+        <array/>
+        <key>middleFootJoins</key>
+        <array/>
+        <key>middleHookJoins</key>
+        <array/>
+        <key>middleLegCount</key>
+        <integer>1</integer>
+        <key>middleLegs</key>
+        <string>extended</string>
+        <key>recipeCodePoint</key>
+        <integer>993871</integer>
+        <key>sharedStemOwner</key>
+        <string>arch</string>
+        <key>terminalDonorCodePoint</key>
+        <integer>633</integer>
+        <key>terminalOffsetX</key>
+        <integer>-104</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

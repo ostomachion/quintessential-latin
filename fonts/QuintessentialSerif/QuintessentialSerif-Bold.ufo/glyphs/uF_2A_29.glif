@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A29" format="2">
+  <advance width="571"/>
+  <unicode hex="F2A1E"/>
+  <outline>
+    <contour>
+      <point x="72.0" y="420.0" type="qcurve" smooth="yes"/>
+      <point x="72" y="485" type="line" smooth="yes"/>
+      <point x="72" y="535"/>
+      <point x="101" y="617"/>
+      <point x="128" y="647" type="qcurve" smooth="yes"/>
+      <point x="157" y="681"/>
+      <point x="245" y="717"/>
+      <point x="300" y="717" type="qcurve" smooth="yes"/>
+      <point x="338" y="717"/>
+      <point x="402" y="702"/>
+      <point x="440" y="664"/>
+      <point x="440" y="631" type="qcurve" smooth="yes"/>
+      <point x="440" y="600"/>
+      <point x="402" y="574"/>
+      <point x="382" y="574" type="qcurve" smooth="yes"/>
+      <point x="359" y="574"/>
+      <point x="334" y="597"/>
+      <point x="320" y="626" type="qcurve" smooth="yes"/>
+      <point x="307" y="654"/>
+      <point x="284" y="668"/>
+      <point x="270" y="668" type="qcurve" smooth="yes"/>
+      <point x="239" y="668"/>
+      <point x="215" y="619"/>
+      <point x="215" y="560" type="qcurve" smooth="yes"/>
+      <point x="215" y="470" type="line" smooth="yes"/>
+      <point x="215.0" y="460.00000024999997"/>
+      <point x="215.0" y="439.99999975000003"/>
+      <point x="215.0" y="430.0" type="qcurve" smooth="yes"/>
+      <point x="215" y="402" type="line"/>
+      <point x="219" y="402" type="line"/>
+      <point x="245" y="432"/>
+      <point x="318" y="485"/>
+      <point x="371" y="485" type="qcurve" smooth="yes"/>
+      <point x="425" y="485"/>
+      <point x="499" y="435"/>
+      <point x="538" y="337"/>
+      <point x="538" y="264" type="qcurve" smooth="yes"/>
+      <point x="538" y="168"/>
+      <point x="468" y="47"/>
+      <point x="344" y="-11"/>
+      <point x="262" y="-11" type="qcurve" smooth="yes"/>
+      <point x="188" y="-11"/>
+      <point x="94" y="20"/>
+      <point x="72" y="30" type="qcurve"/>
+      <point x="72" y="380" type="line" smooth="yes"/>
+      <point x="72.0" y="389.99999975000003"/>
+      <point x="72.0" y="410.00000024999997"/>
+    </contour>
+    <contour>
+      <point x="215" y="343" type="qcurve"/>
+      <point x="215" y="86" type="line"/>
+      <point x="225" y="69"/>
+      <point x="263" y="41"/>
+      <point x="291" y="41" type="qcurve" smooth="yes"/>
+      <point x="326" y="41"/>
+      <point x="366" y="92"/>
+      <point x="383" y="181"/>
+      <point x="383" y="237" type="qcurve" smooth="yes"/>
+      <point x="383" y="288"/>
+      <point x="368" y="357"/>
+      <point x="335" y="392"/>
+      <point x="308" y="392" type="qcurve" smooth="yes"/>
+      <point x="276" y="392"/>
+      <point x="228" y="357"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>571.0</real>
+        <key>bodyLeftCutY</key>
+        <real>380.0</real>
+        <key>bodyRightCutY</key>
+        <real>430.0</real>
+        <key>bowlDonorCodePoint</key>
+        <integer>98</integer>
+        <key>glyphId</key>
+        <string>bowl-hook</string>
+        <key>method</key>
+        <string>Native b bowl, counter and baseline with the upper hook of U+0253 b with hook; the b advance is retained.</string>
+        <key>recipeCodePoint</key>
+        <integer>993833</integer>
+        <key>terminalDonorCodePoint</key>
+        <integer>595</integer>
+        <key>terminalLeftCutY</key>
+        <real>420.0</real>
+        <key>terminalOffsetX</key>
+        <integer>4</integer>
+        <key>terminalRightCutY</key>
+        <real>470.0</real>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

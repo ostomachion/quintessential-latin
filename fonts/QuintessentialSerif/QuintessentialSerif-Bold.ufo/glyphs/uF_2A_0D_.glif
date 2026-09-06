@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uF2A0D" format="2">
+  <advance width="449"/>
+  <unicode hex="F2A11"/>
+  <outline>
+    <contour>
+      <point x="334" y="0" type="line"/>
+      <point x="20" y="0" type="line"/>
+      <point x="20" y="40" type="line"/>
+      <point x="53" y="40"/>
+      <point x="84" y="51"/>
+      <point x="94" y="81"/>
+      <point x="94" y="109" type="qcurve" smooth="yes"/>
+      <point x="94" y="378" type="line"/>
+      <point x="94" y="595" type="line" smooth="yes"/>
+      <point x="94" y="624"/>
+      <point x="64" y="637"/>
+      <point x="45.372549" y="637" type="qcurve" smooth="yes"/>
+      <point x="32.627451" y="637"/>
+      <point x="14" y="635"/>
+      <point x="14" y="635" type="qcurve"/>
+      <point x="14" y="675" type="line"/>
+      <point x="171" y="706" type="line"/>
+      <point x="237" y="706" type="line"/>
+      <point x="237" y="378" type="line"/>
+      <point x="239" y="378" type="line"/>
+      <point x="266" y="413"/>
+      <point x="300" y="462"/>
+      <point x="339" y="488"/>
+      <point x="370" y="488" type="qcurve" smooth="yes"/>
+      <point x="409" y="488"/>
+      <point x="447" y="444"/>
+      <point x="447" y="406" type="qcurve" smooth="yes"/>
+      <point x="447" y="363"/>
+      <point x="409" y="325"/>
+      <point x="386" y="325" type="qcurve" smooth="yes"/>
+      <point x="364" y="325"/>
+      <point x="333" y="346"/>
+      <point x="311" y="367"/>
+      <point x="303" y="367" type="qcurve" smooth="yes"/>
+      <point x="287" y="367"/>
+      <point x="254" y="342"/>
+      <point x="237" y="322" type="qcurve"/>
+      <point x="237" y="116" type="line" smooth="yes"/>
+      <point x="237" y="84"/>
+      <point x="256" y="51"/>
+      <point x="299" y="40"/>
+      <point x="334" y="40" type="qcurve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.quintessential.construction</key>
+      <dict>
+        <key>advanceWidth</key>
+        <real>449.0</real>
+        <key>armDonorCodePoint</key>
+        <integer>114</integer>
+        <key>glyphId</key>
+        <string>arm-ascender</string>
+        <key>method</key>
+        <string>Native r arm and baseline finish with the l ascender.</string>
+        <key>recipeCodePoint</key>
+        <integer>993805</integer>
+        <key>upperCutY</key>
+        <real>378.0</real>
+        <key>upperDonorCodePoint</key>
+        <integer>108</integer>
+        <key>upperOffsetX</key>
+        <integer>2</integer>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
