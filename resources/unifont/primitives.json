@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "glyphs": [
+    {
+      "glyphId": "special-ring",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "006F"
+      ],
+      "notes": "Exact GNU Unifont U+006F lowercase o remap; all 128 pixels preserved. Native body occupies rows 6–13 and columns 1–6.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "special-open-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0063"
+      ],
+      "notes": "Exact GNU Unifont U+0063 lowercase c remap. The right aperture between the two native terminals remains open through rows 8–11.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "special-turned-open-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0254",
+        "0063"
+      ],
+      "notes": "Exact GNU Unifont U+0254 remap. Native open-o body and simple c-like terminals; no added weight on either free left terminal.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "stem",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0131"
+      ],
+      "notes": "Exact GNU Unifont U+0131 DOTLESS I remap, including the two-pixel head at row 6, column-4 stave, and five-pixel foot at row 13. This corrects the former plain-bar starter.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0131",
+        "006C"
+      ],
+      "notes": "Exact GNU Unifont U+006C lowercase l remap: the dotless-i head moves to row 3, and the body and baseline foot remain unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".....##.",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0131",
+        "0066"
+      ],
+      "notes": "Move the native lowercase-f hook one column right to the dotless-i axis: row 3 pixels (5,3) and (6,3), then column 4 from row 4. Omit f’s unrelated crossbar. Retain the complete dotless-i baseline foot at row 13, columns 2–6.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####."
+      ],
+      "donors": [
+        "0131",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain the dotless-i head at (3,6) and (4,6). Continue the column-4 stave through row 14 and move the complete five-pixel dotless-i foot from row 13 to row 15; the straight descent has no baseline crossbar. Native p/q supply the two-row descender-depth precedent.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####."
+      ],
+      "donors": [
+        "0131",
+        "006C",
+        "0070",
+        "0071"
+      ],
+      "notes": "Use lowercase l’s two-pixel head at row 3 and its column-4 vertical. Continue the column-4 stave through row 14 and move the complete five-pixel dotless-i foot from row 13 to row 15; the straight descent has no baseline crossbar. Native p/q supply the two-row descender-depth precedent.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".....##.",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "..#####."
+      ],
+      "donors": [
+        "0131",
+        "0066",
+        "0070",
+        "0071"
+      ],
+      "notes": "Move the native lowercase-f hook one column right to the dotless-i axis: row 3 pixels (5,3) and (6,3), then column 4 from row 4. Omit f’s unrelated crossbar. Continue the column-4 stave through row 14 and move the complete five-pixel dotless-i foot from row 13 to row 15; the straight descent has no baseline crossbar. Native p/q supply the two-row descender-depth precedent.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        ".#..#...",
+        "..##...."
+      ],
+      "donors": [
+        "0131",
+        "0237"
+      ],
+      "notes": "Retain the dotless-i head at (3,6) and (4,6). Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+      ]
+    },
+    {
+      "glyphId": "ascender-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "...##...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        ".#..#...",
+        "..##...."
+      ],
+      "donors": [
+        "0131",
+        "006C",
+        "0237"
+      ],
+      "notes": "Use lowercase l’s two-pixel head at row 3 and its column-4 vertical. Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+      ]
+    },
+    {
+      "glyphId": "hook-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".....##.",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        "....#...",
+        ".#..#...",
+        "..##...."
+      ],
+      "donors": [
+        "0131",
+        "0066",
+        "0237"
+      ],
+      "notes": "Move the native lowercase-f hook one column right to the dotless-i axis: row 3 pixels (5,3) and (6,3), then column 4 from row 4. Omit f’s unrelated crossbar. Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+      ]
+    },
+    {
+      "glyphId": "special-closed-double-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#....#.",
+        "..####..",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "025B",
+        "025C",
+        "006F"
+      ],
+      "notes": "Join the native epsilon and reversed-epsilon wings into two closed bowls. Retain o’s outer width and rounded diagonal corners; the four-pixel waist at row 9 separates an upper two-row counter from a lower three-row counter. There is no vertical stave.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [
+        "Review the deliberately smaller upper counter and row-9 waist at native size against the STIX stemless double bowl."
+      ]
+    },
+    {
+      "glyphId": "special-double-open-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        "..####..",
+        ".#......",
+        ".#......",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "025B"
+      ],
+      "notes": "Exact GNU Unifont U+025B OPEN E remap, matching the STIX upright epsilon donor. Retain its central spur at row 9 and two open right-hand apertures.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "special-turned-double-open-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        "......#.",
+        "..####..",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "025C",
+        "025B"
+      ],
+      "notes": "Exact GNU Unifont U+025C remap. Native reversed-epsilon body, central spur and simple outer terminals. Both apertures retain the original donor pixels.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "special-spine",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        "..##....",
+        "....##..",
+        "......#.",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0073"
+      ],
+      "notes": "Exact GNU Unifont U+0073 remap. Native lowercase-s body and simple terminals, including its diagonal centre. No added terminal pixels or outline-style bulb treatment.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    }
+  ]
+}

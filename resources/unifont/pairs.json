@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "glyphs": [
+    {
+      "glyphId": "arm",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0072"
+      ],
+      "notes": "Exact GNU Unifont U+0072 r, including the separated head notch, diagonal shoulder entrance, two-row free terminal, and unadorned joined stem. All 128 donor pixels are preserved.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "turned-arm",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0279",
+        "0075"
+      ],
+      "notes": "Exact GNU Unifont U+0279 turned r, already aligned to body rows 6–13. Its upright right stem and baseline hip agree with native u. No whole-cell rotation or copied dotless-i foot is used.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070"
+      ],
+      "notes": "Retain the common native b/p body in rows 6–13, using p’s short shoulder entrance and b’s baseline return; remove b’s ascender and p’s descender. Every body pixel remains unchanged, including both diagonal stave joins.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "turned-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0251"
+      ],
+      "notes": "Exact GNU Unifont U+0251 Latin alpha, matching the STIX short right-stave bowl donor. Preserve its sloping lower return and upright right-stave terminal, rather than substituting a shortened d/q. All 128 donor pixels and native body alignment are unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "arch",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "006E"
+      ],
+      "notes": "Exact GNU Unifont U+006E n. Preserve the native shoulder notch, attached head, one-pixel staves, and unadorned feet; a full dotless-i serif would close the arch aperture.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "turned-arch",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075"
+      ],
+      "notes": "Exact GNU Unifont U+0075 u. Preserve the native upright entries, curved baseline join, and right terminal. The open top and native baseline alignment establish the turned construction without cell rotation.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "double-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C"
+      ],
+      "notes": "Retain the native b/p short-head and baseline joins, with reversed-epsilon right lobes. Each counter has its own one-pixel diagonal approach to the left stave: (2,7), (2,10), and (2,12). The pinched waist at row 9 occupies columns 3–5; no 2×2 ink block or extra serif is present. These existing single-pixel joins are preserved after comparison with the revised right-stave form.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "turned-double-bowl",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B"
+      ],
+      "notes": "Use native d/q right-stave bowl joins with epsilon left lobes. The waist returns through (5,10), and the baseline return uses the native d/q sequence 42 46 3A in rows 11–13. Replacing the previous compressed alpha return removes the 2×2 corner at columns 5–6, rows 10–11, while preserving two separate counters and a pinched waist. No full-width crossbar, added bulb, or serif is introduced.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "bowled-spine",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0250"
+      ],
+      "notes": "Exact GNU Unifont U+0250 LATIN SMALL LETTER TURNED A remap. All 128 native pixels are preserved, including the flat native bowl return, upper counter, and single-pixel lower terminal. This native Latin drawing is the direct base for its stem extensions; no custom diagonal or bulb is added.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "turned-bowled-spine",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061"
+      ],
+      "notes": "Exact GNU Unifont U+0061 LATIN SMALL LETTER A remap, as requested. All 128 native pixels are preserved, including the ordinary a waist, lower counter, cap, and terminals. This native Latin drawing is the direct base for its stem extensions and the shared-spine construction.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": []
+    },
+    {
+      "glyphId": "opposed-bowls-0-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250"
+      ],
+      "notes": "Draw equally from native Unifont a and turned a: rows 6–8 exactly retain turned a’s upper cap and left-stave entrance (5C 62 42); rows 11–13 exactly retain a’s lower return and right-stave connection (42 46 3A). Coordinate the shared waist with rows 9–10 (4E 72), preserving one thin stepped connection and two equal nine-pixel counters. The eight body rows have exact 180-degree symmetry within the body; this is a shared-stem construction only, with both one-sided native donors left unchanged. No long slash, extra bulb, or 2×2 ink cluster is added.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "removePixels": [
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            10
+          ]
+        ]
+      }
+    }
+  ]
+}

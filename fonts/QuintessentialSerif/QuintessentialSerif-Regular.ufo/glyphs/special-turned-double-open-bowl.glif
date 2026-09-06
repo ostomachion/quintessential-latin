@@ -30,16 +30,20 @@
       <point x="241" y="291"/>
       <point x="273" y="332"/>
       <point x="273" y="371" type="qcurve" smooth="yes"/>
-      <point x="273" y="399.5"/>
-      <point x="229.046512" y="431"/>
-      <point x="183" y="431" type="qcurve" smooth="yes"/>
-      <point x="140" y="431"/>
-      <point x="71" y="405"/>
-      <point x="45" y="376" type="qcurve"/>
-      <point x="27" y="391" type="line"/>
-      <point x="43" y="417"/>
-      <point x="85" y="460"/>
-      <point x="146" y="486"/>
+      <point x="273" y="409"/>
+      <point x="231" y="451"/>
+      <point x="187" y="451" type="qcurve" smooth="yes"/>
+      <point x="161" y="451"/>
+      <point x="132" y="433"/>
+      <point x="115" y="408"/>
+      <point x="103" y="382"/>
+      <point x="84" y="364"/>
+      <point x="67" y="364" type="qcurve" smooth="yes"/>
+      <point x="51" y="364"/>
+      <point x="24" y="385"/>
+      <point x="24" y="403" type="qcurve" smooth="yes"/>
+      <point x="24" y="437"/>
+      <point x="103" y="486"/>
       <point x="189" y="486" type="qcurve" smooth="yes"/>
       <point x="234" y="486"/>
       <point x="310" y="459"/>
@@ -84,21 +88,17 @@
         <key>lowerTerminalTurned</key>
         <true/>
         <key>method</key>
-        <string>Native stemless bowl vocabulary; no language reading.</string>
+        <string>Native body with bulbs at both free terminals; existing advance and body placement preserved.</string>
         <key>posture</key>
         <string>Roman</string>
         <key>terminalDesign</key>
-        <string>thin-upper-finish-and-lower-ball</string>
+        <string>upper-and-lower-bulbs</string>
         <key>upperTerminalDonorCodePoint</key>
         <integer>604</integer>
         <key>upperTerminalOffsetX</key>
-        <integer>12</integer>
+        <integer>0</integer>
         <key>upperTerminalOffsetY</key>
-        <integer>476</integer>
-        <key>upperTerminalReflectedY</key>
-        <true/>
-        <key>upperTerminalReversed</key>
-        <true/>
+        <integer>0</integer>
       </dict>
     </dict>
   </lib>

@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "id": "four-stave-arches",
+      "title": "Four staves: independent descenders",
+      "glyphIds": [
+        "triple-arch",
+        "triple-arch-extended-left-middle-leg",
+        "triple-arch-extended-right-middle-leg",
+        "triple-arch-extended-middle-legs"
+      ],
+      "notes": "Four staves occupy columns 1, 3, 5 and 7; column 0 remains blank. The native Unifont m shoulder sequence is compacted to one crest pixel per two-column interval. The initial stave retains its head pixel at (1,6), while internal staves start at row 7 beneath supported diagonal crests. As in native m, joined staves have no additional base serifs. All three underside openings remain open through the baseline; optional middle descenders add only their two designated pixels below it."
+    },
+    {
+      "id": "adjacent-long-bowl-closure",
+      "title": "Long bowl: only the adjacent ascender closes it",
+      "glyphIds": [
+        "turned-triple-arch-left-hook-right-ascender-descender",
+        "turned-triple-arch-left-hook-right-ascender-descender-extended-left-middle-leg",
+        "turned-triple-arch-left-hook-right-ascender-descender-extended-right-middle-leg",
+        "turned-triple-arch-left-hook-right-ascender-descender-extended-middle-legs"
+      ],
+      "notes": "The turned arches are drawn on the unchanged Latin body rows, following native turned m and u hips, rather than rotating the entire 16-row cell. The long left bowl occupies columns 1 through 3 from row 3 to row 13. Its one-pixel open return is at (3,5), immediately above the adjacent first middle arm. Extending that arm fills the opening; extending the farther arm at column 5 leaves it open. Compound ascenders use the unadorned vertical terminals of native h and q, avoiding head-serifs that would bridge neighboring staves."
+    },
+    {
+      "id": "dense-shared-spine",
+      "title": "Shared spine: independent descender and ascender",
+      "glyphIds": [
+        "double-arched-opposed-bowls-5-5",
+        "double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+        "double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+        "double-arched-opposed-bowls-5-5-extended-middle-legs"
+      ],
+      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body."
+    }
+  ],
+  "glyphs": [
+    {
+      "glyphId": "triple-arch",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".##.#.#.",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "006D",
+        "006E",
+        "0070"
+      ],
+      "notes": "Four staves occupy columns 1, 3, 5 and 7; column 0 remains blank. The native Unifont m shoulder sequence is compacted to one crest pixel per two-column interval. The initial stave retains its head pixel at (1,6), while internal staves start at row 7 beneath supported diagonal crests. As in native m, joined staves have no additional base serifs. All three underside openings remain open through the baseline; optional middle descenders add only their two designated pixels below it. State: neither middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Each compressed arch retains a one-column aperture from row 7 through row 13.",
+        "The top row has two touching pixels only at the initial stave head and first shoulder; the other shoulders use supported diagonal joins.",
+        "Independent descenders preserve the complete body and remain separated by a blank column."
+      ],
+      "extensionPixels": [],
+      "extensionState": [
+        false,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "glyphId": "triple-arch-extended-left-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".##.#.#.",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "...#....",
+        "...#...."
+      ],
+      "donors": [
+        "006D",
+        "006E",
+        "0070"
+      ],
+      "notes": "Four staves occupy columns 1, 3, 5 and 7; column 0 remains blank. The native Unifont m shoulder sequence is compacted to one crest pixel per two-column interval. The initial stave retains its head pixel at (1,6), while internal staves start at row 7 beneath supported diagonal crests. As in native m, joined staves have no additional base serifs. All three underside openings remain open through the baseline; optional middle descenders add only their two designated pixels below it. State: left middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Each compressed arch retains a one-column aperture from row 7 through row 13.",
+        "The top row has two touching pixels only at the initial stave head and first shoulder; the other shoulders use supported diagonal joins.",
+        "Independent descenders preserve the complete body and remain separated by a blank column."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      "extensionState": [
+        true,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "glyphId": "triple-arch-extended-right-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".##.#.#.",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".....#..",
+        ".....#.."
+      ],
+      "donors": [
+        "006D",
+        "006E",
+        "0070"
+      ],
+      "notes": "Four staves occupy columns 1, 3, 5 and 7; column 0 remains blank. The native Unifont m shoulder sequence is compacted to one crest pixel per two-column interval. The initial stave retains its head pixel at (1,6), while internal staves start at row 7 beneath supported diagonal crests. As in native m, joined staves have no additional base serifs. All three underside openings remain open through the baseline; optional middle descenders add only their two designated pixels below it. State: right middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Each compressed arch retains a one-column aperture from row 7 through row 13.",
+        "The top row has two touching pixels only at the initial stave head and first shoulder; the other shoulders use supported diagonal joins.",
+        "Independent descenders preserve the complete body and remain separated by a blank column."
+      ],
+      "extensionPixels": [
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          15
+        ]
+      ],
+      "extensionState": [
+        false,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "glyphId": "triple-arch-extended-middle-legs",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".##.#.#.",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "...#.#..",
+        "...#.#.."
+      ],
+      "donors": [
+        "006D",
+        "006E",
+        "0070"
+      ],
+      "notes": "Four staves occupy columns 1, 3, 5 and 7; column 0 remains blank. The native Unifont m shoulder sequence is compacted to one crest pixel per two-column interval. The initial stave retains its head pixel at (1,6), while internal staves start at row 7 beneath supported diagonal crests. As in native m, joined staves have no additional base serifs. All three underside openings remain open through the baseline; optional middle descenders add only their two designated pixels below it. State: both middle components extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Each compressed arch retains a one-column aperture from row 7 through row 13.",
+        "The top row has two touching pixels only at the initial stave head and first shoulder; the other shoulders use supported diagonal joins.",
+        "Independent descenders preserve the complete body and remain separated by a blank column."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          15
+        ]
+      ],
+      "extensionState": [
+        true,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "glyphId": "turned-triple-arch-left-hook-right-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#....#",
+        ".#.#...#",
+        ".#.....#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "..#.#.##",
+        ".......#",
+        ".......#"
+      ],
+      "donors": [
+        "026F",
+        "0075",
+        "0066",
+        "0068",
+        "0071"
+      ],
+      "notes": "The turned arches are drawn on the unchanged Latin body rows, following native turned m and u hips, rather than rotating the entire 16-row cell. The long left bowl occupies columns 1 through 3 from row 3 to row 13. Its one-pixel open return is at (3,5), immediately above the adjacent first middle arm. Extending that arm fills the opening; extending the farther arm at column 5 leaves it open. Compound ascenders use the unadorned vertical terminals of native h and q, avoiding head-serifs that would bridge neighboring staves. State: neither middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "The left-only and both states close exactly the same long bowl; the right-only state leaves the opening at (3,5) unchanged.",
+        "The first extension overlaps the pre-existing returning terminal at (3,4), so its visible difference adds two pixels, (3,3) and (3,5).",
+        "The extended right outer stem reaches rows 3 and 15 without gaining a broad dotless-i foot."
+      ],
+      "extensionPixels": [],
+      "extensionState": [
+        false,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "closure": {
+          "openPixel": [
+            3,
+            5
+          ],
+          "counterSeed": [
+            2,
+            7
+          ],
+          "closingPartIndex": 1,
+          "unrelatedPartIndex": 2,
+          "closed": false
+        }
+      }
+    },
+    {
+      "glyphId": "turned-triple-arch-left-hook-right-ascender-descender-extended-left-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##...#",
+        ".#.#...#",
+        ".#.#...#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "..#.#.##",
+        ".......#",
+        ".......#"
+      ],
+      "donors": [
+        "026F",
+        "0075",
+        "0066",
+        "0068",
+        "0071"
+      ],
+      "notes": "The turned arches are drawn on the unchanged Latin body rows, following native turned m and u hips, rather than rotating the entire 16-row cell. The long left bowl occupies columns 1 through 3 from row 3 to row 13. Its one-pixel open return is at (3,5), immediately above the adjacent first middle arm. Extending that arm fills the opening; extending the farther arm at column 5 leaves it open. Compound ascenders use the unadorned vertical terminals of native h and q, avoiding head-serifs that would bridge neighboring staves. State: left middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "The left-only and both states close exactly the same long bowl; the right-only state leaves the opening at (3,5) unchanged.",
+        "The first extension overlaps the pre-existing returning terminal at (3,4), so its visible difference adds two pixels, (3,3) and (3,5).",
+        "The extended right outer stem reaches rows 3 and 15 without gaining a broad dotless-i foot."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "extensionState": [
+        true,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "closure": {
+          "openPixel": [
+            3,
+            5
+          ],
+          "counterSeed": [
+            2,
+            7
+          ],
+          "closingPartIndex": 1,
+          "unrelatedPartIndex": 2,
+          "closed": true
+        }
+      }
+    },
+    {
+      "glyphId": "turned-triple-arch-left-hook-right-ascender-descender-extended-right-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#..#.#",
+        ".#.#.#.#",
+        ".#...#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "..#.#.##",
+        ".......#",
+        ".......#"
+      ],
+      "donors": [
+        "026F",
+        "0075",
+        "0066",
+        "0068",
+        "0071"
+      ],
+      "notes": "The turned arches are drawn on the unchanged Latin body rows, following native turned m and u hips, rather than rotating the entire 16-row cell. The long left bowl occupies columns 1 through 3 from row 3 to row 13. Its one-pixel open return is at (3,5), immediately above the adjacent first middle arm. Extending that arm fills the opening; extending the farther arm at column 5 leaves it open. Compound ascenders use the unadorned vertical terminals of native h and q, avoiding head-serifs that would bridge neighboring staves. State: right middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "The left-only and both states close exactly the same long bowl; the right-only state leaves the opening at (3,5) unchanged.",
+        "The first extension overlaps the pre-existing returning terminal at (3,4), so its visible difference adds two pixels, (3,3) and (3,5).",
+        "The extended right outer stem reaches rows 3 and 15 without gaining a broad dotless-i foot."
+      ],
+      "extensionPixels": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "extensionState": [
+        false,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "closure": {
+          "openPixel": [
+            3,
+            5
+          ],
+          "counterSeed": [
+            2,
+            7
+          ],
+          "closingPartIndex": 1,
+          "unrelatedPartIndex": 2,
+          "closed": false
+        }
+      }
+    },
+    {
+      "glyphId": "turned-triple-arch-left-hook-right-ascender-descender-extended-middle-legs",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "..#.#.##",
+        ".......#",
+        ".......#"
+      ],
+      "donors": [
+        "026F",
+        "0075",
+        "0066",
+        "0068",
+        "0071"
+      ],
+      "notes": "The turned arches are drawn on the unchanged Latin body rows, following native turned m and u hips, rather than rotating the entire 16-row cell. The long left bowl occupies columns 1 through 3 from row 3 to row 13. Its one-pixel open return is at (3,5), immediately above the adjacent first middle arm. Extending that arm fills the opening; extending the farther arm at column 5 leaves it open. Compound ascenders use the unadorned vertical terminals of native h and q, avoiding head-serifs that would bridge neighboring staves. State: both middle components extended.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "The left-only and both states close exactly the same long bowl; the right-only state leaves the opening at (3,5) unchanged.",
+        "The first extension overlaps the pre-existing returning terminal at (3,4), so its visible difference adds two pixels, (3,3) and (3,5).",
+        "The extended right outer stem reaches rows 3 and 15 without gaining a broad dotless-i foot."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "extensionState": [
+        true,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "closure": {
+          "openPixel": [
+            3,
+            5
+          ],
+          "counterSeed": [
+            2,
+            7
+          ],
+          "closingPartIndex": 1,
+          "unrelatedPartIndex": 2,
+          "closed": true
+        }
+      }
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#....#",
+        ".#.#...#",
+        ".#.....#",
+        ".##.##.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.###.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.##.##",
+        ".#.....#",
+        ".#...##."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "006D",
+        "0075",
+        "0066",
+        "014B"
+      ],
+      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: neither middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [
+        "The row-9 crossover separates the upper counter at (4,7..8) from the lower counter at (4,10..12).",
+        "The right hip connects through (6,13) to (5,12) and (7,13).",
+        "The lower hook ends at (5,15) and (6,15), with (5,14) left blank so its return stays open.",
+        "Both hook apertures and all extension differences are unchanged."
+      ],
+      "extensionPixels": [],
+      "extensionState": [
+        false,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "counterSeeds": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "counterAreas": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#....#",
+        ".#.#...#",
+        ".#.....#",
+        ".##.##.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.###.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.##.##",
+        ".#.#...#",
+        ".#.#.##."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "006D",
+        "0075",
+        "0066",
+        "014B"
+      ],
+      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: left middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [
+        "The row-9 crossover separates the upper counter at (4,7..8) from the lower counter at (4,10..12).",
+        "The right hip connects through (6,13) to (5,12) and (7,13).",
+        "The lower hook ends at (5,15) and (6,15), with (5,14) left blank so its return stays open.",
+        "Both hook apertures and all extension differences are unchanged."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      "extensionState": [
+        true,
+        false
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "counterSeeds": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "counterAreas": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#..#.#",
+        ".#.#.#.#",
+        ".#...#.#",
+        ".##.##.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.###.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.##.##",
+        ".#.....#",
+        ".#...##."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "006D",
+        "0075",
+        "0066",
+        "014B"
+      ],
+      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: right middle component extended.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [
+        "The row-9 crossover separates the upper counter at (4,7..8) from the lower counter at (4,10..12).",
+        "The right hip connects through (6,13) to (5,12) and (7,13).",
+        "The lower hook ends at (5,15) and (6,15), with (5,14) left blank so its return stays open.",
+        "Both hook apertures and all extension differences are unchanged."
+      ],
+      "extensionPixels": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "extensionState": [
+        false,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "counterSeeds": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "counterAreas": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-middle-legs",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#..#.#",
+        ".#.#.#.#",
+        ".#...#.#",
+        ".##.##.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.###.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.##.##",
+        ".#.#...#",
+        ".#.#.##."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "006D",
+        "0075",
+        "0066",
+        "014B"
+      ],
+      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: both middle components extended.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [
+        "The row-9 crossover separates the upper counter at (4,7..8) from the lower counter at (4,10..12).",
+        "The right hip connects through (6,13) to (5,12) and (7,13).",
+        "The lower hook ends at (5,15) and (6,15), with (5,14) left blank so its return stays open.",
+        "Both hook apertures and all extension differences are unchanged."
+      ],
+      "extensionPixels": [
+        [
+          3,
+          14
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "extensionState": [
+        true,
+        true
+      ],
+      "structuralChecks": {
+        "staveColumns": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "counterSeeds": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "counterAreas": [
+          2,
+          3
+        ]
+      }
+    }
+  ]
+}

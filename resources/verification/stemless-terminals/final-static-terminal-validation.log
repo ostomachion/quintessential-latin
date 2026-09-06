@@ -1,0 +1,8 @@
+terminal preservation BoldItalic: 1215 unrelated outlines/sidebearings; all advances/pairs
+test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved (__main__.StemlessTerminalTests.test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved) ... ok
+test_revised_static_glyphs_match_the_variable_endpoints (__main__.StemlessTerminalTests.test_revised_static_glyphs_match_the_variable_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 15.308s
+
+OK

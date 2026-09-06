@@ -1,0 +1,18 @@
+terminal preservation Bold: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Italic-400: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Italic-500: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Italic-550: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Italic-600: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Italic-700: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Regular: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Roman-400: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Roman-500: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Roman-550: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Roman-600: 1215 unrelated outlines/sidebearings; all advances/pairs
+terminal preservation Roman-700: 1215 unrelated outlines/sidebearings; all advances/pairs
+test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved (__main__.StemlessTerminalTests.test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 35.098s
+
+OK

@@ -250,6 +250,34 @@ try {
   await navigate('proposal.html');
   check('Proposal retains its original print page styling',await page.locator('body').evaluate(body=>getComputedStyle(body).page)==='auto');
   await page.emulateMedia({media:'screen'});
+  await page.setViewportSize({width:1440,height:1000});
+  await navigate('unifont.html');
+  check('Unifont is the active navigation tab',await page.locator('.site-nav [aria-current="page"]').innerText()==='Unifont');
+  check('Bitmap page offers fixed dimensions instead of outline font controls',await page.locator('#font-weight,#font-italic').count()===0);
+  check('148 bitmaps and five complete Unifont sheets',await page.locator('.bitmap-ready').count()===148&&await page.locator('.unifont-grid').count()===5);
+  const bitmapGeometry=await page.locator('.unifont-grid').first().evaluate(table=>{
+    const tile=table.querySelector('td'),pixel=tile.querySelector('.bitmap'),edge=tile.querySelector('.unifont-tile-rules');
+    const box=element=>element.getBoundingClientRect(),t=box(tile),p=box(pixel),e=box(edge),g=box(table);
+    return {tileWidth:t.width,tileHeight:t.height,gridWidth:g.width,gridHeight:g.height,pixelWidth:p.width,pixelHeight:p.height,insetX:p.x-e.x,insetY:p.y-e.y};
+  });
+  check('Unifont PNG geometry retains 32px tiles and exact native pixel placement',JSON.stringify(bitmapGeometry)===JSON.stringify({tileWidth:32,tileHeight:32,gridWidth:560,gridHeight:544,pixelWidth:8,pixelHeight:16,insetX:5,insetY:8}));
+  await page.screenshot({path:path.join(output,'unifont-desktop.png'),fullPage:true});
+  await page.waitForFunction(()=>document.body.dataset.unifont==='ready');
+  await page.locator('[data-unifont-code="F2A03"] a').click();
+  check('Selecting a bitmap targets its enlarged proof',new URL(page.url()).hash==='#bitmap-f2a03'&&await page.locator('#unifont-inspector #bitmap-f2a03').count()===1&&!(await page.locator('#character-dialog').isVisible()));
+  await page.locator('#bitmap-f2a03 .bitmap-source summary').click();
+  check('Bitmap HEX data is available for inspection',await page.locator('#bitmap-f2a03 .bitmap-source code').isVisible()&&/0F2A03:/.test(await page.locator('#bitmap-f2a03 .bitmap-source code').innerText()));
+  await page.locator('.unifont-sheet summary').last().click();
+  check('Final Unifont sheet exposes allocation boundary',await page.locator('.unifont-grid').last().isVisible()&&await page.locator('.bitmap-unallocated').count()===64);
+  for(const width of [375,768]){
+    await page.setViewportSize({width,height:1000});
+    await navigate('unifont.html');
+    check(`Unifont: fits ${width}px viewport`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    if(width===375){
+      check('Mobile Unifont keeps all 16 columns in a scrollable region',await page.locator('.unifont-scroll').first().evaluate(element=>element.scrollWidth>element.clientWidth));
+      await page.screenshot({path:path.join(output,'unifont-mobile.png'),fullPage:true});
+    }
+  }
   check('No JavaScript exceptions',failures.length===0);
   check('No failed same-site asset requests',responses.length===0);
   await context.close();
@@ -260,6 +288,10 @@ try {
   check('Charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216);
   await staticPage.setViewportSize({width:320,height:900});
   check('Responsive charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216&&await staticPage.locator('table[data-chart-kind="screen"]:visible').first().getAttribute('data-columns')==='4');
+  await staticPage.goto(new URL('unifont.html',base).href);
+  check('Unifont bitmaps and proofs render without JavaScript',await staticPage.locator('.bitmap-cell svg').count()===148&&await staticPage.locator('.bitmap-enlarged:visible').count()===1);
+  await staticPage.locator('.unifont-sheet summary').last().click();
+  check('Unifont sheets expand without JavaScript',await staticPage.locator('.unifont-grid').last().isVisible());
   await noJs.close();
 
   const fontFailure=await browser.newContext();

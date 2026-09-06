@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {verifyPdfBuild,PDF_MANIFEST_PATH,PDF_SOURCE_PATHS,PDF_OUTPUT_NAMES} from './verify_pdf_build.mjs';
 import {normalizeSettings,available,searchEntries,chartCode,printableSheets,chartChunks,glyphSize,code,escapeHtml} from '../site/assets/model.mjs';
+import {parseHex} from './build_unifont.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const catalogue=JSON.parse(await readFile(path.join(root,'resources/catalogue.json'),'utf8'));
 const read=relative=>readFile(path.join(root,relative),'utf8');
@@ -16,15 +17,15 @@ await test('Unicode coordinates and five gapless publication sheets',()=>{assert
 await test('Partial responsive charts retain every position and stop before the next block',()=>{const block={start:0xf2a00,end:0xf2abf},sheet=printableSheets([block])[0];for(const maximum of [16,8,4]){const chunks=chartChunks(sheet,maximum);assert.deepEqual(chunks.map(chunk=>chunk.columns),maximum===16?[12]:maximum===8?[8,4]:[4,4,4]);const codes=chunks.flatMap(chunk=>Array.from({length:chunk.end-chunk.start+1},(_,index)=>chunk.start+index));assert.deepEqual(codes,Array.from({length:192},(_,index)=>block.start+index));}assert.equal(chartChunks(printableSheets([{start:0xf2ac0,end:0xf2bbf}])[0])[0].start,0xf2ac0);});
 await test('Long forms fit their allocated representative widths',()=>{for(const entry of catalogue.entries){const size=glyphSize(entry,47,30);assert(size>0&&size<=30);for(const metric of Object.values(entry.metrics)){const width=Math.max(metric.advance,metric.bounds[2])-Math.min(0,metric.bounds[0]);assert(width*size/1000<=47.01,entry.glyphId);}}});
 await test('HTML escaping protects generated text',()=>{assert.equal(escapeHtml('<a "x">&\''),'&lt;a &quot;x&quot;&gt;&amp;&#39;');});
-const pages=['index.html','charts.html','proposal.html','downloads.html'];
-await test('Four progressive pages share the controls and semantic navigation',async()=>{for(const page of pages){const html=await read(`dist/${page}`);assert(html.startsWith('<!doctype html>'));for(const id of ['main','font-weight','font-weight-value','font-italic','font-status'])assert.equal((html.match(new RegExp(`id="${id}"`,'g'))||[]).length,1,`${page}: ${id}`);assert(html.includes('aria-current="page"'));assert(html.includes('<noscript>'));assert(!/conlang|vowels|consonants|readingPairs|proof-data\.json/i.test(html),page);}});
+const pages=['index.html','charts.html','unifont.html','proposal.html','downloads.html'];
+await test('Five progressive pages share semantic navigation and appropriate controls',async()=>{for(const page of pages){const html=await read(`dist/${page}`);assert(html.startsWith('<!doctype html>'));for(const id of page==='unifont.html'?['main','font-status']:['main','font-weight','font-weight-value','font-italic','font-status'])assert.equal((html.match(new RegExp(`id="${id}"`,'g'))||[]).length,1,`${page}: ${id}`);assert(html.includes('aria-current="page"'));assert(html.includes('href="unifont.html"'));assert(html.includes('<noscript>'));assert(!/conlang|vowels|consonants|readingPairs|proof-data\.json/i.test(html),page);}});
 await test('Project marks use the controlled reference font and removed page is absent',async()=>{
   const html=await read('dist/index.html'),point=String.fromCodePoint(catalogue.entries.find(entry=>entry.glyphId==='opposed-bowls-0-0').codePoint);
   assert(html.includes('<span class="brand-icon" aria-hidden="true"><span class="glyph-wrap"'));
   assert(html.includes('<span class="emblem-glyph"><span class="glyph-wrap"'));
   for(const mark of ['brand-icon','emblem-glyph'])assert(new RegExp(`class="${mark}"[^>]*><span class="glyph-wrap"[^>]*><span class="glyph"[^>]*>${point}</span>`,'u').test(html));
   assert(!html.includes('src="assets/project-icon.svg"'));
-  assert((await readdir(path.join(root,'dist'))).filter(file=>file.endsWith('.html')).length===4);
+  assert((await readdir(path.join(root,'dist'))).filter(file=>file.endsWith('.html')).length===5);
   for(const page of pages)assert(!/specimen/i.test(await read('dist/'+page)),page);
   await assert.rejects(()=>stat(path.join(root,'dist/specimens.html')),error=>error.code==='ENOENT');
 });
@@ -44,6 +45,30 @@ await test('Responsive static variants, five print grids, and one numeric names 
   assert(css.includes(`@container chart (min-width:${presentation.screen.wideWidth}px)`));
 });
 await test('Every local link and asset resolves beneath the Pages repository prefix',async()=>{for(const page of pages){const html=await read(`dist/${page}`);for(const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)){const url=match[1].split('#')[0];if(/^(?:https?:|data:|mailto:)/.test(url))continue;assert(!url.startsWith('/'),`${page}: absolute link ${url}`);const resolved=path.resolve(root,'dist',url);assert(resolved.startsWith(path.join(root,'dist')+path.sep));assert((await stat(resolved)).isFile(),`${page}: ${url}`);}}});
+await test('Unifont bitmap outputs match the catalogue and retain exact native STEM',async()=>{
+  const metadata=JSON.parse(await read('resources/unifont/glyphs.json'));
+  const source=await read('resources/unifont/quintessential-latin.hex'),glyphs=parseHex(source);
+  assert.equal(glyphs.size,metadata.drawn);assert.equal(metadata.drawn,148);
+  assert.equal(glyphs.get(0xf2a03).line,'0F2A03:000000000000180808080808083E0000');
+  assert.equal(source,await read('dist/unifont/quintessential-latin.hex'));
+  assert.equal(await read('resources/unifont/glyphs.json'),await read('dist/unifont/glyphs.json'));
+});
+await test('Unifont chart pages align to 256 positions with complete batch proofs and one inspector',async()=>{
+  const html=await read('dist/unifont.html'),metadata=JSON.parse(await read('resources/unifont/glyphs.json'));
+  const codes=[...html.matchAll(/data-unifont-code="([A-F0-9]+)"/g)].map(match=>parseInt(match[1],16));
+  assert.equal(codes.length,1280);assert.equal(new Set(codes).size,1280);
+  assert.equal(codes[0],0xf2a00);assert.equal(codes[1],0xf2a10);assert.equal(codes[16],0xf2a01);assert.equal(codes.at(-1),0xf2eff);
+  assert.equal((html.match(/class="bitmap-ready"/g)||[]).length,metadata.drawn);
+  assert.equal((html.match(/class="bitmap-pending"/g)||[]).length,metadata.total-metadata.drawn);
+  assert.equal((html.match(/class="bitmap-unallocated"/g)||[]).length,64);
+  assert.equal((html.match(/class="bitmap-card"/g)||[]).length,1);
+  assert(!html.includes('id="font-weight"'));assert(!html.includes('id="font-italic"'));
+  for(const glyph of metadata.glyphs){
+    const proof=await read('dist/unifont/proofs/'+glyph.familyId+'.html');
+    assert(proof.includes('id="bitmap-'+glyph.codePoint.toString(16)+'"'));
+    assert(proof.includes(glyph.line));
+  }
+});
 await test('Curated deployment excludes proof data and source trees',async()=>{const files=[];async function walk(directory){for(const entry of await readdir(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);if(entry.isDirectory())await walk(file);else files.push(file);}}await walk(path.join(root,'dist'));assert(files.every(file=>!file.includes('proof-data')&&!file.endsWith('.ufo')&&!file.includes('build-manifest')));assert.equal(files.filter(file=>file.endsWith('.pdf')).length,5);assert.equal(await read('resources/NamesList.txt'),await read('dist/data/names-list.txt'));});
 await test('PDF freshness binds current inputs and detects stale or altered publication artifacts',async()=>{
   await verifyPdfBuild(root);

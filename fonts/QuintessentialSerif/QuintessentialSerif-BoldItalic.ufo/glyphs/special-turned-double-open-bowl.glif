@@ -34,15 +34,21 @@
       <point x="271" y="311"/>
       <point x="294" y="344"/>
       <point x="294" y="366" type="qcurve" smooth="yes"/>
-      <point x="294" y="396"/>
-      <point x="256" y="418"/>
-      <point x="231" y="418" type="qcurve" smooth="yes"/>
-      <point x="197" y="418"/>
-      <point x="126" y="381"/>
-      <point x="94" y="349" type="qcurve"/>
-      <point x="65" y="372" type="line"/>
-      <point x="99" y="419"/>
-      <point x="207" y="481"/>
+      <point x="294" y="405.807692"/>
+      <point x="273.760353" y="435"/>
+      <point x="260.444796" y="435" type="qcurve" smooth="yes"/>
+      <point x="233.444796" y="435"/>
+      <point x="200.667194" y="412"/>
+      <point x="178.788235" y="377"/>
+      <point x="156.334389" y="343"/>
+      <point x="124.556787" y="320"/>
+      <point x="97.556787" y="320" type="qcurve" smooth="yes"/>
+      <point x="63.556787" y="320"/>
+      <point x="47.285973" y="357"/>
+      <point x="57.913801" y="382" type="qcurve" smooth="yes"/>
+      <point x="70.242081" y="411"/>
+      <point x="125.372172" y="456"/>
+      <point x="216.425113" y="482"/>
       <point x="281" y="481" type="qcurve" smooth="yes"/>
       <point x="330" y="481"/>
       <point x="401" y="453"/>
@@ -71,7 +77,7 @@
         <key>advanceWidth</key>
         <integer>455</integer>
         <key>bodyDesign</key>
-        <string>native-direct-outline</string>
+        <string>native-turned-bowl-with-local-upper-bulb</string>
         <key>bodyDonorCodePoint</key>
         <integer>604</integer>
         <key>counterCount</key>
@@ -80,10 +86,30 @@
         <string>stemless-specials</string>
         <key>glyphId</key>
         <string>special-turned-double-open-bowl</string>
+        <key>lowerTerminalDonorCodePoint</key>
+        <integer>604</integer>
+        <key>lowerTerminalOffsetX</key>
+        <integer>0</integer>
+        <key>lowerTerminalOffsetY</key>
+        <integer>0</integer>
         <key>method</key>
-        <string>Native stemless bowl vocabulary; no language reading.</string>
+        <string>Native body with bulbs at both free terminals; existing advance and body placement preserved.</string>
         <key>posture</key>
         <string>Italic</string>
+        <key>terminalDesign</key>
+        <string>upper-and-lower-bulbs</string>
+        <key>upperTerminalDonorCodePoint</key>
+        <integer>604</integer>
+        <key>upperTerminalOffsetX</key>
+        <real>91.89864251991946</real>
+        <key>upperTerminalOffsetY</key>
+        <integer>469</integer>
+        <key>upperTerminalReflectedY</key>
+        <true/>
+        <key>upperTerminalReversed</key>
+        <true/>
+        <key>upperTerminalShearX</key>
+        <real>-0.42511312334004425</real>
       </dict>
     </dict>
   </lib>

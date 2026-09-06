@@ -1,0 +1,6 @@
+{
+  "sourceRestorations": 12,
+  "rejectedSourceMutationsOrRollbacks": 24,
+  "rejectedUnrelatedGPOSChanges": 12,
+  "status": "passed"
+}

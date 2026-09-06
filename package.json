@@ -9,15 +9,19 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "node tools/export_glyph_catalogue.js --check && node tools/build_site.mjs",
+    "build": "node tools/export_glyph_catalogue.js --check && npm run build:unifont && node tools/build_site.mjs",
     "dev": "node tools/serve_site.mjs",
-    "test": "node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_site.mjs",
+    "test": "node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_unifont.mjs && node tools/test_site.mjs",
     "test:browser": "node tools/test_browser.mjs",
     "build:pdf": "python tools/build_pdfs.py",
     "test:pdf": "python tools/test_pdfs.py",
     "build:font": "python tools/build_quintessential_font.py",
     "test:font": "python tools/test_fonts.py",
-    "test:preservation": "python tools/test_additions_font.py"
+    "test:preservation": "python tools/test_additions_font.py",
+    "build:unifont": "node tools/build_unifont_glyphs.mjs",
+    "test:unifont": "node tools/test_unifont.mjs",
+    "test:unifont:browser": "node tools/test_unifont_browser.mjs",
+    "preview:unifont": "npm run build:unifont && node tools/build_site.mjs --unifont-only"
   },
   "devDependencies": {
     "playwright": "1.62.1"

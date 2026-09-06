@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "scope": "PDF refresh for three adopted stemless terminal revisions",
+  "fontSha256BeforeBuild": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+  "fontSha256AfterBuild": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+  "pdfBuildManifestSha256": "6d15a93acad90de3a6cb0fec1695cabfcbbb80b9b14a5adafaa84d24e4635e74",
+  "pdfTests": {
+    "command": ".venv-pdfs/Scripts/python.exe tools/test_pdfs.py",
+    "passed": 9,
+    "seconds": 23.043
+  },
+  "renderCommand": ".venv-pdfs/Scripts/python.exe tools/render_pdf_review.py --output .tmp/stemless-terminal-pdf-review --dpi 110",
+  "renderManifestSha256": "37d602a74c0b9b8af40c52feb3feee77f7858343e37bb72913759d2f158beb08",
+  "renderedPages": 67,
+  "inspectedContacts": [
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-1.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-2.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-3.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-4.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-5.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-6.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-7.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-8.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/contact-1.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/contact-2.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-1.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-2.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-3.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-4.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-5.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/contact-1.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/contact-2.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin/contact-1.png",
+    ".tmp/stemless-terminal-pdf-review/quintessential-latin/contact-2.png"
+  ],
+  "inspectedFullPages": {
+    "quintessential-latin.pdf": [
+      2,
+      3
+    ],
+    "quintessential-latin-extended-a.pdf": [
+      2,
+      3
+    ],
+    "quintessential-latin-catalogue.pdf": [
+      2,
+      3,
+      8,
+      9
+    ]
+  },
+  "findings": [
+    "All 67 pages were reviewed on 19 contact sheets.",
+    "The eight pages containing the revised glyphs were also inspected at full rendered resolution.",
+    "The chart grids and 10-point names-list specimens contain the adopted bulb terminals.",
+    "No clipping, overlapping text, missing glyphs, or broken wrapping was observed.",
+    "Existing pagination remains 6 main, 7 Extended-A, 18 Extended-B, 31 combined, and 5 proposal pages."
+  ],
+  "rendering": [
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "pageCount": 31,
+      "pages": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-01.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-02.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-03.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-04.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-05.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-06.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-07.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-08.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-09.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-10.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-11.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-12.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-13.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-14.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-15.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-16.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-17.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-18.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-19.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-20.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-21.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-22.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-23.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-24.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-25.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-26.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-27.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-28.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-29.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-30.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/page-31.png"
+      ],
+      "contacts": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-2.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-3.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-4.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-5.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-6.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-7.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-catalogue/contact-8.png"
+      ],
+      "pdfSha256": "057f9ee1d7ea12bbf458ea86230ca94893a989988e9e30b5371fbe263da64626",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+        "page-02.png": "9cfe45dc88747f84d33cf4e385b672e2ace9669440a183c954634926350e8dd7",
+        "page-03.png": "14b6d2e6f8be670e94431f26dbfb0181e3055a0c50f834bc06e7d1e513bfe612",
+        "page-04.png": "dfe07aa8dee6bc474f7be34681d2c58ffbedff2e5ac279d23efb12e8a061fb60",
+        "page-05.png": "575854f84b9669ea19c267ba778ac1eb422511c023d293eb8c4d1745ead5fa4a",
+        "page-06.png": "bfb20b5a736d283a8f32e94b76876ccd6d900e77b2897f872a1d5af781cf36c4",
+        "page-07.png": "550dd4815743c8a247a2f1bb16a445c5cec73e85b72446c51b1fbc623d246a7c",
+        "page-08.png": "c969b40f95de1652d76d96a1d622abde6245e048a887295018ca8c1427f21f6a",
+        "page-09.png": "f7c3ae3ccf9c80ba7fab035d16065dca6a25220d9fcf6bd4fa2ce94dcf0ba4f5",
+        "page-10.png": "fce793126541135c9ff10a225280b6d82bee02a174eef374a3b752ce1ac78ba4",
+        "page-11.png": "4d6fff38149423a4f302f50193504c834f244ed4531401b60a8b9dc2d2963344",
+        "page-12.png": "b6be5293dc0c4d1a82b15c4e450309dda3fe9a4cdf1643dab9e6613e20136da1",
+        "page-13.png": "44962529dd924de892804f4079c8b17b8d656e6fa84c244e3d21471a93850797",
+        "page-14.png": "d065cdc4d8e7408d17f7609c7c2879022fcd9bae3f26b1deba4c2005a0a3af9d",
+        "page-15.png": "b4eee6bdf1819da30751b9d76656647babd651770b65ad372b5c905d957a9230",
+        "page-16.png": "68719a75f88c403a98e0e1747fe88b6ac6576dc867f383cfadc265aa7623b3e4",
+        "page-17.png": "1f6e3dbeddfb5705803922fad7f57e1e4950f6421c887ae6fa7cf47752360f76",
+        "page-18.png": "0392887e0f67e8f1089dbc8a376f3db1284b55b3753cc3b7ad1c4a451572c0a6",
+        "page-19.png": "04f9790bda990a9ed39d6a9d5fdb075323ba7a69316c7bdad788deaad0ea0184",
+        "page-20.png": "8dca2eded304c6ffe29b799bb40291f300fb75ae2a7b91b57abec6c8c7144551",
+        "page-21.png": "88be0e399758e395ff7b0e9a406fe0597550a9d64a914fb4e8ed93dbd53be6db",
+        "page-22.png": "2a7129851f18e7395234c4dca1bdec6e98f9643624307342c13e2830ce1a49af",
+        "page-23.png": "b2f2931e7421bb5dc395bca1318eb77ea93a5231452d27de8c1ab83f4b032115",
+        "page-24.png": "e767d4a3c955d7a74b4da79e253225bdeb2352696f1bffb63e2ed09c8b28e495",
+        "page-25.png": "efd6a477f4dbc3df0c3be49154dccbb3a4cb0f4e309adbbd02c24d5120172df3",
+        "page-26.png": "9fc34c3b6b2ae576ca9e75027175d5d669a606775526e3d1b7209b36e8259e92",
+        "page-27.png": "cc02ad4729f3048f83a2bc6e9a3ef5833d708797902e68531b4a6bb7978e14db",
+        "page-28.png": "2991c27c0a507399ea4b950ed63df094558996d10dc6bbf9e51367aac4f0a20c",
+        "page-29.png": "81783c860696d280715fc69110e7642d998fec66f69c4d48200acdd89cdd0c94",
+        "page-30.png": "3ce91a422734bf319d247bec35fdab64a03ab6cf3f6eba9fa8f594f756af9888",
+        "page-31.png": "8064dfe37e0f1717b2940970fc17d564eee6e24d14acffaf7f766e8dc09d6fd7"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-a.pdf",
+      "pageCount": 7,
+      "pages": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-2.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-3.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-4.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-5.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-6.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/page-7.png"
+      ],
+      "contacts": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/contact-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-a/contact-2.png"
+      ],
+      "pdfSha256": "d7c1129b9de006f7219225010853fc597780e28bcd274189eb66d0e5dbe5867e",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "86fae1862b3b151afbff214b3a18758cbc3a3852bc86b91905c7b6771c780ff8",
+        "page-2.png": "09390ae3f76d7fc1e5a15f6d74b041f3aedb15009414a8f0e5781d0ee6d573ac",
+        "page-3.png": "a098f8c5d22c5a6a9371b0522639bb48e80c5bdb448b0785de85be85e3f61cf7",
+        "page-4.png": "06d8a8b92a304fa106167b4bf29883539383b3de515723cf0896764374cfbaea",
+        "page-5.png": "7206e22fc4dc69daa8bb385a0b50b36bbbed82316fc5e0bacf700dc5cc7dbafe",
+        "page-6.png": "ce3d3512e1808f2435fe3c3d37540e3b1f71700db129ae0728e0db006fad6fc2",
+        "page-7.png": "092d16fdee6e1133a2f8f0ba45343074cf9346aa308f7b3491df7749eaf2d08b"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-b.pdf",
+      "pageCount": 18,
+      "pages": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-01.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-02.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-03.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-04.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-05.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-06.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-07.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-08.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-09.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-10.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-11.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-12.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-13.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-14.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-15.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-16.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-17.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/page-18.png"
+      ],
+      "contacts": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-2.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-3.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-4.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-extended-b/contact-5.png"
+      ],
+      "pdfSha256": "a0957593d29ba66540f6adf460829debb69004c1e5a2b0ae60e768e73e230b7f",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "75bd65220b79b78282198cfb26d54a00f61065c88fc67d10c0fbacb199a791e7",
+        "page-02.png": "06b4f4b955e54d8f335b321a106c54dc35a0f8b2e2c498c8426fa22e6297ac37",
+        "page-03.png": "f84b136d5c3a5da35e75874460537816f2a2ebde2c0c69936490be68b49ba793",
+        "page-04.png": "39918ad456a5fb6bacb23c8e3ffe9bf7b465c5614c18331d4967277480991178",
+        "page-05.png": "f05b9a1131a7805e2ab4d861111f3ebf9eaf50d9ac497a66a015d02557328cdc",
+        "page-06.png": "8569d852f6daa9faaab1a161dd6e210cb91189c46b4e96bd4ed526be39ab5ea0",
+        "page-07.png": "6eab9695b77b0bbde163be7e8ed57de8ac4c4429383f95c7778d11a7e14780ec",
+        "page-08.png": "5cc4f9720593b806bc07cfbf51a6469825796f9051cff7389ca4dc61f24bc93f",
+        "page-09.png": "ce91bbfa19caf0e6e1c36a854ed3d66e04bf55efc61dd021ce80329059a6c07a",
+        "page-10.png": "8562ee42df37b52a1207c9f341af06c70b7d40b478c574fb1a315e6620e4c360",
+        "page-11.png": "80368d6507d30a4451caa0683a7256a2c3f868f9ccf73ba5d1485d9d6ef712a2",
+        "page-12.png": "885060289880b20c7f9c498b2a4e80e3112a1333a4d3020c1bf97d0aa7471f76",
+        "page-13.png": "33356cd694aa18bb2bb7a687a50ef3a31c3ee894dcf88a3ffcec6000c4e7618c",
+        "page-14.png": "0e5dd1f2d4e3bbb00b681435477cdebb975f7b013b09a975830bf172180f5843",
+        "page-15.png": "a0b5b33bc73662b89ef1140317f03dd7265ccb6d84494bfd5d95b0428465bdf2",
+        "page-16.png": "be7cb6d04fa384a82eb191789050cc060387cb42183c76e60bcf5cfade92160a",
+        "page-17.png": "3233a2b7a4e9c92f5d91ad01d7fd4a22e67ef0af085c389e137f9690699c3bb9",
+        "page-18.png": "2273c05d9136301fee68f574e5b2b1d1fd22688178928cf62bea9fc25e0ccb59"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-proposal.pdf",
+      "pageCount": 5,
+      "pages": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/page-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/page-2.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/page-3.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/page-4.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/page-5.png"
+      ],
+      "contacts": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/contact-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin-proposal/contact-2.png"
+      ],
+      "pdfSha256": "372fbec652867ffde7cf26bf1176aadbb572f261ec33b3b00448464db3f5e80b",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "28772ad4d8549a1dfd29d9d14dd172b4da715b60d8559863b3be9d14dfe45d2c",
+        "page-2.png": "4b1bb26077366ab6eca91be7846cce6e0b671a717856287474fb8f15d6700486",
+        "page-3.png": "7e1d7e36ae661a7faa161ce2ad797efd73ef85e413df460e1564f088b25fc042",
+        "page-4.png": "ad37a8acae201dbe7741eedc187e45bda6104eeea9c219bbd661ec5cdb3d695d",
+        "page-5.png": "faf059a68de4fd80b9976474c476b79413bfb6fb00078389c15026d65a8fd264"
+      }
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "pageCount": 6,
+      "pages": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-2.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-3.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-4.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-5.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/page-6.png"
+      ],
+      "contacts": [
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/contact-1.png",
+        ".tmp/stemless-terminal-pdf-review/quintessential-latin/contact-2.png"
+      ],
+      "pdfSha256": "eae88eec0df250a2d5efe08fe1947439d322009202f78c17dec720bb0071b0fd",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+        "page-2.png": "9cfe45dc88747f84d33cf4e385b672e2ace9669440a183c954634926350e8dd7",
+        "page-3.png": "14b6d2e6f8be670e94431f26dbfb0181e3055a0c50f834bc06e7d1e513bfe612",
+        "page-4.png": "dfe07aa8dee6bc474f7be34681d2c58ffbedff2e5ac279d23efb12e8a061fb60",
+        "page-5.png": "575854f84b9669ea19c267ba778ac1eb422511c023d293eb8c4d1745ead5fa4a",
+        "page-6.png": "bfb20b5a736d283a8f32e94b76876ccd6d900e77b2897f872a1d5af781cf36c4"
+      }
+    }
+  ],
+  "userVisualAcceptance": "pending",
+  "finalCatalogueSha256": "1a112279ea5881d45623a992e4a677ea4ec8d578428f14f57b04b756220f3a64",
+  "finalRebuild": "All five PDFs are byte-identical to the fully rendered and inspected build; all recorded page-image hashes remain applicable.",
+  "finalSourceManifestValidation": "tools/verify_pdf_build.mjs verifyPdfBuild passed against the final refreshed catalogue and current sources."
+}

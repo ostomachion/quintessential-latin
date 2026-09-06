@@ -1,0 +1,3887 @@
+{
+  "schemaVersion": 1,
+  "glyphs": [
+    {
+      "glyphId": "double-bowl-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C",
+        "0068"
+      ],
+      "notes": "Retain the 8-pixel double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "double-bowl",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "double-bowl-upper-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C",
+        "0066"
+      ],
+      "notes": "Retain the 8-pixel double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native f hook uses row 3 columns 2–3 and column 1 in rows 4–5, without a crossbar, bulb, or extra serif.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "double-bowl",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "double-bowl-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C"
+      ],
+      "notes": "Retain the 8-pixel double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The left straight descender adds column 1, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "double-bowl",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "double-bowl-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C",
+        "0068"
+      ],
+      "notes": "Retain the 8-pixel double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "double-bowl",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "double-bowl-upper-hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "025C",
+        "0066"
+      ],
+      "notes": "Retain the 8-pixel double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native f hook uses row 3 columns 2–3 and column 1 in rows 4–5, without a crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "double-bowl",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-double-bowl-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B"
+      ],
+      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-double-bowl",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-double-bowl-lower-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-double-bowl",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-double-bowl-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B"
+      ],
+      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight ascender adds column 6, rows 3–5, following native h/d.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-double-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-double-bowl-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B"
+      ],
+      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight ascender adds column 6, rows 3–5, following native h/d. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-double-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-double-bowl-ascender-lower-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0064",
+        "0071",
+        "025B",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight ascender adds column 6, rows 3–5, following native h/d. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-double-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowled-spine-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0250",
+        "0068"
+      ],
+      "notes": "Retain the 8-pixel bowled-spine base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowled-spine",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowled-spine-upper-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        "..####..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0250",
+        "0066"
+      ],
+      "notes": "Retain the 8-pixel bowled-spine base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native f hook uses row 3 columns 2–3 and column 1 in rows 4–5, without a crossbar, bulb, or extra serif.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowled-spine",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowled-spine-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0250",
+        "0070"
+      ],
+      "notes": "Retain the 8-pixel bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Add only the contextual joining pixel (1,13) through the native rounded baseline return, so the straight extension remains straight.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowled-spine",
+        "addPixels": [
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "bowled-spine-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0250",
+        "0068",
+        "0070"
+      ],
+      "notes": "Retain the 8-pixel bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Add only the contextual joining pixel (1,13) through the native rounded baseline return, so the straight extension remains straight.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowled-spine",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "bowled-spine-upper-hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#....#.",
+        ".#####..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0250",
+        "0066",
+        "0070"
+      ],
+      "notes": "Retain the 8-pixel bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The simple native f hook uses row 3 columns 2–3 and column 1 in rows 4–5, without a crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Add only the contextual joining pixel (1,13) through the native rounded baseline return, so the straight extension remains straight.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowled-spine",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "turned-bowled-spine-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0071"
+      ],
+      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowled-spine-lower-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowled-spine-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0064"
+      ],
+      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Add only the contextual joining pixel (6,6) through the native rounded cap, so the straight extension remains straight.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "turned-bowled-spine-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Add only the contextual joining pixel (6,6) through the native rounded cap, so the straight extension remains straight. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "turned-bowled-spine-ascender-lower-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        "......#.",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Add only the contextual joining pixel (6,6) through the native rounded cap, so the straight extension remains straight. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowled-spine",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-0-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-0-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-0-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-0-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-0-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-2-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-4-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-1-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0070",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-3-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0068",
+        "0070",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-0",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-2",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-4",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-1",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070",
+        "0064"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-3",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The right straight descender adds column 6, rows 14–15, following native p/q.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "glyphId": "opposed-bowls-5-5",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##..#.",
+        ".#....#.",
+        ".#....#.",
+        ".#.####.",
+        ".##...#.",
+        ".#....#.",
+        ".#..###.",
+        ".###..#.",
+        ".#....#.",
+        ".#...##.",
+        ".####.#.",
+        ".#....#.",
+        ".#..##.."
+      ],
+      "donors": [
+        "0061",
+        "0250",
+        "0066",
+        "0070",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "expected": {
+        "components": 1,
+        "counters": 2
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "opposed-bowls-0-0",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": [
+          [
+            6,
+            6
+          ],
+          [
+            1,
+            13
+          ]
+        ]
+      }
+    }
+  ]
+}

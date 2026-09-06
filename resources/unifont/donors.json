@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "family": "GNU Unifont",
+  "version": "17.0.05",
+  "sourceUrl": "https://unifoundry.com/pub/unifont/unifont-17.0.05/font-builds/unifont-17.0.05.hex.gz",
+  "sourceCompressedSha256": "2ae5311c8e123e9e85f5331cd012aa99757071df23243f1487fdbf8f3acd86be",
+  "sourceRawSha256": "fd79af3613ec1b984a98d33428fdd43fcf06018d18059960d78edeb63d958622",
+  "subsetSha256": "42848baa89aa315d60b1479e7a325f9376d34ba5c9fc5dba2f729b3a69994109",
+  "donorHashEncoding": "SHA-256 of the ASCII uppercase bitmap hexadecimal string, excluding code point and newline.",
+  "copyright": "Copyright (C) 1998-2026 Roman Czyborra, Paul Hardy, Qianqian Fang, Andrew Miller, Johnnie Weaver, David Corbett, Ælla Chiana Moskopp, Rebecca Bettencourt, Minseo Lee, Ho-Seok Ee, et al.",
+  "license": "SIL Open Font License 1.1; see OFL.txt.",
+  "donors": [
+    {
+      "codePoint": "0061",
+      "name": "LATIN SMALL LETTER A",
+      "width": 8,
+      "hex": "0000000000003C42023E4242463A0000",
+      "sha256": "e8b18e0295fee5fddbab63ea464b2e489b963797f5df354f9cab30e324721eea"
+    },
+    {
+      "codePoint": "0062",
+      "name": "LATIN SMALL LETTER B",
+      "width": 8,
+      "hex": "0000004040405C6242424242625C0000",
+      "sha256": "d1d51c4fc850ed1d2e8419089075a64c683b16006a6ac397374026c609cfc0a4"
+    },
+    {
+      "codePoint": "0063",
+      "name": "LATIN SMALL LETTER C",
+      "width": 8,
+      "hex": "0000000000003C4240404040423C0000",
+      "sha256": "0222dcb97e166d0835216626affc21534eab6be8708f187d26133e4b587f4741"
+    },
+    {
+      "codePoint": "0064",
+      "name": "LATIN SMALL LETTER D",
+      "width": 8,
+      "hex": "0000000202023A4642424242463A0000",
+      "sha256": "7f73d37a2ee59aa51d24f7921051959c935d7ba8eda6d88e499671fb240ecb3a"
+    },
+    {
+      "codePoint": "0065",
+      "name": "LATIN SMALL LETTER E",
+      "width": 8,
+      "hex": "0000000000003C42427E4040423C0000",
+      "sha256": "b8b85c84fce7822cfbc838d34e7cddeff60a4fc51300d4a75a12e9c5cc6e7525"
+    },
+    {
+      "codePoint": "0066",
+      "name": "LATIN SMALL LETTER F",
+      "width": 8,
+      "hex": "0000000C1010107C1010101010100000",
+      "sha256": "be343b925578c2436ea8e7a9180319a521c03105fa617cc8c17de5a27da9eb0e"
+    },
+    {
+      "codePoint": "0068",
+      "name": "LATIN SMALL LETTER H",
+      "width": 8,
+      "hex": "0000004040405C624242424242420000",
+      "sha256": "81bfe25ec255bdf26b2cd03b45d5068851cf6e95acbec78abc27f1827f2228c0"
+    },
+    {
+      "codePoint": "006A",
+      "name": "LATIN SMALL LETTER J",
+      "width": 8,
+      "hex": "0000000404000C040404040404044830",
+      "sha256": "aae86625c784f45f2b4825ecaa94180c7cbb890355fa246f3236b512c5922f85"
+    },
+    {
+      "codePoint": "006C",
+      "name": "LATIN SMALL LETTER L",
+      "width": 8,
+      "hex": "000000180808080808080808083E0000",
+      "sha256": "81eec5c8b19e3da52780e612afa618f2b120f87d5496d6d9d2e6344266e7037a"
+    },
+    {
+      "codePoint": "006D",
+      "name": "LATIN SMALL LETTER M",
+      "width": 8,
+      "hex": "00000000000076494949494949490000",
+      "sha256": "300baff0a562746eac91707e2967bfee5770dc09cfd98e0e5064ccda21e12172"
+    },
+    {
+      "codePoint": "006E",
+      "name": "LATIN SMALL LETTER N",
+      "width": 8,
+      "hex": "0000000000005C624242424242420000",
+      "sha256": "56b1bbdfebdb7855617d8574ef2315aa1929c888716750689eb6e5d042a8414d"
+    },
+    {
+      "codePoint": "006F",
+      "name": "LATIN SMALL LETTER O",
+      "width": 8,
+      "hex": "0000000000003C4242424242423C0000",
+      "sha256": "7a1e814e4f6e01b15f7685ef406fc4f52318862f09a7dda121447f44d9eda38e"
+    },
+    {
+      "codePoint": "0070",
+      "name": "LATIN SMALL LETTER P",
+      "width": 8,
+      "hex": "0000000000005C6242424242625C4040",
+      "sha256": "35e870435b6bd5e711d5c87d6af8691d6a2c008a60d73afdef5f9d7d4612ddba"
+    },
+    {
+      "codePoint": "0071",
+      "name": "LATIN SMALL LETTER Q",
+      "width": 8,
+      "hex": "0000000000003A4642424242463A0202",
+      "sha256": "8ddf8c4b930e386a28a7bcfabe5e6b8cf94bf539077c362ad3ace29ecedad289"
+    },
+    {
+      "codePoint": "0072",
+      "name": "LATIN SMALL LETTER R",
+      "width": 8,
+      "hex": "0000000000005C624240404040400000",
+      "sha256": "509fe264334a2ecadc92115a506ea2a6c8079dffcad0b8418f8b04cd4895457f"
+    },
+    {
+      "codePoint": "0073",
+      "name": "LATIN SMALL LETTER S",
+      "width": 8,
+      "hex": "0000000000003C4240300C02423C0000",
+      "sha256": "b0185bff2d2634ae930c50bcbefd92d2f05907fed63f3d64c91d3d75cbce9a38"
+    },
+    {
+      "codePoint": "0075",
+      "name": "LATIN SMALL LETTER U",
+      "width": 8,
+      "hex": "000000000000424242424242463A0000",
+      "sha256": "e673c202c6d5e510f8bfffe39d1ed4bfc77b75b5b9643d872264b0dac103ca17"
+    },
+    {
+      "codePoint": "0131",
+      "name": "LATIN SMALL LETTER DOTLESS I",
+      "width": 8,
+      "hex": "000000000000180808080808083E0000",
+      "sha256": "c7940f40fdada0a3276f53a2376885c10d686f89b4d908edde854a547350fd14"
+    },
+    {
+      "codePoint": "014B",
+      "name": "LATIN SMALL LETTER ENG",
+      "width": 8,
+      "hex": "0000000000005C62424242424242020C",
+      "sha256": "041c2f53cd33c4942d76fca1a9a7fa669dd43fe0f3b57557b8abc6cb58c6beaa"
+    },
+    {
+      "codePoint": "0237",
+      "name": "LATIN SMALL LETTER DOTLESS J",
+      "width": 8,
+      "hex": "0000000000000C040404040404044830",
+      "sha256": "0da222e9d86b486efc1429327c5f29412d731407a4220237d1258bd35dabd7c0"
+    },
+    {
+      "codePoint": "0250",
+      "name": "LATIN SMALL LETTER TURNED A",
+      "width": 8,
+      "hex": "0000000000005C6242427C40423C0000",
+      "sha256": "8f6b22a7602f1761516ef0bfac4525346467107c627bda330701da0e464141a5"
+    },
+    {
+      "codePoint": "0251",
+      "name": "LATIN SMALL LETTER ALPHA",
+      "width": 8,
+      "hex": "0000000000003A46424242464A320000",
+      "sha256": "45dbf2f11d4b6833e1592ff0814e22ce0400b46170c4eb3b301840648352b566"
+    },
+    {
+      "codePoint": "0252",
+      "name": "LATIN SMALL LETTER TURNED ALPHA",
+      "width": 8,
+      "hex": "0000000000004C5262424242625C0000",
+      "sha256": "6265b192057d6ed96ac1f1c9a474123608002f5eb65ed6d7031c5ec2a3bfc537"
+    },
+    {
+      "codePoint": "0254",
+      "name": "LATIN SMALL LETTER OPEN O",
+      "width": 8,
+      "hex": "0000000000003C4202020202423C0000",
+      "sha256": "f88b3fb131396d70a5ba2dd27c1fe08b53837611d8de8735cebacd5e16307b58"
+    },
+    {
+      "codePoint": "025B",
+      "name": "LATIN SMALL LETTER OPEN E",
+      "width": 8,
+      "hex": "0000000000003C42403C4040423C0000",
+      "sha256": "4dc808e83e4e8eea4d6ec9d6c5f9f8e3648e2cf966d4f1eaf35f102f776696e8"
+    },
+    {
+      "codePoint": "025C",
+      "name": "LATIN SMALL LETTER REVERSED OPEN E",
+      "width": 8,
+      "hex": "0000000000003C42023C0202423C0000",
+      "sha256": "8d99fc95574b5321a8aa64035ae22d2c1736e4d15f2c1fc31160d65148df4855"
+    },
+    {
+      "codePoint": "025F",
+      "name": "LATIN SMALL LETTER DOTLESS J WITH STROKE",
+      "width": 8,
+      "hex": "0000000000000C0404041F0404044830",
+      "sha256": "90164343024306b2a9f32016dc5c366cfc0bf4f2d2ee257565ba720ce671be6b"
+    },
+    {
+      "codePoint": "0265",
+      "name": "LATIN SMALL LETTER TURNED H",
+      "width": 8,
+      "hex": "0000000000424242424242463A020202",
+      "sha256": "e8162d64e628b7ccacdf92214a85a4d334c404c8776ae503adb344116581c44e"
+    },
+    {
+      "codePoint": "0269",
+      "name": "LATIN SMALL LETTER IOTA",
+      "width": 8,
+      "hex": "000000000000701010101010100C0000",
+      "sha256": "7bfaf3878255033346fabc69401990cf49f72cdfe771544bf43f3b4e37196c03"
+    },
+    {
+      "codePoint": "026F",
+      "name": "LATIN SMALL LETTER TURNED M",
+      "width": 8,
+      "hex": "00000000000049494949494949370000",
+      "sha256": "f610bba7eae57e46d9776324ea25f368f16269b300c48936bc618f85807e340f"
+    },
+    {
+      "codePoint": "0279",
+      "name": "LATIN SMALL LETTER TURNED R",
+      "width": 8,
+      "hex": "000000000000020202020242463A0000",
+      "sha256": "2b3f015fdf94695f7d66a33705c6b4d70be3dea71dbc4d7e94ba7d728e7d4f62"
+    },
+    {
+      "codePoint": "027E",
+      "name": "LATIN SMALL LETTER R WITH FISHHOOK",
+      "width": 8,
+      "hex": "0000000000003C424240404040400000",
+      "sha256": "34d3d5c0837094fe8333180b9a2422764be7ec8eba53883ca33aafbca8cf4f75"
+    },
+    {
+      "codePoint": "027F",
+      "name": "LATIN SMALL LETTER REVERSED R WITH FISHHOOK",
+      "width": 8,
+      "hex": "0000000000003C424202020202020202",
+      "sha256": "171b874b051180df7a1b125401528f285de21c8eb475f5f7dbcf9014b835c15c"
+    },
+    {
+      "codePoint": "0282",
+      "name": "LATIN SMALL LETTER S WITH HOOK",
+      "width": 8,
+      "hex": "0000000000003C4240300C02427C4030",
+      "sha256": "2c732a957fd102aabe869ad0f986d529a7dc6a6b3bd8139031d91d7972bacb42"
+    },
+    {
+      "codePoint": "0283",
+      "name": "LATIN SMALL LETTER ESH",
+      "width": 8,
+      "hex": "0000000C101010101010101010106000",
+      "sha256": "0de67109dd80aaf64eb8229c6ffebf78f20a6379daa14daa0b16f92208fd856d"
+    },
+    {
+      "codePoint": "0284",
+      "name": "LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK",
+      "width": 8,
+      "hex": "0000000C1010101010107C1010106000",
+      "sha256": "e3f48dee8baf2ea13a1bb0f3d407bade2a59288ad33e1b6cf06dc0581d73e4d2"
+    },
+    {
+      "codePoint": "0285",
+      "name": "LATIN SMALL LETTER SQUAT REVERSED ESH",
+      "width": 8,
+      "hex": "00000000000060101010101010100C00",
+      "sha256": "3ce8eb68460b0c566f489c02f76c3de6973e513a466782aee160aac8085589da"
+    },
+    {
+      "codePoint": "0287",
+      "name": "LATIN SMALL LETTER TURNED T",
+      "width": 8,
+      "hex": "00000000601010101010107C10100000",
+      "sha256": "483d6d244c19382ddf286c3c8b12f8500c78d55b5cd0bf6e56d5824ae2eca6bd"
+    },
+    {
+      "codePoint": "0292",
+      "name": "LATIN SMALL LETTER EZH",
+      "width": 8,
+      "hex": "0000000000003E0408101C020202423C",
+      "sha256": "4c7becce8f61d8ae6b8cf9118ae8c82a7087db4c305e02358563a88e21aecd11"
+    },
+    {
+      "codePoint": "1D08",
+      "name": "LATIN SMALL LETTER TURNED OPEN E",
+      "width": 8,
+      "hex": "0000000000003C4202021C02423C0000",
+      "sha256": "58f4d21b0f38588198dd3c4a7e9835929037f9bdae568bf53c5ce9e4e515528e"
+    }
+  ]
+}

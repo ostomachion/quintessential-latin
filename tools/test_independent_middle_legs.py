@@ -4,6 +4,8 @@
 The pre-increment capture pins all 832 prior identities, editable GLIF bytes,
 outlines, advances, effective pairs, and GID order. Mixed constructions must
 fill the two missing states for each of the 192 two-middle-component bases.
+The three later stemless terminal edits are validated by their focused suite;
+their advances and pairs remain subject to this historical preservation gate.
 """
 from __future__ import annotations
 
@@ -25,6 +27,7 @@ from test_additions_font import interpolation_factor, middle_directions
 from test_italic_completion import expected_counter_count, outlines, pair_digest, source_pair_digest
 from test_quintessential_font import PolygonPen, filled_scanline_intervals
 from verify_logical_allocation import historical_entry, historical_source_sha, current_unicode_map
+from test_stemless_terminals import assert_preserved_outlines
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
@@ -122,7 +125,7 @@ class IndependentMiddleLegTests(unittest.TestCase):
             source = self.sources[style]
             names = tuple(captured["outlines"])
             self.assertEqual(source.lib["public.glyphOrder"][:len(captured["order"])], captured["order"], style)
-            self.assertEqual(outlines(source, names), captured["outlines"], style)
+            assert_preserved_outlines(self, outlines(source, names), captured["outlines"], style)
             self.assertEqual(source_pair_digest(source, names), captured["pairs"], style)
             self.assertEqual({name: source[name].unicodes for name in names}, current_unicode_map(captured["cmap"]), style)
 
@@ -244,7 +247,7 @@ class IndependentMiddleLegTests(unittest.TestCase):
                 self.assertEqual(font.getBestCmap(), expected_cmap)
                 self.assertEqual(len(font.getGlyphOrder()), 1218)
                 glyphs = font.getGlyphSet()
-                self.assertEqual(outlines(glyphs, names), captured["outlines"], face)
+                assert_preserved_outlines(self, outlines(glyphs, names), captured["outlines"], face)
                 self.assertEqual(pair_digest(effective_pairs(font), names), captured["pairs"], face)
                 if weight is None:
                     continue

@@ -1,0 +1,7 @@
+terminal preservation Italic: 1215 unrelated outlines/sidebearings; all advances/pairs
+test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved (__main__.StemlessTerminalTests.test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 12.912s
+
+OK

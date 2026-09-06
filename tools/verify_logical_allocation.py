@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Verify the 0.250 encoding migration against immutable 0.240 font data.
 
-Recipe identities, internal order and every non-encoding source byte remain
-fixed. Older regression suites can recover their original Unicode tokens
-without modifying any historical baseline or weakening geometry checks.
+Recipe identities and internal order remain fixed. The separately pinned
+three-glyph terminal revision is validated before older regression suites
+recover their original source bytes and Unicode tokens. Every other source
+byte and compiled table remains checked against the historical baseline.
 """
 from __future__ import annotations
 
@@ -18,6 +19,8 @@ import re
 import struct
 
 from fontTools.ttLib import TTFont
+
+import stemless_terminal_revision as terminal_revision
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -87,7 +90,7 @@ def expected_fontinfo(before):
 
 
 def historical_source_sha(path):
-    """Reconstruct the exact 0.240 bytes, checking every non-encoding byte."""
+    """Reconstruct 0.240 bytes after validating the pinned terminal revision."""
     path = Path(path)
     data = path.read_bytes()
     if not migration_active():
@@ -95,6 +98,7 @@ def historical_source_sha(path):
     baseline = load_baseline()
     relative = path.relative_to(ROOT).as_posix()
     if relative in baseline["sourceGlyphs"]:
+        data = terminal_revision.historical_source_bytes(path, data)
         captured = baseline["sourceGlyphs"][relative]
         code = 0x20 if captured["glyphName"] == "space" else captured["codePoint"]
         tokens = list(UNICODE_TOKEN.finditer(data))
@@ -163,14 +167,17 @@ def verify_sources():
         assert actual == ([] if code is None else [code]), (relative, "Wrong active Unicode or stale alias")
         historical_source_sha(path)
         if "unicodeFreeSha256" in captured:
-            assert digest(UNICODE_TOKEN.sub(b"", data)) == captured["unicodeFreeSha256"], relative
+            previous_data = terminal_revision.historical_source_bytes(path, data)
+            assert digest(UNICODE_TOKEN.sub(b"", previous_data)) == captured["unicodeFreeSha256"], relative
     for relative, expected in baseline["sources"].items():
         if relative in baseline["sourceGlyphs"]:
             continue
         assert historical_source_sha(ROOT / relative) == expected, relative
     for relative, expected in baseline.get("provenance", {}).items():
         assert digest((ROOT / relative).read_bytes()) == expected, (relative, "Historical provenance changed")
-    return {"sourceGlyphs": len(baseline["sourceGlyphs"]), "identities": len(entries), "status": "passed"}
+    revised = terminal_revision.verify_sources()
+    return {"sourceGlyphs": len(baseline["sourceGlyphs"]), "identities": len(entries),
+            "revisedTerminalSources": revised, "status": "passed"}
 
 
 def verify_compiled(filenames=None):
@@ -221,9 +228,7 @@ def verify_compiled(filenames=None):
                     top.version = "0.000"
             actual = {tag: digest(font.getTableData(tag)) for tag in sorted(font.keys())
                       if tag not in ("GlyphOrder", "cmap")}
-            assert actual == captured["normalizedTables"], (filename, "A non-encoding table changed",
-                sorted(tag for tag in actual.keys() | captured["normalizedTables"].keys()
-                       if actual.get(tag) != captured["normalizedTables"].get(tag)))
+            terminal_revision.verify_compiled_tables(filename, actual, captured["normalizedTables"])
     if selected != set(baseline["compiled"]):
         return len(selected)
     manifest = json.loads((OUTPUT / "build-manifest.json").read_text(encoding="utf-8"))

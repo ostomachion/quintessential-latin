@@ -1,0 +1,84 @@
+{
+  "baselineSha256": "e601e172e59cf2e778fdca3156c4f34f225dd7fb205ed11ebeb5eb0ffcb6505a",
+  "compiled": {
+    "QuintessentialSerif-Bold.otf": {
+      "CFF ": "c80271372725c74a7fa849409560facea6c4c807b2adecf898034a9a3745680d",
+      "hmtx": "0824d58f02f03555959d6a65876f13b3ec7362caf782717df2af3f5723b9014a"
+    },
+    "QuintessentialSerif-Bold.woff2": {
+      "CFF ": "c80271372725c74a7fa849409560facea6c4c807b2adecf898034a9a3745680d",
+      "hmtx": "0824d58f02f03555959d6a65876f13b3ec7362caf782717df2af3f5723b9014a"
+    },
+    "QuintessentialSerif-BoldItalic.otf": {
+      "CFF ": "c84bc3e4b5805a67c821e92c67367b4dfb964a9aa089d741847f3f70848c75c8",
+      "hmtx": "40692d4d0f01321acad6f7ade0216fdcf30da8d589cbbf5017e2d191b1ad9189"
+    },
+    "QuintessentialSerif-BoldItalic.woff2": {
+      "CFF ": "c84bc3e4b5805a67c821e92c67367b4dfb964a9aa089d741847f3f70848c75c8",
+      "hmtx": "40692d4d0f01321acad6f7ade0216fdcf30da8d589cbbf5017e2d191b1ad9189"
+    },
+    "QuintessentialSerif-Italic-Variable.ttf": {
+      "glyf": "0aafc9210a1a1036a24af35839d0f3778b249388d60a6568b79b4fe37a748ce9",
+      "gvar": "d5e9a999c132cdac7a867685e6684bc97e60e7920d73063d8d2e68cd44e3fd5e",
+      "hmtx": "ae2c6da0db6d3f9d798d1079b558da408b22f863dd044dfd21739f574d50c18f",
+      "loca": "97f49d247869eeb02b2235fe1ea0e658ccf071f5fac317ceb1c76132070cb154"
+    },
+    "QuintessentialSerif-Italic-Variable.woff2": {
+      "glyf": "0aafc9210a1a1036a24af35839d0f3778b249388d60a6568b79b4fe37a748ce9",
+      "gvar": "d5e9a999c132cdac7a867685e6684bc97e60e7920d73063d8d2e68cd44e3fd5e",
+      "hmtx": "ae2c6da0db6d3f9d798d1079b558da408b22f863dd044dfd21739f574d50c18f",
+      "loca": "97f49d247869eeb02b2235fe1ea0e658ccf071f5fac317ceb1c76132070cb154"
+    },
+    "QuintessentialSerif-Italic.otf": {
+      "CFF ": "6dfec26a862127221a7204361d062fd2dc4e37a9159ea31b975c89f38de0abdb",
+      "hmtx": "963eaadeb0ea4563e6eadc128c53dc3d2493e645fed740b3e056202202356d44"
+    },
+    "QuintessentialSerif-Italic.woff2": {
+      "CFF ": "6dfec26a862127221a7204361d062fd2dc4e37a9159ea31b975c89f38de0abdb",
+      "hmtx": "963eaadeb0ea4563e6eadc128c53dc3d2493e645fed740b3e056202202356d44"
+    },
+    "QuintessentialSerif-Regular.otf": {
+      "CFF ": "a9397e35c77aa1f7cfc4d7cc73798370e096c801a050a4a53f8d02a12b4036fb",
+      "hmtx": "719301b729e4453b5e4f7ed21297fefe5d9af45d9051239f73066de8eeea6cbb"
+    },
+    "QuintessentialSerif-Regular.woff2": {
+      "CFF ": "a9397e35c77aa1f7cfc4d7cc73798370e096c801a050a4a53f8d02a12b4036fb",
+      "hmtx": "719301b729e4453b5e4f7ed21297fefe5d9af45d9051239f73066de8eeea6cbb"
+    },
+    "QuintessentialSerif-Variable.ttf": {
+      "glyf": "fb230616c95d49f0a64677c989a523305e808de807a637e43db64b3fb46daae7",
+      "gvar": "ca1fcf0bce7519a4dff1035363b83142c1fc81e222eced02068f3c7eeabe8b70",
+      "hmtx": "719301b729e4453b5e4f7ed21297fefe5d9af45d9051239f73066de8eeea6cbb",
+      "loca": "982f6fed4ec9e13ee26711ed78b6c96f4158aa6cc177635ce70c6925ed952aa3"
+    },
+    "QuintessentialSerif-Variable.woff2": {
+      "glyf": "fb230616c95d49f0a64677c989a523305e808de807a637e43db64b3fb46daae7",
+      "gvar": "ca1fcf0bce7519a4dff1035363b83142c1fc81e222eced02068f3c7eeabe8b70",
+      "hmtx": "719301b729e4453b5e4f7ed21297fefe5d9af45d9051239f73066de8eeea6cbb",
+      "loca": "982f6fed4ec9e13ee26711ed78b6c96f4158aa6cc177635ce70c6925ed952aa3"
+    }
+  },
+  "geometryBaselineSha256": "5d939d0a40f92d4c87ca0e1370412d5f1e93d12d1f51a49e2c25809a5ba2d296",
+  "glyphIds": [
+    "special-spine",
+    "special-turned-double-open-bowl",
+    "special-turned-open-bowl"
+  ],
+  "schemaVersion": 1,
+  "scope": "Two bulb terminals on the spine, turned open bowl, and turned open double bowl in all four masters. Every other glyph, all advances, and all pair positioning are preserved.",
+  "sourceGlyphs": {
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/special-turned-double-open-bowl.glif": "1e6a1e90abc5caf83990156a1d1505905b05a7e71461cdfcc6c8b56e6faab776",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/special-turned-open-bowl.glif": "9b20d700b6ea867c019e94367dbce674754cdf609e458952bfba61a15cb15ecc",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_03.glif": "854d2a50d1c251529cfb669217a8424c3d0656b11f32c50b8746a5a0308e6202",
+    "fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.ufo/glyphs/special-turned-double-open-bowl.glif": "008934121a20bf04f9197c107581445e99590e41bda16029bbc004ddace0e0cc",
+    "fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.ufo/glyphs/special-turned-open-bowl.glif": "ea1c04f12d2c50936fb998018b4016486fcbc0e5c4e266ca4395a4e020e85a5f",
+    "fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.ufo/glyphs/uF_2B_03.glif": "4c6f675e440ba2978fd9c99347e8cb7d843edc234dad088afc4a2ac3e607770c",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Italic.ufo/glyphs/special-turned-double-open-bowl.glif": "5bfac387112bb688ef85bd15b59cd925eb7ad570ceabf2746fbc5327a59dc9ce",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Italic.ufo/glyphs/special-turned-open-bowl.glif": "f3c97eb450354ec30dc25a10a250f08e30140ab246ea46c8f5e370e4628bd5ee",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Italic.ufo/glyphs/uF_2B_03.glif": "bb43856391bd305e93042c672f902def1c3e3def3ba1515c89054f50d12b0499",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/special-turned-double-open-bowl.glif": "14d270e1e3bd6da19c2fac5fa2d08e6861a581852bd3af7bda36bc117de4832d",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/special-turned-open-bowl.glif": "fceea9be96b135c6016e2badc49c642a56eb00e544a9580894f3e038035002e5",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_03.glif": "b69685691c59f0f83cb679c2ab63c72e60842a481f8578818ae6fc3191e238f2"
+  },
+  "version": "0.250"
+}

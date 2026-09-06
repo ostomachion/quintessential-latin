@@ -644,6 +644,7 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("stix_arched_opposed_bowls.py"),
         Path(__file__).with_name("stix_extensions.py"),
         Path(__file__).with_name("stix_stemless.py"),
+        Path(__file__).with_name("refine_stemless_terminals.py"),
         Path(__file__).with_name("stix_middle_legs.py"),
         Path(__file__).with_name("stix_middle_terminals.py"),
         Path(__file__).with_name("stix_middle_hook_joins.py"),

@@ -1,0 +1,33 @@
+import {escapeHtml as esc, code, anchor} from '../site/assets/model.mjs';
+
+import {parseHex, bitmapSvg, inspectorMarkup} from '../site/assets/unifont-model.mjs';
+export {parseHex, bitmapSvg};
+
+export function unifontPage(catalogue, source, metadata) {
+  const glyphs = parseHex(source), byCode = new Map(catalogue.entries.map(entry => [entry.codePoint, entry]));
+  for (const point of glyphs.keys()) if (!byCode.has(point)) throw new Error(`Unifont glyph is outside the catalogue: ${code(point)}`);
+  const starts = [...new Set(catalogue.entries.map(entry => entry.codePoint - entry.codePoint % 256))].sort((a,b)=>a-b);
+  // unihex2png's 32px tiles have gaps that mark the glyph bounds and centers.
+  const horizontalGaps=new Set([5,12,13,20,21,28]), verticalGaps=new Set([8,15,16,23]);
+  let rules='';
+  for(let i=0;i<=32;i++){
+    if(!horizontalGaps.has(i))rules+=`M${i} 0h1v1h-1zM${i} 32h1v1h-1z`;
+    if(!verticalGaps.has(i))rules+=`M0 ${i}h1v1h-1zM32 ${i}h1v1h-1z`;
+  }
+  const ruleTile='<svg class="unifont-tile-rules" width="33" height="33" viewBox="0 0 33 33" aria-hidden="true"><use href="#unifont-tile-rules"/></svg>';
+  function chart(start) {
+    return `<div class="unifont-scroll" tabindex="0" role="region" aria-label="Scrollable Unifont chart ${code(start)} to ${code(start+255)}"><table class="unifont-grid" data-start="${start}"><caption class="visually-hidden">${code(start)}–${code(start+255)}. Columns give the leading hexadecimal digits; rows give the final digit.</caption><colgroup><col class="unifont-row-label">${'<col>'.repeat(16)}</colgroup><thead><tr><th scope="col"><span class="visually-hidden">Final digit</span></th>${Array.from({length:16}, (_,column)=>`<th scope="col">${((start+column*16)/16).toString(16).toUpperCase()}</th>`).join('')}</tr></thead><tbody>${Array.from({length:16}, (_,row)=>`<tr><th scope="row">${row.toString(16).toUpperCase()}</th>${Array.from({length:16}, (_,column)=>{
+      const point=start+column*16+row, entry=byCode.get(point), glyph=glyphs.get(point), hex=point.toString(16).toUpperCase();
+      const label=`${code(point)} ${entry?entry.name+' — '+(glyph?'drawn bitmap':'bitmap pending'):'outside the current allocation'}`;
+      return `<td data-unifont-code="${hex}" class="${glyph?'bitmap-ready':entry?'bitmap-pending':'bitmap-unallocated'}" title="${esc(label)}">${ruleTile}${glyph?`<a class="bitmap-cell" href="unifont/proofs/${esc(entry.familyId)}.html#bitmap-${hex.toLowerCase()}" aria-label="${esc(label)}">${bitmapSvg(glyph)}</a>`:`<span class="visually-hidden">${esc(label)}</span>${entry?'<span class="pending-dot" aria-hidden="true">·</span>':''}`}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></div>`;
+  }
+  return `<svg class="visually-hidden" aria-hidden="true"><defs><symbol id="unifont-tile-rules" viewBox="0 0 33 33"><path fill="white" fill-rule="evenodd" d="M0 0H33V33H0ZM1 1V32H32V1Z"/><path fill="currentColor" d="${rules}"/></symbol></defs></svg><div class="page-head unifont-heading"><p class="eyebrow">Bitmap reference · Work in progress</p><h1>Unifont</h1><p class="lead">Quintessential Latin drawn on Unifont’s 16-pixel grid. ${glyphs.size} drawings, all 8 pixels wide. ${metadata.inspected} agent inspected; the ${metadata.withoutMiddle} forms without middle components are complete.</p><div class="inline-links"><a href="unifont/proofs/foundation.html">Review the drawings →</a><a href="unifont/quintessential-latin.hex" download>Download .hex source</a><a href="#unifont-notes">Format &amp; references</a></div></div>
+  <div class="unifont-layout"><section class="unifont-charts" aria-label="Unifont code charts"><p class="unifont-instructions">Columns give the leading hexadecimal digits; rows give the final digit. Select a drawn glyph for an enlarged view.</p><p class="unifont-legend"><span><span class="legend-ready" aria-hidden="true"></span> Drawn</span><span><span aria-hidden="true">·</span> Bitmap pending</span><span><span class="legend-unallocated" aria-hidden="true"></span> Outside allocation</span></p>
+  ${starts.map((start,index)=>{
+    const count=[...glyphs.keys()].filter(point=>point>=start&&point<start+256).length;
+    return `<details class="unifont-sheet"${index===0?' open':''}><summary><span class="code">${code(start)}–${code(start+255)}</span><span>${count} drawn</span></summary>${chart(start)}</details>`;
+  }).join('')}<p class="unifont-footnote">Each sheet keeps Unifont’s 256-position layout. On small screens, scroll the grid horizontally.</p></section>
+  <aside class="unifont-starters" aria-labelledby="starter-heading"><h2 id="starter-heading">Character detail</h2><p id="unifont-selection-status" class="visually-hidden" role="status" aria-live="polite"></p><div id="unifont-inspector">${inspectorMarkup(metadata.glyphs[0])}</div><noscript><p>Each chart character links to its complete static proof.</p></noscript></aside></div>
+  <section class="section-rule prose" id="unifont-notes"><h2>Format &amp; references</h2><p>${metadata.drawn} of ${metadata.total} characters are drawn. This batch completes all ${metadata.withoutMiddle} forms without middle components and retains the 12 stress glyphs. The remaining ${metadata.total-metadata.drawn} are pending; no wider cells have been used.</p><p>These project bitmaps follow GNU Unifont conventions. BOWL uses GNU Unifont 17.0.05’s lowercase “o” bitmap; STEM exactly remaps Unifont’s dotless i, including its head and foot. They use the catalogue’s existing private-use assignments and are not part of an official GNU Unifont release.</p><p>Glyphs are monochrome, 16 pixels tall and either 8 or 16 pixels wide. Every drawing uses an 8 × 16 cell with native Unifont stroke and terminal conventions and a shared eight-pixel x-height. Enlargements preserve the exact pixel shapes.</p><p>The chart follows <a href="https://unifoundry.com/unifont/index.html">Unifont’s glyph sheets</a>: 16 columns by 16 rows, 32 × 32 pixels per position. Glyphs begin five pixels right and eight pixels down from the tile’s border. Small gaps in the rules mark drawing bounds and centers. Pending dots are chart annotations and are absent from the source.</p><p>The <a href="https://unifoundry.com/unifont/doc/unifont.pdf">GNU Unifont manual</a> documents the bitmap format and drawing tools. Each <code>.hex</code> line contains a code point, a colon, and 16 rows of bits, read left to right, top to bottom. Supplementary-plane codes use six hex digits; an 8-pixel-wide glyph uses 32 bitmap digits, and a 16-pixel-wide glyph uses 64.</p><div class="inline-links"><a href="unifont/README.md">Drawing notes &amp; source references</a><a href="unifont/OFL.txt">Bitmap license · OFL 1.1</a></div></section>`;
+}

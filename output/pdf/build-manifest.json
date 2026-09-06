@@ -8,10 +8,10 @@
     "weight": 400
   },
   "sources": {
-    "resources/catalogue.json": "8135fb3cef0a068f00f5c603e646cc409b710a99295a350690c72a4d883de701",
+    "resources/catalogue.json": "1a112279ea5881d45623a992e4a677ea4ec8d578428f14f57b04b756220f3a64",
     "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
     "docs/proposal.json": "001986e6ca469b77b930dcb2867187b00438981fe4de583cebb40e0d4f91d53f",
-    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
     "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
     "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
     "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
@@ -22,13 +22,13 @@
   },
   "outputs": {
     "quintessential-latin.pdf": {
-      "sha256": "12ee39d9389eae37520dd14bba7cf83a28a17883d320db195fa8e455111c8c83",
-      "bytes": 100354,
+      "sha256": "eae88eec0df250a2d5efe08fe1947439d322009202f78c17dec720bb0071b0fd",
+      "bytes": 100366,
       "pages": 6
     },
     "quintessential-latin-extended-a.pdf": {
-      "sha256": "5cea6a65d043426d86042763477634ca6ed752b9704baf54dea7813aa6f8f9c4",
-      "bytes": 105682,
+      "sha256": "d7c1129b9de006f7219225010853fc597780e28bcd274189eb66d0e5dbe5867e",
+      "bytes": 105676,
       "pages": 7
     },
     "quintessential-latin-extended-b.pdf": {
@@ -37,8 +37,8 @@
       "pages": 18
     },
     "quintessential-latin-catalogue.pdf": {
-      "sha256": "4fb00022f2ecdfeff90da14dde382c79885ec6482e85560952227ba41cfb12e8",
-      "bytes": 236068,
+      "sha256": "057f9ee1d7ea12bbf458ea86230ca94893a989988e9e30b5371fbe263da64626",
+      "bytes": 236070,
       "pages": 31
     },
     "quintessential-latin-proposal.pdf": {

@@ -1,0 +1,8 @@
+test_woff2_files_preserve_sfnt_tables (__main__.QuintessentialFontTests.test_woff2_files_preserve_sfnt_tables) ... ok
+test_variable_structure_axis_names_and_sparse_coverage (__main__.QuintessentialFontTests.test_variable_structure_axis_names_and_sparse_coverage) ... ok
+test_static_faces_are_hinted_sparse_cff_fonts (__main__.QuintessentialFontTests.test_static_faces_are_hinted_sparse_cff_fonts) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 19.602s
+
+OK

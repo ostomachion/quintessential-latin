@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "version": "0.250",
+  "buildManifestSha256": "50ace8c8caa81fd2d74599f2a705225bd6fe1cd271c2738eb27517cb42ab1574",
+  "allocationSha256": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b",
+  "weights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "sizesPx": [
+    160,
+    18,
+    24,
+    32
+  ],
+  "specimensPerPosture": 25,
+  "fontHashes": {
+    "QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+    "QuintessentialSerif-Italic-Variable.ttf": "77fa344c5a5a4f5dcc1e4e8726f0b5360e4e162998c885bd5d568dd8c0815218"
+  },
+  "glyphs": [
+    {
+      "glyphId": "special-spine",
+      "glyphName": "uF2B03",
+      "codePoint": 993987,
+      "revised": true
+    },
+    {
+      "glyphId": "special-turned-open-bowl",
+      "glyphName": "special-turned-open-bowl",
+      "codePoint": 993794,
+      "revised": true
+    },
+    {
+      "glyphId": "special-turned-double-open-bowl",
+      "glyphName": "special-turned-double-open-bowl",
+      "codePoint": 993986,
+      "revised": true
+    },
+    {
+      "glyphId": "special-open-bowl",
+      "glyphName": "uF2B01",
+      "codePoint": 993793,
+      "revised": false
+    },
+    {
+      "glyphId": "special-double-open-bowl",
+      "glyphName": "uF2B02",
+      "codePoint": 993985,
+      "revised": false
+    }
+  ],
+  "sheets": [
+    {
+      "posture": "Roman",
+      "file": "roman.svg",
+      "specimens": [
+        {
+          "glyphId": "special-spine",
+          "weight": 400,
+          "bounds": [
+            41,
+            -11,
+            369,
+            485
+          ],
+          "advance": 396.0
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 500,
+          "bounds": [
+            42.89489102442157,
+            -11.31581517073693,
+            385.73820404905723,
+            485
+          ],
+          "advance": 413.05401921979416
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 550,
+          "bounds": [
+            43.8421630859375,
+            -11.47369384765625,
+            394.10577392578125,
+            485
+          ],
+          "advance": 421.5794677734375
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 600,
+          "bounds": [
+            44.78943514745343,
+            -11.63157252457557,
+            402.47334380250527,
+            485
+          ],
+          "advance": 430.10491632708084
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 700,
+          "bounds": [
+            47,
+            -12,
+            422,
+            485
+          ],
+          "advance": 450.0
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 400,
+          "bounds": [
+            40,
+            -10,
+            418,
+            485
+          ],
+          "advance": 454.0
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 500,
+          "bounds": [
+            35.89440278041993,
+            -10.31581517073693,
+            432.5274978538987,
+            485.3158151707369
+          ],
+          "advance": 467.264237170951
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 550,
+          "bounds": [
+            33.84197998046875,
+            -10.47369384765625,
+            439.7899169921875,
+            485.47369384765625
+          ],
+          "advance": 473.8951416015625
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 600,
+          "bounds": [
+            31.789557180517573,
+            -10.63157252457557,
+            447.0523361304763,
+            485.6315725245756
+          ],
+          "advance": 480.526046032174
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 700,
+          "bounds": [
+            27,
+            -11,
+            464,
+            486
+          ],
+          "advance": 496.0
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 400,
+          "bounds": [
+            17,
+            -10,
+            363,
+            486
+          ],
+          "advance": 398.0
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 500,
+          "bounds": [
+            20.789782048843144,
+            -11.263260682947715,
+            377.8433130246356,
+            486
+          ],
+          "advance": 412.8433130246356
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 550,
+          "bounds": [
+            21.1578369140625,
+            -11.894775390625,
+            385.26361083984375,
+            486
+          ],
+          "advance": 420.26361083984375
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 600,
+          "bounds": [
+            20.21056485254657,
+            -12.526290098302285,
+            392.6839086550518,
+            486
+          ],
+          "advance": 427.6839086550518
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 700,
+          "bounds": [
+            18,
+            -14,
+            410,
+            486
+          ],
+          "advance": 445.0
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 400,
+          "bounds": [
+            33,
+            -10,
+            427,
+            485
+          ],
+          "advance": 446.0
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 500,
+          "bounds": [
+            32.36836965852614,
+            -10.31581517073693,
+            443.4223888783203,
+            485.3158151707369
+          ],
+          "advance": 461.4749433661095
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 550,
+          "bounds": [
+            32.0526123046875,
+            -10.47369384765625,
+            451.632080078125,
+            485.47369384765625
+          ],
+          "advance": 469.21099853515625
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 600,
+          "bounds": [
+            31.73685495084886,
+            -10.63157252457557,
+            459.8417712779297,
+            485.6315725245756
+          ],
+          "advance": 476.947053704203
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 700,
+          "bounds": [
+            31,
+            -11,
+            479,
+            486
+          ],
+          "advance": 495.0
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 400,
+          "bounds": [
+            35,
+            -11,
+            384,
+            486
+          ],
+          "advance": 399.0
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 500,
+          "bounds": [
+            35,
+            -11.31581517073693,
+            400.73820404905723,
+            486
+          ],
+          "advance": 415.1065737075834
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 550,
+          "bounds": [
+            35,
+            -11.47369384765625,
+            409.10577392578125,
+            486
+          ],
+          "advance": 423.15838623046875
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 600,
+          "bounds": [
+            35,
+            -11.63157252457557,
+            417.47334380250527,
+            486
+          ],
+          "advance": 431.2101987533541
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 700,
+          "bounds": [
+            35,
+            -12,
+            437,
+            486
+          ],
+          "advance": 450.0
+        }
+      ],
+      "raster": "roman.png"
+    },
+    {
+      "posture": "Italic",
+      "file": "italic.svg",
+      "specimens": [
+        {
+          "glyphId": "special-spine",
+          "weight": 400,
+          "bounds": [
+            51,
+            -11,
+            380,
+            479
+          ],
+          "advance": 397.0
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 500,
+          "bounds": [
+            54.158151707369285,
+            -12.579075853684643,
+            403.68613780526965,
+            479.63163034147385
+          ],
+          "advance": 421.63358331748043
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 550,
+          "bounds": [
+            55.7369384765625,
+            -13.36846923828125,
+            415.52703857421875,
+            479.9473876953125
+          ],
+          "advance": 433.9481201171875
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 600,
+          "bounds": [
+            57.315725245755715,
+            -14.157862622877857,
+            427.36793934316785,
+            480.26314504915115
+          ],
+          "advance": 446.26265691689457
+        },
+        {
+          "glyphId": "special-spine",
+          "weight": 700,
+          "bounds": [
+            61,
+            -16,
+            455,
+            481
+          ],
+          "advance": 475.0
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 400,
+          "bounds": [
+            10,
+            -11,
+            391,
+            479
+          ],
+          "advance": 423.0
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 500,
+          "bounds": [
+            8.420924146315357,
+            -11.947445512210786,
+            406.79075853684645,
+            479.63163034147385
+          ],
+          "advance": 437.8433130246356
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 550,
+          "bounds": [
+            7.63153076171875,
+            -12.42108154296875,
+            414.6846923828125,
+            479.9473876953125
+          ],
+          "advance": 445.26361083984375
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 600,
+          "bounds": [
+            6.842137377122143,
+            -12.894717573726714,
+            422.57862622877855,
+            480.26314504915115
+          ],
+          "advance": 452.6839086550518
+        },
+        {
+          "glyphId": "special-turned-open-bowl",
+          "weight": 700,
+          "bounds": [
+            5,
+            -14,
+            441,
+            481
+          ],
+          "advance": 470.0
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 400,
+          "bounds": [
+            8,
+            -10,
+            389,
+            479
+          ],
+          "advance": 410.0
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 500,
+          "bounds": [
+            6.4209241463153575,
+            -10.639526331094462,
+            404.79075853684645,
+            479.63952633109443
+          ],
+          "advance": 424.21168268316177
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 550,
+          "bounds": [
+            5.63153076171875,
+            -10.964718284817332,
+            412.6846923828125,
+            479.9647182848173
+          ],
+          "advance": 431.31622314453125
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 600,
+          "bounds": [
+            4.842137377122143,
+            -11.293219654557369,
+            420.57862622877855,
+            480.2932196545574
+          ],
+          "advance": 438.42076360590073
+        },
+        {
+          "glyphId": "special-turned-double-open-bowl",
+          "weight": 700,
+          "bounds": [
+            3,
+            -12.071428571428571,
+            439,
+            481.07142857142856
+          ],
+          "advance": 455.0
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 400,
+          "bounds": [
+            34,
+            -13,
+            405,
+            479
+          ],
+          "advance": 408.0
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 500,
+          "bounds": [
+            32.42092414631536,
+            -13.31581517073693,
+            419.8433130246356,
+            479.63163034147385
+          ],
+          "advance": 421.264237170951
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 550,
+          "bounds": [
+            31.63153076171875,
+            -13.47369384765625,
+            427.26361083984375,
+            479.9473876953125
+          ],
+          "advance": 427.8951416015625
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 600,
+          "bounds": [
+            30.842137377122143,
+            -13.63157252457557,
+            434.6839086550518,
+            480.26314504915115
+          ],
+          "advance": 434.526046032174
+        },
+        {
+          "glyphId": "special-open-bowl",
+          "weight": 700,
+          "bounds": [
+            29,
+            -14,
+            452,
+            481
+          ],
+          "advance": 450.0
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 400,
+          "bounds": [
+            20,
+            -11,
+            395,
+            479
+          ],
+          "advance": 401.0
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 500,
+          "bounds": [
+            18.420924146315357,
+            -11.31581517073693,
+            413.9489102442157,
+            479.63163034147385
+          ],
+          "advance": 418.3698343905311
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 550,
+          "bounds": [
+            17.63153076171875,
+            -11.47369384765625,
+            423.421630859375,
+            479.9473876953125
+          ],
+          "advance": 427.05316162109375
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 600,
+          "bounds": [
+            16.842137377122143,
+            -11.63157252457557,
+            432.8943514745343,
+            480.26314504915115
+          ],
+          "advance": 435.7364888516564
+        },
+        {
+          "glyphId": "special-double-open-bowl",
+          "weight": 700,
+          "bounds": [
+            15,
+            -12,
+            455,
+            481
+          ],
+          "advance": 456.0
+        }
+      ],
+      "raster": "italic.png"
+    }
+  ],
+  "files": {
+    "index.html": "e3cd67d692f2a9bc4a4352c5d1d128dc7fb0a9cce9a7cd08c90de5e313bb0ad0",
+    "roman.svg": "9e2227a80033a0a4519e2f5bb36eac2be055a8e1bef1606b023b4772aed0c8cd",
+    "italic.svg": "183e87b9de89e85430de394775a2f6b77823ab4a590a25b48ac0b7795f6b41ad",
+    "roman.png": "b8048c2b75e64e57e66ed55bacd4df8080264ff8364a73ac66b3bbc66989213e",
+    "italic.png": "27e5f1facdb966dcdc4fded41bba650a569c98230b3132fa3dfaf428bb19ed3d"
+  }
+}

@@ -1,0 +1,100 @@
+/* Unifont's 32px chart tiles sit inside the site's shared reference theme. */
+@font-face{font-family:'Unifont outline reference';src:url('../unifont/reference.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+body[data-page="unifont"] .main{max-width:1100px}
+.unifont-bar .font-bar-inner{flex-wrap:wrap;gap:8px 24px}
+.unifont-bar p{margin:0;font-size:14px;color:var(--muted)}
+.unifont-heading .inline-links{margin-top:16px}
+.unifont-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:36px;align-items:start}
+.unifont-instructions{font-size:14px;margin-bottom:12px;max-width:580px}
+.unifont-legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted);margin-bottom:18px}
+.unifont-legend>span{display:inline-flex;align-items:center;gap:5px}
+.legend-ready{display:inline-block;width:6px;height:6px;background:var(--ink)}
+.legend-unallocated,.bitmap-unallocated{background:repeating-linear-gradient(135deg,#eee 0,#eee 1px,#fff 1px,#fff 5px)}
+.legend-unallocated{display:inline-block;width:12px;height:12px;border:1px solid var(--rule)}
+.unifont-sheet{border-top:1px solid var(--ink);margin-bottom:12px}
+.unifont-sheet>summary{cursor:pointer;padding:12px 0;font-size:14px}
+.unifont-sheet>summary span:last-child{float:right;color:var(--muted);font-size:13px}
+.unifont-sheet summary .code{font-size:14px;margin-left:5px}
+.unifont-scroll{max-width:100%;overflow:auto;margin-bottom:14px;padding-bottom:2px}
+.unifont-scroll:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.unifont-grid{border-collapse:collapse;table-layout:fixed;width:560px;font-variant-numeric:tabular-nums}
+.unifont-grid col{width:32px}
+.unifont-grid .unifont-row-label{width:48px}
+.unifont-grid th{height:32px;padding:0;font:400 11px/1 'Source Sans 3',Arial,sans-serif;text-align:center}
+.unifont-grid tbody th{padding-right:12px;text-align:right;font-size:13px}
+.unifont-grid td{position:relative;height:32px;padding:0;border:0;text-align:center;line-height:0}
+.unifont-tile-rules{position:absolute;left:-1px;top:-1px;pointer-events:none;z-index:1;color:#888;shape-rendering:crispEdges}
+.bitmap-cell{position:absolute;inset:0;display:block;color:#000}
+.bitmap-cell:hover,.bitmap-cell:focus{background:#eee}
+.bitmap-cell[aria-current=true]{background:#e8e8e8;outline:1px solid #000;outline-offset:-2px}
+.bitmap-cell:focus-visible{outline-offset:-2px}
+/* unihex2png: borders at tile origin - 1, bitmap at origin + (4,7). */
+.bitmap-cell .bitmap{position:absolute;left:4px;top:7px}
+.bitmap{display:block;flex:none;color:#000;fill:none;image-rendering:pixelated}
+.pending-dot{color:#999;font-size:13px;line-height:1}
+.unifont-footnote{font-size:13px;color:var(--muted);margin-top:18px}
+.unifont-starters>h2{margin-bottom:18px;font-size:20px}
+.bitmap-card{border-top:1px solid var(--ink);padding-top:12px;margin-bottom:28px;scroll-margin-top:90px}
+.bitmap-card:target{outline:2px solid var(--ink);outline-offset:10px}
+.bitmap-card>p.code{color:var(--muted);margin-bottom:6px}
+.bitmap-card h3{font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.bitmap-proof{display:flex;align-items:center;gap:24px;padding-block:12px}
+.bitmap-paper{padding:1px;background:#fff}
+.bitmap-grid{fill:none;stroke:#ccc;stroke-width:.06}
+.bitmap-metrics{fill:none;stroke:#777;stroke-width:.1}
+.bitmap-native{display:flex;flex-direction:column;align-items:flex-start;gap:12px;font-size:12px;color:var(--muted)}
+.bitmap-guides{font-size:12px;color:var(--muted);margin-bottom:12px}
+.bitmap-source{font-size:13px;margin-bottom:12px}
+.bitmap-source summary{cursor:pointer}
+.bitmap-source code{display:block;font-family:monospace;font-size:12px;overflow-wrap:anywhere;line-height:1.5;margin-top:8px}
+.bitmap-reference{font-size:13px}
+.bitmap-review-status{font-size:12px;color:var(--muted)}
+.drawing-note{font-size:14px;line-height:1.45}
+.outline-reference{display:block;font-family:'Unifont outline reference';font-size:64px;line-height:1.4;font-weight:400;font-style:normal;font-synthesis:none;color:#000}
+.inspector-outline{display:flex;align-items:center;gap:20px;font-size:12px;color:var(--muted)}
+#unifont-inspector{scroll-margin-top:80px}
+.coordinate-proof{display:grid;grid-template-columns:18px 64px;grid-template-rows:18px 128px;width:82px;color:#000}
+.coordinate-proof .bitmap{grid-column:2;grid-row:2}
+.pixel-x-axis{display:grid;grid-template-columns:repeat(8,8px);grid-column:2;font:9px/18px Arial,sans-serif;text-align:center;color:#555}
+.pixel-y-axis{display:grid;grid-template-rows:repeat(16,8px);grid-row:2;font:8px/8px Arial,sans-serif;text-align:right;padding-right:4px;color:#555}
+.bitmap-sequence{display:inline-flex;align-items:flex-end;gap:0;vertical-align:bottom}
+.proof-main{max-width:1440px;margin:auto;padding:30px 32px 60px}
+.proof-page-header{max-width:1440px;margin:auto;display:flex;flex-wrap:wrap;gap:24px;padding:22px 32px;border-bottom:1px solid var(--rule);font-size:14px}
+.proof-index{display:flex;flex-wrap:wrap;gap:12px 24px;margin:24px 0 30px;padding-block:14px;border-block:1px solid var(--rule);font-size:14px}
+.proof-status{font-size:14px;color:var(--muted)}
+.foundation-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.foundation-card{min-width:0;scroll-margin-top:20px;border-top:1px solid #000;padding-top:14px;break-inside:avoid}
+.foundation-card:target{outline:2px solid #000;outline-offset:10px}
+.foundation-card header{min-height:80px}
+.foundation-card header p{margin-bottom:6px;color:var(--muted)}
+.foundation-card h2{font-size:17px;line-height:1.25;font-weight:600;margin:0;overflow-wrap:anywhere}
+.foundation-drawings{display:flex;align-items:flex-end;gap:20px;margin-block:12px 20px}
+.foundation-drawings figure{margin:0;min-width:0}
+.foundation-drawings figcaption,.foundation-small figcaption,.foundation-donors figcaption{font-size:11px;color:var(--muted);line-height:1.2;margin-bottom:8px}
+.foundation-drawings .outline-reference{font-size:52px;max-width:100%;margin-bottom:22px}
+.foundation-small{display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px;margin-bottom:18px;min-height:55px}
+.foundation-small figure{margin:0}
+.foundation-donors{display:flex;flex-wrap:wrap;align-items:flex-end;gap:20px;min-height:100px;margin-block:20px;padding-top:14px;border-top:1px solid var(--rule)}
+.foundation-donors figure{margin:0}
+.drawing-review-notes{font-size:13px;line-height:1.4;padding-left:18px}
+.proof-details{font-size:13px;overflow-wrap:anywhere;margin-bottom:16px}
+.proof-details summary{cursor:pointer}
+.proof-details code{display:block;font:12px/1.5 monospace;margin-block:8px}
+.proof-provenance{border-top:1px solid var(--rule);margin-top:40px;padding-top:18px;font-size:12px;overflow-wrap:anywhere}
+.proof-family-list{columns:2;font-size:15px;line-height:1.8}
+.stress-proof{margin-block:36px}
+.stress-proof .foundation-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.stress-proof .foundation-drawings{gap:10px;flex-wrap:wrap}
+.stress-proof .foundation-drawings figure:last-child{width:100%}
+.stress-proof .foundation-drawings .outline-reference{margin-bottom:0}
+.stress-proof>details{font-size:13px;overflow-wrap:anywhere}
+.donor-cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:26px}
+.donor-cards article{border-top:1px solid var(--rule);padding-top:12px}
+.donor-cards h2{font-size:15px}
+.donor-cards .bitmap-sequence{display:flex;gap:18px;margin-block:18px}
+.donor-cards code{display:block;overflow-wrap:anywhere;font:11px/1.4 monospace}
+@media(max-width:1150px){.foundation-cards,.stress-proof .foundation-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.donor-cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1000px){.unifont-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.unifont-starters{grid-template-columns:minmax(0,1fr)}.unifont-sheet summary .code{font-size:13px}.unifont-bar .font-bar-title{white-space:normal}}
+@media(max-width:700px){.proof-main{padding:24px 16px}.proof-page-header{padding:18px 16px}.foundation-cards,.stress-proof .foundation-cards{grid-template-columns:minmax(0,1fr)}.donor-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.proof-family-list{columns:1}.foundation-drawings{gap:20px}.foundation-card header{min-height:0}}
+@media print{.unifont-bar{display:none}.unifont-layout{display:block}.unifont-scroll{overflow:visible}.unifont-sheet,.bitmap-card{break-inside:avoid}.unifont-starters{display:flex;gap:40px;flex-wrap:wrap}.unifont-starters>h2{width:100%}.bitmap-card{width:240px}}

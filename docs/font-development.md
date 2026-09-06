@@ -3,7 +3,10 @@
 Quintessential Serif 0.250 maps the existing 1,216 constructions in each native
 posture into the [gapless logical allocation](logical-allocation.md). The 0.240
 outlines, advances, effective kerning pairs, and internal glyph identities are
-preserved; public code points change without compatibility aliases.
+preserved by that allocation migration; public code points change without compatibility aliases.
+The subsequent [stemless terminal revision](stemless-terminals.md) adds a second
+bulb to the spine and both turned open bowls in all four masters, preserving
+their advances, body placement, and kerning.
 The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.
@@ -11,7 +14,8 @@ STIX Two Text donors. Donor checksums are verified before compilation.
 ## Invariants
 
 - All 1,216 Roman and Italic forms retain their construction identities, internal
-  glyph names, outlines, advances, and effective kerning pairs from 0.240.
+  glyph names, advances, and effective kerning pairs from 0.240. Only the three
+  stemless forms have the subsequent terminal changes described above.
   The current numeric map is U+F2A00–U+F2EBF; earlier code-point assignments
   are historical and must not be used to identify current glyphs.
 - Roman and Italic remain separate variable fonts with compatible 400/700
@@ -55,6 +59,14 @@ curve and line, including unaffected endings, arch ribbons, enclosures, and
 middle-foot bridges. Advances, sidebearings, and all pairs remain unchanged.
 This adds no spacing exception. Historical fixtures and the original
 single-emblem review remain immutable.
+
+The newer two-bulb stemless revision changes only twelve GLIFs: the spine,
+turned open bowl, and turned open double bowl in Regular, Bold, Italic, and
+Bold Italic. Its frozen pre-change source evidence bridges historical checks;
+the new source and compiled table hashes are pinned separately. Upright open
+forms and every unrelated outline, advance, and kerning pair remain protected.
+Regenerate only these sources with `python tools/refine_stemless_terminals.py`;
+use `--check` to verify their reconstruction without writing files.
 
 ## Project emblem
 

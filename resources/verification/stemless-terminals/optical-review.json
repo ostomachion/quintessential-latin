@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "revision": "stemless-two-bulbs-1",
+  "status": "reviewed",
+  "proofManifestSha256": "de1fb82a1dcd38066efb702633d166e3ec85674ab32c08f791236a0e2d75a388",
+  "fontHashes": {
+    "QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+    "QuintessentialSerif-Italic-Variable.ttf": "77fa344c5a5a4f5dcc1e4e8726f0b5360e4e162998c885bd5d568dd8c0815218"
+  },
+  "weights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "sizesPx": [
+    160,
+    18,
+    24,
+    32
+  ],
+  "specimenCount": 50,
+  "revisedSpecimens": 30,
+  "unchangedReferenceSpecimens": 20,
+  "inspectedFiles": {
+    "roman.png": "b8048c2b75e64e57e66ed55bacd4df8080264ff8364a73ac66b3bbc66989213e",
+    "italic.png": "27e5f1facdb966dcdc4fded41bba650a569c98230b3132fa3dfaf428bb19ed3d"
+  },
+  "observations": [
+    "Both full posture sheets were visually inspected across all five weight columns and all four sizes.",
+    "Spine and both turned open bowls show complete upper and lower bulbs.",
+    "The three revised forms retain open apertures and continuous silhouettes at the intermediate and Bold weights.",
+    "Repeated 18px, 24px, and 32px specimens remain legible without merged terminals or clipped ink.",
+    "The upright open bowl and open double bowl retain their distinct original terminals.",
+    "No new visible joins, spikes, or unexpected changes in weight progression were observed."
+  ],
+  "userVisualAcceptance": "pending"
+}

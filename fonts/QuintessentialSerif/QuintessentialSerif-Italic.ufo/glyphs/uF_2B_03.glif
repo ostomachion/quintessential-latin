@@ -5,17 +5,24 @@
   <outline>
     <contour>
       <point x="194" y="-11" type="qcurve" smooth="yes"/>
-      <point x="140" y="-11"/>
-      <point x="61" y="27"/>
-      <point x="10" y="82"/>
-      <point x="0" y="107" type="qcurve"/>
-      <point x="17" y="122" type="line"/>
-      <point x="31" y="104"/>
-      <point x="73" y="70"/>
-      <point x="126" y="47"/>
-      <point x="159" y="47" type="qcurve" smooth="yes"/>
-      <point x="205.666667" y="47"/>
-      <point x="263" y="69.821918"/>
+      <point x="156" y="-11"/>
+      <point x="91" y="12"/>
+      <point x="51" y="57"/>
+      <point x="51" y="91" type="qcurve" smooth="yes"/>
+      <point x="51" y="113"/>
+      <point x="73" y="154"/>
+      <point x="97" y="154" type="qcurve" smooth="yes"/>
+      <point x="109" y="154"/>
+      <point x="137" y="139"/>
+      <point x="137" y="117" type="qcurve" smooth="yes"/>
+      <point x="137" y="100"/>
+      <point x="123" y="73"/>
+      <point x="123" y="63" type="qcurve" smooth="yes"/>
+      <point x="123" y="46"/>
+      <point x="163" y="26"/>
+      <point x="192" y="26" type="qcurve" smooth="yes"/>
+      <point x="223.858974" y="26"/>
+      <point x="263" y="58.60274"/>
       <point x="263" y="96" type="qcurve" smooth="yes"/>
       <point x="263" y="137"/>
       <point x="218" y="194"/>
@@ -79,19 +86,23 @@
         <key>lowerTerminalDonorCodePoint</key>
         <integer>603</integer>
         <key>lowerTerminalOffsetX</key>
-        <integer>365</integer>
+        <integer>446</integer>
         <key>lowerTerminalOffsetY</key>
-        <integer>0</integer>
+        <integer>468</integer>
         <key>lowerTerminalReflectedX</key>
         <true/>
+        <key>lowerTerminalReflectedY</key>
+        <true/>
+        <key>lowerTerminalTurned</key>
+        <true/>
         <key>method</key>
-        <string>Native diagonal s body with a curved upper bulb and thin lower terminal.</string>
+        <string>Native body with bulbs at both free terminals; existing advance and body placement preserved.</string>
         <key>posture</key>
         <string>Italic</string>
         <key>recipeCodePoint</key>
         <integer>994051</integer>
         <key>terminalDesign</key>
-        <string>upper-ball-and-thin-lower-finish</string>
+        <string>upper-and-lower-bulbs</string>
         <key>upperTerminalDonorCodePoint</key>
         <integer>603</integer>
         <key>upperTerminalOffsetX</key>

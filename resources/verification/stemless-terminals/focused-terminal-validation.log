@@ -1,0 +1,15 @@
+terminal pairs (False, 400, 'compiled'): 7287 ordered pairs; 20 exact filled intersections
+terminal pairs (False, 500, 'compiled'): 7287 ordered pairs; 18 exact filled intersections
+terminal pairs (False, 550, 'compiled'): 7287 ordered pairs; 18 exact filled intersections
+terminal pairs (False, 600, 'compiled'): 7287 ordered pairs; 18 exact filled intersections
+terminal pairs (False, 700, 'compiled'): 7287 ordered pairs; 30 exact filled intersections
+terminal pairs (True, 400, 'compiled'): 7287 ordered pairs; 197 exact filled intersections
+terminal pairs (True, 500, 'compiled'): 7287 ordered pairs; 206 exact filled intersections
+terminal pairs (True, 550, 'compiled'): 7287 ordered pairs; 392 exact filled intersections
+terminal pairs (True, 600, 'compiled'): 7287 ordered pairs; 393 exact filled intersections
+terminal pairs (True, 700, 'compiled'): 7287 ordered pairs; 523 exact filled intersections
+....
+----------------------------------------------------------------------
+Ran 4 tests in 284.322s
+
+OK

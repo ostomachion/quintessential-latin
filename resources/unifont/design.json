@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "stage": "unextended",
+  "upstreamVersion": "17.0.05",
+  "height": 16,
+  "defaultWidth": 8,
+  "blankColumn": 0,
+  "xHeightRow": 6,
+  "baseline": 14,
+  "ascenderRow": 3,
+  "descenderLastRow": 15,
+  "sourceFiles": [
+    "primitives.json",
+    "pairs.json",
+    "stress.json",
+    "unextended-branches.json",
+    "unextended-spines.json"
+  ],
+  "pairGlyphIds": [
+    "arm",
+    "turned-arm",
+    "bowl",
+    "turned-bowl",
+    "arch",
+    "turned-arch",
+    "double-bowl",
+    "turned-double-bowl",
+    "bowled-spine",
+    "turned-bowled-spine",
+    "opposed-bowls-0-0"
+  ],
+  "exactDonors": {
+    "special-ring": "006F",
+    "stem": "0131",
+    "ascender": "006C",
+    "special-open-bowl": "0063",
+    "special-double-open-bowl": "025B",
+    "arm": "0072",
+    "turned-arm": "0279",
+    "arch": "006E",
+    "turned-arch": "0075",
+    "turned-bowl": "0251",
+    "special-turned-open-bowl": "0254",
+    "special-turned-double-open-bowl": "025C",
+    "special-spine": "0073",
+    "turned-bowled-spine": "0061",
+    "bowled-spine": "0250"
+  },
+  "widthExceptions": [],
+  "userApproval": null,
+  "rules": [
+    "Attempt all constructions in 8 columns, with column 0 blank; four staves may occupy columns 1, 3, 5, 7.",
+    "Use native dotless-i heads and feet on standalone uprights; use contextual native n/m/u terminals on connected staves.",
+    "Match the Quintessential part order and spine handedness; do not rotate a complete glyph cell to construct a turned form.",
+    "A long bowl closes only against its declared immediate straight neighbor, including implicit extensions omitted from the name.",
+    "Straight and curved extensions must remain distinct. Keep each quartet's body fixed outside explicit extension and contact pixels.",
+    "Use 8-neighbor ink and 4-neighbor white connectivity. A topology flag requests inspection; it does not erase a legitimate donor feature.",
+    "Native Latin terminal shapes govern each context: preserve exact donor details and do not add decorative bulbs, serifs or stroke thickening from the outline design.",
+    "Use exact native a for spine with stem and exact native turned a for stem with spine. Shared spines combine turned-a upper connections with upright-a lower connections and a thin coordinated waist, balancing the body before adding extensions.",
+    "The narrow central spine crossover is at row 9, as directed in the foundation feedback.",
+    "This batch completes forms without middle components. Further descendants require individual drawing and visual inspection."
+  ],
+  "expectedDrawn": 148,
+  "completeWithoutMiddle": 136,
+  "expansionAuthorization": {
+    "date": "2026-09-06",
+    "basis": "User reviewed the foundation, requested native simple terminals, smoother spine and double-bowl joins, narrow spine crossover one row higher, and instructed continuing with more glyphs. Follow-up explicitly requires the ordinary Unifont a for spine with stem and as the basis for other attached spine forms. Subsequent feedback requests a more symmetric shared body using both native a orientations and their stave connections.",
+    "scope": "Complete first group of 136 forms without middle components, retaining the 12 foundation stress forms."
+  }
+}

@@ -1080,10 +1080,10 @@ def _allocated_specs():
                       internal_name=row["glyphName"], stemless=glyph.glyph_id.startswith("special-"),
                       direct_donor=None if spine else glyph.direct_donor,
                       references=(("body", 0x73, "lowercase s"), ("upper-terminal", 0x25B, "epsilon"),
-                                  ("lower-terminal", 0x25C, "reversed epsilon")) if spine else glyph.references,
+                                  ("lower-terminal", 0x25B, "epsilon")) if spine else glyph.references,
                       italic_references=(("body", 0x73, "lowercase s"),
                                          ("terminal", 0x25B, "epsilon")) if spine else glyph.italic_references,
-                      adaptation=("Native diagonal s body with a curved upper bulb and thin lower terminal."
+                      adaptation=("Native diagonal s body with bulbs at both free terminals and preserved spacing."
                                   if spine else glyph.adaptation))
     # Source order is independent of the public code chart's allocation order.
     for row in sorted((row for row in rows if row["glyphId"] not in originals), key=lambda row: row["legacyIndex"]):
@@ -1107,11 +1107,12 @@ def _allocated_specs():
             turned_double = row["glyphId"] == "special-turned-double-open-bowl"
             references = (("left-lobes", 0x25B, "epsilon"), ("right-lobes", 0x25C, "reversed epsilon")) if closed else (
                 (("body", 0x25C, "reversed epsilon"), ("lower-terminal", 0x25B, "epsilon")) if turned_double else
-                (("direct", donor, label.lower()),))
+                (("body", donor, label.lower()), ("terminal", donor, label.lower())))
             yield GlyphSpec(row["glyphId"], row["codePoint"], label, donor,
-                            None if closed or turned_double else donor, references,
-                            "Native stemless bowl vocabulary; no language reading.",
-                            italic_references=(("direct", donor, label.lower()),) if turned_double else None,
+                            None, references,
+                            ("Native stemless bowl vocabulary; no language reading." if closed else
+                             "Native turned bowl body with bulbs at both free terminals and preserved spacing."),
+                            italic_references=(("body", donor, label.lower()), ("terminal", donor, label.lower())) if turned_double else None,
                             internal_name=row["glyphName"], stemless=True)
 
 

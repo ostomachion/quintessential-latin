@@ -30,6 +30,7 @@ from ufoLib2 import Font
 from font_geometry_helpers import counter_recordings, interpolate_points, polygons_from_recording, shift
 from font_geometry_helpers import effective_pairs, outline, ZERO_PAIR
 from verify_logical_allocation import historical_entry
+from test_stemless_terminals import TARGET_IDS as REVISED_TERMINAL_IDS
 from test_quintessential_font import (
     ALLOCATION, ALLOCATION_BY_ID, ALLOCATION_BY_NAME, ALLOCATION_ENTRIES,
     DONORS, DONOR_FILES, EXPECTED_AVAR, MAIN_SCRIPT_CMAP, OUTPUT, POSTURE_CMAPS, ROOT,
@@ -344,7 +345,7 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                     self.assertEqual(metadata["glyphId"], glyph_id)
                     self.assertEqual(metadata["posture"], "Italic" if italic else "Roman")
                     self.assertEqual(source[name].width, round(metadata["advanceWidth"], 6))
-                    if glyph_id in SPECIAL_DONORS and (italic or glyph_id != "special-turned-double-open-bowl"):
+                    if glyph_id in SPECIAL_DONORS and glyph_id not in REVISED_TERMINAL_IDS:
                         code = SPECIAL_DONORS[glyph_id]
                         self.assertEqual(metadata["bodyDonorCodePoint"], code)
                         self.assertEqual(outline(source, name), outline(native, cmap[code]))
@@ -357,7 +358,7 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                         instantiated(DONORS / DONOR_FILES[italic], weight) as donor:
                     current, native, cmap = font.getGlyphSet(), donor.getGlyphSet(), donor.getBestCmap()
                     for glyph_id, code in SPECIAL_DONORS.items():
-                        if not italic and glyph_id == "special-turned-double-open-bowl":
+                        if glyph_id in REVISED_TERMINAL_IDS:
                             continue
                         name = ALLOCATION_BY_ID[glyph_id]["glyphName"]
                         self.assertEqual(outline(current, name), outline(native, cmap[code]), (italic, weight, name))
@@ -409,8 +410,7 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                 native, cmap = donor.getGlyphSet(), donor.getBestCmap()
                 epsilon = outline(native, cmap[0x25B])
                 reversed_epsilon = outline(native, cmap[0x25C])
-                spine = outline(native, cmap[0x73])
-                targets = ("special-closed-double-bowl", "special-spine", *(() if italic else ("special-turned-double-open-bowl",)))
+                targets = ("special-closed-double-bowl",)  # Two-bulb revisions have their own native-region suite.
                 for glyph_id in targets:
                     name = ALLOCATION_BY_ID[glyph_id]["glyphName"]
                     metadata = source[name].lib["org.quintessential.construction"]
@@ -424,41 +424,6 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                         right_bearing = donor["hmtx"][cmap[0x25C]][0] - recording_bounds(reversed_epsilon)[2]
                         self.assertAlmostEqual(source[name].width - recording_bounds(outline(source, name))[2],
                                                right_bearing, places=4)
-                    elif glyph_id == "special-turned-double-open-bowl":
-                        self.assertEqual(metadata["bodyDonorCodePoint"], 0x25C)
-                        self.assertEqual(metadata["upperTerminalDonorCodePoint"], 0x25C)
-                        self.assertEqual(metadata["lowerTerminalDonorCodePoint"], 0x25B)
-                        self.assertTrue(metadata["upperTerminalReflectedY"])
-                        self.assertTrue(metadata["upperTerminalReversed"])
-                        self.assertTrue(metadata["lowerTerminalTurned"])
-                        self.assertEqual(source[name].width, donor["hmtx"][cmap[0x25C]][0])
-                        expected = recording_quadratics(reversed_epsilon, (*range(5, 10), *range(14, 19)))
-                        expected += translated_quadratics(recording_quadratics(reversed_epsilon, range(1, 4)),
-                            metadata["upperTerminalOffsetX"], metadata["upperTerminalOffsetY"],
-                            reflected_y=True, reversed_run=True)
-                        expected += translated_quadratics(recording_quadratics(epsilon, range(6, 9)),
-                            metadata["lowerTerminalOffsetX"], metadata["lowerTerminalOffsetY"],
-                            reflected=True, reflected_y=True)
-                    else:
-                        self.assertEqual(metadata["bodyDonorCodePoint"], 0x73)
-                        self.assertEqual(metadata["upperTerminalDonorCodePoint"], 0x25B)
-                        self.assertEqual(metadata["lowerTerminalDonorCodePoint"], 0x25B if italic else 0x25C)
-                        self.assertEqual(metadata["lowerTerminalReflectedX"], italic)
-                        dx = metadata["bodyOffsetX"]
-                        self.assertGreaterEqual(dx, 0)
-                        self.assertAlmostEqual(source[name].width, donor["hmtx"][cmap[0x73]][0] + dx, places=5)
-                        native_left = recording_bounds(spine)[0]
-                        current_left = recording_bounds(outline(source, name))[0]
-                        self.assertAlmostEqual(current_left, native_left, places=4)
-                        body_indices = (*range(9, 12), *range(20, 23)) if italic else (*range(5, 8), *range(16, 19))
-                        expected = translated_quadratics(recording_quadratics(spine, body_indices), dx)
-                        expected += translated_quadratics(recording_quadratics(epsilon, range(6, 11 if italic else 9)),
-                            metadata["upperTerminalOffsetX"], metadata["upperTerminalOffsetY"])
-                        lower_native = epsilon if italic else reversed_epsilon
-                        lower_indices = range(18, 21) if italic else range(1, 4)
-                        expected += translated_quadratics(recording_quadratics(lower_native, lower_indices),
-                            metadata["lowerTerminalOffsetX"], metadata["lowerTerminalOffsetY"],
-                            reflected=italic, reversed_run=italic)
                     assert_contains_quadratics(self, actual, expected, 1e-5, (italic, weight, name, "native source region"))
                     indices = set()
                     for segment in expected:
@@ -468,7 +433,7 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                     references[italic, weight, name] = actual
                     selected[italic, weight, name] = indices
         for italic in (False, True):
-            targets = ("special-closed-double-bowl", "special-spine", *(() if italic else ("special-turned-double-open-bowl",)))
+            targets = ("special-closed-double-bowl",)  # Two-bulb revisions have their own native-region suite.
             for glyph_id in targets:
                 name = ALLOCATION_BY_ID[glyph_id]["glyphName"]
                 light, bold = (references[italic, endpoint, name] for endpoint in (400, 700))
@@ -488,7 +453,7 @@ class StemlessSpecialGeometryTests(unittest.TestCase):
                 factor = interpolation_factor(weight)
                 with instantiated(OUTPUT / filename, weight) as font:
                     glyphs = font.getGlyphSet()
-                    targets = ("special-closed-double-bowl", "special-spine", *(() if italic else ("special-turned-double-open-bowl",)))
+                    targets = ("special-closed-double-bowl",)  # Two-bulb revisions have their own native-region suite.
                     for glyph_id in targets:
                         name = ALLOCATION_BY_ID[glyph_id]["glyphName"]
                         light, bold = (references[italic, endpoint, name] for endpoint in (400, 700))

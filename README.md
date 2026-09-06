@@ -47,10 +47,18 @@ npm run dev
 Open http://localhost:8767/quintessential-latin/. The preview also serves the
 root path. All site URLs work beneath the GitHub Pages project prefix.
 
-The four pages introduce the construction system, present numeric charts and
-names lists, explain the draft proposal, and offer
-font/data/PDF downloads. Weight and native Italic preferences are shared across
-the pages, including both project marks. The marks follow the same native
+The five pages introduce the construction system, present numeric charts and
+names lists, explain the draft proposal, offer font/data/PDF downloads, and show
+the Unifont bitmap drawings. Its 148 drawings are all 8 × 16 pixels,
+with five 256-position charts, a selected-character inspector, static proofs and
+40 pinned native donors. Editable drawings and the generated `.hex` download
+are under `resources/unifont/`. The first 136-character group without middle
+components is complete, alongside 12 stress glyphs. See the
+[drawing notes](resources/unifont/README.md) for the
+conventions and independent bitmap build/test commands.
+Weight and native Italic preferences are shared across
+the outline-font pages, including both project marks. Unifont bitmaps keep
+their fixed weight and pixel dimensions. The marks follow the same native
 posture coverage as the charts; the favicon stays at Roman 500.
 No language-specific transcription or backend is required.
 

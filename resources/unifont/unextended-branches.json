@@ -1,0 +1,3662 @@
+{
+  "schemaVersion": 1,
+  "glyphs": [
+    {
+      "glyphId": "arm-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0072",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of arm in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arm",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arm-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0072",
+        "0066"
+      ],
+      "notes": "Retain every body pixel of arm in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arm",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arm-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0072",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arm in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arm",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arm-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0072",
+        "0068",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arm in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arm",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arm-hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0072",
+        "0066",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arm in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arm",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arm-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0279",
+        "0075",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arm",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arm-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0279",
+        "0075",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arm",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arm-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0279",
+        "0075",
+        "0064"
+      ],
+      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arm",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arm-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0279",
+        "0075",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arm",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arm-ascender-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0279",
+        "0075",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arm",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowl-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowl",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowl-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "0066"
+      ],
+      "notes": "Retain every body pixel of bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowl",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowl-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowl",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowl-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowl",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "bowl-hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".##...#.",
+        ".#.###..",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "0062",
+        "0070",
+        "0066"
+      ],
+      "notes": "Retain every body pixel of bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "bowl",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowl-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0251",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowl",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowl-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0251",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowl",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowl-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0251",
+        "0064"
+      ],
+      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowl-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0251",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-bowl-ascender-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        "..###.#.",
+        ".#...##.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        ".#..#.#.",
+        "..##..#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0251",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-bowl",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "006E",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "006E",
+        "0066"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "006E",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "006E",
+        "0068",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-hook-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#......",
+        ".#......"
+      ],
+      "donors": [
+        "006E",
+        "0066",
+        "0070"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075",
+        "0064"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascender-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "......#.",
+        "......#.",
+        "......#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0237",
+        "014B"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "006E",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-left-ascender-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "006E",
+        "0068",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-left-hook-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "006E",
+        "0066",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-descenders",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "006E",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-left-ascender-descenders",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "006E",
+        "0068",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-left-hook-descenders",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#."
+      ],
+      "donors": [
+        "006E",
+        "0066",
+        "0070",
+        "0071"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The right long leg independently continues column 6 through rows 14–15.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-ascender-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0071",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-ascender-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0237",
+        "014B",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascenders",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascenders-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0071",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "turned-arch-ascenders-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0237",
+        "014B",
+        "0068"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      }
+    },
+    {
+      "glyphId": "arch-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "..####.."
+      ],
+      "donors": [
+        "006E",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            6,
+            14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "arch-left-ascender-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "..####.."
+      ],
+      "donors": [
+        "006E",
+        "0068",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "arch-left-hook-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        "......#.",
+        "..####.."
+      ],
+      "donors": [
+        "006E",
+        "0066",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "arch-left-descender-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####.."
+      ],
+      "donors": [
+        "006E",
+        "0070",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "arch-left-ascender-descender-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        ".#......",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####.."
+      ],
+      "donors": [
+        "006E",
+        "0068",
+        "0070",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left straight ascender adds only column 1, rows 3–5, following native h unadorned upper staves. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "arch-left-hook-descender-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..##....",
+        ".#......",
+        ".#......",
+        ".#.###..",
+        ".##...#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#####.."
+      ],
+      "donors": [
+        "006E",
+        "0066",
+        "0070",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of arch in rows 6–13, with its native Unifont attachment and terminal treatment. The left upper hook uses native f’s bend at (2,3), (3,3), (1,4), and (1,5), without f’s crossbar or any added bulb. The left straight descender continues column 1 through rows 14–15, following native p without a serif foot. The long lower bowl extends the right leg at (6,14), then spans columns 2–5 at row 15. Its left return approaches the designated left stave diagonally from (2,15); only that stave’s extension at (1,14) closes the opening. The two available descender rows require this diagonal lower-left join; a compact j tail would stop short of the designated neighbor.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the two-row spanning lower return at native size. Its diagonal contact at (1,14)–(2,15) closes only when the adjacent left stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 1,
+        "neighborIndex": 0,
+        "contactPixel": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          1,
+          14
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 0
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook-right-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0071",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook-right-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..####..",
+        ".#....#.",
+        ".#......",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0237",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 0
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": false
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook-right-ascender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "........",
+        "........"
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook-right-ascender-descender",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "......#."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0071",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right straight descender continues column 6 through rows 14–15, following native q without a serif foot. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    },
+    {
+      "glyphId": "turned-arch-left-hook-right-ascender-tail",
+      "width": 8,
+      "rows": [
+        "........",
+        "........",
+        "........",
+        "..#####.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#....#.",
+        ".#...##.",
+        "..###.#.",
+        "......#.",
+        "....##.."
+      ],
+      "donors": [
+        "0075",
+        "0064",
+        "0237",
+        "014B",
+        "006F"
+      ],
+      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "expected": {
+        "components": 1,
+        "counters": 1
+      },
+      "reviewNotes": [
+        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+      ],
+      "recipe": {
+        "baseGlyphId": "turned-arch",
+        "addPixels": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "removePixels": [],
+        "joinPixels": []
+      },
+      "closure": {
+        "partIndex": 0,
+        "neighborIndex": 1,
+        "contactPixel": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closed": true
+      },
+      "structuralChecks": {
+        "closureGap": [
+          6,
+          5
+        ],
+        "counterSeed": [
+          3,
+          10
+        ],
+        "closingNeighbor": 1
+      }
+    }
+  ]
+}

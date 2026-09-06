@@ -1,18 +1,17 @@
 """Stemless Specials from the pinned Roman and Italic STIX vocabulary.
 
-Open forms use posture-specific native terminals, with the turned Roman
-double opening corrected to a thin upper finish and lower ball. The closed
-double bowl joins upright epsilon wings into two rounded counters. The
-spine retains native s's diagonal body with an upper ball and thin finish.
+The spine and both turned open bowls have bulbs at both free terminals.
+Upright open forms retain their native outlines. The double bowl joins
+upright epsilon wings into two rounded counters.
 """
+
+import math
 
 
 DIRECT_DONORS = {
     "special-ring": 0x6F,
     "special-open-bowl": 0x63,
-    "special-turned-open-bowl": 0x254,
     "special-double-open-bowl": 0x25B,
-    "special-turned-double-open-bowl": 0x25C,
 }
 
 
@@ -138,19 +137,26 @@ def _spine(font):
     upper_dy = body[outer_top_index][1][-1][1] - epsilon[5][1][-1][1]
     upper = _move(epsilon[6:upper_end], upper_dx, upper_dy)
     if italic:
-        # Only the local native epsilon finish changes opening direction;
-        # s's native Italic body, slant and both waist sweeps stay untouched.
+        # Retain the original spacing reference. Replacing its thin finish
+        # must not move the body or change the established advance.
         lower_start, lower_ops = _reverse_run(epsilon[17][1][-1], epsilon[18:21])
         lower_dx = body[outer_bottom_index][1][-1][0] + lower_start[0]
         lower_dy = body[outer_bottom_index][1][-1][1] - lower_start[1]
-        lower = _move(lower_ops, lower_dx, lower_dy, reflect_x=True)
-        lower_donor = 0x25B
+        spacing_reference = _move(lower_ops, lower_dx, lower_dy, reflect_x=True)
     else:
         reversed_e = s.decomposed_recording(font, cmap[0x25C])
         lower_dx = body[outer_bottom_index][1][-1][0] - reversed_e[0][1][0][0]
         lower_dy = body[outer_bottom_index][1][-1][1] - reversed_e[0][1][0][1]
-        lower = _move(reversed_e[1:4], lower_dx, lower_dy)
-        lower_donor = 0x25C
+        spacing_reference = _move(reversed_e[1:4], lower_dx, lower_dy)
+    native_bounds, spacing_bounds = BoundsPen(None), BoundsPen(None)
+    replayRecording(body, native_bounds)
+    replayRecording([("moveTo", (body[outer_bottom_index][1][-1],)),
+                     *spacing_reference, ("endPath", ())], spacing_bounds)
+    body_dx = max(0, native_bounds.bounds[0] - spacing_bounds.bounds[0])
+    lower_dx = body[outer_bottom_index][1][-1][0] + epsilon[5][1][-1][0]
+    lower_dy = body[outer_bottom_index][1][-1][1] + epsilon[5][1][-1][1]
+    lower = [(op, tuple((lower_dx - x, lower_dy - y) for x, y in points))
+             for op, points in epsilon[6:upper_end]]
     lower_join = _fit(body[lower_inner_index], body[lower_inner_index - 1][1][-1],
                       body[lower_inner_index][1][-1], lower[-1][1][-1],
                       body[lower_inner_index][1][-1])
@@ -161,13 +167,6 @@ def _spine(font):
                  *lower, lower_join, *body[lower_inner_index + 1:outer_top_index + 1],
                  *upper, upper_join, *body[inner_top_index + 1:outer_bottom_index + 1],
                  ("closePath", ())]
-    native_bounds, new_bounds = BoundsPen(None), BoundsPen(None)
-    replayRecording(body, native_bounds)
-    replayRecording(recording, new_bounds)
-    # The Italic lower finish reaches farther left than s's wedge. Restore
-    # the native left sidebearing and add that span to the advance; retaining
-    # the old advance would make Bold self-pairs collide at the lower sweep.
-    body_dx = max(0, native_bounds.bounds[0] - new_bounds.bounds[0])
     recording = _move(recording, body_dx)
     return recording, {
         "bodyDonorCodePoint": 0x73,
@@ -176,18 +175,20 @@ def _spine(font):
         "upperTerminalDonorCodePoint": 0x25B,
         "upperTerminalOffsetX": upper_dx + body_dx,
         "upperTerminalOffsetY": upper_dy,
-        "lowerTerminalDonorCodePoint": lower_donor,
+        "lowerTerminalDonorCodePoint": 0x25B,
         "lowerTerminalOffsetX": lower_dx + body_dx,
         "lowerTerminalOffsetY": lower_dy,
-        "lowerTerminalReflectedX": italic,
-        "terminalDesign": "upper-ball-and-thin-lower-finish",
+        "lowerTerminalReflectedX": True,
+        "lowerTerminalReflectedY": True,
+        "lowerTerminalTurned": True,
+        "terminalDesign": "upper-and-lower-bulbs",
         "counterCount": 0,
         "advanceWidth": font["hmtx"][cmap[0x73]][0] + body_dx,
     }
 
 
 def _turned_double_open_bowl(font):
-    """Retain the Roman reversed-epsilon body with orientation-correct ends."""
+    """Keep Roman reversed epsilon's upper bulb and the existing lower bulb."""
     import import_stix_foundation as s
 
     cmap = font.getBestCmap()
@@ -199,32 +200,70 @@ def _turned_double_open_bowl(font):
     lower_dy = body[0][1][0][1] + epsilon[5][1][-1][1]
     lower = [(op, tuple((lower_dx - x, lower_dy - y) for x, y in points))
              for op, points in epsilon[6:9]]
-    upper_start, upper_ops = _reverse_run(body[0][1][0], body[1:4])
-    upper_dx = body[13][1][-1][0] - body[0][1][0][0]
-    upper_dy = body[13][1][-1][1] + body[0][1][0][1]
-    upper = [(op, tuple((x + upper_dx, upper_dy - y) for x, y in points))
-             for op, points in upper_ops]
-    upper_start = upper_start[0] + upper_dx, upper_dy - upper_start[1]
     lower_join = _fit(body[4], body[3][1][-1], body[4][1][-1],
                       lower[-1][1][-1], body[4][1][-1])
-    upper_join = _fit(body[10], body[9][1][-1], body[10][1][-1],
-                      body[9][1][-1], upper_start)
-    return [body[0], *lower, lower_join, *body[5:10], upper_join,
-            *upper, *body[14:]], {
+    return [body[0], *lower, lower_join, *body[5:]], {
         "bodyDonorCodePoint": 0x25C,
         "bodyDesign": "native-reversed-epsilon-lobes-with-turned-opening-terminals",
         "upperTerminalDonorCodePoint": 0x25C,
-        "upperTerminalOffsetX": upper_dx,
-        "upperTerminalOffsetY": upper_dy,
-        "upperTerminalReflectedY": True,
-        "upperTerminalReversed": True,
+        "upperTerminalOffsetX": 0,
+        "upperTerminalOffsetY": 0,
         "lowerTerminalDonorCodePoint": 0x25B,
         "lowerTerminalOffsetX": lower_dx,
         "lowerTerminalOffsetY": lower_dy,
         "lowerTerminalTurned": True,
-        "terminalDesign": "thin-upper-finish-and-lower-ball",
+        "terminalDesign": "upper-and-lower-bulbs",
         "counterCount": 0,
         "advanceWidth": font["hmtx"][cmap[0x25C]][0],
+    }
+
+
+def _turned_open_bowl(font, double=False):
+    """Retain the lower bulb and reflect it locally for the upper terminal.
+
+    Reflection takes place in unslanted coordinates, then restores the native
+    posture. Only the upper receiving quarter is fitted; the bowl stress,
+    lower terminal, middle projection and remaining curves stay unchanged.
+    """
+    import import_stix_foundation as s
+
+    code = 0x25C if double else 0x254
+    body = s.decomposed_recording(font, font.getBestCmap()[code])
+    italic = bool(font["post"].italicAngle)
+    if len(body) != (20 if double else (14 if italic else 12)):
+        raise RuntimeError("Pinned turned open bowl topology changed")
+    lower_end = 3 if double or not italic else 5
+    upper_inner = 10 if double else (7 if italic else 5)
+    upper_outer = 13 if double else (10 if italic else 8)
+    anchor = body[0][1][0]
+    target = body[upper_outer][1][-1]
+    start, operations = _reverse_run(anchor, body[1:lower_end + 1])
+    shear_x = -2 * math.tan(math.radians(-font["post"].italicAngle))
+    dx = target[0] - anchor[0] - shear_x * anchor[1]
+    dy = target[1] + anchor[1]
+
+    def transform(point):
+        x, y = point
+        return x + shear_x * y + dx, dy - y
+
+    upper = [(op, tuple(transform(p) for p in points)) for op, points in operations]
+    join = _fit(body[upper_inner], body[upper_inner - 1][1][-1],
+                body[upper_inner][1][-1], body[upper_inner - 1][1][-1], transform(start))
+    return [*body[:upper_inner], join, *upper, *body[upper_outer + 1:]], {
+        "bodyDonorCodePoint": code,
+        "bodyDesign": "native-turned-bowl-with-local-upper-bulb",
+        "upperTerminalDonorCodePoint": code,
+        "upperTerminalOffsetX": dx,
+        "upperTerminalOffsetY": dy,
+        "upperTerminalShearX": shear_x,
+        "upperTerminalReflectedY": True,
+        "upperTerminalReversed": True,
+        "lowerTerminalDonorCodePoint": code,
+        "lowerTerminalOffsetX": 0,
+        "lowerTerminalOffsetY": 0,
+        "terminalDesign": "upper-and-lower-bulbs",
+        "counterCount": 0,
+        "advanceWidth": font["hmtx"][font.getBestCmap()[code]][0],
     }
 
 
@@ -234,6 +273,8 @@ def stemless_outline(font, glyph_id):
 
     if glyph_id == "special-turned-double-open-bowl" and not font["post"].italicAngle:
         recording, metadata = _turned_double_open_bowl(font)
+    elif glyph_id in ("special-turned-open-bowl", "special-turned-double-open-bowl"):
+        recording, metadata = _turned_open_bowl(font, double=glyph_id == "special-turned-double-open-bowl")
     elif glyph_id in DIRECT_DONORS:
         code = DIRECT_DONORS[glyph_id]
         name = font.getBestCmap()[code]

@@ -1,0 +1,189 @@
+{
+  "revision": "stemless-two-bulbs-1",
+  "createdUtc": "2026-09-06T20:00:22.594269+00:00",
+  "status": "passed",
+  "targetGlyphIds": [
+    "special-spine",
+    "special-turned-open-bowl",
+    "special-turned-double-open-bowl"
+  ],
+  "geometryBaselineSha256": "5d939d0a40f92d4c87ca0e1370412d5f1e93d12d1f51a49e2c25809a5ba2d296",
+  "sourcePreservation": {
+    "masters": 4,
+    "glyphsPerMaster": 1218,
+    "changedGlifFiles": 12,
+    "capturedSourceFiles": 4898,
+    "allOtherSourceBytes": "exact",
+    "allAdvancesAndPairs": "exact"
+  },
+  "compiledPreservation": {
+    "staticFaces": [
+      "Regular",
+      "Bold",
+      "Italic",
+      "BoldItalic"
+    ],
+    "variableSamples": {
+      "Roman": [
+        400,
+        500,
+        550,
+        600,
+        700
+      ],
+      "Italic": [
+        400,
+        500,
+        550,
+        600,
+        700
+      ]
+    },
+    "totalFacesAndSamples": 14,
+    "unchangedGlyphOutlinesAndSidebearingsPerFace": 1215,
+    "preservedAdvancesPerFace": 1218,
+    "effectivePairs": "exact"
+  },
+  "targetCollisionChecks": {
+    "weights": [
+      400,
+      500,
+      550,
+      600,
+      700
+    ],
+    "postures": [
+      "Roman",
+      "Italic"
+    ],
+    "sourceOrderedPairs": 72870,
+    "compiledOrderedPairs": 72870,
+    "totalOrderedPairs": 145740,
+    "sourceExactFilledIntersections": 1815,
+    "compiledExactFilledIntersections": 1815,
+    "collisions": 0,
+    "compiledPositioning": "Actual GPOS VariationIndex values resolved from GDEF VarStore"
+  },
+  "targetGeometry": {
+    "nativeBodyAndCompleteBulbRuns": "passed",
+    "sourceAndVariableOpenSimpleContours": 60,
+    "staticVariableEndpointComparisons": 12,
+    "maximumPermittedStaticSymmetricDifferenceSquareFontUnits": 1.0
+  },
+  "newSuiteMethods": [
+    {
+      "method": "test_every_unrelated_source_byte_and_all_advances_pairs_and_mappings_are_preserved",
+      "status": "passed"
+    },
+    {
+      "method": "test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved",
+      "status": "passed"
+    },
+    {
+      "method": "test_both_pair_directions_clear_the_complete_catalogue_at_five_weights",
+      "status": "passed"
+    },
+    {
+      "method": "test_source_pair_directions_clear_at_five_weights",
+      "status": "passed"
+    },
+    {
+      "method": "test_two_bulb_sources_interpolate_as_one_open_nonintersecting_contour",
+      "status": "passed"
+    },
+    {
+      "method": "test_native_bodies_and_both_complete_bulb_runs_survive_sources_and_compilation",
+      "status": "passed"
+    },
+    {
+      "method": "test_revised_static_glyphs_match_the_variable_endpoints",
+      "status": "passed"
+    }
+  ],
+  "stagedRuns": [
+    {
+      "scope": "Source target pairs, both directions against entire catalogue, ten samples",
+      "tests": 1,
+      "seconds": 160.522,
+      "evidence": "Direct tool output summarized here; initial run was not redirected to a log."
+    },
+    {
+      "scope": "Source preservation, source topology, native source/variable regions, compiled actual-GPOS target pairs",
+      "tests": 4,
+      "seconds": 284.322,
+      "log": "focused-terminal-validation.log"
+    },
+    {
+      "scope": "Expanded source and compiled target topology, sixty shape samples",
+      "tests": 1,
+      "seconds": 25.997,
+      "evidence": "Direct tool output summarized here."
+    },
+    {
+      "scope": "Regular/Bold statics and ten variable samples, whole-catalogue compiled preservation",
+      "tests": 1,
+      "seconds": 35.098,
+      "log": "compiled-terminal-preservation.log"
+    },
+    {
+      "scope": "Italic static, whole-catalogue compiled preservation",
+      "tests": 1,
+      "seconds": 12.912,
+      "log": "italic-terminal-preservation.log"
+    },
+    {
+      "scope": "BoldItalic static whole-catalogue preservation and all twelve target static/variable comparisons",
+      "tests": 2,
+      "seconds": 15.308,
+      "log": "final-static-terminal-validation.log"
+    },
+    {
+      "scope": "Existing StemlessSpecialGeometryTests, all seven Specials, sources only",
+      "tests": 3,
+      "seconds": 38.119,
+      "evidence": "Direct tool output summarized here."
+    },
+    {
+      "scope": "Existing master interpolation/kerning compatibility",
+      "tests": 1,
+      "seconds": 34.369,
+      "evidence": "Direct tool output summarized here."
+    },
+    {
+      "scope": "Historical Italic completion source-outline/advance/pair preservation",
+      "tests": 1,
+      "seconds": 31.258,
+      "log": "prior-italic-terminal-preservation.log"
+    },
+    {
+      "scope": "WOFF2 table parity, variable structure/coverage, hinted sparse CFF static format (parent run)",
+      "tests": 3,
+      "seconds": 19.602,
+      "log": "font-format-checks.log"
+    },
+    {
+      "scope": "Historical independent-middle source bytes/outlines/advances/pairs/GID preservation with terminal revision adapter",
+      "tests": 1,
+      "seconds": 34.522,
+      "log": "prior-middle-terminal-preservation.log"
+    }
+  ],
+  "scopeNote": "All seven new test methods passed across the staged runs. The full legacy unrelated-family suites and full all-glyph-pair suite were not rerun.",
+  "integration": {
+    "fontBuild": "passed",
+    "sourceReconstructionCheck": "passed; no source writes",
+    "proofArchive": "hash verified against build manifest",
+    "fontManifestSha256": "50ace8c8caa81fd2d74599f2a705225bd6fe1cd271c2738eb27517cb42ab1574",
+    "proofMetadataAndLicenseTest": "passed",
+    "projectIconCheck": "passed; unchanged",
+    "websiteBuild": "passed",
+    "logicalAllocationTests": 5,
+    "canonicalNamingTests": 20,
+    "siteAcceptanceGroups": 16,
+    "distributedFontFilesMatchingBuild": 12,
+    "fullPreservationVerification": "passed; see font-preservation.log",
+    "pdfTests": 9,
+    "pdfReview": "see pdf-review.json",
+    "opticalReview": "see optical-review.json"
+  }
+}

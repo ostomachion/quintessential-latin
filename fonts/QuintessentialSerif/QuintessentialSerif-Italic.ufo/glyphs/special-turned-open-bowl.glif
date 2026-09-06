@@ -26,17 +26,25 @@
       <point x="284" y="148"/>
       <point x="305" y="239"/>
       <point x="305" y="282" type="qcurve" smooth="yes"/>
-      <point x="305" y="337"/>
-      <point x="275" y="394"/>
-      <point x="228" y="414"/>
-      <point x="201" y="414" type="qcurve" smooth="yes"/>
-      <point x="152" y="414"/>
-      <point x="87" y="372"/>
-      <point x="66" y="346" type="qcurve"/>
-      <point x="46" y="360" type="line"/>
-      <point x="65" y="390"/>
-      <point x="118" y="444"/>
-      <point x="190" y="479"/>
+      <point x="305" y="350.333333"/>
+      <point x="283.357096" y="421.151515"/>
+      <point x="249.44988" y="446"/>
+      <point x="229.971267" y="446" type="qcurve" smooth="yes"/>
+      <point x="208.971267" y="446"/>
+      <point x="175.019683" y="432"/>
+      <point x="169.493213" y="419" type="qcurve" smooth="yes"/>
+      <point x="164.816968" y="408"/>
+      <point x="159.812443" y="368"/>
+      <point x="153.010633" y="352" type="qcurve" smooth="yes"/>
+      <point x="145.358597" y="334"/>
+      <point x="117.281448" y="315"/>
+      <point x="99.281448" y="315" type="qcurve" smooth="yes"/>
+      <point x="72.281448" y="315"/>
+      <point x="60.711086" y="356"/>
+      <point x="73.039366" y="385" type="qcurve" smooth="yes"/>
+      <point x="87.068099" y="418"/>
+      <point x="139.922851" y="460"/>
+      <point x="204" y="479"/>
       <point x="235" y="479" type="qcurve" smooth="yes"/>
       <point x="290" y="479"/>
       <point x="359" y="426"/>
@@ -54,7 +62,7 @@
         <key>advanceWidth</key>
         <integer>423</integer>
         <key>bodyDesign</key>
-        <string>native-direct-outline</string>
+        <string>native-turned-bowl-with-local-upper-bulb</string>
         <key>bodyDonorCodePoint</key>
         <integer>596</integer>
         <key>counterCount</key>
@@ -63,10 +71,30 @@
         <string>stemless-specials</string>
         <key>glyphId</key>
         <string>special-turned-open-bowl</string>
+        <key>lowerTerminalDonorCodePoint</key>
+        <integer>596</integer>
+        <key>lowerTerminalOffsetX</key>
+        <integer>0</integer>
+        <key>lowerTerminalOffsetY</key>
+        <integer>0</integer>
         <key>method</key>
-        <string>Native stemless bowl vocabulary; no language reading.</string>
+        <string>Native body with bulbs at both free terminals; existing advance and body placement preserved.</string>
         <key>posture</key>
         <string>Italic</string>
+        <key>terminalDesign</key>
+        <string>upper-and-lower-bulbs</string>
+        <key>upperTerminalDonorCodePoint</key>
+        <integer>596</integer>
+        <key>upperTerminalOffsetX</key>
+        <real>98.32375564325952</real>
+        <key>upperTerminalOffsetY</key>
+        <integer>468</integer>
+        <key>upperTerminalReflectedY</key>
+        <true/>
+        <key>upperTerminalReversed</key>
+        <true/>
+        <key>upperTerminalShearX</key>
+        <real>-0.42511312334004425</real>
       </dict>
     </dict>
   </lib>
