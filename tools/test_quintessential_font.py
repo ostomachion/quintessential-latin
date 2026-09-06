@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
 OUTPUT = ROOT / "resources/fonts/QuintessentialSerif"
 DONORS = ROOT / "resources/fonts/STIXTwoText"
-VERSION = "0.240"
+VERSION = "0.250"
 
 MAIN_SCRIPT_CMAP = {code: f"u{code:X}" for code in range(0xF2A00, 0xF2A81)}
 SPECIAL_CMAP = {code: f"u{code:X}" for code in range(0xF2B00, 0xF2B04)}
@@ -63,7 +63,7 @@ LEGACY_RECIPE_BY_ID = {entry["glyphId"]: entry["recipeCodePoint"] for entry in A
 LEGACY_ENTRIES = sorted((entry for entry in ALLOCATION_ENTRIES if entry["oldCodePoint"] is not None),
                         key=lambda entry: entry["oldCodePoint"])
 ADDED_ENTRIES = sorted((entry for entry in ALLOCATION_ENTRIES if entry["oldCodePoint"] is None),
-                       key=lambda entry: entry["codePoint"])
+                       key=lambda entry: entry["legacyIndex"])
 INTERNAL_ORDER_ENTRIES = (*LEGACY_ENTRIES, *ADDED_ENTRIES)
 SCRIPT_CMAP = {entry["codePoint"]: entry["glyphName"] for entry in INTERNAL_ORDER_ENTRIES}
 SCRIPT_GLYPHS = tuple(SCRIPT_CMAP.values())
@@ -856,7 +856,7 @@ class QuintessentialFontTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((DONORS / filename).read_bytes()).hexdigest(), digest)
 
     def test_master_pairs_are_interpolation_compatible(self):
-        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.240", "0.220"))
+        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.250", "0.240"))
         self.assertEqual(len(ALLOCATION_ENTRIES), 1216)
         self.assertEqual(len(ALLOCATION_BY_ID), 1216)
         self.assertEqual(len(ALLOCATION_BY_NAME), 1216)

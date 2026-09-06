@@ -47,22 +47,28 @@ class PublicationPdfTests(unittest.TestCase):
             self.assertEqual(len(expected),len(set(expected)),name)
             # Independently inspect actual PDF text, including correct Plane 15
             # copy/extraction through each embedded font's ToUnicode mapping.
-            extracted=Counter(ord(ch) for text in self.texts[name] for ch in text if 0xF2A00<=ord(ch)<=0xF2FFF)
+            extracted=Counter(ord(ch) for text in self.texts[name] for ch in text if 0xF2A00<=ord(ch)<=0xF2EBF)
             self.assertEqual(extracted,Counter({cp:2 for cp in expected}),name)
             name_text=' '.join(self.texts[name][p['page']-1] for p in names)
             normalized=re.sub(r'\s+',' ',name_text)
             for cp in expected:
                 self.assertIn(self.entries[cp]['name'],normalized,f'{name}: U+{cp:05X}')
-            # The reference layout places one 256-position chart on each sheet.
+            # Blocks may start between 256-position boundaries; partial sheets
+            # must stop before another block rather than repeating its glyphs.
             for p in charts:
-                self.assertEqual(p['start']%256,0)
-                self.assertEqual(p['end']-p['start'],255)
-            self.assertEqual(len(charts),6 if 'catalogue' in name else (4 if 'extended-b' in name else 1))
+                self.assertEqual(p['start']%16,0)
+                self.assertEqual((p['end']-p['start']+1)%16,0)
+                self.assertLessEqual(p['end']-p['start'],255)
+                self.assertEqual(len(p['codes']),p['end']-p['start']+1)
+            self.assertEqual(len(charts),5 if 'catalogue' in name else (3 if 'extended-b' in name else 1))
             if 'catalogue' not in name:
                 total_charts+=len(charts)
-        self.assertEqual(total_charts,6)
+        self.assertEqual(total_charts,5)
         combined=self.audit['files']['quintessential-latin-catalogue.pdf']['pages']
         self.assertEqual(sum(p['kind']=='cover' for p in combined),3)
+        combined_charts=[p for p in combined if p['kind']=='chart']
+        self.assertEqual([p['grid']['columns'] for p in combined_charts],[12,16,16,16,16])
+        self.assertEqual(sorted(cp for p in combined_charts for cp in p['codes']),list(range(0xF2A00,0xF2EC0)))
 
     def test_glyph_ink_is_inside_cell_and_page(self):
         for placement in self.audit['glyphPlacements']:
@@ -77,8 +83,6 @@ class PublicationPdfTests(unittest.TestCase):
     def test_reference_grid_geometry_rules_and_hatched_vacancies(self):
         self.assertEqual(self.audit['presentation'],self.presentation)
         grid=self.presentation['grid']
-        left=(612-16*grid['cellWidth'])/2
-        right=612-left
         bottom=grid['top']-16*grid['cellHeight']
         for name,item in self.audit['files'].items():
             if 'proposal' in name:
@@ -89,7 +93,10 @@ class PublicationPdfTests(unittest.TestCase):
                         continue
                     label=(name,record['page'])
                     evidence=record['grid']
-                    self.assertEqual((evidence['columns'],evidence['rows']),(16,16),label)
+                    columns=(record['end']-record['start']+1)//16
+                    left=(612-columns*grid['cellWidth'])/2
+                    right=612-left
+                    self.assertEqual((evidence['columns'],evidence['rows']),(columns,16),label)
                     self.assertEqual(evidence['bounds'],[left,bottom,right,grid['top']],label)
                     expected_vacancies=[cp for cp in range(record['start'],record['end']+1) if cp not in self.entries]
                     self.assertEqual(evidence['vacancies'],expected_vacancies,label)
@@ -100,7 +107,7 @@ class PublicationPdfTests(unittest.TestCase):
                         return any(all(abs(actual-expected)<.02 for actual,expected in zip(
                             [line['x0'],line['y0'],line['x1'],line['y1'],line['linewidth']],
                             [min(x0,x1),min(y0,y1),max(x0,x1),max(y0,y1),width])) for line in lines)
-                    for column in range(1,16):
+                    for column in range(1,columns):
                         self.assertTrue(has_line(left+column*grid['cellWidth'],bottom,
                                                  left+column*grid['cellWidth'],grid['top'],grid['innerRule']),label)
                     for row in range(1,16):
@@ -136,7 +143,7 @@ class PublicationPdfTests(unittest.TestCase):
                     expected_families.append(entry['familyId'])
             self.assertEqual([h['familyId'] for h in headings],expected_families,name)
             if 'catalogue' in name:
-                self.assertEqual(len(headings),58)
+                self.assertEqual(len(headings),30)
             names_text=re.sub(r'\s+',' ',' '.join(self.texts[name][p['page']-1]
                                                   for p in item['pages'] if p['kind']=='names'))
             families={f['id']:f for f in self.data['families']}
@@ -227,7 +234,7 @@ class PublicationPdfTests(unittest.TestCase):
                     self.assertTrue(self.texts[name][index].strip().endswith(str(index+1)) or
                                     re.search(rf'\b{index+1}\b',self.texts[name][index]))
                     for char in page.chars:
-                        if len(char['text'])==1 and 0xF2A00<=ord(char['text'])<=0xF2FFF:
+                        if len(char['text'])==1 and 0xF2A00<=ord(char['text'])<=0xF2EBF:
                             continue # true script ink bounds are independently recorded above
                         self.assertGreaterEqual(char['x0'],40,(name,index+1,char['text']))
                         self.assertLessEqual(char['x1'],572,(name,index+1,char['text']))
@@ -244,7 +251,7 @@ class PublicationPdfTests(unittest.TestCase):
         self.assertIn('1,216',text)
         self.assertIn('native Italic',text)
         self.assertIn('each can extend independently',text)
-        self.assertIn('U+F2E00',text)
+        self.assertIn('U+F2EBF',text)
         self.assertIn('not an announcement of registration',text)
 
 

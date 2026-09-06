@@ -24,6 +24,7 @@ from font_geometry_helpers import effective_pairs, outline, polygons_from_record
 from test_additions_font import interpolation_factor, middle_directions
 from test_italic_completion import expected_counter_count, outlines, pair_digest, source_pair_digest
 from test_quintessential_font import PolygonPen, filled_scanline_intervals
+from verify_logical_allocation import historical_entry, historical_source_sha, current_unicode_map
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
@@ -96,7 +97,7 @@ class IndependentMiddleLegTests(unittest.TestCase):
         self.assertEqual(len({entry["codePoint"] for entry in self.entries}), len(self.entries))
         self.assertEqual(len({entry["glyphName"] for entry in self.entries}), len(self.entries))
         for before in self.baseline["entries"]:
-            self.assertEqual(self.by_id[before["glyphId"]], before, before["glyphId"])
+            self.assertEqual(historical_entry(self.by_id[before["glyphId"]]), before, before["glyphId"])
         for code in range(0xF2C00, 0xF2CC0):
             entries = [entry for entry in self.entries if entry["recipeCodePoint"] == code]
             states = {tuple(entry.get("middleLegExtensions", (entry["middleLegs"],) * 2)): entry
@@ -116,17 +117,17 @@ class IndependentMiddleLegTests(unittest.TestCase):
     def test_every_prior_source_byte_outline_advance_pair_and_gid_is_exact(self):
         self.assertEqual(len(self.baseline["sourceFiles"]), 3336)
         for relative, digest in self.baseline["sourceFiles"].items():
-            self.assertEqual(hashlib.sha256((ROOT / relative).read_bytes()).hexdigest(), digest, relative)
+            self.assertEqual(historical_source_sha(ROOT / relative), digest, relative)
         for style, captured in self.baseline["sources"].items():
             source = self.sources[style]
             names = tuple(captured["outlines"])
             self.assertEqual(source.lib["public.glyphOrder"][:len(captured["order"])], captured["order"], style)
             self.assertEqual(outlines(source, names), captured["outlines"], style)
             self.assertEqual(source_pair_digest(source, names), captured["pairs"], style)
-            self.assertEqual({name: source[name].unicodes for name in names}, captured["cmap"], style)
+            self.assertEqual({name: source[name].unicodes for name in names}, current_unicode_map(captured["cmap"]), style)
 
     def reference_legs(self, recipe, italic, weight):
-        """Read only the old both-extended GLIF, whose bytes are baseline-pinned."""
+        """Read the old both-extended GLIF, pinned apart from its assigned Unicode."""
         first, second = ("Italic", "BoldItalic") if italic else ("Regular", "Bold")
         legs = [sorted(self.sources[style][f"u{recipe:X}.middle"].lib[
             "org.quintessential.construction"]["extendedMiddleLegs"], key=lambda leg: leg["centerX"])

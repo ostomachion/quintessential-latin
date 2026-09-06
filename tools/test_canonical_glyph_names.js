@@ -241,7 +241,7 @@ test("all two-middle constructions include every independent extension state", (
       assert.deepEqual(entry.middleLegExtensions, [index === 0, index === 1]);
       assert.equal(entry.recipeCodePoint, base.recipeCodePoint);
       assert.equal(entry.glyphName, `${base.glyphName}.middle${side === "left" ? "Left" : "Right"}`);
-      assert.equal(entry.familyId, `${base.familyId}-extended-middle-legs`);
+      assert.equal(entry.familyId, base.familyId);
       assert.deepEqual(entry.postures, ["Roman", "Italic"]);
       assert.equal(entry.oldCodePoint, null);
       let middleIndex = 0;
@@ -260,21 +260,18 @@ test("all two-middle constructions include every independent extension state", (
   }
 });
 
-test("independent additions preserve every prior allocation identity and display order", () => {
+test("logical allocation preserves prior construction identities and names", () => {
   const baseline = JSON.parse(gunzipSync(fs.readFileSync(path.join(__dirname, "../resources/provenance/italic-completion-baseline.json.gz"))));
   assert.equal(baseline.entries.length, 832);
-  const withoutPostures = ({postures, ...identity}) => identity;
-  assert.deepEqual(allocation.entries.slice(0, 832).map(withoutPostures), baseline.entries.map(withoutPostures));
-  assert.deepEqual(allocation.entries.slice(832).map(entry => entry.legacyIndex), Array.from({length:384}, (_, index) => 832 + index));
-  assert.deepEqual(allocation.entries.slice(832).map(entry => entry.codePoint), Array.from({length:384}, (_, index) => 0xF2E00 + index));
+  const withoutPlacement = ({postures, codePoint, blockId, familyId, ...identity}) => identity;
+  const byId = new Map(allocation.entries.map(entry => [entry.glyphId, entry]));
+  for (const entry of baseline.entries) {
+    assert.deepEqual(withoutPlacement(byId.get(entry.glyphId)), withoutPlacement(entry), entry.glyphId);
+  }
   assert.equal(new Set(allocation.entries.map(entry => entry.glyphName)).size, 1216);
   assert.equal(new Set(allocation.displayOrder).size, 1216);
   assert.equal(allocation.displayOrder.length, 1216);
-  const previousIds = new Set(baseline.entries.map(entry => entry.glyphId));
-  const priorByCode = [...baseline.entries].sort((a, b) => a.codePoint - b.codePoint).map(entry => entry.glyphId);
-  assert.deepEqual(allocation.displayOrder.filter(id => previousIds.has(id)), priorByCode);
-  assert.deepEqual([allocation.version, allocation.previousVersion], ["0.240", "0.220"]);
-  assert.equal(allocation.blocks.find(block => block.id === "quintessential-latin-extensions").end, 0xF2FFF);
+  assert.deepEqual([allocation.version, allocation.previousVersion], ["0.250", "0.240"]);
 });
 
 test("mixed middle states name visual sides and close only against the selected adjacent upright", () => {
@@ -294,15 +291,15 @@ test("mixed middle states name visual sides and close only against the selected 
     assert.equal(nameParts(allocation.entries.find(entry => entry.glyphId === id).parts), name, id);
   }
 });
-test("requested code points use uniform letter names and simplified upright counts", () => {
+test("requested constructions retain uniform letter names and simplified upright counts", () => {
   const expected = new Map([
-    [0xF2A61, "QUINTESSENTIAL LATIN LETTER HIP WITH TWO ASCENDERS"],
-    [0xF2AA9, "QUINTESSENTIAL LATIN LETTER LONG ARM WITH TWO ASCENDERS"],
-    [0xF2C00, "QUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER"],
-    [0xF2A7C, "QUINTESSENTIAL LATIN LETTER TWO STEMS WITH LEG"]
+    ["turned-arched-arm-ascender-extended-middle-legs", "QUINTESSENTIAL LATIN LETTER HIP WITH TWO ASCENDERS"],
+    ["turned-double-arch-ascenders-extended-middle-legs", "QUINTESSENTIAL LATIN LETTER LONG ARM WITH TWO ASCENDERS"],
+    ["double-arched-arm", "QUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER"],
+    ["double-arch", "QUINTESSENTIAL LATIN LETTER TWO STEMS WITH LEG"]
   ]);
-  for (const [codePoint, name] of expected) {
-    assert.equal(allocation.entries.find(entry => entry.codePoint === codePoint)?.name, name);
+  for (const [glyphId, name] of expected) {
+    assert.equal(allocation.entries.find(entry => entry.glyphId === glyphId)?.name, name);
   }
   cases([
     [[body("hip"), arm("straight", true), stem("straight")], "hip with two ascenders"],

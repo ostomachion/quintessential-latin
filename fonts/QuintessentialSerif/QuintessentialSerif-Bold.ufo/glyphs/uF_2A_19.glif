@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uF2A19" format="2">
   <advance width="640"/>
-  <unicode hex="F2A29"/>
+  <unicode hex="F2A25"/>
   <outline>
     <contour>
       <point x="623" y="0" type="line"/>

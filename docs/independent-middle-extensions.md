@@ -1,5 +1,9 @@
 # Independent middle extensions
 
+This document records the 0.240 addition and its verified artifacts. Version
+0.250 retains these glyph designs and replaces their numeric assignments; see
+[the current logical allocation](logical-allocation.md).
+
 Quintessential Serif and allocation version 0.240 complete the combinations for
 constructions with two middle legs or arms. Each middle component can be short
 or extended independently, giving four states: neither, left only, right only,

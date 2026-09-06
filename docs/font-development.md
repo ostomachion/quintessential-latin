@@ -1,23 +1,19 @@
 # Reference font development
 
-Quintessential Serif 0.240 is the reference build, adding 384 independently
-extended middle-component constructions in Roman and native Italic for 1,216
-forms in each posture. The preceding corrected 0.230 build's 832 forms and their
-pairs are preserved.
+Quintessential Serif 0.250 maps the existing 1,216 constructions in each native
+posture into the [gapless logical allocation](logical-allocation.md). The 0.240
+outlines, advances, effective kerning pairs, and internal glyph identities are
+preserved; public code points change without compatibility aliases.
 The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.
 
 ## Invariants
 
-- All preceding corrected 0.230 Roman and Italic mappings, 832 in each posture,
-  retain their explicit scalar
-  values, stable identities, outlines, advances, and effective kerning pairs.
-  New mappings occupy U+F2E00–U+F2F7F, after the previous glyph-order prefix.
-  The historical shared-spine revision changed
-  the paired body counters of 396 Roman constructions and their reviewed
-  body-return, arch-port, and lower-hook closure segments. All remaining
-  segments, unrelated outlines, and native Italic geometry remain preserved.
+- All 1,216 Roman and Italic forms retain their construction identities, internal
+  glyph names, outlines, advances, and effective kerning pairs from 0.240.
+  The current numeric map is U+F2A00–U+F2EBF; earlier code-point assignments
+  are historical and must not be used to identify current glyphs.
 - Roman and Italic remain separate variable fonts with compatible 400/700
   endpoint masters, a wght axis, and the inherited nonlinear mapping.
 - Code points, stable construction IDs, internal glyph names, historical recipe
@@ -25,8 +21,8 @@ STIX Two Text donors. Donor checksums are verified before compilation.
   public character names.
 - The allocation stores neutral structural components. Canonical naming
   reads those components and never rewrites the font outlines.
-- Middle-component companions follow their bases in specimen presentation.
-  Numeric charts and names lists follow code order.
+- Middle-component companions immediately follow each base in its family.
+  Presentation, numeric charts, and names lists share the same logical order.
 
 The earlier [Italic completion](italic-completion.md) added the remaining 600 Italics
 with `python tools/complete_italic_sources.py`. It left every existing GLIF
@@ -36,10 +32,11 @@ version metadata. Allocation version 0.220 and naming version 3 remained unchang
 only posture availability expanded.
 
 The [independent middle extension revision](independent-middle-extensions.md)
-adds two asymmetric states for every form with two middle components.
+added two asymmetric states for every form with two middle components.
 The `middleLegExtensions` tuple uses final visual left-to-right order; reversed
 forms must transform those positions before using their construction donors.
-Allocation and font version are 0.240; canonical naming stays at version 3.
+That increment used allocation and font version 0.240. The current map and font
+version are 0.250; canonical naming remains version 3.
 
 ## Preservation fixtures
 
@@ -61,7 +58,7 @@ single-emblem review remain immutable.
 
 ## Project emblem
 
-U+F2B18, **stem with spine and stem**, is the project mark. Its stable identity
+U+F2ADC, **stem with spine and stem**, is the project mark (historically U+F2B18). Its stable identity
 is `opposed-bowls-0-0`; its internal historical font name is `uF2B1C`.
 The initial outline review is documented in
 [U+F2B18 optical design](f2b18-optical-design.md). The

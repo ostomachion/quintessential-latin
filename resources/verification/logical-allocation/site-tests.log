@@ -1,0 +1,58 @@
+npm notice run quintessential-latin@0.250.0 test
+npm notice run node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_site.mjs
+✔ all 1216 assignments and the three declared blocks are contiguous (2.8841ms)
+✔ the requested four stemless constructions begin Extended-A (0.294ms)
+✔ all 30 families are complete, unfragmented, and ordered by construction (0.8277ms)
+✔ each base is immediately followed by its independent middle states (3.4122ms)
+✔ reallocation preserves construction identities, names, parts, and previous base order (16.4234ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29.1369
+✔ all nine stem primitives and the ordinary body vocabulary (4.2632ms)
+✔ Section 4 short-form examples preserve left-to-right connection roles (0.6785ms)
+✔ upward bowls omit only the straight upper extension that actually closes them (0.2471ms)
+✔ downward bowls omit only the straight lower extension that actually closes them (0.2139ms)
+✔ all closed-neighbor requirements are collected before naming a shared upright (0.1533ms)
+✔ interior branches use upright primitives and retain terminal branch names (0.4585ms)
+✔ count rules combine equal adjacent uprights without crossing a body (0.4564ms)
+✔ Section 6 final long bowls close against the immediate interior upright (0.2201ms)
+✔ Section 6 initial long bowls close against the immediate interior upright (0.2429ms)
+✔ changing every distant main-upright extension leaves interior-neighbor closure local (1.8423ms)
+✔ one-sided and two-sided spines retain attachment features and never acquire opening qualifiers (0.2607ms)
+✔ formatting uses one with and any remaining and separators after abbreviation (0.3793ms)
+✔ default extensions and explicit absent extensions name the same structure (0.2654ms)
+✔ all 1216 neutral structures retain unique canonical names without mutation (23.3167ms)
+✔ all two-middle constructions include every independent extension state (12.3442ms)
+✔ logical allocation preserves prior construction identities and names (25.0784ms)
+✔ mixed middle states name visual sides and close only against the selected adjacent upright (0.8703ms)
+✔ requested constructions retain uniform letter names and simplified upright counts (0.4947ms)
+✔ Special names and adjacent interior closures remain explicit structural fixtures (0.3024ms)
+✔ unsupported long bowl adjacency and spine opening states fail (0.3134ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.9096
+PASS Mapped repertoire and native posture coverage
+PASS Safe persisted controls with the complete variable axis
+PASS Code, name, literal-character, and compound search
+PASS Search returns logical code order without changing permuted storage order
+PASS Unicode coordinates and five gapless publication sheets
+PASS Partial responsive charts retain every position and stop before the next block
+PASS Long forms fit their allocated representative widths
+PASS HTML escaping protects generated text
+PASS Four progressive pages share the controls and semantic navigation
+PASS Project marks use the controlled reference font and removed page is absent
+PASS Responsive static variants, five print grids, and one numeric names list
+PASS Every local link and asset resolves beneath the Pages repository prefix
+PASS Curated deployment excludes proof data and source trees
+PASS PDF freshness binds current inputs and detects stale or altered publication artifacts
+14 site acceptance groups passed.

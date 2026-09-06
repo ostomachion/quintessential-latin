@@ -1,0 +1,13 @@
+✔ all 1216 assignments and the three declared blocks are contiguous (2.1192ms)
+✔ the requested four stemless constructions begin Extended-A (0.3173ms)
+✔ all 30 families are complete, unfragmented, and ordered by construction (0.8861ms)
+✔ each base is immediately followed by its independent middle states (1.9701ms)
+✔ reallocation preserves construction identities, names, parts, and previous base order (8.9724ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18.2227

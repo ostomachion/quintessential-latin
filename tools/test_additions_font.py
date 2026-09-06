@@ -29,6 +29,7 @@ from ufoLib2 import Font
 
 from font_geometry_helpers import counter_recordings, interpolate_points, polygons_from_recording, shift
 from font_geometry_helpers import effective_pairs, outline, ZERO_PAIR
+from verify_logical_allocation import historical_entry
 from test_quintessential_font import (
     ALLOCATION, ALLOCATION_BY_ID, ALLOCATION_BY_NAME, ALLOCATION_ENTRIES,
     DONORS, DONOR_FILES, EXPECTED_AVAR, MAIN_SCRIPT_CMAP, OUTPUT, POSTURE_CMAPS, ROOT,
@@ -195,11 +196,11 @@ class AdditionsBaselineTests(unittest.TestCase):
                 self.assertTrue(set(before["postures"]) <= set(current["postures"]))
                 self.assertEqual(current["postures"], ["Roman", "Italic"])
                 self.assertEqual(current["parts"], before["parts"])
-                self.assertEqual(current["familyId"], before["familyId"])
+                self.assertEqual(historical_entry(current)["familyId"], before["familyId"])
                 self.assertEqual(current["legacyIndex"], before["legacyIndex"])
                 self.assertFalse(current["middleLegs"])
         self.assertEqual(ALLOCATION_BY_ID[CHANGED_ID]["glyphName"], CHANGED_NAME)
-        revised = ALLOCATION_BY_ID[OPTICAL_REVISION_ID]
+        revised = historical_entry(ALLOCATION_BY_ID[OPTICAL_REVISION_ID])
         self.assertEqual((revised["codePoint"], revised["glyphName"], revised["recipeCodePoint"],
                           revised["postures"]),
                          (0xF2B18, OPTICAL_REVISION_NAME, 0xF2B1C, ["Roman", "Italic"]))
@@ -218,7 +219,7 @@ class AdditionsBaselineTests(unittest.TestCase):
                              for entry in HISTORICAL_ENTRIES), 348)
         self.assertEqual(sum(entry["oldCodePoint"] is None and not entry["middleLegs"]
                              for entry in ALLOCATION_ENTRIES), 3)
-        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.240", "0.220"))
+        self.assertEqual((ALLOCATION["version"], ALLOCATION["previousVersion"]), ("0.250", "0.240"))
 
     def assert_pairs_preserved(self, before, after, names, zero, changed_name=CHANGED_NAME):
         for left in names:

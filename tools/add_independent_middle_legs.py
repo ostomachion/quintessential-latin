@@ -48,7 +48,7 @@ def main():
                     **metadata, "method": spec.adaptation_for(master.italic),
                     "glyphId": spec.glyph_id, "recipeCodePoint": spec.recipe_code_point,
                     "middleLegExtensions": list(spec.middle_leg_extensions),
-                    "nativePosture": master.posture, "addedInVersion": VERSION,
+                    "nativePosture": master.posture, "addedInVersion": "0.240",
                 }
                 replayRecording(recording, glyph.getPen())
         staged[master.style] = font

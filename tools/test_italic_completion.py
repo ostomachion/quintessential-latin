@@ -23,6 +23,7 @@ from fontTools.varLib.instancer import instantiateVariableFont
 from ufoLib2 import Font
 
 from font_geometry_helpers import effective_pairs, ZERO_PAIR, outline, polygons_from_recording, counter_recordings
+from verify_logical_allocation import historical_entry, current_unicode_map
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
@@ -126,7 +127,9 @@ class ItalicCompletionTests(unittest.TestCase):
         self.assertEqual(len(self.baseline["entries"]), 832)
         self.assertEqual(sum("Italic" in item["postures"] for item in self.baseline["entries"]), 232)
         self.assertEqual(sum("Italic" not in item["postures"] for item in self.baseline["entries"]), 600)
-        for old, current in zip(self.baseline["entries"], self.entries):
+        by_id = {entry["glyphId"]: entry for entry in self.entries}
+        for old in self.baseline["entries"]:
+            current = historical_entry(by_id[old["glyphId"]])
             self.assertEqual(current["postures"], ["Roman", "Italic"])
             self.assertEqual({key: value for key, value in old.items() if key != "postures"},
                              {key: value for key, value in current.items() if key != "postures"})
@@ -146,7 +149,7 @@ class ItalicCompletionTests(unittest.TestCase):
                 self.assertEqual(source.lib["public.glyphOrder"][:len(order)], order, style)
                 self.assertEqual(outlines(source, names), captured["outlines"], style)
                 self.assertEqual(source_pair_digest(source, names), captured["pairs"], style)
-                self.assertEqual({name: source[name].unicodes for name in names}, captured["cmap"], style)
+                self.assertEqual({name: source[name].unicodes for name in names}, current_unicode_map(captured["cmap"]), style)
 
     def test_all_prior_static_and_variable_outlines_advances_and_pairs_are_exact(self):
         for face, captured in self.baseline["compiled"].items():

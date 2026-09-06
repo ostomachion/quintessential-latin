@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "fontCount": 12,
+  "allocationSha256": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b",
+  "baselineSha256": "133d2a67e5ec3ae65f6d50f4ccd87187a27a172c818dca7ad720dc7a4c195197",
+  "metadataBaselineSha256": "c3396e9445ac427fe7d618c90fddeac5f82d4debf022bfe79bc03e683fb42740",
+  "method": "Restore only authorized old public Unicode code points in Unicode cmap subtables and 0.240 version in name IDs 3/5; compare the entire compiled cmap bytes and every complete raw name record to original 0.240 binaries whose hashes match the immutable baseline.",
+  "fonts": [
+    {
+      "file": "QuintessentialSerif-Bold.otf",
+      "beforeFontSha256": "6dd665d27d644f3fc37c6f5603490d35809e201e3ee65e7cd4f41605511f914c",
+      "afterFontSha256": "2cba55d7f886dd3d8f1b5f58cd9048434bfdcf477220ed39cbd0a8534c917f16",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Bold.woff2",
+      "beforeFontSha256": "2e650d385a69827d36f6c8f4767ebd7b33c7232b189fbf1446b7b8a9ca4e3492",
+      "afterFontSha256": "f55b98999eb72016abffe4351ee488f43ebbee43bea6c3413ec4cfe9a71793d4",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-BoldItalic.otf",
+      "beforeFontSha256": "56732a863530dce8e1fa4446c3c01bc55dea3a2e043608a1de0b679c6c4ce650",
+      "afterFontSha256": "17c98f8d91c00dd599d7eb5c9a4153869b9f47828b3d68d77ada444e42837b64",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-BoldItalic.woff2",
+      "beforeFontSha256": "8ffc39e92876809a7279fd7e0d67796d18e2a3fb37bd19fa7891537a75bdf434",
+      "afterFontSha256": "7291a266f2f772d41d0fcc870e93eeda3064c1800f8d1632e0935d7d9d6bae68",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Italic-Variable.ttf",
+      "beforeFontSha256": "ab50c27d4dc55add2306365f5f75101c0e507e9755b704fa10a3942806c5f6e5",
+      "afterFontSha256": "3c336c52623a0ec37a685e5d9ebf45c881f39415ca9e73fcb918ed5be913e32e",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Italic-Variable.woff2",
+      "beforeFontSha256": "a0802af58b2c2d6cecee6bb7c7fa74cc33e905c550c120a15b1a3f6a5b4767e5",
+      "afterFontSha256": "a7937b8de9a7187143230140b6e6892728778f4f2848cc0bab967b3ff4abdec7",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Italic.otf",
+      "beforeFontSha256": "b6cf90e63fb395248ac0aa4a8ca41b8b7228204abb0d34e1cb685ddd156328fd",
+      "afterFontSha256": "f01de240db26c91b7533ef544a77c418d34fbfac3e5ffdd58e5782497ea50402",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Italic.woff2",
+      "beforeFontSha256": "b3a19c9b65339af67a5cfeb08626c4eb0583f82ad32daee48a1281ad4436dad7",
+      "afterFontSha256": "39b7dbc7a04ab29909e185a3ef34714eeed7b0ac3efa456c9ec0ba1d683c0df8",
+      "restoredCmapSha256": "82843e8f0876256f07fdf430a81b5e387c283fef67ce8f5ac801d1f7b3483a13",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Regular.otf",
+      "beforeFontSha256": "fc8b3dee124b807eda47a2d36ef1d58126400b1d1b710a6fab318bab7a8c6736",
+      "afterFontSha256": "a47a67e66f05da3f0315351b615df15c77dedb54092a5c9f7085c497c8cf8b84",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Regular.woff2",
+      "beforeFontSha256": "21416d9e6508653c008a493db1fa2d0445523a5c281762df457370b4ae12689a",
+      "afterFontSha256": "c1e2037a011556da48f74fea834c33ed71b8109066d885698b46d96a1bff2e9f",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Variable.ttf",
+      "beforeFontSha256": "5b169adace7328e4980763fc9cd87c32a50f0daa360143500945986ba35beabb",
+      "afterFontSha256": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    },
+    {
+      "file": "QuintessentialSerif-Variable.woff2",
+      "beforeFontSha256": "810bfa5af1abc5f6939f872d4b2831043bcc11c3230f235b0387810d9cc9d8b9",
+      "afterFontSha256": "5da524a0919a87c982e7843906d5e381d314b2c2565dbab5fdef1172098d11cb",
+      "restoredCmapSha256": "9ae8a0b387b28e8dd26cd3009be9fcc5378b3980cc63999328c8092ffb70803c",
+      "exactCmapRestoration": true,
+      "exactNameRecordRestoration": true
+    }
+  ]
+}

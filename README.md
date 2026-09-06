@@ -1,4 +1,4 @@
-<p><img src="site/assets/project-icon.svg" width="88" height="88" alt="Quintessential Latin project emblem, U+F2B18"></p>
+<p><img src="site/assets/project-icon.svg" width="88" height="88" alt="Quintessential Latin project emblem, U+F2ADC, stem with spine and stem"></p>
 
 # Quintessential Latin
 
@@ -9,13 +9,16 @@ font, code charts, and a draft proposal for the Under-ConScript Unicode Registry
 **Website:** https://ostomachion.github.io/quintessential-latin/  
 **Discussion:** https://github.com/ostomachion/quintessential-latin/issues
 
-Quintessential Serif 0.240 contains all 1,216 forms in both Roman and native
+Quintessential Serif 0.250 contains all 1,216 forms in both Roman and native
 Italic, across weights 400–700.
 These are proposed private-use assignments, not Unicode or UCSUR registrations.
 The [independent middle extensions](docs/independent-middle-extensions.md) add
 left-only and right-only extensions wherever two middle components occur.
+Version 0.250 places all forms in one [gapless construction order](docs/logical-allocation.md),
+with each extension state beside its base. Earlier numeric assignments are replaced
+without compatibility aliases.
 
-U+F2B18 is the project mark. Its reviewed joins and paired spine curves are the
+U+F2ADC, stem with spine and stem, is the project mark. Its reviewed joins and paired spine curves are the
 basis of the [shared-spine refinement](docs/shared-spine-optical-design.md),
 covering all 396 related Roman constructions, including ending, arch, and
 extended-middle-leg variants. The [initial emblem review](docs/f2b18-optical-design.md)
@@ -25,9 +28,9 @@ each join class at close range, with the exact compiled-font revision visible.
 
 | Block | Range | Assigned |
 | --- | --- | ---: |
-| Quintessential Latin | U+F2A00–U+F2AFF | 196 |
-| Quintessential Latin Extended-A | U+F2B00–U+F2BFF | 252 |
-| Quintessential Latin Extended-B | U+F2C00–U+F2FFF | 768 |
+| Quintessential Latin | U+F2A00–U+F2ABF | 192 |
+| Quintessential Latin Extended-A | U+F2AC0–U+F2BBF | 256 |
+| Quintessential Latin Extended-B | U+F2BC0–U+F2EBF | 768 |
 
 ## Website development
 
@@ -112,7 +115,7 @@ python tools/test_pdfs.py
 
 Outputs are in `output/pdf/`: three block charts, a combined catalogue, and
 the proposal. Reference charts use Roman 400, embedded fonts, and vector text.
-The six grid sheets each contain 256 positions, followed by numeric
+The five grid sheets contain 192, 256, 256, 256, and 256 positions, followed by numeric
 two-column names lists with family subheadings. Source Sans 3 supplies the
 publication text. Grid geometry, running headers, diagonal vacancy hatching,
 and compact names follow the official Unicode code-chart format.

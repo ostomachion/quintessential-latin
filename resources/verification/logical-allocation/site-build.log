@@ -1,0 +1,4 @@
+npm notice run quintessential-latin@0.250.0 build
+npm notice run node tools/export_glyph_catalogue.js --check && node tools/build_site.mjs
+Verified 1216 neutral names and compiled availability: 1216 Roman, 1216 Italic.
+Built 4 static pages; 1216 characters, 5 print chart sheets, 5 PDFs.

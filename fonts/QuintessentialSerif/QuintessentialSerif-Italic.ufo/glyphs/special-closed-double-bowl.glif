@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="special-closed-double-bowl" format="2">
   <advance width="416"/>
-  <unicode hex="F2A01"/>
+  <unicode hex="F2AC0"/>
   <outline>
     <contour>
       <point x="167.5" y="-10.5" type="qcurve" smooth="yes"/>

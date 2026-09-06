@@ -650,6 +650,7 @@ def source_hashes() -> dict[str, str]:
         *Path(__file__).parent.glob("stix_*_italic*.py"),
         Path(__file__).with_name("complete_italic_sources.py"),
         Path(__file__).with_name("add_independent_middle_legs.py"),
+        Path(__file__).with_name("reallocate_catalogue.py"),
         Path(__file__).with_name("canonical_glyph_names.js"),
         Path(__file__).with_name("export_glyph_catalogue.js"),
         ROOT / "resources/quintessential-latin-allocation.json",

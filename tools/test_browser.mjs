@@ -7,6 +7,9 @@ import {chromium} from 'playwright';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const catalogue = JSON.parse(await readFile(path.join(root,'resources/catalogue.json'),'utf8'));
+const pointFor=id=>catalogue.entries.find(entry=>entry.glyphId===id).codePoint;
+const markPoint=pointFor('opposed-bowls-0-0');
+const asymmetricPoints=['double-arched-arm-extended-left-middle-leg','double-arched-arm-extended-right-middle-leg'].map(pointFor);
 const output = path.join(root,'.tmp/browser-review');
 await mkdir(output,{recursive:true});
 const port = Number(process.env.QLAT_TEST_PORT || 8768);
@@ -51,7 +54,7 @@ try {
   await navigate('index.html');
   const romanHeader=await page.locator('.brand-icon').screenshot();
   const romanHero=await page.locator('.emblem-glyph').screenshot();
-  check('Header and hero show the actual logo character',await page.locator('.brand-icon .glyph').textContent()===String.fromCodePoint(0xf2b18)&&await page.locator('.emblem-glyph .glyph').textContent()===String.fromCodePoint(0xf2b18));
+  check('Header and hero show the actual logo character',await page.locator('.brand-icon .glyph').textContent()===String.fromCodePoint(markPoint)&&await page.locator('.emblem-glyph .glyph').textContent()===String.fromCodePoint(markPoint));
   await page.locator('#font-weight').focus();await page.keyboard.press('End');
   await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
   check('Weight changes the header logo outline',!romanHeader.equals(await page.locator('.brand-icon').screenshot()));
@@ -59,10 +62,10 @@ try {
   await page.locator('#font-weight').focus();await page.keyboard.press('Home');
   await navigate('charts.html');
   const visibleScreen='table[data-chart-kind="screen"]:visible';
-  check('Six numeric desktop screen grids',await page.locator(visibleScreen).count()===6);
-  check('Six print grids',await page.locator('table[data-chart-kind="print"]').count()===6);
+  check('Five numeric desktop screen grids',await page.locator(visibleScreen).count()===5);
+  check('Five print grids',await page.locator('table[data-chart-kind="print"]').count()===5);
   const screenCells=page.locator('table[data-chart-kind="screen"]:visible td[data-codepoint]');
-  check('All 1536 code positions represented',await page.locator('table[data-chart-kind="screen"]:visible td').count()===1536);
+  check('All 1216 code positions represented without gaps',await page.locator('table[data-chart-kind="screen"]:visible td').count()===1216);
   const assigned=page.locator('table[data-chart-kind="screen"]:visible td [data-glyph]');
   check('All 1216 assigned positions represented',await assigned.count()===1216);
   const names=page.locator('[data-name-codepoint]');
@@ -113,7 +116,7 @@ try {
   await page.keyboard.press('Escape');
   check('Escape closes character details',!(await page.locator('#character-dialog').isVisible()));
   const asymmetricNames=[];
-  for(const point of [0xF2E00,0xF2E01]){
+  for(const point of asymmetricPoints){
     await page.locator('#character-search').fill(`U+${point.toString(16).toUpperCase()}`);
     await page.waitForTimeout(180);
     const result=page.locator('#search-results [data-glyph]');
@@ -125,6 +128,10 @@ try {
     await page.keyboard.press('Escape');
   }
   check('The left-only and right-only forms have distinct displayed names',asymmetricNames[0]!==asymmetricNames[1]);
+  await page.locator('#character-search').fill('bowl');
+  await page.waitForTimeout(180);
+  const bowlCodes=(await page.locator('#search-results .result-list .code').allTextContents()).map(value=>parseInt(value.replace(/^U\+/i,''),16));
+  check('Bowl search follows logical numeric order across families',bowlCodes.length>1&&bowlCodes.every((point,index)=>index===0||point>bowlCodes[index-1]));
   await page.locator('#character-search').fill('xyz-no-such-construction');
   await page.waitForTimeout(180);
   check('Empty search is explained',/no|0/i.test(await page.locator('#result-count').innerText()));
@@ -153,13 +160,14 @@ try {
         const expectedColumns=width>=768?16:width>=375?8:4;
         const coverage=await page.locator(visibleScreen).evaluateAll(tables=>({
           columns:tables.map(table=>Number(table.dataset.columns)),
+          variants:tables.map(table=>Number(table.closest('.chart-variant').dataset.chartColumns)),
           codes:tables.flatMap(table=>[...table.querySelectorAll('td')].map(cell=>cell.dataset.codepoint)),
           assigned:tables.reduce((count,table)=>count+table.querySelectorAll('td [data-glyph]').length,0),
           vacant:tables.reduce((count,table)=>count+table.querySelectorAll('td.vacant').length,0),
           overflow:tables.some(table=>table.closest('.chart-scroll').scrollWidth>table.closest('.chart-scroll').clientWidth+1)
         }));
-        check(`${width}px: exactly the ${expectedColumns}-column variant is visible`,coverage.columns.every(columns=>columns===expectedColumns));
-        check(`${width}px: all 1216 assigned and 320 vacant positions appear once`,coverage.assigned===1216&&coverage.vacant===320&&new Set(coverage.codes).size===1536);
+        check(`${width}px: the ${expectedColumns}-column variant keeps its partial final columns`,coverage.variants.every(columns=>columns===expectedColumns)&&coverage.columns.every(columns=>columns>0&&columns<=expectedColumns));
+        check(`${width}px: all 1216 assigned positions appear once without vacancies`,coverage.assigned===1216&&coverage.vacant===0&&new Set(coverage.codes).size===1216);
         check(`${width}px: chart geometry fits its container`,!coverage.overflow);
         const edges=await page.locator(visibleScreen).evaluateAll(tables=>tables.map(table=>{
           const sheet=table.closest('.reference-sheet'),row=table.tBodies[0].rows[1],width=element=>parseFloat(getComputedStyle(element).borderRightWidth);
@@ -226,7 +234,7 @@ try {
   check('Printed control bar is hidden',!(await page.locator('.font-bar').isVisible()));
   check('Print posture annotation is current',/Italic/.test(await page.locator('[data-print-posture]').first().innerText()));
   check('Print weight annotation is current',/700/.test(await page.locator('[data-print-weight]').first().innerText()));
-  check('Print exposes all six sixteen-column grids',await page.locator('table[data-chart-kind="print"]:visible').count()===6&&await page.locator(`${visibleScreen}`).count()===0);
+  check('Print exposes five grids with exact block boundaries',await page.locator('table[data-chart-kind="print"]:visible').count()===5&&await page.locator(`${visibleScreen}`).count()===0&&JSON.stringify(await page.locator('table[data-chart-kind="print"]').evaluateAll(tables=>tables.map(table=>Number(table.dataset.columns))))===JSON.stringify([12,16,16,16,16]));
   check('Only charts select the named Letter print page',await page.locator('body').evaluate(body=>getComputedStyle(body).page)==='code-charts');
   const continuationPrint=await page.locator('.print-sheet').evaluateAll(sheets=>sheets.map(sheet=>{const table=sheet.querySelector('table'),row=table.tBodies[0].rows[1],width=element=>parseFloat(getComputedStyle(element).borderRightWidth);return {before:sheet.dataset.continuesBefore==='true',after:sheet.dataset.continuesAfter==='true',left:width(row.cells[0]),right:width(row.cells[row.cells.length-1]),headerLeft:width(table.tHead.rows[0].cells[0]),headerRight:width(table.tHead.rows[0].cells[table.tHead.rows[0].cells.length-1]),inner:width(row.cells[1]),outer:parseFloat(getComputedStyle(table.tBodies[0].rows[0].cells[1]).borderTopWidth)};}));
   check('Printed continuation sheets use thin internal rails and heavy block edges',continuationPrint.every(edge=>edge.left===(edge.before?edge.inner:edge.outer)&&edge.right===(edge.after?edge.inner:edge.outer)&&edge.headerLeft===edge.left&&edge.headerRight===edge.right)&&continuationPrint[2].after&&continuationPrint[3].before);

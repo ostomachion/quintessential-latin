@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uF2C11" format="2">
   <advance width="1093.28"/>
-  <unicode hex="F2C34"/>
+  <unicode hex="F2C30"/>
   <outline>
     <contour>
       <point x="929.28" y="-10" type="qcurve" smooth="yes"/>

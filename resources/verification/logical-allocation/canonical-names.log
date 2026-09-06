@@ -1,0 +1,28 @@
+✔ all nine stem primitives and the ordinary body vocabulary (2.6154ms)
+✔ Section 4 short-form examples preserve left-to-right connection roles (0.4312ms)
+✔ upward bowls omit only the straight upper extension that actually closes them (0.1866ms)
+✔ downward bowls omit only the straight lower extension that actually closes them (0.141ms)
+✔ all closed-neighbor requirements are collected before naming a shared upright (0.1018ms)
+✔ interior branches use upright primitives and retain terminal branch names (0.2605ms)
+✔ count rules combine equal adjacent uprights without crossing a body (0.1687ms)
+✔ Section 6 final long bowls close against the immediate interior upright (0.1109ms)
+✔ Section 6 initial long bowls close against the immediate interior upright (0.1131ms)
+✔ changing every distant main-upright extension leaves interior-neighbor closure local (0.961ms)
+✔ one-sided and two-sided spines retain attachment features and never acquire opening qualifiers (0.1783ms)
+✔ formatting uses one with and any remaining and separators after abbreviation (0.2362ms)
+✔ default extensions and explicit absent extensions name the same structure (0.128ms)
+✔ all 1216 neutral structures retain unique canonical names without mutation (12.9415ms)
+✔ all two-middle constructions include every independent extension state (5.1925ms)
+✔ logical allocation preserves prior construction identities and names (12.6091ms)
+✔ mixed middle states name visual sides and close only against the selected adjacent upright (0.5502ms)
+✔ requested constructions retain uniform letter names and simplified upright counts (0.3459ms)
+✔ Special names and adjacent interior closures remain explicit structural fixtures (0.2121ms)
+✔ unsupported long bowl adjacency and spine opening states fail (0.3531ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 45.1821

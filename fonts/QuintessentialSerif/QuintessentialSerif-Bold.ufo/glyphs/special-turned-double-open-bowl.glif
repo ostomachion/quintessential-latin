@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="special-turned-double-open-bowl" format="2">
   <advance width="445"/>
-  <unicode hex="F2A05"/>
+  <unicode hex="F2AC2"/>
   <outline>
     <contour>
       <point x="202" y="-14" type="qcurve" smooth="yes"/>

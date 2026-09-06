@@ -7,6 +7,10 @@ import plistlib
 import re
 import xml.etree.ElementTree as ET
 
+from verify_logical_allocation import (current_unicode_map, historical_entry,
+                                       historical_source_sha, load_baseline,
+                                       migration_active, verify as verify_allocation)
+
 
 ROOT = Path(__file__).resolve().parent.parent
 REVISION = ROOT / "resources/provenance/f2b18-optical-revision.json"
@@ -33,7 +37,7 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def independent_middle_revision():
+def independent_middle_revision(logical=None):
     if not MIDDLE_REVISION.exists():
         return None
     revision = json.loads(MIDDLE_REVISION.read_text(encoding="utf-8"))
@@ -48,7 +52,7 @@ def independent_middle_revision():
     assert set(revision["previousSources"]) == set(revision["sources"]) == allowed
     assert set(revision["previousMetadata"]) == {name for name in allowed if not name.endswith("kerning.plist")}
     for name, before in revision["previousMetadata"].items():
-        after = plistlib.loads((ROOT / name).read_bytes())
+        after = logical["metadata"][name] if logical else plistlib.loads((ROOT / name).read_bytes())
         if name.endswith("fontinfo.plist"):
             expected = {**before, "versionMinor": 240, "openTypeNameVersion": "Version 0.240",
                         "openTypeNameUniqueID": before["openTypeNameUniqueID"].replace("0.230", "0.240")}
@@ -60,9 +64,9 @@ def independent_middle_revision():
             assert after["public.glyphOrder"][:len(before["public.glyphOrder"])] == before["public.glyphOrder"], name
             assert len(after["public.glyphOrder"]) == len(before["public.glyphOrder"]) + 384, name
             assert {k: v for k, v in after.items() if k != "public.glyphOrder"} == {k: v for k, v in before.items() if k != "public.glyphOrder"}, name
-    assert revision["fontManifestSha256"] == sha(ROOT / "resources/fonts/QuintessentialSerif/build-manifest.json")
+    assert revision["fontManifestSha256"] == (logical["manifestSha256"] if logical else sha(ROOT / "resources/fonts/QuintessentialSerif/build-manifest.json"))
     for name, expected in revision["sources"].items():
-        assert sha(ROOT / name) == expected, name
+        assert (logical["sources"][name] if logical else sha(ROOT / name)) == expected, name
     return revision
 
 
@@ -79,7 +83,7 @@ def revision_hashes(record):
     for name, width in REVISED_SOURCES.items():
         glyph = ET.parse(ROOT / name).getroot()
         assert glyph.tag == "glyph" and glyph.get("name") == "uF2B1C", name
-        assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == [0xF2B18], name
+        assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == current_unicode_map(["uF2B1C"])["uF2B1C"], name
         assert float(glyph.find("advance").get("width")) == width, (name, "advance changed")
         library = plistlib.loads(b"<plist>" + ET.tostring(glyph.find("lib/dict")) + b"</plist>")
         construction = library["org.quintessential.construction"]
@@ -134,7 +138,7 @@ def shared_revision_hashes(record, middle=None):
             expected[name] = entry
             glyph = ET.parse(ROOT / name).getroot()
             assert glyph.tag == "glyph" and glyph.get("name") == entry["glyphName"], name
-            assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == [entry["codePoint"]], name
+            assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == current_unicode_map([entry["glyphName"]])[entry["glyphName"]], name
             # Every middle-leg companion keeps its historical parent's advance;
             # width is not an optical exception for any of these 396 identities.
             reference = ET.parse(baseline / baseline_contents[f"u{entry['recipeCodePoint']:X}"]).getroot()
@@ -161,7 +165,14 @@ def shared_revision_hashes(record, middle=None):
 
 def verify():
     record = json.loads((ROOT / "resources/provenance/extraction-preservation.json").read_text(encoding="utf-8"))
-    middle = independent_middle_revision()
+    logical = None
+    allocation_validation = None
+    if migration_active():
+        # Validate the current migration first, then replay older revisions
+        # against its immutable 0.240 metadata and compiled-table capture.
+        allocation_validation = verify_allocation()
+        logical = load_baseline()
+    middle = independent_middle_revision(logical)
     revised_sources, revised_outputs = revision_hashes(record)
     shared_sources, shared_outputs = shared_revision_hashes(record, middle)
     revised_sources = {**revised_sources, **shared_sources}
@@ -206,12 +217,12 @@ def verify():
                 expected_additions.add(name)
                 glyph = ET.parse(path).getroot()
                 assert glyph.tag == "glyph" and glyph.get("name") == entry["glyphName"], name
-                assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == [entry["codePoint"]], name
+                assert [int(item.get("hex"), 16) for item in glyph.findall("unicode")] == current_unicode_map([entry["glyphName"]])[entry["glyphName"]], name
         assert len(expected_additions) == 1200
         assert set(completion["addedSources"]) == expected_additions, "Completion must record exactly the 1,200 added Italic GLIFs"
         for name, digest in completion["addedSources"].items():
             assert isinstance(digest, str) and re.fullmatch(r"[0-9a-f]{64}", digest), name
-            assert sha(ROOT / name) == digest, name
+            assert historical_source_sha(ROOT / name) == digest, name
         assert completion["fontManifestSha256"] == (middle["previousFontManifestSha256"] if middle else sha(ROOT / "resources/fonts/QuintessentialSerif/build-manifest.json")), "Completion font manifest changed"
         revised_sources.update(completion["sources"])
         revised_outputs.update(completion["outputs"])
@@ -220,17 +231,21 @@ def verify():
         revised_sources.update(middle["sources"])
         revised_outputs.update(middle["outputs"])
     for name, digest in record["fontSources"].items():
-        assert sha(ROOT / name) == revised_sources.get(name, digest), name
+        assert historical_source_sha(ROOT / name) == revised_sources.get(name, digest), name
     for name, digest in record["fontBinaries"].items():
-        assert sha(ROOT / "resources/fonts/QuintessentialSerif" / name) == revised_outputs.get(name, digest), name
+        actual = logical["compiled"][name]["sha256"] if logical else sha(ROOT / "resources/fonts/QuintessentialSerif" / name)
+        assert actual == revised_outputs.get(name, digest), name
     for name, digest in record["donors"].items():
         assert sha(ROOT / "resources/fonts/STIXTwoText" / name) == digest, name
     allocation = json.loads((ROOT / "resources/quintessential-latin-allocation.json").read_text(encoding="utf-8"))
     old_ids = {entry["glyphId"] for entry in record["identities"]}
-    assert [identity for identity in allocation["displayOrder"] if identity in old_ids] == record["displayOrder"]
+    historical_order = logical["allocation"]["displayOrder"] if logical else allocation["displayOrder"]
+    assert [identity for identity in historical_order if identity in old_ids] == record["displayOrder"]
     assert len(record["identities"]) == 832
     assert len(allocation["entries"]) == (1216 if middle else 832)
-    for current, before in zip(allocation["entries"], record["identities"]):
+    by_id = {entry["glyphId"]: entry for entry in allocation["entries"]}
+    for before in record["identities"]:
+        current = historical_entry(by_id[before["glyphId"]])
         assert all(current[key] == value for key, value in before.items() if key != "postures"), before["glyphId"]
         assert current["postures"] == ["Roman", "Italic"], before["glyphId"]
         assert not any(key in current for key in ("model", "language", "role"))
@@ -239,6 +254,8 @@ def verify():
         "fontBinaries": len(record["fontBinaries"]),
         "identities": 832,
         "independentMiddleAdditions": 384 if middle else 0,
+        "logicalAllocationVersion": "0.250" if logical else None,
+        "logicalAllocation": allocation_validation,
         "revisedSourceFiles": len(revised_sources),
         "sharedSpineGlyphs": len(shared_sources) // 2,
         "status": "passed",

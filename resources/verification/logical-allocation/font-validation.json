@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "version": "0.250",
+  "status": "passed",
+  "scope": "Renumbering and logical family grouping only. Every current font is rebuilt from the editable sources. Complete table equality after narrowly normalizing encoding and version metadata proves that existing outlines, interpolation, metrics, kerning and hinting are unchanged.",
+  "allocation": {
+    "file": "resources/quintessential-latin-allocation.json",
+    "sha256": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b"
+  },
+  "baseline": {
+    "file": "resources/provenance/logical-allocation-baseline.json.gz",
+    "sha256": "133d2a67e5ec3ae65f6d50f4ccd87187a27a172c818dca7ad720dc7a4c195197"
+  },
+  "fontManifest": {
+    "file": "resources/fonts/QuintessentialSerif/build-manifest.json",
+    "sha256": "1eafdaa38b8729bef4e64a1c471305ca30944600b76a639198a781a53bd93471"
+  },
+  "fontOutputs": {
+    "QuintessentialSerif-Bold.otf": "2cba55d7f886dd3d8f1b5f58cd9048434bfdcf477220ed39cbd0a8534c917f16",
+    "QuintessentialSerif-Bold.woff2": "f55b98999eb72016abffe4351ee488f43ebbee43bea6c3413ec4cfe9a71793d4",
+    "QuintessentialSerif-BoldItalic.otf": "17c98f8d91c00dd599d7eb5c9a4153869b9f47828b3d68d77ada444e42837b64",
+    "QuintessentialSerif-BoldItalic.woff2": "7291a266f2f772d41d0fcc870e93eeda3064c1800f8d1632e0935d7d9d6bae68",
+    "QuintessentialSerif-Italic-Variable.ttf": "3c336c52623a0ec37a685e5d9ebf45c881f39415ca9e73fcb918ed5be913e32e",
+    "QuintessentialSerif-Italic-Variable.woff2": "a7937b8de9a7187143230140b6e6892728778f4f2848cc0bab967b3ff4abdec7",
+    "QuintessentialSerif-Italic.otf": "f01de240db26c91b7533ef544a77c418d34fbfac3e5ffdd58e5782497ea50402",
+    "QuintessentialSerif-Italic.woff2": "39b7dbc7a04ab29909e185a3ef34714eeed7b0ac3efa456c9ec0ba1d683c0df8",
+    "QuintessentialSerif-Regular.otf": "a47a67e66f05da3f0315351b615df15c77dedb54092a5c9f7085c497c8cf8b84",
+    "QuintessentialSerif-Regular.woff2": "c1e2037a011556da48f74fea834c33ed71b8109066d885698b46d96a1bff2e9f",
+    "QuintessentialSerif-Variable.ttf": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+    "QuintessentialSerif-Variable.woff2": "5da524a0919a87c982e7843906d5e381d314b2c2565dbab5fdef1172098d11cb"
+  },
+  "sourceGlyphs": 4872,
+  "constructionsPerPosture": 1216,
+  "blockCounts": [
+    192,
+    256,
+    768
+  ],
+  "families": 30,
+  "checks": {
+    "canonical-names.log": {
+      "file": "resources/verification/logical-allocation/canonical-names.log",
+      "sha256": "47c70b1263049ec79de31077755ec810ed2b86183683399ccd08e623d8092c86"
+    },
+    "data-freshness.log": {
+      "file": "resources/verification/logical-allocation/data-freshness.log",
+      "sha256": "af5b936c66ee9d3106690e53b055b26c36b5378ff6a5dc4147795cd60fe9d0f0"
+    },
+    "font-build.log": {
+      "file": "resources/verification/logical-allocation/font-build.log",
+      "sha256": "8844166639e7561f08c94cfe50a28f68b6be5793320e30f0ceca91f260e7e52e"
+    },
+    "font-preservation.log": {
+      "file": "resources/verification/logical-allocation/font-preservation.log",
+      "sha256": "326648d2c93f8627f419e4cf59a429b86c939006a0c8e26617456e05a64d4f51"
+    },
+    "historical-identities.log": {
+      "file": "resources/verification/logical-allocation/historical-identities.log",
+      "sha256": "3a5facf1f6bee9c39c999bcf7ed5bc43e4f2520e505c5fe2693320fb0ae6761d"
+    },
+    "historical-italic-sources.log": {
+      "file": "resources/verification/logical-allocation/historical-italic-sources.log",
+      "sha256": "baab74f634ce30a2341945b9bd5057eb418799533533651a2937e94b988b45cf"
+    },
+    "historical-middle-sources.log": {
+      "file": "resources/verification/logical-allocation/historical-middle-sources.log",
+      "sha256": "58bc1e023dad9308f1a0d27327e02efec124a06c0fb3a591b0d59245c64aebe4"
+    },
+    "logical-order.log": {
+      "file": "resources/verification/logical-allocation/logical-order.log",
+      "sha256": "69b6393bf02aaa6d06b8ac696cbe18a3b697849fa17a39b4e4312ccf362d91dc"
+    },
+    "metadata-comparison.log": {
+      "file": "resources/verification/logical-allocation/metadata-comparison.log",
+      "sha256": "406186efa3e405bea1ce150cf9d2ec6e78e9eae3ee8cb419bbfbbbbb0d4ec46a"
+    },
+    "proof-build.log": {
+      "file": "resources/verification/logical-allocation/proof-build.log",
+      "sha256": "4935e8575e4870fd770faa34ee50d0c27d338780f8f6a60b78f97a5c6ae302c8"
+    },
+    "proof-metadata.log": {
+      "file": "resources/verification/logical-allocation/proof-metadata.log",
+      "sha256": "97e2ba2fa5b0381b6c00eb3ef89054ccd3d6c49482eb8db9db734367d6886189"
+    },
+    "source-master-compatibility.log": {
+      "file": "resources/verification/logical-allocation/source-master-compatibility.log",
+      "sha256": "1f27310a98d8e640149810bdd00db8ecfb1b8c8673e603d74d67bc5a4f82b2e4"
+    }
+  },
+  "compiledMetadataComparison": {
+    "file": "resources/verification/logical-allocation/metadata-comparison.json",
+    "sha256": "d72bb3986dc357bb414e5cccb98183bf3233f7a7fafdac27132ed97f71729341"
+  },
+  "proofManifest": {
+    "file": "docs/images/logical-allocation/manifest.json",
+    "sha256": "7addd4f63a82006877966cc49000673a987fc166a0587b7e8e4f859039e89a39"
+  },
+  "proofDrawingComparison": {
+    "file": "resources/verification/logical-allocation/proof-path-comparison.json",
+    "sha256": "5ae9f14ec05125c339ae36b932db544d5603ae512c725d72609ea3c270e3c80d"
+  },
+  "visualSpotChecks": {
+    "sheets": [
+      1,
+      4,
+      7,
+      9,
+      16,
+      21
+    ],
+    "inspection": "New code labels and independent-state correspondence reviewed. Sheets 1/4/7 also used native crops, 9/16 used 1135x2048 overviews, and 21 used the original 2160x3898 image. All 24 sheets preserve the exact previously reviewed non-text SVG drawing and layout."
+  },
+  "priorGeometryAcceptance": {
+    "file": "resources/verification/independent-middle-extensions/font-validation.json",
+    "sha256": "3567cf21805dbcbf5a38c9db923f9404df524e428b3a20d020b92ea2d6a6a1e3",
+    "use": "Historical 0.240 geometry, interpolation, endpoint, hinting and ordered-pair acceptance is carried forward through exact source and compiled-table preservation. Those unchanged expensive geometry suites were not rerun for the encoding-only migration."
+  },
+  "repeatability": "Reapplying reallocate_catalogue.py --check produced zero changes. This revision ran one complete font build; it does not claim a new isolated repeat-font build.",
+  "validationSources": {
+    "reallocate_catalogue.py": {
+      "file": "tools/reallocate_catalogue.py",
+      "sha256": "388cf6610769e7fb6aaca8ce70efe07231e9a0993303e9903982cb3df9cbb87c"
+    },
+    "verify_logical_allocation.py": {
+      "file": "tools/verify_logical_allocation.py",
+      "sha256": "0e035a6f839ce562de6d7a7fa3ac7195cded1234d149ef0a575b84fc5376e744"
+    },
+    "verify_font_preservation.py": {
+      "file": "tools/verify_font_preservation.py",
+      "sha256": "d9bcb6fec8c0e7f96aacad8fed8e039e7cc3f0f2bfd2f1ffd77422468a9cd12c"
+    },
+    "test_logical_allocation.js": {
+      "file": "tools/test_logical_allocation.js",
+      "sha256": "edd60475b84868ce2da65d31e07df1a99aba3119d5b1553895fa1da2f42a558c"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent optical regression for the Roman U+F2B18 project emblem.
+"""Independent optical regression for the Roman project emblem.
 
 Measure the filled outline, without importing its construction recipe. The
 immutable 0.210 glyph supplies the old silhouette, advance, and defect profile;
@@ -25,11 +25,12 @@ from ufoLib2 import Font
 
 from font_geometry_helpers import outline, polygons_from_recording
 from test_quintessential_font import (
-    DONORS, DONOR_FILES, EXPECTED_AVAR, OUTPUT, ROOT, SOURCES, VARIABLE_FILES,
+    ALLOCATION_BY_NAME, DONORS, DONOR_FILES, EXPECTED_AVAR, OUTPUT, ROOT, SOURCES, VARIABLE_FILES,
     PolygonPen, filled_scanline_intervals, polygons, symmetric_difference_area,
 )
 
-NAME = "uF2B1C"  # Stable internal recipe name; the current character is U+F2B18.
+NAME = "uF2B1C"  # Stable internal recipe name, independent of current encoding.
+CODE_POINT = ALLOCATION_BY_NAME[NAME]["codePoint"]
 WEIGHTS = (400, 450, 500, 550, 600, 650, 700)
 BASELINE = ROOT / "tests/baselines/0.210"
 COMPILED = True
@@ -254,7 +255,7 @@ class ProjectGlyphTests(unittest.TestCase):
                     self.sources[0][0], self.sources[1][0], weight))
                 row = {"weight": weight, "stix": reference, "before": before, "source": sources}
                 if COMPILED:
-                    self.assertEqual(self.font.getBestCmap()[0xF2B18], NAME)
+                    self.assertEqual(self.font.getBestCmap()[CODE_POINT], NAME)
                     row["compiled"] = profile(polygons(
                         self.font.getGlyphSet(location={"wght": weight}), NAME, scale=65536), scale=65536)
                 MEASUREMENTS.append(row)
@@ -345,7 +346,7 @@ def main():
             inputs.append(OUTPUT / VARIABLE_FILES[False])
             inputs.extend(OUTPUT / f"QuintessentialSerif-{style}.otf" for style in ("Regular", "Bold"))
         destination.write_text(json.dumps({
-            "character": "U+F2B18", "reference": "STIX Two Text o and b",
+            "character": f"U+{CODE_POINT:X}", "reference": "STIX Two Text o and b",
             "units": "font units; shoulder nearest-boundary distance and spine normal-ray ink width",
             "normalProfileColumns": ["fraction of counter x span", "ink width", "exit boundary"],
             "shaftMergeNote": "Exterior-exit rays include native shaft ink and are not constant-width claims.",

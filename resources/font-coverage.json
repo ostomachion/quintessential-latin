@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.240",
+  "version": "0.250",
   "sampledWeights": [
     400,
     500,
@@ -8,8 +8,8 @@
     700
   ],
   "fontHashes": {
-    "QuintessentialSerif-Variable.ttf": "5b169adace7328e4980763fc9cd87c32a50f0daa360143500945986ba35beabb",
-    "QuintessentialSerif-Italic-Variable.ttf": "ab50c27d4dc55add2306365f5f75101c0e507e9755b704fa10a3942806c5f6e5"
+    "QuintessentialSerif-Variable.ttf": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+    "QuintessentialSerif-Italic-Variable.ttf": "3c336c52623a0ec37a685e5d9ebf45c881f39415ca9e73fcb918ed5be913e32e"
   },
   "entries": {
     "special-ring": {

@@ -1,8 +1,38 @@
 # Verification record
 
-Current reference font **0.240**, allocation **0.240**, canonical naming **3**.
+Current reference font **0.250**, allocation **0.250**, canonical naming **3**.
 
-## Independent middle extensions
+## Logical allocation
+
+Version 0.250 places all **1,216 constructions** in consecutive positions
+U+F2A00–U+F2EBF. The 30 families keep every middle-extension state beside its
+base, and Extended-A begins with the four stemless double-bowl and spine forms.
+The previous numeric map is replaced without compatibility aliases.
+
+The charts use five sheets with **12, 16, 16, 16, and 16 columns**, stopping at
+block boundaries without gaps or duplicated characters. All **12 rebuilt font
+files** pass source, mapping, metadata, and normalized compiled-table preservation
+checks against 0.240. Coverage and catalogue freshness checks pass. The
+[font verification record](../resources/verification/logical-allocation/font-validation.json)
+binds these results to the final sources and binaries. All 24 proof sheets retain
+their previous drawing and placement trees; six sheets received new-label spot
+checks. This encoding-only revision does not claim a fresh repeat font build.
+
+All **5 allocation tests**, **20 naming tests**, **14 site acceptance groups**,
+**153 browser checks**, and **9 PDF checks** pass. The five publication PDFs
+contain **67 pages** (6 main, 7 Extended-A, 18 Extended-B, 31 combined, 5 proposal).
+Every page was visually inspected from fresh Poppler renders. All five PDFs and
+their manifest also reproduce byte for byte.
+
+The complete **25-page Italic 700 browser print**, desktop/mobile layouts,
+eight block-boundary captures, and sixteen four-state character dialogs were
+visually inspected. No clipping, overlap, missing glyphs, or broken wrapping was
+found. See the [publication review](../resources/verification/logical-allocation/publication-review.json)
+and [logical allocation](logical-allocation.md). The build remains local; external
+publication and user visual acceptance remain separate. Earlier records below
+retain their original counts, code points, and exact file hashes.
+
+## Historical independent middle extensions
 
 The 6 September 2026 increment adds **384 constructions** with independently
 extended middle legs or arms, bringing the mapped repertoire to **1,216** in

@@ -23,9 +23,15 @@ const entries=allocation.entries.map(entry=>{
   const postures=["Roman","Italic"].filter(posture=>metrics[posture]);
   if(JSON.stringify(postures)!==JSON.stringify(entry.postures))throw new Error("Posture mismatch: "+entry.glyphId);
   return {glyphId:entry.glyphId,codePoint:entry.codePoint,name,canonicalName,familyId:entry.familyId,blockId:entry.blockId,parts:entry.parts,stemless:entry.stemless,postures,...(entry.baseGlyphId?{baseGlyphId:entry.baseGlyphId}:{}),...(entry.middleLegs?{middleLegs:true}:{}),...(entry.middleLegExtensions?{middleLegExtensions:entry.middleLegExtensions}:{}),metrics};
-});
+}).sort((a,b)=>a.codePoint-b.codePoint);
 if(entries.length!==1216||entries.filter(e=>e.postures.includes("Italic")).length!==1216)throw new Error("Unexpected repertoire.");
 if(allocation.displayOrder.length!==entries.length||new Set(allocation.displayOrder).size!==entries.length||allocation.displayOrder.some(id=>!ids.has(id)))throw new Error("Invalid display order.");
+const numericEntries=[...entries].sort((a,b)=>a.codePoint-b.codePoint);
+if(numericEntries.some((entry,index)=>entry.glyphId!==allocation.displayOrder[index]||entry.codePoint!==numericEntries[0].codePoint+index))throw new Error("Character allocation must be consecutive and match display order.");
+for(const block of allocation.blocks){
+  const assigned=numericEntries.filter(entry=>entry.blockId===block.id);
+  if(assigned.length!==block.end-block.start+1||assigned[0]?.codePoint!==block.start||assigned.at(-1)?.codePoint!==block.end)throw new Error("Block must be fully assigned: "+block.id);
+}
 const catalogue={schemaVersion:1,version:allocation.version,namingVersion:allocation.namingVersion,axis:{min:400,max:700,default:400},blocks:allocation.blocks,families:allocation.families.map(f=>({id:f.id,title:f.title,...(f.baseFamilyId?{baseFamilyId:f.baseFamilyId}:{})})),displayOrder:allocation.displayOrder,entries};
 const json=JSON.stringify(catalogue,null,2)+"\n";
 const browser="/* Generated neutral Quintessential Latin catalogue. Project-local PUA assignments. */\n"+

@@ -1,0 +1,1034 @@
+{
+  "schemaVersion": 1,
+  "version": "0.250",
+  "allocationVersion": "0.250",
+  "namingVersion": 3,
+  "status": "passed",
+  "reviewedAtUtc": "2026-09-06T18:46:25.161409+00:00",
+  "publicationPages": 67,
+  "files": [
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "pageCount": 31,
+      "pages": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-01.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-02.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-03.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-04.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-05.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-06.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-07.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-08.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-09.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-10.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-11.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-12.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-13.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-14.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-15.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-16.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-17.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-18.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-19.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-20.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-21.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-22.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-23.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-24.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-25.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-26.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-27.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-28.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-29.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-30.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-31.png"
+      ],
+      "contacts": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-2.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-3.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-4.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-5.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-6.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-7.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-8.png"
+      ],
+      "pdfSha256": "4fb00022f2ecdfeff90da14dde382c79885ec6482e85560952227ba41cfb12e8",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+        "page-02.png": "05840037df1d54b63a9c438b5db757a48dfb6d13d2d635d97103cf2ddd2b27eb",
+        "page-03.png": "96a8c7534a8ae618b8ee3c93665d7b13b5a0af69af245b187ada46ac9de88615",
+        "page-04.png": "dfe07aa8dee6bc474f7be34681d2c58ffbedff2e5ac279d23efb12e8a061fb60",
+        "page-05.png": "575854f84b9669ea19c267ba778ac1eb422511c023d293eb8c4d1745ead5fa4a",
+        "page-06.png": "bfb20b5a736d283a8f32e94b76876ccd6d900e77b2897f872a1d5af781cf36c4",
+        "page-07.png": "550dd4815743c8a247a2f1bb16a445c5cec73e85b72446c51b1fbc623d246a7c",
+        "page-08.png": "96c3157eb102081605fe0f350ee457021c99154da69f2d6be76a8e64368f83a5",
+        "page-09.png": "aca08500f325db2019201e6448fc9712aded97a7457c49aa29b44d199f79ed5a",
+        "page-10.png": "fce793126541135c9ff10a225280b6d82bee02a174eef374a3b752ce1ac78ba4",
+        "page-11.png": "4d6fff38149423a4f302f50193504c834f244ed4531401b60a8b9dc2d2963344",
+        "page-12.png": "b6be5293dc0c4d1a82b15c4e450309dda3fe9a4cdf1643dab9e6613e20136da1",
+        "page-13.png": "44962529dd924de892804f4079c8b17b8d656e6fa84c244e3d21471a93850797",
+        "page-14.png": "d065cdc4d8e7408d17f7609c7c2879022fcd9bae3f26b1deba4c2005a0a3af9d",
+        "page-15.png": "b4eee6bdf1819da30751b9d76656647babd651770b65ad372b5c905d957a9230",
+        "page-16.png": "68719a75f88c403a98e0e1747fe88b6ac6576dc867f383cfadc265aa7623b3e4",
+        "page-17.png": "1f6e3dbeddfb5705803922fad7f57e1e4950f6421c887ae6fa7cf47752360f76",
+        "page-18.png": "0392887e0f67e8f1089dbc8a376f3db1284b55b3753cc3b7ad1c4a451572c0a6",
+        "page-19.png": "04f9790bda990a9ed39d6a9d5fdb075323ba7a69316c7bdad788deaad0ea0184",
+        "page-20.png": "8dca2eded304c6ffe29b799bb40291f300fb75ae2a7b91b57abec6c8c7144551",
+        "page-21.png": "88be0e399758e395ff7b0e9a406fe0597550a9d64a914fb4e8ed93dbd53be6db",
+        "page-22.png": "2a7129851f18e7395234c4dca1bdec6e98f9643624307342c13e2830ce1a49af",
+        "page-23.png": "b2f2931e7421bb5dc395bca1318eb77ea93a5231452d27de8c1ab83f4b032115",
+        "page-24.png": "e767d4a3c955d7a74b4da79e253225bdeb2352696f1bffb63e2ed09c8b28e495",
+        "page-25.png": "efd6a477f4dbc3df0c3be49154dccbb3a4cb0f4e309adbbd02c24d5120172df3",
+        "page-26.png": "9fc34c3b6b2ae576ca9e75027175d5d669a606775526e3d1b7209b36e8259e92",
+        "page-27.png": "cc02ad4729f3048f83a2bc6e9a3ef5833d708797902e68531b4a6bb7978e14db",
+        "page-28.png": "2991c27c0a507399ea4b950ed63df094558996d10dc6bbf9e51367aac4f0a20c",
+        "page-29.png": "81783c860696d280715fc69110e7642d998fec66f69c4d48200acdd89cdd0c94",
+        "page-30.png": "3ce91a422734bf319d247bec35fdab64a03ab6cf3f6eba9fa8f594f756af9888",
+        "page-31.png": "8064dfe37e0f1717b2940970fc17d564eee6e24d14acffaf7f766e8dc09d6fd7"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-a.pdf",
+      "pageCount": 7,
+      "pages": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-2.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-3.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-4.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-5.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-6.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/page-7.png"
+      ],
+      "contacts": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/contact-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/contact-2.png"
+      ],
+      "pdfSha256": "5cea6a65d043426d86042763477634ca6ed752b9704baf54dea7813aa6f8f9c4",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "86fae1862b3b151afbff214b3a18758cbc3a3852bc86b91905c7b6771c780ff8",
+        "page-2.png": "d106c36f1594f69df1655c5421ffed14c6ed0caf73cf2dc91357f19c7ec56db1",
+        "page-3.png": "b8f00934026efc9fcf03915403355c68ce355ab951b484029bf2bc93d5a5e67a",
+        "page-4.png": "06d8a8b92a304fa106167b4bf29883539383b3de515723cf0896764374cfbaea",
+        "page-5.png": "7206e22fc4dc69daa8bb385a0b50b36bbbed82316fc5e0bacf700dc5cc7dbafe",
+        "page-6.png": "ce3d3512e1808f2435fe3c3d37540e3b1f71700db129ae0728e0db006fad6fc2",
+        "page-7.png": "092d16fdee6e1133a2f8f0ba45343074cf9346aa308f7b3491df7749eaf2d08b"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-extended-b.pdf",
+      "pageCount": 18,
+      "pages": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-01.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-02.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-03.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-04.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-05.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-06.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-07.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-08.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-09.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-10.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-11.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-12.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-13.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-14.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-15.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-16.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-17.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/page-18.png"
+      ],
+      "contacts": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-2.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-3.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-4.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-5.png"
+      ],
+      "pdfSha256": "a0957593d29ba66540f6adf460829debb69004c1e5a2b0ae60e768e73e230b7f",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "75bd65220b79b78282198cfb26d54a00f61065c88fc67d10c0fbacb199a791e7",
+        "page-02.png": "06b4f4b955e54d8f335b321a106c54dc35a0f8b2e2c498c8426fa22e6297ac37",
+        "page-03.png": "f84b136d5c3a5da35e75874460537816f2a2ebde2c0c69936490be68b49ba793",
+        "page-04.png": "39918ad456a5fb6bacb23c8e3ffe9bf7b465c5614c18331d4967277480991178",
+        "page-05.png": "f05b9a1131a7805e2ab4d861111f3ebf9eaf50d9ac497a66a015d02557328cdc",
+        "page-06.png": "8569d852f6daa9faaab1a161dd6e210cb91189c46b4e96bd4ed526be39ab5ea0",
+        "page-07.png": "6eab9695b77b0bbde163be7e8ed57de8ac4c4429383f95c7778d11a7e14780ec",
+        "page-08.png": "5cc4f9720593b806bc07cfbf51a6469825796f9051cff7389ca4dc61f24bc93f",
+        "page-09.png": "ce91bbfa19caf0e6e1c36a854ed3d66e04bf55efc61dd021ce80329059a6c07a",
+        "page-10.png": "8562ee42df37b52a1207c9f341af06c70b7d40b478c574fb1a315e6620e4c360",
+        "page-11.png": "80368d6507d30a4451caa0683a7256a2c3f868f9ccf73ba5d1485d9d6ef712a2",
+        "page-12.png": "885060289880b20c7f9c498b2a4e80e3112a1333a4d3020c1bf97d0aa7471f76",
+        "page-13.png": "33356cd694aa18bb2bb7a687a50ef3a31c3ee894dcf88a3ffcec6000c4e7618c",
+        "page-14.png": "0e5dd1f2d4e3bbb00b681435477cdebb975f7b013b09a975830bf172180f5843",
+        "page-15.png": "a0b5b33bc73662b89ef1140317f03dd7265ccb6d84494bfd5d95b0428465bdf2",
+        "page-16.png": "be7cb6d04fa384a82eb191789050cc060387cb42183c76e60bcf5cfade92160a",
+        "page-17.png": "3233a2b7a4e9c92f5d91ad01d7fd4a22e67ef0af085c389e137f9690699c3bb9",
+        "page-18.png": "2273c05d9136301fee68f574e5b2b1d1fd22688178928cf62bea9fc25e0ccb59"
+      }
+    },
+    {
+      "pdf": "quintessential-latin-proposal.pdf",
+      "pageCount": 5,
+      "pages": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/page-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/page-2.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/page-3.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/page-4.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/page-5.png"
+      ],
+      "contacts": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/contact-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/contact-2.png"
+      ],
+      "pdfSha256": "372fbec652867ffde7cf26bf1176aadbb572f261ec33b3b00448464db3f5e80b",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "28772ad4d8549a1dfd29d9d14dd172b4da715b60d8559863b3be9d14dfe45d2c",
+        "page-2.png": "4b1bb26077366ab6eca91be7846cce6e0b671a717856287474fb8f15d6700486",
+        "page-3.png": "7e1d7e36ae661a7faa161ce2ad797efd73ef85e413df460e1564f088b25fc042",
+        "page-4.png": "ad37a8acae201dbe7741eedc187e45bda6104eeea9c219bbd661ec5cdb3d695d",
+        "page-5.png": "faf059a68de4fd80b9976474c476b79413bfb6fb00078389c15026d65a8fd264"
+      }
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "pageCount": 6,
+      "pages": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-2.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-3.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-4.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-5.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/page-6.png"
+      ],
+      "contacts": [
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/contact-1.png",
+        ".tmp/logical-allocation/pdf-review/quintessential-latin/contact-2.png"
+      ],
+      "pdfSha256": "12ee39d9389eae37520dd14bba7cf83a28a17883d320db195fa8e455111c8c83",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+        "page-2.png": "05840037df1d54b63a9c438b5db757a48dfb6d13d2d635d97103cf2ddd2b27eb",
+        "page-3.png": "96a8c7534a8ae618b8ee3c93665d7b13b5a0af69af245b187ada46ac9de88615",
+        "page-4.png": "dfe07aa8dee6bc474f7be34681d2c58ffbedff2e5ac279d23efb12e8a061fb60",
+        "page-5.png": "575854f84b9669ea19c267ba778ac1eb422511c023d293eb8c4d1745ead5fa4a",
+        "page-6.png": "bfb20b5a736d283a8f32e94b76876ccd6d900e77b2897f872a1d5af781cf36c4"
+      }
+    }
+  ],
+  "publicationBuildManifestSha256": "9c21d22f9120d86a9a0501a704b5a21698d03257902a2cbd7e8eca0314c43906",
+  "sourceFontBuildManifestSha256": "1eafdaa38b8729bef4e64a1c471305ca30944600b76a639198a781a53bd93471",
+  "sourceFontOutputs": {
+    "QuintessentialSerif-Bold.otf": "2cba55d7f886dd3d8f1b5f58cd9048434bfdcf477220ed39cbd0a8534c917f16",
+    "QuintessentialSerif-Bold.woff2": "f55b98999eb72016abffe4351ee488f43ebbee43bea6c3413ec4cfe9a71793d4",
+    "QuintessentialSerif-BoldItalic.otf": "17c98f8d91c00dd599d7eb5c9a4153869b9f47828b3d68d77ada444e42837b64",
+    "QuintessentialSerif-BoldItalic.woff2": "7291a266f2f772d41d0fcc870e93eeda3064c1800f8d1632e0935d7d9d6bae68",
+    "QuintessentialSerif-Italic-Variable.ttf": "3c336c52623a0ec37a685e5d9ebf45c881f39415ca9e73fcb918ed5be913e32e",
+    "QuintessentialSerif-Italic-Variable.woff2": "a7937b8de9a7187143230140b6e6892728778f4f2848cc0bab967b3ff4abdec7",
+    "QuintessentialSerif-Italic.otf": "f01de240db26c91b7533ef544a77c418d34fbfac3e5ffdd58e5782497ea50402",
+    "QuintessentialSerif-Italic.woff2": "39b7dbc7a04ab29909e185a3ef34714eeed7b0ac3efa456c9ec0ba1d683c0df8",
+    "QuintessentialSerif-Regular.otf": "a47a67e66f05da3f0315351b615df15c77dedb54092a5c9f7085c497c8cf8b84",
+    "QuintessentialSerif-Regular.woff2": "c1e2037a011556da48f74fea834c33ed71b8109066d885698b46d96a1bff2e9f",
+    "QuintessentialSerif-Variable.ttf": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+    "QuintessentialSerif-Variable.woff2": "5da524a0919a87c982e7843906d5e381d314b2c2565dbab5fdef1172098d11cb"
+  },
+  "publicationReviews": [
+    {
+      "reviewer": "publication_integration",
+      "pagesInspected": 36,
+      "files": [
+        "quintessential-latin-extended-a.pdf",
+        "quintessential-latin-extended-b.pdf",
+        "quintessential-latin-proposal.pdf",
+        "quintessential-latin.pdf"
+      ],
+      "method": "Inspected all 11 contact sheets covering all 36 standalone block and proposal pages, then native-resolution Extended-A names prefix and dense Extended-B names. Grids, numeric labels, names, headings, continuation edges, and page bounds show no visible defects.",
+      "originalResolutionPages": {
+        "quintessential-latin-extended-a.pdf": [
+          3
+        ],
+        "quintessential-latin-extended-b.pdf": [
+          16
+        ]
+      }
+    },
+    {
+      "reviewer": "root",
+      "originalResolutionPages": {
+        "quintessential-latin.pdf": [
+          2
+        ],
+        "quintessential-latin-extended-a.pdf": [
+          2
+        ]
+      },
+      "result": "Main 12-column grid is filled through F2ABF; Extended-A has 16 columns F2AC0-F2BBF with double bowl, open, turned open, and spine first. No omissions, duplicates, or clipping."
+    },
+    {
+      "schemaVersion": 1,
+      "version": "0.250",
+      "reviewedAt": "2026-09-06T18:44:57.579239+00:00",
+      "reviewer": "catalogue_audit",
+      "pdf": {
+        "path": "output/pdf/quintessential-latin-catalogue.pdf",
+        "sha256": "4fb00022f2ecdfeff90da14dde382c79885ec6482e85560952227ba41cfb12e8",
+        "pages": 31
+      },
+      "buildManifest": {
+        "path": "output/pdf/build-manifest.json",
+        "sha256": "9c21d22f9120d86a9a0501a704b5a21698d03257902a2cbd7e8eca0314c43906"
+      },
+      "renderManifest": {
+        "path": ".tmp/logical-allocation/pdf-review/manifest.json",
+        "sha256": "78013c768fe6cec333a0291b728bded17e0f8b3bb49feb7fa54ad3ac08e28ab3"
+      },
+      "reference": {
+        "font": "Quintessential Serif",
+        "posture": "Roman",
+        "weight": 400
+      },
+      "sourceFontHashes": {
+        "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "5f25fff1baee0bf6b899476782096b4ade5989bd55c3a051868b17396de5e1e9",
+        "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
+        "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
+        "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
+        "resources/fonts/SourceSans3/SourceSans3-Bold.ttf": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
+        "resources/fonts/SourceSans3/SourceSans3-It.ttf": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4"
+      },
+      "result": "Pass: all 31 pages visually reviewed through contact sheets and 11 pages additionally inspected at native raster size. No visible clipping, overlap, missing glyphs, code labels outside cells, or broken family heading/entry pagination observed.",
+      "userVisualAcceptance": "Pending",
+      "scope": {
+        "contactReviewedPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "nativeResolutionPages": [
+          2,
+          8,
+          9,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23,
+          29,
+          31
+        ],
+        "changedChartPages": [
+          2,
+          8,
+          15,
+          16,
+          17
+        ],
+        "stemlessPrefixNamesPage": 9,
+        "mergedFamilyNamesAndContinuationPages": [
+          18,
+          19,
+          23,
+          29,
+          31
+        ]
+      },
+      "observations": [
+        "Main block is a clean centered 12-column, 16-row grid covering F2A00-F2ABF without unused columns.",
+        "Extended-A grid and first names page begin with DOUBLE BOWL, DOUBLE OPEN BOWL, TURNED DOUBLE OPEN BOWL, and SPINE at F2AC0-F2AC3.",
+        "All three Extended-B grids are filled and continuous across F2BC0-F2CBF, F2CC0-F2DBF, and F2DC0-F2EBF.",
+        "Middle-extension cases appear immediately beside related base constructions in code order, including the four states on the first Extended-B names page.",
+        "Merged family headings remain with their first entry; multi-line names and page/column continuations fit without overlapping neighboring entries or footers.",
+        "Sparse trailing names pages 6 and 13 contain the final four and six entries of their respective blocks; the following block starts on its own introduction page."
+      ],
+      "renderer": {
+        "name": "pdftoppm version 26.07.0",
+        "dpi": 110,
+        "nativePageDimensions": [
+          935,
+          1210
+        ],
+        "method": "Actual tool view_image inspection of every contact image and listed native page PNGs. Native PNGs were reviewed at 935 by 1210 pixels; contact overview checks have lower text detail."
+      },
+      "independentNamesCoverageCheck": {
+        "path": ".tmp/logical-allocation/pdf-catalogue-names-check.json",
+        "sha256": "f4139df130b8de118f711a7eecbda8cd7217a1c043cac0743ee70bbdc6579726",
+        "method": "Extracted body codepoint labels from all 23 names pages of this PDF, excluding headers, and asserted exactly 1216 unique labels equal the consecutive U+F2A00-U+F2EBF range.",
+        "status": "passed"
+      },
+      "pageImages": [
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-01.png",
+          "sha256": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-02.png",
+          "sha256": "05840037df1d54b63a9c438b5db757a48dfb6d13d2d635d97103cf2ddd2b27eb",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-03.png",
+          "sha256": "96a8c7534a8ae618b8ee3c93665d7b13b5a0af69af245b187ada46ac9de88615",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-04.png",
+          "sha256": "dfe07aa8dee6bc474f7be34681d2c58ffbedff2e5ac279d23efb12e8a061fb60",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-05.png",
+          "sha256": "575854f84b9669ea19c267ba778ac1eb422511c023d293eb8c4d1745ead5fa4a",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-06.png",
+          "sha256": "bfb20b5a736d283a8f32e94b76876ccd6d900e77b2897f872a1d5af781cf36c4",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-07.png",
+          "sha256": "550dd4815743c8a247a2f1bb16a445c5cec73e85b72446c51b1fbc623d246a7c",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-08.png",
+          "sha256": "96c3157eb102081605fe0f350ee457021c99154da69f2d6be76a8e64368f83a5",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-09.png",
+          "sha256": "aca08500f325db2019201e6448fc9712aded97a7457c49aa29b44d199f79ed5a",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-10.png",
+          "sha256": "fce793126541135c9ff10a225280b6d82bee02a174eef374a3b752ce1ac78ba4",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-11.png",
+          "sha256": "4d6fff38149423a4f302f50193504c834f244ed4531401b60a8b9dc2d2963344",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-12.png",
+          "sha256": "b6be5293dc0c4d1a82b15c4e450309dda3fe9a4cdf1643dab9e6613e20136da1",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-13.png",
+          "sha256": "44962529dd924de892804f4079c8b17b8d656e6fa84c244e3d21471a93850797",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-14.png",
+          "sha256": "d065cdc4d8e7408d17f7609c7c2879022fcd9bae3f26b1deba4c2005a0a3af9d",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-15.png",
+          "sha256": "b4eee6bdf1819da30751b9d76656647babd651770b65ad372b5c905d957a9230",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-16.png",
+          "sha256": "68719a75f88c403a98e0e1747fe88b6ac6576dc867f383cfadc265aa7623b3e4",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-17.png",
+          "sha256": "1f6e3dbeddfb5705803922fad7f57e1e4950f6421c887ae6fa7cf47752360f76",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-18.png",
+          "sha256": "0392887e0f67e8f1089dbc8a376f3db1284b55b3753cc3b7ad1c4a451572c0a6",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-19.png",
+          "sha256": "04f9790bda990a9ed39d6a9d5fdb075323ba7a69316c7bdad788deaad0ea0184",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-20.png",
+          "sha256": "8dca2eded304c6ffe29b799bb40291f300fb75ae2a7b91b57abec6c8c7144551",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-21.png",
+          "sha256": "88be0e399758e395ff7b0e9a406fe0597550a9d64a914fb4e8ed93dbd53be6db",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-22.png",
+          "sha256": "2a7129851f18e7395234c4dca1bdec6e98f9643624307342c13e2830ce1a49af",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-23.png",
+          "sha256": "b2f2931e7421bb5dc395bca1318eb77ea93a5231452d27de8c1ab83f4b032115",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-24.png",
+          "sha256": "e767d4a3c955d7a74b4da79e253225bdeb2352696f1bffb63e2ed09c8b28e495",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-25.png",
+          "sha256": "efd6a477f4dbc3df0c3be49154dccbb3a4cb0f4e309adbbd02c24d5120172df3",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-26.png",
+          "sha256": "9fc34c3b6b2ae576ca9e75027175d5d669a606775526e3d1b7209b36e8259e92",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-27.png",
+          "sha256": "cc02ad4729f3048f83a2bc6e9a3ef5833d708797902e68531b4a6bb7978e14db",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-28.png",
+          "sha256": "2991c27c0a507399ea4b950ed63df094558996d10dc6bbf9e51367aac4f0a20c",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-29.png",
+          "sha256": "81783c860696d280715fc69110e7642d998fec66f69c4d48200acdd89cdd0c94",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-30.png",
+          "sha256": "3ce91a422734bf319d247bec35fdab64a03ab6cf3f6eba9fa8f594f756af9888",
+          "dimensions": [
+            935,
+            1210
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/page-31.png",
+          "sha256": "8064dfe37e0f1717b2940970fc17d564eee6e24d14acffaf7f766e8dc09d6fd7",
+          "dimensions": [
+            935,
+            1210
+          ]
+        }
+      ],
+      "contactImages": [
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-1.png",
+          "sha256": "ec25e2f5fd0126c14b7a58e3be35111299fea16c40b27b2a01828fce825768fc",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-2.png",
+          "sha256": "2b41ddaebf6578ae0d0f16fbb2616f60b9916c5e1079d5a8de3f897bad2dcf53",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-3.png",
+          "sha256": "0973592a9aed91d6ed5b8f7577a5d2e20ebc03100ac589bda899ef06b898f72d",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-4.png",
+          "sha256": "ffa544f0745a9ffbfa68ecbf33181e37af2d8dc16c0437ad7bf66f7d24eac10d",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-5.png",
+          "sha256": "a2b94e4e7acfe3346afae857cd43fbdbba548e68638db1936c3acfc6af061a16",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-6.png",
+          "sha256": "1d9d3e15969cbe0e636cf58ac8639995872a52e908ab423ddb0288b1e9ed987b",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-7.png",
+          "sha256": "a6abaac525a86eabf820b712e39b272be70e0f65f2e4c8a697399f7b8499b75c",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            25,
+            26,
+            27,
+            28
+          ]
+        },
+        {
+          "path": ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-8.png",
+          "sha256": "b1c54266987bf1d06847043d62f3b0aa525be6eac3068dfd171b996c60bf8703",
+          "dimensions": [
+            918,
+            1244
+          ],
+          "pages": [
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "limitations": [
+        "Agent visual review is distinct from user aesthetic acceptance.",
+        "Contact-only pages received overview layout inspection; native-detail review is limited to the 11 pages enumerated above."
+      ]
+    }
+  ],
+  "publicationContactSha256": {
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-1.png": "ec25e2f5fd0126c14b7a58e3be35111299fea16c40b27b2a01828fce825768fc",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-2.png": "2b41ddaebf6578ae0d0f16fbb2616f60b9916c5e1079d5a8de3f897bad2dcf53",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-3.png": "0973592a9aed91d6ed5b8f7577a5d2e20ebc03100ac589bda899ef06b898f72d",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-4.png": "ffa544f0745a9ffbfa68ecbf33181e37af2d8dc16c0437ad7bf66f7d24eac10d",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-5.png": "a2b94e4e7acfe3346afae857cd43fbdbba548e68638db1936c3acfc6af061a16",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-6.png": "1d9d3e15969cbe0e636cf58ac8639995872a52e908ab423ddb0288b1e9ed987b",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-7.png": "a6abaac525a86eabf820b712e39b272be70e0f65f2e4c8a697399f7b8499b75c",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-catalogue/contact-8.png": "b1c54266987bf1d06847043d62f3b0aa525be6eac3068dfd171b996c60bf8703",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/contact-1.png": "0297e974fb59fce0fc51f30bec609f50da81a85e573abb77fe1385104c1afaa2",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-a/contact-2.png": "33f07071c5bea9d7b8f858d35a42a0d4d16c16ca70e05c531f3c69ceb6638eba",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-1.png": "79178d7da38333dd9ef1fb1b87c674a43fc24e69f61923ac61e6184847362ead",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-2.png": "a18f37d3f590dfdcff696a4376cc28fdb421d1a208ffb367a9d1142a0279d2cc",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-3.png": "d27a45927a3b2f7114d16e86d5ec2eb325dcae95bc331acdc946259cac4ba9a2",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-4.png": "92854868cf8421edbd76aa89c74eb48559f2dd158eb2e6fe07c46bc717db261d",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-extended-b/contact-5.png": "50db86a03c417bf7d4b3407858e436c35a6087bec6afe6b28c906f59cfc450ea",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/contact-1.png": "d7349db239889b858d15150fdbac6463dfeafbab0001cd3a1ace80fe8f63e1f0",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin-proposal/contact-2.png": "f4d7398200ef666816efaf4a4951f6cf90349b21d3d81cb95ad1b58b1d4a2eb5",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin/contact-1.png": "df1a99f02ddac3f627ac845c7889ff80807e8ace2eae3e012739640358ff6138",
+    ".tmp/logical-allocation/pdf-review/quintessential-latin/contact-2.png": "fd76c2641c9f17e06457d435d4249429935005a84c5afe9515b8773209d3d523"
+  },
+  "pdfChecks": 9,
+  "logicalAllocationTests": 5,
+  "namingTests": 20,
+  "siteAcceptanceGroups": 14,
+  "pdfRepeatBuild": {
+    "status": "passed",
+    "outputs": {
+      "quintessential-latin-catalogue.pdf": "4fb00022f2ecdfeff90da14dde382c79885ec6482e85560952227ba41cfb12e8",
+      "quintessential-latin-extended-a.pdf": "5cea6a65d043426d86042763477634ca6ed752b9704baf54dea7813aa6f8f9c4",
+      "quintessential-latin-extended-b.pdf": "a0957593d29ba66540f6adf460829debb69004c1e5a2b0ae60e768e73e230b7f",
+      "quintessential-latin-proposal.pdf": "372fbec652867ffde7cf26bf1176aadbb572f261ec33b3b00448464db3f5e80b",
+      "quintessential-latin.pdf": "12ee39d9389eae37520dd14bba7cf83a28a17883d320db195fa8e455111c8c83"
+    },
+    "manifestSha256": "9c21d22f9120d86a9a0501a704b5a21698d03257902a2cbd7e8eca0314c43906"
+  },
+  "fontRepeatBuild": "Not repeated for this encoding-only revision; normalized compiled-table equality and prior 0.240 repeat evidence are recorded in font-validation.json.",
+  "browserChecks": 153,
+  "testLogs": {
+    "pdf-build.log": "5c8019f6b560b7edd7de7989bb08cc69b0e60b13204547e50847a917972aab22",
+    "pdf-tests.log": "b41d8e110c1444fa718a755e58b2e7287835e8a74bcb2b9037f5882141da5dbd",
+    "pdf-repeat.log": "5c8019f6b560b7edd7de7989bb08cc69b0e60b13204547e50847a917972aab22",
+    "site-build.log": "90c06f2bc0e2a48d536725f873b71d8bbe864de61e0766e88159e9f92a5ae697",
+    "site-tests.log": "3466a21451019dc3da59ca00f0e2bd2b77b1cb24c63041226e36a71bfa4f14f2",
+    "browser-tests.log": "5eb7f6260b594e92bc29fa0a31491ec3adf8f51ffd8aaf674804576c5dc64dd1"
+  },
+  "browserPrintReview": {
+    "pdf": "charts-browser-print.pdf",
+    "pageCount": 25,
+    "pages": [
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-01.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-02.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-03.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-04.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-05.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-06.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-07.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-08.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-09.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-10.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-11.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-12.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-13.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-14.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-15.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-16.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-17.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-18.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-19.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-20.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-21.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-22.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-23.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-24.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/page-25.png"
+    ],
+    "contacts": [
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-1.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-2.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-3.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-4.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-5.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-6.png",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-7.png"
+    ],
+    "pdfSha256": "d299a04e698976b84b4b826c6de4b5175365e3f251d6f4e24b79ded6cb3e716a",
+    "dpi": 110,
+    "renderer": "pdftoppm version 26.07.0",
+    "renderedPageSha256": {
+      "page-01.png": "6ceaa5758a881a96b513e8762f1f95a092b7103e564c4479c8bb821541874579",
+      "page-02.png": "d394e241607e373e9d4a9268cf6e2de8f03f2f915bee85e15e4cd8aa324699e4",
+      "page-03.png": "f12aabd3dfe7fc704457740a70edfe91d98e2917f2b31246dba3d6d5b9cb74e2",
+      "page-04.png": "c225efdd9542eb61605eb75b35ddd77560bfb6cb495d8885af3788f6a2d7efad",
+      "page-05.png": "111e0329321ed6c7284bef3cff42627e5d393aadb103845c14fb5084fbc65570",
+      "page-06.png": "6225fce0d33e2179ec75cadac12a80bab197f15ca43ba59459d012ce6eff5bbe",
+      "page-07.png": "c8cb244f8599a0aaf396da20faf072a8c533ee6cfc81213eaabaf78c8b96a448",
+      "page-08.png": "731a62641618cc38b1c23b7cbcd9b9002d15016123cd133ce3917f1bd6b35e29",
+      "page-09.png": "d423636f0e579b8bad13302589d5ae62b17c653781d074198d012b19c7ccc74a",
+      "page-10.png": "d8a1b778fab5562ddf803db76ac45121891aa82a0d6263aeb663fd1320dead72",
+      "page-11.png": "86822b3b523a852a66996684f2600334cbb1cf8425b48c672aed04476b05e6ad",
+      "page-12.png": "c81a934cc01c3a9ae6515ef872f8432a38986c54f56cd333bbefc72561cabaae",
+      "page-13.png": "b0132d181f356642e808f5b78fd9e38d3e60b2b4f929bb8e70945a9bf6b78ac7",
+      "page-14.png": "b55dedc1a7fb9d3adf4d4df23b21f92a823f33dfa47b6c2fd901f700694ab1ed",
+      "page-15.png": "a9f9ec32ceefcabaee62701614e45330596b4b62b1cdac8861b089f3eeb2d325",
+      "page-16.png": "474f65ea68b4bb746e7ad2f246ed9e48ab8b84c7a59d60d889f572f41e543bb7",
+      "page-17.png": "297fec462eced236de38cc37037af688400f951c9e2e50eed703931877f504a3",
+      "page-18.png": "66b32b998af1a5e74ad36f4ae6babc09028ff76fd22d9b56111d93f41a720f51",
+      "page-19.png": "cd35116c7119e69c61e1834d43c62f9a9b3ed913bdb8026f3488e6d11f2b303d",
+      "page-20.png": "5b2cccdc04723721646fa66ae478b166b760de1d29947a95c8b3f4ce57cc5b77",
+      "page-21.png": "13e0b323c7b661a357684c4aecc9993d2ac3dbe6c2ceb3e5e8e7b7d90a8a35c1",
+      "page-22.png": "a89128bc044dd6eafa928d57cff6ea3dd318ce92885778836c3be1e14ddfae06",
+      "page-23.png": "f090a5e4ac7087ff614e3599a157804df400a610f8d7a6ddd49663957b0d9e35",
+      "page-24.png": "af7a35dd461fb6c52a8f452207bdb49544fd4cb9d3105a06371d0a51523da1be",
+      "page-25.png": "42a60d38358df5a50687578847c333ddd260601704728f89139c6123e53e0caa"
+    },
+    "posture": "Italic",
+    "weight": 700,
+    "pagesInspectedViaContacts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "originalResolutionPages": [
+      5,
+      22
+    ],
+    "contactSha256": {
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-1.png": "7927aff35c0e1cf685eaf17859b3353e11e5c7d49a00c4cb9570dcc29461988d",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-2.png": "59fd017e27c56181455915c1cc1ef70ae53bc139101df588353470225b5b140b",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-3.png": "484f070b6894203e4af02521a0ea7fa0a399753d90f96a0fd69f1a2cc56d0713",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-4.png": "7098aafed0a6e9220f885455a0d2639b5f4212c6498ddda9e9c2846eb365351d",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-5.png": "10b68241a7512f7743d85d900042a317d787eb38cc0eb6d61c6929812d62eb5e",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-6.png": "7037f230399e50090e7048bd787c98ffd410df71cb7eba990ca0a9ad0438c7e8",
+      ".tmp/logical-allocation/browser-print-review/charts-browser-print/contact-7.png": "c16ea24a288c252a8ffc31ab2cfd820c7ff609974faf28e0f7db6c09bb7850b0"
+    },
+    "result": "All 25 pages visually inspected. Main and Extended-A boundaries, dense merged-family names, and final F2EBF entry remain contained. No clipping, missing glyphs, overlapping names, or broken pagination found."
+  },
+  "browserScreenReview": {
+    "viewports": [
+      1440,
+      375,
+      320
+    ],
+    "pages": [
+      "Introduction",
+      "Code charts",
+      "UCSUR proposal",
+      "Downloads"
+    ],
+    "screenshots": {
+      ".tmp/browser-review/index-1440.png": "a9812e69cb0ac74c8519dcbb531c2cd8c3df3d73ee7fce7ce63aeea18352adcf",
+      ".tmp/browser-review/charts-1440.png": "bad845c90aaa525b84c29afc46c801ac01370536df2586db8fcd79b5e57ff0bc",
+      ".tmp/browser-review/proposal-1440.png": "1bda13e64f974bb5f36114371999149a953178d1b09d617576fa5c96b673f1b9",
+      ".tmp/browser-review/downloads-1440.png": "32bcbf3cef4693a8b12f561578ebce86642a791e3783192c61ac9d2899d24321",
+      ".tmp/browser-review/index-375.png": "75e5a4f0f97cf8f466382b734efbe681577c6674eab83983d432f679f7c8e5a5",
+      ".tmp/browser-review/charts-375.png": "f3c43d3137638f659448174da25237e376cdf5d46d321ac5fef93576b1e19bea",
+      ".tmp/browser-review/proposal-375.png": "c697a1364876ac3b8ff5cb3be553e5b275a69b8ea1541f1d9c11d4ae22489d6d",
+      ".tmp/browser-review/downloads-375.png": "ce376f722d2c7066b1f9e601941b1657a089cfe3b941b9c123ba27d532930fe9",
+      ".tmp/browser-review/chart-sheet-320.png": "deb0c7bd00b5f1605346774697598cacdea53ebb93d576249e8615c4ee1c6db1"
+    },
+    "mobileProposalSegments": {
+      ".tmp/logical-allocation/proposal-mobile-1.png": "f679bf188c82d513e1f80da506e95c524b77415a8b10864b3e8750817908f100",
+      ".tmp/logical-allocation/proposal-mobile-2.png": "8a540bbd07857baad6f70aee71c18ff9f1838ea23e3062dfd4dd1e4a9c497c19",
+      ".tmp/logical-allocation/proposal-mobile-3.png": "bec55082b1f5881cd77b9cb0c1bc711770f8399df382b7ca9e5ea4f58c1ec6ca",
+      ".tmp/logical-allocation/proposal-mobile-4.png": "f929cb74a22376403064096922cecf623b763c25f52b30434787b49e1d0a59ee",
+      ".tmp/logical-allocation/proposal-mobile-5.png": "6b1c862acbd8c8998b0464d98c6b8b956ed4df885e2d7e21408a9b9bd6c6fcb5"
+    },
+    "boundaryScreenshots": {
+      "1440-main-grid.png": "4e5f20bb2e0b192b494e940553880f3bf7960d7d0a5339d37b034e2f25233f00",
+      "1440-main-names-prefix.png": "6b33259138348e4ba3bf0737ed2547f07705461d214436b889dd3112e913bc34",
+      "1440-extended-a-grid.png": "63b94cc29babfdfc375adbd80cb771b5363e2a860dde939c1eaa18179b40be3b",
+      "1440-extended-a-names-prefix.png": "ce4e2c226ce9cc7752cfd60a0f08d63c40fb7c8ed544250f95be2b31e0740fd0",
+      "375-main-grid.png": "7affd28a0be01d64a1b1e15a214d28e79507276f85791caefacb4e9dc7e103c5",
+      "375-main-names-prefix.png": "4e3a929adf49f6390e6f06d50507343d3b388e9930862316dfb784107e51c7a0",
+      "375-extended-a-grid.png": "51993a80072e6a20b698b64a707c7d5d1726e0286a7f639f0c1cf2d658627317",
+      "375-extended-a-names-prefix.png": "20ab05a97eb90b8e11d42d1afda2a946cc46509a7e821a0758c22373f131dcbf"
+    },
+    "result": "Desktop and mobile page layouts are legible and contained. All eight main/Extended-A grid and names-prefix captures were inspected, including the four requested first Extended-A entries."
+  },
+  "fourStateBrowserReview": {
+    "sourceReportSha256": "b143edde702e573ac21a20c1e920becd3ee79876d3feecc47d2c35fbd78de4db",
+    "sampleBaseGlyphId": "double-arched-arm",
+    "states": [
+      "neither",
+      "left",
+      "right",
+      "both"
+    ],
+    "codePoints": [
+      "U+F2BC0",
+      "U+F2BC1",
+      "U+F2BC2",
+      "U+F2BC3"
+    ],
+    "viewports": [
+      1440,
+      375
+    ],
+    "settings": [
+      {
+        "posture": "Roman",
+        "weight": 400
+      },
+      {
+        "posture": "Italic",
+        "weight": 700
+      }
+    ],
+    "nativeFontDialogStatesVerified": 16,
+    "screenshots": {
+      ".tmp/logical-allocation/browser-states/1440-extended-a-grid.png": "63b94cc29babfdfc375adbd80cb771b5363e2a860dde939c1eaa18179b40be3b",
+      ".tmp/logical-allocation/browser-states/1440-extended-a-names-prefix.png": "ce4e2c226ce9cc7752cfd60a0f08d63c40fb7c8ed544250f95be2b31e0740fd0",
+      ".tmp/logical-allocation/browser-states/1440-italic-700-both.png": "73a493cbf0596768d6ab5466694f187f046be62cc195afe66767c6ddcc701bb5",
+      ".tmp/logical-allocation/browser-states/1440-italic-700-left.png": "5d415d9c4c1a06baeb6bd62e5c8b8cf38f100e00b7252e89d6c22dd0be2fec32",
+      ".tmp/logical-allocation/browser-states/1440-italic-700-neither.png": "7bf99167685c43fadc87041342014fe891a68b6d9c9435f6562012da1779dc51",
+      ".tmp/logical-allocation/browser-states/1440-italic-700-right.png": "002badb97dfea89939bb48a92cd95eab9f3a00a4d4d160c1033123111a58e90f",
+      ".tmp/logical-allocation/browser-states/1440-main-grid.png": "4e5f20bb2e0b192b494e940553880f3bf7960d7d0a5339d37b034e2f25233f00",
+      ".tmp/logical-allocation/browser-states/1440-main-names-prefix.png": "6b33259138348e4ba3bf0737ed2547f07705461d214436b889dd3112e913bc34",
+      ".tmp/logical-allocation/browser-states/1440-roman-400-both.png": "57fa42fcee9899b624d994e1220b63f508d11c8a19403b3516b7d58b471096f3",
+      ".tmp/logical-allocation/browser-states/1440-roman-400-left.png": "a77dd8136ab016b17a2ea5efaa95a54bf4ce48fbcdaf0791a92895a749c2cfdf",
+      ".tmp/logical-allocation/browser-states/1440-roman-400-neither.png": "8d7926a46db83d9145ebe323a126cac48aa07aa629ef653de74ed449ec41cbdd",
+      ".tmp/logical-allocation/browser-states/1440-roman-400-right.png": "df5c9a8f0a2d27d5d1322d86338f65e4a571e99dd87aa0fce08415e153900756",
+      ".tmp/logical-allocation/browser-states/375-extended-a-grid.png": "51993a80072e6a20b698b64a707c7d5d1726e0286a7f639f0c1cf2d658627317",
+      ".tmp/logical-allocation/browser-states/375-extended-a-names-prefix.png": "20ab05a97eb90b8e11d42d1afda2a946cc46509a7e821a0758c22373f131dcbf",
+      ".tmp/logical-allocation/browser-states/375-italic-700-both.png": "0ad6d8e78c935e7b83493bfe2c6a16a538e9c1f02effee619c99e69ef6228134",
+      ".tmp/logical-allocation/browser-states/375-italic-700-left.png": "7c4c78fe542938da1821eb6763e1626ad87c68c95c0f293906714542d70dcfdd",
+      ".tmp/logical-allocation/browser-states/375-italic-700-neither.png": "a8e4d42dd841dfb725d0c75bc948ed407433f80cd9b5cc083bcaaf0d9a19dcae",
+      ".tmp/logical-allocation/browser-states/375-italic-700-right.png": "6ff2cdbf9815f041050f57569c88be4ab5f551178a7cce2730649a07ab2976db",
+      ".tmp/logical-allocation/browser-states/375-main-grid.png": "7affd28a0be01d64a1b1e15a214d28e79507276f85791caefacb4e9dc7e103c5",
+      ".tmp/logical-allocation/browser-states/375-main-names-prefix.png": "4e3a929adf49f6390e6f06d50507343d3b388e9930862316dfb784107e51c7a0",
+      ".tmp/logical-allocation/browser-states/375-roman-400-both.png": "2497632c391f976b977da30b854d71070d8e3a7a917609640de0813ccd4d56bf",
+      ".tmp/logical-allocation/browser-states/375-roman-400-left.png": "925e802201f84d0222f02de17fdd75e70d063f311025f32a21e4bf3290ec4969",
+      ".tmp/logical-allocation/browser-states/375-roman-400-neither.png": "349385c6d3985c4755d00f9af631f86c5ad87fca5497d84dc094599a9c2b4739",
+      ".tmp/logical-allocation/browser-states/375-roman-400-right.png": "32d49bf5c8694872337c9547966274ee241d7d5b0696f504245577721c05b434"
+    },
+    "reviewContactSheets": {
+      ".tmp/logical-allocation/dialogs-1440-italic-700.png": "62013ee112e87d42bc979b523e1ac1ce5c7f68eff504fc9cebb04919dc017296",
+      ".tmp/logical-allocation/dialogs-1440-roman-400.png": "be96def8b399bfbfc08c9fb8ef9afb2f6cb9a5031a5d86ae1c24d09d7f3933ef",
+      ".tmp/logical-allocation/dialogs-375-italic-700.png": "ab5af8bb42012e0adbdf0dbbdc37fb0ca935f188ccfc9daef311047278ce7be5",
+      ".tmp/logical-allocation/dialogs-375-roman-400.png": "dc9148dea61e489c35b389916d12e4425d4bd3f171af36163e07619be4727d43"
+    },
+    "result": "All sixteen native-font dialog states inspected in exact-size contact sheets. Neither, left-only, right-only, and both extensions remain visibly distinct; names and controls fit desktop and phone widths."
+  },
+  "environment": "The PDF builder and Playwright suite used the standard Windows subprocess escalation required in preceding runs; no product code workaround was needed.",
+  "localPreview": "http://127.0.0.1:8767/quintessential-latin/",
+  "deployment": "Local build only; no external publication or deployment performed.",
+  "userVisualAcceptance": "Pending"
+}

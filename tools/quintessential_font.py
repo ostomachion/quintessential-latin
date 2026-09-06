@@ -15,9 +15,9 @@ DONORS = ROOT / "resources" / "fonts" / "STIXTwoText"
 DONOR_MANIFEST = DONORS / "source-manifest.json"
 
 FAMILY_NAME = "Quintessential Serif"
-VERSION = "0.240"
+VERSION = "0.250"
 VERSION_MAJOR = 0
-VERSION_MINOR = 240
+VERSION_MINOR = 250
 SOURCE_DATE_EPOCH = 1_788_480_000  # 2026-09-04 00:00:00 UTC.
 VENDOR_ID = "QLAT"
 
@@ -1085,7 +1085,8 @@ def _allocated_specs():
                                          ("terminal", 0x25B, "epsilon")) if spine else glyph.italic_references,
                       adaptation=("Native diagonal s body with a curved upper bulb and thin lower terminal."
                                   if spine else glyph.adaptation))
-    for row in sorted((row for row in rows if row["glyphId"] not in originals), key=lambda row: row["codePoint"]):
+    # Source order is independent of the public code chart's allocation order.
+    for row in sorted((row for row in rows if row["glyphId"] not in originals), key=lambda row: row["legacyIndex"]):
         if row["middleLegs"]:
             base = originals[row["baseGlyphId"]]
             yield replace(base, glyph_id=row["glyphId"], code_point=row["codePoint"],

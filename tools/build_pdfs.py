@@ -187,7 +187,7 @@ class Publication:
         topics = [
             (None, f'This file contains the character code tables and list of character names for Quintessential Latin, Version {self.data["version"]}. The block contains {count} assigned characters.'),
             ('Status', 'Draft private-use allocation for the Under-ConScript Unicode Registry (UCSUR). These characters are not part of the Unicode Standard. Publication of this document does not indicate registry submission or acceptance.'),
-            ('Character code tables', 'The tables contain sixteen hexadecimal columns and sixteen rows per page. Combine a column heading with a row digit to find a character; its full hexadecimal code also appears below the reference glyph. Hatched cells indicate unallocated positions. A thin outside edge indicates that the table continues on another page.'),
+            ('Character code tables', 'The tables contain up to sixteen hexadecimal columns and sixteen rows per page. Each chart stops at its block boundary. Combine a column heading with a row digit to find a character; its full hexadecimal code also appears below the reference glyph. A thin outside edge indicates that the table continues on another page.'),
             ('Character names', 'The names list follows the tables in ascending code point order, reading down the left column and then the right. Family subheadings organize related characters. Names and code points identify characters independently of their representative glyphs.'),
             ('Fonts and representative glyphs', f'The reference font is Quintessential Serif {self.font_version}, Roman, weight 400. All {count} assignments in this block have Roman outlines; {italic} also have native Italic outlines. Italic is a font posture, not a separate character. Glyphs are representative forms; their appearance may vary with font posture and weight.'),
             ('Authorship and terms', 'Script and original publication: Josh Hufford. Original code and documentation are licensed under MIT. Quintessential Serif and the STIX Two Text interface font are distributed under the SIL Open Font License 1.1. Font notices accompany the downloads.'),
@@ -208,8 +208,12 @@ class Publication:
 
     def chart(self, block, start):
         c, grid = self.canvas, self.presentation['grid']
-        columns, rows = grid['columns'], grid['rows']
-        end = min(start+columns*rows-1, block['end'])
+        rows = grid['rows']
+        remaining = block['end'] - start + 1
+        if start % rows or remaining % rows:
+            raise ValueError('Code charts require complete hexadecimal columns')
+        columns = min(grid['columns'], remaining // rows)
+        end = start + columns*rows - 1
         self.frame(block['title'], start, end, 'chart', [cp for cp in range(start,end+1) if cp in self.entries])
         cell_w, cell_h, top = grid['cellWidth'], grid['cellHeight'], grid['top']
         left = (PAGE_W-columns*cell_w)/2

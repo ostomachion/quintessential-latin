@@ -2,7 +2,7 @@
 
 The publication builder reads the neutral catalogue and the shared proposal text.
 It writes three block PDFs, the complete catalogue, and the UCSUR proposal under
-`output/pdf/`. Reference charts use Quintessential Serif 0.240, Roman 400, with
+`output/pdf/`. Reference charts use Quintessential Serif 0.250, Roman 400, with
 embedded vector fonts. The original variable fonts remain unchanged.
 
 ## Code-chart presentation
@@ -13,9 +13,10 @@ catalogue use Source Sans 3 3.052 for text; the proposal retains STIX Two Text.
 The bundled Source Sans TTF/WOFF2 files, their OFL license, upstream release,
 download URLs, and hashes are under `resources/fonts/SourceSans3`.
 
-Each publication grid has 16 hexadecimal columns and 16 rows. Main and
-Extended-A have one grid each; Extended-B continues across four.
-The six grids cover 1,536 positions, with 1,216 assigned constructions. Cells measure
+Each publication grid has up to 16 hexadecimal columns and 16 rows. The main
+block has one 12-column grid, Extended-A has one 16-column grid, and Extended-B
+has three 16-column grids. These five grids cover exactly 1,216 assigned
+positions; each ends at its block boundary. Cells measure
 27.6975 by 39.6 points, with 22-point Roman reference glyphs and 6-point codes.
 The grid's black interior rules are 0.25 points; block edges are 1.5 points.
 Unassigned cells contain vector diagonal hatching. Column labels sit above the
@@ -107,7 +108,15 @@ replace optical review of changed PDF bytes.
 
 ## Durable verification evidence
 
-The current 0.240 publication review is recorded in
+The current [0.250 publication review](../resources/verification/logical-allocation/publication-review.json)
+binds all 67 publication pages, the complete 25-page Italic 700 browser print,
+desktop/mobile layouts, sixteen native-font character dialogs, and eight block
+boundary captures to their exact files and font sources. All 9 PDF checks,
+5 allocation tests, 20 naming tests, 14 site acceptance groups, and 153 browser
+checks pass. All five PDFs and their manifest reproduce byte for byte. Current
+logs are in `resources/verification/logical-allocation/`.
+
+The historical 0.240 publication review is recorded in
 `resources/verification/independent-middle-extensions-publication-review.json`.
 It binds all 70 reviewed PDF pages and the 26-page Italic 700 browser print to
 their exact bytes, records passing publication checks, and verifies that all
