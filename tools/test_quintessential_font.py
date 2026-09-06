@@ -981,7 +981,10 @@ class QuintessentialFontTests(unittest.TestCase):
             with instantiated(OUTPUT / VARIABLE_FILES[False], weight) as font:
                 glyphs = font.getGlyphSet()
                 signatures = set()
-                plain_body_counters = polygons(glyphs, "uF2B1C")[1:3]
+                # U+F2B18 (historical name uF2B1C) has an explicitly revised
+                # spine and joins. Its untouched sibling remains the reference
+                # for the other 35 preserved constructions in this family.
+                plain_body_counters = polygons(glyphs, "uF2B1D")[1:3]
                 factor = floatToFixedToFloat(piecewiseLinearMap((weight - 400) / 300, EXPECTED_AVAR), 14)
                 for code, name in OPPOSED_BOWL_CMAP.items():
                     with self.subTest(weight=weight, glyph=name):
@@ -993,8 +996,9 @@ class QuintessentialFontTests(unittest.TestCase):
                         terminal_counters = int(left >= 4 and right % 2 == 1) + int(left % 2 == 1 and right >= 2)
                         self.assertEqual(len(paths), 3 + terminal_counters,
                                          "one outer contour, two body counters, and joined terminal enclosures")
-                        self.assertEqual(paths[1:3], plain_body_counters,
-                                         "hooks and extensions must preserve both compact sigmoid counters")
+                        if name != "uF2B1C":
+                            self.assertEqual(paths[1:3], plain_body_counters,
+                                             "hooks and extensions must preserve both compact sigmoid counters")
                         clipper = pyclipper.Pyclipper()
                         clipper.AddPaths(paths, pyclipper.PT_SUBJECT, True)
                         tree = clipper.Execute2(pyclipper.CT_UNION, pyclipper.PFT_NONZERO, pyclipper.PFT_NONZERO)

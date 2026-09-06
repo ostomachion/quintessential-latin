@@ -1,0 +1,4902 @@
+{
+  "character": "U+F2B18",
+  "reference": "STIX Two Text o and b",
+  "units": "font units; shoulder nearest-boundary distance and spine normal-ray ink width",
+  "normalProfileColumns": [
+    "fraction of counter x span",
+    "ink width",
+    "exit boundary"
+  ],
+  "shaftMergeNote": "Exterior-exit rays include native shaft ink and are not constant-width claims.",
+  "inputSha256": {
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1C_.glif": "af3547a3a3065c47f7938f011714a9e593c0051583e369ee3c8daf2676d1bef4",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1C_.glif": "8d037540f96fd655004e64134ac7df1d0d409d0f1a6c259bcd59f5afac506eec",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Regular.otf": "1ed7cbce59675f0d7e21764f97efc133801838739f66a6208a854c69e382065f",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Bold.otf": "607f1b75e187ff64f2417bddb375dd14605efce9c931de47e1c33cf89259b7a5"
+  },
+  "compiled": true,
+  "weights": [
+    {
+      "weight": 400,
+      "stix": {
+        "hairline": 39.02257508116882,
+        "stem": 92.55108372978664,
+        "bShoulderMin": 28.92656187669222
+      },
+      "before": {
+        "shoulderMin": 9.159505145691703,
+        "shoulderMax": 34.68577029121071,
+        "sharedNormalMin": 18.781254777184174,
+        "sharedNormalMax": 52.09340633696121,
+        "sharedNormalMedian": 24.234675077867145,
+        "sharedNormalRatio": 2.7736914788167013,
+        "sharedSamples": 172,
+        "sharedMaxSlope": 1.2164551112692874,
+        "sharedMaxCurvature": 0.07012781194437974,
+        "shaftMergeRayMin": 90.97099421354767,
+        "shaftMergeRayMax": 153.9627228356739,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              51.245,
+              "counter"
+            ],
+            [
+              0.05,
+              44.097,
+              "counter"
+            ],
+            [
+              0.1,
+              37.52,
+              "counter"
+            ],
+            [
+              0.15,
+              32.643,
+              "counter"
+            ],
+            [
+              0.2,
+              28.705,
+              "counter"
+            ],
+            [
+              0.25,
+              25.545,
+              "counter"
+            ],
+            [
+              0.3,
+              23.066,
+              "counter"
+            ],
+            [
+              0.35,
+              21.197,
+              "counter"
+            ],
+            [
+              0.4,
+              19.885,
+              "counter"
+            ],
+            [
+              0.45,
+              19.088,
+              "counter"
+            ],
+            [
+              0.5,
+              18.781,
+              "counter"
+            ],
+            [
+              0.55,
+              19.056,
+              "counter"
+            ],
+            [
+              0.6,
+              19.931,
+              "counter"
+            ],
+            [
+              0.65,
+              21.507,
+              "counter"
+            ],
+            [
+              0.7,
+              23.934,
+              "counter"
+            ],
+            [
+              0.75,
+              27.45,
+              "counter"
+            ],
+            [
+              0.8,
+              32.433,
+              "counter"
+            ],
+            [
+              0.85,
+              39.549,
+              "counter"
+            ],
+            [
+              0.9,
+              134.477,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              107.752,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              91.219,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              90.971,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              107.242,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              133.636,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              39.622,
+              "counter"
+            ],
+            [
+              0.2,
+              32.714,
+              "counter"
+            ],
+            [
+              0.25,
+              27.83,
+              "counter"
+            ],
+            [
+              0.3,
+              24.336,
+              "counter"
+            ],
+            [
+              0.35,
+              21.875,
+              "counter"
+            ],
+            [
+              0.4,
+              20.219,
+              "counter"
+            ],
+            [
+              0.45,
+              19.226,
+              "counter"
+            ],
+            [
+              0.5,
+              18.798,
+              "counter"
+            ],
+            [
+              0.55,
+              18.951,
+              "counter"
+            ],
+            [
+              0.6,
+              19.638,
+              "counter"
+            ],
+            [
+              0.65,
+              20.88,
+              "counter"
+            ],
+            [
+              0.7,
+              22.72,
+              "counter"
+            ],
+            [
+              0.75,
+              25.214,
+              "counter"
+            ],
+            [
+              0.8,
+              28.437,
+              "counter"
+            ],
+            [
+              0.85,
+              32.492,
+              "counter"
+            ],
+            [
+              0.9,
+              37.56,
+              "counter"
+            ],
+            [
+              0.95,
+              44.477,
+              "counter"
+            ],
+            [
+              0.99,
+              52.093,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 25.949300296948852,
+        "shoulderMax": 38.18428279480685,
+        "sharedNormalMin": 62.40200616145694,
+        "sharedNormalMax": 69.17891748324323,
+        "sharedNormalMedian": 64.03062881386194,
+        "sharedNormalRatio": 1.1086008565854746,
+        "sharedSamples": 160,
+        "sharedMaxSlope": 0.19265220361934002,
+        "sharedMaxCurvature": 0.006578948984409236,
+        "shaftMergeRayMin": 93.65588585252796,
+        "shaftMergeRayMax": 212.51465737818012,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              69.179,
+              "counter"
+            ],
+            [
+              0.05,
+              68.115,
+              "counter"
+            ],
+            [
+              0.1,
+              66.884,
+              "counter"
+            ],
+            [
+              0.15,
+              65.74,
+              "counter"
+            ],
+            [
+              0.2,
+              64.677,
+              "counter"
+            ],
+            [
+              0.25,
+              63.822,
+              "counter"
+            ],
+            [
+              0.3,
+              63.232,
+              "counter"
+            ],
+            [
+              0.35,
+              62.796,
+              "counter"
+            ],
+            [
+              0.4,
+              62.499,
+              "counter"
+            ],
+            [
+              0.45,
+              62.406,
+              "counter"
+            ],
+            [
+              0.5,
+              62.59,
+              "counter"
+            ],
+            [
+              0.55,
+              62.96,
+              "counter"
+            ],
+            [
+              0.6,
+              63.492,
+              "counter"
+            ],
+            [
+              0.65,
+              64.283,
+              "counter"
+            ],
+            [
+              0.7,
+              65.456,
+              "counter"
+            ],
+            [
+              0.75,
+              66.866,
+              "counter"
+            ],
+            [
+              0.8,
+              68.48,
+              "counter"
+            ],
+            [
+              0.85,
+              184.277,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              151.438,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              121.266,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              93.924,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              93.656,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              120.647,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              150.465,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              182.899,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              68.48,
+              "counter"
+            ],
+            [
+              0.25,
+              66.866,
+              "counter"
+            ],
+            [
+              0.3,
+              65.456,
+              "counter"
+            ],
+            [
+              0.35,
+              64.283,
+              "counter"
+            ],
+            [
+              0.4,
+              63.492,
+              "counter"
+            ],
+            [
+              0.45,
+              62.96,
+              "counter"
+            ],
+            [
+              0.5,
+              62.59,
+              "counter"
+            ],
+            [
+              0.55,
+              62.406,
+              "counter"
+            ],
+            [
+              0.6,
+              62.499,
+              "counter"
+            ],
+            [
+              0.65,
+              62.796,
+              "counter"
+            ],
+            [
+              0.7,
+              63.232,
+              "counter"
+            ],
+            [
+              0.75,
+              63.822,
+              "counter"
+            ],
+            [
+              0.8,
+              64.677,
+              "counter"
+            ],
+            [
+              0.85,
+              65.74,
+              "counter"
+            ],
+            [
+              0.9,
+              66.884,
+              "counter"
+            ],
+            [
+              0.95,
+              68.115,
+              "counter"
+            ],
+            [
+              0.99,
+              69.179,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 25.723823311475485,
+        "shoulderMax": 38.244092166768326,
+        "sharedNormalMin": 62.59436626674121,
+        "sharedNormalMax": 69.30150580894181,
+        "sharedNormalMedian": 63.39520437352181,
+        "sharedNormalRatio": 1.1071524474521977,
+        "sharedSamples": 160,
+        "sharedMaxSlope": 0.26235305061071096,
+        "sharedMaxCurvature": 0.010737625511357079,
+        "shaftMergeRayMin": 93.69788116382469,
+        "shaftMergeRayMax": 205.5395229899017,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              69.302,
+              "counter"
+            ],
+            [
+              0.05,
+              67.944,
+              "counter"
+            ],
+            [
+              0.1,
+              66.416,
+              "counter"
+            ],
+            [
+              0.15,
+              65.101,
+              "counter"
+            ],
+            [
+              0.2,
+              63.969,
+              "counter"
+            ],
+            [
+              0.25,
+              63.206,
+              "counter"
+            ],
+            [
+              0.3,
+              62.881,
+              "counter"
+            ],
+            [
+              0.35,
+              62.691,
+              "counter"
+            ],
+            [
+              0.4,
+              62.608,
+              "counter"
+            ],
+            [
+              0.45,
+              62.595,
+              "counter"
+            ],
+            [
+              0.5,
+              62.633,
+              "counter"
+            ],
+            [
+              0.55,
+              62.779,
+              "counter"
+            ],
+            [
+              0.6,
+              63.053,
+              "counter"
+            ],
+            [
+              0.65,
+              63.64,
+              "counter"
+            ],
+            [
+              0.7,
+              64.918,
+              "counter"
+            ],
+            [
+              0.75,
+              66.555,
+              "counter"
+            ],
+            [
+              0.8,
+              68.411,
+              "counter"
+            ],
+            [
+              0.85,
+              180.368,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              150.491,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              121.948,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              93.967,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              93.698,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              121.32,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              149.533,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              179.051,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              68.4,
+              "counter"
+            ],
+            [
+              0.25,
+              66.302,
+              "counter"
+            ],
+            [
+              0.3,
+              64.672,
+              "counter"
+            ],
+            [
+              0.35,
+              63.503,
+              "counter"
+            ],
+            [
+              0.4,
+              62.991,
+              "counter"
+            ],
+            [
+              0.45,
+              62.758,
+              "counter"
+            ],
+            [
+              0.5,
+              62.631,
+              "counter"
+            ],
+            [
+              0.55,
+              62.595,
+              "counter"
+            ],
+            [
+              0.6,
+              62.608,
+              "counter"
+            ],
+            [
+              0.65,
+              62.702,
+              "counter"
+            ],
+            [
+              0.7,
+              62.927,
+              "counter"
+            ],
+            [
+              0.75,
+              63.314,
+              "counter"
+            ],
+            [
+              0.8,
+              64.178,
+              "counter"
+            ],
+            [
+              0.85,
+              65.392,
+              "counter"
+            ],
+            [
+              0.9,
+              66.653,
+              "counter"
+            ],
+            [
+              0.95,
+              67.97,
+              "counter"
+            ],
+            [
+              0.99,
+              68.99,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 450,
+      "stix": {
+        "hairline": 40.52865037218591,
+        "stem": 101.93454068485629,
+        "bShoulderMin": 30.87706108571374
+      },
+      "before": {
+        "shoulderMin": 10.128425019798613,
+        "shoulderMax": 34.43766957249747,
+        "sharedNormalMin": 18.398248881088985,
+        "sharedNormalMax": 49.95029077796407,
+        "sharedNormalMedian": 23.500034851350076,
+        "sharedNormalRatio": 2.714948096462946,
+        "sharedSamples": 170,
+        "sharedMaxSlope": 1.1777254897195992,
+        "sharedMaxCurvature": 0.05020807477491658,
+        "shaftMergeRayMin": 99.53159717672284,
+        "shaftMergeRayMax": 167.4805019280954,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              49.207,
+              "counter"
+            ],
+            [
+              0.05,
+              42.515,
+              "counter"
+            ],
+            [
+              0.1,
+              36.296,
+              "counter"
+            ],
+            [
+              0.15,
+              31.582,
+              "counter"
+            ],
+            [
+              0.2,
+              27.768,
+              "counter"
+            ],
+            [
+              0.25,
+              24.719,
+              "counter"
+            ],
+            [
+              0.3,
+              22.341,
+              "counter"
+            ],
+            [
+              0.35,
+              20.566,
+              "counter"
+            ],
+            [
+              0.4,
+              19.342,
+              "counter"
+            ],
+            [
+              0.45,
+              18.629,
+              "counter"
+            ],
+            [
+              0.5,
+              18.398,
+              "counter"
+            ],
+            [
+              0.55,
+              18.671,
+              "counter"
+            ],
+            [
+              0.6,
+              19.545,
+              "counter"
+            ],
+            [
+              0.65,
+              21.123,
+              "counter"
+            ],
+            [
+              0.7,
+              23.565,
+              "counter"
+            ],
+            [
+              0.75,
+              27.12,
+              "counter"
+            ],
+            [
+              0.8,
+              32.205,
+              "counter"
+            ],
+            [
+              0.85,
+              39.553,
+              "counter"
+            ],
+            [
+              0.9,
+              141.834,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              115.817,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              99.793,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              99.532,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              115.291,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              141.078,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              39.456,
+              "counter"
+            ],
+            [
+              0.2,
+              32.344,
+              "counter"
+            ],
+            [
+              0.25,
+              27.379,
+              "counter"
+            ],
+            [
+              0.3,
+              23.868,
+              "counter"
+            ],
+            [
+              0.35,
+              21.412,
+              "counter"
+            ],
+            [
+              0.4,
+              19.779,
+              "counter"
+            ],
+            [
+              0.45,
+              18.814,
+              "counter"
+            ],
+            [
+              0.5,
+              18.418,
+              "counter"
+            ],
+            [
+              0.55,
+              18.524,
+              "counter"
+            ],
+            [
+              0.6,
+              19.148,
+              "counter"
+            ],
+            [
+              0.65,
+              20.319,
+              "counter"
+            ],
+            [
+              0.7,
+              22.077,
+              "counter"
+            ],
+            [
+              0.75,
+              24.476,
+              "counter"
+            ],
+            [
+              0.8,
+              27.589,
+              "counter"
+            ],
+            [
+              0.85,
+              31.515,
+              "counter"
+            ],
+            [
+              0.9,
+              36.399,
+              "counter"
+            ],
+            [
+              0.95,
+              42.902,
+              "counter"
+            ],
+            [
+              0.99,
+              49.95,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 27.087868390910216,
+        "shoulderMax": 41.02566274978409,
+        "sharedNormalMin": 67.0423637478179,
+        "sharedNormalMax": 73.5643436807862,
+        "sharedNormalMedian": 68.60711887729678,
+        "sharedNormalRatio": 1.0972814735098084,
+        "sharedSamples": 156,
+        "sharedMaxSlope": 0.20677863382427522,
+        "sharedMaxCurvature": 0.00860664315624521,
+        "shaftMergeRayMin": 102.51346743639921,
+        "shaftMergeRayMax": 235.50912380686307,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              73.564,
+              "counter"
+            ],
+            [
+              0.05,
+              72.511,
+              "counter"
+            ],
+            [
+              0.1,
+              71.279,
+              "counter"
+            ],
+            [
+              0.15,
+              70.163,
+              "counter"
+            ],
+            [
+              0.2,
+              69.15,
+              "counter"
+            ],
+            [
+              0.25,
+              68.343,
+              "counter"
+            ],
+            [
+              0.3,
+              67.766,
+              "counter"
+            ],
+            [
+              0.35,
+              67.354,
+              "counter"
+            ],
+            [
+              0.4,
+              67.1,
+              "counter"
+            ],
+            [
+              0.45,
+              67.063,
+              "counter"
+            ],
+            [
+              0.5,
+              67.286,
+              "counter"
+            ],
+            [
+              0.55,
+              67.692,
+              "counter"
+            ],
+            [
+              0.6,
+              68.288,
+              "counter"
+            ],
+            [
+              0.65,
+              69.173,
+              "counter"
+            ],
+            [
+              0.7,
+              70.398,
+              "counter"
+            ],
+            [
+              0.75,
+              71.872,
+              "counter"
+            ],
+            [
+              0.8,
+              229.475,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              195.009,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              161.682,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              130.957,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              102.791,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              102.513,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              130.316,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              160.681,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              193.596,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              227.708,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              71.872,
+              "counter"
+            ],
+            [
+              0.3,
+              70.398,
+              "counter"
+            ],
+            [
+              0.35,
+              69.173,
+              "counter"
+            ],
+            [
+              0.4,
+              68.288,
+              "counter"
+            ],
+            [
+              0.45,
+              67.692,
+              "counter"
+            ],
+            [
+              0.5,
+              67.286,
+              "counter"
+            ],
+            [
+              0.55,
+              67.063,
+              "counter"
+            ],
+            [
+              0.6,
+              67.1,
+              "counter"
+            ],
+            [
+              0.65,
+              67.354,
+              "counter"
+            ],
+            [
+              0.7,
+              67.766,
+              "counter"
+            ],
+            [
+              0.75,
+              68.343,
+              "counter"
+            ],
+            [
+              0.8,
+              69.15,
+              "counter"
+            ],
+            [
+              0.85,
+              70.163,
+              "counter"
+            ],
+            [
+              0.9,
+              71.279,
+              "counter"
+            ],
+            [
+              0.95,
+              72.511,
+              "counter"
+            ],
+            [
+              0.99,
+              73.564,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 26.91464132229036,
+        "shoulderMax": 41.07288093183121,
+        "sharedNormalMin": 67.1201729259903,
+        "sharedNormalMax": 73.62052370440801,
+        "sharedNormalMedian": 68.09776095954811,
+        "sharedNormalRatio": 1.096846454576112,
+        "sharedSamples": 154,
+        "sharedMaxSlope": 0.24858592917064498,
+        "sharedMaxCurvature": 0.01395097002582252,
+        "shaftMergeRayMin": 102.5268178074527,
+        "shaftMergeRayMax": 237.68288465203474,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              73.621,
+              "counter"
+            ],
+            [
+              0.05,
+              72.32,
+              "counter"
+            ],
+            [
+              0.1,
+              70.874,
+              "counter"
+            ],
+            [
+              0.15,
+              69.643,
+              "counter"
+            ],
+            [
+              0.2,
+              68.594,
+              "counter"
+            ],
+            [
+              0.25,
+              67.883,
+              "counter"
+            ],
+            [
+              0.3,
+              67.491,
+              "counter"
+            ],
+            [
+              0.35,
+              67.243,
+              "counter"
+            ],
+            [
+              0.4,
+              67.132,
+              "counter"
+            ],
+            [
+              0.45,
+              67.127,
+              "counter"
+            ],
+            [
+              0.5,
+              67.226,
+              "counter"
+            ],
+            [
+              0.55,
+              67.476,
+              "counter"
+            ],
+            [
+              0.6,
+              67.887,
+              "counter"
+            ],
+            [
+              0.65,
+              68.653,
+              "counter"
+            ],
+            [
+              0.7,
+              69.984,
+              "counter"
+            ],
+            [
+              0.75,
+              71.605,
+              "counter"
+            ],
+            [
+              0.8,
+              224.058,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              191.732,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              160.967,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              131.579,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              102.805,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              102.527,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              130.93,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              159.975,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              190.368,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              222.333,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              71.451,
+              "counter"
+            ],
+            [
+              0.3,
+              69.764,
+              "counter"
+            ],
+            [
+              0.35,
+              68.503,
+              "counter"
+            ],
+            [
+              0.4,
+              67.81,
+              "counter"
+            ],
+            [
+              0.45,
+              67.443,
+              "counter"
+            ],
+            [
+              0.5,
+              67.219,
+              "counter"
+            ],
+            [
+              0.55,
+              67.127,
+              "counter"
+            ],
+            [
+              0.6,
+              67.132,
+              "counter"
+            ],
+            [
+              0.65,
+              67.254,
+              "counter"
+            ],
+            [
+              0.7,
+              67.533,
+              "counter"
+            ],
+            [
+              0.75,
+              67.976,
+              "counter"
+            ],
+            [
+              0.8,
+              68.774,
+              "counter"
+            ],
+            [
+              0.85,
+              69.884,
+              "counter"
+            ],
+            [
+              0.9,
+              71.06,
+              "counter"
+            ],
+            [
+              0.95,
+              72.319,
+              "counter"
+            ],
+            [
+              0.99,
+              73.33,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 500,
+      "stix": {
+        "hairline": 42.040503694800584,
+        "stem": 111.31861731101422,
+        "bShoulderMin": 32.86893452737013
+      },
+      "before": {
+        "shoulderMin": 11.130712651512496,
+        "shoulderMax": 34.0473059487429,
+        "sharedNormalMin": 17.93168501925347,
+        "sharedNormalMax": 47.747139572148576,
+        "sharedNormalMedian": 22.69003808327208,
+        "sharedNormalRatio": 2.6627246419330857,
+        "sharedSamples": 168,
+        "sharedMaxSlope": 1.1424049371674236,
+        "sharedMaxCurvature": 0.05370934905583682,
+        "shaftMergeRayMin": 108.06982862522096,
+        "shaftMergeRayMax": 178.63031654138274,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              47.092,
+              "counter"
+            ],
+            [
+              0.05,
+              40.839,
+              "counter"
+            ],
+            [
+              0.1,
+              34.97,
+              "counter"
+            ],
+            [
+              0.15,
+              30.409,
+              "counter"
+            ],
+            [
+              0.2,
+              26.727,
+              "counter"
+            ],
+            [
+              0.25,
+              23.798,
+              "counter"
+            ],
+            [
+              0.3,
+              21.529,
+              "counter"
+            ],
+            [
+              0.35,
+              19.852,
+              "counter"
+            ],
+            [
+              0.4,
+              18.719,
+              "counter"
+            ],
+            [
+              0.45,
+              18.093,
+              "counter"
+            ],
+            [
+              0.5,
+              17.932,
+              "counter"
+            ],
+            [
+              0.55,
+              18.201,
+              "counter"
+            ],
+            [
+              0.6,
+              19.071,
+              "counter"
+            ],
+            [
+              0.65,
+              20.649,
+              "counter"
+            ],
+            [
+              0.7,
+              23.103,
+              "counter"
+            ],
+            [
+              0.75,
+              26.699,
+              "counter"
+            ],
+            [
+              0.8,
+              31.89,
+              "counter"
+            ],
+            [
+              0.85,
+              178.63,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              148.868,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              123.742,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              108.342,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              108.07,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              123.206,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              148.211,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              177.985,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              31.896,
+              "counter"
+            ],
+            [
+              0.25,
+              26.846,
+              "counter"
+            ],
+            [
+              0.3,
+              23.311,
+              "counter"
+            ],
+            [
+              0.35,
+              20.864,
+              "counter"
+            ],
+            [
+              0.4,
+              19.252,
+              "counter"
+            ],
+            [
+              0.45,
+              18.316,
+              "counter"
+            ],
+            [
+              0.5,
+              17.951,
+              "counter"
+            ],
+            [
+              0.55,
+              18.018,
+              "counter"
+            ],
+            [
+              0.6,
+              18.573,
+              "counter"
+            ],
+            [
+              0.65,
+              19.668,
+              "counter"
+            ],
+            [
+              0.7,
+              21.338,
+              "counter"
+            ],
+            [
+              0.75,
+              23.633,
+              "counter"
+            ],
+            [
+              0.8,
+              26.627,
+              "counter"
+            ],
+            [
+              0.85,
+              30.411,
+              "counter"
+            ],
+            [
+              0.9,
+              35.125,
+              "counter"
+            ],
+            [
+              0.95,
+              41.226,
+              "counter"
+            ],
+            [
+              0.99,
+              47.747,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 28.066084952676523,
+        "shoulderMax": 43.86576308632078,
+        "sharedNormalMin": 71.73221705909394,
+        "sharedNormalMax": 78.11272455058638,
+        "sharedNormalMedian": 73.1934587681281,
+        "sharedNormalRatio": 1.088948979316171,
+        "sharedSamples": 150,
+        "sharedMaxSlope": 0.2189690767956983,
+        "sharedMaxCurvature": 0.01052046381082017,
+        "shaftMergeRayMin": 111.33852088064,
+        "shaftMergeRayMax": 278.6808103650685,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              78.113,
+              "counter"
+            ],
+            [
+              0.05,
+              77.016,
+              "counter"
+            ],
+            [
+              0.1,
+              75.764,
+              "counter"
+            ],
+            [
+              0.15,
+              74.662,
+              "counter"
+            ],
+            [
+              0.2,
+              73.69,
+              "counter"
+            ],
+            [
+              0.25,
+              72.913,
+              "counter"
+            ],
+            [
+              0.3,
+              72.344,
+              "counter"
+            ],
+            [
+              0.35,
+              71.961,
+              "counter"
+            ],
+            [
+              0.4,
+              71.758,
+              "counter"
+            ],
+            [
+              0.45,
+              71.783,
+              "counter"
+            ],
+            [
+              0.5,
+              72.038,
+              "counter"
+            ],
+            [
+              0.55,
+              72.501,
+              "counter"
+            ],
+            [
+              0.6,
+              73.185,
+              "counter"
+            ],
+            [
+              0.65,
+              74.168,
+              "counter"
+            ],
+            [
+              0.7,
+              75.467,
+              "counter"
+            ],
+            [
+              0.75,
+              77.065,
+              "counter"
+            ],
+            [
+              0.8,
+              240.143,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              205.497,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              171.703,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              140.471,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              111.626,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              111.339,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              139.811,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              170.676,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              204.052,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              238.344,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              77.065,
+              "counter"
+            ],
+            [
+              0.3,
+              75.467,
+              "counter"
+            ],
+            [
+              0.35,
+              74.168,
+              "counter"
+            ],
+            [
+              0.4,
+              73.185,
+              "counter"
+            ],
+            [
+              0.45,
+              72.501,
+              "counter"
+            ],
+            [
+              0.5,
+              72.038,
+              "counter"
+            ],
+            [
+              0.55,
+              71.783,
+              "counter"
+            ],
+            [
+              0.6,
+              71.758,
+              "counter"
+            ],
+            [
+              0.65,
+              71.961,
+              "counter"
+            ],
+            [
+              0.7,
+              72.344,
+              "counter"
+            ],
+            [
+              0.75,
+              72.913,
+              "counter"
+            ],
+            [
+              0.8,
+              73.69,
+              "counter"
+            ],
+            [
+              0.85,
+              74.662,
+              "counter"
+            ],
+            [
+              0.9,
+              75.764,
+              "counter"
+            ],
+            [
+              0.95,
+              77.016,
+              "counter"
+            ],
+            [
+              0.99,
+              78.113,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 27.98639145110223,
+        "shoulderMax": 43.899842516298406,
+        "sharedNormalMin": 71.68045161318997,
+        "sharedNormalMax": 78.13303029734327,
+        "sharedNormalMedian": 72.870078629083,
+        "sharedNormalRatio": 1.0900186667206482,
+        "sharedSamples": 150,
+        "sharedMaxSlope": 0.2528482000387358,
+        "sharedMaxCurvature": 0.01766110010695059,
+        "shaftMergeRayMin": 111.31665432678116,
+        "shaftMergeRayMax": 273.2085260024195,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              78.133,
+              "counter"
+            ],
+            [
+              0.05,
+              76.857,
+              "counter"
+            ],
+            [
+              0.1,
+              75.457,
+              "counter"
+            ],
+            [
+              0.15,
+              74.282,
+              "counter"
+            ],
+            [
+              0.2,
+              73.293,
+              "counter"
+            ],
+            [
+              0.25,
+              72.58,
+              "counter"
+            ],
+            [
+              0.3,
+              72.106,
+              "counter"
+            ],
+            [
+              0.35,
+              71.81,
+              "counter"
+            ],
+            [
+              0.4,
+              71.686,
+              "counter"
+            ],
+            [
+              0.45,
+              71.71,
+              "counter"
+            ],
+            [
+              0.5,
+              71.9,
+              "counter"
+            ],
+            [
+              0.55,
+              72.277,
+              "counter"
+            ],
+            [
+              0.6,
+              72.85,
+              "counter"
+            ],
+            [
+              0.65,
+              73.792,
+              "counter"
+            ],
+            [
+              0.7,
+              75.153,
+              "counter"
+            ],
+            [
+              0.75,
+              76.819,
+              "counter"
+            ],
+            [
+              0.8,
+              236.061,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              203.059,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              171.311,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              141.037,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              111.604,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              111.317,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              140.371,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              170.289,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              201.651,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              234.337,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              76.784,
+              "counter"
+            ],
+            [
+              0.3,
+              74.989,
+              "counter"
+            ],
+            [
+              0.35,
+              73.639,
+              "counter"
+            ],
+            [
+              0.4,
+              72.762,
+              "counter"
+            ],
+            [
+              0.45,
+              72.232,
+              "counter"
+            ],
+            [
+              0.5,
+              71.885,
+              "counter"
+            ],
+            [
+              0.55,
+              71.709,
+              "counter"
+            ],
+            [
+              0.6,
+              71.686,
+              "counter"
+            ],
+            [
+              0.65,
+              71.821,
+              "counter"
+            ],
+            [
+              0.7,
+              72.144,
+              "counter"
+            ],
+            [
+              0.75,
+              72.663,
+              "counter"
+            ],
+            [
+              0.8,
+              73.443,
+              "counter"
+            ],
+            [
+              0.85,
+              74.474,
+              "counter"
+            ],
+            [
+              0.9,
+              75.595,
+              "counter"
+            ],
+            [
+              0.95,
+              76.834,
+              "counter"
+            ],
+            [
+              0.99,
+              77.869,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 550,
+      "stix": {
+        "hairline": 43.54782557720058,
+        "stem": 120.68548433303575,
+        "bShoulderMin": 34.901789904405334
+      },
+      "before": {
+        "shoulderMin": 12.118456949586005,
+        "shoulderMax": 33.516068994837084,
+        "sharedNormalMin": 17.36267617784584,
+        "sharedNormalMax": 45.46574495206392,
+        "sharedNormalMedian": 21.782370672744143,
+        "sharedNormalRatio": 2.618590848919742,
+        "sharedSamples": 166,
+        "sharedMaxSlope": 1.1118620559736183,
+        "sharedMaxCurvature": 0.05877983775844323,
+        "shaftMergeRayMin": 116.59105383013052,
+        "shaftMergeRayMax": 189.10230777537092,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              44.884,
+              "counter"
+            ],
+            [
+              0.05,
+              39.056,
+              "counter"
+            ],
+            [
+              0.1,
+              33.508,
+              "counter"
+            ],
+            [
+              0.15,
+              29.11,
+              "counter"
+            ],
+            [
+              0.2,
+              25.574,
+              "counter"
+            ],
+            [
+              0.25,
+              22.773,
+              "counter"
+            ],
+            [
+              0.3,
+              20.619,
+              "counter"
+            ],
+            [
+              0.35,
+              19.046,
+              "counter"
+            ],
+            [
+              0.4,
+              18.008,
+              "counter"
+            ],
+            [
+              0.45,
+              17.471,
+              "counter"
+            ],
+            [
+              0.5,
+              17.366,
+              "counter"
+            ],
+            [
+              0.55,
+              17.636,
+              "counter"
+            ],
+            [
+              0.6,
+              18.5,
+              "counter"
+            ],
+            [
+              0.65,
+              20.075,
+              "counter"
+            ],
+            [
+              0.7,
+              22.536,
+              "counter"
+            ],
+            [
+              0.75,
+              26.168,
+              "counter"
+            ],
+            [
+              0.8,
+              31.465,
+              "counter"
+            ],
+            [
+              0.85,
+              183.776,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              155.593,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              131.538,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              116.874,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              116.591,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              130.995,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              155.048,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              183.414,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              31.35,
+              "counter"
+            ],
+            [
+              0.25,
+              26.211,
+              "counter"
+            ],
+            [
+              0.3,
+              22.656,
+              "counter"
+            ],
+            [
+              0.35,
+              20.22,
+              "counter"
+            ],
+            [
+              0.4,
+              18.631,
+              "counter"
+            ],
+            [
+              0.45,
+              17.722,
+              "counter"
+            ],
+            [
+              0.5,
+              17.384,
+              "counter"
+            ],
+            [
+              0.55,
+              17.423,
+              "counter"
+            ],
+            [
+              0.6,
+              17.906,
+              "counter"
+            ],
+            [
+              0.65,
+              18.918,
+              "counter"
+            ],
+            [
+              0.7,
+              20.492,
+              "counter"
+            ],
+            [
+              0.75,
+              22.677,
+              "counter"
+            ],
+            [
+              0.8,
+              25.539,
+              "counter"
+            ],
+            [
+              0.85,
+              29.171,
+              "counter"
+            ],
+            [
+              0.9,
+              33.705,
+              "counter"
+            ],
+            [
+              0.95,
+              39.441,
+              "counter"
+            ],
+            [
+              0.99,
+              45.466,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 28.891009402271813,
+        "shoulderMax": 46.704363708809126,
+        "sharedNormalMin": 76.48469638749961,
+        "sharedNormalMax": 82.8264726453447,
+        "sharedNormalMedian": 77.97479162251226,
+        "sharedNormalRatio": 1.082915623090341,
+        "sharedSamples": 146,
+        "sharedMaxSlope": 0.2440807145603904,
+        "sharedMaxCurvature": 0.009193264272466127,
+        "shaftMergeRayMin": 120.12795919196802,
+        "shaftMergeRayMax": 347.0714788187536,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              82.826,
+              "counter"
+            ],
+            [
+              0.05,
+              81.652,
+              "counter"
+            ],
+            [
+              0.1,
+              80.356,
+              "counter"
+            ],
+            [
+              0.15,
+              79.252,
+              "counter"
+            ],
+            [
+              0.2,
+              78.312,
+              "counter"
+            ],
+            [
+              0.25,
+              77.536,
+              "counter"
+            ],
+            [
+              0.3,
+              76.979,
+              "counter"
+            ],
+            [
+              0.35,
+              76.632,
+              "counter"
+            ],
+            [
+              0.4,
+              76.489,
+              "counter"
+            ],
+            [
+              0.45,
+              76.565,
+              "counter"
+            ],
+            [
+              0.5,
+              76.87,
+              "counter"
+            ],
+            [
+              0.55,
+              77.417,
+              "counter"
+            ],
+            [
+              0.6,
+              78.222,
+              "counter"
+            ],
+            [
+              0.65,
+              79.296,
+              "counter"
+            ],
+            [
+              0.7,
+              80.73,
+              "counter"
+            ],
+            [
+              0.75,
+              342.531,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              250.954,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              215.7,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              181.471,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              149.818,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              120.424,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              120.128,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              149.142,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              180.423,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              214.227,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              248.83,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              337.949,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              80.73,
+              "counter"
+            ],
+            [
+              0.35,
+              79.296,
+              "counter"
+            ],
+            [
+              0.4,
+              78.222,
+              "counter"
+            ],
+            [
+              0.45,
+              77.417,
+              "counter"
+            ],
+            [
+              0.5,
+              76.87,
+              "counter"
+            ],
+            [
+              0.55,
+              76.565,
+              "counter"
+            ],
+            [
+              0.6,
+              76.489,
+              "counter"
+            ],
+            [
+              0.65,
+              76.632,
+              "counter"
+            ],
+            [
+              0.7,
+              76.979,
+              "counter"
+            ],
+            [
+              0.75,
+              77.536,
+              "counter"
+            ],
+            [
+              0.8,
+              78.312,
+              "counter"
+            ],
+            [
+              0.85,
+              79.252,
+              "counter"
+            ],
+            [
+              0.9,
+              80.356,
+              "counter"
+            ],
+            [
+              0.95,
+              81.652,
+              "counter"
+            ],
+            [
+              0.99,
+              82.826,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 28.92848332991645,
+        "shoulderMax": 46.72406229579491,
+        "sharedNormalMin": 76.28999139750813,
+        "sharedNormalMax": 82.85783913259506,
+        "sharedNormalMedian": 77.7285868746866,
+        "sharedNormalRatio": 1.0860905554552396,
+        "sharedSamples": 146,
+        "sharedMaxSlope": 0.26639033386427086,
+        "sharedMaxCurvature": 0.014319108671612612,
+        "shaftMergeRayMin": 120.0616736731339,
+        "shaftMergeRayMax": 344.5898332410585,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              82.858,
+              "counter"
+            ],
+            [
+              0.05,
+              81.567,
+              "counter"
+            ],
+            [
+              0.1,
+              80.174,
+              "counter"
+            ],
+            [
+              0.15,
+              79.022,
+              "counter"
+            ],
+            [
+              0.2,
+              78.068,
+              "counter"
+            ],
+            [
+              0.25,
+              77.29,
+              "counter"
+            ],
+            [
+              0.3,
+              76.742,
+              "counter"
+            ],
+            [
+              0.35,
+              76.411,
+              "counter"
+            ],
+            [
+              0.4,
+              76.29,
+              "counter"
+            ],
+            [
+              0.45,
+              76.379,
+              "counter"
+            ],
+            [
+              0.5,
+              76.685,
+              "counter"
+            ],
+            [
+              0.55,
+              77.217,
+              "counter"
+            ],
+            [
+              0.6,
+              77.988,
+              "counter"
+            ],
+            [
+              0.65,
+              79.04,
+              "counter"
+            ],
+            [
+              0.7,
+              80.496,
+              "counter"
+            ],
+            [
+              0.75,
+              342.132,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              248.328,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              214.379,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              181.525,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              150.278,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              120.357,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              120.062,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              149.595,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              180.475,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              212.926,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              246.362,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              337.59,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              80.407,
+              "counter"
+            ],
+            [
+              0.35,
+              78.914,
+              "counter"
+            ],
+            [
+              0.4,
+              77.895,
+              "counter"
+            ],
+            [
+              0.45,
+              77.164,
+              "counter"
+            ],
+            [
+              0.5,
+              76.661,
+              "counter"
+            ],
+            [
+              0.55,
+              76.374,
+              "counter"
+            ],
+            [
+              0.6,
+              76.29,
+              "counter"
+            ],
+            [
+              0.65,
+              76.42,
+              "counter"
+            ],
+            [
+              0.7,
+              76.775,
+              "counter"
+            ],
+            [
+              0.75,
+              77.359,
+              "counter"
+            ],
+            [
+              0.8,
+              78.187,
+              "counter"
+            ],
+            [
+              0.85,
+              79.166,
+              "counter"
+            ],
+            [
+              0.9,
+              80.268,
+              "counter"
+            ],
+            [
+              0.95,
+              81.528,
+              "counter"
+            ],
+            [
+              0.99,
+              82.628,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 600,
+      "stix": {
+        "hairline": 45.056701092189314,
+        "stem": 130.07009308083528,
+        "bShoulderMin": 36.93730031689007
+      },
+      "before": {
+        "shoulderMin": 13.066470821187966,
+        "shoulderMax": 32.84696728918828,
+        "sharedNormalMin": 16.67731173782722,
+        "sharedNormalMax": 43.0800853762827,
+        "sharedNormalMedian": 20.744400348925808,
+        "sharedNormalRatio": 2.583155250289477,
+        "sharedSamples": 164,
+        "sharedMaxSlope": 1.0841516922780576,
+        "sharedMaxCurvature": 0.06060713299193654,
+        "shaftMergeRayMin": 125.09513195706322,
+        "shaftMergeRayMax": 199.15545269644144,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              42.563,
+              "counter"
+            ],
+            [
+              0.05,
+              37.147,
+              "counter"
+            ],
+            [
+              0.1,
+              31.888,
+              "counter"
+            ],
+            [
+              0.15,
+              27.672,
+              "counter"
+            ],
+            [
+              0.2,
+              24.295,
+              "counter"
+            ],
+            [
+              0.25,
+              21.634,
+              "counter"
+            ],
+            [
+              0.3,
+              19.602,
+              "counter"
+            ],
+            [
+              0.35,
+              18.139,
+              "counter"
+            ],
+            [
+              0.4,
+              17.2,
+              "counter"
+            ],
+            [
+              0.45,
+              16.756,
+              "counter"
+            ],
+            [
+              0.5,
+              16.688,
+              "counter"
+            ],
+            [
+              0.55,
+              16.964,
+              "counter"
+            ],
+            [
+              0.6,
+              17.82,
+              "counter"
+            ],
+            [
+              0.65,
+              19.387,
+              "counter"
+            ],
+            [
+              0.7,
+              21.847,
+              "counter"
+            ],
+            [
+              0.75,
+              25.507,
+              "counter"
+            ],
+            [
+              0.8,
+              30.906,
+              "counter"
+            ],
+            [
+              0.85,
+              188.595,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              162.069,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              139.211,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              125.386,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              125.095,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              138.669,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              161.65,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              188.493,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              30.684,
+              "counter"
+            ],
+            [
+              0.25,
+              25.457,
+              "counter"
+            ],
+            [
+              0.3,
+              21.89,
+              "counter"
+            ],
+            [
+              0.35,
+              19.467,
+              "counter"
+            ],
+            [
+              0.4,
+              17.904,
+              "counter"
+            ],
+            [
+              0.45,
+              17.023,
+              "counter"
+            ],
+            [
+              0.5,
+              16.702,
+              "counter"
+            ],
+            [
+              0.55,
+              16.728,
+              "counter"
+            ],
+            [
+              0.6,
+              17.136,
+              "counter"
+            ],
+            [
+              0.65,
+              18.06,
+              "counter"
+            ],
+            [
+              0.7,
+              19.532,
+              "counter"
+            ],
+            [
+              0.75,
+              21.595,
+              "counter"
+            ],
+            [
+              0.8,
+              24.313,
+              "counter"
+            ],
+            [
+              0.85,
+              27.777,
+              "counter"
+            ],
+            [
+              0.9,
+              32.108,
+              "counter"
+            ],
+            [
+              0.95,
+              37.523,
+              "counter"
+            ],
+            [
+              0.99,
+              43.08,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 29.552783733315977,
+        "shoulderMax": 49.54110326076517,
+        "sharedNormalMin": 81.31156233810447,
+        "sharedNormalMax": 87.73756143058807,
+        "sharedNormalMedian": 82.7546015544558,
+        "sharedNormalRatio": 1.0790293398343944,
+        "sharedSamples": 140,
+        "sharedMaxSlope": 0.26577376454306184,
+        "sharedMaxCurvature": 0.015583298266432264,
+        "shaftMergeRayMin": 128.8773231997228,
+        "shaftMergeRayMax": 353.30643107833475,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              87.738,
+              "counter"
+            ],
+            [
+              0.05,
+              86.452,
+              "counter"
+            ],
+            [
+              0.1,
+              85.08,
+              "counter"
+            ],
+            [
+              0.15,
+              83.952,
+              "counter"
+            ],
+            [
+              0.2,
+              83.023,
+              "counter"
+            ],
+            [
+              0.25,
+              82.233,
+              "counter"
+            ],
+            [
+              0.3,
+              81.692,
+              "counter"
+            ],
+            [
+              0.35,
+              81.389,
+              "counter"
+            ],
+            [
+              0.4,
+              81.312,
+              "counter"
+            ],
+            [
+              0.45,
+              81.434,
+              "counter"
+            ],
+            [
+              0.5,
+              81.817,
+              "counter"
+            ],
+            [
+              0.55,
+              82.483,
+              "counter"
+            ],
+            [
+              0.6,
+              83.42,
+              "counter"
+            ],
+            [
+              0.65,
+              84.628,
+              "counter"
+            ],
+            [
+              0.7,
+              86.295,
+              "counter"
+            ],
+            [
+              0.75,
+              345.959,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              262.136,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              225.611,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              190.981,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              158.951,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              129.181,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              128.877,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              158.261,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              189.913,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              224.114,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              259.528,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              341.714,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              86.295,
+              "counter"
+            ],
+            [
+              0.35,
+              84.628,
+              "counter"
+            ],
+            [
+              0.4,
+              83.42,
+              "counter"
+            ],
+            [
+              0.45,
+              82.483,
+              "counter"
+            ],
+            [
+              0.5,
+              81.817,
+              "counter"
+            ],
+            [
+              0.55,
+              81.434,
+              "counter"
+            ],
+            [
+              0.6,
+              81.312,
+              "counter"
+            ],
+            [
+              0.65,
+              81.389,
+              "counter"
+            ],
+            [
+              0.7,
+              81.692,
+              "counter"
+            ],
+            [
+              0.75,
+              82.233,
+              "counter"
+            ],
+            [
+              0.8,
+              83.023,
+              "counter"
+            ],
+            [
+              0.85,
+              83.952,
+              "counter"
+            ],
+            [
+              0.9,
+              85.08,
+              "counter"
+            ],
+            [
+              0.95,
+              86.452,
+              "counter"
+            ],
+            [
+              0.99,
+              87.738,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 29.727331580105172,
+        "shoulderMax": 49.54555960617324,
+        "sharedNormalMin": 80.97465134850243,
+        "sharedNormalMax": 87.819831090791,
+        "sharedNormalMedian": 82.62925755707104,
+        "sharedNormalRatio": 1.0845348467488667,
+        "sharedSamples": 140,
+        "sharedMaxSlope": 0.27602314511627735,
+        "sharedMaxCurvature": 0.022992917860556225,
+        "shaftMergeRayMin": 128.7615187420836,
+        "shaftMergeRayMax": 353.0153735560461,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              87.82,
+              "counter"
+            ],
+            [
+              0.05,
+              86.47,
+              "counter"
+            ],
+            [
+              0.1,
+              85.039,
+              "counter"
+            ],
+            [
+              0.15,
+              83.873,
+              "counter"
+            ],
+            [
+              0.2,
+              82.918,
+              "counter"
+            ],
+            [
+              0.25,
+              82.033,
+              "counter"
+            ],
+            [
+              0.3,
+              81.421,
+              "counter"
+            ],
+            [
+              0.35,
+              81.07,
+              "counter"
+            ],
+            [
+              0.4,
+              80.98,
+              "counter"
+            ],
+            [
+              0.45,
+              81.172,
+              "counter"
+            ],
+            [
+              0.5,
+              81.624,
+              "counter"
+            ],
+            [
+              0.55,
+              82.351,
+              "counter"
+            ],
+            [
+              0.6,
+              83.308,
+              "counter"
+            ],
+            [
+              0.65,
+              84.477,
+              "counter"
+            ],
+            [
+              0.7,
+              86.128,
+              "counter"
+            ],
+            [
+              0.75,
+              345.245,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              261.626,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              225.717,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              191.602,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              159.298,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              129.064,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              128.762,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              158.602,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              190.525,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              224.215,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              259.065,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              341.118,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              86.118,
+              "counter"
+            ],
+            [
+              0.35,
+              84.4,
+              "counter"
+            ],
+            [
+              0.4,
+              83.228,
+              "counter"
+            ],
+            [
+              0.45,
+              82.297,
+              "counter"
+            ],
+            [
+              0.5,
+              81.595,
+              "counter"
+            ],
+            [
+              0.55,
+              81.161,
+              "counter"
+            ],
+            [
+              0.6,
+              80.979,
+              "counter"
+            ],
+            [
+              0.65,
+              81.077,
+              "counter"
+            ],
+            [
+              0.7,
+              81.446,
+              "counter"
+            ],
+            [
+              0.75,
+              82.086,
+              "counter"
+            ],
+            [
+              0.8,
+              83.005,
+              "counter"
+            ],
+            [
+              0.85,
+              83.969,
+              "counter"
+            ],
+            [
+              0.9,
+              85.094,
+              "counter"
+            ],
+            [
+              0.95,
+              86.424,
+              "counter"
+            ],
+            [
+              0.99,
+              87.636,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 650,
+      "stix": {
+        "hairline": 46.81734030657672,
+        "stem": 141.01023003831816,
+        "bShoulderMin": 39.341368057011266
+      },
+      "before": {
+        "shoulderMin": 14.11266243493016,
+        "shoulderMax": 31.89682250571558,
+        "sharedNormalMin": 15.71180491871243,
+        "sharedNormalMax": 40.126199693486285,
+        "sharedNormalMedian": 19.324375341635083,
+        "sharedNormalRatio": 2.5538886143944435,
+        "sharedSamples": 163,
+        "sharedMaxSlope": 1.1456434588828375,
+        "sharedMaxCurvature": 0.07653383304645199,
+        "shaftMergeRayMin": 134.99766254686648,
+        "shaftMergeRayMax": 209.67210446848983,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              39.681,
+              "counter"
+            ],
+            [
+              0.05,
+              34.722,
+              "counter"
+            ],
+            [
+              0.1,
+              29.774,
+              "counter"
+            ],
+            [
+              0.15,
+              25.798,
+              "counter"
+            ],
+            [
+              0.2,
+              22.627,
+              "counter"
+            ],
+            [
+              0.25,
+              20.144,
+              "counter"
+            ],
+            [
+              0.3,
+              18.267,
+              "counter"
+            ],
+            [
+              0.35,
+              16.94,
+              "counter"
+            ],
+            [
+              0.4,
+              16.122,
+              "counter"
+            ],
+            [
+              0.45,
+              15.767,
+              "counter"
+            ],
+            [
+              0.5,
+              15.735,
+              "counter"
+            ],
+            [
+              0.55,
+              16.029,
+              "counter"
+            ],
+            [
+              0.6,
+              16.869,
+              "counter"
+            ],
+            [
+              0.65,
+              18.417,
+              "counter"
+            ],
+            [
+              0.7,
+              20.863,
+              "counter"
+            ],
+            [
+              0.75,
+              24.537,
+              "counter"
+            ],
+            [
+              0.8,
+              30.034,
+              "counter"
+            ],
+            [
+              0.85,
+              193.959,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              169.269,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              148.018,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              135.295,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              134.998,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              147.485,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              169.013,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              194.115,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              29.713,
+              "counter"
+            ],
+            [
+              0.25,
+              24.397,
+              "counter"
+            ],
+            [
+              0.3,
+              20.825,
+              "counter"
+            ],
+            [
+              0.35,
+              18.431,
+              "counter"
+            ],
+            [
+              0.4,
+              16.902,
+              "counter"
+            ],
+            [
+              0.45,
+              16.056,
+              "counter"
+            ],
+            [
+              0.5,
+              15.743,
+              "counter"
+            ],
+            [
+              0.55,
+              15.757,
+              "counter"
+            ],
+            [
+              0.6,
+              16.095,
+              "counter"
+            ],
+            [
+              0.65,
+              16.909,
+              "counter"
+            ],
+            [
+              0.7,
+              18.25,
+              "counter"
+            ],
+            [
+              0.75,
+              20.159,
+              "counter"
+            ],
+            [
+              0.8,
+              22.692,
+              "counter"
+            ],
+            [
+              0.85,
+              25.935,
+              "counter"
+            ],
+            [
+              0.9,
+              30.004,
+              "counter"
+            ],
+            [
+              0.95,
+              35.071,
+              "counter"
+            ],
+            [
+              0.99,
+              40.126,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 30.096561421807003,
+        "shoulderMax": 52.84754779047853,
+        "sharedNormalMin": 87.05088685892851,
+        "sharedNormalMax": 93.7902585152189,
+        "sharedNormalMedian": 88.46011137222715,
+        "sharedNormalRatio": 1.0774187592966395,
+        "sharedSamples": 132,
+        "sharedMaxSlope": 0.30453601025462523,
+        "sharedMaxCurvature": 0.026004914997411557,
+        "shaftMergeRayMin": 139.02822762882374,
+        "shaftMergeRayMax": 360.71176255022675,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              93.79,
+              "counter"
+            ],
+            [
+              0.05,
+              92.312,
+              "counter"
+            ],
+            [
+              0.1,
+              90.8,
+              "counter"
+            ],
+            [
+              0.15,
+              89.609,
+              "counter"
+            ],
+            [
+              0.2,
+              88.646,
+              "counter"
+            ],
+            [
+              0.25,
+              87.839,
+              "counter"
+            ],
+            [
+              0.3,
+              87.322,
+              "counter"
+            ],
+            [
+              0.35,
+              87.082,
+              "counter"
+            ],
+            [
+              0.4,
+              87.067,
+              "counter"
+            ],
+            [
+              0.45,
+              87.276,
+              "counter"
+            ],
+            [
+              0.5,
+              87.8,
+              "counter"
+            ],
+            [
+              0.55,
+              88.653,
+              "counter"
+            ],
+            [
+              0.6,
+              89.775,
+              "counter"
+            ],
+            [
+              0.65,
+              91.262,
+              "counter"
+            ],
+            [
+              0.7,
+              339.138,
+              "shaft merge"
+            ],
+            [
+              0.75,
+              349.985,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              276.314,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              236.747,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              201.672,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              169.33,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              139.34,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              139.028,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              168.626,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              200.586,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              235.228,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              272.612,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              346.142,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              337.483,
+              "shaft merge"
+            ],
+            [
+              0.35,
+              91.262,
+              "counter"
+            ],
+            [
+              0.4,
+              89.775,
+              "counter"
+            ],
+            [
+              0.45,
+              88.653,
+              "counter"
+            ],
+            [
+              0.5,
+              87.8,
+              "counter"
+            ],
+            [
+              0.55,
+              87.276,
+              "counter"
+            ],
+            [
+              0.6,
+              87.067,
+              "counter"
+            ],
+            [
+              0.65,
+              87.082,
+              "counter"
+            ],
+            [
+              0.7,
+              87.322,
+              "counter"
+            ],
+            [
+              0.75,
+              87.839,
+              "counter"
+            ],
+            [
+              0.8,
+              88.646,
+              "counter"
+            ],
+            [
+              0.85,
+              89.609,
+              "counter"
+            ],
+            [
+              0.9,
+              90.8,
+              "counter"
+            ],
+            [
+              0.95,
+              92.312,
+              "counter"
+            ],
+            [
+              0.99,
+              93.79,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 30.42899953383655,
+        "shoulderMax": 52.833321583421196,
+        "sharedNormalMin": 86.58067199413198,
+        "sharedNormalMax": 93.96415328766672,
+        "sharedNormalMedian": 88.43446811931173,
+        "sharedNormalRatio": 1.0852786323261057,
+        "sharedSamples": 132,
+        "sharedMaxSlope": 0.3049743256522946,
+        "sharedMaxCurvature": 0.03432717757284839,
+        "shaftMergeRayMin": 138.84529559402353,
+        "shaftMergeRayMax": 359.4417406162687,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              93.964,
+              "counter"
+            ],
+            [
+              0.05,
+              92.477,
+              "counter"
+            ],
+            [
+              0.1,
+              90.93,
+              "counter"
+            ],
+            [
+              0.15,
+              89.69,
+              "counter"
+            ],
+            [
+              0.2,
+              88.657,
+              "counter"
+            ],
+            [
+              0.25,
+              87.65,
+              "counter"
+            ],
+            [
+              0.3,
+              86.976,
+              "counter"
+            ],
+            [
+              0.35,
+              86.625,
+              "counter"
+            ],
+            [
+              0.4,
+              86.627,
+              "counter"
+            ],
+            [
+              0.45,
+              86.981,
+              "counter"
+            ],
+            [
+              0.5,
+              87.661,
+              "counter"
+            ],
+            [
+              0.55,
+              88.652,
+              "counter"
+            ],
+            [
+              0.6,
+              89.803,
+              "counter"
+            ],
+            [
+              0.65,
+              91.241,
+              "counter"
+            ],
+            [
+              0.7,
+              338.173,
+              "shaft merge"
+            ],
+            [
+              0.75,
+              348.872,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              280.712,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              238.966,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              203.189,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              169.51,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              139.154,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              138.845,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              168.803,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              202.082,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              237.413,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              276.126,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              345.25,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              336.73,
+              "shaft merge"
+            ],
+            [
+              0.35,
+              91.224,
+              "counter"
+            ],
+            [
+              0.4,
+              89.766,
+              "counter"
+            ],
+            [
+              0.45,
+              88.615,
+              "counter"
+            ],
+            [
+              0.5,
+              87.638,
+              "counter"
+            ],
+            [
+              0.55,
+              86.97,
+              "counter"
+            ],
+            [
+              0.6,
+              86.624,
+              "counter"
+            ],
+            [
+              0.65,
+              86.629,
+              "counter"
+            ],
+            [
+              0.7,
+              86.99,
+              "counter"
+            ],
+            [
+              0.75,
+              87.679,
+              "counter"
+            ],
+            [
+              0.8,
+              88.705,
+              "counter"
+            ],
+            [
+              0.85,
+              89.735,
+              "counter"
+            ],
+            [
+              0.9,
+              90.949,
+              "counter"
+            ],
+            [
+              0.95,
+              92.44,
+              "counter"
+            ],
+            [
+              0.99,
+              93.857,
+              "counter"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "weight": 700,
+      "stix": {
+        "hairline": 48.584385895811664,
+        "stem": 151.95942973252755,
+        "bShoulderMin": 41.77649983027522
+      },
+      "before": {
+        "shoulderMin": 15.11260464841647,
+        "shoulderMax": 30.771314119248245,
+        "sharedNormalMin": 14.546695213012455,
+        "sharedNormalMax": 36.9280863970813,
+        "sharedNormalMedian": 18.01634588833459,
+        "sharedNormalRatio": 2.5385894085446994,
+        "sharedSamples": 161,
+        "sharedMaxSlope": 1.169394975659001,
+        "sharedMaxCurvature": 0.08937375476595465,
+        "shaftMergeRayMin": 144.88621219962005,
+        "shaftMergeRayMax": 219.89107905192498,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              36.56,
+              "counter"
+            ],
+            [
+              0.05,
+              32.019,
+              "counter"
+            ],
+            [
+              0.1,
+              27.392,
+              "counter"
+            ],
+            [
+              0.15,
+              23.687,
+              "counter"
+            ],
+            [
+              0.2,
+              20.747,
+              "counter"
+            ],
+            [
+              0.25,
+              18.463,
+              "counter"
+            ],
+            [
+              0.3,
+              16.755,
+              "counter"
+            ],
+            [
+              0.35,
+              15.573,
+              "counter"
+            ],
+            [
+              0.4,
+              14.882,
+              "counter"
+            ],
+            [
+              0.45,
+              14.582,
+              "counter"
+            ],
+            [
+              0.5,
+              14.587,
+              "counter"
+            ],
+            [
+              0.55,
+              14.91,
+              "counter"
+            ],
+            [
+              0.6,
+              15.726,
+              "counter"
+            ],
+            [
+              0.65,
+              17.237,
+              "counter"
+            ],
+            [
+              0.7,
+              19.647,
+              "counter"
+            ],
+            [
+              0.75,
+              23.302,
+              "counter"
+            ],
+            [
+              0.8,
+              28.853,
+              "counter"
+            ],
+            [
+              0.85,
+              199.196,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              176.175,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              156.701,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              145.188,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              144.886,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              156.187,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              176.102,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              199.547,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              28.461,
+              "counter"
+            ],
+            [
+              0.25,
+              23.094,
+              "counter"
+            ],
+            [
+              0.3,
+              19.545,
+              "counter"
+            ],
+            [
+              0.35,
+              17.196,
+              "counter"
+            ],
+            [
+              0.4,
+              15.715,
+              "counter"
+            ],
+            [
+              0.45,
+              14.91,
+              "counter"
+            ],
+            [
+              0.5,
+              14.587,
+              "counter"
+            ],
+            [
+              0.55,
+              14.582,
+              "counter"
+            ],
+            [
+              0.6,
+              14.882,
+              "counter"
+            ],
+            [
+              0.65,
+              15.579,
+              "counter"
+            ],
+            [
+              0.7,
+              16.778,
+              "counter"
+            ],
+            [
+              0.75,
+              18.516,
+              "counter"
+            ],
+            [
+              0.8,
+              20.843,
+              "counter"
+            ],
+            [
+              0.85,
+              23.838,
+              "counter"
+            ],
+            [
+              0.9,
+              27.612,
+              "counter"
+            ],
+            [
+              0.95,
+              32.322,
+              "counter"
+            ],
+            [
+              0.99,
+              36.928,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "source": {
+        "shoulderMin": 30.391155285345683,
+        "shoulderMax": 56.14996712741572,
+        "sharedNormalMin": 92.95604440414715,
+        "sharedNormalMax": 100.3166060106912,
+        "sharedNormalMedian": 94.37942699437062,
+        "sharedNormalRatio": 1.079183248961653,
+        "sharedSamples": 124,
+        "sharedMaxSlope": 0.40106657872433854,
+        "sharedMaxCurvature": 0.017454354290187303,
+        "shaftMergeRayMin": 149.1121698503211,
+        "shaftMergeRayMax": 368.85358316080914,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              100.317,
+              "counter"
+            ],
+            [
+              0.05,
+              98.551,
+              "counter"
+            ],
+            [
+              0.1,
+              96.814,
+              "counter"
+            ],
+            [
+              0.15,
+              95.493,
+              "counter"
+            ],
+            [
+              0.2,
+              94.458,
+              "counter"
+            ],
+            [
+              0.25,
+              93.631,
+              "counter"
+            ],
+            [
+              0.3,
+              93.144,
+              "counter"
+            ],
+            [
+              0.35,
+              92.963,
+              "counter"
+            ],
+            [
+              0.4,
+              93.027,
+              "counter"
+            ],
+            [
+              0.45,
+              93.377,
+              "counter"
+            ],
+            [
+              0.5,
+              94.111,
+              "counter"
+            ],
+            [
+              0.55,
+              95.196,
+              "counter"
+            ],
+            [
+              0.6,
+              96.653,
+              "counter"
+            ],
+            [
+              0.65,
+              333.343,
+              "shaft merge"
+            ],
+            [
+              0.7,
+              342.553,
+              "shaft merge"
+            ],
+            [
+              0.75,
+              354.079,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              368.854,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              247.286,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              211.871,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              179.327,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              149.43,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              149.112,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              178.615,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              210.774,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              245.751,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              287.756,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              350.633,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              341.515,
+              "shaft merge"
+            ],
+            [
+              0.35,
+              334.349,
+              "shaft merge"
+            ],
+            [
+              0.4,
+              96.653,
+              "counter"
+            ],
+            [
+              0.45,
+              95.196,
+              "counter"
+            ],
+            [
+              0.5,
+              94.111,
+              "counter"
+            ],
+            [
+              0.55,
+              93.377,
+              "counter"
+            ],
+            [
+              0.6,
+              93.027,
+              "counter"
+            ],
+            [
+              0.65,
+              92.963,
+              "counter"
+            ],
+            [
+              0.7,
+              93.144,
+              "counter"
+            ],
+            [
+              0.75,
+              93.631,
+              "counter"
+            ],
+            [
+              0.8,
+              94.458,
+              "counter"
+            ],
+            [
+              0.85,
+              95.493,
+              "counter"
+            ],
+            [
+              0.9,
+              96.814,
+              "counter"
+            ],
+            [
+              0.95,
+              98.551,
+              "counter"
+            ],
+            [
+              0.99,
+              100.317,
+              "counter"
+            ]
+          ]
+        }
+      },
+      "compiled": {
+        "shoulderMin": 30.866700249920413,
+        "shoulderMax": 56.115170832155,
+        "sharedNormalMin": 92.38640194782515,
+        "sharedNormalMax": 100.5942410764676,
+        "sharedNormalMedian": 94.43401389963468,
+        "sharedNormalRatio": 1.0888425023119506,
+        "sharedSamples": 124,
+        "sharedMaxSlope": 0.3875107857860712,
+        "sharedMaxCurvature": 0.018575283024690525,
+        "shaftMergeRayMin": 148.85050269539508,
+        "shaftMergeRayMax": 365.8842714336042,
+        "normalProfiles": {
+          "upper": [
+            [
+              0.01,
+              100.594,
+              "counter"
+            ],
+            [
+              0.05,
+              98.868,
+              "counter"
+            ],
+            [
+              0.1,
+              97.106,
+              "counter"
+            ],
+            [
+              0.15,
+              95.706,
+              "counter"
+            ],
+            [
+              0.2,
+              94.536,
+              "counter"
+            ],
+            [
+              0.25,
+              93.417,
+              "counter"
+            ],
+            [
+              0.3,
+              92.696,
+              "counter"
+            ],
+            [
+              0.35,
+              92.393,
+              "counter"
+            ],
+            [
+              0.4,
+              92.542,
+              "counter"
+            ],
+            [
+              0.45,
+              93.127,
+              "counter"
+            ],
+            [
+              0.5,
+              94.103,
+              "counter"
+            ],
+            [
+              0.55,
+              95.35,
+              "counter"
+            ],
+            [
+              0.6,
+              96.868,
+              "counter"
+            ],
+            [
+              0.65,
+              333.325,
+              "shaft merge"
+            ],
+            [
+              0.7,
+              341.923,
+              "shaft merge"
+            ],
+            [
+              0.75,
+              352.526,
+              "shaft merge"
+            ],
+            [
+              0.8,
+              365.884,
+              "shaft merge"
+            ],
+            [
+              0.85,
+              252.336,
+              "shaft merge"
+            ],
+            [
+              0.9,
+              214.568,
+              "shaft merge"
+            ],
+            [
+              0.95,
+              179.35,
+              "shaft merge"
+            ],
+            [
+              0.99,
+              149.165,
+              "shaft merge"
+            ]
+          ],
+          "lower": [
+            [
+              0.01,
+              148.851,
+              "shaft merge"
+            ],
+            [
+              0.05,
+              178.635,
+              "shaft merge"
+            ],
+            [
+              0.1,
+              213.434,
+              "shaft merge"
+            ],
+            [
+              0.15,
+              250.767,
+              "shaft merge"
+            ],
+            [
+              0.2,
+              360.093,
+              "shaft merge"
+            ],
+            [
+              0.25,
+              349.42,
+              "shaft merge"
+            ],
+            [
+              0.3,
+              341.053,
+              "shaft merge"
+            ],
+            [
+              0.35,
+              334.373,
+              "shaft merge"
+            ],
+            [
+              0.4,
+              96.868,
+              "counter"
+            ],
+            [
+              0.45,
+              95.35,
+              "counter"
+            ],
+            [
+              0.5,
+              94.103,
+              "counter"
+            ],
+            [
+              0.55,
+              93.127,
+              "counter"
+            ],
+            [
+              0.6,
+              92.542,
+              "counter"
+            ],
+            [
+              0.65,
+              92.393,
+              "counter"
+            ],
+            [
+              0.7,
+              92.696,
+              "counter"
+            ],
+            [
+              0.75,
+              93.417,
+              "counter"
+            ],
+            [
+              0.8,
+              94.536,
+              "counter"
+            ],
+            [
+              0.85,
+              95.706,
+              "counter"
+            ],
+            [
+              0.9,
+              97.106,
+              "counter"
+            ],
+            [
+              0.95,
+              98.868,
+              "counter"
+            ],
+            [
+              0.99,
+              100.594,
+              "counter"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "staticGeometry": [
+    {
+      "style": "Regular",
+      "weight": 400,
+      "symmetricDifferenceArea": 0.767578125,
+      "subdivisionSteps": 192,
+      "clippingScale": 64
+    },
+    {
+      "style": "Bold",
+      "weight": 700,
+      "symmetricDifferenceArea": 0.314208984375,
+      "subdivisionSteps": 192,
+      "clippingScale": 64
+    }
+  ]
+}

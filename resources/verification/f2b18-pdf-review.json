@@ -1,0 +1,46 @@
+{
+  "scope": "U+F2B18 refreshed publication references",
+  "reviewedAt": "2026-09-06T03:27:14.377912+00:00",
+  "sourceFontSha256": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+  "dependencies": {
+    "reportlab": "4.4.9",
+    "fonttools": "4.64.0",
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "Pillow": "12.3.0"
+  },
+  "automated": {
+    "command": "tools/test_pdfs.py",
+    "testsPassed": 6,
+    "scope": "Five PDF outputs: numeric coverage, Plane 15 extraction, embedding, ink bounds, text bounds, headers, proposal completeness"
+  },
+  "visual": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 150,
+    "pages": [
+      {
+        "file": "quintessential-latin-extended-a.pdf",
+        "pages": [
+          2,
+          4
+        ],
+        "sha256": "21749ff1bf4db91dc43896008518d4bb57f3c25300f3e47149f639f5835f6690"
+      },
+      {
+        "file": "quintessential-latin-catalogue.pdf",
+        "pages": [
+          9,
+          11
+        ],
+        "sha256": "45ee4e80ec8da974339b68bc4e46738ba7a91f9d0f85e17c8f73636042f68c04"
+      }
+    ],
+    "findings": [
+      "U+F2B18 is correctly placed and legible in both chart cells and names-list rows.",
+      "Glyph ink and text remain clear of cell borders, adjacent entries, page margins, and footers.",
+      "Headers, code labels, names, rules, and page numbers are aligned without clipping or overlap."
+    ],
+    "limits": "Focused visual review of the four affected pages; user aesthetic acceptance remains separate."
+  },
+  "designRevision": "compact-spine-3"
+}

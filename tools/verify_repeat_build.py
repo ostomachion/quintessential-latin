@@ -1,9 +1,12 @@
 """Build in an isolated checkout and compare all manifested outputs byte for byte."""
 from pathlib import Path
-import hashlib,json,shutil,subprocess,sys,tempfile,time
+import argparse,hashlib,json,shutil,subprocess,sys,tempfile,time
 ROOT=Path(__file__).resolve().parent.parent
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--report',type=Path,default=ROOT/'resources/provenance/repeat-build.json')
+    args=parser.parse_args()
     output=ROOT/"resources/fonts/QuintessentialSerif"
     expected=json.loads((output/"build-manifest.json").read_text(encoding="utf-8"))
     expected_hash=sha(output/"build-manifest.json")
@@ -22,7 +25,8 @@ def main():
         for name,record in expected["outputs"].items():
             assert sha(actual/name)==record["sha256"],name
         result={"schemaVersion":1,"status":"passed","seconds":round(time.monotonic()-started,3),"manifestSha256":expected_hash,"sourceFiles":len(expected["sources"]),"outputs":{name:record["sha256"] for name,record in expected["outputs"].items()}}
-    target=ROOT/"resources/provenance/repeat-build.json"
+    target=args.report
+    target.parent.mkdir(parents=True,exist_ok=True)
     target.write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8",newline="\n")
     print(json.dumps(result))
 if __name__=="__main__":main()

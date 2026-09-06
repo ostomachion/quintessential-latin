@@ -1,8 +1,11 @@
 # Verification record
 
 Reference font **0.220**, canonical naming **2**, reviewed **6 September 2026**.
-Engineering verification and agent visual review are complete for the reference
-artifacts. User visual acceptance remains pending.
+The current working tree includes a subsequent, unpublished Roman U+F2B18
+optical revision and project icon. Its checks and visual review are recorded in
+[U+F2B18 optical design](f2b18-optical-design.md). User visual acceptance remains
+pending. The sections below describe the original extraction and publication;
+their dated hashes are historical evidence, not hashes of the revised artifacts.
 
 ## Extraction and font preservation
 

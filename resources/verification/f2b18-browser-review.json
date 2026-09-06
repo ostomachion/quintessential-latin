@@ -1,0 +1,137 @@
+{
+  "base": "http://127.0.0.1:8768/quintessential-latin/",
+  "checks": 76,
+  "passed": [
+    "index.html: page title",
+    "index.html: shared weight control",
+    "index.html: shared italic control",
+    "index.html: native script font loaded",
+    "index.html: document fits desktop",
+    "charts.html: page title",
+    "charts.html: shared weight control",
+    "charts.html: shared italic control",
+    "charts.html: native script font loaded",
+    "charts.html: document fits desktop",
+    "specimens.html: page title",
+    "specimens.html: shared weight control",
+    "specimens.html: shared italic control",
+    "specimens.html: native script font loaded",
+    "specimens.html: document fits desktop",
+    "proposal.html: page title",
+    "proposal.html: shared weight control",
+    "proposal.html: shared italic control",
+    "proposal.html: native script font loaded",
+    "proposal.html: document fits desktop",
+    "downloads.html: page title",
+    "downloads.html: shared weight control",
+    "downloads.html: shared italic control",
+    "downloads.html: native script font loaded",
+    "downloads.html: document fits desktop",
+    "Four numeric screen grids",
+    "Eight print grids",
+    "All 1024 code positions represented",
+    "All 832 assigned positions represented",
+    "All 832 names represented",
+    "Formal names are in numeric order",
+    "Initial posture is Roman",
+    "Weight responds to real keyboard input",
+    "Native Italic selected",
+    "600 Italic pending variants clearly shown",
+    "Selected weight and native posture reach chart glyphs",
+    "Preferences persist across navigation",
+    "Preferences persist across reload",
+    "Supplementary-plane specimen input preserved",
+    "Missing Italic in editor is labeled",
+    "Literal editor keeps complete Roman coverage while preview uses selected Italic",
+    "Adjacent supported characters and original whitespace share one native run",
+    "Native sequence shaping retains kerning and selected font controls",
+    "Intermediate weight supported",
+    "Code search finds one exact character",
+    "Character details open",
+    "Copy preserves supplementary-plane scalar",
+    "Copy code uses Unicode notation",
+    "Escape closes character details",
+    "Empty search is explained",
+    "Arrow navigation moves one hexadecimal column",
+    "ArrowDown stops at row F within its hexadecimal column",
+    "ArrowUp stops at row 0 within its hexadecimal column",
+    "Character deep link resolves",
+    "index.html: fits 375px viewport",
+    "charts.html: fits 375px viewport",
+    "specimens.html: fits 375px viewport",
+    "proposal.html: fits 375px viewport",
+    "downloads.html: fits 375px viewport",
+    "index.html: fits 768px viewport",
+    "charts.html: fits 768px viewport",
+    "specimens.html: fits 768px viewport",
+    "proposal.html: fits 768px viewport",
+    "downloads.html: fits 768px viewport",
+    "index.html: fits 1440px viewport",
+    "charts.html: fits 1440px viewport",
+    "specimens.html: fits 1440px viewport",
+    "proposal.html: fits 1440px viewport",
+    "downloads.html: fits 1440px viewport",
+    "Printed control bar is hidden",
+    "Print posture annotation is current",
+    "Print weight annotation is current",
+    "No JavaScript exceptions",
+    "No failed same-site asset requests",
+    "Charts work without JavaScript",
+    "Font load failure is explicit"
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "scope": "U+F2B18 project emblem and revised font integration",
+  "designRevision": "compact-spine-3",
+  "reviewedAt": "2026-09-06T03:32:43.791469+00:00",
+  "sources": {
+    "site/assets/project-icon.svg": "5ccb56e0fa93d5ffea11a9f2b7338c37bfadbdae0fc345fe8915c4f8b4f47f52",
+    "site/assets/favicon.svg": "2d037e739ad33173b2f5deab48c8d6bbcbf700059a5a99639895b64daed9016d",
+    "site/assets/style.css": "0c07227cefa9dad3f2733e2bc264e0833b0000af950d9c91f356edc7af9dae51",
+    "tools/build_site.mjs": "4ef2095f210691aeb6ec2d21830ba0cd76fce2be1bbdf7fcefb089e80640ec23",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.woff2": "b61574ca6daa9d03fbad54e7390123fbf344977e0acac69cff8f3e6bc2a57748"
+  },
+  "additionalValidation": {
+    "build": "npm run build passed",
+    "unitChecks": "npm test: 16 canonical-name tests and 11 site acceptance groups passed",
+    "visualReview": {
+      "homepages": [
+        {
+          "viewport": 1440,
+          "screenshot": ".tmp/browser-review/index-desktop.png"
+        },
+        {
+          "viewport": 375,
+          "screenshot": ".tmp/browser-review/index-375.png"
+        }
+      ],
+      "iconSizesCssPx": [
+        16,
+        24,
+        32,
+        64
+      ],
+      "nativeTextFontSizesCssPx": [
+        16,
+        24,
+        32,
+        64
+      ],
+      "devicePixelRatios": [
+        1,
+        2
+      ],
+      "nativeTextWeight": 400,
+      "findings": [
+        "Project emblem, caption, navigation, and brand mark remain aligned and legible on desktop and mobile.",
+        "Actual project SVG, favicon SVG, and Roman text remain recognizable at 16px and 24px, with intact counters and joins at both standard and high pixel density.",
+        "No page overflow or failed same-site asset requests were found."
+      ],
+      "limits": "Visual review concerns the current icon and homepage integration; user aesthetic acceptance remains separate.",
+      "smallSizeScreenshots": [
+        ".tmp/f2b18-icon-sizes-1x.png",
+        ".tmp/f2b18-icon-sizes-2x.png"
+      ]
+    }
+  }
+}

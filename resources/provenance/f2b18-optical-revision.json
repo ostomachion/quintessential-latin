@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "revision": "compact-spine-3",
+  "referenceVersion": "0.220",
+  "status": "unpublished optical revision",
+  "codePoint": "U+F2B18",
+  "glyphId": "opposed-bowls-0-0",
+  "glyphName": "uF2B1C",
+  "scope": "Gently modulated curved Roman spine with reinforced shoulder joins at weights 400-700. Original outer contour, advances, sidebearings, all other outlines and all spacing preserved.",
+  "historicalExtractionSha256": "194e947da9f15ec23459997b68eb14a47bbdf4c38b5fea602143c796caf2df53",
+  "sources": {
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1C_.glif": "af3547a3a3065c47f7938f011714a9e593c0051583e369ee3c8daf2676d1bef4",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1C_.glif": "8d037540f96fd655004e64134ac7df1d0d409d0f1a6c259bcd59f5afac506eec"
+  },
+  "outputs": {
+    "QuintessentialSerif-Bold.otf": "607f1b75e187ff64f2417bddb375dd14605efce9c931de47e1c33cf89259b7a5",
+    "QuintessentialSerif-Bold.woff2": "62aecbfb76ea461c70768ce8cdcd00edfdce94cbbd124f7061e25564930e3518",
+    "QuintessentialSerif-Regular.otf": "1ed7cbce59675f0d7e21764f97efc133801838739f66a6208a854c69e382065f",
+    "QuintessentialSerif-Regular.woff2": "33bc702026fb00cc7b04b6c5b0d7c8cdbc9a6f92748ab9ef27fb994a9e1e0f55",
+    "QuintessentialSerif-Variable.ttf": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+    "QuintessentialSerif-Variable.woff2": "b61574ca6daa9d03fbad54e7390123fbf344977e0acac69cff8f3e6bc2a57748"
+  },
+  "manifestSha256": "d5186158a0c089ccb1227694cba3ad58a50749229ac3683e8c33d40a91bc6103",
+  "icons": {
+    "project-icon.svg": "5ccb56e0fa93d5ffea11a9f2b7338c37bfadbdae0fc345fe8915c4f8b4f47f52",
+    "favicon.svg": "2d037e739ad33173b2f5deab48c8d6bbcbf700059a5a99639895b64daed9016d"
+  },
+  "visualReview": "Regular and Bold outlines and all principal connections reviewed against pinned STIX controls; user acceptance pending."
+}

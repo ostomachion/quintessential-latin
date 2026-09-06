@@ -10,7 +10,7 @@
   "sources": {
     "resources/catalogue.json": "f56c99d6264e6ffac11704dbd12a9d506189e926559134be53a66e24383bdc68",
     "docs/proposal.json": "f888a38e647e66aa97ecdffd54d3672698a025b34fb643c629e156183d4e15e9",
-    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
     "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
     "tools/build_pdfs.py": "d4e4e89b31af42fa8c95fb99d2f4ec9c7642442c76d312dd34f5dd29c8518aeb",
     "tools/requirements-pdfs.txt": "fc15532442f5ff4bc04f02a26e6af5d6e325062740ec4b679cb2f4324686baa4"
@@ -22,8 +22,8 @@
       "pages": 7
     },
     "quintessential-latin-extended-a.pdf": {
-      "sha256": "80f606ab38d16e032ba49aed12ed113360dc2051f9988df21f42ea889a297e49",
-      "bytes": 53632,
+      "sha256": "21749ff1bf4db91dc43896008518d4bb57f3c25300f3e47149f639f5835f6690",
+      "bytes": 53687,
       "pages": 9
     },
     "quintessential-latin-extended-b.pdf": {
@@ -32,8 +32,8 @@
       "pages": 16
     },
     "quintessential-latin-catalogue.pdf": {
-      "sha256": "19de4d62ca56c44fc9402aa81dbb359072f6fa182c2747580b4c20225b8d1242",
-      "bytes": 147220,
+      "sha256": "45ee4e80ec8da974339b68bc4e46738ba7a91f9d0f85e17c8f73636042f68c04",
+      "bytes": 147274,
       "pages": 32
     },
     "quintessential-latin-proposal.pdf": {

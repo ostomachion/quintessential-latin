@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-06T03:29:37.261600+00:00",
+  "comparison": "Current compiled fonts against the direct pre-edit font snapshot",
+  "publicCodePoint": "U+F2B18",
+  "stableGlyphId": "opposed-bowls-0-0",
+  "internalGlyphName": "uF2B1C",
+  "outlineException": "Only the Roman target; its variable outer contour must remain identical",
+  "metricsAndPairExceptions": [],
+  "status": "passed",
+  "comparisons": [
+    {
+      "filename": "QuintessentialSerif-Regular.otf",
+      "weight": null,
+      "posture": "Roman",
+      "beforeSha256": "7a282ab10725c4db51f41523d0d1d1fc4d76a6600ca4601df8d7aea87f825cf6",
+      "afterSha256": "1ed7cbce59675f0d7e21764f97efc133801838739f66a6208a854c69e382065f",
+      "glyphsCompared": 834,
+      "changedOutlineNames": [
+        "uF2B1C"
+      ],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 695556,
+      "explicitPairUnionCompared": 692224,
+      "allTargetPairs": "identical"
+    },
+    {
+      "filename": "QuintessentialSerif-Bold.otf",
+      "weight": null,
+      "posture": "Roman",
+      "beforeSha256": "8f0d8a1a9f03666953a461fd3d49865c4b8e92a193d5e974607b20d4b149fc07",
+      "afterSha256": "607f1b75e187ff64f2417bddb375dd14605efce9c931de47e1c33cf89259b7a5",
+      "glyphsCompared": 834,
+      "changedOutlineNames": [
+        "uF2B1C"
+      ],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 695556,
+      "explicitPairUnionCompared": 692224,
+      "allTargetPairs": "identical"
+    },
+    {
+      "filename": "QuintessentialSerif-Italic.otf",
+      "weight": null,
+      "posture": "Italic",
+      "beforeSha256": "9f6f8ccde48b2986718d45ad9d7680f563145fff99e4192bb1196566d3a05d79",
+      "afterSha256": "9f6f8ccde48b2986718d45ad9d7680f563145fff99e4192bb1196566d3a05d79",
+      "glyphsCompared": 234,
+      "changedOutlineNames": [],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 54756,
+      "explicitPairUnionCompared": 53824,
+      "allTargetPairs": "not applicable"
+    },
+    {
+      "filename": "QuintessentialSerif-BoldItalic.otf",
+      "weight": null,
+      "posture": "Italic",
+      "beforeSha256": "9086f503ad66c394340bb05cb3ca82df26a81d7dacdd86c45fd6ab83fab517ed",
+      "afterSha256": "9086f503ad66c394340bb05cb3ca82df26a81d7dacdd86c45fd6ab83fab517ed",
+      "glyphsCompared": 234,
+      "changedOutlineNames": [],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 54756,
+      "explicitPairUnionCompared": 53824,
+      "allTargetPairs": "not applicable"
+    },
+    {
+      "filename": "QuintessentialSerif-Variable.ttf",
+      "weight": 400,
+      "posture": "Roman",
+      "beforeSha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e",
+      "afterSha256": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+      "glyphsCompared": 834,
+      "changedOutlineNames": [
+        "uF2B1C"
+      ],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 695556,
+      "explicitPairUnionCompared": 692224,
+      "allTargetPairs": "identical",
+      "targetOuterContour": "identical"
+    },
+    {
+      "filename": "QuintessentialSerif-Variable.ttf",
+      "weight": 550,
+      "posture": "Roman",
+      "beforeSha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e",
+      "afterSha256": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+      "glyphsCompared": 834,
+      "changedOutlineNames": [
+        "uF2B1C"
+      ],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 695556,
+      "explicitPairUnionCompared": 692224,
+      "allTargetPairs": "identical",
+      "targetOuterContour": "identical"
+    },
+    {
+      "filename": "QuintessentialSerif-Variable.ttf",
+      "weight": 700,
+      "posture": "Roman",
+      "beforeSha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e",
+      "afterSha256": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191",
+      "glyphsCompared": 834,
+      "changedOutlineNames": [
+        "uF2B1C"
+      ],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 695556,
+      "explicitPairUnionCompared": 692224,
+      "allTargetPairs": "identical",
+      "targetOuterContour": "identical"
+    },
+    {
+      "filename": "QuintessentialSerif-Italic-Variable.ttf",
+      "weight": 400,
+      "posture": "Italic",
+      "beforeSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "afterSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "glyphsCompared": 234,
+      "changedOutlineNames": [],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 54756,
+      "explicitPairUnionCompared": 53824,
+      "allTargetPairs": "not applicable"
+    },
+    {
+      "filename": "QuintessentialSerif-Italic-Variable.ttf",
+      "weight": 550,
+      "posture": "Italic",
+      "beforeSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "afterSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "glyphsCompared": 234,
+      "changedOutlineNames": [],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 54756,
+      "explicitPairUnionCompared": 53824,
+      "allTargetPairs": "not applicable"
+    },
+    {
+      "filename": "QuintessentialSerif-Italic-Variable.ttf",
+      "weight": 700,
+      "posture": "Italic",
+      "beforeSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "afterSha256": "c2103d7a616f386d2fd3ee0049e7feda6b633ac83e93b542c8a68a30b9379bcc",
+      "glyphsCompared": 234,
+      "changedOutlineNames": [],
+      "cmapAndGlyphOrder": "identical",
+      "allHorizontalMetrics": "identical",
+      "effectiveKerningAndPositioning": "identical",
+      "orderedPairsCoveredIncludingImplicitZeros": 54756,
+      "explicitPairUnionCompared": 53824,
+      "allTargetPairs": "not applicable"
+    }
+  ],
+  "confirmedCurrentAt": "2026-09-06T03:31:45.163408+00:00",
+  "buildManifestSha256": "d5186158a0c089ccb1227694cba3ad58a50749229ac3683e8c33d40a91bc6103",
+  "targetSourceSha256": {
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1C_.glif": "af3547a3a3065c47f7938f011714a9e593c0051583e369ee3c8daf2676d1bef4",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1C_.glif": "8d037540f96fd655004e64134ac7df1d0d409d0f1a6c259bcd59f5afac506eec"
+  },
+  "fontInputsRecheckedAfterBuild": true
+}

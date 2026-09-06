@@ -15,6 +15,7 @@ import sys
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen, RecordingPen, replayRecording
 from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.woff2 import compress
 from fontTools.varLib.instancer import instantiateVariableFont
@@ -177,9 +178,60 @@ def preserve_bowl_counter_variations(font: TTFont) -> None:
                 variation.coordinates[start:end] = matches[0].coordinates[native_start:native_end]
 
 
+def preserve_revised_outer_variations(font: TTFont) -> None:
+    """Keep optically revised glyphs' outer contours exact through gvar packing.
+
+    Editing a counter can switch the packer from dense to sparse deltas for the
+    entire glyph. IUP then approximates unchanged outer points by fractional
+    deltas. Materialize the rounded source endpoint differences for that contour
+    alone; counter variation data and phantom metric points remain untouched.
+    """
+    italic = bool(font["head"].macStyle & 2)
+    styles = ("Italic", "BoldItalic") if italic else ("Regular", "Bold")
+    sources = [Font.open(SOURCES / f"QuintessentialSerif-{style}.ufo") for style in styles]
+    try:
+        for name in sources[0].glyphOrder:
+            metadata = sources[0][name].lib.get("org.quintessential.construction", {})
+            revision = metadata.get("opticalRevision")
+            if revision is None:
+                continue
+            if sources[1][name].lib.get("org.quintessential.construction", {}).get("opticalRevision") != revision:
+                raise RuntimeError(f"{name} has inconsistent optical revisions across source endpoints")
+            endpoints = []
+            for source in sources:
+                pen = TTGlyphPen(source)
+                source[name].draw(pen)
+                endpoint = pen.glyph()
+                if not endpoint.endPtsOfContours:
+                    raise RuntimeError(f"{name} has no outer contour to preserve")
+                endpoints.append(endpoint)
+            count = endpoints[0].endPtsOfContours[0] + 1
+            if endpoints[1].endPtsOfContours[0] + 1 != count:
+                raise RuntimeError(f"{name} has incompatible outer contour endpoints")
+            glyf = font["glyf"]
+            points, ends, flags = glyf[name].getCoordinates(glyf)
+            expected_flags = [flag & 1 for flag in endpoints[0].flags[:count]]
+            if (not ends or ends[0] + 1 != count
+                    or points[:count] != endpoints[0].coordinates[:count]
+                    or [flag & 1 for flag in flags[:count]] != expected_flags
+                    or [flag & 1 for flag in endpoints[1].flags[:count]] != expected_flags):
+                raise RuntimeError(f"{name} compiled outer contour no longer matches its source")
+            variations = font["gvar"].variations[name]
+            if len(variations) != 1 or variations[0].axes != {AXIS_TAG: (0.0, 1.0, 1.0)}:
+                raise RuntimeError(f"{name} has an unsupported outer contour variation model")
+            variations[0].coordinates[:count] = [
+                (bold[0] - regular[0], bold[1] - regular[1])
+                for regular, bold in zip(endpoints[0].coordinates[:count], endpoints[1].coordinates[:count])
+            ]
+    finally:
+        for source in sources:
+            source.close()
+
+
 def normalize_variable_font(path: Path, italic: bool) -> None:
     with TTFont(path, recalcTimestamp=False) as font:
         preserve_bowl_counter_variations(font)
+        preserve_revised_outer_variations(font)
         timestamp = SOURCE_DATE_EPOCH + 2_082_844_800
         font["head"].created = timestamp
         font["head"].modified = timestamp
@@ -544,6 +596,7 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("stix_bowled_spine_italic.py"),
         Path(__file__).with_name("stix_bowled_spine_italic_normal.py"),
         Path(__file__).with_name("stix_opposed_bowls.py"),
+        Path(__file__).with_name("stix_compact_spine.py"),
         Path(__file__).with_name("stix_arched_opposed_bowls.py"),
         Path(__file__).with_name("stix_extensions.py"),
         Path(__file__).with_name("stix_stemless.py"),

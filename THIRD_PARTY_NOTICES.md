@@ -9,6 +9,10 @@ The Quintessential Serif font binaries, UFO masters, designspaces, and preserved
 font fixtures are distributed under the SIL Open Font License 1.1. The STIX Two
 Text donor fonts remain under their existing SIL Open Font License 1.1.
 
+The outlined project mark and favicon in `site/assets/` are exported from
+Quintessential Serif's U+F2B18. They preserve the font's STIX attribution and
+SIL Open Font License 1.1 notice in their SVG descriptions.
+
 Preserve the OFL, FONTLOG, and TRADEMARKS notices alongside font distributions:
 - resources/fonts/QuintessentialSerif/OFL.txt
 - resources/fonts/QuintessentialSerif/FONTLOG.txt

@@ -2192,7 +2192,7 @@
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_19.glif": "823d802a225dde71056b68f401b2232451c5af41a4ecb43760156b672b6022eb",
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1A_.glif": "7760a02ba49fa7ba48774edd120598e5beb42c505be3fcc2a74698803e916581",
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1B_.glif": "3077b24d02d1c6e3f41198854bdb7047209f92f7b1d4b8d60d3eb76ecebcce1f",
-    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1C_.glif": "0ffae141f9bac8ec866c082f7a7c818085cc78fee4c58bb4373f60d15c26e449",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1C_.glif": "8d037540f96fd655004e64134ac7df1d0d409d0f1a6c259bcd59f5afac506eec",
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1D_.glif": "7a0fd1d858265fd8d02773af4e205fee1b98fa1ce795a3ca2d00e3b6b7fd3ea6",
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1E_.glif": "053fce3b3c2bc4ac62f6c531369b883171703b6651f1245b1259128c91804e3c",
     "fonts/QuintessentialSerif/QuintessentialSerif-Bold.ufo/glyphs/uF_2B_1F_.glif": "3a76c1dc7f163f5325b78178c2ef3367b90f891667ee36a3be617d9cd886616d",
@@ -3513,7 +3513,7 @@
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_19.glif": "cada4682e1b7cadf5f435609e03bc88917154206479a780ee465f0da35277c42",
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1A_.glif": "c6046fd20ad96952a65169311a0fb6c5a68e343dcde69a165f95642a7c40df7d",
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1B_.glif": "cee0a21b3557548fbe67c6fb47f95b0fd3718f41b4ec18063ec9d9907efbc726",
-    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1C_.glif": "eaa580f6015be54ff6abc582593962a2bc4773bfd23c53e36571b5345ce26279",
+    "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1C_.glif": "af3547a3a3065c47f7938f011714a9e593c0051583e369ee3c8daf2676d1bef4",
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1D_.glif": "80e8652a81d94168bebc1dbd16d9847f236ca5b580a227537b72947c80a5f941",
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1E_.glif": "5c3c254db2bc83218f8533012fd4e68d9f2fed3ccea9f60a910b9c9b61c12f5d",
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/glyphs/uF_2B_1F_.glif": "a9f77a78be822d7278cd1bebfdd2a06ba849ea2614f60cad60ef07e214362c0d",
@@ -4131,10 +4131,10 @@
     "fonts/QuintessentialSerif/QuintessentialSerif-Regular.ufo/metainfo.plist": "b6aa7bbbf391fb84be27fb95ce735b293b9738b0213c6bcc634edde9490b979b",
     "fonts/QuintessentialSerif/QuintessentialSerif-Roman.designspace": "62c6abcf9a9f72541fa18db7e8c3458d6e5f1bac9c3bba1ed0c0bba83918bfcd",
     "resources/quintessential-latin-allocation.json": "4fb6bd07afb76175842c133fed87972d56e741bcfd36ef7457668fc637f332f7",
-    "tools/build_quintessential_font.py": "06be3f2c65861d3a46f5708361819db8f7e3164935b7dcf5d107a03e0a9de557",
+    "tools/build_quintessential_font.py": "1fcf743b410ee4550db0f9ee57ead82ee865e101471b7fccfaed30b42888d118",
     "tools/canonical_glyph_names.js": "735f9bfbfa54f0055e1fb577e47215f5b14b718fa800f9128ed7b02ed2ee8f80",
     "tools/export_glyph_catalogue.js": "aa252ee8be720a390bb3bfdd25e16bf10378b44e8a54ea1d92760854dcb06563",
-    "tools/import_stix_foundation.py": "dee6f804d5a18d566177214cdbd16f3c702df488268fafbef8fa654e57159c96",
+    "tools/import_stix_foundation.py": "a2eab4c69ca0f762172154d83e986f055a74a90f23c92a53aa55eed9e980aad1",
     "tools/quintessential_font.py": "a02dd092cd66767c170b6cc8cf35837efbf11c07bf84940fbaa0fb17fdc09bb4",
     "tools/stix_arched_opposed_bowls.py": "b61077ce46c41121d1729905dbf0f36ef427e657abe8079badf5af5f729cfef4",
     "tools/stix_arched_terminals.py": "a0b4dcf92f7b569934446c629922f702c359f183b53b67fa2acd76cfdc19690c",
@@ -4142,6 +4142,7 @@
     "tools/stix_bowled_spine_italic.py": "8a8cf9e44e8f8bbd22387fce48dd277b3f87834d4653c7cf62e125008ecf3913",
     "tools/stix_bowled_spine_italic_normal.py": "128004ae6913d0b082ad9d3c9c40232c420b3f8f8f03debf132127787643900c",
     "tools/stix_bowled_spine_normal.py": "f29a44dac26e2b9856b4d22c86f47ab3bbe208e1066127d210f637fa17fc50dc",
+    "tools/stix_compact_spine.py": "b02cb41319234e5c00a3e8d30b5752dddcb11996b53a95cd59f14de153982b06",
     "tools/stix_double_bowl.py": "bc10be1e9ac55cf620944599a5e5d5f441b5e270e644d1af23e3870d2ec55571",
     "tools/stix_extensions.py": "22ed1d82b6309962200eb102016ba2dcffe1cb3bd692ca2653f7be82e71b75cd",
     "tools/stix_middle_hook_joins.py": "337e46d4ca6a8387f0ea18dfcb5c07b20a958d30c16e3ee100471e2e7f217518",
@@ -4161,16 +4162,16 @@
       "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
     },
     "proof-data.json": {
-      "bytes": 52850781,
-      "sha256": "a1ecaa1d289c059a1d572f7243cee30abdc1b28396988492bf89817f32d77464"
+      "bytes": 52852574,
+      "sha256": "f2e423b260a8fbd3b8f98a46221f1e007ee085f672bc1a6c8469269507562b9b"
     },
     "QuintessentialSerif-Bold.otf": {
-      "bytes": 1518092,
-      "sha256": "8f0d8a1a9f03666953a461fd3d49865c4b8e92a193d5e974607b20d4b149fc07"
+      "bytes": 1518428,
+      "sha256": "607f1b75e187ff64f2417bddb375dd14605efce9c931de47e1c33cf89259b7a5"
     },
     "QuintessentialSerif-Bold.woff2": {
-      "bytes": 41188,
-      "sha256": "4ecd77aa1975b2c0de4b1d146fd2d193f010ea26b74e09742590ab1c65b33c3b"
+      "bytes": 41308,
+      "sha256": "62aecbfb76ea461c70768ce8cdcd00edfdce94cbbd124f7061e25564930e3518"
     },
     "QuintessentialSerif-BoldItalic.otf": {
       "bytes": 501196,
@@ -4197,20 +4198,20 @@
       "sha256": "899bc7370d555296766e202c1830e803f7b3e5744f6a320f2a6043109f45c338"
     },
     "QuintessentialSerif-Regular.otf": {
-      "bytes": 1395928,
-      "sha256": "7a282ab10725c4db51f41523d0d1d1fc4d76a6600ca4601df8d7aea87f825cf6"
+      "bytes": 1396132,
+      "sha256": "1ed7cbce59675f0d7e21764f97efc133801838739f66a6208a854c69e382065f"
     },
     "QuintessentialSerif-Regular.woff2": {
-      "bytes": 34868,
-      "sha256": "4b32046cb8d1fb11060ce12be666a155c840b3b3067d524d87729c80755c4667"
+      "bytes": 34900,
+      "sha256": "33bc702026fb00cc7b04b6c5b0d7c8cdbc9a6f92748ab9ef27fb994a9e1e0f55"
     },
     "QuintessentialSerif-Variable.ttf": {
-      "bytes": 554064,
-      "sha256": "0b8b79effdfda936ae7e9e919cd30bbbcdfe83c5e20a687da2f7799432ef5f0e"
+      "bytes": 554096,
+      "sha256": "366b4c6f6332403bb044c21a06b21035b4e61972bcb0c88aa37014fda09ea191"
     },
     "QuintessentialSerif-Variable.woff2": {
-      "bytes": 47628,
-      "sha256": "b1ba879525b03d6298ff7026f0a4f490a690fad5466994cbee2992058a654369"
+      "bytes": 47684,
+      "sha256": "b61574ca6daa9d03fbad54e7390123fbf344977e0acac69cff8f3e6bc2a57748"
     },
     "TRADEMARKS.txt": {
       "bytes": 92,

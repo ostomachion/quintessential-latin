@@ -1,3 +1,5 @@
+<p><img src="site/assets/project-icon.svg" width="88" height="88" alt="Quintessential Latin project emblem, U+F2B18"></p>
+
 # Quintessential Latin
 
 A systematic repertoire of 832 Latin-derived constructions, with a reference
@@ -10,6 +12,10 @@ font, code charts, and a draft proposal for the Under-ConScript Unicode Registry
 Quintessential Serif 0.220 contains all 832 forms in Roman and 232 in native
 Italic, across weights 400–700. The 600 remaining Italic forms are pending.
 These are proposed private-use assignments, not Unicode or UCSUR registrations.
+
+U+F2B18 is the project mark. The working reference includes an optical refinement
+of its Roman joins and shared spine; see the
+[before-and-after design review](docs/f2b18-optical-design.md).
 
 | Block | Range | Assigned |
 | --- | --- | ---: |

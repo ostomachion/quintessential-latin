@@ -3,8 +3,9 @@
 
 The pre-change capture supplies the old identity registry independently of the
 new construction code. Internal glyph names and their GID prefix stay fixed;
-only assigned characters move. The authorized s correction is the sole old
-outline and metrics exception, and only pairs touching that identity may change.
+only assigned characters move. The authorized s correction is the only old
+metrics and pair exception. The later Roman U+F2B18 optical revision also permits
+its outline to change, while retaining its advance, metrics, and effective pairs.
 """
 
 from __future__ import annotations
@@ -39,6 +40,8 @@ BASELINE = ROOT / "tests/baselines/0.210"
 BASELINE_0150 = ROOT / "tests/baselines/0.150"
 CHANGED_ID = "special-spine"
 CHANGED_NAME = "uF2B03"
+OPTICAL_REVISION_ID = "opposed-bowls-0-0"
+OPTICAL_REVISION_NAME = "uF2B1C"
 OLD_CMAPS = {
     False: {**MAIN_SCRIPT_CMAP,
             **{code: f"u{code:X}" for code in range(0xF2B00, 0xF2BA0)},
@@ -180,6 +183,10 @@ class AdditionsBaselineTests(unittest.TestCase):
                 self.assertEqual(current["legacyIndex"], before["legacyIndex"])
                 self.assertFalse(current["middleLegs"])
         self.assertEqual(ALLOCATION_BY_ID[CHANGED_ID]["glyphName"], CHANGED_NAME)
+        revised = ALLOCATION_BY_ID[OPTICAL_REVISION_ID]
+        self.assertEqual((revised["codePoint"], revised["glyphName"], revised["recipeCodePoint"],
+                          revised["postures"]),
+                         (0xF2B18, OPTICAL_REVISION_NAME, 0xF2B1C, ["Roman"]))
         self.assertEqual(sum(entry["middleLegs"] for entry in ALLOCATION_ENTRIES), 348)
         self.assertEqual(sum(entry["middleLegs"] and "Italic" in entry["postures"]
                              for entry in ALLOCATION_ENTRIES), 72)
@@ -208,7 +215,8 @@ class AdditionsBaselineTests(unittest.TestCase):
                 for name in OLD_NAMES[italic]:
                     with self.subTest(style=style, glyph=name):
                         if name != CHANGED_NAME:
-                            self.assertEqual(outline(after, name), outline(before, name))
+                            if italic or name != OPTICAL_REVISION_NAME:
+                                self.assertEqual(outline(after, name), outline(before, name))
                             self.assertEqual(after[name].width, before[name].width)
                         expected = [ALLOCATION_BY_NAME[name]["codePoint"]] if name in ALLOCATION_BY_NAME else before[name].unicodes
                         self.assertEqual(after[name].unicodes, expected)
@@ -224,7 +232,8 @@ class AdditionsBaselineTests(unittest.TestCase):
         original, current = before.getGlyphSet(), after.getGlyphSet()
         for name in OLD_NAMES[italic]:
             if name != CHANGED_NAME:
-                self.assertEqual(outline(current, name), outline(original, name), name)
+                if italic or name != OPTICAL_REVISION_NAME:
+                    self.assertEqual(outline(current, name), outline(original, name), name)
                 self.assertEqual(after["hmtx"][name], before["hmtx"][name], name)
         self.assert_pairs_preserved(effective_pairs(before), effective_pairs(after), OLD_NAMES[italic], ZERO_PAIR)
 
