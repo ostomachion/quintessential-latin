@@ -18,6 +18,7 @@ const base = remoteBase || `http://127.0.0.1:${port}/quintessential-latin/`;
 let server, browser;
 const failures=[], checks=[], responses=[];
 const check=(name,condition)=>{assert.ok(condition,name);checks.push(name);};
+const checkEqual=(name,actual,expected)=>{assert.deepEqual(actual,expected,name);checks.push(name);};
 try {
   if(!remoteBase){
     server=spawn(process.execPath,['tools/serve_site.mjs','--port',String(port)],{cwd:root,stdio:['ignore','pipe','pipe'],windowsHide:true});
@@ -33,7 +34,7 @@ try {
     assert.ok(ready,`Local preview did not start: ${serverLog}`);
   }
   browser=await chromium.launch({headless:true,...(process.env.QLAT_BROWSER_CHANNEL?{channel:process.env.QLAT_BROWSER_CHANNEL}:{})});
-  const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write']});
+  const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1,permissions:['clipboard-read','clipboard-write']});
   const page=await context.newPage();
   page.on('pageerror',error=>failures.push(error.message));
   page.on('response',response=>{if(response.url().startsWith(base)&&response.status()>=400)responses.push(`${response.status()} ${response.url()}`);});
@@ -42,12 +43,13 @@ try {
     await page.waitForFunction(()=>document.body.dataset.fonts==='ready',{timeout:20000});
     await page.evaluate(()=>document.fonts.ready);
   };
-  for(const file of ['index.html','charts.html','proposal.html','downloads.html']){
+  for(const file of ['index.html','construction.html','charts.html','proposal.html','downloads.html']){
     await navigate(file);
     check(`${file}: page title`,await page.locator('h1').count()===1);
     check(`${file}: shared weight control`,await page.locator('#font-weight').count()===1);
     check(`${file}: shared italic control`,await page.locator('#font-italic').count()===1);
     check(`${file}: native script font loaded`,await page.evaluate(()=>Array.from(document.fonts).some(face=>face.family.replace(/[''""]/g," ").trim()==="Quintessential Serif" && face.status==="loaded")));
+    check(`${file}: successful loading has no visible or accessible pending state`,await page.locator('#font-status').textContent()===''&&await page.locator('.pending-label:visible,[aria-label$=" — Italic pending"]').count()===0);
     check(`${file}: document fits desktop`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     await page.screenshot({path:path.join(output,file.replace('.html','-desktop.png')),fullPage:file!=='charts.html'});
   }
@@ -110,11 +112,14 @@ try {
   check('Character details open',await page.locator('#character-dialog').isVisible());
   await page.locator('#copy-character').click();
   const copied=await page.evaluate(()=>navigator.clipboard.readText());
-  check('Copy preserves supplementary-plane scalar',copied===String.fromCodePoint(0xF2B00));
+  check('Copy preserves one supplementary-plane scalar and its UTF-16 pair',copied===String.fromCodePoint(0xF2B00)&&[...copied].length===1&&copied.length===2);
   await page.locator('#copy-code').click();
   check('Copy code uses Unicode notation',await page.evaluate(()=>navigator.clipboard.readText())==='U+F2B00');
   await page.keyboard.press('Escape');
   check('Escape closes character details',!(await page.locator('#character-dialog').isVisible()));
+  await page.locator('#character-search').fill(copied);
+  await page.waitForFunction(()=>document.querySelector('#result-count').textContent==='1 character found');
+  check('Pasting the copied character searches its scalar identity',await page.locator('#search-results [data-glyph]').count()===1&&await page.locator('#search-results .code').innerText()==='U+F2B00');
   const asymmetricNames=[];
   for(const point of asymmetricPoints){
     await page.locator('#character-search').fill(`U+${point.toString(16).toUpperCase()}`);
@@ -153,7 +158,7 @@ try {
 
   for(const width of [320,375,768,1440]){
     await page.setViewportSize({width,height:1000});
-    for(const file of width===320?['charts.html']:['index.html','charts.html','proposal.html','downloads.html']){
+    for(const file of ['index.html','construction.html','charts.html','proposal.html','downloads.html']){
       await navigate(file);
       check(`${file}: fits ${width}px viewport`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
       if(file==='charts.html'){
@@ -255,14 +260,35 @@ try {
   check('Unifont is the active navigation tab',await page.locator('.site-nav [aria-current="page"]').innerText()==='Unifont');
   check('Bitmap page offers fixed dimensions instead of outline font controls',await page.locator('#font-weight,#font-italic').count()===0);
   check('1216 bitmaps and five complete Unifont sheets',await page.locator('.bitmap-ready').count()===1216&&await page.locator('.unifont-grid').count()===5);
-  const bitmapGeometry=await page.locator('.unifont-grid').first().evaluate(table=>{
-    const tile=table.querySelector('td'),pixel=tile.querySelector('.bitmap'),edge=tile.querySelector('.unifont-tile-rules');
-    const box=element=>element.getBoundingClientRect(),t=box(tile),p=box(pixel),e=box(edge),g=box(table);
-    return {tileWidth:t.width,tileHeight:t.height,gridWidth:g.width,gridHeight:g.height,pixelWidth:p.width,pixelHeight:p.height,insetX:p.x-e.x,insetY:p.y-e.y};
-  });
-  check('Unifont PNG geometry retains 32px tiles and exact native pixel placement',JSON.stringify(bitmapGeometry)===JSON.stringify({tileWidth:32,tileHeight:32,gridWidth:560,gridHeight:544,pixelWidth:8,pixelHeight:16,insetX:5,insetY:8}));
-  await page.screenshot({path:path.join(output,'unifont-desktop.png'),fullPage:true});
   await page.waitForFunction(()=>document.body.dataset.unifont==='ready');
+  const checkBitmapGeometry=async label=>{
+    // Pixel alignment runs in animation frames after font/layout changes.
+    await page.evaluate(async()=>{for(let i=0;i<2;i++)await new Promise(requestAnimationFrame);});
+    const geometry=await page.locator('.unifont-grid').first().evaluate(table=>{
+      const tile=table.querySelector('td'),pixel=tile.querySelector('.bitmap'),edge=tile.querySelector('.unifont-tile-rules');
+      const box=element=>element.getBoundingClientRect(),t=box(tile),p=box(pixel),e=box(edge),g=box(table);
+      return {
+        dimensions:{tileWidth:t.width,tileHeight:t.height,gridWidth:g.width,gridHeight:g.height,pixelWidth:p.width,pixelHeight:p.height},
+        origin:{x:p.x,y:p.y},
+        // The native inset is 5/8 from the guide origin. At DPR 1 the runtime
+        // rounds that screen position, so a fractional guide changes the inset.
+        expectedOrigin:{x:Math.round(e.x+5),y:Math.round(e.y+8)}
+      };
+    });
+    checkEqual(`${label}: exact Unifont tile, grid, and bitmap dimensions`,geometry.dimensions,{tileWidth:32,tileHeight:32,gridWidth:560,gridHeight:544,pixelWidth:8,pixelHeight:16});
+    checkEqual(`${label}: native bitmap placement snaps to whole screen pixels`,geometry.origin,geometry.expectedOrigin);
+  };
+  await checkBitmapGeometry('Unifont');
+  const bitmapScroller=page.locator('.unifont-scroll').first();
+  const originalScrollerStyle=await bitmapScroller.getAttribute('style');
+  try{
+    await bitmapScroller.evaluate(element=>{element.style.position='relative';element.style.left='0.25px';element.style.top='0.5px';});
+    await checkBitmapGeometry('Fractionally shifted Unifont');
+  }finally{
+    await bitmapScroller.evaluate((element,style)=>{if(style===null)element.removeAttribute('style');else element.setAttribute('style',style);},originalScrollerStyle);
+  }
+  await checkBitmapGeometry('Restored Unifont');
+  await page.screenshot({path:path.join(output,'unifont-desktop.png'),fullPage:true});
   await page.locator('[data-unifont-code="F2A03"] a').click();
   check('Selecting a bitmap targets its enlarged proof',new URL(page.url()).hash==='#bitmap-f2a03'&&await page.locator('#unifont-inspector #bitmap-f2a03').count()===1&&!(await page.locator('#character-dialog').isVisible()));
   await page.locator('#bitmap-f2a03 .bitmap-source summary').click();
@@ -284,6 +310,11 @@ try {
 
   const noJs=await browser.newContext({javaScriptEnabled:false,viewport:{width:1024,height:900}});
   const staticPage=await noJs.newPage();
+  for(const file of ['index.html','construction.html','proposal.html']){
+    await staticPage.goto(new URL(file,base).href);
+    check(`${file}: explanation and links remain available without JavaScript`,await staticPage.locator('main h1').count()===1&&(await staticPage.locator('main p').count())>=4&&await staticPage.locator('main a[href]').count()>0);
+    check(`${file}: no loading or development state leaks without JavaScript`,await staticPage.locator('#font-status').innerText()===''&&await staticPage.locator('.pending-label:visible').count()===0);
+  }
   await staticPage.goto(new URL('charts.html',base).href);
   check('Charts work without JavaScript',await staticPage.locator('table[data-chart-kind="screen"]:visible td [data-glyph]').count()===1216);
   await staticPage.setViewportSize({width:320,height:900});
@@ -305,6 +336,10 @@ try {
   await failedPage.waitForFunction(()=>document.body.dataset.fonts==='error');
   const failureMarkers=await failedPage.locator('.name-entry .glyph-wrap').evaluateAll(slots=>slots.length===1216&&slots.every(slot=>{const marker=getComputedStyle(slot,'::after'),bounds=slot.getBoundingClientRect(),column=slot.parentElement.getBoundingClientRect();return marker.content==='"?"'&&parseFloat(marker.lineHeight)<=bounds.height+1&&bounds.width<=column.width+1&&bounds.height<=parseFloat(getComputedStyle(slot.closest('.name-entry')).lineHeight)+1;}));
   check('375px font failure uses fitted markers for all names and an explicit explanation',failureMarkers&&await failedPage.locator('.names-font-legend:visible').count()===3&&await failedPage.locator('#font-status').isVisible());
+  await failedPage.unroute('**/QuintessentialSerif/*.woff2');
+  await failedPage.reload({waitUntil:'load'});
+  await failedPage.waitForFunction(()=>document.body.dataset.fonts==='ready');
+  check('Reload after font availability returns clears all failure text and markers',await failedPage.locator('#font-status').textContent()===''&&!(await failedPage.locator('#font-status').isVisible())&&await failedPage.locator('html.font-failed,.names-font-legend:visible,.pending-label:visible').count()===0);
   await fontFailure.close();
   await writeFile(path.join(output,'report.json'),JSON.stringify({base,checks:checks.length,passed:checks,errors:failures,failedResponses:responses},null,2));
   console.log(`Passed ${checks.length} browser checks; screenshots in .tmp/browser-review.`);

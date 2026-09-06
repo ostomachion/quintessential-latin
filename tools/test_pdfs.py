@@ -78,7 +78,11 @@ class PublicationPdfTests(unittest.TestCase):
             self.assertGreaterEqual(bottom,y0-0.001,label); self.assertLessEqual(top,y1+0.001,label)
             self.assertGreaterEqual(left,42,label); self.assertLessEqual(right,570,label)
             self.assertGreaterEqual(bottom,62,label); self.assertLessEqual(top,735,label)
-            self.assertEqual(placement['fontSize'],22 if placement['kind']=='chart' else 10,label)
+            if placement['kind']=='proposal':
+                self.assertGreater(placement['fontSize'],0,label)
+                self.assertLessEqual(placement['fontSize'],58,label)
+            else:
+                self.assertEqual(placement['fontSize'],22 if placement['kind']=='chart' else 10,label)
 
     def test_reference_grid_geometry_rules_and_hatched_vacancies(self):
         self.assertEqual(self.audit['presentation'],self.presentation)
@@ -244,15 +248,27 @@ class PublicationPdfTests(unittest.TestCase):
     def test_proposal_contains_every_section_and_reference(self):
         proposal=json.loads((ROOT/'docs'/'proposal.json').read_text(encoding='utf-8'))
         text=re.sub(r'\s+',' ',' '.join(self.texts['quintessential-latin-proposal.pdf']))
+        by_id={entry['glyphId']:entry for entry in self.data['entries']}
+        expected_examples=[]
         for section in proposal['sections']:
             self.assertIn(section['title'],text)
+            for glyph_id in section.get('examples',[]):
+                entry=by_id[glyph_id]
+                expected_examples.append(entry['codePoint'])
+                self.assertIn(entry['canonicalName'],text)
+                self.assertIn(f'U+{entry["codePoint"]:X}',text)
+            for url in section.get('references',[]):
+                ref=next(ref for ref in proposal['references'] if ref['url']==url)
+                self.assertIn(ref['title'].replace('\u2013','-').replace('\u2014','-'),text)
         for reference in proposal['references']:
             self.assertIn(reference['url'],text)
-        self.assertIn('1,216',text)
+        extracted=Counter(ord(char) for char in text if ord(char) in self.entries)
+        self.assertEqual(extracted,Counter(expected_examples),'Proposal examples must retain their actual supplementary-plane scalars')
+        self.assertIn(f'{len(self.entries):,}',text)
         self.assertIn('native Italic',text)
-        self.assertIn('each can extend independently',text)
-        self.assertIn('U+F2EBF',text)
-        self.assertIn('not an announcement of registration',text)
+        for block in self.data['blocks']:
+            self.assertIn(f'U+{block["start"]:X}',text)
+            self.assertIn(f'U+{block["end"]:X}',text)
 
 
 if __name__=='__main__':

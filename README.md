@@ -2,8 +2,15 @@
 
 # Quintessential Latin
 
-A systematic repertoire of 1,216 Latin-derived constructions, with a reference
-font, code charts, and a draft proposal for the Under-ConScript Unicode Registry.
+Quintessential Latin takes familiar Latin letterforms apart, identifies their
+recurring structural features, and builds a consistent repertoire from those
+components. Each underlying form is designed to be writable in one continuous
+stroke. This is a deliberate design abstraction informed by Latin typography.
+
+Its 1,216 individually identified forms are independent of any language or
+pronunciation system. An adopting orthography, conlang, or Latin-like script can
+choose a subset and assign it linguistic functions. The repertoire is distinct
+from its private-use encoding and from the fonts that render it.
 
 **Author:** Josh Hufford  
 **Website:** https://ostomachion.github.io/quintessential-latin/  
@@ -47,9 +54,9 @@ npm run dev
 Open http://localhost:8767/quintessential-latin/. The preview also serves the
 root path. All site URLs work beneath the GitHub Pages project prefix.
 
-The five pages introduce the construction system, present numeric charts and
-names lists, explain the draft proposal, offer font/data/PDF downloads, and show
-the Unifont bitmap drawings. Its 1,216 drawings are all 8 × 16 pixels,
+The six pages provide a guided introduction, a detailed construction reference,
+numeric charts and names lists, a self-contained draft proposal, implementation
+and download instructions, and the Unifont bitmap drawings. Its 1,216 drawings are all 8 × 16 pixels,
 with five 256-position charts, a selected-character inspector, static proofs and
 42 pinned native donors. Editable drawings and the generated `.hex` download
 are under `resources/unifont/`. Native y, script-g and dotless-j precedents govern
@@ -110,6 +117,33 @@ follow [canonical naming version 3](docs/quintessential-latin-canonical-naming-s
 `docs/proposal.json` supplies the website and PDF proposal from one text source.
 The proposed repertoire remains subject to registry review; publishing the
 website does not submit the proposal.
+
+The [source authority map](docs/source-authority.md) identifies which files
+control inventory, names, stable identities, code points, fonts, and versions.
+The [registry review](docs/registry-review.md) records the primary sources
+checked on 6 September 2026 and distinguishes current UCSUR table entries,
+historical CSUR guidance, and project recommendations. The
+[introduction design notes](docs/introduction-design.md) explain the selected
+examples and illustrative continuous paths.
+
+For editorial updates, change the proposal JSON and site generator modules,
+then refresh dependent artifacts in order:
+
+```sh
+npm run build:ucd
+npm run build:pdf
+npm run test:pdf
+npm run build
+npm test
+npm run test:browser
+```
+
+Use the existing PDF Python environment for the PDF commands. After generation,
+render the PDFs with `tools/render_pdf_review.py` and inspect the pages. Browser
+checks include the introduction and construction reference without JavaScript,
+supplementary-character copying, private-use scalar search, font failure and
+recovery, and real narrow viewport dimensions. Editorial regression checks bind
+examples, citations, versions, coverage, and permanent links to their sources.
 
 The [UCD-style data package](resources/ucd/ReadMe.txt) covers all three blocks
 in UCSUR's six published text formats: `Blocks.txt`, `UnicodeData.txt`,
@@ -178,3 +212,7 @@ distributed with the fonts.
 Engineering results and visual review are recorded in
 [verification](docs/verification.md). User visual acceptance remains distinct
 from automated verification and publication.
+
+The [website and proposal revision report](docs/editorial-implementation-report.md)
+records the editorial changes, sources checked, validation performed, and
+remaining author/registry decisions for the current presentation.

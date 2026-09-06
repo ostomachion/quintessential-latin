@@ -11,7 +11,7 @@
   "scripts": {
     "build": "node tools/export_glyph_catalogue.js --check && node tools/export_ucd.js --check && npm run build:unifont && node tools/build_site.mjs",
     "dev": "node tools/serve_site.mjs",
-    "test": "node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_ucd.js && node tools/test_unifont.mjs && node tools/test_site.mjs",
+    "test": "node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_ucd.js && node tools/test_unifont.mjs && node tools/test_site.mjs && node tools/test_editorial.mjs",
     "test:browser": "node tools/test_browser.mjs",
     "build:pdf": "python tools/build_pdfs.py",
     "test:pdf": "python tools/test_pdfs.py",

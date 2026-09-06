@@ -1,7 +1,7 @@
 {
   "title": "Quintessential Latin",
-  "subtitle": "Proposal for registration in the Under-ConScript Unicode Registry",
-  "status": "Draft proposal · 6 September 2026 · Reference font 0.250",
+  "subtitle": "Draft proposal for registration in the Under-ConScript Unicode Registry",
+  "status": "Draft for review · 6 September 2026 · Allocation and reference fonts 0.250 · Naming version 3",
   "author": "Josh Hufford",
   "date": "2026-09-06",
   "version": "0.250",
@@ -10,137 +10,291 @@
       "id": "purpose",
       "title": "1. Purpose and scope",
       "paragraphs": [
-        "Quintessential Latin is a systematic repertoire of Latin-derived letterforms. It combines uprights, shoulders, hips, legs, arms, bowls, and spines into 1,216 named constructions. The repertoire is independent of any particular language or pronunciation system.",
-        "This document proposes coordinated private-use assignments for the complete current repertoire in the Under-ConScript Unicode Registry (UCSUR). The assignments provide a stable way to exchange the constructions as text. This is a draft for review, not an announcement of registration or inclusion in the Unicode Standard.",
-        "The proposal concerns construction identities and their interchange. It does not prescribe readings for every form or claim that every structural distinction has already been accepted as an independently encodable character."
+        "Quintessential Latin is a repertoire of structurally defined, Latin-like letterforms designed by Josh Hufford. It begins with familiar Latin forms, especially lowercase letters, identifies recurring uprights, branches, bowls, and spines, and uses these features to construct a coherent system from scratch. Familiar Latin forms lead to recurring components, consistent construction rules, and a repertoire containing both familiar and unfamiliar forms.",
+        "The motivation is to make a useful vocabulary of Latin-like forms available beyond the combinations inherited by existing alphabets. Every entry is described through the same component rules. This is a deliberate design abstraction informed by Latin typography; it is not a claim to the uniquely correct analysis of Latin, a statistical ranking of its features, or a replacement for the historical Latin alphabet.",
+        "The repertoire is independent of pronunciation, language, and orthography. It can supply additional letters for Latin-based writing systems, letterforms for constructed languages, or material for Latin-like constructed scripts. An adopting system may select a subset and assign linguistic functions. It need not use every entry, and no sound values, translations, or sample language are prescribed.",
+        "This proposal requests coordinated private-use assignments for the current 1,216 identified constructions. It concerns their identity and interchange, separately from a font’s rendering or an adopter’s linguistic assignments. It has not been registered in UCSUR or encoded as a repertoire in the Unicode Standard. The accompanying charts and data identify the complete requested inventory."
       ]
     },
     {
-      "id": "repertoire",
-      "title": "2. Proposed allocation",
+      "id": "registration",
+      "title": "2. Reason for registration",
       "paragraphs": [
-        "The requested space comprises three consecutive blocks spanning exactly 1,216 positions in Supplementary Private Use Area-A, U+F2A00–U+F2EBF. Every position is assigned. Construction families and all their middle-extension states occupy consecutive positions without reserved holes or a separate additions area.",
-        "The UCSUR roadmap shows no listed allocation at U+F2A00–U+F2EBF when checked on 6 September 2026. This indicates apparent availability in that table; it establishes no reservation and does not exclude private use elsewhere."
+        "A shared allocation would let compatible fonts, tools, and adopting writing systems exchange the same identified constructions as text. A recipient needs the agreed mapping and an appropriate font; a code point alone does not communicate a private-use interpretation. Registry coordination can reduce assignment conflicts among participants, while unregistered private uses may still overlap.",
+        "Registration is not necessary to draw these forms or use a documented private agreement. Unicode permits published private-use agreements. UCSUR provides an allocation table for constructed scripts; the older CSUR introduction describes preliminary proposals followed by registration. That historical procedure is useful context, not a verified account of current UCSUR administration or a promise of acceptance."
       ],
-      "bullets": [
-        "Quintessential Latin: U+F2A00–U+F2ABF; 192 characters.",
-        "Quintessential Latin Extended-A: U+F2AC0–U+F2BBF; 256 characters.",
-        "Quintessential Latin Extended-B: U+F2BC0–U+F2EBF; 768 characters.",
-        "Extended-A begins with double bowl, double open bowl, turned double open bowl, and spine. The main block begins with bowl, open bowl, and turned open bowl."
+      "references": [
+        "https://www.unicode.org/faq/private_use.html",
+        "https://www.kreativekorp.com/ucsur/",
+        "https://www.evertype.com/standards/csur/"
       ]
     },
     {
       "id": "construction",
-      "title": "3. Construction principles",
+      "title": "3. Construction and the single-stroke principle",
       "paragraphs": [
-        "A construction is described from left to right. An upright has independently specified upper and lower endings. Short, straight-extended, and curved endings yield the nine primitive names stem, ascender, hook, descender, long stem, long hook, tail, long tail, and long spine.",
-        "A shoulder is an upper branch and a hip is its lower counterpart. A leg includes its upper connecting arch; an arm includes its lower connecting arch. Bowls, double bowls, and spines join these components into wider forms.",
-        "Long bowls distinguish open returns from returns closed by an immediately adjacent upright. Naming records local closure, not a remote feature elsewhere in the construction. Repeated arches and extended middle components form systematic companion families. Where two middle legs or arms occur, each can extend independently: neither, left only, right only, or both. Left and right refer to the final visible form, including reversed constructions.",
-        "The seven stemless forms are bowl, open bowl, turned open bowl, double bowl, double open bowl, turned double open bowl, and spine. The three simple bowls begin the main block; the four double-bowl and spine forms begin Extended-A. Their presence does not assign them digit or punctuation values."
+        "The underlying form of each character is designed to be writable as one continuous pen movement without lifting the pen. This principle concerns the writing path. A font’s filled outlines, serifs, stroke contrast, and pixel cells are stylistic realizations of that form, not a handwriting path in themselves. The repertoire does not specify a unique stroke order or starting point, forbid retracing or intersections, or require an entire word to be written without a pen lift. Illustrative paths are demonstrations, not a complete handwriting standard.",
+        "A stem occupies the region between baseline and x-height. Its upper and lower endings can each be absent, straight, or curved. The nine upright primitives are stem, ascender, hook, descender, long stem, long hook, tail, long tail, and long spine. An ascender extends upward, a descender downward; hook and tail identify the corresponding curved extensions.",
+        "A shoulder is a short upper branch, as in an r-like construction; a hip is its lower counterpart. A leg includes its upper connecting arch, and an arm includes its lower connecting arch. A bowl is a rounded body and a spine an s-shaped body. Long, doubled, open, and attached forms use the specific constructors documented in the naming specification. These structural terms retain distinctions that a general description such as “vertical plus curve” would lose.",
+        "Construction names describe the final visible form from left to right. This spatial ordering does not prescribe the order in which a font is assembled or a person moves a pen. A long bowl is closed only when its return meets the immediately adjacent upright on the specified side; a remote extension cannot close it."
+      ],
+      "references": [
+        "https://github.com/ostomachion/quintessential-latin/blob/main/docs/quintessential-latin-canonical-naming-spec-v3.md"
+      ]
+    },
+    {
+      "id": "repertoire",
+      "title": "4. Repertoire and proposed allocation",
+      "paragraphs": [
+        "Allocation 0.250 contains 1,216 individually identified lowercase constructions in 30 families. Its three consecutive proposed blocks occupy U+F2A00–U+F2EBF in Supplementary Private Use Area-A. Every position is assigned. These are project block titles and requested private-use ranges, not official Unicode blocks.",
+        "The main block begins with bowl, open bowl, and turned open bowl. Extended-A begins with double bowl, double open bowl, turned double open bowl, and spine. The remaining families develop uprights, shoulders and hips, bowls, arches, double bowls, and one-sided and two-sided spines. Extended middle components stay beside their base constructions in the same family.",
+        "The allocation is the boundary of this proposal. All current entries use the documented component system, and both reference font implementations cover that inventory. Those facts do not establish that every theoretically possible combination has been enumerated. Additional constructions would require an explicit repertoire revision; the current proposal reserves no extra characters for them.",
+        "On 6 September 2026, the live UCSUR allocation table listed U+F2A00–U+F2AFF through U+F2E00–U+F2EFF as unassigned, and its linked roadmap showed the corresponding rows as “???”. The requested range lies within those rows. This dated observation establishes neither a reservation nor exclusive worldwide ownership of the positions."
+      ],
+      "bullets": [
+        "Quintessential Latin: U+F2A00–U+F2ABF; 192 characters.",
+        "Quintessential Latin Extended-A: U+F2AC0–U+F2BBF; 256 characters.",
+        "Quintessential Latin Extended-B: U+F2BC0–U+F2EBF; 768 characters."
+      ],
+      "references": [
+        "https://github.com/ostomachion/quintessential-latin/blob/main/resources/quintessential-latin-allocation.json",
+        "https://www.kreativekorp.com/ucsur/",
+        "https://www.kreativekorp.com/ucsur/roadmap.shtml"
       ]
     },
     {
       "id": "identity",
-      "title": "4. Character identity and composition",
+      "title": "5. Character identity: representative distinctions",
       "paragraphs": [
-        "Each allocated construction is represented by one Unicode scalar value in the proposed private-use map. The component vocabulary describes its visible structure; it is not a sequence of separately encoded combining marks.",
-        "Concatenating primitive character codes does not request automatic formation of a compound construction. Compounds already in the repertoire have their own explicit assignments. No decomposition or normalization equivalence between these codes is specified.",
-        "Opposite-facing forms have distinct assignments where the repertoire includes them. Roman and Italic are typographic postures of the same mapped construction. Font weight and posture never change its stored code point.",
-        "All 1,216 constructions, including the seven stemless forms, are lowercase letters. Their full names use SMALL LETTER to record this case. Uppercase typography in the charts is a documentation convention; no uppercase counterparts or uppercase mappings are defined.",
-        "Version 0.250 replaces the earlier private-use map. Existing construction identities and native outlines are retained, but their numeric assignments are reorganized. No aliases or backward compatibility with earlier numeric assignments are provided."
+        "Entries differ through their ordered components, upper and lower endings, connection types, body forms, local bowl closure, and included middle-extension states. These are construction distinctions. Weight, serif treatment, stroke contrast, pixel resolution, and Roman or Italic posture are rendering choices for the same entry and retain its code point.",
+        "The first pair below places an ascender before or after a bowl: the b-like and d-like relationships are structurally different. The second pair distinguishes a stem with an upper-connected leg from a lower-connected arm with a stem: n-like and u-like forms retain their connection type in their names.",
+        "The third pair distinguishes a long open bowl from a closed long bowl. In the closed construction the adjacent upright actually extends downward to meet the return. The name omits that straight extension because the closed bowl already entails it; the geometry still includes the extension. Each displayed label and code is taken from the allocation."
+      ],
+      "examples": [
+        "bowl-ascender",
+        "turned-bowl-ascender",
+        "arch",
+        "turned-arch",
+        "arch-right-tail",
+        "arch-left-descender-right-tail"
+      ]
+    },
+    {
+      "id": "middle-extensions",
+      "title": "6. Independent middle extensions",
+      "paragraphs": [
+        "A construction with one middle upright has short and extended states. Where two middle uprights occur, the current repertoire includes four states together: neither extended, left only, right only, and both. The quartet below changes only those specified extensions. Left and right refer to the final visible form, including reversed constructions. The extensions identify different entries; changing font weight does not select a different state."
+      ],
+      "examples": [
+        "triple-arch",
+        "triple-arch-extended-left-middle-leg",
+        "triple-arch-extended-right-middle-leg",
+        "triple-arch-extended-middle-legs"
+      ]
+    },
+    {
+      "id": "existing-characters",
+      "title": "7. Relationship to Latin and existing Unicode characters",
+      "paragraphs": [
+        "Recognizable Latin counterparts are intentional. Ascender with bowl has a b-like structure, bowl with ascender a d-like structure, and bowl an o-like structure. These comparisons explain construction without assigning the pronunciation or established identity of those letters to every use of the repertoire entry. Some reference glyphs go beyond resemblance: the bitmap implementation’s bowl exactly uses its native Unifont o drawing, and its stem uses the native dotless-i drawing.",
+        "A structural counterpart, a visual resemblance, and an established character identity are different kinds of relationship. This proposal does not claim that every form is unprecedented or that appearance alone proves separate encodability. It supplies a complete, consistently identified design repertoire so that the rationale for retaining recognizable counterparts can be reviewed alongside unfamiliar combinations. A systematic comparison with standardized Latin letters and other registered forms remains an open review task.",
+        "Ordinary text whose characters are already standardized should keep those standardized codes and use fonts to choose their appearance. Private-use text here deliberately identifies entries under the Quintessential Latin agreement. Replacing ordinary Latin text with private-use lookalikes solely for a visual effect would discard that ordinary text identity. No automatic equivalence, transliteration, or conversion to existing Latin characters is defined."
+      ]
+    },
+    {
+      "id": "encoding",
+      "title": "8. Composition and encoding model",
+      "paragraphs": [
+        "Each allocated construction is represented by one supplementary-plane Unicode scalar value. Components describe its graphical structure; they are not a separately encoded combining alphabet. Some simple constructions are themselves entries, but concatenating their codes does not form a compound. Every included compound has its own assignment. The reference fonts define no automatic component ligatures or decomposition mappings.",
+        "No Unicode normalization equivalence is specified between constructions or with ordinary Latin text. Unicode requires private-use characters to retain combining class zero, identity decomposition, and identity behavior under NFC, NFD, NFKC, and NFKD; a private agreement cannot redefine those normalization properties.",
+        "A mapped character occupies two UTF-16 code units. Input, editing, copying, and storage must preserve the complete scalar value rather than split its surrogate pair. A font change alters its rendering without changing the stored scalar."
+      ],
+      "references": [
+        "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-23/"
       ]
     },
     {
       "id": "names",
-      "title": "5. Names and ordering",
+      "title": "9. Names and ordering",
       "paragraphs": [
-        "The current canonical naming system is version 3. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Interior uprights use the ordinary stem, ascender, and descender names. Local bowl closure and counts of equal adjacent uprights are resolved before names are serialized.",
-        "Names are unique across the 1,216-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN SMALL LETTER. The structural construction-name algorithm remains version 3; this prefix clarifies the lowercase identity of the existing repertoire.",
-        "Code charts, names lists, and presentation order follow the same numeric construction order across 30 families. Middle-extension companions remain inside their base family: a single middle component has short and extended states; two middle components have neither, left-only, right-only, and both-extended states together. Code values, stable identities, and internal font glyph names remain distinct."
+        "Canonical naming version 3 serializes the visible construction from left to right. The first two terms are joined by “with”; later terms by “and”. Interior uprights use the ordinary stem, ascender, and descender vocabulary. Closure-implied straight extensions are omitted from names without changing geometry; equal adjacent upright terms then become counts such as “two stems”. A count does not combine uprights across an intervening body.",
+        "The readable construction label is distinct from the full proposed character name. Every full name, including the seven stemless forms, begins QUINTESSENTIAL LATIN SMALL LETTER, followed by the uppercase construction name. All 1,216 names are unique and use only A–Z and spaces. This meets the historical CSUR guidance’s uniqueness and character-set restrictions and uses its SMALL LETTER category. That guidance prefers traditional names or romanizations for letters. The project instead proposes structural individual names because it assigns neither traditional readings nor a principal language; the suitability of that choice remains for review.",
+        "The allocation separately records the stable construction identity, current code point, canonical name, internal font glyph name, and historical recipe information. An internal identifier may retain older terminology and is not a public character name. Numeric code order and chart order follow 30 construction families; they are a reference ordering, not a linguistic alphabet or handwriting order."
+      ],
+      "references": [
+        "https://www.evertype.com/standards/csur/naming.html",
+        "https://github.com/ostomachion/quintessential-latin/blob/main/docs/quintessential-latin-canonical-naming-spec-v3.md"
       ]
     },
     {
       "id": "text-behavior",
-      "title": "6. Reference text behavior",
+      "title": "10. Text behavior and private-use properties",
       "paragraphs": [
-        "The reference implementation presents text horizontally from left to right. Every allocated form is a spacing character in the font, with its own advance. The font includes U+0020 SPACE and kerning between reference glyphs.",
-        "All proposed characters have the private-use interpretation General_Category=Ll (Lowercase_Letter). No uppercase or titlecase counterparts or mappings, non-identity case-folding mappings, special word-breaking rules, or combining behavior are proposed. There is no separately specified punctuation or numeral system.",
-        "Standard Unicode implementations continue to give these private-use code points General_Category=Co. The accompanying UCD-style files propose Ll only for cooperating applications that explicitly adopt this private-use agreement; they do not install normative Unicode properties or normalization mappings.",
-        "Applications must preserve supplementary-plane scalar values. In UTF-16, a mapped character occupies a surrogate pair; editing and copying must keep that pair intact."
+        "The project convention is horizontal, left-to-right text. Every entry is a spacing lowercase letter with a positive font advance. No uppercase or titlecase counterparts or mappings are defined; case folding leaves every entry unchanged. Capital letters in chart labels describe names and do not change the case of the represented character.",
+        "The UCD-style package proposes General_Category=Ll, Bidi_Class=L, and Bidi_Mirrored=N for applications that explicitly adopt this agreement. Standard Unicode implementations continue to classify these positions as Co (Private Use), with no standardized Quintessential Latin names. Loading a font or registering a private-use allocation does not install these proposed properties in the operating system or Unicode Character Database.",
+        "The repertoire defines no punctuation or numeral system, joining controls, combining characters, or variation sequences. Adopters choose word separation, punctuation, numerals, and any orthographic use of standard combining marks. Such marks have no project-defined attachment behavior or dedicated anchors in the supplied fonts. Font kerning is typographic spacing, not an orthographic boundary rule.",
+        "Language-specific collation, word and line breaking, syllabification, and identifier rules are outside the present agreement. Code order is suitable for locating entries, not a prescribed linguistic sort. Adopting software must decide which additional text behavior it needs and cannot assume general-purpose applications will recognize these constructions as lowercase Latin letters."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/private_use.html",
+        "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-23/",
+        "https://github.com/ostomachion/quintessential-latin/blob/main/resources/ucd/ReadMe.txt"
       ]
     },
     {
       "id": "reference-font",
-      "title": "7. Reference implementation",
+      "title": "11. Reference implementations and input",
       "paragraphs": [
-        "Quintessential Serif 0.250 is the reference typeface. It provides all 1,216 mapped constructions in both Roman and native Italic. The two variable fonts support a continuous weight range from 400 to 700 and retain the reference design's nonlinear weight mapping.",
-        "All allocated characters have native Italic outlines. The two postures use their own STIX Two Text donors and compatible endpoint masters; the website does not synthesize an Italic face.",
-        "Variable TTF and WOFF2 fonts and four static endpoint faces are supplied with editable UFO sources, designspaces, build tools, and regression fixtures. The reference fonts derive from the pinned STIX Two Text 2.13 b171 donors and retain the SIL Open Font License.",
-        "Font development and character registration are separate processes. The reference design remains a work in progress; a rendered sample is not a prescribed exclusive glyph shape."
+        "Quintessential Serif 0.250 covers all 1,216 entries in Roman and native Italic, each with variable weight 400–700. The two postures have distinct native sources; Italic is not synthesized by slanting Roman. Variable TTF and WOFF2 files and four static endpoint faces in OTF and WOFF2 are supplied with editable UFO masters and designspaces. The family derives from pinned STIX Two Text 2.13 b171 donors and retains their nonlinear weight mapping.",
+        "Quintessential Latin Unifont Regular 0.250 provides the same complete mapping using 8 × 16 pixel drawings. Its TTF and WOFF2 files contain square outlines and an embedded monochrome 16-ppem bitmap strike. The font has a fixed eight-pixel advance, no kerning, and no separate Italic or variable weight. Its 214 native Latin companion characters support mixed text. Quintessential Serif includes only the repertoire and U+0020 SPACE, so ordinary Latin text, punctuation, and numerals require a companion font or fallback.",
+        "The website provides search, character inspection, permanent character links, and copying of the actual private-use scalar. A regular Latin keyboard does not automatically enter these codes; users can copy from charts or implement input using the allocation data. Recipients should obtain a matching font and identify allocation 0.250. A missing font may show an empty box or an unrelated private-use glyph. Font coverage is verified from the binaries; it does not constitute registry approval or universal application support."
+      ],
+      "references": [
+        "https://github.com/stipub/stixfonts/releases/tag/v2.13b171",
+        "https://ostomachion.github.io/quintessential-latin/downloads.html"
       ]
     },
     {
       "id": "charts",
-      "title": "8. Accompanying charts and data",
+      "title": "12. Charts, data, and supporting sources",
       "paragraphs": [
-        "Each block has a reference PDF containing a title/range page, code grids, and a numeric names list. A combined catalogue contains all three blocks. Five grid sheets show up to 256 positions each: the main block has 12 hexadecimal columns, and the other four sheets have 16. Every grid stops exactly at its block boundary.",
-        "Reference PDFs use Quintessential Serif 0.250, Roman 400. Each assigned position shows its representative glyph and hexadecimal code. The current allocation is gapless; no unassigned positions are shown.",
-        "The downloadable allocation, compact browser catalogue, and names lists are generated from one explicit source. Character names and code points agree across the PDFs, website, font mappings, and machine-readable downloads. The accompanying UCD-style package includes UnicodeData, Blocks, NamesList, CaseFolding, Charts, and Sources files, with lowercase classification, undefined uppercase mappings, and identity case folding."
+        "Each of the three blocks has a PDF with its range, representative glyphs, and a numeric names list with family headings. A combined catalogue includes all blocks. Five grid sheets contain 192, 256, 256, 256, and 256 assigned positions; each stops at its actual block boundary. Publication charts use embedded Quintessential Serif Roman 400, version 0.250. The separate proposal PDF preserves this text and its references.",
+        "The explicit allocation is the inventory authority. Its structural component records feed the canonical naming function and generated public catalogue, names lists, website, and charts. The browser catalogue combines those records with verified compiled-font coverage. The UCD-style download includes UnicodeData, Blocks, NamesList, CaseFolding, Charts, and Sources files, plus usage notes and a provenance manifest. These follow published data formats as supporting material; they are not an official UCD release or a claimed mandatory submission bundle.",
+        "Downloads, complete charts, fonts, and machine-readable data are available at https://ostomachion.github.io/quintessential-latin/downloads.html. The source repository contains the allocation, naming specification, editable font sources, licenses, build tools, and revision records. The links below identify the inventory and property-policy sources directly so this proposal remains usable separately from the website."
+      ],
+      "references": [
+        "https://ostomachion.github.io/quintessential-latin/downloads.html",
+        "https://github.com/ostomachion/quintessential-latin/blob/main/resources/quintessential-latin-allocation.json",
+        "https://github.com/ostomachion/quintessential-latin/blob/main/resources/ucd/ReadMe.txt",
+        "https://www.kreativekorp.com/ucsur/UNIDATA/"
+      ]
+    },
+    {
+      "id": "licensing",
+      "title": "13. Licensing and attribution",
+      "paragraphs": [
+        "Original project code, repertoire data, and documentation are MIT-licensed, copyright 2026 Josh Hufford. Quintessential Serif binaries and font sources are distributed under SIL OFL 1.1 with STIX attribution. Quintessential Latin Unifont binaries and donor-derived drawings are distributed under OFL 1.1 with GNU Unifont contributor attribution; they are independent project fonts, not an official GNU Unifont release. Source Sans 3, used for publication text, retains its Adobe attribution and OFL 1.1 license.",
+        "Font distributions include their own license and notices; the project’s MIT license does not replace those terms. Referenced Unicode and registry publications retain their respective rights and are cited, not relicensed as project documentation."
+      ],
+      "references": [
+        "https://github.com/ostomachion/quintessential-latin/blob/main/THIRD_PARTY_NOTICES.md",
+        "https://openfontlicense.org/open-font-license-official-text/"
+      ]
+    },
+    {
+      "id": "stability",
+      "title": "14. Draft stability and revision policy",
+      "paragraphs": [
+        "Allocation 0.250 replaces earlier numeric assignments without compatibility aliases. Stable construction identities and native glyph designs were preserved during that reallocation, but an older code point can now select a different construction. Existing text therefore requires its original allocation context and identity-based migration; changing fonts alone cannot repair an old encoding.",
+        "Future repertoire or assignment changes must identify additions, removals, and reassignments explicitly. Stable assignments are necessary for reliable interchange. Reallocation is documented here as draft history, not a routine update policy. Font-design revisions and naming-algorithm versions remain distinct from repertoire or encoding revisions; a style or outline refinement alone does not create a new character.",
+        "Historical CSUR guidance says final registrations are kept stable while allowing enlargement. That supports treating assignments as durable, without implying that this unsubmitted draft already has final status. Before any external submission, the author should settle the identity and overlap questions below and agree a stable allocation and migration policy."
+      ],
+      "references": [
+        "https://github.com/ostomachion/quintessential-latin/blob/main/docs/logical-allocation.md",
+        "https://www.evertype.com/standards/csur/"
       ]
     },
     {
       "id": "open-questions",
-      "title": "9. Matters for registry review",
+      "title": "15. Matters for registry review",
       "paragraphs": [
-        "The suitability of each construction distinction for separate registration remains open to review. This proposal intentionally records the complete implemented inventory so that reviewers can assess the distinctions against consistent names, reference glyphs, and a working interchange map.",
-        "Readings, handwriting conventions, language-specific spelling systems, and any future punctuation or numeral assignments are outside the current proposal. No broad user community, historical tradition, or accepted registry status is asserted.",
-        "Future repertoire changes must identify additions, removals, or reassignments explicitly. A font design change alone does not create a new character."
+        "Seussian Latin Extensions is a registered CSUR Latin extension. It demonstrates that Latin-related material has appeared in registry practice, but its literary letters do not establish eligibility for this structural repertoire. Sitelen Pona Radicals is explicitly a proposal for recurring graphical components associated with an existing script. It is relevant to component-based analysis, not evidence of completed registration or automatic acceptance of a language-neutral inventory."
+      ],
+      "bullets": [
+        "Is a shared, language-neutral repertoire of structural letterforms suitable for UCSUR registration, and what evidence of intended text use would help assess it? No minimum user count, publication requirement, or waiting period is asserted here.",
+        "Which recognizable counterparts require explicit comparison with existing Unicode or registry identities, and how should the need to identify the whole designed repertoire be weighed against overlap? No character has been merged or removed in anticipation of that review.",
+        "Are the structural individual names and proposed lowercase interpretation suitable, and what additional identity examples would clarify difficult distinctions? Detailed handwriting conventions and language-specific orthographies remain separate author or adopter decisions."
+      ],
+      "references": [
+        "https://www.evertype.com/standards/csur/seuss.html",
+        "https://www.kreativekorp.com/ucsur/charts/sp-radicals.html"
       ]
     },
     {
       "id": "availability",
-      "title": "10. Availability and contact",
+      "title": "16. Author and contact",
       "paragraphs": [
-        "The project source, reference fonts, chart PDFs, and proposal are available from the public Quintessential Latin repository and website. Corrections and technical discussion can be submitted through GitHub Issues.",
-        "Author: Josh Hufford. Repository: https://github.com/ostomachion/quintessential-latin. Website: https://ostomachion.github.io/quintessential-latin/. Contact: https://github.com/ostomachion/quintessential-latin/issues."
+        "Author: Josh Hufford. Source repository: https://github.com/ostomachion/quintessential-latin. Website: https://ostomachion.github.io/quintessential-latin/. Corrections and technical discussion: https://github.com/ostomachion/quintessential-latin/issues.",
+        "No broad user community, historical tradition, assigned language, or accepted registry status is claimed. Untranslated strings in project specimens are typographic examples. Publishing this documentation does not submit it to UCSUR."
       ]
     },
     {
       "id": "revision-history",
-      "title": "11. Revision history",
+      "title": "17. Revision history",
       "paragraphs": [
         "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities.",
         "6 September 2026: naming version 3 gives every character the QUINTESSENTIAL LATIN LETTER prefix, uses ordinary upright names for interior components, and combines equal adjacent uprights into counts. Code points, construction identities, and the 0.220 reference fonts are unchanged.",
         "6 September 2026: reference font and allocation version 0.240 add 384 constructions with independently extended middle components at U+F2E00–U+F2F7F. All preceding 832 identities and assignments are retained. Both native postures support the complete 1,216-character repertoire; canonical naming remains version 3.",
         "6 September 2026: reference font and allocation version 0.250 organize all 1,216 constructions into a continuous U+F2A00–U+F2EBF map and 30 families. Middle-extension states are integrated with their bases, and the four stemless double-bowl and spine forms begin Extended-A. This replaces the earlier numeric assignments without compatibility aliases; the repertoire and native glyph designs are unchanged.",
-        "6 September 2026: the author clarifies that all 1,216 constructions are lowercase letters. Full names adopt the QUINTESSENTIAL LATIN SMALL LETTER prefix and the private-use UCD interpretation changes from Lo to Ll. Uppercase and titlecase counterparts and mappings remain undefined; case folding is identity. Construction names and naming algorithm version 3, code points, block ranges, font designs, and allocation version 0.250 are unchanged. Any future uppercase additions would require explicit assignments and mappings."
+        "6 September 2026: the author clarifies that all 1,216 constructions are lowercase letters. Full names adopt the QUINTESSENTIAL LATIN SMALL LETTER prefix and the private-use UCD interpretation changes from Lo to Ll. Uppercase and titlecase counterparts and mappings remain undefined; case folding is identity. Construction names and naming algorithm version 3, code points, block ranges, font designs, and allocation version 0.250 are unchanged. Any future uppercase additions would require explicit assignments and mappings.",
+        "6 September 2026: this editorial revision clarifies the design motivation, single-stroke principle, character identity, private-use behavior, implementations, and review questions, with dated primary-source references. It changes no repertoire entries, canonical names, stable identities, assignments, glyph designs, or font versions."
       ]
     }
   ],
   "references": [
     {
-      "title": "Under-ConScript Unicode Registry: allocation table",
+      "title": "UCSUR allocation table",
       "url": "https://www.kreativekorp.com/ucsur/"
     },
     {
-      "title": "Under-ConScript Unicode Registry: roadmap",
+      "title": "UCSUR roadmap",
       "url": "https://www.kreativekorp.com/ucsur/roadmap.shtml"
     },
     {
-      "title": "ConScript Unicode Registry: introduction and proposal precedents",
+      "title": "CSUR introduction and historical proposal guidance",
       "url": "https://www.evertype.com/standards/csur/"
     },
     {
-      "title": "The Unicode Standard: code chart conventions",
-      "url": "https://www.unicode.org/charts/About.html"
+      "title": "CSUR character-naming guidance",
+      "url": "https://www.evertype.com/standards/csur/naming.html"
     },
     {
-      "title": "Unicode code chart reference: Miscellaneous Technical",
-      "url": "https://www.unicode.org/charts/PDF/U2300.pdf"
+      "title": "Unicode private-use FAQ",
+      "url": "https://www.unicode.org/faq/private_use.html"
+    },
+    {
+      "title": "Unicode 17.0, sections 23.5–23.6: private use and surrogates",
+      "url": "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-23/"
+    },
+    {
+      "title": "Seussian Latin Extensions: registered precedent",
+      "url": "https://www.evertype.com/standards/csur/seuss.html"
+    },
+    {
+      "title": "Sitelen Pona Radicals: proposal precedent",
+      "url": "https://www.kreativekorp.com/ucsur/charts/sp-radicals.html"
+    },
+    {
+      "title": "UCSUR published data formats",
+      "url": "https://www.kreativekorp.com/ucsur/UNIDATA/"
+    },
+    {
+      "title": "Quintessential Latin explicit allocation 0.250",
+      "url": "https://github.com/ostomachion/quintessential-latin/blob/main/resources/quintessential-latin-allocation.json"
+    },
+    {
+      "title": "Canonical naming specification version 3",
+      "url": "https://github.com/ostomachion/quintessential-latin/blob/main/docs/quintessential-latin-canonical-naming-spec-v3.md"
+    },
+    {
+      "title": "Private-use data package and property policy",
+      "url": "https://github.com/ostomachion/quintessential-latin/blob/main/resources/ucd/ReadMe.txt"
+    },
+    {
+      "title": "Allocation 0.250 migration record",
+      "url": "https://github.com/ostomachion/quintessential-latin/blob/main/docs/logical-allocation.md"
+    },
+    {
+      "title": "Charts, fonts, and data downloads",
+      "url": "https://ostomachion.github.io/quintessential-latin/downloads.html"
     },
     {
       "title": "STIX Two Text 2.13 b171 source release",
       "url": "https://github.com/stipub/stixfonts/releases/tag/v2.13b171"
+    },
+    {
+      "title": "Project licenses and third-party notices",
+      "url": "https://github.com/ostomachion/quintessential-latin/blob/main/THIRD_PARTY_NOTICES.md"
     },
     {
       "title": "SIL Open Font License 1.1",

@@ -10,14 +10,14 @@
   "sources": {
     "resources/catalogue.json": "413e01649a5103c91e128760f835d2c82eca0b853a8a3241ccc7d4831ace15bb",
     "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
-    "docs/proposal.json": "6e588b0bf487100cbd2a0e11d8dda91f80de110c3deebde1f9a73fd26fca5a8d",
+    "docs/proposal.json": "83837aaa6229b690cf0781d3e105e1240c9650cec61d6188c9d8a854fd67bfeb",
     "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
     "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
     "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
     "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
     "resources/fonts/SourceSans3/SourceSans3-Bold.ttf": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a",
     "resources/fonts/SourceSans3/SourceSans3-It.ttf": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4",
-    "tools/build_pdfs.py": "75dd0f96a7a7c1b5cd824e72d7fd04ee0a93f1287008ab601a6cc4b0f596515f",
+    "tools/build_pdfs.py": "526f16291a5c8f5c2445f33b50e98bd7f4025a60eb23ea8764f329d7d25e9b69",
     "tools/requirements-pdfs.txt": "fc15532442f5ff4bc04f02a26e6af5d6e325062740ec4b679cb2f4324686baa4"
   },
   "outputs": {
@@ -42,9 +42,9 @@
       "pages": 33
     },
     "quintessential-latin-proposal.pdf": {
-      "sha256": "e9e784b9b09020630134b41e685e11f980f8c6e3d6c033a72b3ab327ce3d7e6d",
-      "bytes": 25042,
-      "pages": 5
+      "sha256": "39c0331c9003dcb8af836f6c7e3c783fa3648ce0a313948a6088c76414e7476a",
+      "bytes": 50291,
+      "pages": 10
     }
   }
 }

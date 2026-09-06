@@ -357,22 +357,66 @@ class Publication:
             if text:
                 top=draw_paragraph(c,text,MARGIN,top,PAGE_W-2*MARGIN,size=11,leading=15)-5
         top-=12
+        references = {ref['url']: (index, ref) for index, ref in enumerate(document.get('references', []), 1)}
+        by_id = {entry['glyphId']: entry for entry in self.data['entries']}
         for section in document['sections']:
             heading=paragraph(section['title'],size=14,leading=18,bold=True)
             body=[paragraph(value,size=10.3,leading=14.2) for value in section.get('paragraphs',[])]
             body.extend(paragraph('- '+value,size=10.3,leading=14.2) for value in section.get('bullets',[]))
+            citations=[]
+            for url in section.get('references', []):
+                number, ref = references[url]
+                p=paragraph(f'Source [{number}]: {ref["title"]}',size=9,leading=12,color=MUTED)
+                h=p.wrap(PAGE_W-2*MARGIN,PAGE_H)[1]
+                citations.append((url,p,h))
+            citation_height=sum(h+7 for _,_,h in citations)
             first_height=body[0].wrap(PAGE_W-2*MARGIN,PAGE_H)[1] if body else 0
+            if section.get('examples'):
+                # Introduce the comparison beside at least its first pair.
+                first_height=sum(p.wrap(PAGE_W-2*MARGIN,PAGE_H)[1]+9 for p in body)+88
             if top-18-first_height-16<75:
                 c.showPage(); self.frame('Quintessential Latin | UCSUR proposal',kind='proposal'); top=713
             _,h=heading.wrap(PAGE_W-2*MARGIN,PAGE_H)
             heading.drawOn(c,MARGIN,top-h); top-=h+9
-            for p in body:
+            for index,p in enumerate(body):
                 _,h=p.wrap(PAGE_W-2*MARGIN,PAGE_H)
-                if top-h<75:
+                # Keep a section's sources with the final paragraph/list item.
+                reserve=citation_height if index==len(body)-1 and not section.get('examples') else 0
+                first_bullet=len(section.get('paragraphs',[]))
+                if section.get('bullets') and index==first_bullet:
+                    reserve=sum(item.wrap(PAGE_W-2*MARGIN,PAGE_H)[1]+9 for item in body[index+1:])+citation_height
+                if top-h-reserve<75:
                     c.showPage(); self.frame('Quintessential Latin | UCSUR proposal',kind='proposal'); top=713
+                    top=draw_paragraph(c,section['title']+' (continued)',MARGIN,top,PAGE_W-2*MARGIN,size=12,leading=16,bold=True)-10
                 if h>638:
                     raise ValueError('Proposal paragraph is too long for one page')
                 p.drawOn(c,MARGIN,top-h); top-=h+9
+            # The catalogue supplies every example's scalar, name, and outline.
+            # This is a specimen, not a second manually maintained names list.
+            examples=section.get('examples', [])
+            column_width=(PAGE_W-2*MARGIN-24)/2
+            for start in range(0,len(examples),2):
+                cells=[]
+                for glyph_id in examples[start:start+2]:
+                    entry=by_id[glyph_id]
+                    p=paragraph(f'U+{entry["codePoint"]:X}  {entry["canonicalName"]}',size=9.5,leading=13)
+                    h=p.wrap(column_width,PAGE_H)[1]
+                    cells.append((entry,p,h))
+                row_height=62+max(h for _,_,h in cells)
+                if top-row_height<75:
+                    c.showPage(); self.frame('Quintessential Latin | UCSUR proposal',kind='proposal'); top=713
+                    top=draw_paragraph(c,section['title']+' (continued)',MARGIN,top,PAGE_W-2*MARGIN,size=12,leading=16,bold=True)-10
+                for column,(entry,p,h) in enumerate(cells):
+                    left=MARGIN+column*(column_width+24)
+                    self.glyph(entry['codePoint'],left,top-49,column_width,42,size=58)
+                    p.drawOn(c,left,top-54-h)
+                top -= row_height
+            for url,p,h in citations:
+                if top-h<75:
+                    c.showPage(); self.frame('Quintessential Latin | UCSUR proposal',kind='proposal'); top=713
+                p.drawOn(c, MARGIN, top-h)
+                c.linkURL(url, (MARGIN,top-h,PAGE_W-MARGIN,top), relative=0)
+                top -= h+7
             top-=13
         refs=document.get('references',[])
         if refs:
@@ -384,6 +428,7 @@ class Publication:
                 _,h=p.wrap(PAGE_W-2*MARGIN,PAGE_H)
                 if top-h<75:
                     c.showPage(); self.frame('Quintessential Latin | UCSUR proposal',kind='proposal'); top=713
+                    top=draw_paragraph(c,'References (continued)',MARGIN,top,PAGE_W-2*MARGIN,size=14,leading=18,bold=True)-10
                 p.drawOn(c,MARGIN,top-h)
                 c.linkURL(ref['url'],(MARGIN,top-h,PAGE_W-MARGIN,top),relative=0)
                 top-=h+9

@@ -27,7 +27,7 @@
   ],
   "sources": {
     "resources/quintessential-latin-allocation.json": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2",
-    "docs/proposal.json": "6e588b0bf487100cbd2a0e11d8dda91f80de110c3deebde1f9a73fd26fca5a8d",
+    "docs/proposal.json": "83837aaa6229b690cf0781d3e105e1240c9650cec61d6188c9d8a854fd67bfeb",
     "tools/canonical_glyph_names.js": "ab1ab7cf891b422f87330c08513d6eb174be8e5d5fff4c64314fc9253eee773a",
     "tools/export_ucd.js": "14e10dc31268a6062e1f0fd5fb5fae0ca09d18b867c351aaf7bec55ca4a9cabb"
   },

@@ -23,9 +23,9 @@ def assets():
             glyphs[name].draw(path)
             x0, y0, x1, y1 = bounds.bounds
             dx, dy = 300-(x0+x1)/2, 300+(y0+y1)/2
-            mark = f'<path fill="#365746" transform="translate({dx:g} {dy:g}) scale(1 -1)" d="{path.getCommands()}"/>'
+            mark = f'<path fill="#000000" transform="translate({dx:g} {dy:g}) scale(1 -1)" d="{path.getCommands()}"/>'
             title = f'<title>Quintessential Latin</title><desc>U+{entry["codePoint"]:X}, {entry["canonicalName"]}. Quintessential Serif, Roman weight {weight}, derived from STIX Two Text. SIL Open Font License 1.1.</desc>'
-            background = '<rect width="600" height="600" rx="64" fill="#faf9f6"/>' if filename == "favicon.svg" else ""
+            background = '<rect width="600" height="600" rx="64" fill="#ffffff"/>' if filename == "favicon.svg" else ""
             result[filename] = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">{title}{background}{mark}</svg>\n'
     return result
 

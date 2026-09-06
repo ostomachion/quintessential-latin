@@ -20,16 +20,15 @@ await test('Unicode coordinates and five gapless publication sheets',()=>{assert
 await test('Partial responsive charts retain every position and stop before the next block',()=>{const block={start:0xf2a00,end:0xf2abf},sheet=printableSheets([block])[0];for(const maximum of [16,8,4]){const chunks=chartChunks(sheet,maximum);assert.deepEqual(chunks.map(chunk=>chunk.columns),maximum===16?[12]:maximum===8?[8,4]:[4,4,4]);const codes=chunks.flatMap(chunk=>Array.from({length:chunk.end-chunk.start+1},(_,index)=>chunk.start+index));assert.deepEqual(codes,Array.from({length:192},(_,index)=>block.start+index));}assert.equal(chartChunks(printableSheets([{start:0xf2ac0,end:0xf2bbf}])[0])[0].start,0xf2ac0);});
 await test('Long forms fit their allocated representative widths',()=>{for(const entry of catalogue.entries){const size=glyphSize(entry,47,30);assert(size>0&&size<=30);for(const metric of Object.values(entry.metrics)){const width=Math.max(metric.advance,metric.bounds[2])-Math.min(0,metric.bounds[0]);assert(width*size/1000<=47.01,entry.glyphId);}}});
 await test('HTML escaping protects generated text',()=>{assert.equal(escapeHtml('<a "x">&\''),'&lt;a &quot;x&quot;&gt;&amp;&#39;');});
-const pages=['index.html','charts.html','unifont.html','proposal.html','downloads.html'];
-await test('Five progressive pages share semantic navigation and appropriate controls',async()=>{for(const page of pages){const html=await read(`dist/${page}`);assert(html.startsWith('<!doctype html>'));for(const id of page==='unifont.html'?['main','font-status']:['main','font-weight','font-weight-value','font-italic','font-status'])assert.equal((html.match(new RegExp(`id="${id}"`,'g'))||[]).length,1,`${page}: ${id}`);assert(html.includes('aria-current="page"'));assert(html.includes('href="unifont.html"'));assert(html.includes('<noscript>'));assert(!/conlang|vowels|consonants|readingPairs|proof-data\.json/i.test(html),page);}});
+const pages=['index.html','construction.html','charts.html','unifont.html','proposal.html','downloads.html'];
+await test('Six progressive pages share semantic navigation and appropriate controls',async()=>{for(const page of pages){const html=await read(`dist/${page}`);assert(html.startsWith('<!doctype html>'));for(const id of page==='unifont.html'?['main','font-status']:['main','font-weight','font-weight-value','font-italic','font-status'])assert.equal((html.match(new RegExp(`id="${id}"`,'g'))||[]).length,1,`${page}: ${id}`);assert(html.includes('aria-current="page"'));for(const destination of pages)assert(html.includes(`href="${destination}"`),`${page}: navigation to ${destination}`);assert(html.includes('<noscript>'));assert(!/readingPairs|proof-data\.json/i.test(html),page);}});
 await test('Project marks use the controlled reference font and removed page is absent',async()=>{
   const html=await read('dist/index.html'),point=String.fromCodePoint(catalogue.entries.find(entry=>entry.glyphId==='opposed-bowls-0-0').codePoint);
   assert(html.includes('<span class="brand-icon" aria-hidden="true"><span class="glyph-wrap"'));
   assert(html.includes('<span class="emblem-glyph"><span class="glyph-wrap"'));
   for(const mark of ['brand-icon','emblem-glyph'])assert(new RegExp(`class="${mark}"[^>]*><span class="glyph-wrap"[^>]*><span class="glyph"[^>]*>${point}</span>`,'u').test(html));
   assert(!html.includes('src="assets/project-icon.svg"'));
-  assert((await readdir(path.join(root,'dist'))).filter(file=>file.endsWith('.html')).length===5);
-  for(const page of pages)assert(!/specimen/i.test(await read('dist/'+page)),page);
+  assert.deepEqual((await readdir(path.join(root,'dist'))).filter(file=>file.endsWith('.html')).sort(),[...pages].sort());
   await assert.rejects(()=>stat(path.join(root,'dist/specimens.html')),error=>error.code==='ENOENT');
 });
 await test('Responsive static variants, five print grids, and one numeric names list',async()=>{

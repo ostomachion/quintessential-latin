@@ -10,7 +10,8 @@ font fixtures are distributed under the SIL Open Font License 1.1. The STIX Two
 Text donor fonts remain under their existing SIL Open Font License 1.1.
 
 The outlined project mark and favicon in `site/assets/` are exported from
-Quintessential Serif's U+F2B18. They preserve the font's STIX attribution and
+Quintessential Serif's stem with spine and stem (stable identity
+`opposed-bowls-0-0`, currently U+F2ADC). They preserve the font's STIX attribution and
 SIL Open Font License 1.1 notice in their SVG descriptions.
 
 Preserve the OFL, FONTLOG, and TRADEMARKS notices alongside font distributions:
@@ -30,6 +31,16 @@ under the SIL Open Font License 1.1. Four unmodified TTF and WOFF2 faces are
 pinned to the upstream `3.052R` release. Their original download URLs and
 SHA-256 hashes are recorded in `resources/fonts/SourceSans3/source-manifest.json`.
 Source: https://github.com/adobe-fonts/source-sans/tree/3.052R
+
+## Bitmap font software
+
+Quintessential Latin Unifont and the project bitmap drawings derive from GNU
+Unifont 17.0.05 and are distributed under SIL OFL 1.1. They are independent
+project fonts, not an official GNU Unifont release. Preserve the contributor
+attribution and complete license in `resources/unifont/OFL.txt` and the copy in
+`resources/fonts/QuintessentialUnifont/OFL.txt` with redistributed font software.
+The MIT license for project code and documentation does not replace these
+font licenses.
 
 ## Development dependencies
 
