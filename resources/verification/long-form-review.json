@@ -1,0 +1,1544 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "agentOpticalReview": "completed: all 36 captured name-row and specimen-preview screenshots inspected",
+  "userAcceptance": "pending",
+  "inputs": {
+    "resources/catalogue.json": "f56c99d6264e6ffac11704dbd12a9d506189e926559134be53a66e24383bdc68",
+    "site/assets/style.css": "29a24a0677f96531ad63daf5a363e1034365467460715f5841834a33aab66b1b",
+    "site/assets/app.mjs": "57033b23b635358eb774f34f337666df8a2d2123dbfb456a6933194bf81311b3",
+    "site/assets/model.mjs": "f922791acfc80b95b4094d5b7c8cc1337b999732afd0566687cf57556902b49e"
+  },
+  "inputsUnchanged": true,
+  "selection": {
+    "Roman": "triple-arch-descenders",
+    "Italic": "double-arch-descender-extended-middle-legs"
+  },
+  "cases": [
+    {
+      "width": 375,
+      "posture": "Roman",
+      "weight": 400,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 35,
+        "wrapperWidth": 34.203125,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 35,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 218.890625,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 72.96875,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 59,
+        "wrapperWidth": 59.28125,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 22.859375,
+        "inkRightRelativeToContainer": 81.859375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-375-name.png",
+          "sha256": "706464f6efeac14a8db43fd490a04ec675383352e24bb632736c743a4c97bcfe"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-375-preview.png",
+          "sha256": "209299054a6b8dc5215acb924c57f4fa359a389f528c2eb790e28b842354af2d"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 375,
+      "posture": "Roman",
+      "weight": 550,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 37,
+        "wrapperWidth": 35.921875,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 37,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "normal",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 229.828125,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 76.609375,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 62,
+        "wrapperWidth": 62.25,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 21.375,
+        "inkRightRelativeToContainer": 83.375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-375-name.png",
+          "sha256": "63b68db1fc0ca9defbb1681f789bbbf35c3a2ab5883b02325b3b0e4d4f338c71"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-375-preview.png",
+          "sha256": "7f4e8c16cde32bb53c14e785200ce066189dbb47ab0d02c2debc1b05f00e562b"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 375,
+      "posture": "Roman",
+      "weight": 700,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 39,
+        "wrapperWidth": 37.8125,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 39,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "normal",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 241.921875,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 80.640625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 67,
+        "wrapperWidth": 65.53125,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 18.734375,
+        "inkRightRelativeToContainer": 85.734375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-375-name.png",
+          "sha256": "a21a3ce568a83ee72c60bcf39510e37a234ef71516fc7a9b98573366b0df74ba"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-375-preview.png",
+          "sha256": "83712ab20bb3959767feeaf0b3555bd6f9062f08de422b7efa6dc9b7ba7875a5"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 375,
+      "posture": "Italic",
+      "weight": 400,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 26,
+        "wrapperWidth": 24.75,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 25,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 158.40625,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 52.8125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 43,
+        "wrapperWidth": 42.90625,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 29.046875,
+        "inkRightRelativeToContainer": 72.046875,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-375-name.png",
+          "sha256": "3b2ae995e56ed59112ac82d46d954b69542215abefa2d6db6772bd53042980a2"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-375-preview.png",
+          "sha256": "28fa1972729d060454e57150b66c4af22f210fec792d607b0cd696fd9d01d724"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 375,
+      "posture": "Italic",
+      "weight": 550,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 27,
+        "wrapperWidth": 25.5625,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 26,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "italic",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 163.59375,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 54.53125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 45,
+        "wrapperWidth": 44.3125,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 28.34375,
+        "inkRightRelativeToContainer": 73.34375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-375-name.png",
+          "sha256": "f4429e4f91b306a70e3604041c90783065fc7dae7921e8c1001b87833173f1c3"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-375-preview.png",
+          "sha256": "12e7a18809dc74384a8d8a369574866a88a0921d59dfac8277f63268b1e52ad8"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 375,
+      "posture": "Italic",
+      "weight": 700,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 28,
+        "wrapperWidth": 26.5,
+        "containerWidth": 57,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 27,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 335,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 335,
+        "height": 267.59375,
+        "scrollWidth": 335,
+        "clientWidth": 335,
+        "fontStyle": "italic",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 169.546875,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 56.515625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 47,
+        "wrapperWidth": 45.921875,
+        "containerWidth": 103,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 27.53125,
+        "inkRightRelativeToContainer": 74.53125,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-375-name.png",
+          "sha256": "b895914a798b5be5ab5cfe08048e7ed43dae1913e45e2ce93f99964d72922d61"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-375-preview.png",
+          "sha256": "6ee4d9feaf06fd49c1c400cfce1782b168db3c7ab737b0b4afd88fd940690d84"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Roman",
+      "weight": 400,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 35,
+        "wrapperWidth": 34.203125,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 35,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 218.890625,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 72.96875,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 59,
+        "wrapperWidth": 59.28125,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 52.859375,
+        "inkRightRelativeToContainer": 111.859375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-768-name.png",
+          "sha256": "204f9ef34e4373131102051edda0eade78dc05521d171f5bc38bb69bcc2f547c"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-768-preview.png",
+          "sha256": "b2addd6053bd8b5d30e58ce2eb3722bd6b7220890a5cb41b00d574d6cd0a5a51"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Roman",
+      "weight": 550,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 37,
+        "wrapperWidth": 35.921875,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 37,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "normal",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 229.828125,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 76.609375,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 62,
+        "wrapperWidth": 62.25,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 51.375,
+        "inkRightRelativeToContainer": 113.375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-768-name.png",
+          "sha256": "73b4dae0e6360c8b243709d4e96115d0e0f2028716fb9ff24fe6d88b62eab752"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-768-preview.png",
+          "sha256": "c43ec24332249cb87cfdd5bcfa31a353cc3b99af78a6ea313cbcf1ee7ada953a"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Roman",
+      "weight": 700,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 39,
+        "wrapperWidth": 37.8125,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 39,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "normal",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 241.921875,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 80.640625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 67,
+        "wrapperWidth": 65.53125,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 48.734375,
+        "inkRightRelativeToContainer": 115.734375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-768-name.png",
+          "sha256": "ff9c5ddadbdb4306b2105218cf5cd4d143f03062dcd31da14ddd4e7feb739384"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-768-preview.png",
+          "sha256": "4cc9a90a4e17b47191c57cc0678edc3af6fd0acf8c830a94a204e8cdea39cabf"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Italic",
+      "weight": 400,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 26,
+        "wrapperWidth": 24.75,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 25,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 158.40625,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 52.8125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 43,
+        "wrapperWidth": 42.90625,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 59.046875,
+        "inkRightRelativeToContainer": 102.046875,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-768-name.png",
+          "sha256": "f10e6585bf2a8298429c1f8565535394ac4e45516bb7241dcf6e7e8485d084cd"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-768-preview.png",
+          "sha256": "b96a7ce86ec33ed98d16c8ddc69aa6aa717f94d80ab4a11cb46d75977804795a"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Italic",
+      "weight": 550,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 27,
+        "wrapperWidth": 25.5625,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 26,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "italic",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 163.59375,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 54.53125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 45,
+        "wrapperWidth": 44.3125,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 58.34375,
+        "inkRightRelativeToContainer": 103.34375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-768-name.png",
+          "sha256": "8218c6a9604df7c6f93e7aa8047ef659c0f0b2ffad4bb57b590647e63c79843e"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-768-preview.png",
+          "sha256": "4f15e0f6b93682609f997298db85d0114ff733c7d4d8e5c0c3f7165a31958ffd"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 768,
+      "posture": "Italic",
+      "weight": 700,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 28,
+        "wrapperWidth": 26.5,
+        "containerWidth": 72,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 27,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 712,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 712,
+        "height": 267.59375,
+        "scrollWidth": 712,
+        "clientWidth": 712,
+        "fontStyle": "italic",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 169.546875,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 56.515625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 47,
+        "wrapperWidth": 45.921875,
+        "containerWidth": 163,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 57.53125,
+        "inkRightRelativeToContainer": 104.53125,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-768-name.png",
+          "sha256": "2ab4a94656aa70caa824849e6c0f7666e571c1265a5aaf478da3d616039d1bf3"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-768-preview.png",
+          "sha256": "2fef34fdbb02e3bd51b3dc5845699885e1349cc171ae5d3a71adddcfec05032d"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Roman",
+      "weight": 400,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 35,
+        "wrapperWidth": 34.203125,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 35,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 218.890625,
+            "right": 218.890625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 72.96875,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 59,
+        "wrapperWidth": 59.28125,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 72.6875,
+        "inkRightRelativeToContainer": 131.6875,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-1440-name.png",
+          "sha256": "227ea3cdddad20be1aec610bad2d7461cda74acaad994bdf0baa0b1b2fce99d6"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-400-1440-preview.png",
+          "sha256": "33d9ed3bc31ac2b6401d605e4f0bbbe81f047297a8dbe578553fe265f0e4aa64"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Roman",
+      "weight": 550,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 37,
+        "wrapperWidth": 35.921875,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 37,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "normal",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 229.828125,
+            "right": 229.828125,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 76.609375,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 62,
+        "wrapperWidth": 62.25,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 71.203125,
+        "inkRightRelativeToContainer": 133.203125,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-1440-name.png",
+          "sha256": "bdc6b44add29464b111d7b2c11ececd6f1897b7547fb7eff351a38bebde81755"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-550-1440-preview.png",
+          "sha256": "6a30d4c634b91f76a115fbe47f387c61398b1b90736be7bdcdacff87d3fa2267"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Roman",
+      "weight": 700,
+      "glyphId": "triple-arch-descenders",
+      "codePoint": 994379,
+      "canonicalName": "descender with middle leg and middle leg and long leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 39,
+        "wrapperWidth": 37.8125,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 0,
+        "inkRightRelativeToContainer": 39,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "normal",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 241.921875,
+            "right": 241.921875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 80.640625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "fontSynthesis": "none",
+        "inkWidth": 67,
+        "wrapperWidth": 65.53125,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 68.5625,
+        "inkRightRelativeToContainer": 135.5625,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-1440-name.png",
+          "sha256": "1c1dabbe58e2e13d224e0026e2f5a70a0d064ada8ea056590b885095d2d03467"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/roman-700-1440-preview.png",
+          "sha256": "07aa5ab13d80a770719e8aae2225ac8791e0709dc8c3248b8abfa039e2e812fe"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Italic",
+      "weight": 400,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 26,
+        "wrapperWidth": 24.75,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 25,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "rects": [
+          {
+            "left": 0,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 158.40625,
+            "right": 158.40625,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 52.8125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 43,
+        "wrapperWidth": 42.90625,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 78.875,
+        "inkRightRelativeToContainer": 121.875,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-1440-name.png",
+          "sha256": "f85c371ce38462e19705125bee29352ae2b00d38601994c49a8c70f773bbdf90"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-400-1440-preview.png",
+          "sha256": "5b0096c1e5e6facb9ba436f598b543601b38a2cba9e94bcd21e21e8b4b5aa4b1"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Italic",
+      "weight": 550,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 27,
+        "wrapperWidth": 25.5625,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 26,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "italic",
+        "fontWeight": "550",
+        "rects": [
+          {
+            "left": 0,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 163.59375,
+            "right": 163.59375,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 54.53125,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "550",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 45,
+        "wrapperWidth": 44.3125,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 78.171875,
+        "inkRightRelativeToContainer": 123.171875,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-1440-name.png",
+          "sha256": "44b22962fd38a1124d2a55819e1979521f8c9bdf3935afeb497bad651e98321e"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-550-1440-preview.png",
+          "sha256": "011a383daa00d4ac21d46423ce3bf5d17c757df7196c3506c36e75a30a4fd5b9"
+        }
+      ],
+      "automatedPass": true
+    },
+    {
+      "width": 1440,
+      "posture": "Italic",
+      "weight": 700,
+      "glyphId": "double-arch-descender-extended-middle-legs",
+      "codePoint": 993931,
+      "canonicalName": "descender with long middle leg and leg",
+      "nameFit": {
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 28,
+        "wrapperWidth": 26.5,
+        "containerWidth": 65,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": -1,
+        "inkRightRelativeToContainer": 27,
+        "horizontalInkFits": true
+      },
+      "nameLayout": {
+        "width": 642,
+        "scrollWidth": 642,
+        "clientWidth": 642,
+        "nameFits": true
+      },
+      "previewLayout": {
+        "width": 1316,
+        "height": 267.59375,
+        "scrollWidth": 1316,
+        "clientWidth": 1316,
+        "fontStyle": "italic",
+        "fontWeight": "700",
+        "rects": [
+          {
+            "left": 0,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 169.546875,
+            "right": 169.546875,
+            "top": 47,
+            "bottom": 111
+          },
+          {
+            "left": 0,
+            "right": 56.515625,
+            "top": 155.796875,
+            "bottom": 219.796875
+          }
+        ],
+        "horizontalFit": true,
+        "verticalFit": true
+      },
+      "galleryFit": {
+        "fontSize": "52px",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "fontSynthesis": "none",
+        "inkWidth": 47,
+        "wrapperWidth": 45.921875,
+        "containerWidth": 202.65625,
+        "containerTag": "A",
+        "wrapperOverflow": "visible",
+        "inkLeftRelativeToContainer": 77.359375,
+        "inkRightRelativeToContainer": 124.359375,
+        "horizontalInkFits": true
+      },
+      "noDocumentOverflow": true,
+      "screenshots": [
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-1440-name.png",
+          "sha256": "3c07e8bc44b7d713b71ebeb0e399aab4b15c3d0b8476362056e5f4297ca063e8"
+        },
+        {
+          "path": ".tmp/browser-review/long-forms/italic-700-1440-preview.png",
+          "sha256": "ffc65ba863fff7eeb4c01dfbc00d884e9fb7a383b5e81033507b3aad471809ca"
+        }
+      ],
+      "automatedPass": true
+    }
+  ],
+  "errors": [],
+  "reviewFindings": [
+    "At 375, 768, and 1440 CSS pixels, the longest compiled Roman and native Italic constructions remain fully visible at weights 400, 550, and 700.",
+    "Names wrap within their allocated text columns; glyphs remain separated from the code and name text.",
+    "Specimen sequences preserve native posture, weight changes, joins, counters, and free endings without clipping at either line or container boundaries.",
+    "Ink overhang is measured against the containing link or grid column; intrinsic inline wrappers use visible overflow and are not clipping boundaries."
+  ],
+  "measurementNotes": [
+    "Endpoint and intermediate weights were assigned directly to the existing range input and dispatched through its input event for precise rendering comparisons. This report does not claim pointer or keyboard control validation.",
+    "Gallery glyph fitting was checked against each actual link container. Name rows and native specimen previews were captured visually.",
+    "The review is representative agent optical assessment; user visual acceptance remains pending."
+  ],
+  "reviewedScreenshotCount": 36
+}

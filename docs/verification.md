@@ -30,9 +30,14 @@ Evidence: [extraction hashes](../resources/provenance/extraction-preservation.js
 [raw validation logs](../resources/provenance/font-validation-logs.zip), and
 [isolated repeat build](../resources/provenance/repeat-build.json).
 
+A final reread of the source workspace confirmed all 2,182 captured build inputs,
+six donor files, sixteen outputs and the original build manifest are unchanged.
+This is a comparison of the captured font/build inventory; no complete
+workspace-wide hash inventory was available.
+
 ## Website
 
-The sixteen canonical-naming tests and ten static-site acceptance groups pass.
+The sixteen canonical-naming tests and eleven static-site acceptance groups pass.
 The browser suite passed **76 checks**, including native font loading, shared
 controls, default Roman posture, weight changes and persistence, all 600 pending
 Italic forms, numeric names, code/name search, deep links, real keyboard access,
@@ -46,7 +51,11 @@ spacing and clipped content. The editor preserves native kerning and whitespace;
 its Roman input field provides complete coverage and its preview follows the
 selected posture.
 
-Evidence: [browser checks and render hashes](../resources/verification/browser-review.json).
+Evidence: [browser checks and render hashes](../resources/verification/browser-review.json)
+and [long-form review](../resources/verification/long-form-review.json). All eighteen
+combinations of Roman/Italic, weights 400/550/700 and widths 375/768/1440 were
+checked; all 36 names-list and specimen screenshots were visually inspected.
+No clipping, overlapping text or document overflow was observed.
 Screenshots are regenerable with `npm run test:browser`; they are development
 output, not deployed assets.
 
@@ -74,5 +83,11 @@ The [UCSUR registry](https://www.kreativekorp.com/ucsur/) was rechecked at
 listed as unassigned. This is a dated availability check, not a reservation or
 registry acceptance. The proposal is a draft and has not been submitted.
 
-Clean-checkout validation and live GitHub Pages deployment are recorded below
-when completed. Publication does not imply user visual acceptance.
+A clean Git clone of the committed repository independently passed the website
+build, all sixteen naming tests, eleven site groups, 76 browser checks, proof
+restoration, exact font preservation and exporter consistency. Every generated
+site asset matches the working repository byte for byte. See the
+[clean-checkout record](../resources/verification/clean-checkout.json).
+
+Live GitHub Pages deployment is pending the first successful workflow run.
+Publication does not imply user visual acceptance.
