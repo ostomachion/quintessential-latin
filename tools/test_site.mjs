@@ -3,6 +3,7 @@ import {readFile,stat,readdir,mkdir,mkdtemp,cp,writeFile,rm} from 'node:fs/promi
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {verifyPdfBuild,PDF_MANIFEST_PATH,PDF_SOURCE_PATHS,PDF_OUTPUT_NAMES} from './verify_pdf_build.mjs';
+import {verifyUnifontFontBuild,UNIFONT_FONT_PATH,UNIFONT_FONT_INPUTS} from './verify_unifont_font.mjs';
 import {normalizeSettings,available,searchEntries,chartCode,printableSheets,chartChunks,glyphSize,code,escapeHtml} from '../site/assets/model.mjs';
 import {parseHex} from './build_unifont.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -43,6 +44,25 @@ await test('Responsive static variants, five print grids, and one numeric names 
   assert(css.includes(`--chart-cell-width:${presentation.screen.cellWidth}px`));
   assert(css.includes(`@container chart (min-width:${presentation.screen.mediumWidth}px)`));
   assert(css.includes(`@container chart (min-width:${presentation.screen.wideWidth}px)`));
+});
+await test('Unifont font downloads preserve the compiled files, license, and usage notes',async()=>{
+  const html=await read('dist/downloads.html');
+  const section=html.match(/<section id="unifont-font">([\s\S]*?)<\/section>/)?.[1];
+  assert(section,'Dedicated Unifont font section is missing');
+  assert(section.includes('<h2>Quintessential Latin Unifont</h2>'));
+  assert(section.includes('1,216'));assert(section.includes('8 × 16'));assert(section.includes('16px'));assert(section.includes('32px'));
+  assert(section.includes('href="unifont.html"'));assert(section.includes('href="unifont/quintessential-latin.hex" download'));
+  const files=['QuintessentialUnifont-Regular.ttf','QuintessentialUnifont-Regular.woff2','OFL.txt','README.md'];
+  for(const file of files){
+    const relative='fonts/QuintessentialUnifont/'+file;
+    assert(section.includes(`href="${relative}"`),file);
+    const original=await readFile(path.join(root,'resources',relative)),deployed=await readFile(path.join(root,'dist',relative));
+    assert(original.length>0,file);assert.deepEqual(deployed,original,file);
+    if(file.endsWith('.ttf'))assert.equal(deployed.readUInt32BE(0),0x00010000,'Desktop download must be a TrueType font');
+    if(file.endsWith('.woff2'))assert.equal(deployed.subarray(0,4).toString('ascii'),'wOF2','Web download must be WOFF2');
+  }
+  assert(html.includes('fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf'));
+  for(const file of PDF_OUTPUT_NAMES)assert(html.includes(`href="pdf/${file}"`),file);
 });
 await test('Every local link and asset resolves beneath the Pages repository prefix',async()=>{for(const page of pages){const html=await read(`dist/${page}`);for(const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)){const url=match[1].split('#')[0];if(/^(?:https?:|data:|mailto:)/.test(url))continue;assert(!url.startsWith('/'),`${page}: absolute link ${url}`);const resolved=path.resolve(root,'dist',url);assert(resolved.startsWith(path.join(root,'dist')+path.sep));assert((await stat(resolved)).isFile(),`${page}: ${url}`);}}});
 await test('Unifont bitmap outputs match the catalogue and retain exact native STEM',async()=>{
@@ -103,6 +123,30 @@ await test('PDF freshness binds current inputs and detects stale or altered publ
   }finally{
     assert(path.resolve(fixture).startsWith(temporaryRoot+path.sep),'Temporary fixture must stay inside its intended workspace directory');
     await rm(fixture,{recursive:true,force:true});
+  }
+});
+await test('Font downloads reject stale source pixels, altered binaries, and incomplete provenance',async()=>{
+  const manifest=await verifyUnifontFontBuild(root);
+  const temporaryRoot=path.resolve(root,'.tmp');await mkdir(temporaryRoot,{recursive:true});
+  const fixture=await mkdtemp(path.join(temporaryRoot,'unifont-font-freshness-'));
+  try{
+    for(const relative of [...UNIFONT_FONT_INPUTS,UNIFONT_FONT_PATH+'/manifest.json',...Object.keys(manifest.outputs).map(file=>UNIFONT_FONT_PATH+'/'+file)]){
+      const destination=path.join(fixture,relative);await mkdir(path.dirname(destination),{recursive:true});await cp(path.join(root,relative),destination);
+    }
+    await verifyUnifontFontBuild(fixture);
+    const pixels=path.join(fixture,'resources/unifont/quintessential-latin.hex'),original=await readFile(pixels);
+    await writeFile(pixels,Buffer.concat([original,Buffer.from('\n')]));
+    await assert.rejects(()=>verifyUnifontFontBuild(fixture),/quintessential-latin.hex.*build:unifont:font/);
+    await writeFile(pixels,original);
+    const binary=path.join(fixture,UNIFONT_FONT_PATH,'QuintessentialUnifont-Regular.ttf'),font=await readFile(binary);
+    await writeFile(binary,Buffer.concat([font,Buffer.from('changed')]));
+    await assert.rejects(()=>verifyUnifontFontBuild(fixture),/Regular.ttf.*build:unifont:font/);
+    await writeFile(binary,font);
+    delete manifest.sources['resources/unifont/OFL.txt'];
+    await writeFile(path.join(fixture,UNIFONT_FONT_PATH,'manifest.json'),JSON.stringify(manifest));
+    await assert.rejects(()=>verifyUnifontFontBuild(fixture),/incomplete source\/output manifest/);
+  }finally{
+    assert(path.resolve(fixture).startsWith(temporaryRoot+path.sep));await rm(fixture,{recursive:true,force:true});
   }
 });
 console.log(`${groups} site acceptance groups passed.`);

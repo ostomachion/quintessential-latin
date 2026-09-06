@@ -10,10 +10,41 @@ attribution and OFL 1.1 are in `OFL.txt`.
 The user reviewed the foundation and authorized expansion with corrections:
 native simple terminals, smoother spine curves and double-bowl joins, and the
 narrow spine crossover one row higher. Agent inspection and final aesthetic
-acceptance remain separate. The Unifont commands do not build installable fonts,
-Italic, additional weights, outline masters or PDFs.
+acceptance remain separate. The approved bitmaps also have an installable
+Regular TTF and web WOFF2 export. The separate font compiler preserves their
+pixels and does not rebuild Italic, additional weights, STIX masters or PDFs.
 
 ## Editable sources and commands
+
+### Installable fonts
+
+The Downloads tab includes **Quintessential Latin Unifont Regular** as TTF and
+WOFF2. Both preserve all 1,216 custom cells and carry a 16-pixel monochrome
+bitmap strike alongside scalable pixel outlines. The fonts include 213 pinned
+native Latin companion characters for mixed text. The additional donor subset
+and its archive checksums are in `font-companions.hex` and
+`font-companions.json`.
+
+To set up the separate font export environment:
+
+```sh
+python -m venv .venv-unifont
+# Windows:
+.venv-unifont/Scripts/python -m pip install -r tools/requirements-unifont.txt
+# macOS/Linux:
+.venv-unifont/bin/python -m pip install -r tools/requirements-unifont.txt
+npm run build:unifont:font
+npm run test:unifont:font
+npm run test:unifont:font:browser
+```
+
+The runner uses `.venv-unifont`, or `QLAT_UNIFONT_PYTHON` when explicitly set.
+Without either it uses the active `python` interpreter. Normal site builds
+verify the checked-in font binaries against their source manifest and copy
+them to Downloads; they do not require Python or rebuild outline-font PDFs.
+Usage and licensing accompany the files in `resources/fonts/QuintessentialUnifont/`.
+
+### Drawing sources
 
 - `design.json`: metrics, drawing rules, authorized batch scope and width policy.
 - `primitives.json`: all 16 primitives, seven stemless and nine upright.
