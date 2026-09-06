@@ -6,6 +6,8 @@ import {verifyPdfBuild,PDF_MANIFEST_PATH,PDF_SOURCE_PATHS,PDF_OUTPUT_NAMES} from
 import {verifyUnifontFontBuild,UNIFONT_FONT_PATH,UNIFONT_FONT_INPUTS} from './verify_unifont_font.mjs';
 import {normalizeSettings,available,searchEntries,chartCode,printableSheets,chartChunks,glyphSize,code,escapeHtml} from '../site/assets/model.mjs';
 import {parseHex} from './build_unifont.mjs';
+import ucd from './export_ucd.js';
+const {UCD_FILES}=ucd;
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const catalogue=JSON.parse(await readFile(path.join(root,'resources/catalogue.json'),'utf8'));
 const read=relative=>readFile(path.join(root,relative),'utf8');
@@ -65,6 +67,22 @@ await test('Unifont font downloads preserve the compiled files, license, and usa
   for(const file of PDF_OUTPUT_NAMES)assert(html.includes(`href="pdf/${file}"`),file);
 });
 await test('Every local link and asset resolves beneath the Pages repository prefix',async()=>{for(const page of pages){const html=await read(`dist/${page}`);for(const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)){const url=match[1].split('#')[0];if(/^(?:https?:|data:|mailto:)/.test(url))continue;assert(!url.startsWith('/'),`${page}: absolute link ${url}`);const resolved=path.resolve(root,'dist',url);assert(resolved.startsWith(path.join(root,'dist')+path.sep));assert((await stat(resolved)).isFile(),`${page}: ${url}`);}}});
+await test('UCD downloads include the complete verified private-use supplement',async()=>{
+  const html=await read('dist/downloads.html');
+  const section=html.match(/<section id="ucd">([\s\S]*?)<\/section>/)?.[1];
+  assert(section,'Dedicated UCD download section is missing');
+  assert(section.includes('1,216'));assert(section.includes('optional private-use interpretation'));
+  assert(section.includes('not UCSUR registrations'));assert(section.includes('Read me &amp; usage'));
+  const links=[...section.matchAll(/href="data\/ucd\/([^"/]+)" download/g)].map(match=>match[1]);
+  assert.equal(UCD_FILES.length,8);assert.deepEqual(links,UCD_FILES);
+  assert(html.indexOf('id="unifont-font"')<html.indexOf('id="ucd"'));
+  assert(html.indexOf('id="ucd"')<html.indexOf('<h2>Data &amp; editable sources</h2>'));
+  assert.deepEqual((await readdir(path.join(root,'dist/data/ucd'))).sort(),[...UCD_FILES].sort());
+  for(const file of UCD_FILES){
+    const original=await readFile(path.join(root,'resources/ucd',file)),deployed=await readFile(path.join(root,'dist/data/ucd',file));
+    assert(original.length>0,file);assert.deepEqual(deployed,original,file);
+  }
+});
 await test('Unifont bitmap outputs match the catalogue and retain exact native STEM',async()=>{
   const metadata=JSON.parse(await read('resources/unifont/glyphs.json'));
   const source=await read('resources/unifont/quintessential-latin.hex'),glyphs=parseHex(source);

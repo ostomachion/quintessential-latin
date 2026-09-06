@@ -97,14 +97,16 @@ test("each base is immediately followed by its independent middle states", () =>
   assert.deepEqual(counts, [136, 156, 192]);
 });
 
-test("reallocation preserves construction identities, names, parts, and previous base order", () => {
+test("reallocation preserves identities and parts with only the explicit lowercase name prefix", () => {
   assert.equal(baseline.entries.length, 1216);
   const identityFields = ["glyphId", "glyphName", "legacyIndex", "recipeCodePoint", "oldCodePoint", "baseGlyphId",
     "middleLegs", "middleLegExtensions", "postures", "parts", "stemless", "name", "canonicalName", "legacyName"];
   const identity = entry => Object.fromEntries(identityFields.map(field => [field, entry[field]]));
   for (const previous of baseline.entries) {
     assert.ok(byId.has(previous.glyphId), previous.glyphId);
-    assert.deepEqual(identity(byId.get(previous.glyphId)), identity(previous), previous.glyphId);
+    assert.ok(previous.name.startsWith("QUINTESSENTIAL LATIN LETTER "));
+    const lowercase = {...previous, name: previous.name.replace(/^QUINTESSENTIAL LATIN LETTER /, "QUINTESSENTIAL LATIN SMALL LETTER ")};
+    assert.deepEqual(identity(byId.get(previous.glyphId)), identity(lowercase), previous.glyphId);
   }
   const previousById = new Map(baseline.entries.map(entry => [entry.glyphId, entry]));
   for (const [familyId] of families.filter(([id]) => id !== "stemless-double-bowls-and-spine")) {

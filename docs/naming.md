@@ -18,8 +18,12 @@ open bowl, double open bowl, turned double open bowl, and spine. The two explici
 turned names distinguish opposite-facing stemless open forms. Other constructions
 use component order instead of a global turned modifier.
 
-Every full character name starts with QUINTESSENTIAL LATIN LETTER, including
-these seven stemless forms.
+Every full character name starts with QUINTESSENTIAL LATIN SMALL LETTER, including
+these seven stemless forms. All 1,216 characters are lowercase letters; uppercase
+and titlecase counterparts and mappings are undefined. The capitalized spelling
+of a character name does not change the character's case. The SMALL LETTER
+prefix clarification retains version 3 of the construction-name algorithm and
+does not change assignments, structural names, or internal font glyph names.
 
 The [naming specification](quintessential-latin-canonical-naming-spec-v3.md) gives the complete primitive table, closure rules,
 and structural examples. The implementation's nameParts(parts) function is the
@@ -29,7 +33,7 @@ catalogue, Markdown name list, and NamesList.txt must remain consistent.
 Run node tools/export_glyph_catalogue.js to regenerate the public exports.
 Run node tools/export_glyph_catalogue.js --check to verify them without changes.
 Run node tools/test_canonical_glyph_names.js to check primitive vocabulary,
-local closure, count rules, all 832 unique names, and input nonmutation.
+local closure, count rules, all 1,216 unique names, and input nonmutation.
 
 Canonical names, presentation families, stable glyph IDs, internal font names,
 legacy recipe codes, and active private-use assignments are separate identities.

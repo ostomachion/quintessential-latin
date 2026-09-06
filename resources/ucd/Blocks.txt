@@ -1,0 +1,6 @@
+# Quintessential Latin 0.250; draft private-use agreement, not a registration.
+# Proposed block overlay; not the Unicode Block property. See ReadMe.txt.
+# Start..End; Block Name
+F2A00..F2ABF; Quintessential Latin
+F2AC0..F2BBF; Quintessential Latin Extended-A
+F2BC0..F2EBF; Quintessential Latin Extended-B

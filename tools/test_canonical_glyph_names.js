@@ -215,7 +215,7 @@ test("all 1216 neutral structures retain unique canonical names without mutation
     const parts = freeze(structuredClone(entry.parts));
     const original = structuredClone(parts);
     assert.equal(canonicalName(parts), entry.canonicalName, entry.glyphId);
-    assert.equal(entry.name, `QUINTESSENTIAL LATIN LETTER ${entry.canonicalName.toUpperCase()}`, entry.glyphId);
+    assert.equal(entry.name, `QUINTESSENTIAL LATIN SMALL LETTER ${entry.canonicalName.toUpperCase()}`, entry.glyphId);
     assert.doesNotMatch(entry.canonicalName, /middle (?:arm|leg)/);
     assert.deepEqual(parts, original);
     assert.ok(!seen.has(entry.canonicalName), entry.glyphId);
@@ -260,13 +260,15 @@ test("all two-middle constructions include every independent extension state", (
   }
 });
 
-test("logical allocation preserves prior construction identities and names", () => {
+test("logical allocation preserves prior identities with the explicit lowercase name prefix", () => {
   const baseline = JSON.parse(gunzipSync(fs.readFileSync(path.join(__dirname, "../resources/provenance/italic-completion-baseline.json.gz"))));
   assert.equal(baseline.entries.length, 832);
   const withoutPlacement = ({postures, codePoint, blockId, familyId, ...identity}) => identity;
   const byId = new Map(allocation.entries.map(entry => [entry.glyphId, entry]));
   for (const entry of baseline.entries) {
-    assert.deepEqual(withoutPlacement(byId.get(entry.glyphId)), withoutPlacement(entry), entry.glyphId);
+    assert.ok(entry.name.startsWith("QUINTESSENTIAL LATIN LETTER "));
+    const lowercase = {...entry, name: entry.name.replace(/^QUINTESSENTIAL LATIN LETTER /, "QUINTESSENTIAL LATIN SMALL LETTER ")};
+    assert.deepEqual(withoutPlacement(byId.get(entry.glyphId)), withoutPlacement(lowercase), entry.glyphId);
   }
   assert.equal(new Set(allocation.entries.map(entry => entry.glyphName)).size, 1216);
   assert.equal(new Set(allocation.displayOrder).size, 1216);
@@ -293,10 +295,10 @@ test("mixed middle states name visual sides and close only against the selected 
 });
 test("requested constructions retain uniform letter names and simplified upright counts", () => {
   const expected = new Map([
-    ["turned-arched-arm-ascender-extended-middle-legs", "QUINTESSENTIAL LATIN LETTER HIP WITH TWO ASCENDERS"],
-    ["turned-double-arch-ascenders-extended-middle-legs", "QUINTESSENTIAL LATIN LETTER LONG ARM WITH TWO ASCENDERS"],
-    ["double-arched-arm", "QUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER"],
-    ["double-arch", "QUINTESSENTIAL LATIN LETTER TWO STEMS WITH LEG"]
+    ["turned-arched-arm-ascender-extended-middle-legs", "QUINTESSENTIAL LATIN SMALL LETTER HIP WITH TWO ASCENDERS"],
+    ["turned-double-arch-ascenders-extended-middle-legs", "QUINTESSENTIAL LATIN SMALL LETTER LONG ARM WITH TWO ASCENDERS"],
+    ["double-arched-arm", "QUINTESSENTIAL LATIN SMALL LETTER THREE STEMS WITH SHOULDER"],
+    ["double-arch", "QUINTESSENTIAL LATIN SMALL LETTER TWO STEMS WITH LEG"]
   ]);
   for (const [glyphId, name] of expected) {
     assert.equal(allocation.entries.find(entry => entry.glyphId === glyphId)?.name, name);

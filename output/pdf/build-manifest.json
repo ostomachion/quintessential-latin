@@ -8,9 +8,9 @@
     "weight": 400
   },
   "sources": {
-    "resources/catalogue.json": "1a112279ea5881d45623a992e4a677ea4ec8d578428f14f57b04b756220f3a64",
+    "resources/catalogue.json": "413e01649a5103c91e128760f835d2c82eca0b853a8a3241ccc7d4831ace15bb",
     "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
-    "docs/proposal.json": "001986e6ca469b77b930dcb2867187b00438981fe4de583cebb40e0d4f91d53f",
+    "docs/proposal.json": "6e588b0bf487100cbd2a0e11d8dda91f80de110c3deebde1f9a73fd26fca5a8d",
     "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
     "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
     "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
@@ -22,28 +22,28 @@
   },
   "outputs": {
     "quintessential-latin.pdf": {
-      "sha256": "eae88eec0df250a2d5efe08fe1947439d322009202f78c17dec720bb0071b0fd",
-      "bytes": 100366,
+      "sha256": "27515c7fffc6cbcb2a4f60a17422ae0083d48aad80467cd23bd759e07a5d91b7",
+      "bytes": 100453,
       "pages": 6
     },
     "quintessential-latin-extended-a.pdf": {
-      "sha256": "d7c1129b9de006f7219225010853fc597780e28bcd274189eb66d0e5dbe5867e",
-      "bytes": 105676,
+      "sha256": "8e4fc7db0b16bd483f6ed1c71d760ff8db4d98044e98afea2920f6ec16492742",
+      "bytes": 105996,
       "pages": 7
     },
     "quintessential-latin-extended-b.pdf": {
-      "sha256": "a0957593d29ba66540f6adf460829debb69004c1e5a2b0ae60e768e73e230b7f",
-      "bytes": 169286,
-      "pages": 18
+      "sha256": "ba789c82ae88664eb4510f6c45cc41b726bef8cec2b999993c3f68759e52d866",
+      "bytes": 171011,
+      "pages": 20
     },
     "quintessential-latin-catalogue.pdf": {
-      "sha256": "057f9ee1d7ea12bbf458ea86230ca94893a989988e9e30b5371fbe263da64626",
-      "bytes": 236070,
-      "pages": 31
+      "sha256": "34eb34819e39d2eec0eda27788e6e0db7febca205d74a66f9dfdc5d7f8a51dab",
+      "bytes": 238246,
+      "pages": 33
     },
     "quintessential-latin-proposal.pdf": {
-      "sha256": "372fbec652867ffde7cf26bf1176aadbb572f261ec33b3b00448464db3f5e80b",
-      "bytes": 24399,
+      "sha256": "e9e784b9b09020630134b41e685e11f980f8c6e3d6c033a72b3ab327ce3d7e6d",
+      "bytes": 25042,
       "pages": 5
     }
   }

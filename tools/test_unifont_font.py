@@ -25,7 +25,7 @@ class UnifontFontTests(unittest.TestCase):
     def test_repertoire_names_metrics_and_supplementary_cmaps(self):
         for font in self.fonts.values():
             self.assertEqual(set(font.getBestCmap()), set(self.cells))
-            self.assertEqual(len(font.getGlyphOrder()), 1430)
+            self.assertEqual(len(font.getGlyphOrder()), 1431)
             self.assertEqual(font['name'].getDebugName(1), FAMILY)
             self.assertEqual(font['name'].getDebugName(2), 'Regular')
             self.assertEqual(font['name'].getDebugName(6), STEM)

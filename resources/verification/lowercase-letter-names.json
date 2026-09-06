@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-06",
+  "repertoireVersion": "0.250",
+  "namingVersion": 3,
+  "change": {
+    "characterCount": 1216,
+    "generalCategory": "Ll",
+    "namePrefix": "QUINTESSENTIAL LATIN SMALL LETTER ",
+    "uppercaseMappings": 0,
+    "titlecaseMappings": 0,
+    "nonIdentityCaseFoldingMappings": 0
+  },
+  "preservation": {
+    "beforeAllocationSha256": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b",
+    "afterAllocationSha256": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2",
+    "allocationChangesOnlyFullNamePrefix": true,
+    "fontBinariesByteIdentical": {
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Bold.otf": "5058d55ff8cf0220ec6968301e28eed9bab9062bd7df04231d9d56cc03e22b81",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Bold.woff2": "eb1520777e7498cd7d9b86440bbf7843de98b7b0b31c8a6076cb83808dc5b12d",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.otf": "c767bd6e2a67f7d44b14396355fffc0a7d62192f2442390caa81bb5831aa812d",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-BoldItalic.woff2": "4afda04fe45883095e5e4de663a4fd34a409daac0cef67f19f1caf16177e1dbb",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.ttf": "77fa344c5a5a4f5dcc1e4e8726f0b5360e4e162998c885bd5d568dd8c0815218",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic-Variable.woff2": "06d3c75b7c352d8a798918450a43d2b0a30c176268f19aa4b9f77f5bb53e7e0f",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic.otf": "5fc11fd0dde6999ee56a331935890f2f4d1178e72238fee7686bdb5bdc9d108c",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Italic.woff2": "ecd6041d1990df3fd71f941831881dfba1873c77db903d386d10ed11259195aa",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Regular.otf": "4848ca82f6ad00833018811cf807ca6ca9c616a4cd69429da1f430c8c180985b",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Regular.woff2": "c31decd023d8668ee174b6b1003357a0524cbe4810be9419ee2812a6417ede05",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+      "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.woff2": "5303d4ca576145e3cc58e1325fc03cf3693d89e360cad776f50768763ce62961",
+      "resources/fonts/QuintessentialUnifont/QuintessentialUnifont-Regular.ttf": "39c6c9ecb083e638df6cc1fce5b29068fa3d58e185a20b0618c4035fba23c95a",
+      "resources/fonts/QuintessentialUnifont/QuintessentialUnifont-Regular.woff2": "44fd7274832699352c8c4409c1806edd1aa816ed2a9e4d55163a23c869adb836"
+    },
+    "serifMetadataRevalidation": {
+      "schemaVersion": 1,
+      "operation": "Serif metadata regeneration with existing font binaries",
+      "originalManifestSha256": "50ace8c8caa81fd2d74599f2a705225bd6fe1cd271c2738eb27517cb42ab1574",
+      "finalManifestSha256": "17dee9fa485ce746268372f01ee51d014507f7421c702577d031cae66b075cb8",
+      "changedSources": {
+        "resources/quintessential-latin-allocation.json": {
+          "before": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b",
+          "after": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2"
+        },
+        "tools/export_glyph_catalogue.js": {
+          "before": "a9b6074ba0200f76d7cb877fa42770c3fad736fe26b39b8ffec6fb69605afffb",
+          "after": "eb4bf9c55372915eddee9377389fdca582980d6013728399b901c6c4eec30c42"
+        },
+        "tools/reallocate_catalogue.py": {
+          "before": "388cf6610769e7fb6aaca8ce70efe07231e9a0993303e9903982cb3df9cbb87c",
+          "after": "03a65292d2f8a96ecc4a0b9d6f1cfffe3688b4af41df5345e20c6d1f372d4b5b"
+        }
+      },
+      "fontsRecompiled": false,
+      "fullProofRegenerated": true,
+      "reusedExistingProof": false,
+      "proofBytesUnchanged": true,
+      "existingProofGzipRetained": true,
+      "helperExitInterruptedAfterResultWritten": true,
+      "note": "The metadata generator returned and wrote regeneration-result.json before its Python shutdown was interrupted; all reported hashes were independently rechecked afterward.",
+      "allNonNameAllocationFieldsUnchanged": true,
+      "pinnedDonorsVerified": true,
+      "toolVersionsUnchanged": true,
+      "unchangedHashes": {
+        "QuintessentialSerif-Bold.otf": "5058d55ff8cf0220ec6968301e28eed9bab9062bd7df04231d9d56cc03e22b81",
+        "QuintessentialSerif-Bold.woff2": "eb1520777e7498cd7d9b86440bbf7843de98b7b0b31c8a6076cb83808dc5b12d",
+        "QuintessentialSerif-BoldItalic.otf": "c767bd6e2a67f7d44b14396355fffc0a7d62192f2442390caa81bb5831aa812d",
+        "QuintessentialSerif-BoldItalic.woff2": "4afda04fe45883095e5e4de663a4fd34a409daac0cef67f19f1caf16177e1dbb",
+        "QuintessentialSerif-Italic-Variable.ttf": "77fa344c5a5a4f5dcc1e4e8726f0b5360e4e162998c885bd5d568dd8c0815218",
+        "QuintessentialSerif-Italic-Variable.woff2": "06d3c75b7c352d8a798918450a43d2b0a30c176268f19aa4b9f77f5bb53e7e0f",
+        "QuintessentialSerif-Italic.otf": "5fc11fd0dde6999ee56a331935890f2f4d1178e72238fee7686bdb5bdc9d108c",
+        "QuintessentialSerif-Italic.woff2": "ecd6041d1990df3fd71f941831881dfba1873c77db903d386d10ed11259195aa",
+        "QuintessentialSerif-Regular.otf": "4848ca82f6ad00833018811cf807ca6ca9c616a4cd69429da1f430c8c180985b",
+        "QuintessentialSerif-Regular.woff2": "c31decd023d8668ee174b6b1003357a0524cbe4810be9419ee2812a6417ede05",
+        "QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
+        "QuintessentialSerif-Variable.woff2": "5303d4ca576145e3cc58e1325fc03cf3693d89e360cad776f50768763ce62961",
+        "proof-data.json": "fe7824fdeff609cbf893640e70a253ff0cc06675f8d881d18d2e46446bea2cf8",
+        "proof-data.json.gz": "f8fb0d41006158a50b2bf8fc7c0a079a9eecef733618156e51bc7bf698492a76",
+        "OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
+        "FONTLOG.txt": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204",
+        "TRADEMARKS.txt": "ca9b6efa4ba532c4bbd16a012220c511df75cedaf4f2b28bfc270ba5b0dba0a4"
+      }
+    }
+  },
+  "validation": {
+    "nodeTests": {
+      "allocation": 5,
+      "naming": 20,
+      "ucd": 10,
+      "unifont": 17,
+      "site": 19
+    },
+    "unifontFontTests": 6,
+    "pdfTests": 9,
+    "browserChecks": [
+      "1440px: all 1216 SMALL LETTER names exactly match the catalogue",
+      "1440px: wrapped names fit their entries and page",
+      "1440px: longest full name fits the character dialog",
+      "1440px: proposal explains lowercase classification and fits page",
+      "375px: all 1216 SMALL LETTER names exactly match the catalogue",
+      "375px: wrapped names fit their entries and page",
+      "375px: longest full name fits the character dialog",
+      "375px: proposal explains lowercase classification and fits page",
+      "Served UnicodeData has 1216 Ll records with no case mappings",
+      "No browser script errors"
+    ],
+    "pdfVisualReview": {
+      "pages": 71,
+      "contactSheets": 20,
+      "scope": "All pages rendered with Poppler and reviewed via contact sheets; dense pages inspected at full size."
+    }
+  },
+  "pdfs": {
+    "quintessential-latin.pdf": {
+      "sha256": "27515c7fffc6cbcb2a4f60a17422ae0083d48aad80467cd23bd759e07a5d91b7",
+      "bytes": 100453,
+      "pages": 6
+    },
+    "quintessential-latin-extended-a.pdf": {
+      "sha256": "8e4fc7db0b16bd483f6ed1c71d760ff8db4d98044e98afea2920f6ec16492742",
+      "bytes": 105996,
+      "pages": 7
+    },
+    "quintessential-latin-extended-b.pdf": {
+      "sha256": "ba789c82ae88664eb4510f6c45cc41b726bef8cec2b999993c3f68759e52d866",
+      "bytes": 171011,
+      "pages": 20
+    },
+    "quintessential-latin-catalogue.pdf": {
+      "sha256": "34eb34819e39d2eec0eda27788e6e0db7febca205d74a66f9dfdc5d7f8a51dab",
+      "bytes": 238246,
+      "pages": 33
+    },
+    "quintessential-latin-proposal.pdf": {
+      "sha256": "e9e784b9b09020630134b41e685e11f980f8c6e3d6c033a72b3ab327ce3d7e6d",
+      "bytes": 25042,
+      "pages": 5
+    }
+  },
+  "limitations": [
+    "No external publication or registry submission.",
+    "The preexisting reallocate_catalogue.py --check raw-GLIF comparison still rejects an independently approved stemless terminal revision. In-memory allocation regeneration and the full source/compiled preservation verifier pass.",
+    "This is a metadata and naming change, not a new full outline-font build or exhaustive ordered-pair spacing run."
+  ]
+}

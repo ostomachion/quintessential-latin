@@ -1,0 +1,49 @@
+Agreement-Type: Public
+Agreement-Name: Quintessential Latin private-use agreement (draft)
+
+Title: Quintessential Latin draft UCSUR proposal
+Author: Josh Hufford
+Publication-Date: 2026-09-06
+URL: https://github.com/ostomachion/quintessential-latin/blob/main/docs/proposal.json
+
+Title: Quintessential Latin explicit allocation 0.250
+Author: Josh Hufford
+URL: https://github.com/ostomachion/quintessential-latin/blob/main/resources/quintessential-latin-allocation.json
+
+Title: Quintessential Latin canonical naming version 3
+Author: Josh Hufford
+URL: https://github.com/ostomachion/quintessential-latin/blob/main/docs/quintessential-latin-canonical-naming-spec-v3.md
+
+Title: Quintessential Latin reference fonts and code charts
+Author: Josh Hufford
+URL: https://ostomachion.github.io/quintessential-latin/downloads.html
+
+Title: Under-ConScript Unicode Registry data directory
+URL: https://www.kreativekorp.com/ucsur/UNIDATA/
+Access-Date: 2026-09-06
+
+Title: UCSUR Charts File Format, revision 1.0
+Author: Ian Jacobi
+Publication-Date: 2013-02-05
+URL: https://www.kreativekorp.com/ucsur/UNIDATA/Charts.html
+Access-Date: 2026-09-06
+
+Title: UCSUR source bibliography format
+URL: https://www.kreativekorp.com/ucsur/UNIDATA/Sources.txt
+Access-Date: 2026-09-06
+
+Title: Unicode Character Database, UAX #44, Unicode 17.0.0
+URL: https://www.unicode.org/reports/tr44/tr44-36.html
+Access-Date: 2026-09-06
+
+Title: Unicode 17.0.0, Chapter 4, section 4.2 Case
+URL: https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-4/
+Access-Date: 2026-09-06
+
+Title: Unicode 17.0.0 NamesList format
+URL: https://www.unicode.org/Public/17.0.0/ucd/NamesList.html
+Access-Date: 2026-09-06
+
+Title: Unicode 17.0.0, Chapter 23, section 23.5 Private-Use Characters
+URL: https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-23/
+Access-Date: 2026-09-06

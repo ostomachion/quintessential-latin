@@ -47,7 +47,10 @@
     "special-turned-double-open-bowl": "025C",
     "special-spine": "0073",
     "turned-bowled-spine": "0061",
-    "bowled-spine": "0250"
+    "bowled-spine": "0250",
+    "tail": "0237",
+    "turned-bowl-tail": "0261",
+    "turned-arch-tail": "0079"
   },
   "widthExceptions": [],
   "userApproval": null,
@@ -61,7 +64,8 @@
     "Native Latin terminal shapes govern each context: preserve exact donor details and do not add decorative bulbs, serifs or stroke thickening from the outline design.",
     "Use exact native a for spine with stem and exact native turned a for stem with spine. Shared spines combine turned-a upper connections with upright-a lower connections and a thin coordinated waist, balancing the body before adding extensions.",
     "The narrow central spine crossover is at row 9, as directed in the foundation feedback.",
-    "Every one of the 1216 allocated identities is drawn. Pair and quartet states preserve their base except for explicitly documented extension and attachment pixels."
+    "Every one of the 1216 allocated identities is drawn. Pair and quartet states preserve their base except for explicitly documented extension and attachment pixels.",
+    "Contextual tail revision: standalone tails use exact dotless j; bowl tails use script g; lower hips use y. Upper-arch long bowls retain tipless returns so only the declared adjacent extension closes them. Ordinary joined upper hooks follow the native f crest."
   ],
   "expectedDrawn": 1216,
   "completeWithoutMiddle": 136,
@@ -69,5 +73,10 @@
     "date": "2026-09-06",
     "basis": "User approved the revised native a and turned-a spine language, then requested all remaining Unifont glyphs. Preserve the previously drawn 148 characters exactly.",
     "scope": "Complete all 1216 characters across all 30 current families. Final aesthetic acceptance remains separate from construction and agent inspection."
+  },
+  "tailRevision": {
+    "date": "2026-09-06",
+    "basis": "User requested a source-faithful y/script-g/dotless-j audit and consistent related tails, long open bowls and native precedents, preserving unaffected glyphs.",
+    "record": "tail-revisions.json"
   }
 }

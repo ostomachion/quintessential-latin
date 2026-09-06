@@ -589,8 +589,8 @@
         "........",
         "........",
         "........",
-        "..#....#",
-        ".#.#...#",
+        "..##...#",
+        ".#.....#",
         ".#.....#",
         ".##.##.#",
         ".#.#.#.#",
@@ -598,20 +598,23 @@
         ".#.###.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        ".#.##.##",
+        ".#.#.###",
+        ".#.##..#",
         ".#.....#",
-        ".#...##."
+        ".#....#."
       ],
       "donors": [
         "0061",
         "0250",
+        "006E",
         "006D",
         "0075",
         "0066",
-        "014B"
+        "0070",
+        "0071",
+        "0079"
       ],
-      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: neither middle component extended.",
+      "notes": "Use the approved four-stave body at columns 1, 3, 5, 7 with its row-9 crossover and two open central counters of two and three pixels. The left shoulder enters below its crest; the right hip leaves above the baseline. Joined staves retain simple native n/m/u endings. Middle components follow allocation order from left to right; only their designated upper or lower extension pixels change between states. Outer curved terminals use the native-f crest and contextual native-y or script-g return; no extra tip, serif, or enclosed terminal pocket is added. This allocation contains no declared long bowl or returnContact, so ordinary compact hooks are not forced to close against unrelated staves. The two-column native-y hip rises to row 12 without altering the central spine; its tipless lower return occupies the single interior pixel at row 15.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -657,8 +660,8 @@
         "........",
         "........",
         "........",
-        "..#....#",
-        ".#.#...#",
+        "..##...#",
+        ".#.....#",
         ".#.....#",
         ".##.##.#",
         ".#.#.#.#",
@@ -666,20 +669,23 @@
         ".#.###.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        ".#.##.##",
+        ".#.#.###",
+        ".#.##..#",
         ".#.#...#",
-        ".#.#.##."
+        ".#.#..#."
       ],
       "donors": [
         "0061",
         "0250",
+        "006E",
         "006D",
         "0075",
         "0066",
-        "014B"
+        "0070",
+        "0071",
+        "0079"
       ],
-      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: left middle component extended.",
+      "notes": "Use the approved four-stave body at columns 1, 3, 5, 7 with its row-9 crossover and two open central counters of two and three pixels. The left shoulder enters below its crest; the right hip leaves above the baseline. Joined staves retain simple native n/m/u endings. Middle components follow allocation order from left to right; only their designated upper or lower extension pixels change between states. Outer curved terminals use the native-f crest and contextual native-y or script-g return; no extra tip, serif, or enclosed terminal pocket is added. This allocation contains no declared long bowl or returnContact, so ordinary compact hooks are not forced to close against unrelated staves. The two-column native-y hip rises to row 12 without altering the central spine; its tipless lower return occupies the single interior pixel at row 15.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -734,8 +740,8 @@
         "........",
         "........",
         "........",
-        "..#..#.#",
-        ".#.#.#.#",
+        "..##.#.#",
+        ".#...#.#",
         ".#...#.#",
         ".##.##.#",
         ".#.#.#.#",
@@ -743,20 +749,23 @@
         ".#.###.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        ".#.##.##",
+        ".#.#.###",
+        ".#.##..#",
         ".#.....#",
-        ".#...##."
+        ".#....#."
       ],
       "donors": [
         "0061",
         "0250",
+        "006E",
         "006D",
         "0075",
         "0066",
-        "014B"
+        "0070",
+        "0071",
+        "0079"
       ],
-      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: right middle component extended.",
+      "notes": "Use the approved four-stave body at columns 1, 3, 5, 7 with its row-9 crossover and two open central counters of two and three pixels. The left shoulder enters below its crest; the right hip leaves above the baseline. Joined staves retain simple native n/m/u endings. Middle components follow allocation order from left to right; only their designated upper or lower extension pixels change between states. Outer curved terminals use the native-f crest and contextual native-y or script-g return; no extra tip, serif, or enclosed terminal pocket is added. This allocation contains no declared long bowl or returnContact, so ordinary compact hooks are not forced to close against unrelated staves. The two-column native-y hip rises to row 12 without altering the central spine; its tipless lower return occupies the single interior pixel at row 15.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -815,8 +824,8 @@
         "........",
         "........",
         "........",
-        "..#..#.#",
-        ".#.#.#.#",
+        "..##.#.#",
+        ".#...#.#",
         ".#...#.#",
         ".##.##.#",
         ".#.#.#.#",
@@ -824,20 +833,23 @@
         ".#.###.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        ".#.##.##",
+        ".#.#.###",
+        ".#.##..#",
         ".#.#...#",
-        ".#.#.##."
+        ".#.#..#."
       ],
       "donors": [
         "0061",
         "0250",
+        "006E",
         "006D",
         "0075",
         "0066",
-        "014B"
+        "0070",
+        "0071",
+        "0079"
       ],
-      "notes": "The four staves remain at columns 1, 3, 5 and 7. The shared spine crosses at row 9, leaving a two-pixel upper counter and a three-pixel lower counter in column 4. Its left arch enters through the row-6 crest and its right hip exits through (6,13). The upper hook keeps its open return; the lower hook ends in the compact leftward bend used by native eng. Independent extensions preserve the complete shared-spine body. State: both middle components extended.",
+      "notes": "Use the approved four-stave body at columns 1, 3, 5, 7 with its row-9 crossover and two open central counters of two and three pixels. The left shoulder enters below its crest; the right hip leaves above the baseline. Joined staves retain simple native n/m/u endings. Middle components follow allocation order from left to right; only their designated upper or lower extension pixels change between states. Outer curved terminals use the native-f crest and contextual native-y or script-g return; no extra tip, serif, or enclosed terminal pocket is added. This allocation contains no declared long bowl or returnContact, so ordinary compact hooks are not forced to close against unrelated staves. The two-column native-y hip rises to row 12 without altering the central spine; its tipless lower return occupies the single interior pixel at row 15.",
       "expected": {
         "components": 1,
         "counters": 2

@@ -2,6 +2,36 @@
 
 Current reference font **0.250**, allocation **0.250**, canonical naming **3**.
 
+## Lowercase letter clarification
+
+On 6 September 2026 the author clarified that all **1,216 characters** are
+lowercase letters. Full names now use `QUINTESSENTIAL LATIN SMALL LETTER` and
+the private-use UCD interpretation is `Ll`. No uppercase or titlecase mappings
+are defined, and case folding remains identity. Standard Unicode PUA behavior
+is unchanged; applications must explicitly adopt the project interpretation.
+
+The current allocation differs only in its full-name prefix. Structural names,
+legacy names, parts, internal glyph names, code points, and ordering are retained.
+All **14 Serif and Unifont binaries** remain byte-for-byte identical. Naming
+algorithm version 3 and allocation/font version 0.250 are retained.
+
+The catalogue, both names-list formats, UCD package, proposal, site and all five
+PDFs have been regenerated. The PDFs now contain **71 pages** (6 main, 7
+Extended-A, 20 Extended-B, 33 combined, 5 proposal); longer names wrap within
+the existing design. All pages were rendered with Poppler and reviewed through
+20 contact sheets, with dense pages inspected at full size.
+
+Allocation, naming, UCD, Unifont, site and PDF tests pass. Focused browser checks
+at 1440px and 375px verify every full name, wrapping, the longest-name dialog,
+proposal text and served lowercase properties. The full source/compiled-font
+preservation verifier passes, as does in-memory allocation regeneration. The
+older migration CLI's raw GLIF comparison still rejects an independently
+approved stemless terminal revision; that separate limitation is unchanged.
+
+The [lowercase verification record](../resources/verification/lowercase-letter-names.json)
+binds the updated data, unchanged fonts and reviewed PDFs. This is a local
+naming/property update; the following records describe earlier publications.
+
 ## Logical allocation
 
 Version 0.250 places all **1,216 constructions** in consecutive positions

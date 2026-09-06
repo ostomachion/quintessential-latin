@@ -1,0 +1,6 @@
+# Quintessential Latin 0.250; draft private-use agreement, not a registration.
+# All 1216 characters are lowercase letters with identity case folding.
+# No uppercase/titlecase counterparts or other case mappings are defined.
+# Unlisted characters map to themselves; identity records are not emitted.
+# Lowercase status does not require an uppercase counterpart.
+# This fragment covers only these three proposed blocks. See ReadMe.txt.

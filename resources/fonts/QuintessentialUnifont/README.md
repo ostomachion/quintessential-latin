@@ -7,7 +7,7 @@ Install **QuintessentialUnifont-Regular.ttf** as a desktop font. Select
 the webfont version; it is not installed through the operating system.
 
 The font includes all **1,216 Quintessential Latin characters** at their
-existing U+F2A00–U+F2EBF assignments, plus **213 unchanged native Unifont
+existing U+F2A00–U+F2EBF assignments, plus **214 unchanged native Unifont
 characters** for mixed Latin text. The companion set covers printable ASCII,
 Latin-1 Supplement except the soft-hyphen formatting control, and the native
 Latin donor characters used in the glyph proofs. There are 1,429 encoded

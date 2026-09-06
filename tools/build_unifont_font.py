@@ -22,7 +22,7 @@ STEM = 'QuintessentialUnifont-Regular'
 VERSION = '0.250'
 UPM, PIXEL, ASCENT, DESCENT, ADVANCE = 1024, 64, 896, -128, 512
 FONT_TIMESTAMP = 1788652800 + 2082844800  # 2026-09-06, OpenType's 1904 epoch.
-COMPANION_SHA256 = 'f0477d77ddea0068a61d1c0e116534b873cd183dbfe8cc58d42ec524fcf7c1ab'
+COMPANION_SHA256 = '0ec8a4f2f3fda7f6ed4d0db9358099bb522eeb65df51e5cb2d5fc0dba56c0090'
 NOTDEF = bytes([0, 0, 0, 126, 66, 66, 66, 66, 66, 66, 66, 66, 66, 126, 0, 0])
 
 
@@ -61,7 +61,7 @@ def load_cells(root: Path = ROOT):
     if sha256(companion_data) != COMPANION_SHA256 or companion_info['subsetSha256'] != COMPANION_SHA256:
         raise ValueError('Pinned native companion pixels changed')
     companions = parse_hex(companion_data)
-    if len(companions) != 213 or set(companions) != {int(p, 16) for p in companion_info['codePoints']} or custom.keys() & companions.keys():
+    if len(companions) != 214 or set(companions) != {int(p, 16) for p in companion_info['codePoints']} or custom.keys() & companions.keys():
         raise ValueError('Invalid companion coverage')
     for point, rows in parse_hex((base / 'donors.hex').read_bytes()).items():
         if companions.get(point) != rows:
@@ -134,7 +134,7 @@ def make_font(cells: dict[int, bytes], license_text: str):
         'psName': STEM, 'version': f'Version {VERSION}',
         'copyright': license_text.split('This Font Software')[0].strip(),
         'manufacturer': 'Josh Hufford', 'designer': 'Josh Hufford; GNU Unifont contributors',
-        'description': '1216 Quintessential Latin characters and 213 native GNU Unifont Latin companions. Pixel outlines with an exact 16-ppem monochrome bitmap strike.',
+        'description': '1216 Quintessential Latin characters and 214 native GNU Unifont Latin companions. Pixel outlines with an exact 16-ppem monochrome bitmap strike.',
         'licenseDescription': 'Licensed under the SIL Open Font License, Version 1.1. See the accompanying OFL.txt.',
         'licenseInfoURL': 'https://openfontlicense.org/',
     })
@@ -173,7 +173,7 @@ def build(root: Path = ROOT, check: bool = False):
     outputs = compile_outputs(root)
     inputs = ['tools/build_unifont_font.py', 'tools/requirements-unifont.txt', 'resources/unifont/quintessential-latin.hex', 'resources/unifont/font-companions.hex', 'resources/unifont/font-companions.json', 'resources/unifont/OFL.txt', 'resources/quintessential-latin-allocation.json']
     manifest = {'schemaVersion': 1, 'family': FAMILY, 'version': VERSION, 'customCharacters': 1216,
-                'nativeCompanions': 213, 'encodedCharacters': 1429, 'glyphs': 1430,
+                'nativeCompanions': 214, 'encodedCharacters': 1430, 'glyphs': 1431,
                 'unitsPerEm': UPM, 'advance': ADVANCE, 'ascent': ASCENT, 'descent': DESCENT,
                 'bitmapStrikePpem': 16, 'license': 'OFL-1.1',
                 'dependencies': {name: importlib.metadata.version(name) for name in ('fonttools', 'brotli')},
@@ -189,7 +189,7 @@ def build(root: Path = ROOT, check: bool = False):
                 raise ValueError(f'Stale Unifont font artifact: {name}; run npm run build:unifont:font')
         else:
             (destination/name).write_bytes(data)
-    print(f'{"Verified" if check else "Built"} {FAMILY}: TTF + WOFF2, 1216 custom + 213 native characters, exact 16px strike.')
+    print(f'{"Verified" if check else "Built"} {FAMILY}: TTF + WOFF2, 1216 custom + 214 native characters, exact 16px strike.')
 
 
 if __name__ == '__main__':

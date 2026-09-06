@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "repertoireVersion": "0.250",
+  "namingVersion": 3,
+  "unicodeVersion": "17.0.0",
+  "status": "draft-private-use",
+  "characterCount": 1216,
+  "blocks": [
+    {
+      "start": "F2A00",
+      "end": "F2ABF",
+      "name": "Quintessential Latin",
+      "count": 192
+    },
+    {
+      "start": "F2AC0",
+      "end": "F2BBF",
+      "name": "Quintessential Latin Extended-A",
+      "count": 256
+    },
+    {
+      "start": "F2BC0",
+      "end": "F2EBF",
+      "name": "Quintessential Latin Extended-B",
+      "count": 768
+    }
+  ],
+  "sources": {
+    "resources/quintessential-latin-allocation.json": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2",
+    "docs/proposal.json": "6e588b0bf487100cbd2a0e11d8dda91f80de110c3deebde1f9a73fd26fca5a8d",
+    "tools/canonical_glyph_names.js": "ab1ab7cf891b422f87330c08513d6eb174be8e5d5fff4c64314fc9253eee773a",
+    "tools/export_ucd.js": "14e10dc31268a6062e1f0fd5fb5fae0ca09d18b867c351aaf7bec55ca4a9cabb"
+  },
+  "files": {
+    "Blocks.txt": {
+      "bytes": 305,
+      "sha256": "469f805e1236b0aba769298ed05f8a6ef51397ccd45bb08dbe662a7cdc49873c"
+    },
+    "UnicodeData.txt": {
+      "bytes": 119522,
+      "sha256": "3c07a10be3ebb9a0293f8b73a8999bfbba5e6266e9ce7b38b7811e37de6be453"
+    },
+    "NamesList.txt": {
+      "bytes": 98718,
+      "sha256": "41b27b5f3610113254cedf155dde2834fc8c49d35595d2ae1e4b8a2d9e7a3989"
+    },
+    "Charts.txt": {
+      "bytes": 13605,
+      "sha256": "309654072c8cbc89ebcf000466b90d1348ca9ddc2f0658028fb0f57bf6b8bf6e"
+    },
+    "CaseFolding.txt": {
+      "bytes": 435,
+      "sha256": "1d45085502c70d37584f389668944aea6b343c3e1d8060cf96d3103955939efa"
+    },
+    "Sources.txt": {
+      "bytes": 1834,
+      "sha256": "3f20e3a9fe5b47db25422b840819c4e19851e1c756bd196bbe8f201ad49f2155"
+    },
+    "ReadMe.txt": {
+      "bytes": 7073,
+      "sha256": "15859e6eed8c6cfbcbe1db2d00b5212ff88f810e9ec0d777d300113d99b45e34"
+    }
+  }
+}

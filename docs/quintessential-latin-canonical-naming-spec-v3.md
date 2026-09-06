@@ -4,9 +4,11 @@
 
 Canonical construction names describe the existing Quintessential Latin repertoire from left to right. They describe typographic structure, not pronunciation, language membership, drawing order, font styling, or a mechanically rotated outline.
 
-Use the existing structural components and constructors. Naming must preserve the 832 glyph identities, code points, full component arrays, and outlines. Do not infer components from pixels or introduce hypothetical glyphs to fit a naming rule.
+Use the existing structural components and constructors. Naming must preserve the 1,216 glyph identities, code points, full component arrays, and outlines. Do not infer components from pixels or introduce hypothetical glyphs to fit a naming rule.
 
-Every full character name, including the seven stemless forms, is the uppercase canonical construction name prefixed by `QUINTESSENTIAL LATIN LETTER `.
+Every full character name, including the seven stemless forms, is the uppercase canonical construction name prefixed by `QUINTESSENTIAL LATIN SMALL LETTER `.
+
+All current characters are lowercase letters. No uppercase or titlecase counterparts or mappings are defined. The SMALL LETTER prefix records this identity and leaves room for explicitly named future capitals without assigning any now. This 6 September 2026 clarification changes only the full-name prefix; the construction-name algorithm remains version 3.
 
 ## 2. Canonical text format
 
@@ -145,10 +147,10 @@ Preserve the order of all remaining components. Do not combine unequal primitive
 
 | Code point | Full character name |
 |---|---|
-| U+F2A61 | QUINTESSENTIAL LATIN LETTER HIP WITH TWO ASCENDERS |
-| U+F2AA9 | QUINTESSENTIAL LATIN LETTER LONG ARM WITH TWO ASCENDERS |
-| U+F2C00 | QUINTESSENTIAL LATIN LETTER THREE STEMS WITH SHOULDER |
-| U+F2A7C | QUINTESSENTIAL LATIN LETTER TWO STEMS WITH LEG |
+| U+F2A61 | QUINTESSENTIAL LATIN SMALL LETTER HIP WITH TWO ASCENDERS |
+| U+F2AA9 | QUINTESSENTIAL LATIN SMALL LETTER LONG ARM WITH TWO ASCENDERS |
+| U+F2C00 | QUINTESSENTIAL LATIN SMALL LETTER THREE STEMS WITH SHOULDER |
+| U+F2A7C | QUINTESSENTIAL LATIN SMALL LETTER TWO STEMS WITH LEG |
 
 ## 8. Spines and attachment order
 
@@ -174,7 +176,7 @@ Required structural fixtures and properties:
 - One-sided and two-sided spine forms without opening qualifiers.
 - The four exact code-point names in Section 7 and the uniform full-name prefix for all seven stemless forms.
 - One-term and multi-term separators, applying counts before formatting. An empty construction is an error.
-- All 832 names remain unique. Report any collision as an error rather than appending an arbitrary suffix.
+- All 1,216 names remain unique. Report any collision as an error rather than appending an arbitrary suffix.
 - Naming leaves all underlying component geometry intact, including straight extensions omitted because of closure.
 
 The current canonical vocabulary emits no positional arm/leg modifier. Archived labels and stable recipe identifiers may retain older terminology for provenance; they are not character display names.

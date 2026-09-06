@@ -49,11 +49,12 @@ root path. All site URLs work beneath the GitHub Pages project prefix.
 
 The five pages introduce the construction system, present numeric charts and
 names lists, explain the draft proposal, offer font/data/PDF downloads, and show
-the Unifont bitmap drawings. Its 148 drawings are all 8 × 16 pixels,
+the Unifont bitmap drawings. Its 1,216 drawings are all 8 × 16 pixels,
 with five 256-position charts, a selected-character inspector, static proofs and
-40 pinned native donors. Editable drawings and the generated `.hex` download
-are under `resources/unifont/`. The first 136-character group without middle
-components is complete, alongside 12 stress glyphs. See the
+42 pinned native donors. Editable drawings and the generated `.hex` download
+are under `resources/unifont/`. Native y, script-g and dotless-j precedents govern
+the corresponding tail contexts; before/after proofs record the affected forms.
+See the
 [drawing notes](resources/unifont/README.md) for the
 conventions and independent bitmap build/test commands.
 Weight and native Italic preferences are shared across
@@ -109,6 +110,33 @@ follow [canonical naming version 3](docs/quintessential-latin-canonical-naming-s
 `docs/proposal.json` supplies the website and PDF proposal from one text source.
 The proposed repertoire remains subject to registry review; publishing the
 website does not submit the proposal.
+
+The [UCD-style data package](resources/ucd/ReadMe.txt) covers all three blocks
+in UCSUR's six published text formats: `Blocks.txt`, `UnicodeData.txt`,
+`NamesList.txt`, `CaseFolding.txt`, `Charts.txt`, and `Sources.txt`. It contains
+all 1,216 canonical names, block and family headings, reference-font mappings,
+and source references. All characters are lowercase letters, named
+`QUINTESSENTIAL LATIN SMALL LETTER ...`, without defined uppercase or titlecase
+counterparts. Case folding leaves each character unchanged, so the folding
+file has no mapping records. A manifest binds the generated files and their
+sources with SHA-256.
+
+`UnicodeData.txt` proposes `Ll` (Lowercase Letter) as an explicit private-use
+interpretation. Standard Unicode implementations continue to treat these
+positions as `Co` (Private Use); these files establish no registration.
+The [format research](docs/ucd-research.md) explains the choices and omissions.
+The website's Downloads page includes each file and its usage notes.
+
+```sh
+npm run build:ucd
+node tools/export_ucd.js --check
+npm run test:ucd
+```
+
+Regenerate after allocation or proposal changes and commit the package with
+its sources. The normal build and test commands enforce freshness. The flat
+`resources/NamesList.txt` export retains its existing format; the UCD package's
+`NamesList.txt` includes formal block headers and construction-family headings.
 
 ## PDF publication
 

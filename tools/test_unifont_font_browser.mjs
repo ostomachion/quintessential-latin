@@ -11,7 +11,7 @@ const root=fileURLToPath(new URL('../',import.meta.url)),output=path.join(root,'
 await mkdir(output,{recursive:true});
 const maps=await Promise.all(['quintessential-latin.hex','font-companions.hex'].map(async name=>parseHex(await readFile(path.join(root,'resources/unifont',name),'utf8'))));
 const glyphs=[...maps.flatMap(map=>[...map])].map(([point,glyph])=>({point,rows:glyph.rows}));
-assert.equal(glyphs.length,1429);
+assert.equal(glyphs.length,1430);
 const port=Number(process.env.QLAT_TEST_PORT||8774),base=process.env.QLAT_BASE_URL||`http://127.0.0.1:${port}/quintessential-latin/`;
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const checks=[],errors=[],fonts=[];
@@ -73,7 +73,7 @@ try{
     },{url:base+relative,ext,glyphs});
     assert.equal(result.loaded,'loaded');assert.deepEqual(result.failures,[]);assert.equal(result.mixedDifferences,0);
     fonts.push({format:ext,sha256:hash(source),...result});
-    checks.push(`${ext}: all1429 glyphs and mixed Latin/Quintessential run are pixel-exact at16px`);
+    checks.push(`${ext}: all1430 glyphs and mixed Latin/Quintessential run are pixel-exact at16px`);
   }
   assert.deepEqual(errors,[]);
   await writeFile(path.join(output,'report.json'),JSON.stringify({browser:await browser.version(),base,checks,errors,fonts},null,2)+'\n');

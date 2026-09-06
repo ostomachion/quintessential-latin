@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "constructionVersion": "compact-native-branches-1",
+  "constructionVersion": "compact-native-branches-2",
   "sourceReferences": [
     "construct_middle_branches.mjs"
   ],
@@ -74,11 +74,46 @@
         "0068",
         "0064",
         "026F",
-        "0279",
-        "014B",
-        "0237"
+        "0279"
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs."
+    },
+    "1-middle-left-hip-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "....#..#",
+        "....#..#",
+        "....#..#",
+        "....#..#",
+        "....#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0279",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "1-middle-right-bowl": {
       "columns": [
@@ -149,11 +184,46 @@
         "0068",
         "0064",
         "026F",
-        "0251",
-        "014B",
-        "0237"
+        "0251"
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs."
+    },
+    "1-middle-left-bowl-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0251",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "1-middle-right-leg": {
       "columns": [
@@ -226,11 +296,47 @@
         "0064",
         "026F",
         "006E",
-        "0075",
-        "014B",
-        "0237"
+        "0075"
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+    },
+    "1-middle-left-arm-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "006E",
+        "0075",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "1-middle-right-long-bowl": {
       "columns": [
@@ -312,6 +418,47 @@
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure."
     },
+    "1-middle-left-long-bowl-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "006E",
+        "0075",
+        "0066",
+        "014B",
+        "0237",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
+    },
     "1-middle-right-double bowl": {
       "columns": [
         1,
@@ -383,11 +530,47 @@
         "0064",
         "026F",
         "025B",
-        "0071",
-        "014B",
-        "0237"
+        "0071"
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+    },
+    "1-middle-left-double bowl-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###..#",
+        ".#..#..#",
+        ".#..#..#",
+        "..###..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "025B",
+        "0071",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "1-middle-right-spine": {
       "columns": [
@@ -458,11 +641,46 @@
         "0068",
         "0064",
         "026F",
-        "0061",
-        "014B",
-        "0237"
+        "0061"
       ],
       "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+    },
+    "1-middle-left-spine-y-tail": {
+      "columns": [
+        1,
+        4,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..###..#",
+        ".#..#..#",
+        "....#..#",
+        "..###..#",
+        ".#..#..#",
+        ".#..#..#",
+        ".#..####",
+        "..##...#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        4
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0061",
+        "0079"
+      ],
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "2-middle-right-shoulder": {
       "columns": [
@@ -535,11 +753,47 @@
         "0068",
         "0064",
         "026F",
-        "0279",
-        "014B",
-        "0237"
+        "0279"
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs."
+    },
+    "2-middle-left-hip-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "...#.#.#",
+        "...#.#.#",
+        "...#.#.#",
+        "...#.#.#",
+        "...#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0279",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "2-middle-right-bowl": {
       "columns": [
@@ -612,11 +866,47 @@
         "0068",
         "0064",
         "026F",
-        "0251",
-        "014B",
-        "0237"
+        "0251"
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs."
+    },
+    "2-middle-left-bowl-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..##.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0251",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "2-middle-right-leg": {
       "columns": [
@@ -691,11 +981,48 @@
         "0064",
         "026F",
         "006E",
-        "0075",
-        "014B",
-        "0237"
+        "0075"
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+    },
+    "2-middle-left-arm-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "006E",
+        "0075",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "2-middle-right-long-bowl": {
       "columns": [
@@ -779,6 +1106,48 @@
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure."
     },
+    "2-middle-left-long-bowl-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "006E",
+        "0075",
+        "0066",
+        "014B",
+        "0237",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
+    },
     "2-middle-right-double bowl": {
       "columns": [
         1,
@@ -852,11 +1221,48 @@
         "0064",
         "026F",
         "025B",
-        "0071",
-        "014B",
-        "0237"
+        "0071"
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+    },
+    "2-middle-left-double bowl-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..##.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        "..##.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "025B",
+        "0071",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     "2-middle-right-spine": {
       "columns": [
@@ -929,11 +1335,47 @@
         "0068",
         "0064",
         "026F",
-        "0061",
-        "014B",
-        "0237"
+        "0061"
       ],
       "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+    },
+    "2-middle-left-spine-y-tail": {
+      "columns": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bodyRows": [
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "........",
+        "..##.#.#",
+        ".#.#.#.#",
+        "...#.#.#",
+        "..##.#.#",
+        ".#.#.#.#",
+        ".#.#.#.#",
+        ".#.#.###",
+        "..#.#..#",
+        "........",
+        "........"
+      ],
+      "terminalInterval": [
+        1,
+        3
+      ],
+      "donors": [
+        "0068",
+        "0064",
+        "026F",
+        "0061",
+        "0079"
+      ],
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     }
   },
   "groups": [
@@ -1016,7 +1458,7 @@
         "turned-arched-arm-tail",
         "turned-arched-arm-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-arched-arm-ascender",
@@ -1043,7 +1485,7 @@
         "turned-arched-arm-ascender-tail",
         "turned-arched-arm-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-arched-bowl",
@@ -1124,7 +1566,7 @@
         "turned-arched-bowl-tail",
         "turned-arched-bowl-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-arched-bowl-ascender",
@@ -1151,7 +1593,7 @@
         "turned-arched-bowl-ascender-tail",
         "turned-arched-bowl-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arch",
@@ -1232,7 +1674,7 @@
         "turned-double-arch-tail",
         "turned-double-arch-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arch-ascender",
@@ -1259,7 +1701,7 @@
         "turned-double-arch-ascender-tail",
         "turned-double-arch-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arch-right-descender",
@@ -1340,7 +1782,7 @@
         "turned-double-arch-left-ascender-right-tail",
         "turned-double-arch-left-ascender-right-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arch-ascenders",
@@ -1367,7 +1809,7 @@
         "turned-double-arch-ascenders-right-tail",
         "turned-double-arch-ascenders-right-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arch-right-tail",
@@ -1448,7 +1890,7 @@
         "turned-double-arch-left-hook-right-tail",
         "turned-double-arch-left-hook-right-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arch-left-hook-right-ascender",
@@ -1475,7 +1917,7 @@
         "turned-double-arch-left-hook-right-ascender-tail",
         "turned-double-arch-left-hook-right-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-arched-double-bowl",
@@ -1556,7 +1998,7 @@
         "turned-arched-double-bowl-tail",
         "turned-arched-double-bowl-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-arched-double-bowl-ascender",
@@ -1583,7 +2025,7 @@
         "turned-arched-double-bowl-ascender-tail",
         "turned-arched-double-bowl-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-arched-bowled-spine",
@@ -1664,7 +2106,7 @@
         "turned-arched-bowled-spine-tail",
         "turned-arched-bowled-spine-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-arched-bowled-spine-ascender",
@@ -1691,7 +2133,7 @@
         "turned-arched-bowled-spine-ascender-tail",
         "turned-arched-bowled-spine-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arched-arm",
@@ -1790,7 +2232,7 @@
         "turned-double-arched-arm-tail-extended-right-middle-leg",
         "turned-double-arched-arm-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arched-arm-ascender",
@@ -1823,7 +2265,7 @@
         "turned-double-arched-arm-ascender-tail-extended-right-middle-leg",
         "turned-double-arched-arm-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arched-bowl",
@@ -1922,7 +2364,7 @@
         "turned-double-arched-bowl-tail-extended-right-middle-leg",
         "turned-double-arched-bowl-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arched-bowl-ascender",
@@ -1955,7 +2397,7 @@
         "turned-double-arched-bowl-ascender-tail-extended-right-middle-leg",
         "turned-double-arched-bowl-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-triple-arch",
@@ -2054,7 +2496,7 @@
         "turned-triple-arch-tail-extended-right-middle-leg",
         "turned-triple-arch-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-triple-arch-ascender",
@@ -2087,7 +2529,7 @@
         "turned-triple-arch-ascender-tail-extended-right-middle-leg",
         "turned-triple-arch-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-triple-arch-right-descender",
@@ -2186,7 +2628,7 @@
         "turned-triple-arch-left-ascender-right-tail-extended-right-middle-leg",
         "turned-triple-arch-left-ascender-right-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-triple-arch-ascenders",
@@ -2219,7 +2661,7 @@
         "turned-triple-arch-ascenders-right-tail-extended-right-middle-leg",
         "turned-triple-arch-ascenders-right-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-triple-arch-right-tail",
@@ -2318,7 +2760,7 @@
         "turned-triple-arch-left-hook-right-tail-extended-right-middle-leg",
         "turned-triple-arch-left-hook-right-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-triple-arch-left-hook-right-ascender",
@@ -2351,7 +2793,7 @@
         "turned-triple-arch-left-hook-right-ascender-tail-extended-right-middle-leg",
         "turned-triple-arch-left-hook-right-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arched-double-bowl",
@@ -2450,7 +2892,7 @@
         "turned-double-arched-double-bowl-tail-extended-right-middle-leg",
         "turned-double-arched-double-bowl-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arched-double-bowl-ascender",
@@ -2483,7 +2925,7 @@
         "turned-double-arched-double-bowl-ascender-tail-extended-right-middle-leg",
         "turned-double-arched-double-bowl-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-double-arched-bowled-spine",
@@ -2582,7 +3024,7 @@
         "turned-double-arched-bowled-spine-tail-extended-right-middle-leg",
         "turned-double-arched-bowled-spine-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     },
     {
       "id": "variants-turned-double-arched-bowled-spine-ascender",
@@ -2615,7 +3057,7 @@
         "turned-double-arched-bowled-spine-ascender-tail-extended-right-middle-leg",
         "turned-double-arched-bowled-spine-ascender-tail-extended-middle-legs"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs."
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent."
     }
   ],
   "glyphs": [
@@ -4647,8 +5089,8 @@
         "....#..#",
         "....#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -4657,17 +5099,16 @@
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-hip",
+        "templateId": "1-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           4,
@@ -4767,8 +5208,8 @@
         "....#..#",
         "....#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -4777,17 +5218,16 @@
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-hip",
+        "templateId": "1-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           4,
@@ -5471,8 +5911,8 @@
         "....#..#",
         "....#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -5481,17 +5921,16 @@
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-hip",
+        "templateId": "1-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           4,
@@ -5603,8 +6042,8 @@
         "....#..#",
         "....#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -5613,17 +6052,16 @@
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–4, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-hip",
+        "templateId": "1-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           4,
@@ -7779,8 +8217,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -7789,17 +8227,16 @@
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-bowl",
+        "templateId": "1-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -7899,8 +8336,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -7909,17 +8346,16 @@
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-bowl",
+        "templateId": "1-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -8603,8 +9039,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -8613,17 +9049,16 @@
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-bowl",
+        "templateId": "1-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -8735,8 +9170,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -8745,17 +9180,16 @@
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–4, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-bowl",
+        "templateId": "1-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -10927,8 +11361,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -10938,17 +11372,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -11048,8 +11481,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -11059,17 +11492,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -11757,8 +12189,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -11768,17 +12200,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -11890,8 +12321,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -11901,17 +12332,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -14311,8 +14741,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -14322,17 +14752,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -14449,8 +14878,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -14460,17 +14889,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -15243,8 +15671,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -15254,17 +15682,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -15393,8 +15820,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -15404,17 +15831,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-arm",
+        "templateId": "1-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           4,
@@ -18091,8 +18517,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -18104,16 +18530,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-long-bowl",
+        "templateId": "1-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -18247,8 +18674,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -18260,16 +18687,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-long-bowl",
+        "templateId": "1-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -19127,8 +19555,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -19140,16 +19568,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-long-bowl",
+        "templateId": "1-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -19295,8 +19724,8 @@
         ".#..#..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -19308,16 +19737,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 4; its neighboring middle extension controls closure. The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-long-bowl",
+        "templateId": "1-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -21519,8 +21949,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -21530,17 +21960,16 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 2
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-double bowl",
+        "templateId": "1-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -21640,8 +22069,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -21651,17 +22080,16 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 2
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-double bowl",
+        "templateId": "1-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -22349,8 +22777,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -22360,17 +22788,16 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 2
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-double bowl",
+        "templateId": "1-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -22482,8 +22909,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -22493,17 +22920,16 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–4, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 2
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-double bowl",
+        "templateId": "1-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           4,
@@ -24659,8 +25085,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -24669,17 +25095,16 @@
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-spine",
+        "templateId": "1-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           4,
@@ -24779,8 +25204,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -24789,17 +25214,16 @@
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-spine",
+        "templateId": "1-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           4,
@@ -25483,8 +25907,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -25493,17 +25917,16 @@
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-spine",
+        "templateId": "1-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           4,
@@ -25615,8 +26038,8 @@
         "..###..#",
         ".#..#..#",
         ".#..#..#",
-        ".#..#..#",
-        "..##.###",
+        ".#..####",
+        "..##...#",
         ".......#",
         ".....##."
       ],
@@ -25625,17 +26048,16 @@
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended.",
+      "notes": "Three staves use columns 1, 4, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–4, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 4–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "1-middle-left-spine",
+        "templateId": "1-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           4,
@@ -30987,27 +31409,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -31091,10 +31512,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -31136,27 +31553,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -31238,10 +31654,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -31317,27 +31729,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -31421,10 +31832,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -31498,27 +31905,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -31600,10 +32006,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -33151,27 +33553,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -33267,10 +33668,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -33312,27 +33709,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -33426,10 +33822,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -33505,27 +33897,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -33621,10 +34012,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -33698,27 +34085,26 @@
         "...#.#.#",
         "...#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0279",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left hip is drawn explicitly within columns 1–3, retaining its open terminal without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-hip",
+        "templateId": "2-middle-left-hip-y-tail",
         "staveColumns": [
           1,
           3,
@@ -33812,10 +34198,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -39123,27 +39505,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -39227,10 +39608,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -39272,27 +39649,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -39374,10 +39750,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -39453,27 +39825,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -39557,10 +39928,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -39634,27 +40001,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -39736,10 +40102,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -41287,27 +41649,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -41403,10 +41764,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -41448,27 +41805,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -41562,10 +41918,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -41641,27 +41993,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -41757,10 +42108,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -41834,27 +42181,26 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0251",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left bowl is drawn explicitly within columns 1–3, retaining one closed counter without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-bowl",
+        "templateId": "2-middle-left-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -41948,10 +42294,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -46715,10 +47057,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -46726,17 +47068,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -46820,10 +47161,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -46865,10 +47202,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -46876,17 +47213,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -46968,10 +47304,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -47047,10 +47379,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -47058,17 +47390,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -47152,10 +47483,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -47229,10 +47556,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -47240,17 +47567,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -47332,10 +47658,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -48891,10 +49213,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -48902,17 +49224,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -49008,10 +49329,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -49053,10 +49370,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -49064,17 +49381,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -49168,10 +49484,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -49247,10 +49559,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -49258,17 +49570,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -49364,10 +49675,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -49441,10 +49748,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -49452,17 +49759,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -49556,10 +49862,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -55355,10 +55657,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -55366,17 +55668,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -55477,10 +55778,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -55522,10 +55819,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -55533,17 +55830,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -55642,10 +55938,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -55721,10 +56013,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -55732,17 +56024,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -55843,10 +56134,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -55920,10 +56207,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -55931,17 +56218,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -56040,10 +56326,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -57735,10 +58017,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -57746,17 +58028,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -57869,10 +58150,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -57914,10 +58191,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -57925,17 +58202,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -58046,10 +58322,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -58125,10 +58397,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -58136,17 +58408,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -58259,10 +58530,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -58336,10 +58603,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -58347,17 +58614,16 @@
         "026F",
         "006E",
         "0075",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.   The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-arm",
+        "templateId": "2-middle-left-arm-y-tail",
         "staveColumns": [
           1,
           3,
@@ -58468,10 +58734,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -64659,10 +64921,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -64672,16 +64934,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -64786,10 +65049,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -64840,10 +65099,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -64853,16 +65112,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -64965,10 +65225,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -65049,10 +65305,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -65062,16 +65318,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -65174,10 +65431,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -65262,10 +65515,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -65275,16 +65528,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -65387,10 +65641,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -66331,10 +66581,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -66344,16 +66594,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -66470,10 +66721,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -66524,10 +66771,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -66537,16 +66784,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -66661,10 +66909,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -66745,10 +66989,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -66758,16 +67002,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -66882,10 +67127,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -66970,10 +67211,10 @@
         ".#.#.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -66983,16 +67224,17 @@
         "0075",
         "0066",
         "014B",
-        "0237"
+        "0237",
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.  The long bowl returns only to part 1 at column 3; its neighboring middle extension controls closure. The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-long-bowl",
+        "templateId": "2-middle-left-long-bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -67107,10 +67349,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -72519,10 +72757,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -72530,10 +72768,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -72542,7 +72779,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -72626,10 +72863,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -72671,10 +72904,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -72682,10 +72915,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -72694,7 +72926,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -72776,10 +73008,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -72855,10 +73083,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -72866,10 +73094,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -72878,7 +73105,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -72962,10 +73189,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -73039,10 +73262,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -73050,10 +73273,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -73062,7 +73284,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -73144,10 +73366,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -74719,10 +74937,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -74730,10 +74948,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -74742,7 +74959,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -74838,10 +75055,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -74883,10 +75096,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -74894,10 +75107,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -74906,7 +75118,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -75000,10 +75212,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -75079,10 +75287,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -75090,10 +75298,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -75102,7 +75309,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -75198,10 +75405,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -75275,10 +75478,10 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
@@ -75286,10 +75489,9 @@
         "026F",
         "025B",
         "0071",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left double bowl is drawn explicitly within columns 1–3, retaining two distinct counters without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -75298,7 +75500,7 @@
         "The three-column double bowl preserves a two-pixel upper counter at column 2, rows 7–8, and a three-pixel lower counter at rows 10–12. The row-9 waist separates them; neither is a filled substitute."
       ],
       "layout": {
-        "templateId": "2-middle-left-double bowl",
+        "templateId": "2-middle-left-double bowl-y-tail",
         "staveColumns": [
           1,
           3,
@@ -75392,10 +75594,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -80703,27 +80901,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -80807,10 +81004,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -80852,27 +81045,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -80954,10 +81146,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -81033,27 +81221,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -81137,10 +81324,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -81214,27 +81397,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -81316,10 +81498,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -82867,27 +83045,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -82983,10 +83160,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -83028,27 +83201,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended, short.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, short.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -83142,10 +83314,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,
@@ -83221,27 +83389,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: short, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: short, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -83337,10 +83504,6 @@
                 14
               ],
               [
-                5,
-                15
-              ],
-              [
                 6,
                 15
               ]
@@ -83414,27 +83577,26 @@
         "..##.#.#",
         ".#.#.#.#",
         ".#.#.#.#",
-        ".#.#.#.#",
-        "..#.#.##",
+        ".#.#.###",
+        "..#.#..#",
         ".......#",
-        ".....##."
+        "......#."
       ],
       "donors": [
         "0068",
         "0064",
         "026F",
         "0061",
-        "014B",
-        "0237"
+        "0079"
       ],
-      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs. Middle state: extended, extended.",
+      "notes": "Four staves use columns 1, 3, 5, 7. Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel. The left spine is drawn explicitly within columns 1–3, retaining the native a lower counter and open upper sweep without extra bulbs or repeated standalone serifs.  The final arm in columns 5–7 follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent. Middle state: extended, extended.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [],
       "layout": {
-        "templateId": "2-middle-left-spine",
+        "templateId": "2-middle-left-spine-y-tail",
         "staveColumns": [
           1,
           3,
@@ -83528,10 +83690,6 @@
               [
                 7,
                 14
-              ],
-              [
-                5,
-                15
               ],
               [
                 6,

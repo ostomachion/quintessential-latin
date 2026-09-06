@@ -40,12 +40,28 @@ export function outlineGuideProof(glyph) {
   return `<span class="type-study bitmap-outline-study">${typeGuidesMarkup()}<span class="outline-reference" aria-hidden="true">${String.fromCodePoint(glyph.codePoint)}</span></span>`;
 }
 
-export function bitmapSvg(glyph, scale = 1, guides = false) {
+function bitmapPath(glyph, offset = 0) {
   const {width, rows} = glyph;
   let pixels = '';
   for (let y = 0; y < 16; y++) for (let x = 0; x < width; x++) {
-    if (rows[y] & (1 << (width - x - 1))) pixels += `M${x} ${y}h1v1h-1z`;
+    if (rows[y] & (1 << (width - x - 1))) pixels += `M${offset+x} ${y}h1v1h-1z`;
   }
+  return pixels;
+}
+
+// A continuous run needs a single SVG paint origin. Separate SVG roots can
+// each round differently during scrolling, even with correct layout advances.
+export function bitmapSequenceSvg(glyphs, scale = 1) {
+  let width = 0, pixels = '';
+  for (const glyph of glyphs) {
+    pixels += bitmapPath(glyph, width);
+    width += glyph.width;
+  }
+  return `<svg class="bitmap bitmap-run" data-bitmap-width="${width}" data-bitmap-scale="${scale}" xmlns="http://www.w3.org/2000/svg" width="${width*scale}" height="${16*scale}" viewBox="0 0 ${width} 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="${pixels}"/></svg>`;
+}
+
+export function bitmapSvg(glyph, scale = 1, guides = false) {
+  const {width} = glyph, pixels = bitmapPath(glyph);
   const grid = guides ? `<path class="bitmap-grid" d="${Array.from({length:width+1}, (_,x)=>`M${x} 0V16`).join('')}${Array.from({length:17}, (_,y)=>`M0 ${y}H${width}`).join('')}"/>${BITMAP_METRICS.map(metric=>`<path class="bitmap-metrics bitmap-metric-${metric.id}" data-metric="${metric.id}" d="M0 ${metric.row}H${width}"/>`).join('')}` : '';
   return `<svg class="bitmap${guides?' bitmap-enlarged':''}" data-bitmap-width="${width}" data-bitmap-scale="${scale}" xmlns="http://www.w3.org/2000/svg" width="${width*scale}" height="${16*scale}" viewBox="0 0 ${width} 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="${pixels}"/>${grid}</svg>`;
 }

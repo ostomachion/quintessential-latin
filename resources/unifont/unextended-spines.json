@@ -348,20 +348,19 @@
         ".#....#.",
         "..###.#.",
         ".#...##.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0064",
         "0071",
         "025B",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -371,8 +370,36 @@
         "baseGlyphId": "turned-double-bowl",
         "addPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -383,8 +410,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -514,20 +599,19 @@
         ".#....#.",
         "..###.#.",
         ".#...##.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0064",
         "0071",
         "025B",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the 8-pixel turned-double-bowl base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The right straight ascender adds column 6, rows 3–5, following native h/d. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -549,8 +633,36 @@
             5
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -561,8 +673,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -931,18 +1101,17 @@
         "......#.",
         "..#####.",
         ".#....#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Every body pixel in rows 6–13 remains unchanged. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 1
@@ -952,8 +1121,36 @@
         "baseGlyphId": "turned-bowled-spine",
         "addPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -964,8 +1161,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1112,19 +1367,18 @@
         "......#.",
         "..#####.",
         ".#....#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the 8-pixel turned-bowled-spine base with its native Latin waist, connections, and terminals. Only the explicitly recorded straight-stave joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Add only the contextual joining pixel (6,6) through the native rounded cap, so the straight extension remains straight. The simple native j/eng lower return uses (6,14), (4,15), and (5,15). Omit an upward free tip; the open return stays clear of the left stave.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 1
@@ -1150,8 +1404,36 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1162,11 +1444,68 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
           ]
         ]
       }
@@ -1234,19 +1573,18 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -1256,8 +1594,36 @@
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1268,8 +1634,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1418,20 +1842,19 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -1457,8 +1880,36 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1469,11 +1920,68 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
           ]
         ]
       }
@@ -1606,20 +2114,19 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0068",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The left straight ascender adds column 1, rows 3–5, following native h/d. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -1641,8 +2148,36 @@
             5
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1653,8 +2188,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1829,21 +2422,20 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0068",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -1881,8 +2473,36 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1893,11 +2513,68 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
           ]
         ]
       }
@@ -2038,20 +2715,19 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0066",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. All body pixels in rows 6–13 remain unchanged. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -2077,8 +2753,36 @@
             5
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -2089,8 +2793,66 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -2273,21 +3035,20 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0066",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe.",
       "expected": {
         "components": 1,
         "counters": 2
@@ -2329,8 +3090,36 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -2341,11 +3130,68 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
           ]
         ]
       }
@@ -2488,28 +3334,45 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0070",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
+          [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
           [
             1,
             13
@@ -2527,6 +3390,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -2535,10 +3406,59 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]
@@ -2724,26 +3644,27 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0070",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
@@ -2764,6 +3685,22 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             1,
             13
           ],
@@ -2780,6 +3717,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -2788,14 +3733,63 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]
@@ -2965,26 +3959,27 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0068",
         "0070",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
@@ -2999,6 +3994,22 @@
           [
             1,
             5
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
           ],
           [
             1,
@@ -3017,6 +4028,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -3025,10 +4044,59 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]
@@ -3240,11 +4308,11 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
@@ -3252,15 +4320,16 @@
         "0068",
         "0070",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The left straight ascender adds column 1, rows 3–5, following native h/d. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
@@ -3293,6 +4362,22 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             1,
             13
           ],
@@ -3309,6 +4394,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -3317,14 +4410,63 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]
@@ -3502,26 +4644,27 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
         "0250",
         "0066",
         "0070",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
@@ -3542,6 +4685,22 @@
             5
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             1,
             13
           ],
@@ -3558,6 +4717,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -3566,10 +4733,59 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]
@@ -3789,11 +5005,11 @@
         ".#....#.",
         ".#..###.",
         ".###..#.",
-        ".#....#.",
         ".#...##.",
         ".####.#.",
         ".#....#.",
-        ".#..##.."
+        ".#....#.",
+        ".#####.."
       ],
       "donors": [
         "0061",
@@ -3801,15 +5017,16 @@
         "0066",
         "0070",
         "0064",
-        "0237",
-        "014B"
+        "0261"
       ],
-      "notes": "Retain the balanced a/turned-a shared body, including its paired native stave connections and equal counters. Keep every central waist pixel unchanged. Only explicitly recorded joining pixels change within rows 6–13. The native f upper hook uses row 3 columns 2–3 and column 1 in rows 4–5, with no crossbar, bulb, or extra serif. The left straight descender adds column 1, rows 14–15, following native p/q. Only the joining pixel (1,13) completes the straight stave through its native rounded baseline return. The right straight ascender adds column 6, rows 3–5, following native h/d. Only the joining pixel (6,6) completes the straight stave through its native rounded cap. The native j/eng lower hook uses (6,14), (4,15), and (5,15), with no upward free tip or accidental enclosure.",
+      "notes": "Preserve every upper-body and shared-waist pixel through row 10. Use the native Unifont U+0261 script-g lower bowl return at rows 11–12 and its complete contextual tail: right stave at row 13, both endpoints at row 14, and interior return at row 15. Preserve any separately allocated upper extension. All changed lower-body pixels are recorded in the recipe. The separately allocated left descender retains its straight stave through rows 12–15; its contact with the native script-g upturn naturally encloses a terminal pocket.",
       "expected": {
         "components": 1,
-        "counters": 2
+        "counters": 3
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "The explicit left descender contacts the native script-g tail; inspect its additional terminal pocket separately from the body counters."
+      ],
       "recipe": {
         "baseGlyphId": "opposed-bowls-0-0",
         "addPixels": [
@@ -3846,6 +5063,22 @@
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             1,
             13
           ],
@@ -3862,6 +5095,14 @@
             15
           ],
           [
+            2,
+            15
+          ],
+          [
+            3,
+            15
+          ],
+          [
             4,
             15
           ],
@@ -3870,14 +5111,63 @@
             15
           ]
         ],
-        "removePixels": [],
+        "removePixels": [
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
         "joinPixels": [
           [
             6,
             6
           ],
           [
+            5,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
             1,
+            13
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
             13
           ]
         ]

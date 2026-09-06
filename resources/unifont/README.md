@@ -2,8 +2,9 @@
 
 All **1,216 drawings at 8 × 16 pixels**, across the current 30 families:
 136 forms without middle components, 156 short/extended pairs (312 glyphs),
-and 192 independent-extension quartets (768 glyphs). The previously approved
-148 bitmaps are preserved exactly. These are project drawings, not part
+and 192 independent-extension quartets (768 glyphs). The historical 148-character
+approval is retained, with later native-terminal corrections explicitly recorded
+in `tail-revisions.json`. These are project drawings, not part
 of an official GNU Unifont release. Copyright (c) 2026 Josh Hufford; native donor
 attribution and OFL 1.1 are in `OFL.txt`.
 
@@ -20,7 +21,7 @@ pixels and does not rebuild Italic, additional weights, STIX masters or PDFs.
 
 The Downloads tab includes **Quintessential Latin Unifont Regular** as TTF and
 WOFF2. Both preserve all 1,216 custom cells and carry a 16-pixel monochrome
-bitmap strike alongside scalable pixel outlines. The fonts include 213 pinned
+bitmap strike alongside scalable pixel outlines. The fonts include 214 pinned
 native Latin companion characters for mixed text. The additional donor subset
 and its archive checksums are in `font-companions.hex` and
 `font-companions.json`.
@@ -60,7 +61,10 @@ Usage and licensing accompany the files in `resources/fonts/QuintessentialUnifon
 - `double-middle-shared-spines.json`: 288 added shared-spine forms with
   two arches on one side.
 - `approved-baseline.hex`: the pinned 148-character preservation baseline.
-- `donors.hex` and `donors.json`: 40 unmodified native donor bitmaps, names,
+- `tail-revisions.json`: exact before/after pixels for the user-directed native
+  y, script-g, dotless-j and related f-hook correction. Its full preservation
+  baseline and before/after proofs are in `qa-tail-precedents/`.
+- `donors.hex` and `donors.json`: 42 unmodified native donor bitmaps, names,
   individual checksums, original archive checksums and attribution.
 - `review.json`: inspection records bound to bitmap and proof-input hashes.
 - `quintessential-latin.hex` and `glyphs.json`: **generated outputs**.
@@ -126,7 +130,7 @@ STEM and BOWL exactly remap native U+0131 DOTLESS I and U+006F O:
 | Standalone upright | Dotless i/l: column-4 stave, two-pixel head, five-pixel foot. Descenders put the foot on row 15. | STEM, ASCENDER, DESCENDER primitives |
 | Shoulder or hip | r, turned r, n and u supply supported entrances and hip returns. Internal staves omit full dotless-i feet. | Paired shoulder/hip and arch forms |
 | Bowl attachment | b/p and Latin alpha supply returns; epsilon supplies the two-storey waist. | Paired bowls and double bowls |
-| Hook and tail | f, dotless j, hooked Latin and eng provide bends. Omit f's crossbar where the identity is only a hook. | Upright primitives and stress groups |
+| Hook and tail | f supplies joined upper hooks; dotless j supplies standalone tails; script g supplies bowl tails; y supplies lower-arm tails. Omit f's unrelated crossbar. | Native comparison and changed-glyph sheets in `qa-tail-precedents/` |
 | Compact arches | Compress m shoulders to one crest per two-column interval, with diagonal joins and open undersides. | U+F2C20–U+F2C23 |
 | Long-bowl closure | Return (3,5) meets only its designated neighbor. Remote column-5 extension cannot close it. h/q terminals avoid serif bridges. | U+F2CA8–U+F2CAB |
 | Free terminals | Preserve exact native s, open o and reversed epsilon pixels; no added bulbs or thickened terminals. | Corresponding three stemless primitives |
@@ -146,14 +150,23 @@ return instead of forcing alpha's return into the compressed waist; this removes
 the 2×2 cluster while preserving both counters. The normal double bowl retains
 its already thin native b/p joins.
 
-Compound left hooks use native f's bend, without its crossbar. Compound right
-tails use the simple three-pixel return at (6,14), (5,15), (4,15), following the
-compact eng treatment. An extra upturned tip would create an unintended enclosed
-gap against some hips and is omitted consistently. Standalone primitives retain
-their native dotless-i/l heads and feet and dotless-j-based return.
+Compound left hooks use native f's bend, without its crossbar. All ordinary
+joined hooks use the same crest; compact shared-spine hooks no longer substitute
+a hanging tip. Standalone tails exactly follow dotless j's column-5 axis and
+return; their ascender and upper-hook variants continue that axis.
 
-For long bowls, the full return spans the immediately adjacent stave instead of
-using that compact tail. Lower returns close at (1,14); upper returns close at
+BOWL WITH TAIL exactly remaps native U+0261 SCRIPT G, including its bowl return
+at row 12 and full upturned tail at rows 14–15. ARM WITH TAIL exactly remaps
+U+0079 Y, including its contracted lower hip and tipless return. Related bowl,
+double-bowl and spine tails use the script-g pattern; lower-arm and hip tails
+use y. Compact forms fit those patterns into the final component's bay and
+retain the shared joining pixels needed by preceding components. A shortened
+bowl may require an explicit row-13 bridge when its adjacent middle leg extends.
+These contextual joining pixels are recorded separately from ordinary extension
+pixels and remain independent between quartet states.
+
+Long bowls under an upper arch keep the tipless full return: adding an upturned
+tip would close the open bowl against its short neighbor. Lower returns close at (1,14); upper returns close at
 (6,5), only when the designated adjacent extension is present. Ordinary bodies
 remain unchanged. Straight extensions on spines may fill (1,13) or (6,6) to carry
 the stave continuously through the rounded body corner; each repair is recorded
@@ -165,14 +178,13 @@ retain the approved row-9 crossover and two-/three-pixel counters. The native
 m shoulder and turned-m hip use one-pixel diagonal joins in each two-column
 interval, without repeated dotless-i feet beneath internal staves.
 
-In 48 states with two arches on one side of a shared spine, the ordinary
-outer hook meets its immediately neighboring extended stave. This makes a
-small terminal counter, distinct from the two unchanged spine counters.
-Examples: U+F2D1A (lower-right contact) and U+F2DD1 (upper-left contact).
-The hook remains visibly different from a straight ending. These are natural
-compact hook contacts, recorded in `structuralChecks.terminalContact`;
-they do not declare a long-bowl return contact. Their explicit coordinate
-proof is in `qa-double-middle-shared-spines/compact-hook-contacts.png`.
+An extended stave adjacent to a script-g tail can enclose a small terminal
+counter. These contacts are recorded in `structuralChecks.terminalContact` and
+are separate from the spine counters and from declared long-bowl closure.
+Upper hooks now use the native-f crest; a neighboring extended arm can still
+make a documented upper terminal counter. Historical
+`qa-*` sheets remain evidence of their original bitmap revisions; the current
+terminal comparison is in `qa-tail-precedents/`.
 
 ## Validation and inspection evidence
 
@@ -194,7 +206,7 @@ proof renderers, proof CSS and the frozen outline font. Editing a shared source
 currently invalidates all drawing records conservatively. The static proof
 manifest also hashes the generated HTML. Inspection does not grant user acceptance.
 
-All drawings have individual inspection records. Durable family contact
+All drawings have historical individual inspection records. Durable family contact
 sheets are retained in the `qa-*` directories, with per-glyph bitmap hashes
 and evidence image hashes. Browser verification additionally captures every
 static character proof and verifies its exact HEX pixels and integer sizes.

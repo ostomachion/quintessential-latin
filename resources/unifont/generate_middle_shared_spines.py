@@ -56,7 +56,23 @@ def topology(ink):
     return len(components(ink, True)), sorted(map(len, counters))
 
 
-def body(family):
+def body(family, contextual_tail=False):
+    if contextual_tail:
+        ink, staves, core = body(family)
+        if family == FAMILIES[0]:
+            # Native script-g lower return, compacted into the shared bowl bay.
+            # Leave row 13 open on the left; an independently extended leg
+            # supplies its explicit one-pixel bridge there.
+            ink -= {(x, y) for x in range(3, 8) for y in (11, 12, 13)}
+            # Keep the waist entrance open at (6,11); copying the full-width
+            # inward shoulder here would split this compact lower counter.
+            ink |= {(3, 11), (7, 11), (4, 12), (5, 12), (6, 12), (7, 12), (7, 13)}
+        else:
+            # The two-column native-y hip rises one row. Its shared left
+            # boundary still belongs to the unchanged central spine.
+            ink.discard((6, 13))
+            ink.add((6, 12))
+        return ink, staves, core
     if family == FAMILIES[2]:
         # Approved F2EBC body, with the user's crossover at row 9.
         rr = [".##.##.#", ".#.#.#.#", ".#.#.#.#", ".#.###.#",
@@ -79,10 +95,13 @@ def body(family):
 
 
 def draw(entry):
-    ink, staves, core = body(entry["familyId"])
+    contextual_tail = entry["parts"][-1].get("lower") == "curved"
+    script_g = contextual_tail and entry["familyId"] == FAMILIES[0]
+    ink, staves, core = body(entry["familyId"], contextual_tail)
     layout = []
     outer_masks = []
     extensions = set()
+    extension_joins = set()
     joins = set()
     state = []
     cursor = 0
@@ -99,6 +118,10 @@ def draw(entry):
             state.append(extended)
             if extended:
                 mask = {(x, y) for y in ((3, 4, 5) if part["kind"] == "arm" else (14, 15))}
+                if script_g and part["kind"] == "leg" and x == core[0]:
+                    mask.add((x, 13))
+                    extension_joins.add((x, 13))
+                    layout[-1]["joinPixels"] = [[x, 13]]
                 ink |= mask
                 extensions |= mask
             continue
@@ -110,8 +133,8 @@ def draw(entry):
                 joins.add((x, 6))
         elif part.get("upper") == "curved":
             assert x == 1
-            # Same compact curved terminal as the four approved dense states.
-            ink |= {(2, 3), (1, 4), (3, 4), (1, 5)}
+            # Preserve the exact native-f crest instead of rounding its tip.
+            ink |= {(2, 3), (3, 3), (1, 4), (1, 5)}
         if part.get("lower") == "straight":
             ink |= {(x, y) for y in (14, 15)}
             if (x, 13) not in ink:
@@ -119,13 +142,15 @@ def draw(entry):
                 joins.add((x, 13))
         elif part.get("lower") == "curved":
             assert x == 7
-            ink |= {(7, 14), (5, 15), (6, 15)}
+            ink |= ({(3, 14), (7, 14), (4, 15), (5, 15), (6, 15)}
+                    if script_g else {(7, 14), (6, 15)})
         outer_masks.append({"partIndex": index, "column": x,
                             "upper": part.get("upper"), "lower": part.get("lower"),
                             "pixels": coordinates(ink - before_terminal)})
     assert cursor == len(staves)
-    expected_areas = [2, 3] if len(staves) == 4 else [6, 6]
-    assert topology(ink) == (1, expected_areas), (entry["glyphId"], topology(ink))
+    expected_areas = ([6, 4] + ([6] if extension_joins else []) if script_g
+                      else [2, 3] if len(staves) == 4 else [6, 6])
+    assert topology(ink) == (1, sorted(expected_areas)), (entry["glyphId"], topology(ink))
     assert not any(x == 0 or x > 7 or y < 0 or y > 15 for x, y in ink)
     assert not [(x, y) for x in range(7) for y in range(15)
                 if {(x, y), (x + 1, y), (x, y + 1), (x + 1, y + 1)} <= ink], entry["glyphId"]
@@ -138,15 +163,28 @@ def draw(entry):
              "This allocation contains no declared long bowl or returnContact, so ordinary compact hooks are not forced to close against unrelated staves.")
     if joins:
         note += " The listed outer-stave joining pixels continue straight extensions through a rounded native cap or return."
-    return {"glyphId": entry["glyphId"], "width": 8, "rows": rows(ink),
-            "donors": ["0061", "0250", "006E", "006D", "0075", "0066", "014B", "0070", "0071"],
-            "notes": note, "expected": {"components": 1, "counters": 2}, "reviewNotes": [],
+    donors = ["0061", "0250", "006E", "006D", "0075", "0066", "014B", "0070", "0071"]
+    if contextual_tail or entry["parts"][0].get("upper") == "curved":
+        note = note.replace("approved dense-family hook and simple eng return", "native-f crest and contextual native-y or script-g return")
+    if contextual_tail:
+        donors = [d for d in donors if d != "014B"] + ["0261" if script_g else "0079"]
+        note = note.replace("no extra tip, serif, or enclosed terminal pocket is added", "no extra serif is added")
+        if script_g:
+            note = note.replace("two equal six-pixel counters", "an unchanged six-pixel upper counter and a four-pixel lower counter")
+        note += (" The lower bowl closes at row 12 and carries the complete script-g tail; the short left leg leaves row 13 open. Its independent descender includes a documented row-13 bridge, whose contact with the upturn naturally adds a terminal pocket."
+                 if script_g else " The two-column native-y hip rises to row 12 without altering the central spine; its tipless lower return occupies the single interior pixel at row 15.")
+    result = {"glyphId": entry["glyphId"], "width": 8, "rows": rows(ink),
+            "donors": donors,
+            "notes": note, "expected": {"components": 1, "counters": len(expected_areas)}, "reviewNotes": [],
             "extensionState": state, "extensionPixels": coordinates(extensions),
-            "layout": {"templateId": entry["familyId"], "outerMasks": outer_masks,
+            "layout": {"templateId": entry["familyId"] + ("-contextual-tail" if contextual_tail else ""), "outerMasks": outer_masks,
                        "staveColumns": staves, "parts": layout, "sharedSpineColumns": core,
                        "bodyRows": [6, 13], "counterAreas": expected_areas,
                        "outerJoinPixels": coordinates(joins)},
             "structuralChecks": {"staveColumns": staves, "counterAreas": expected_areas}}
+    if extension_joins:
+        result["extensionJoinPixels"] = coordinates(extension_joins)
+    return result
 
 
 def group_key(entry):
@@ -176,15 +214,19 @@ def build(check=False):
         assert len(members) == 2 ** len(base["extensionState"])
         groups.append({"id": "middle-shared-" + base["glyphId"], "title": members[0]["canonicalName"],
                        "glyphIds": [e["glyphId"] for e in members],
-                       "notes": "Allocation-ordered independent middle extensions; body and outer terminal pixels are identical across the group."})
+                       "notes": ("Allocation-ordered independent middle extensions; outer terminal pixels are fixed, and the designated middle descender includes its explicit row-13 body bridge."
+                                 if any(drawn[e["glyphId"]].get("extensionJoinPixels") for e in members)
+                                 else "Allocation-ordered independent middle extensions; body and outer terminal pixels are identical across the group.")})
         for entry in members[1:]:
             g = drawn[entry["glyphId"]]
             added = points(g["rows"]) - points(base["rows"])
             assert not points(base["rows"]) - points(g["rows"])
-            assert added == set(map(tuple, g["extensionPixels"]))
-            assert all(y < 6 or y > 13 for x, y in added)
+            # The native script-g tip already supplies the middle stave's
+            # row-14 pixel; the extension mask remains complete and explicit.
+            assert added == set(map(tuple, g["extensionPixels"])) - points(base["rows"])
+            assert all(y < 6 or y > 13 or [x, y] in g.get("extensionJoinPixels", []) for x, y in added)
             g["recipe"] = {"baseGlyphId": base["glyphId"], "addPixels": coordinates(added),
-                           "removePixels": [], "joinPixels": []}
+                           "removePixels": [], "joinPixels": g.get("extensionJoinPixels", [])}
     owned = [drawn[e["glyphId"]] for e in entries if e["glyphId"] not in existing]
     assert len(owned) == 284 and len(groups) == 108
     fingerprints = {}
@@ -193,7 +235,8 @@ def build(check=False):
         assert key not in fingerprints, (g["glyphId"], fingerprints.get(key))
         fingerprints[key] = g["glyphId"]
     output = {"schemaVersion": 1, "sourceReferences": ["generate_middle_shared_spines.py"],
-              "layoutTemplates": {family: {"bodyRows": rows(body(family)[0])} for family in FAMILIES},
+              "layoutTemplates": {family + ("-contextual-tail" if tail else ""): {"bodyRows": rows(body(family, tail)[0])}
+                                  for tail in (False, True) for family in FAMILIES},
               "construction": {"generator": "generate_middle_shared_spines.py",
               "allocationOrder": "parts from left to right", "preservedDenseIds": sorted(drawn.keys() & existing.keys())},
               "groups": groups, "glyphs": owned}

@@ -46,6 +46,15 @@ export async function constructUnifont(root=ROOT){
   if(sha256(baselineBytes)!=='76e0a9f5f073ef4ddec768e82e66c94a38ccac8234254a3a66761ec6d76f3020')throw new Error('Approved 148-character baseline changed');
   const baseline=parseHex(baselineBytes.toString('utf8'));
   if(baseline.size!==148)throw new Error('Incomplete approved baseline');
+  // Keep the historical approval intact; later user-directed corrections are
+  // enumerated against the complete pre-revision repertoire, never blanket exemptions.
+  const revisions=await json('resources/unifont/tail-revisions.json');
+  const previousBytes=await read('resources/unifont/qa-tail-precedents/before.hex');
+  if(sha256(previousBytes)!==revisions.beforeSha256)throw new Error('Tail revision baseline changed');
+  const previous=parseHex(previousBytes.toString('utf8'));
+  if(previous.size!==1216)throw new Error('Incomplete tail revision baseline');
+  const revisionById=new Map(revisions.glyphs.map(record=>[record.glyphId,record]));
+  if(revisionById.size!==revisions.glyphs.length)throw new Error('Duplicate tail revision');
   const seen=new Set(),bitmaps=new Map();
   const glyphs=bundles.flatMap(bundle=>bundle.glyphs).map(source=>{
     const entry=byId.get(source.glyphId);
@@ -62,7 +71,12 @@ export async function constructUnifont(root=ROOT){
     const assessment=assessBitmap(rows,8);
     for(const field of ['components','counters'])if(source.expected?.[field]!==undefined&&source.expected[field]!==assessment[field])throw new Error(`${source.glyphId}: expected ${source.expected[field]} ${field}, got ${assessment[field]}`);
     const line=entry.codePoint.toString(16).toUpperCase().padStart(6,'0')+':'+hex;
-    if(baseline.has(entry.codePoint)&&baseline.get(entry.codePoint).line!==line)throw new Error(`Approved bitmap changed: ${source.glyphId}`);
+    const revision=revisionById.get(source.glyphId),prior=previous.get(entry.codePoint)?.line;
+    if(revision){
+      if(revision.before!==prior||revision.after!==line||revision.before===revision.after)throw new Error(`Undocumented tail revision: ${source.glyphId}`);
+      if(!entry.parts.some(part=>part.lower==='curved'||part.upper==='curved'&&part.kind==='stem'))throw new Error(`Unrelated tail revision: ${source.glyphId}`);
+    }else if(prior!==line)throw new Error(`Unrelated bitmap changed: ${source.glyphId}`);
+    if(baseline.has(entry.codePoint)&&baseline.get(entry.codePoint).line!==line&&(!revision||revision.before!==baseline.get(entry.codePoint).line))throw new Error(`Approved bitmap changed: ${source.glyphId}`);
     return {...source,rows,line,hex,codePoint:entry.codePoint,name:entry.name,canonicalName:entry.canonicalName,familyId:entry.familyId,parts:entry.parts,bitmapSha256:sha256(line+'\n'),assessment};
   }).sort((a,b)=>a.codePoint-b.codePoint);
   if(seen.size!==expectedIds.size)throw new Error('Incomplete drawing source set');

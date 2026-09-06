@@ -5,7 +5,7 @@
   "sourceUrl": "https://unifoundry.com/pub/unifont/unifont-17.0.05/font-builds/unifont-17.0.05.hex.gz",
   "sourceCompressedSha256": "2ae5311c8e123e9e85f5331cd012aa99757071df23243f1487fdbf8f3acd86be",
   "sourceRawSha256": "fd79af3613ec1b984a98d33428fdd43fcf06018d18059960d78edeb63d958622",
-  "subsetSha256": "42848baa89aa315d60b1479e7a325f9376d34ba5c9fc5dba2f729b3a69994109",
+  "subsetSha256": "733e30308e24313eb6fa1fe58ebd4eba04afb53f73d8adada1fea15830485923",
   "donorHashEncoding": "SHA-256 of the ASCII uppercase bitmap hexadecimal string, excluding code point and newline.",
   "copyright": "Copyright (C) 1998-2026 Roman Czyborra, Paul Hardy, Qianqian Fang, Andrew Miller, Johnnie Weaver, David Corbett, Ælla Chiana Moskopp, Rebecca Bettencourt, Minseo Lee, Ho-Seok Ee, et al.",
   "license": "SIL Open Font License 1.1; see OFL.txt.",
@@ -130,6 +130,13 @@
       "sha256": "e673c202c6d5e510f8bfffe39d1ed4bfc77b75b5b9643d872264b0dac103ca17"
     },
     {
+      "codePoint": "0079",
+      "name": "LATIN SMALL LETTER Y",
+      "width": 8,
+      "hex": "0000000000004242424242261A02023C",
+      "sha256": "42fb277398262eb4f1595f92ee04d1eea5e2868dd4a0a91f686691f32d282484"
+    },
+    {
       "codePoint": "0131",
       "name": "LATIN SMALL LETTER DOTLESS I",
       "width": 8,
@@ -198,6 +205,13 @@
       "width": 8,
       "hex": "0000000000000C0404041F0404044830",
       "sha256": "90164343024306b2a9f32016dc5c366cfc0bf4f2d2ee257565ba720ce671be6b"
+    },
+    {
+      "codePoint": "0261",
+      "name": "LATIN SMALL LETTER SCRIPT G",
+      "width": 8,
+      "hex": "0000000000003A46424242463A02423C",
+      "sha256": "7350faf89bda3b4e16f0f92559edcc789d3107bca69d17c2540b3fd6a1e817de"
     },
     {
       "codePoint": "0265",

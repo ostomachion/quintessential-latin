@@ -69,7 +69,7 @@ try{
   await staticPage.locator('[data-unifont-code="F2A03"] a').click();
   check('Chart link opens complete static proof without JavaScript',await staticPage.locator('#bitmap-f2a03').count()===1&&new URL(staticPage.url()).pathname.endsWith('/proofs/stems.html'));
   await staticPage.goto(new URL('unifont/proofs/donors.html',base).href);
-  check('All 40 native donors are browsable without JavaScript',await staticPage.locator('.donor-cards article').count()===40);
+  check('All 42 native donors are browsable without JavaScript',await staticPage.locator('.donor-cards article').count()===42);
   check('Donor proof fits mobile',await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await noJs.close();
   check('No browser errors or failed local assets',errors.length===0);

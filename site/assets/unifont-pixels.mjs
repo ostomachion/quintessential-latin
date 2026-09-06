@@ -63,20 +63,55 @@ function align() {
     density = grid.ratio;
     for (const [svg, state] of cells) resizeCell(svg, state, density);
   }
-  // Batch all layout reads before translations. A translation doesn't affect
-  // layout or reserve extra space between adjacent characters in a sequence.
-  const moves = [];
+  // Batch reads before writes. Relative offsets preserve the layout slots.
+  // CSS transforms can move an already-snapped SVG painting a second time,
+  // giving the right bounding box but the wrong ink origin in Chromium.
+  const moves = [], viewports = [], sequences = new Map();
+  function sequencePosition(svg) {
+    const parent = svg.parentElement;
+    if (!parent.matches('.bitmap-sequence')) return null;
+    if (!sequences.has(parent)) {
+      const positions = new Map();
+      const siblings = [...parent.children].filter(child => cells.has(child));
+      const first = siblings[0], state = cells.get(first), rect = first.getBoundingClientRect();
+      let x = Math.round((rect.left - state.dx - grid.left) * density);
+      const bottom = Math.round((rect.bottom - state.dy - grid.top) * density);
+      const gap = Math.round((parseFloat(getComputedStyle(parent).columnGap) || 0) * density);
+      // CSS app-unit widths can accumulate to a missing device pixel. Keep
+      // repeated/mixed characters on one common physical advance and baseline.
+      for (const child of siblings) {
+        const item = cells.get(child), step = Math.max(1, Math.round(item.scale * density));
+        positions.set(child, {x, y:bottom - 16 * step});
+        x += item.width * step + gap;
+      }
+      sequences.set(parent, positions);
+    }
+    return sequences.get(parent).get(svg);
+  }
   for (const svg of visible) {
     if (!svg.isConnected) continue;
     const state = cells.get(svg), rect = svg.getBoundingClientRect();
     if (!rect.width || !rect.height) continue; // Closed chart sheets.
+    // CSS width and height round independently to layout units. Compensate in
+    // SVG coordinates so every source pixel still has an exact device step;
+    // a nearly integral scale can otherwise give one row an extra screen pixel.
+    const step = Math.max(1, Math.round(state.scale * density));
+    viewports.push([svg, `0 0 ${rect.width * density / step} ${rect.height * density / step}`]);
     const x = (rect.left - state.dx - grid.left) * density;
     const y = (rect.top - state.dy - grid.top) * density;
-    moves.push([state, (Math.round(x)-x)/density, (Math.round(y)-y)/density]);
+    const destination = sequencePosition(svg) || {x:Math.round(x), y:Math.round(y)};
+    // Layout offsets have finite precision. Keep them on CSS layout units so
+    // subtracting the previous correction cannot accumulate rounding drift.
+    const offset = value => Math.round(value * 64) / 64;
+    moves.push([state, offset((destination.x-x)/density), offset((destination.y-y)/density)]);
+  }
+  for (const [svg, viewBox] of viewports) {
+    if (svg.getAttribute('viewBox') !== viewBox) svg.setAttribute('viewBox', viewBox);
   }
   for (const [state, dx, dy] of moves) {
     state.dx = dx; state.dy = dy;
-    style(state.target, 'translate', `${dx}px ${dy}px`);
+    style(state.target, '--bitmap-snap-x', `${dx}px`);
+    style(state.target, '--bitmap-snap-y', `${dy}px`);
   }
 }
 
@@ -126,8 +161,10 @@ window.addEventListener('beforeprint', () => {
   cancelAnimationFrame(frame); frame = 0;
   for (const [svg, state] of cells) {
     resizeCell(svg, state, 1);
+    svg.setAttribute('viewBox', `0 0 ${state.width} 16`);
     state.dx = state.dy = 0;
-    style(state.target, 'translate', 'none');
+    style(state.target, '--bitmap-snap-x', '0px');
+    style(state.target, '--bitmap-snap-y', '0px');
   }
 });
 window.addEventListener('afterprint', () => { printing = false; density = 0; schedule(); });

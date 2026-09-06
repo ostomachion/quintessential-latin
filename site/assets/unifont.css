@@ -29,8 +29,9 @@ body[data-page="unifont"] .main{max-width:1100px}
 .bitmap-cell[aria-current=true]{background:#e8e8e8;outline:1px solid #000;outline-offset:-2px}
 .bitmap-cell:focus-visible{outline-offset:-2px}
 /* unihex2png: borders at tile origin - 1, bitmap at origin + (4,7). */
-.bitmap-cell .bitmap{position:absolute;left:4px;top:7px}
-.bitmap{display:block;flex:none;color:#000;fill:none;image-rendering:pixelated}
+.bitmap-cell .bitmap{position:absolute;left:calc(4px + var(--bitmap-snap-x));top:calc(7px + var(--bitmap-snap-y))}
+.bitmap{display:block;flex:none;color:#000;fill:none;image-rendering:pixelated;overflow:visible}
+.bitmap,.bitmap-guided-proof,.coordinate-proof{--bitmap-snap-x:0px;--bitmap-snap-y:0px;position:relative;left:var(--bitmap-snap-x);top:var(--bitmap-snap-y)}
 .pending-dot{color:#999;font-size:13px;line-height:1}
 .unifont-footnote{font-size:13px;color:var(--muted);margin-top:18px}
 .unifont-starters>h2{margin-bottom:18px;font-size:20px}

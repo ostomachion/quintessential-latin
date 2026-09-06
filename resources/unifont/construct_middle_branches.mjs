@@ -16,7 +16,7 @@ for(const [,members]of groupsMap){
  const stateIndex=e=>state(e).reduce((n,on,i)=>n+(on?2**i:0),0);
  members.sort((a,b)=>stateIndex(a)-stateIndex(b));
  const first=members[0],middleCount=state(first).length,turned=first.parts[0].kind!=='stem',columns=middleCount===1?[1,4,7]:[1,3,5,7],last=first.parts.length-1;
- const terminal=first.parts[turned?0:last],kind=terminal.kind,long=Boolean(terminal.long),side=turned?'left':'right',templateId=`${middleCount}-middle-${side}-${long?'long-bowl':kind}`;
+ const terminal=first.parts[turned?0:last],kind=terminal.kind,long=Boolean(terminal.long),side=turned?'left':'right',hasRightTail=first.parts[last].lower==='curved',templateId=`${middleCount}-middle-${side}-${long?'long-bowl':kind}${hasRightTail?'-y-tail':''}`;
  const body=Array(16).fill(0),pixel=(rows,x,y,on=true)=>{if(on)rows[y]|=1<<(7-x);else rows[y]&=~(1<<(7-x));};
  const fill=(rows,x,from,to)=>{for(let y=from;y<=to;y++)pixel(rows,x,y);};
  const horizontal=(rows,a,b,y)=>{for(let x=a;x<=b;x++)pixel(rows,x,y);};
@@ -39,6 +39,18 @@ for(const [,members]of groupsMap){
      if(kind==='spine'){horizontal(body,lo+1,hi-1,6);pixel(body,lo,7);horizontal(body,lo+1,hi-1,9);fill(body,lo,10,12);}
    }
  }
+ // Every right-hand tail here follows a middle arm. Preserve the upper arm,
+ // then narrow its lower hip like Unifont y, adapting only the final bay width.
+ // The compact row-11 endpoints avoid a solid 2x2 shoulder/return join.
+ const tailLo=columns.at(-2),tailHi=columns.at(-1);
+ if(hasRightTail){
+   if(first.parts[last].kind!=='stem'||first.parts[last-1].kind!=='arm')throw new Error('Unexpected compact tail context '+first.glyphId);
+   for(let y=11;y<=13;y++)for(let x=tailLo;x<=tailHi;x++)pixel(body,x,y,false);
+   pixel(body,tailLo,11);pixel(body,tailHi,11);
+   // The shared stave's row-12 pixel also joins the preceding row-13 hip
+   // (or seals its bowl); retain that one pixel when compacting the y waist.
+   horizontal(body,tailLo,tailHi,12);pixel(body,tailHi,13);
+ }
  const baseRows=[...body],outerMasks=[];
  first.parts.forEach((part,index)=>{
    if(part.middle)return;
@@ -47,7 +59,10 @@ for(const [,members]of groupsMap){
      if(part.upper==='straight')for(const y of [3,4,5])additions.push([x,y]);
      if(part.upper==='curved')additions.push([x+1,3],[x+2,3],[x,4],[x,5]);
      if(part.lower==='straight')for(const y of [14,15])additions.push([x,y]);
-     if(part.lower==='curved')additions.push([x,14],[x-2,15],[x-1,15]);
+     if(part.lower==='curved'){
+       if(index!==last||!hasRightTail)throw new Error('Unexpected compact lower curve '+first.glyphId);
+       additions.push([tailHi,14]);for(let tx=tailLo+1;tx<tailHi;tx++)additions.push([tx,15]);
+     }
    }
    if(part.long){
      if(part.closingEnd==='upper'){for(let x=lo+1;x<hi;x++)additions.push([x,3]);additions.push([lo,4],[hi,4],[lo,5]);}
@@ -57,8 +72,8 @@ for(const [,members]of groupsMap){
    if(additions.length)outerMasks.push({partIndex:index,pixels:additions});
  });
  const groupId='variants-'+first.glyphId;
- const donors=[...(turned?['0068','0064']:['0070','0071']),middleCount===1?(turned?'026F':'006D'):(turned?'026F':'006D'),...(kind==='shoulder'?['0072']:kind==='hip'?['0279']:kind==='bowl'&&!long?(turned?['0251']:['0062','0070']):kind==='double bowl'?(turned?['025B','0064','0071']:['025C','0062','0070']):kind==='spine'?(turned?['0061']:['0250']):['006E','0075']),...((long||first.parts.some(p=>p.upper==='curved'))?['0066']:[]),...((first.parts.some(p=>p.lower==='curved')||long)?['014B','0237']:[])];
- const description=`${middleCount===1?'Three':'Four'} staves use columns ${columns.join(', ')}. ${turned?'Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.':'Native m/n shoulders retain body rows 6–13; medial staves start beneath the roof at row 7.'} ${!['arm','leg'].includes(kind)&&!long?`The ${side} ${kind} is drawn explicitly within columns ${lo}–${hi}, retaining ${kind==='double bowl'?'two distinct counters':kind==='spine'?'the native '+(turned?'a lower counter and open upper sweep':'turned-a upper counter and open lower sweep'):kind==='bowl'?'one closed counter':'its open terminal'} without extra bulbs or repeated standalone serifs.`:''} ${long?`The long bowl returns only to part ${terminal.closingNeighbor} at column ${columns[terminal.closingNeighbor]}; its neighboring middle extension controls closure.`:''}`.trim();
+ const donors=[...(turned?['0068','0064']:['0070','0071']),middleCount===1?(turned?'026F':'006D'):(turned?'026F':'006D'),...(kind==='shoulder'?['0072']:kind==='hip'?['0279']:kind==='bowl'&&!long?(turned?['0251']:['0062','0070']):kind==='double bowl'?(turned?['025B','0064','0071']:['025C','0062','0070']):kind==='spine'?(turned?['0061']:['0250']):['006E','0075']),...((long||first.parts.some(p=>p.upper==='curved'))?['0066']:[]),...(long?['014B','0237']:[]),...(hasRightTail?['0079']:[])];
+ const description=`${middleCount===1?'Three':'Four'} staves use columns ${columns.join(', ')}. ${turned?'Native turned-m/u hips retain body rows 6–13; only the final right stave keeps its baseline pixel.':'Native m/n shoulders retain body rows 6–13; medial staves start beneath the roof at row 7.'} ${!['arm','leg'].includes(kind)&&!long?`The ${side} ${kind} is drawn explicitly within columns ${lo}–${hi}, retaining ${kind==='double bowl'?'two distinct counters':kind==='spine'?'the native '+(turned?'a lower counter and open upper sweep':'turned-a upper counter and open lower sweep'):kind==='bowl'?'one closed counter':'its open terminal'} without extra bulbs or repeated standalone serifs.`:''} ${long?`The long bowl returns only to part ${terminal.closingNeighbor} at column ${columns[terminal.closingNeighbor]}; its neighboring middle extension controls closure.`:''}${hasRightTail?` The final arm in columns ${tailLo}–${tailHi} follows Unifont y: row 11 retains the two sides, row 12 joins into the right return while retaining the shared stave pixel required by the preceding hip or bowl, rows 13–14 retain the right stave, and row 15 has only the interior return pixels. Only this lower arm and tail adapt to the compact bay; middle extensions remain independent.`:''}`.trim();
  layoutTemplates[templateId]={columns,bodyRows:rowsToDrawing(body),terminalInterval:[lo,hi],donors:[...new Set(donors)],notes:description};
  groups.push({id:groupId,title:first.canonicalName+' — independent middle extensions',glyphIds:members.map(e=>e.glyphId),notes:description});
  for(const entry of members){
@@ -79,7 +94,7 @@ for(const [,members]of groupsMap){
 if(glyphs.length!==496||groups.length!==168)throw new Error('Scope '+glyphs.length+'/'+groups.length);
 const bits=new Map();for(const g of [...existing,...glyphs]){const hex=rowHex(rowsFromDrawing(g.rows),8);if(bits.has(hex))throw new Error('Duplicate '+g.glyphId+' = '+bits.get(hex));bits.set(hex,g.glyphId);}
 const outputPath=new URL('resources/unifont/middle-branches.json',root);
-const output=JSON.stringify({schemaVersion:1,constructionVersion:'compact-native-branches-1',sourceReferences:['construct_middle_branches.mjs'],layoutTemplates,groups,glyphs},null,2)+'\n';
+const output=JSON.stringify({schemaVersion:1,constructionVersion:'compact-native-branches-2',sourceReferences:['construct_middle_branches.mjs'],layoutTemplates,groups,glyphs},null,2)+'\n';
 if(process.argv.includes('--check')){
   if(await readFile(outputPath,'utf8')!==output)throw new Error('Stale middle-branches.json; run this constructor without --check');
 }else await writeFile(outputPath,output);

@@ -46,7 +46,7 @@
         "Each allocated construction is represented by one Unicode scalar value in the proposed private-use map. The component vocabulary describes its visible structure; it is not a sequence of separately encoded combining marks.",
         "Concatenating primitive character codes does not request automatic formation of a compound construction. Compounds already in the repertoire have their own explicit assignments. No decomposition or normalization equivalence between these codes is specified.",
         "Opposite-facing forms have distinct assignments where the repertoire includes them. Roman and Italic are typographic postures of the same mapped construction. Font weight and posture never change its stored code point.",
-        "Canonical names describe structure independently of pronunciation. Uppercase names in the charts are a documentation convention and do not define an uppercase character repertoire.",
+        "All 1,216 constructions, including the seven stemless forms, are lowercase letters. Their full names use SMALL LETTER to record this case. Uppercase typography in the charts is a documentation convention; no uppercase counterparts or uppercase mappings are defined.",
         "Version 0.250 replaces the earlier private-use map. Existing construction identities and native outlines are retained, but their numeric assignments are reorganized. No aliases or backward compatibility with earlier numeric assignments are provided."
       ]
     },
@@ -55,7 +55,7 @@
       "title": "5. Names and ordering",
       "paragraphs": [
         "The current canonical naming system is version 3. The first two component terms are joined by “with”; subsequent terms are joined by “and”. Interior uprights use the ordinary stem, ascender, and descender names. Local bowl closure and counts of equal adjacent uprights are resolved before names are serialized.",
-        "Names are unique across the 1,216-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN LETTER.",
+        "Names are unique across the 1,216-entry repertoire. Every chart name, including the seven stemless forms, is the uppercase construction name prefixed by QUINTESSENTIAL LATIN SMALL LETTER. The structural construction-name algorithm remains version 3; this prefix clarifies the lowercase identity of the existing repertoire.",
         "Code charts, names lists, and presentation order follow the same numeric construction order across 30 families. Middle-extension companions remain inside their base family: a single middle component has short and extended states; two middle components have neither, left-only, right-only, and both-extended states together. Code values, stable identities, and internal font glyph names remain distinct."
       ]
     },
@@ -64,8 +64,8 @@
       "title": "6. Reference text behavior",
       "paragraphs": [
         "The reference implementation presents text horizontally from left to right. Every allocated form is a spacing character in the font, with its own advance. The font includes U+0020 SPACE and kerning between reference glyphs.",
-        "No uppercase/lowercase pairings, case conversions, special word-breaking rules, or combining behavior are proposed. There is no separately specified punctuation or numeral system.",
-        "Private-use characters retain the Unicode properties assigned to private-use code points by the Unicode Standard. This proposal does not install new normative Unicode properties or normalization mappings.",
+        "All proposed characters have the private-use interpretation General_Category=Ll (Lowercase_Letter). No uppercase or titlecase counterparts or mappings, non-identity case-folding mappings, special word-breaking rules, or combining behavior are proposed. There is no separately specified punctuation or numeral system.",
+        "Standard Unicode implementations continue to give these private-use code points General_Category=Co. The accompanying UCD-style files propose Ll only for cooperating applications that explicitly adopt this private-use agreement; they do not install normative Unicode properties or normalization mappings.",
         "Applications must preserve supplementary-plane scalar values. In UTF-16, a mapped character occupies a surrogate pair; editing and copying must keep that pair intact."
       ]
     },
@@ -85,7 +85,7 @@
       "paragraphs": [
         "Each block has a reference PDF containing a title/range page, code grids, and a numeric names list. A combined catalogue contains all three blocks. Five grid sheets show up to 256 positions each: the main block has 12 hexadecimal columns, and the other four sheets have 16. Every grid stops exactly at its block boundary.",
         "Reference PDFs use Quintessential Serif 0.250, Roman 400. Each assigned position shows its representative glyph and hexadecimal code. The current allocation is gapless; no unassigned positions are shown.",
-        "The downloadable allocation, compact browser catalogue, and names list are generated from one explicit source. Character names and code points agree across the PDFs, website, font mappings, and machine-readable downloads."
+        "The downloadable allocation, compact browser catalogue, and names lists are generated from one explicit source. Character names and code points agree across the PDFs, website, font mappings, and machine-readable downloads. The accompanying UCD-style package includes UnicodeData, Blocks, NamesList, CaseFolding, Charts, and Sources files, with lowercase classification, undefined uppercase mappings, and identity case folding."
       ]
     },
     {
@@ -112,7 +112,8 @@
         "6 September 2026: initial standalone draft, preserving the 0.220 reference fonts and naming version 2. Introduces the general block titles Quintessential Latin, Quintessential Latin Extended-A, and Quintessential Latin Extended-B without changing character codes or identities.",
         "6 September 2026: naming version 3 gives every character the QUINTESSENTIAL LATIN LETTER prefix, uses ordinary upright names for interior components, and combines equal adjacent uprights into counts. Code points, construction identities, and the 0.220 reference fonts are unchanged.",
         "6 September 2026: reference font and allocation version 0.240 add 384 constructions with independently extended middle components at U+F2E00–U+F2F7F. All preceding 832 identities and assignments are retained. Both native postures support the complete 1,216-character repertoire; canonical naming remains version 3.",
-        "6 September 2026: reference font and allocation version 0.250 organize all 1,216 constructions into a continuous U+F2A00–U+F2EBF map and 30 families. Middle-extension states are integrated with their bases, and the four stemless double-bowl and spine forms begin Extended-A. This replaces the earlier numeric assignments without compatibility aliases; the repertoire and native glyph designs are unchanged."
+        "6 September 2026: reference font and allocation version 0.250 organize all 1,216 constructions into a continuous U+F2A00–U+F2EBF map and 30 families. Middle-extension states are integrated with their bases, and the four stemless double-bowl and spine forms begin Extended-A. This replaces the earlier numeric assignments without compatibility aliases; the repertoire and native glyph designs are unchanged.",
+        "6 September 2026: the author clarifies that all 1,216 constructions are lowercase letters. Full names adopt the QUINTESSENTIAL LATIN SMALL LETTER prefix and the private-use UCD interpretation changes from Lo to Ll. Uppercase and titlecase counterparts and mappings remain undefined; case folding is identity. Construction names and naming algorithm version 3, code points, block ranges, font designs, and allocation version 0.250 are unchanged. Any future uppercase additions would require explicit assignments and mappings."
       ]
     }
   ],

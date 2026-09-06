@@ -4,13 +4,14 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 import {buildUnifont,constructUnifont,sha256} from './build_unifont_glyphs.mjs';
-import {parseHex,bitmapSvg} from '../site/assets/unifont-model.mjs';
+import {parseHex,bitmapSvg,bitmapSequenceSvg} from '../site/assets/unifont-model.mjs';
 import {assessBitmap,hasPixel,pixelDiff,rowsFromDrawing} from './unifont_geometry.mjs';
 
 const metadata=await buildUnifont({check:true}),byId=new Map(metadata.glyphs.map(glyph=>[glyph.glyphId,glyph]));
 const allocation=JSON.parse(await readFile(new URL('../resources/quintessential-latin-allocation.json',import.meta.url),'utf8'));
 const byAllocation=new Map(allocation.entries.map(entry=>[entry.glyphId,entry]));
 const donorInfo=JSON.parse(await readFile(new URL('../resources/unifont/donors.json',import.meta.url),'utf8'));
+const before=parseHex(await readFile(new URL('../resources/unifont/qa-tail-precedents/before.hex',import.meta.url),'utf8'));
 await test('Complete 1216-character repertoire, all 8px',()=>{
   assert.equal(metadata.total,1216);assert.equal(metadata.drawn,1216);assert.equal(metadata.stage,'complete-repertoire');assert.equal(metadata.userApproval,null);
   assert.equal(metadata.glyphs.filter(glyph=>glyph.parts.length===1).length,16);
@@ -53,14 +54,63 @@ await test('Shared CSS and screen alignment changes invalidate proofs without ch
     await rm(fixture,{recursive:true,force:true});
   }
 });
-await test('Native donor bits including corrected dotless i are exact and independently pinned',()=>{
+await test('Native donor bits including dotless j, script g, and y are exact and independently pinned',()=>{
   assert.equal(donorInfo.sourceCompressedSha256,'2ae5311c8e123e9e85f5331cd012aa99757071df23243f1487fdbf8f3acd86be');
+  assert.equal(donorInfo.donors.length,42);
   assert.equal(byId.get('stem').line,'0F2A03:000000000000180808080808083E0000');
+  assert.equal(byId.get('tail').hex,'0000000000000C040404040404044830');
+  assert.equal(byId.get('turned-bowl-tail').hex,'0000000000003A46424242463A02423C');
+  assert.equal(byId.get('turned-arch-tail').hex,'0000000000004242424242261A02023C');
   assert.equal(byId.get('special-ring').line,'0F2A00:0000000000003C4242424242423C0000');
   assert.equal(byId.get('arch').hex,donorInfo.donors.find(d=>d.codePoint==='006E').hex);
   assert.equal(byId.get('turned-arch').hex,donorInfo.donors.find(d=>d.codePoint==='0075').hex);
-  for(const [id,point] of [['special-turned-open-bowl','0254'],['special-turned-double-open-bowl','025C'],['special-spine','0073'],['turned-bowled-spine','0061'],['bowled-spine','0250']])assert.equal(byId.get(id).hex,donorInfo.donors.find(d=>d.codePoint===point).hex);
+  for(const [id,point] of [['special-turned-open-bowl','0254'],['special-turned-double-open-bowl','025C'],['special-spine','0073'],['turned-bowled-spine','0061'],['bowled-spine','0250'],['tail','0237'],['turned-bowl-tail','0261'],['turned-arch-tail','0079']])assert.equal(byId.get(id).hex,donorInfo.donors.find(d=>d.codePoint===point).hex);
   assert.equal(byId.get('opposed-bowls-0-0').recipe.baseGlyphId,'turned-bowled-spine');
+});
+await test('Tail and native-f revision preserves every unrelated bitmap and long-bowl contact mask',()=>{
+  assert.equal(before.size,1216);
+  let changed=0;
+  for(const glyph of metadata.glyphs){
+    const original=before.get(glyph.codePoint);assert(original,glyph.glyphId);
+    const differences=pixelDiff(original.rows,glyph.rows);
+    if(differences.length){
+      changed++;
+      const tail=glyph.parts.some(part=>part.lower==='curved');
+      const hook=glyph.parts.some(part=>part.kind==='stem'&&part.upper==='curved');
+      assert(tail||hook,`Unrelated bitmap changed: ${glyph.glyphId}`);
+      if(!tail)assert.deepEqual(differences,[[3,3],[3,4]],`Native-f-only correction: ${glyph.glyphId}`);
+    }
+    for(const bowl of glyph.parts.filter(part=>part.long)){
+      const rows=bowl.closingEnd==='lower'?[14,15]:[0,1,2,3,4,5];
+      for(const y of rows)assert.equal(glyph.rows[y],original.rows[y],`Long-bowl mask ${glyph.glyphId}, row ${y}`);
+    }
+  }
+  assert(changed>0);
+});
+await test('Revision records bind every changed bitmap and preserve the complete prior repertoire',async()=>{
+  const revision=JSON.parse(await readFile(new URL('../resources/unifont/tail-revisions.json',import.meta.url),'utf8'));
+  assert.equal(revision.beforeSha256,sha256(await readFile(new URL('../resources/unifont/qa-tail-precedents/before.hex',import.meta.url))));
+  assert.equal(revision.userAcceptance,null);
+  const records=new Map(revision.glyphs.map(record=>[record.glyphId,record]));
+  assert.equal(records.size,revision.glyphs.length);
+  let changed=0;
+  for(const glyph of metadata.glyphs){
+    const original=before.get(glyph.codePoint),record=records.get(glyph.glyphId);
+    if(record){
+      changed++;assert.equal(record.before,original.line,glyph.glyphId);assert.equal(record.after,glyph.line,glyph.glyphId);
+      assert.deepEqual(record.pixels,pixelDiff(original.rows,glyph.rows),glyph.glyphId);
+      assert(record.pixels.length>0&&record.reason.length>0,glyph.glyphId);
+    }else assert.equal(glyph.line,original.line,`Unlisted bitmap changed: ${glyph.glyphId}`);
+  }
+  assert.equal(changed,records.size);assert.equal(revision.changed,changed);assert.equal(revision.preserved,1216-changed);
+});
+await test('Uncompacted tails consistently retain their native dotless-j, y, or script-g lower shape',()=>{
+  const donorRows=point=>parseHex(`${point}:${donorInfo.donors.find(d=>d.codePoint===point).hex}`).get(parseInt(point,16)).rows;
+  for(const glyph of metadata.glyphs.filter(g=>g.parts.length===1&&g.parts[0].lower==='curved'))assert.deepEqual(glyph.rows.slice(7),donorRows('0237').slice(7),glyph.glyphId);
+  for(const glyph of metadata.glyphs.filter(g=>g.parts.length===2&&!g.parts.some(p=>p.middle)&&g.parts[1].lower==='curved')){
+    const part=glyph.parts[0],bowl=part.kind==='spine'||part.kind==='double bowl'||part.kind==='bowl'&&!part.long;
+    assert.deepEqual(glyph.rows.slice(11),donorRows(bowl?'0261':'0079').slice(11),glyph.glyphId);
+  }
 });
 await test('HEX validity, MSB orientation, and SVG pixels roundtrip exactly',()=>{
   for(const glyph of metadata.glyphs){
@@ -72,6 +122,17 @@ await test('HEX validity, MSB orientation, and SVG pixels roundtrip exactly',()=
   }
   assert.equal(parseHex('0F2A00:8001'+'0000'.repeat(15)).get(0xf2a00).width,16);
   for(const bad of ['F2A00:'+'00'.repeat(16),'D800:'+'00'.repeat(16),'110000:'+'00'.repeat(16),'0131:FF',byId.get('stem').line+'\n'+byId.get('stem').line])assert.throws(()=>parseHex(bad));
+});
+await test('Continuous bitmap runs preserve all cells beyond the 32-bit mask width',()=>{
+  const run=['stem','special-ring','special-spine','stem','special-ring','special-spine','stem','special-ring'].map(id=>byId.get(id));
+  const svg=bitmapSequenceSvg(run);
+  assert(svg.includes('data-bitmap-width="64"'));
+  assert(svg.includes('viewBox="0 0 64 16"'));
+  const pixels=Array.from({length:16},()=>Array(64).fill(false));
+  for(const match of svg.matchAll(/M(\d+) (\d+)h1v1h-1z/g))pixels[Number(match[2])][Number(match[1])]=true;
+  for(let y=0;y<16;y++)for(let x=0;x<64;x++){
+    assert.equal(pixels[y][x],Boolean(run[Math.floor(x/8)].rows[y]&(128>>(x%8))),`Run pixel (${x},${y})`);
+  }
 });
 await test('Every pair and quartet changes only independently selected extension pixels',()=>{
   for(const group of metadata.groups){
@@ -111,8 +172,16 @@ await test('Ordinary shared spines balance both native donor connections and pre
   assert.deepEqual(shared.rows.slice(11,14),byId.get('turned-bowled-spine').rows.slice(11,14));
   const variants=metadata.glyphs.filter(g=>g.familyId==='opposed-bowls');assert.equal(variants.length,36);
   for(const glyph of variants){
-    assert.equal(glyph.assessment.counters,2);
-    assert.deepEqual(glyph.rows.slice(7,13),shared.rows.slice(7,13));
+    const hasTail=glyph.parts.some(part=>part.lower==='curved');
+    const closesTail=hasTail&&glyph.parts[0].lower==='straight';
+    assert.equal(glyph.assessment.counters,closesTail?3:2,glyph.glyphId);
+    assert.deepEqual(glyph.rows.slice(7,hasTail?11:13),shared.rows.slice(7,hasTail?11:13));
+    if(hasTail){
+      const lower=[0x46,0x3A,0x02,0x42,0x3C];
+      if(glyph.parts[0].lower==='straight')for(const index of [1,2,3,4])lower[index]|=0x40;
+      assert.deepEqual(glyph.rows.slice(11),lower,glyph.glyphId);
+      assert.deepEqual(glyph.assessment.counterPixels.map(region=>region.length),closesTail?[9,5,9]:[9,5],glyph.glyphId);
+    }
   }
 });
 await test('All new recipes preserve their base outside documented extension and join pixels',()=>{
@@ -141,14 +210,28 @@ await test('Every new middle extension follows its allocation direction and visu
   for(const glyph of glyphs){
     const positions=glyph.layout.middleParts||glyph.layout.parts.filter(p=>glyph.parts[p.partIndex].middle);
     assert(positions.every((p,i)=>i===0||p.column>positions[i-1].column),glyph.glyphId);
-    const expected=[];
+    const expected=[],joins=[];
     for(const position of positions){
       const part=glyph.parts[position.partIndex];assert(part.middle);assert.equal(part.kind,position.kind);
       if(part.upper==='straight')for(const y of [3,4,5])expected.push([position.column,y]);
       if(part.lower==='straight')for(const y of [14,15])expected.push([position.column,y]);
+      for(const pixel of position.joinPixels||[]){
+        assert.equal(part.kind,'leg',glyph.glyphId);
+        assert.deepEqual(pixel,[position.column,13],glyph.glyphId);
+        assert(glyph.parts.some(part=>part.kind==='stem'&&part.lower==='curved'),glyph.glyphId);
+        if(part.lower!=='straight'){
+          assert.equal(part.lower,'none',glyph.glyphId);
+          assert(!hasPixel(glyph.rows,8,position.column,13),glyph.glyphId);
+          continue;
+        }
+        assert([-1,0,1].some(dx=>hasPixel(glyph.rows,8,position.column+dx,12)),glyph.glyphId);
+        assert(!hasPixel(byId.get(glyph.recipe.baseGlyphId).rows,8,position.column,13),glyph.glyphId);
+        expected.push(pixel);joins.push(pixel);
+      }
     }
     const sort=pixels=>pixels.map(p=>p.join(',')).sort();
     assert.deepEqual(sort(glyph.extensionPixels),sort(expected),glyph.glyphId);
+    assert.deepEqual(sort(glyph.extensionJoinPixels||[]),sort(joins),glyph.glyphId);
   }
 });
 await test('All compact shared spines preserve their counters and document natural hook contacts',()=>{
@@ -179,7 +262,11 @@ await test('All new end extensions match the ordered allocation parts and shared
         if(part.upper==='straight')for(const y of [3,4,5])add(x,y);
         if(part.upper==='curved'){assert.equal(x,1);for(const [px,py] of [[2,3],[3,3],[1,4],[1,5]])add(px,py);}
         if(part.lower==='straight')for(const y of [14,15])add(x,y);
-        if(part.lower==='curved'){assert.equal(x,6);for(const [px,py] of [[6,14],[4,15],[5,15]])add(px,py);}
+        if(part.lower==='curved'){
+          assert.equal(x,6);
+          for(const [px,py] of [[6,14],[2,15],[3,15],[4,15],[5,15]])add(px,py);
+          if(glyph.parts.some(part=>part.kind==='spine'||part.kind==='double bowl'||part.kind==='bowl'&&!part.long))add(1,14);
+        }
       }
       if(part.kind==='bowl'&&part.long){
         const points=part.closingEnd==='lower'?[[6,14],[2,15],[3,15],[4,15],[5,15]]:[[2,3],[3,3],[4,3],[5,3],[1,4],[6,4],[1,5]];

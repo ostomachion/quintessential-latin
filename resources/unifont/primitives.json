@@ -301,14 +301,14 @@
         "........",
         "........",
         "........",
-        "...##...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
+        "....##..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
         ".#..#...",
         "..##...."
       ],
@@ -316,13 +316,13 @@
         "0131",
         "0237"
       ],
-      "notes": "Retain the dotless-i head at (3,6) and (4,6). Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "notes": "Exact GNU Unifont U+0237 DOTLESS J, including its native column-5 axis and complete lower return.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [
-        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+        "The tail uses native dotless-j positioning; other standalone uprights retain their dotless-i axis."
       ]
     },
     {
@@ -332,17 +332,17 @@
         "........",
         "........",
         "........",
-        "...##...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
+        "....##..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
         ".#..#...",
         "..##...."
       ],
@@ -351,13 +351,13 @@
         "006C",
         "0237"
       ],
-      "notes": "Use lowercase l’s two-pixel head at row 3 and its column-4 vertical. Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "notes": "Use the native dotless-j column-5 axis and exact lower return. Move its two-pixel head to row 3; continue the same stave through the ascender.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [
-        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+        "The tail uses native dotless-j positioning; other standalone uprights retain their dotless-i axis."
       ]
     },
     {
@@ -367,17 +367,17 @@
         "........",
         "........",
         "........",
-        ".....##.",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
-        "....#...",
+        "......##",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
+        ".....#..",
         ".#..#...",
         "..##...."
       ],
@@ -386,13 +386,13 @@
         "0066",
         "0237"
       ],
-      "notes": "Move the native lowercase-f hook one column right to the dotless-i axis: row 3 pixels (5,3) and (6,3), then column 4 from row 4. Omit f’s unrelated crossbar. Continue the column-4 stave through row 13. Adapt dotless-j’s lower return to the common axis: row 14 columns 1 and 4, row 15 columns 2 and 3. Preserve the native left return and avoid a dot, crossbar, or column-0 ink.",
+      "notes": "Use the native dotless-j column-5 axis and exact lower return. Translate the native f hook to this axis: row 3 columns 6–7 and rows 4–5 column 5, without a crossbar.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [
-        "Review the compressed two-row left tail at native size; its diagonal lower return uses 8-neighbor continuity and the row-14 left pixel is part of that return, not a detached dot."
+        "The tail uses native dotless-j positioning; other standalone uprights retain their dotless-i axis."
       ]
     },
     {

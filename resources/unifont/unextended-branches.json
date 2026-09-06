@@ -341,30 +341,57 @@
         "......#.",
         "......#.",
         "......#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0279",
         "0075",
         "0237",
-        "014B"
+        "014B",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arm",
         "addPixels": [
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -375,8 +402,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -507,25 +600,28 @@
         "......#.",
         "......#.",
         "......#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0279",
         "0075",
         "0064",
         "0237",
-        "014B"
+        "014B",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arm in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arm",
         "addPixels": [
@@ -542,8 +638,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -554,8 +674,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -900,17 +1086,18 @@
         ".#....#.",
         ".#....#.",
         ".#...##.",
-        ".#..#.#.",
-        "..##..#.",
+        "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0251",
         "0237",
-        "014B"
+        "014B",
+        "0261"
       ],
-      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Use the exact native script-g bowl and tail: the bowl returns at row 12, its right stave continues at row 13, and the wide upturned tail occupies rows 14–15. Any upper extension is unchanged.",
       "expected": {
         "components": 1,
         "counters": 1
@@ -920,8 +1107,28 @@
         "baseGlyphId": "turned-bowl",
         "addPixels": [
           [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -932,8 +1139,42 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1063,18 +1304,19 @@
         ".#....#.",
         ".#....#.",
         ".#...##.",
-        ".#..#.#.",
-        "..##..#.",
+        "..###.#.",
         "......#.",
-        "....##.."
+        ".#....#.",
+        "..####.."
       ],
       "donors": [
         "0251",
         "0064",
         "0237",
-        "014B"
+        "014B",
+        "0261"
       ],
-      "notes": "Retain every body pixel of turned-bowl in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Use the exact native script-g bowl and tail: the bowl returns at row 12, its right stave continues at row 13, and the wide upturned tail occupies rows 14–15. Any upper extension is unchanged.",
       "expected": {
         "components": 1,
         "counters": 1
@@ -1096,8 +1338,28 @@
             5
           ],
           [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1108,8 +1370,42 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1451,29 +1747,56 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0237",
-        "014B"
+        "014B",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arch",
         "addPixels": [
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1484,8 +1807,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -1614,24 +2003,27 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0064",
         "0237",
-        "014B"
+        "014B",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arch",
         "addPixels": [
@@ -1648,8 +2040,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -1660,8 +2076,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -2159,24 +2641,27 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0237",
         "014B",
-        "0068"
+        "0068",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arch",
         "addPixels": [
@@ -2193,8 +2678,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -2205,8 +2714,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -2361,25 +2936,28 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0064",
         "0237",
         "014B",
-        "0068"
+        "0068",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The left long arm adds its independent straight extension at column 1, rows 3–5.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
-      "reviewNotes": [],
+      "reviewNotes": [
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
+      ],
       "recipe": {
         "baseGlyphId": "turned-arch",
         "addPixels": [
@@ -2408,8 +2986,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -2420,8 +3022,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       }
     },
     {
@@ -3237,25 +3905,26 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0237",
         "014B",
-        "006F"
+        "006F",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 0
       },
       "reviewNotes": [
-        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
       ],
       "recipe": {
         "baseGlyphId": "turned-arch",
@@ -3289,8 +3958,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -3301,8 +3994,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       },
       "closure": {
         "partIndex": 0,
@@ -3557,26 +4316,27 @@
         ".#....#.",
         ".#....#.",
         ".#....#.",
-        ".#....#.",
-        ".#...##.",
-        "..###.#.",
+        "..#..##.",
+        "...##.#.",
         "......#.",
-        "....##.."
+        "......#.",
+        "..####.."
       ],
       "donors": [
         "0075",
         "0064",
         "0237",
         "014B",
-        "006F"
+        "006F",
+        "0079"
       ],
-      "notes": "Retain every body pixel of turned-arch in rows 6–13, with its native Unifont attachment and terminal treatment. The right straight ascender adds only column 6, rows 3–5, following native d unadorned upper staves. The right curved tail follows the shared simple compound return: (6,14), (4,15), and (5,15), using the compact bend of native eng/j. Omit an upturned free tip at (3,14), which would touch the baseline hip and create an unrelated pocket. The native body terminal at (6,13) remains unchanged. The long upper bowl spans both staves: its cap occupies columns 2–5 at row 3, its left wall (1,4)–(1,5), and its free terminal (6,4). Only the designated immediately adjacent right ascender fills the opening at (6,5). This full-width bowl return is distinct from an ordinary short hook.",
+      "notes": "Preserve the upper structural construction and its extensions. Native Unifont y supplies the contracted lower hip at rows 11–12, the right tail stave at rows 13–14, and the wide tipless return at row 15. The body differences from the untailed native u/turned-r base are enumerated in the recipe; no unrelated terminal or upper long bowl is changed.",
       "expected": {
         "components": 1,
         "counters": 1
       },
       "reviewNotes": [
-        "Review the upper free-terminal gap at (6,5) at native size. It is open unless the adjacent right stave is extended."
+        "Compare the lower hip and tail directly with U+0079; retain the upper long-bowl closure state where present."
       ],
       "recipe": {
         "baseGlyphId": "turned-arch",
@@ -3618,8 +4378,32 @@
             5
           ],
           [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
             6,
             14
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            15
           ],
           [
             4,
@@ -3630,8 +4414,74 @@
             15
           ]
         ],
-        "removePixels": [],
-        "joinPixels": []
+        "removePixels": [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "joinPixels": [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            13
+          ]
+        ]
       },
       "closure": {
         "partIndex": 0,

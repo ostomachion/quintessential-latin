@@ -2,7 +2,8 @@
 """Pack the catalogue by construction, without changing any drawing or GID.
 
 The captured 0.240 state is immutable. Re-running this migration produces the
-same allocation and changes only Unicode tokens and the source font version.
+same allocation, including the explicit lowercase character-name prefix, and
+changes only Unicode tokens and the source font version in font sources.
 """
 from __future__ import annotations
 
@@ -109,6 +110,9 @@ def create_allocation(before):
         families.append(copy.deepcopy(family))
     result["families"] = families
     for entry in result["entries"]:
+        prefix = "QUINTESSENTIAL LATIN LETTER "
+        assert entry["name"].startswith(prefix), entry["glyphId"]
+        entry["name"] = "QUINTESSENTIAL LATIN SMALL LETTER " + entry["name"][len(prefix):]
         if entry["glyphId"] in STEMLESS_A:
             entry.update(familyId=STEMLESS_FAMILY, blockId="quintessential-latin-abbreviations")
         elif old_families[entry["familyId"]].get("baseFamilyId"):

@@ -3,9 +3,9 @@
   "family": "Quintessential Latin Unifont",
   "version": "0.250",
   "customCharacters": 1216,
-  "nativeCompanions": 213,
-  "encodedCharacters": 1429,
-  "glyphs": 1430,
+  "nativeCompanions": 214,
+  "encodedCharacters": 1430,
+  "glyphs": 1431,
   "unitsPerEm": 1024,
   "advance": 512,
   "ascent": 896,
@@ -17,22 +17,22 @@
     "brotli": "1.2.0"
   },
   "sources": {
-    "tools/build_unifont_font.py": "aeecd6abc728d1686d6df08fe08ccf4218df08fc9438883e93eaf5d10d076395",
+    "tools/build_unifont_font.py": "206aa3d0b5889678ba68f5ca00b1a7987a7ef93e37f26572c04b5a7e77af8e3c",
     "tools/requirements-unifont.txt": "90ddddf9f920fdce504df896be81ec3f185c0dbf3de395cf653d5547af0c145f",
-    "resources/unifont/quintessential-latin.hex": "5ad1eb058b73ba8a84c7feeabf8c52cb14684f594fd45c21580745fb3207974a",
-    "resources/unifont/font-companions.hex": "f0477d77ddea0068a61d1c0e116534b873cd183dbfe8cc58d42ec524fcf7c1ab",
-    "resources/unifont/font-companions.json": "6e561dd499f33925110724b30aa4e531b55594c985725dcc8282db3e377f3644",
+    "resources/unifont/quintessential-latin.hex": "8a63e769eaee11ffc3535d24bfa2282d9480e82eeb18529695eb2ac285f17c6b",
+    "resources/unifont/font-companions.hex": "0ec8a4f2f3fda7f6ed4d0db9358099bb522eeb65df51e5cb2d5fc0dba56c0090",
+    "resources/unifont/font-companions.json": "45f898acc6f5b666133aecac3b4916b960b9d60cf40f56daedffabe591a8cd6a",
     "resources/unifont/OFL.txt": "5512476edf534f4e07d0c326df88bf3d629355614999496b617b36352945f07c",
-    "resources/quintessential-latin-allocation.json": "508c117e04793cbd336a1ef3080e2c314ddec77de8fbb445331459584765743b"
+    "resources/quintessential-latin-allocation.json": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2"
   },
   "outputs": {
     "QuintessentialUnifont-Regular.ttf": {
-      "sha256": "39c6c9ecb083e638df6cc1fce5b29068fa3d58e185a20b0618c4035fba23c95a",
-      "bytes": 521392
+      "sha256": "e3f9e57abe342dd3f2cee2ab3852d50c4a4fe91fafe85c3e2593215877997707",
+      "bytes": 517604
     },
     "QuintessentialUnifont-Regular.woff2": {
-      "sha256": "44fd7274832699352c8c4409c1806edd1aa816ed2a9e4d55163a23c869adb836",
-      "bytes": 18340
+      "sha256": "4bbae6250a75d2e222dbca020ed055eafc5331cca286b5bdc065f71da8b31646",
+      "bytes": 18088
     },
     "OFL.txt": {
       "sha256": "5512476edf534f4e07d0c326df88bf3d629355614999496b617b36352945f07c",

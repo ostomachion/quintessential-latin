@@ -5,6 +5,8 @@ Recipe identities and internal order remain fixed. The separately pinned
 three-glyph terminal revision is validated before older regression suites
 recover their original source bytes and Unicode tokens. Every other source
 byte and compiled table remains checked against the historical baseline.
+Character names may only gain SMALL before LETTER; structural names and
+internal glyph names remain identical to the captured allocation.
 """
 from __future__ import annotations
 
@@ -63,11 +65,15 @@ def baseline_entries():
 
 
 def historical_entry(entry):
-    """Restore only the explicitly authorized allocation fields for old tests."""
+    """Validate the lowercase prefix, then restore old names and encoding only."""
     if not migration_active():
         return entry
     before = baseline_entries()[entry["glyphId"]]
-    return {**entry, **{key: before[key] for key in ENCODING_FIELDS}}
+    prefix = "QUINTESSENTIAL LATIN LETTER "
+    assert before["name"].startswith(prefix), entry["glyphId"]
+    expected_name = "QUINTESSENTIAL LATIN SMALL LETTER " + before["name"][len(prefix):]
+    assert entry["name"] == expected_name, (entry["glyphId"], "Character name differs beyond the lowercase prefix")
+    return {**entry, "name": before["name"], **{key: before[key] for key in ENCODING_FIELDS}}
 
 
 @lru_cache(maxsize=1)
@@ -126,8 +132,7 @@ def verify_sources():
     assert len(entries) == 1216
     assert [entry["glyphId"] for entry in entries] == [entry["glyphId"] for entry in old_entries], "Internal allocation order changed"
     for old, entry in zip(old_entries, entries):
-        assert {key: value for key, value in old.items() if key not in ENCODING_FIELDS} == {
-            key: value for key, value in entry.items() if key not in ENCODING_FIELDS}, entry["glyphId"]
+        assert old == historical_entry(entry), entry["glyphId"]
     by_id = {entry["glyphId"]: entry for entry in entries}
     by_name = {entry["glyphName"]: entry for entry in entries}
     assert len(by_id) == len(by_name) == 1216

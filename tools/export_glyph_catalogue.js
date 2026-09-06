@@ -14,7 +14,7 @@ const names=new Set(),ids=new Set(),codes=new Set();
 const entries=allocation.entries.map(entry=>{
   if(["language","model","role"].some(key=>key in entry)) throw new Error("Allocation must describe neutral construction only.");
   const canonicalName=nameParts(entry.parts);
-  const name="QUINTESSENTIAL LATIN LETTER "+canonicalName.toUpperCase();
+  const name="QUINTESSENTIAL LATIN SMALL LETTER "+canonicalName.toUpperCase();
   if(entry.canonicalName!==canonicalName || entry.name!==name) throw new Error("Stale name: "+entry.glyphId);
   if(names.has(name)||ids.has(entry.glyphId)||codes.has(entry.codePoint))throw new Error("Duplicate catalogue identity.");
   names.add(name);ids.add(entry.glyphId);codes.add(entry.codePoint);
