@@ -32,7 +32,7 @@ export async function constructUnifont(root=ROOT){
   const referencePath='resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.woff2';
   const referenceSha256=sha256(await read(referencePath));
   // Review binds renderer and sheet appearance too, not just the HEX output.
-  for(const name of ['site/assets/model.mjs','site/assets/style.css','site/assets/type-guides.mjs','site/assets/unifont-model.mjs','site/assets/unifont-pixels.mjs','site/assets/unifont.css','tools/unifont_proofs.mjs','tools/unifont_geometry.mjs'])await read(name);
+  for(const name of ['site/assets/model.mjs','site/assets/style.css','site/assets/theme.js','site/assets/type-guides.mjs','site/assets/unifont-model.mjs','site/assets/unifont-pixels.mjs','site/assets/unifont.css','tools/unifont_proofs.mjs','tools/unifont_geometry.mjs'])await read(name);
   const bundles=await Promise.all(design.sourceFiles.map(name=>json('resources/unifont/'+name)));
   const byId=new Map(allocation.entries.map(entry=>[entry.glyphId,entry]));
   if(byId.size!==1216||new Set(allocation.entries.map(entry=>entry.codePoint)).size!==1216||allocation.entries.some(entry=>entry.codePoint<0xf2a00||entry.codePoint>0xf2ebf))throw new Error('Allocation is not the unique complete 1216-character range');

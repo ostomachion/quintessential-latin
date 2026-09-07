@@ -11,7 +11,7 @@ body[data-page="construction"] .main{max-width:960px}
 .proposal-examples .code{display:block}
 .proposal-section .section-sources{font-size:13px;line-height:1.5;color:var(--muted)}
 .proposal-toc{max-height:calc(100vh - 100px);overflow-y:auto;padding:3px 6px 8px 3px}
-.chart-scroll:focus-visible,.unifont-scroll:focus-visible{outline:2px solid #000;outline-offset:4px}
+.chart-scroll:focus-visible,.unifont-scroll:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 @media(max-width:760px){.proposal-layout{display:block}.proposal-toc{position:static;max-height:none;margin-bottom:28px}.proposal-toc ol{columns:2;column-gap:24px}.proposal-toc li{break-inside:avoid}.proposal-section h2{font-size:22px}}
 @media(max-width:420px){.proposal-toc ol{columns:1}.proposal-examples{gap:10px}}
 @media print{

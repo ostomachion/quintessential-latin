@@ -108,10 +108,10 @@ export const introStyles = `
 .intro-example-demonstration{display:grid;grid-template-columns:180px minmax(0,1fr);gap:22px;align-items:start;margin:8px 0 16px}
 .intro-writing-study,.intro-character{margin:0;min-width:0}
 .intro-writing-study svg{display:block;width:100%;height:auto;max-width:230px;margin-inline:auto;overflow:visible}
-.intro-writing-guides path{fill:none;stroke:#aeb9bd;stroke-width:1;stroke-dasharray:3 4}
-.intro-writing-guides text{font:14px 'Source Sans 3',Arial,sans-serif;fill:#526067}
-.intro-writing-path{stroke:#182a33;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
-.intro-writing-start{fill:#fff;stroke:#182a33;stroke-width:1.8}
+.intro-writing-guides path{fill:none;stroke:var(--writing-guide,#aeb9bd);stroke-width:1;stroke-dasharray:3 4}
+.intro-writing-guides text{font:14px 'Source Sans 3',Arial,sans-serif;fill:var(--guide-label)}
+.intro-writing-path{stroke:var(--writing-ink,#182a33);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.intro-writing-start{fill:var(--paper);stroke:var(--writing-ink,#182a33);stroke-width:1.8}
 .intro-writing-study figcaption{font-size:12px;line-height:1.5;color:var(--muted);padding:3px 0 0 4px}
 .intro-character-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-width:0;padding-top:7px}
 .intro-character-link{height:126px;display:flex;align-items:center;justify-content:center;text-decoration:none}
