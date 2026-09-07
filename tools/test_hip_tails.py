@@ -15,6 +15,7 @@ from fontTools.ttLib import TTFont
 from ufoLib2 import Font
 
 import hip_tail_revision as revision
+import italic_shaft_revision
 from font_geometry_helpers import outline, polygons_from_recording
 from test_stemless_terminals import (capture as capture_geometry, recorded_outlines,
     pairs_digest, target_pair_values, WEIGHTS, STYLES, digest)
@@ -109,7 +110,7 @@ def capture_instance_outlines(folder):
     return result
 
 
-def non_target_pair_digest(font, location):
+def non_target_pair_digest(font, location, face=None):
     """Resolve every non-target positioning record, including its variation."""
     from fontTools.varLib.varStore import VarStoreInstancer
     from test_quintessential_font import dflt_kern_lookups
@@ -121,11 +122,11 @@ def non_target_pair_digest(font, location):
             table = wrapper.ExtSubTable if lookup.LookupType == 9 else wrapper
             assert table.Format == 1
             for left, pair_set in zip(table.Coverage.glyphs, table.PairSet):
-                if left in TARGET_NAMES:
+                if face is None and left in TARGET_NAMES:
                     continue
                 for record in pair_set.PairValueRecord:
                     right = record.SecondGlyph
-                    if right in TARGET_NAMES:
+                    if face is None and right in TARGET_NAMES:
                         continue
                     assert record.Value2 is None or not any(vars(record.Value2).values())
                     value = record.Value1
@@ -136,7 +137,10 @@ def non_target_pair_digest(font, location):
                         assert device.DeltaFormat == 0x8000
                         amount += variation[(device.StartSize << 16) | device.EndSize]
                     values[left, right] = values.get((left, right), 0) + amount
-    return digest(sorted([left, right, value] for (left, right), value in values.items() if value))
+    if face is not None:
+        values = italic_shaft_revision.historical_variable_pairs(values, face)
+    return digest(sorted([left, right, value] for (left, right), value in values.items()
+                         if value and left not in TARGET_NAMES and right not in TARGET_NAMES))
 
 
 def current_revision():
@@ -185,9 +189,10 @@ class HipTailTests(unittest.TestCase):
         cls.entries = json.loads((ROOT / "resources/quintessential-latin-allocation.json").read_text())["entries"]
         assert {row["glyphName"] for row in cls.entries if row["glyphId"] in TARGET_IDS} == TARGET_NAMES
 
-    def assert_outlines_preserved(self, actual, before, face):
+    def assert_outlines_preserved(self, actual, before, face, *, source=False):
         self.assertEqual(set(actual), set(before), face)
         for name, old in before.items():
+            actual[name] = italic_shaft_revision.historical_outline(face, name, actual[name], source=source)
             self.assertEqual(actual[name][0], old[0], (face, name, "Advance changed"))
             if name not in TARGET_NAMES:
                 self.assertEqual(actual[name], old, (face, name, "Unrelated outline changed"))
@@ -202,19 +207,20 @@ class HipTailTests(unittest.TestCase):
         self.assertEqual(actual_files, set(self.before["sourceFiles"]))
         for relative, expected in self.before["sourceFiles"].items():
             if relative not in allowed:
-                self.assertEqual(revision.digest((SOURCES / relative).read_bytes()), expected, relative)
+                self.assertEqual(revision.digest(italic_shaft_revision.historical_source_bytes(SOURCES / relative)), expected, relative)
         for style in STYLES:
             with Font.open(SOURCES / f"QuintessentialSerif-{style}.ufo") as source:
                 old = self.before["sources"][style]
                 names = source.lib["public.glyphOrder"]
                 self.assertEqual(names, old["order"])
                 self.assertEqual({name: source[name].unicodes for name in names}, old["cmap"])
-                restored = dict(source.kerning)
+                restored = dict(italic_shaft_revision.historical_pairs(source.kerning, style, source=True))
                 restored.update({tuple(pair.split("/")): value for pair, value in self.before["targetPairs"][f"source-{style}"].items()})
                 self.assertEqual(pairs_digest({pair: (0, 0, value, 0, 0, 0, 0, 0) for pair, value in restored.items()}), old["pairs"])
-                self.assert_outlines_preserved(recorded_outlines(source, names), old["outlines"], style)
+                self.assert_outlines_preserved(recorded_outlines(source, names), old["outlines"], style, source=True)
             path = f"fonts/QuintessentialSerif/QuintessentialSerif-{style}.ufo/kerning.plist"
-            revision.restore_kerning_bytes((ROOT / path).read_bytes(), self.before["kerning"][path])
+            revision.restore_kerning_bytes(italic_shaft_revision.historical_source_bytes(ROOT / path),
+                                           self.before["kerning"][path])
 
     def test_non_target_compiled_outlines_pairs_and_all_advances_order_and_cmap_are_preserved(self):
         for face, old in self.before["compiled"].items():
@@ -228,9 +234,10 @@ class HipTailTests(unittest.TestCase):
                 for name, metrics in old["hmtx"].items():
                     self.assertEqual(font["hmtx"][name][0], metrics[0], (face, name, "Advance"))
                     if name not in TARGET_NAMES:
-                        self.assertEqual(list(font["hmtx"][name]), metrics, (face, name, "Unrelated metrics"))
+                        self.assertEqual(list(italic_shaft_revision.historical_metrics(face, name, font["hmtx"][name])),
+                                         metrics, (face, name, "Unrelated metrics"))
                 if weight is None:
-                    restored = dict(effective_pairs(font))
+                    restored = dict(italic_shaft_revision.historical_pairs(effective_pairs(font), face))
                     for pair in list(restored):
                         if any(name in TARGET_NAMES for name in pair):
                             del restored[pair]
@@ -240,7 +247,7 @@ class HipTailTests(unittest.TestCase):
                     # Source pair matrices were restored byte-for-byte above;
                     # independently compare all non-target variable records and
                     # their variation deltas against the pinned old table data.
-                    self.assertEqual(non_target_pair_digest(font, glyphs.location), self.before["nonTargetPairs"][face], face)
+                    self.assertEqual(non_target_pair_digest(font, glyphs.location, face), self.before["nonTargetPairs"][face], face)
             print(f"hip-tail preservation {face}: {len(names) - 2} unchanged outlines; all advances/mappings and unrelated pairs", flush=True)
 
     def assert_pairs_clear(self, shapes, widths, pairs, context):
@@ -320,12 +327,19 @@ class HipTailTests(unittest.TestCase):
                     if italic:
                         split = next(index for index, (op, _) in enumerate(old[1:], 1) if op == "moveTo")
                         upper = recording_quadratics(old[split:])
-                        upper += [segment for segment in recording_quadratics(old[:split]) if min(y for _, y in segment) >= 300]
+                        head = [segment for segment in recording_quadratics(old[:split]) if min(y for _, y in segment) >= 300]
+                        # The subsequent pinned shaft revision applies one
+                        # affine shear above the unchanged cut at y=300.
+                        # Its six-decimal metadata limits source tolerance to
+                        # 0.001 units; the complete native hip stays untouched.
+                        shear = metadata["upperShear"]
+                        upper += [tuple((x + shear * (y - 300), y) for x, y in segment) for segment in head]
                     else:
                         upper = [segment for segment in recording_quadratics(old) if min(y for _, y in segment) >= -20]
                     self.assertGreaterEqual(len(upper), 10)
                     expected = upper + translated_quadratics(tail, metadata["lowerOffsetX"])
-                    assert_contains_quadratics(self, quadratic_segments(source, name), expected, 1e-5, (style, name, "Source native tail and preserved hip/head"))
+                    assert_contains_quadratics(self, quadratic_segments(source, name), expected, .001 if italic else 1e-5,
+                                              (style, name, "Source native tail and preserved hip/head"))
                     regions[italic, weight, name] = expected
         for italic in (False, True):
             filename, _ = face_location(f"{'Italic' if italic else 'Roman'}-400")

@@ -1,7 +1,9 @@
 """Native STIX arch ribbons joined to arm and bowl terminals.
 
 The outside stave carries the grammatical extensions; the shared inside
-stave belongs to the terminal. Donor quadratics are never rotated or sheared.
+stave belongs to the terminal. Ribbons and terminal contours retain their
+native quadratics. The descending outer shaft inherits the explicit Italic
+axis correction from arch_outline; it does not transform the ribbon.
 """
 
 

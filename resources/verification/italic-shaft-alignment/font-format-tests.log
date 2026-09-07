@@ -1,0 +1,9 @@
+test_outputs_preserve_donor_vertical_metric_selection (__main__.QuintessentialFontTests.test_outputs_preserve_donor_vertical_metric_selection) ... ok
+test_static_faces_are_hinted_sparse_cff_fonts (__main__.QuintessentialFontTests.test_static_faces_are_hinted_sparse_cff_fonts) ... ok
+test_woff2_files_preserve_sfnt_tables (__main__.QuintessentialFontTests.test_woff2_files_preserve_sfnt_tables) ... ok
+test_proof_data_manifest_and_license_metadata (__main__.QuintessentialFontTests.test_proof_data_manifest_and_license_metadata) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.836s
+
+OK

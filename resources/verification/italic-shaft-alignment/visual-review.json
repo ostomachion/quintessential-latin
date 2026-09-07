@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "proofManifest": "docs/images/italic-shaft-alignment/manifest.json",
+  "proofManifestSha256": "8bc525e2f248641a470a6e4f8abd6d27e3d831f23af233712c0d0f38913d3fae",
+  "beforeFontSha256": "204eb04a272eb942d5fda5cb55cb07fbd780d8856ab61df044b2b09c7a51aee8",
+  "afterFontSha256": "9f8541500b021f7fe3c9eb5c443ff8aa169c27a26b9d5b484d0f30b3d93951d1",
+  "reviewedSheetCount": 25,
+  "baseShaftCount": 18,
+  "baseWeights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "overviewGlyphCount": 150,
+  "overviewWeights": [
+    400,
+    700
+  ],
+  "reviewMethod": "Inspect all five large base-shaft PNGs directly and all twenty overview PNGs through ten paired contact sheets, checking every before/after cell. PNGs render the bound compiled variable font with FreeType.",
+  "findings": [
+    "U+F2A08 now has a consistent visible shaft axis in both halves, including the bold endpoint.",
+    "No broken joins or visible discontinuities introduced where the corrected shaft meets retained hooks or native lower terminals.",
+    "Companion arms, shoulders, bowls, and spines remain visually consistent across derivative forms.",
+    "No clipping or missing glyphs in the 25 proof sheets; 24px text-size specimens are present."
+  ],
+  "limitations": "This is an engineering optical review. User aesthetic acceptance remains separate.",
+  "sheets": [
+    {
+      "png": "base-shafts-400.png",
+      "pngSha256": "9aaf22d6a09dff3c272f1d58bb5f1f0c34e2a5b4664b8c785178387fbc909120",
+      "svg": "base-shafts-400.svg",
+      "svgSha256": "73d28969cd0459111a0542a8919948281b483c353cde700de8f063af8d6fd3d1"
+    },
+    {
+      "png": "base-shafts-500.png",
+      "pngSha256": "5498622b4663e5335a5d30b383e4ce586e6d810067aedd4c43bcceca93f9f6d0",
+      "svg": "base-shafts-500.svg",
+      "svgSha256": "15c476a8d6eae9ddc9918f7c387ddea500c8e9bf23c2250c8524c5b32ccd1aaa"
+    },
+    {
+      "png": "base-shafts-550.png",
+      "pngSha256": "1dbde89295d4ad62947f43daba75d416d5697e64942b13e14566dcac83ddfaaa",
+      "svg": "base-shafts-550.svg",
+      "svgSha256": "70052455d0b528941c3a7641cc6573d5dbcbc218735e7e4e60629d42e543ba90"
+    },
+    {
+      "png": "base-shafts-600.png",
+      "pngSha256": "34b52280897f8bee90f04bd4a1b583ae3c547eb19954add02f5eab6e98a833e8",
+      "svg": "base-shafts-600.svg",
+      "svgSha256": "286cca9478fa4ab4b21910ac5fa5b23c28412b79260fed683ea342db16a7ebeb"
+    },
+    {
+      "png": "base-shafts-700.png",
+      "pngSha256": "ef2f35a8bff4ff28b2ab08cbd3ac708a3010c4ccbf20b00d532ff86d5fba5911",
+      "svg": "base-shafts-700.svg",
+      "svgSha256": "75b9068fe45e6ba962a7c667df66cbbc9539c8484b1ee4065cc6a0776dcdfd92"
+    },
+    {
+      "png": "all-400-01.png",
+      "pngSha256": "554cf667c8e2b27fdab55b93e2aa9fe4a03cfc96fe78e6d92d6fcc3477d36586",
+      "svg": "all-400-01.svg",
+      "svgSha256": "838fd2ada0a289b32cd561a36ec1febe10e691cdbc269fdabc5d7922c7dd9ff5"
+    },
+    {
+      "png": "all-400-02.png",
+      "pngSha256": "6a0b790a272379603660c40b28ce928470483f0a6921fd8a74fd80009b70e683",
+      "svg": "all-400-02.svg",
+      "svgSha256": "b671c1994837dc4d0804b5e25598ad09609623a426331c918e74c4b2c3986d2f"
+    },
+    {
+      "png": "all-400-03.png",
+      "pngSha256": "bc6b69f9e3440366e53458dc34b1a783d500515a9e081d582afb2b0665461e92",
+      "svg": "all-400-03.svg",
+      "svgSha256": "a131f760041ce04e3e220d1010ae2a8f35db1b148e2637aa0ed8803385fdbaab"
+    },
+    {
+      "png": "all-400-04.png",
+      "pngSha256": "33b968608285dd8084215f4533e57671671393c1c5c677889d553d4c357e5b56",
+      "svg": "all-400-04.svg",
+      "svgSha256": "35180b28c08288079c9437a243726cb8923b7a3d153028c2370b02c1063617af"
+    },
+    {
+      "png": "all-400-05.png",
+      "pngSha256": "913ee4415f129eb7928ca20a64f9837601088f6b609f765db4520258fa64018f",
+      "svg": "all-400-05.svg",
+      "svgSha256": "e51d236e1a8d35d4e77b1fd283f4134c272417c19b94725a811aa68984d34fe2"
+    },
+    {
+      "png": "all-400-06.png",
+      "pngSha256": "62400f5babbf171805d4662975bf87b62b71f9af368715d5ff32b319f6ba31e5",
+      "svg": "all-400-06.svg",
+      "svgSha256": "96057c05df6595acb9a47073c8c394a27b36a3d9352fd3dcb96a75131f7c236b"
+    },
+    {
+      "png": "all-400-07.png",
+      "pngSha256": "efad3d38ce2f6397a462e24acec75970624eef29bbf935a75412e0babbb85282",
+      "svg": "all-400-07.svg",
+      "svgSha256": "fc3a9f582d9b0c1dc37f0cdbf960a5c6eed9e1c58ecbf5d650a00472d6147663"
+    },
+    {
+      "png": "all-400-08.png",
+      "pngSha256": "5b248cf874458115b284ddc61a726efdb738f810210155856b54d31ab045c8c0",
+      "svg": "all-400-08.svg",
+      "svgSha256": "09bf8301fdc01486df7e21ad4a51a3f3e3d239c2e8c63b73e95421b1eaecb53f"
+    },
+    {
+      "png": "all-400-09.png",
+      "pngSha256": "6ab2dedde48c1e186fc4e3d09a183ee941a0fdfb4844674bed9eaa5e49d044e0",
+      "svg": "all-400-09.svg",
+      "svgSha256": "a9e40545bf87a2605a58861ef9c95bc33c8c8c9ab86c7ac50b34900fb589ce50"
+    },
+    {
+      "png": "all-400-10.png",
+      "pngSha256": "95b99317c9b7ee090af12af2e97ef81eb5b72a018a416d5a9d67b708cd5d22e4",
+      "svg": "all-400-10.svg",
+      "svgSha256": "60ddb858f7d983fb4168eae95f2bbc78d436db51fd72dbf4ab0d6bc7392638ec"
+    },
+    {
+      "png": "all-700-01.png",
+      "pngSha256": "7062015c45b9426916c474bfb2b6e493af25f2436a98f9936d446104ab66e81a",
+      "svg": "all-700-01.svg",
+      "svgSha256": "3ac1a8fa04af8c5fa13d357e088655de336ed5d33d8718fe30b093b9f7372d5b"
+    },
+    {
+      "png": "all-700-02.png",
+      "pngSha256": "e5cf37c7637bc073098ea977567c4ea4fd326209df161928e2873a5bc59da440",
+      "svg": "all-700-02.svg",
+      "svgSha256": "e1a20aba0946e8ee21c451f921865f4f0d407fa24ef7448b61d76dc24448fd68"
+    },
+    {
+      "png": "all-700-03.png",
+      "pngSha256": "1cdda17076b3707ee8c2f67e5028910dae7924544e085cd5627825d58514450c",
+      "svg": "all-700-03.svg",
+      "svgSha256": "ac62b9b45e02b3d402098dceb0e51b9f0adedaaae3690220b1785b6c6f8f3ba9"
+    },
+    {
+      "png": "all-700-04.png",
+      "pngSha256": "9a54220b09beb73d9004c455e49ed97409d201303aa08b382dae4b1cab75fc42",
+      "svg": "all-700-04.svg",
+      "svgSha256": "5358fe2dcf5b460666908bc6ae41f3a7c34d1f8f1d8a1fe404e651c97c3535ec"
+    },
+    {
+      "png": "all-700-05.png",
+      "pngSha256": "6f462776fd9c8a65ff42868e1861127034e37f530a10850b6ed4b2a310457436",
+      "svg": "all-700-05.svg",
+      "svgSha256": "460b208ed7c4824522fa452a3bdd91a9ba0b12afe8a55fd73f41a53c06f3e187"
+    },
+    {
+      "png": "all-700-06.png",
+      "pngSha256": "54f6f7ecae2e81f45ffbf52aa51576db49785a108cd001b70ae265b1357f556a",
+      "svg": "all-700-06.svg",
+      "svgSha256": "211120affc026f585a6ada3df8635c4d7c710d194698b28e8b2431ae21175f8f"
+    },
+    {
+      "png": "all-700-07.png",
+      "pngSha256": "2ce2cbcd92968520303cc37363222a50b5e29a636914426062c0288a8c522b88",
+      "svg": "all-700-07.svg",
+      "svgSha256": "7f963f2fa12e37bb1baad8f1dc7de2f72e816026f81ed68bf28f70cdb70e52c4"
+    },
+    {
+      "png": "all-700-08.png",
+      "pngSha256": "0bce3f0599b1439e53b9851fd5d186ef6e09ec4dc84e0d33e7c1d8bb5db4d4bd",
+      "svg": "all-700-08.svg",
+      "svgSha256": "17d6498757e4e746bf44833de4a3f045d30764196a8c0f7fd4ce982b2c58332d"
+    },
+    {
+      "png": "all-700-09.png",
+      "pngSha256": "787cd3ac38869cb38d2f76edb4811b07030bad78dc94578441274cdbe97e34d5",
+      "svg": "all-700-09.svg",
+      "svgSha256": "dc4c55a8e0b60dc1b5367893bb153e5ed1383db5845a273e4ee404c333fab7e9"
+    },
+    {
+      "png": "all-700-10.png",
+      "pngSha256": "3c24145981b6010ac109a8f61f6e3abba20ad30655628e3aa7fead20bd3c4a04",
+      "svg": "all-700-10.svg",
+      "svgSha256": "0e35e66e31743e78d9fa83e8e6d0e235b220f45e8d51f7258a2940e7ad7c07e5"
+    }
+  ],
+  "exporterSha256": "1f1818d7c492716beb5489178854c42549809ff4ac14f1315499026045ff8f3d",
+  "labelUpdateReview": "After the complete geometry review, labels were changed from stable IDs to current canonical names without changing the bound fonts or drawing layout. Reinspected base-shafts-700.png and all-700-10.png; long names truncate intentionally with complete SVG titles and no clipping."
+}

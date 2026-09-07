@@ -1,0 +1,901 @@
+{
+  "passed": true,
+  "testsRun": 2,
+  "variableFontSha256": "7354697c07d3a88e2921a64042917f34f9cfa91a7c976cca71e138ecec25371b",
+  "maximumAngleDifferenceDegrees": 0.15,
+  "maximumJoinDeviationUnits": 0.3,
+  "targets": [
+    {
+      "glyphName": "uF2A02",
+      "codePoint": "U+F2A05"
+    },
+    {
+      "glyphName": "uF2A03",
+      "codePoint": "U+F2A06"
+    },
+    {
+      "glyphName": "uF2A04",
+      "codePoint": "U+F2A07"
+    },
+    {
+      "glyphName": "uF2A05",
+      "codePoint": "U+F2A08"
+    },
+    {
+      "glyphName": "uF2A07",
+      "codePoint": "U+F2A0A"
+    },
+    {
+      "glyphName": "uF2A0A",
+      "codePoint": "U+F2A0F"
+    },
+    {
+      "glyphName": "uF2A0C",
+      "codePoint": "U+F2A15"
+    },
+    {
+      "glyphName": "uF2A0D",
+      "codePoint": "U+F2A0D"
+    },
+    {
+      "glyphName": "uF2A0E",
+      "codePoint": "U+F2A10"
+    },
+    {
+      "glyphName": "uF2A0F",
+      "codePoint": "U+F2A13"
+    },
+    {
+      "glyphName": "uF2A10",
+      "codePoint": "U+F2A16"
+    },
+    {
+      "glyphName": "uF2A11",
+      "codePoint": "U+F2A0E"
+    },
+    {
+      "glyphName": "uF2A12",
+      "codePoint": "U+F2A11"
+    },
+    {
+      "glyphName": "uF2A13",
+      "codePoint": "U+F2A14"
+    },
+    {
+      "glyphName": "uF2A14",
+      "codePoint": "U+F2A17"
+    },
+    {
+      "glyphName": "uF2A16",
+      "codePoint": "U+F2A27"
+    },
+    {
+      "glyphName": "uF2A46",
+      "codePoint": "U+F2A4E"
+    },
+    {
+      "glyphName": "uF2A46.middle",
+      "codePoint": "U+F2A4F"
+    },
+    {
+      "glyphName": "uF2A5E",
+      "codePoint": "U+F2A66"
+    },
+    {
+      "glyphName": "uF2A5E.middle",
+      "codePoint": "U+F2A67"
+    },
+    {
+      "glyphName": "uF2B4D",
+      "codePoint": "U+F2B1E"
+    },
+    {
+      "glyphName": "uF2B4D.middle",
+      "codePoint": "U+F2B1F"
+    },
+    {
+      "glyphName": "uF2B41",
+      "codePoint": "U+F2B06"
+    },
+    {
+      "glyphName": "uF2B41.middle",
+      "codePoint": "U+F2B07"
+    },
+    {
+      "glyphName": "uF2B5E",
+      "codePoint": "U+F2B54"
+    },
+    {
+      "glyphName": "uF2B5E.middle",
+      "codePoint": "U+F2B55"
+    },
+    {
+      "glyphName": "uF2B5F",
+      "codePoint": "U+F2B5A"
+    },
+    {
+      "glyphName": "uF2B5F.middle",
+      "codePoint": "U+F2B5B"
+    },
+    {
+      "glyphName": "uF2B60",
+      "codePoint": "U+F2B56"
+    },
+    {
+      "glyphName": "uF2B60.middle",
+      "codePoint": "U+F2B57"
+    },
+    {
+      "glyphName": "uF2B61",
+      "codePoint": "U+F2B5C"
+    },
+    {
+      "glyphName": "uF2B61.middle",
+      "codePoint": "U+F2B5D"
+    },
+    {
+      "glyphName": "uF2B62",
+      "codePoint": "U+F2B58"
+    },
+    {
+      "glyphName": "uF2B62.middle",
+      "codePoint": "U+F2B59"
+    },
+    {
+      "glyphName": "uF2B63",
+      "codePoint": "U+F2B5E"
+    },
+    {
+      "glyphName": "uF2B63.middle",
+      "codePoint": "U+F2B5F"
+    },
+    {
+      "glyphName": "uF2CA2",
+      "codePoint": "U+F2E78"
+    },
+    {
+      "glyphName": "uF2CA2.middle",
+      "codePoint": "U+F2E7B"
+    },
+    {
+      "glyphName": "uF2CA3",
+      "codePoint": "U+F2E84"
+    },
+    {
+      "glyphName": "uF2CA3.middle",
+      "codePoint": "U+F2E87"
+    },
+    {
+      "glyphName": "uF2CA4",
+      "codePoint": "U+F2E7C"
+    },
+    {
+      "glyphName": "uF2CA4.middle",
+      "codePoint": "U+F2E7F"
+    },
+    {
+      "glyphName": "uF2CA5",
+      "codePoint": "U+F2E88"
+    },
+    {
+      "glyphName": "uF2CA5.middle",
+      "codePoint": "U+F2E8B"
+    },
+    {
+      "glyphName": "uF2CA6",
+      "codePoint": "U+F2E80"
+    },
+    {
+      "glyphName": "uF2CA6.middle",
+      "codePoint": "U+F2E83"
+    },
+    {
+      "glyphName": "uF2CA7",
+      "codePoint": "U+F2E8C"
+    },
+    {
+      "glyphName": "uF2CA7.middle",
+      "codePoint": "U+F2E8F"
+    },
+    {
+      "glyphName": "uF2CA2.middleLeft",
+      "codePoint": "U+F2E79"
+    },
+    {
+      "glyphName": "uF2CA2.middleRight",
+      "codePoint": "U+F2E7A"
+    },
+    {
+      "glyphName": "uF2CA3.middleLeft",
+      "codePoint": "U+F2E85"
+    },
+    {
+      "glyphName": "uF2CA3.middleRight",
+      "codePoint": "U+F2E86"
+    },
+    {
+      "glyphName": "uF2CA4.middleLeft",
+      "codePoint": "U+F2E7D"
+    },
+    {
+      "glyphName": "uF2CA4.middleRight",
+      "codePoint": "U+F2E7E"
+    },
+    {
+      "glyphName": "uF2CA5.middleLeft",
+      "codePoint": "U+F2E89"
+    },
+    {
+      "glyphName": "uF2CA5.middleRight",
+      "codePoint": "U+F2E8A"
+    },
+    {
+      "glyphName": "uF2CA6.middleLeft",
+      "codePoint": "U+F2E81"
+    },
+    {
+      "glyphName": "uF2CA6.middleRight",
+      "codePoint": "U+F2E82"
+    },
+    {
+      "glyphName": "uF2CA7.middleLeft",
+      "codePoint": "U+F2E8D"
+    },
+    {
+      "glyphName": "uF2CA7.middleRight",
+      "codePoint": "U+F2E8E"
+    },
+    {
+      "glyphName": "uF2A1A",
+      "codePoint": "U+F2A28"
+    },
+    {
+      "glyphName": "uF2A4A",
+      "codePoint": "U+F2A50"
+    },
+    {
+      "glyphName": "uF2A4A.middle",
+      "codePoint": "U+F2A51"
+    },
+    {
+      "glyphName": "uF2A62",
+      "codePoint": "U+F2A68"
+    },
+    {
+      "glyphName": "uF2A62.middle",
+      "codePoint": "U+F2A69"
+    },
+    {
+      "glyphName": "uF2B51",
+      "codePoint": "U+F2B20"
+    },
+    {
+      "glyphName": "uF2B51.middle",
+      "codePoint": "U+F2B21"
+    },
+    {
+      "glyphName": "uF2B45",
+      "codePoint": "U+F2B08"
+    },
+    {
+      "glyphName": "uF2B45.middle",
+      "codePoint": "U+F2B09"
+    },
+    {
+      "glyphName": "uF2B6A",
+      "codePoint": "U+F2B60"
+    },
+    {
+      "glyphName": "uF2B6A.middle",
+      "codePoint": "U+F2B61"
+    },
+    {
+      "glyphName": "uF2B6B",
+      "codePoint": "U+F2B66"
+    },
+    {
+      "glyphName": "uF2B6B.middle",
+      "codePoint": "U+F2B67"
+    },
+    {
+      "glyphName": "uF2B6C",
+      "codePoint": "U+F2B62"
+    },
+    {
+      "glyphName": "uF2B6C.middle",
+      "codePoint": "U+F2B63"
+    },
+    {
+      "glyphName": "uF2B6D",
+      "codePoint": "U+F2B68"
+    },
+    {
+      "glyphName": "uF2B6D.middle",
+      "codePoint": "U+F2B69"
+    },
+    {
+      "glyphName": "uF2B6E",
+      "codePoint": "U+F2B64"
+    },
+    {
+      "glyphName": "uF2B6E.middle",
+      "codePoint": "U+F2B65"
+    },
+    {
+      "glyphName": "uF2B6F",
+      "codePoint": "U+F2B6A"
+    },
+    {
+      "glyphName": "uF2B6F.middle",
+      "codePoint": "U+F2B6B"
+    },
+    {
+      "glyphName": "uF2CAE",
+      "codePoint": "U+F2E90"
+    },
+    {
+      "glyphName": "uF2CAE.middle",
+      "codePoint": "U+F2E93"
+    },
+    {
+      "glyphName": "uF2CAF",
+      "codePoint": "U+F2E9C"
+    },
+    {
+      "glyphName": "uF2CAF.middle",
+      "codePoint": "U+F2E9F"
+    },
+    {
+      "glyphName": "uF2CB0",
+      "codePoint": "U+F2E94"
+    },
+    {
+      "glyphName": "uF2CB0.middle",
+      "codePoint": "U+F2E97"
+    },
+    {
+      "glyphName": "uF2CB1",
+      "codePoint": "U+F2EA0"
+    },
+    {
+      "glyphName": "uF2CB1.middle",
+      "codePoint": "U+F2EA3"
+    },
+    {
+      "glyphName": "uF2CB2",
+      "codePoint": "U+F2E98"
+    },
+    {
+      "glyphName": "uF2CB2.middle",
+      "codePoint": "U+F2E9B"
+    },
+    {
+      "glyphName": "uF2CB3",
+      "codePoint": "U+F2EA4"
+    },
+    {
+      "glyphName": "uF2CB3.middle",
+      "codePoint": "U+F2EA7"
+    },
+    {
+      "glyphName": "uF2CAE.middleLeft",
+      "codePoint": "U+F2E91"
+    },
+    {
+      "glyphName": "uF2CAE.middleRight",
+      "codePoint": "U+F2E92"
+    },
+    {
+      "glyphName": "uF2CAF.middleLeft",
+      "codePoint": "U+F2E9D"
+    },
+    {
+      "glyphName": "uF2CAF.middleRight",
+      "codePoint": "U+F2E9E"
+    },
+    {
+      "glyphName": "uF2CB0.middleLeft",
+      "codePoint": "U+F2E95"
+    },
+    {
+      "glyphName": "uF2CB0.middleRight",
+      "codePoint": "U+F2E96"
+    },
+    {
+      "glyphName": "uF2CB1.middleLeft",
+      "codePoint": "U+F2EA1"
+    },
+    {
+      "glyphName": "uF2CB1.middleRight",
+      "codePoint": "U+F2EA2"
+    },
+    {
+      "glyphName": "uF2CB2.middleLeft",
+      "codePoint": "U+F2E99"
+    },
+    {
+      "glyphName": "uF2CB2.middleRight",
+      "codePoint": "U+F2E9A"
+    },
+    {
+      "glyphName": "uF2CB3.middleLeft",
+      "codePoint": "U+F2EA5"
+    },
+    {
+      "glyphName": "uF2CB3.middleRight",
+      "codePoint": "U+F2EA6"
+    },
+    {
+      "glyphName": "uF2A1E",
+      "codePoint": "U+F2A29"
+    },
+    {
+      "glyphName": "uF2A4E",
+      "codePoint": "U+F2A52"
+    },
+    {
+      "glyphName": "uF2A4E.middle",
+      "codePoint": "U+F2A53"
+    },
+    {
+      "glyphName": "uF2A66",
+      "codePoint": "U+F2A6A"
+    },
+    {
+      "glyphName": "uF2A66.middle",
+      "codePoint": "U+F2A6B"
+    },
+    {
+      "glyphName": "uF2B55",
+      "codePoint": "U+F2B22"
+    },
+    {
+      "glyphName": "uF2B55.middle",
+      "codePoint": "U+F2B23"
+    },
+    {
+      "glyphName": "uF2B49",
+      "codePoint": "U+F2B0A"
+    },
+    {
+      "glyphName": "uF2B49.middle",
+      "codePoint": "U+F2B0B"
+    },
+    {
+      "glyphName": "uF2B76",
+      "codePoint": "U+F2B6C"
+    },
+    {
+      "glyphName": "uF2B76.middle",
+      "codePoint": "U+F2B6D"
+    },
+    {
+      "glyphName": "uF2B77",
+      "codePoint": "U+F2B72"
+    },
+    {
+      "glyphName": "uF2B77.middle",
+      "codePoint": "U+F2B73"
+    },
+    {
+      "glyphName": "uF2B78",
+      "codePoint": "U+F2B6E"
+    },
+    {
+      "glyphName": "uF2B78.middle",
+      "codePoint": "U+F2B6F"
+    },
+    {
+      "glyphName": "uF2B79",
+      "codePoint": "U+F2B74"
+    },
+    {
+      "glyphName": "uF2B79.middle",
+      "codePoint": "U+F2B75"
+    },
+    {
+      "glyphName": "uF2B7A",
+      "codePoint": "U+F2B70"
+    },
+    {
+      "glyphName": "uF2B7A.middle",
+      "codePoint": "U+F2B71"
+    },
+    {
+      "glyphName": "uF2B7B",
+      "codePoint": "U+F2B76"
+    },
+    {
+      "glyphName": "uF2B7B.middle",
+      "codePoint": "U+F2B77"
+    },
+    {
+      "glyphName": "uF2CBA",
+      "codePoint": "U+F2EA8"
+    },
+    {
+      "glyphName": "uF2CBA.middle",
+      "codePoint": "U+F2EAB"
+    },
+    {
+      "glyphName": "uF2CBB",
+      "codePoint": "U+F2EB4"
+    },
+    {
+      "glyphName": "uF2CBB.middle",
+      "codePoint": "U+F2EB7"
+    },
+    {
+      "glyphName": "uF2CBC",
+      "codePoint": "U+F2EAC"
+    },
+    {
+      "glyphName": "uF2CBC.middle",
+      "codePoint": "U+F2EAF"
+    },
+    {
+      "glyphName": "uF2CBD",
+      "codePoint": "U+F2EB8"
+    },
+    {
+      "glyphName": "uF2CBD.middle",
+      "codePoint": "U+F2EBB"
+    },
+    {
+      "glyphName": "uF2CBE",
+      "codePoint": "U+F2EB0"
+    },
+    {
+      "glyphName": "uF2CBE.middle",
+      "codePoint": "U+F2EB3"
+    },
+    {
+      "glyphName": "uF2CBF",
+      "codePoint": "U+F2EBC"
+    },
+    {
+      "glyphName": "uF2CBF.middle",
+      "codePoint": "U+F2EBF"
+    },
+    {
+      "glyphName": "uF2CBA.middleLeft",
+      "codePoint": "U+F2EA9"
+    },
+    {
+      "glyphName": "uF2CBA.middleRight",
+      "codePoint": "U+F2EAA"
+    },
+    {
+      "glyphName": "uF2CBB.middleLeft",
+      "codePoint": "U+F2EB5"
+    },
+    {
+      "glyphName": "uF2CBB.middleRight",
+      "codePoint": "U+F2EB6"
+    },
+    {
+      "glyphName": "uF2CBC.middleLeft",
+      "codePoint": "U+F2EAD"
+    },
+    {
+      "glyphName": "uF2CBC.middleRight",
+      "codePoint": "U+F2EAE"
+    },
+    {
+      "glyphName": "uF2CBD.middleLeft",
+      "codePoint": "U+F2EB9"
+    },
+    {
+      "glyphName": "uF2CBD.middleRight",
+      "codePoint": "U+F2EBA"
+    },
+    {
+      "glyphName": "uF2CBE.middleLeft",
+      "codePoint": "U+F2EB1"
+    },
+    {
+      "glyphName": "uF2CBE.middleRight",
+      "codePoint": "U+F2EB2"
+    },
+    {
+      "glyphName": "uF2CBF.middleLeft",
+      "codePoint": "U+F2EBD"
+    },
+    {
+      "glyphName": "uF2CBF.middleRight",
+      "codePoint": "U+F2EBE"
+    }
+  ],
+  "measurements": [
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A02",
+      "upperAngleDegrees": 11.764616254563107,
+      "lowerAngleDegrees": 11.764613182274708,
+      "angleDifferenceDegrees": 3.0722883987976957e-06,
+      "maximumJoinDeviationUnits": 8.815949740892393e-06
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A03",
+      "upperAngleDegrees": 11.706794890745583,
+      "lowerAngleDegrees": 11.706794743124458,
+      "angleDifferenceDegrees": 1.4762112421351503e-07,
+      "maximumJoinDeviationUnits": 1.5192279079201398e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A04",
+      "upperAngleDegrees": 11.706794692945863,
+      "lowerAngleDegrees": 11.706794743124458,
+      "angleDifferenceDegrees": 5.017859550093817e-08,
+      "maximumJoinDeviationUnits": 8.449094934803725e-08
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A05",
+      "upperAngleDegrees": 11.706794648164562,
+      "lowerAngleDegrees": 11.706794743124458,
+      "angleDifferenceDegrees": 9.495989594654475e-08,
+      "maximumJoinDeviationUnits": 8.461091738354298e-08
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A07",
+      "upperAngleDegrees": 10.334406115854971,
+      "lowerAngleDegrees": 10.334406133784134,
+      "angleDifferenceDegrees": 1.7929162154928235e-08,
+      "maximumJoinDeviationUnits": 4.554880774776393e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A0A",
+      "upperAngleDegrees": 11.706794661841812,
+      "lowerAngleDegrees": 11.70679463368838,
+      "angleDifferenceDegrees": 2.8153431586019906e-08,
+      "maximumJoinDeviationUnits": 1.6056293361543794e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A0C",
+      "upperAngleDegrees": 12.102657988134554,
+      "lowerAngleDegrees": 12.102656493415815,
+      "angleDifferenceDegrees": 1.4947187398917094e-06,
+      "maximumJoinDeviationUnits": 2.3166826395026874e-06
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A0D",
+      "upperAngleDegrees": 12.102657988134478,
+      "lowerAngleDegrees": 12.102657944528756,
+      "angleDifferenceDegrees": 4.3605721700146205e-08,
+      "maximumJoinDeviationUnits": 4.803992226243281e-08
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A0E",
+      "upperAngleDegrees": 11.706794692945785,
+      "lowerAngleDegrees": 11.70679463368838,
+      "angleDifferenceDegrees": 5.9257404316781503e-08,
+      "maximumJoinDeviationUnits": 1.6022912063817785e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A0F",
+      "upperAngleDegrees": 11.70679450336528,
+      "lowerAngleDegrees": 11.706794743124458,
+      "angleDifferenceDegrees": 2.397591778446895e-07,
+      "maximumJoinDeviationUnits": 2.545592110436701e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A10",
+      "upperAngleDegrees": 11.706794692945785,
+      "lowerAngleDegrees": 11.706794743124458,
+      "angleDifferenceDegrees": 5.0178673660639106e-08,
+      "maximumJoinDeviationUnits": 6.78579226587317e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A11",
+      "upperAngleDegrees": 12.102657901347122,
+      "lowerAngleDegrees": 12.102657944528756,
+      "angleDifferenceDegrees": 4.318163426830779e-08,
+      "maximumJoinDeviationUnits": 4.8045478706626454e-08
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A12",
+      "upperAngleDegrees": 11.706794648164482,
+      "lowerAngleDegrees": 11.70679463368838,
+      "angleDifferenceDegrees": 1.4476102094818089e-08,
+      "maximumJoinDeviationUnits": 1.6046899986577046e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A13",
+      "upperAngleDegrees": 11.904705284476188,
+      "lowerAngleDegrees": 11.904705731879798,
+      "angleDifferenceDegrees": 4.47403609271646e-07,
+      "maximumJoinDeviationUnits": 9.711316124594305e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A14",
+      "upperAngleDegrees": 11.904705460269534,
+      "lowerAngleDegrees": 11.904705731879798,
+      "angleDifferenceDegrees": 2.716102631694639e-07,
+      "maximumJoinDeviationUnits": 1.4227431393010193e-06
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A16",
+      "upperAngleDegrees": 11.706794825042753,
+      "lowerAngleDegrees": 11.70679484594937,
+      "angleDifferenceDegrees": 2.090661688214368e-08,
+      "maximumJoinDeviationUnits": 5.760062435911095e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A1A",
+      "upperAngleDegrees": 11.706794713284285,
+      "lowerAngleDegrees": 11.706794562304042,
+      "angleDifferenceDegrees": 1.5098024341853034e-07,
+      "maximumJoinDeviationUnits": 4.2222377771850006e-07
+    },
+    {
+      "artifact": "source-Italic",
+      "glyphName": "uF2A1E",
+      "upperAngleDegrees": 11.706794808748205,
+      "lowerAngleDegrees": 11.706794845949565,
+      "angleDifferenceDegrees": 3.72013602145671e-08,
+      "maximumJoinDeviationUnits": 5.760065988624774e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A02",
+      "upperAngleDegrees": 11.945914475091243,
+      "lowerAngleDegrees": 11.945911370166124,
+      "angleDifferenceDegrees": 3.104925118790902e-06,
+      "maximumJoinDeviationUnits": 8.725741565740464e-06
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A03",
+      "upperAngleDegrees": 11.710943533876334,
+      "lowerAngleDegrees": 11.71094348174474,
+      "angleDifferenceDegrees": 5.2131593264448384e-08,
+      "maximumJoinDeviationUnits": 9.421833908618282e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A04",
+      "upperAngleDegrees": 11.710943441156862,
+      "lowerAngleDegrees": 11.710943365356306,
+      "angleDifferenceDegrees": 7.580055694234034e-08,
+      "maximumJoinDeviationUnits": 2.727059609242133e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A05",
+      "upperAngleDegrees": 11.710943392393736,
+      "lowerAngleDegrees": 11.710943291119369,
+      "angleDifferenceDegrees": 1.0127436667062284e-07,
+      "maximumJoinDeviationUnits": 5.131959142090636e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A07",
+      "upperAngleDegrees": 10.635261528614828,
+      "lowerAngleDegrees": 10.635261366278277,
+      "angleDifferenceDegrees": 1.6233655131259184e-07,
+      "maximumJoinDeviationUnits": 8.13403659094547e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A0A",
+      "upperAngleDegrees": 11.71094275354574,
+      "lowerAngleDegrees": 11.710943291119369,
+      "angleDifferenceDegrees": 5.375736282786647e-07,
+      "maximumJoinDeviationUnits": 9.66282641456928e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A0C",
+      "upperAngleDegrees": 12.190194877999469,
+      "lowerAngleDegrees": 12.19019503529073,
+      "angleDifferenceDegrees": 1.5729126090491263e-07,
+      "maximumJoinDeviationUnits": 5.141844781064719e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A0D",
+      "upperAngleDegrees": 12.272363251665807,
+      "lowerAngleDegrees": 12.272363039260483,
+      "angleDifferenceDegrees": 2.124053235519341e-07,
+      "maximumJoinDeviationUnits": 5.923360504311859e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A0E",
+      "upperAngleDegrees": 11.710943415550807,
+      "lowerAngleDegrees": 11.710943291119369,
+      "angleDifferenceDegrees": 1.2443143759810482e-07,
+      "maximumJoinDeviationUnits": 5.133158538228599e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A0F",
+      "upperAngleDegrees": 11.710943290305046,
+      "lowerAngleDegrees": 11.710943291119758,
+      "angleDifferenceDegrees": 8.147118535362097e-10,
+      "maximumJoinDeviationUnits": 4.6774448492215015e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A10",
+      "upperAngleDegrees": 11.710943415550963,
+      "lowerAngleDegrees": 11.710943291119758,
+      "angleDifferenceDegrees": 1.2443120489535886e-07,
+      "maximumJoinDeviationUnits": 5.133147737979016e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A11",
+      "upperAngleDegrees": 12.272362995071116,
+      "lowerAngleDegrees": 12.272363039260483,
+      "angleDifferenceDegrees": 4.418936683237007e-08,
+      "maximumJoinDeviationUnits": 9.369917677304329e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A12",
+      "upperAngleDegrees": 11.710943278420093,
+      "lowerAngleDegrees": 11.710943291119369,
+      "angleDifferenceDegrees": 1.2699276297212236e-08,
+      "maximumJoinDeviationUnits": 9.663061177889176e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A13",
+      "upperAngleDegrees": 12.111688177820044,
+      "lowerAngleDegrees": 12.11168918110193,
+      "angleDifferenceDegrees": 1.0032818860139514e-06,
+      "maximumJoinDeviationUnits": 4.02599539484072e-06
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A14",
+      "upperAngleDegrees": 12.111688155927103,
+      "lowerAngleDegrees": 12.11168918110193,
+      "angleDifferenceDegrees": 1.025174826807529e-06,
+      "maximumJoinDeviationUnits": 4.025992836886871e-06
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A16",
+      "upperAngleDegrees": 11.710943465557397,
+      "lowerAngleDegrees": 11.710943292466622,
+      "angleDifferenceDegrees": 1.730907754904365e-07,
+      "maximumJoinDeviationUnits": 4.851583810250304e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A1A",
+      "upperAngleDegrees": 11.710943373061435,
+      "lowerAngleDegrees": 11.710943596166842,
+      "angleDifferenceDegrees": 2.231054079260275e-07,
+      "maximumJoinDeviationUnits": 5.029502005982067e-07
+    },
+    {
+      "artifact": "source-BoldItalic",
+      "glyphName": "uF2A1E",
+      "upperAngleDegrees": 11.710943381760794,
+      "lowerAngleDegrees": 11.710943292466817,
+      "angleDifferenceDegrees": 8.929397665724537e-08,
+      "maximumJoinDeviationUnits": 4.851580257536625e-07
+    }
+  ],
+  "pairMeasurements": [],
+  "compiledMeasurements": []
+}

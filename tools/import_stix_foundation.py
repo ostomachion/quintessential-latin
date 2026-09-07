@@ -126,6 +126,13 @@ class OpenPath:
         segments = tuple(segment.translated(dx) for segment in self.segments)
         return OpenPath((self.start[0] + dx, self.start[1]), segments)
 
+    def sheared(self, slope: float, origin_y: float) -> "OpenPath":
+        move = lambda point: (point[0] + slope * (point[1] - origin_y), point[1])
+        return OpenPath(move(self.start), tuple(
+            Segment(move(segment.start), move(segment.end), tuple(map(move, segment.controls)))
+            for segment in self.segments
+        ))
+
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -413,10 +420,18 @@ def compose_outline(
 
     upper_center = (upper.start[0] + upper.end[0]) / 2.0
     lower_center = (lower.start[0] + lower.end[0]) / 2.0
-    # Preserve the Roman construction while placing italic lower donors on the
-    # font's native slant axis. Centering the two cuts at the same x forces the
-    # endpoint-tangent connectors into an S curve in an italic face.
-    axis_slope = -math.tan(math.radians(italic_angle))
+    # A donor's actual shaft can differ appreciably from post.italicAngle:
+    # long s is only 8.6 degrees in Bold, while p is 11.7 degrees. Match the
+    # upper component to the retained lower shaft, then place the connector
+    # on that same axis. The shear preserves all heights and scanline widths;
+    # the complete lower finish is still only translated.
+    axis_slope = 0.0
+    if italic_angle:
+        axis_slope = (endpoint_slope(lower.segments[0], True)
+                      + endpoint_slope(lower.segments[-1], False)) / 2
+        upper_slope = (endpoint_slope(upper.segments[0], True)
+                       + endpoint_slope(upper.segments[-1], False)) / 2
+        upper = upper.sheared(axis_slope - upper_slope, UPPER_CUT)
     target_lower_center = upper_center - axis_slope * (UPPER_CUT - lower_cut)
     lower_dx = target_lower_center - lower_center
     lower = lower.translated(lower_dx)
@@ -469,6 +484,12 @@ class NativePath:
     def translated(self, dx: float) -> "NativePath":
         return NativePath((self.start[0] + dx, self.start[1]), tuple(
             (op, tuple((x + dx, y) for x, y in points)) for op, points in self.operations
+        ))
+
+    def sheared(self, slope: float, origin_y: float) -> "NativePath":
+        move = lambda point: (point[0] + slope * (point[1] - origin_y), point[1])
+        return NativePath(move(self.start), tuple(
+            (op, tuple(map(move, points))) for op, points in self.operations
         ))
 
     def slope(self, at_start: bool) -> float:
@@ -601,11 +622,15 @@ def arm_outline(font: TTFont, code_point: int) -> tuple[list[tuple[str, tuple]],
         lower = (bowl_lower_terminal(font, lower_code, lower_cut) if lower_code == 0x261 else
                  native_terminal(font, lower_code, lower_cut, False) if lower_code else
                  native_region(stem, lower_cut, False))
-        slope = -math.tan(math.radians(font["post"].italicAngle))
+        slope = (lower.slope(True) + lower.slope(False)) / 2
+        upper_shear = slope - (upper.slope(True) + upper.slope(False)) / 2
+        upper = upper.sheared(upper_shear, UPPER_CUT)
         lower_dx = upper.center - slope * (UPPER_CUT - lower_cut) - lower.center
         recording = [*join_native_regions(upper, lower.translated(lower_dx)), *arm]
         metadata.update(upperCutY=UPPER_CUT, lowerCutY=lower_cut,
-                        upperOffsetX=rounded(upper_dx), lowerOffsetX=rounded(lower_dx))
+                        upperOffsetX=rounded(upper_dx), lowerOffsetX=rounded(lower_dx),
+                        shaftAxisSlope=rounded(slope), upperShear=rounded(upper_shear),
+                        shaftAlignment="measured-lower-shaft-1")
         return rounded_recording(recording), metadata
 
     if turned:
@@ -866,6 +891,13 @@ def arch_outline(font: TTFont, code_point: int) -> tuple[list[tuple[str, tuple]]
             upper = native_region(stem, 150.0, True)
         lower = native_terminal(font, 0x70, 50.0, False)
         slope = (upper.slope(True) + upper.slope(False)) / 2
+        if italic:
+            lower_slope = (lower.slope(True) + lower.slope(False)) / 2
+            upper_shear = lower_slope - slope
+            upper = upper.sheared(upper_shear, 150.0)
+            slope = lower_slope
+            metadata.update(shaftAxisSlope=rounded(slope), upperShear=rounded(upper_shear),
+                            shaftShearOriginY=150.0, shaftAlignment="measured-lower-shaft-1")
         dx = upper.center - slope * 100.0 - lower.center
         result = [*before, *join_native_regions(upper, lower.translated(dx)), *after]
         metadata.update(lowerDonorCodePoint=0x70, bodyCutY=150.0,
@@ -1509,6 +1541,16 @@ def legacy_outline(donor, spec, italic=None):
             "lowerOffsetX": lower_dx,
             "method": spec.adaptation,
         }
+        if italic:
+            upper_path = extract_region(donor, upper, UPPER_CUT, True)
+            lower_path = p_descender_region(donor, lower_cut) if lower == 0x70 else extract_region(donor, lower, lower_cut, False)
+            upper_slope = (endpoint_slope(upper_path.segments[0], True)
+                           + endpoint_slope(upper_path.segments[-1], False)) / 2
+            lower_slope = (endpoint_slope(lower_path.segments[0], True)
+                           + endpoint_slope(lower_path.segments[-1], False)) / 2
+            construction.update(shaftAxisSlope=rounded(lower_slope),
+                                upperShear=rounded(lower_slope - upper_slope),
+                                shaftAlignment="measured-lower-shaft-1")
     width = construction.get("advanceWidth", donor["hmtx"][width_name][0] + construction.get("archExpansionX", 0.0))
     construction["advanceWidth"] = width
     return recording, construction

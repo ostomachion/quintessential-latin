@@ -1,0 +1,16 @@
+npm notice run quintessential-latin@0.250.0 test:browser
+npm notice run node tools/test_browser.mjs
+node:internal/child_process:441
+    throw new ErrnoException(err, 'spawn');
+          ^
+
+Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:441:11)
+    at spawn (node:child_process:796:9)
+    at file:///C:/Users/User/source/repos/ostomachion/quintessential-latin/tools/test_browser.mjs:26:12 {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'spawn'
+}
+
+Node.js v24.18.0

@@ -1,0 +1,122 @@
+npm notice run quintessential-latin@0.250.0 test
+npm notice run node tools/test_logical_allocation.js && node tools/test_canonical_glyph_names.js && node tools/test_ucd.js && node tools/test_unifont.mjs && node tools/test_site.mjs && node tools/test_editorial.mjs
+✔ all 1216 assignments and the three declared blocks are contiguous (3.3054ms)
+✔ the requested four stemless constructions begin Extended-A (0.4786ms)
+✔ all 30 families are complete, unfragmented, and ordered by construction (1.5019ms)
+✔ each base is immediately followed by its independent middle states (3.5863ms)
+✔ reallocation preserves identities and parts with only the explicit lowercase name prefix (15.2022ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30.3682
+✔ all nine stem primitives and the ordinary body vocabulary (4.25ms)
+✔ Section 4 short-form examples preserve left-to-right connection roles (0.6584ms)
+✔ upward bowls omit only the straight upper extension that actually closes them (0.2585ms)
+✔ downward bowls omit only the straight lower extension that actually closes them (0.212ms)
+✔ all closed-neighbor requirements are collected before naming a shared upright (0.1418ms)
+✔ interior branches use upright primitives and retain terminal branch names (0.4833ms)
+✔ count rules combine equal adjacent uprights without crossing a body (0.4321ms)
+✔ Section 6 final long bowls close against the immediate interior upright (0.1773ms)
+✔ Section 6 initial long bowls close against the immediate interior upright (0.1606ms)
+✔ changing every distant main-upright extension leaves interior-neighbor closure local (1.4141ms)
+✔ one-sided and two-sided spines retain attachment features and never acquire opening qualifiers (0.272ms)
+✔ formatting uses one with and any remaining and separators after abbreviation (0.382ms)
+✔ default extensions and explicit absent extensions name the same structure (0.3177ms)
+✔ all 1216 neutral structures retain unique canonical names without mutation (24.1687ms)
+✔ all two-middle constructions include every independent extension state (9.1396ms)
+✔ logical allocation preserves prior identities with the explicit lowercase name prefix (23.8855ms)
+✔ mixed middle states name visual sides and close only against the selected adjacent upright (0.898ms)
+✔ requested constructions retain uniform letter names and simplified upright counts (0.8505ms)
+✔ Special names and adjacent interior closures remain explicit structural fixtures (0.5267ms)
+✔ unsupported long bowl adjacency and spine opening states fail (0.6258ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.4915
+✔ UCD block ranges cover the current three project blocks exactly (3.7104ms)
+✔ UnicodeData independently parses all 15 fields and exact names in scalar order (7.5752ms)
+✔ NamesList has UTF-8 declaration, block and family headings, and complete names (6.8031ms)
+✔ Charts specifies the reference font and maps each scalar to its literal character (3.8314ms)
+✔ CaseFolding preserves every lowercase letter without case counterparts (1.9126ms)
+✔ Sources describes a draft public agreement and provides identifiable source URLs (2.9958ms)
+✔ manifest records the format baseline, draft status, repertoire, and exact file hashes (13.8318ms)
+✔ export check accepts checked-in files and a deterministic fresh export (179.7973ms)
+✔ export check rejects deleted and modified generated files without repairing them (99.408ms)
+✔ export check rejects allocation name and scalar drift (89.3621ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 416.3526
+✔ Complete 1216-character repertoire, all 8px (10.0708ms)
+✔ Shared CSS and screen alignment changes invalidate proofs without changing donor pixels (643.1748ms)
+✔ Native donor bits including dotless j, script g, and y are exact and independently pinned (0.8586ms)
+✔ Tail and native-f revision preserves every unrelated bitmap and long-bowl contact mask (2.2888ms)
+✔ Revision records bind every changed bitmap and preserve the complete prior repertoire (7.3242ms)
+✔ Uncompacted tails consistently retain their native dotless-j, y, or script-g lower shape (1.0729ms)
+✔ HEX validity, MSB orientation, and SVG pixels roundtrip exactly (23.5404ms)
+✔ Continuous bitmap runs preserve all cells beyond the 32-bit mask width (0.4508ms)
+✔ Every pair and quartet changes only independently selected extension pixels (5.27ms)
+✔ Long bowl closes at the immediate arm only; remote ascender leaves it open (0.336ms)
+✔ Shared spine retains both counters under either attached middle extension (0.1911ms)
+✔ Ordinary shared spines balance both native donor connections and preserve the common body (0.9651ms)
+✔ All new recipes preserve their base outside documented extension and join pixels (2.5858ms)
+✔ New long bowls close only when their designated adjacent stem is extended (1.2803ms)
+✔ Every new middle extension follows its allocation direction and visual position (5.2225ms)
+✔ All compact shared spines preserve their counters and document natural hook contacts (2.2181ms)
+✔ All new end extensions match the ordered allocation parts and shared terminal masks (1.6751ms)
+✔ Native diagonal topology is accepted, exact duplicate identities are absent (11.1367ms)
+✔ Repeat construction reproduces every output and retains evidence hashes (335.7077ms)
+✔ Current inspections include coordinate flags and near-duplicate comparisons (64.1228ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1130.2275
+PASS Mapped repertoire and native posture coverage
+PASS Safe persisted controls with the complete variable axis
+PASS Code, name, literal-character, and compound search
+PASS Search returns logical code order without changing permuted storage order
+PASS Unicode coordinates and five gapless publication sheets
+PASS Partial responsive charts retain every position and stop before the next block
+PASS Long forms fit their allocated representative widths
+PASS HTML escaping protects generated text
+PASS Six progressive pages share semantic navigation and appropriate controls
+PASS Project marks use the controlled reference font and removed page is absent
+PASS Responsive static variants, five print grids, and one numeric names list
+PASS Unifont font downloads preserve the compiled files, license, and usage notes
+PASS Every local link and asset resolves beneath the Pages repository prefix
+PASS UCD downloads include the complete verified private-use supplement
+PASS Unifont bitmap outputs match the catalogue and retain exact native STEM
+PASS Unifont chart pages align to 256 positions with complete batch proofs and one inspector
+PASS Curated deployment excludes proof data and source trees
+PASS PDF freshness binds current inputs and detects stale or altered publication artifacts
+PASS Font downloads reject stale source pixels, altered binaries, and incomplete provenance
+19 site acceptance groups passed.
+✔ Publication versions and coverage counts keep repertoire and companion glyphs separate (17.9808ms)
+✔ Every explanatory character link derives its code and accessible name from the current catalogue (54.4009ms)
+✔ Writing diagrams are static accessible continuous paths tied to actual constructions (11.3186ms)
+✔ Proposal examples and nearby citations are complete and share the standalone source (1.1401ms)
+✔ Permanent section links remain valid across the six static pages (15.0495ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 110.1965

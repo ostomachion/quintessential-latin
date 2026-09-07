@@ -1,0 +1,10 @@
+shaft pairs source-400: 342300 ordered pairs; 5034 filled intersections
+shaft pairs source-500: 342300 ordered pairs; 17061 filled intersections
+shaft pairs source-550: 342300 ordered pairs; 22017 filled intersections
+shaft pairs source-600: 342300 ordered pairs; 30941 filled intersections
+shaft pairs source-700: 342300 ordered pairs; 37010 filled intersections
+.
+----------------------------------------------------------------------
+Ran 1 test in 472.552s
+
+OK

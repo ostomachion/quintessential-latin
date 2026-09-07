@@ -312,7 +312,7 @@ def build_variable_fonts() -> list[Path]:
         woff2 = OUTPUT / f"{posture.variable_basename}.woff2"
         compress(ttf, woff2)
         outputs.extend((ttf, woff2))
-        print(f"Built {posture.name} variable TTF + WOFF2")
+        print(f"Built {posture.name} variable TTF + WOFF2", flush=True)
     return outputs
 
 
@@ -464,7 +464,7 @@ def build_static_fonts() -> list[Path]:
         woff2 = OUTPUT / f"{basename}.woff2"
         compress(otf, woff2)
         outputs.extend((otf, woff2))
-        print(f"Built {master.style} hinted OTF + WOFF2")
+        print(f"Built {master.style} hinted OTF + WOFF2", flush=True)
     return outputs
 
 
@@ -645,6 +645,8 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("stix_extensions.py"),
         Path(__file__).with_name("stix_stemless.py"),
         Path(__file__).with_name("refine_stemless_terminals.py"),
+        Path(__file__).with_name("refine_italic_shafts.py"),
+        Path(__file__).with_name("refine_hip_tails.py"),
         Path(__file__).with_name("stix_middle_legs.py"),
         Path(__file__).with_name("stix_middle_terminals.py"),
         Path(__file__).with_name("stix_middle_hook_joins.py"),
@@ -655,6 +657,7 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("canonical_glyph_names.js"),
         Path(__file__).with_name("export_glyph_catalogue.js"),
         ROOT / "resources/quintessential-latin-allocation.json",
+        ROOT / "resources/italic-shaft-targets.json",
     ]
     files = []
     for path in paths:

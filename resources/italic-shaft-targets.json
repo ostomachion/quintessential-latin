@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "revision": "italic-shaft-alignment-1",
+  "postures": [
+    "Italic"
+  ],
+  "targets": [
+    {
+      "glyphId": "hook",
+      "glyphName": "uF2A02",
+      "codePoint": 993797,
+      "canonicalName": "hook",
+      "shaftRecipe": "0xf2a02"
+    },
+    {
+      "glyphId": "descender",
+      "glyphName": "uF2A03",
+      "codePoint": 993798,
+      "canonicalName": "descender",
+      "shaftRecipe": "0xf2a03"
+    },
+    {
+      "glyphId": "ascender-descender",
+      "glyphName": "uF2A04",
+      "codePoint": 993799,
+      "canonicalName": "long stem",
+      "shaftRecipe": "0xf2a04"
+    },
+    {
+      "glyphId": "hook-descender",
+      "glyphName": "uF2A05",
+      "codePoint": 993800,
+      "canonicalName": "long hook",
+      "shaftRecipe": "0xf2a05"
+    },
+    {
+      "glyphId": "ascender-tail",
+      "glyphName": "uF2A07",
+      "codePoint": 993802,
+      "canonicalName": "long tail",
+      "shaftRecipe": "0xf2a07"
+    },
+    {
+      "glyphId": "arm-ascender",
+      "glyphName": "uF2A0D",
+      "codePoint": 993805,
+      "canonicalName": "ascender with shoulder",
+      "shaftRecipe": "0xf2a0d"
+    },
+    {
+      "glyphId": "arm-hook",
+      "glyphName": "uF2A11",
+      "codePoint": 993806,
+      "canonicalName": "hook with shoulder",
+      "shaftRecipe": "0xf2a11"
+    },
+    {
+      "glyphId": "arm-descender",
+      "glyphName": "uF2A0A",
+      "codePoint": 993807,
+      "canonicalName": "descender with shoulder",
+      "shaftRecipe": "0xf2a0a"
+    },
+    {
+      "glyphId": "arm-ascender-descender",
+      "glyphName": "uF2A0E",
+      "codePoint": 993808,
+      "canonicalName": "long stem with shoulder",
+      "shaftRecipe": "0xf2a0e"
+    },
+    {
+      "glyphId": "arm-hook-descender",
+      "glyphName": "uF2A12",
+      "codePoint": 993809,
+      "canonicalName": "long hook with shoulder",
+      "shaftRecipe": "0xf2a12"
+    },
+    {
+      "glyphId": "turned-arm-descender",
+      "glyphName": "uF2A0F",
+      "codePoint": 993811,
+      "canonicalName": "hip with descender",
+      "shaftRecipe": "0xf2a0f"
+    },
+    {
+      "glyphId": "turned-arm-tail",
+      "glyphName": "uF2A13",
+      "codePoint": 993812,
+      "canonicalName": "hip with tail",
+      "shaftRecipe": "0xf2a13"
+    },
+    {
+      "glyphId": "turned-arm-ascender",
+      "glyphName": "uF2A0C",
+      "codePoint": 993813,
+      "canonicalName": "hip with ascender",
+      "shaftRecipe": "0xf2a0c"
+    },
+    {
+      "glyphId": "turned-arm-ascender-descender",
+      "glyphName": "uF2A10",
+      "codePoint": 993814,
+      "canonicalName": "hip with long stem",
+      "shaftRecipe": "0xf2a10"
+    },
+    {
+      "glyphId": "turned-arm-ascender-tail",
+      "glyphName": "uF2A14",
+      "codePoint": 993815,
+      "canonicalName": "hip with long tail",
+      "shaftRecipe": "0xf2a14"
+    },
+    {
+      "glyphId": "arch-descender",
+      "glyphName": "uF2A16",
+      "codePoint": 993831,
+      "canonicalName": "descender with leg",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arch-ascender-descender",
+      "glyphName": "uF2A1A",
+      "codePoint": 993832,
+      "canonicalName": "long stem with leg",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arch-hook-descender",
+      "glyphName": "uF2A1E",
+      "codePoint": 993833,
+      "canonicalName": "long hook with leg",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-arm-descender",
+      "glyphName": "uF2A46",
+      "codePoint": 993870,
+      "canonicalName": "descender with stem and shoulder",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-arm-ascender-descender",
+      "glyphName": "uF2A4A",
+      "codePoint": 993872,
+      "canonicalName": "long stem with stem and shoulder",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-arm-hook-descender",
+      "glyphName": "uF2A4E",
+      "codePoint": 993874,
+      "canonicalName": "long hook with stem and shoulder",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-arm-descender-extended-middle-legs",
+      "glyphName": "uF2A46.middle",
+      "codePoint": 993871,
+      "canonicalName": "two descenders with shoulder",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-arm-ascender-descender-extended-middle-legs",
+      "glyphName": "uF2A4A.middle",
+      "codePoint": 993873,
+      "canonicalName": "long stem with descender and shoulder",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-arm-hook-descender-extended-middle-legs",
+      "glyphName": "uF2A4E.middle",
+      "codePoint": 993875,
+      "canonicalName": "long hook with descender and shoulder",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-bowl-descender",
+      "glyphName": "uF2A5E",
+      "codePoint": 993894,
+      "canonicalName": "descender with stem and bowl",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-bowl-ascender-descender",
+      "glyphName": "uF2A62",
+      "codePoint": 993896,
+      "canonicalName": "long stem with stem and bowl",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-bowl-hook-descender",
+      "glyphName": "uF2A66",
+      "codePoint": 993898,
+      "canonicalName": "long hook with stem and bowl",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-bowl-descender-extended-middle-legs",
+      "glyphName": "uF2A5E.middle",
+      "codePoint": 993895,
+      "canonicalName": "two descenders with bowl",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-bowl-ascender-descender-extended-middle-legs",
+      "glyphName": "uF2A62.middle",
+      "codePoint": 993897,
+      "canonicalName": "long stem with descender and bowl",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-bowl-hook-descender-extended-middle-legs",
+      "glyphName": "uF2A66.middle",
+      "codePoint": 993899,
+      "canonicalName": "long hook with descender and bowl",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-double-bowl-descender",
+      "glyphName": "uF2B41",
+      "codePoint": 994054,
+      "canonicalName": "descender with stem and double bowl",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-double-bowl-ascender-descender",
+      "glyphName": "uF2B45",
+      "codePoint": 994056,
+      "canonicalName": "long stem with stem and double bowl",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-double-bowl-hook-descender",
+      "glyphName": "uF2B49",
+      "codePoint": 994058,
+      "canonicalName": "long hook with stem and double bowl",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-double-bowl-descender-extended-middle-legs",
+      "glyphName": "uF2B41.middle",
+      "codePoint": 994055,
+      "canonicalName": "two descenders with double bowl",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-double-bowl-ascender-descender-extended-middle-legs",
+      "glyphName": "uF2B45.middle",
+      "codePoint": 994057,
+      "canonicalName": "long stem with descender and double bowl",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-double-bowl-hook-descender-extended-middle-legs",
+      "glyphName": "uF2B49.middle",
+      "codePoint": 994059,
+      "canonicalName": "long hook with descender and double bowl",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-bowled-spine-descender",
+      "glyphName": "uF2B4D",
+      "codePoint": 994078,
+      "canonicalName": "descender with stem and spine",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-bowled-spine-ascender-descender",
+      "glyphName": "uF2B51",
+      "codePoint": 994080,
+      "canonicalName": "long stem with stem and spine",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-bowled-spine-hook-descender",
+      "glyphName": "uF2B55",
+      "codePoint": 994082,
+      "canonicalName": "long hook with stem and spine",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "arched-bowled-spine-descender-extended-middle-legs",
+      "glyphName": "uF2B4D.middle",
+      "codePoint": 994079,
+      "canonicalName": "two descenders with spine",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "arched-bowled-spine-ascender-descender-extended-middle-legs",
+      "glyphName": "uF2B51.middle",
+      "codePoint": 994081,
+      "canonicalName": "long stem with descender and spine",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "arched-bowled-spine-hook-descender-extended-middle-legs",
+      "glyphName": "uF2B55.middle",
+      "codePoint": 994083,
+      "canonicalName": "long hook with descender and spine",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-0",
+      "glyphName": "uF2B5E",
+      "codePoint": 994132,
+      "canonicalName": "descender with stem and spine and stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-2",
+      "glyphName": "uF2B60",
+      "codePoint": 994134,
+      "canonicalName": "descender with stem and spine and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-4",
+      "glyphName": "uF2B62",
+      "codePoint": 994136,
+      "canonicalName": "descender with stem and spine and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-1",
+      "glyphName": "uF2B5F",
+      "codePoint": 994138,
+      "canonicalName": "descender with stem and spine and ascender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-3",
+      "glyphName": "uF2B61",
+      "codePoint": 994140,
+      "canonicalName": "descender with stem and spine and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-5",
+      "glyphName": "uF2B63",
+      "codePoint": 994142,
+      "canonicalName": "descender with stem and spine and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-0",
+      "glyphName": "uF2B6A",
+      "codePoint": 994144,
+      "canonicalName": "long stem with stem and spine and stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-2",
+      "glyphName": "uF2B6C",
+      "codePoint": 994146,
+      "canonicalName": "long stem with stem and spine and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-4",
+      "glyphName": "uF2B6E",
+      "codePoint": 994148,
+      "canonicalName": "long stem with stem and spine and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-1",
+      "glyphName": "uF2B6B",
+      "codePoint": 994150,
+      "canonicalName": "long stem with stem and spine and ascender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-3",
+      "glyphName": "uF2B6D",
+      "codePoint": 994152,
+      "canonicalName": "long stem with stem and spine and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-5",
+      "glyphName": "uF2B6F",
+      "codePoint": 994154,
+      "canonicalName": "long stem with stem and spine and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-0",
+      "glyphName": "uF2B76",
+      "codePoint": 994156,
+      "canonicalName": "long hook with stem and spine and stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-2",
+      "glyphName": "uF2B78",
+      "codePoint": 994158,
+      "canonicalName": "long hook with stem and spine and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-4",
+      "glyphName": "uF2B7A",
+      "codePoint": 994160,
+      "canonicalName": "long hook with stem and spine and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-1",
+      "glyphName": "uF2B77",
+      "codePoint": 994162,
+      "canonicalName": "long hook with stem and spine and ascender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-3",
+      "glyphName": "uF2B79",
+      "codePoint": 994164,
+      "canonicalName": "long hook with stem and spine and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-5",
+      "glyphName": "uF2B7B",
+      "codePoint": 994166,
+      "canonicalName": "long hook with stem and spine and long tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-0-extended-middle-legs",
+      "glyphName": "uF2B5E.middle",
+      "codePoint": 994133,
+      "canonicalName": "two descenders with spine and stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-2-extended-middle-legs",
+      "glyphName": "uF2B60.middle",
+      "codePoint": 994135,
+      "canonicalName": "two descenders with spine and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-4-extended-middle-legs",
+      "glyphName": "uF2B62.middle",
+      "codePoint": 994137,
+      "canonicalName": "two descenders with spine and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-1-extended-middle-legs",
+      "glyphName": "uF2B5F.middle",
+      "codePoint": 994139,
+      "canonicalName": "two descenders with spine and ascender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-3-extended-middle-legs",
+      "glyphName": "uF2B61.middle",
+      "codePoint": 994141,
+      "canonicalName": "two descenders with spine and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-1-5-extended-middle-legs",
+      "glyphName": "uF2B63.middle",
+      "codePoint": 994143,
+      "canonicalName": "two descenders with spine and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-0-extended-middle-legs",
+      "glyphName": "uF2B6A.middle",
+      "codePoint": 994145,
+      "canonicalName": "long stem with descender and spine and stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-2-extended-middle-legs",
+      "glyphName": "uF2B6C.middle",
+      "codePoint": 994147,
+      "canonicalName": "long stem with descender and spine and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-4-extended-middle-legs",
+      "glyphName": "uF2B6E.middle",
+      "codePoint": 994149,
+      "canonicalName": "long stem with descender and spine and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-1-extended-middle-legs",
+      "glyphName": "uF2B6B.middle",
+      "codePoint": 994151,
+      "canonicalName": "long stem with descender and spine and ascender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-3-extended-middle-legs",
+      "glyphName": "uF2B6D.middle",
+      "codePoint": 994153,
+      "canonicalName": "long stem with descender and spine and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-3-5-extended-middle-legs",
+      "glyphName": "uF2B6F.middle",
+      "codePoint": 994155,
+      "canonicalName": "long stem with descender and spine and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-0-extended-middle-legs",
+      "glyphName": "uF2B76.middle",
+      "codePoint": 994157,
+      "canonicalName": "long hook with descender and spine and stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-2-extended-middle-legs",
+      "glyphName": "uF2B78.middle",
+      "codePoint": 994159,
+      "canonicalName": "long hook with descender and spine and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-4-extended-middle-legs",
+      "glyphName": "uF2B7A.middle",
+      "codePoint": 994161,
+      "canonicalName": "long hook with descender and spine and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-1-extended-middle-legs",
+      "glyphName": "uF2B77.middle",
+      "codePoint": 994163,
+      "canonicalName": "long hook with descender and spine and ascender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-3-extended-middle-legs",
+      "glyphName": "uF2B79.middle",
+      "codePoint": 994165,
+      "canonicalName": "long hook with descender and spine and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "left-arched-opposed-bowls-5-5-extended-middle-legs",
+      "glyphName": "uF2B7B.middle",
+      "codePoint": 994167,
+      "canonicalName": "long hook with descender and spine and long tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0",
+      "glyphName": "uF2CA2",
+      "codePoint": 994936,
+      "canonicalName": "descender with stem and spine and two stems",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2",
+      "glyphName": "uF2CA4",
+      "codePoint": 994940,
+      "canonicalName": "descender with stem and spine and stem and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4",
+      "glyphName": "uF2CA6",
+      "codePoint": 994944,
+      "canonicalName": "descender with stem and spine and stem and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1",
+      "glyphName": "uF2CA3",
+      "codePoint": 994948,
+      "canonicalName": "descender with stem and spine and stem and ascender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3",
+      "glyphName": "uF2CA5",
+      "codePoint": 994952,
+      "canonicalName": "descender with stem and spine and stem and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5",
+      "glyphName": "uF2CA7",
+      "codePoint": 994956,
+      "canonicalName": "descender with stem and spine and stem and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0",
+      "glyphName": "uF2CAE",
+      "codePoint": 994960,
+      "canonicalName": "long stem with stem and spine and two stems",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2",
+      "glyphName": "uF2CB0",
+      "codePoint": 994964,
+      "canonicalName": "long stem with stem and spine and stem and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4",
+      "glyphName": "uF2CB2",
+      "codePoint": 994968,
+      "canonicalName": "long stem with stem and spine and stem and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1",
+      "glyphName": "uF2CAF",
+      "codePoint": 994972,
+      "canonicalName": "long stem with stem and spine and stem and ascender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3",
+      "glyphName": "uF2CB1",
+      "codePoint": 994976,
+      "canonicalName": "long stem with stem and spine and stem and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5",
+      "glyphName": "uF2CB3",
+      "codePoint": 994980,
+      "canonicalName": "long stem with stem and spine and stem and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0",
+      "glyphName": "uF2CBA",
+      "codePoint": 994984,
+      "canonicalName": "long hook with stem and spine and two stems",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2",
+      "glyphName": "uF2CBC",
+      "codePoint": 994988,
+      "canonicalName": "long hook with stem and spine and stem and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4",
+      "glyphName": "uF2CBE",
+      "codePoint": 994992,
+      "canonicalName": "long hook with stem and spine and stem and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1",
+      "glyphName": "uF2CBB",
+      "codePoint": 994996,
+      "canonicalName": "long hook with stem and spine and stem and ascender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3",
+      "glyphName": "uF2CBD",
+      "codePoint": 995000,
+      "canonicalName": "long hook with stem and spine and stem and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5",
+      "glyphName": "uF2CBF",
+      "codePoint": 995004,
+      "canonicalName": "long hook with stem and spine and stem and long tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-middle-legs",
+      "glyphName": "uF2CA2.middle",
+      "codePoint": 994939,
+      "canonicalName": "two descenders with spine and ascender and stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-middle-legs",
+      "glyphName": "uF2CA4.middle",
+      "codePoint": 994943,
+      "canonicalName": "two descenders with spine and ascender and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-middle-legs",
+      "glyphName": "uF2CA6.middle",
+      "codePoint": 994947,
+      "canonicalName": "two descenders with spine and ascender and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-middle-legs",
+      "glyphName": "uF2CA3.middle",
+      "codePoint": 994951,
+      "canonicalName": "two descenders with spine and two ascenders",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-middle-legs",
+      "glyphName": "uF2CA5.middle",
+      "codePoint": 994955,
+      "canonicalName": "two descenders with spine and ascender and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-middle-legs",
+      "glyphName": "uF2CA7.middle",
+      "codePoint": 994959,
+      "canonicalName": "two descenders with spine and ascender and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-middle-legs",
+      "glyphName": "uF2CAE.middle",
+      "codePoint": 994963,
+      "canonicalName": "long stem with descender and spine and ascender and stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-middle-legs",
+      "glyphName": "uF2CB0.middle",
+      "codePoint": 994967,
+      "canonicalName": "long stem with descender and spine and ascender and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-middle-legs",
+      "glyphName": "uF2CB2.middle",
+      "codePoint": 994971,
+      "canonicalName": "long stem with descender and spine and ascender and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-middle-legs",
+      "glyphName": "uF2CAF.middle",
+      "codePoint": 994975,
+      "canonicalName": "long stem with descender and spine and two ascenders",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-middle-legs",
+      "glyphName": "uF2CB1.middle",
+      "codePoint": 994979,
+      "canonicalName": "long stem with descender and spine and ascender and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-middle-legs",
+      "glyphName": "uF2CB3.middle",
+      "codePoint": 994983,
+      "canonicalName": "long stem with descender and spine and ascender and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-middle-legs",
+      "glyphName": "uF2CBA.middle",
+      "codePoint": 994987,
+      "canonicalName": "long hook with descender and spine and ascender and stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-middle-legs",
+      "glyphName": "uF2CBC.middle",
+      "codePoint": 994991,
+      "canonicalName": "long hook with descender and spine and ascender and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-middle-legs",
+      "glyphName": "uF2CBE.middle",
+      "codePoint": 994995,
+      "canonicalName": "long hook with descender and spine and ascender and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-middle-legs",
+      "glyphName": "uF2CBB.middle",
+      "codePoint": 994999,
+      "canonicalName": "long hook with descender and spine and two ascenders",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-middle-legs",
+      "glyphName": "uF2CBD.middle",
+      "codePoint": 995003,
+      "canonicalName": "long hook with descender and spine and ascender and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-middle-legs",
+      "glyphName": "uF2CBF.middle",
+      "codePoint": 995007,
+      "canonicalName": "long hook with descender and spine and ascender and long tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-left-middle-leg",
+      "glyphName": "uF2CA2.middleLeft",
+      "codePoint": 994937,
+      "canonicalName": "two descenders with spine and two stems",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-0-extended-right-middle-leg",
+      "glyphName": "uF2CA2.middleRight",
+      "codePoint": 994938,
+      "canonicalName": "descender with stem and spine and ascender and stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-left-middle-leg",
+      "glyphName": "uF2CA4.middleLeft",
+      "codePoint": 994941,
+      "canonicalName": "two descenders with spine and stem and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-2-extended-right-middle-leg",
+      "glyphName": "uF2CA4.middleRight",
+      "codePoint": 994942,
+      "canonicalName": "descender with stem and spine and ascender and descender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-left-middle-leg",
+      "glyphName": "uF2CA6.middleLeft",
+      "codePoint": 994945,
+      "canonicalName": "two descenders with spine and stem and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-4-extended-right-middle-leg",
+      "glyphName": "uF2CA6.middleRight",
+      "codePoint": 994946,
+      "canonicalName": "descender with stem and spine and ascender and tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-left-middle-leg",
+      "glyphName": "uF2CA3.middleLeft",
+      "codePoint": 994949,
+      "canonicalName": "two descenders with spine and stem and ascender",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-1-extended-right-middle-leg",
+      "glyphName": "uF2CA3.middleRight",
+      "codePoint": 994950,
+      "canonicalName": "descender with stem and spine and two ascenders",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-left-middle-leg",
+      "glyphName": "uF2CA5.middleLeft",
+      "codePoint": 994953,
+      "canonicalName": "two descenders with spine and stem and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-3-extended-right-middle-leg",
+      "glyphName": "uF2CA5.middleRight",
+      "codePoint": 994954,
+      "canonicalName": "descender with stem and spine and ascender and long stem",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-left-middle-leg",
+      "glyphName": "uF2CA7.middleLeft",
+      "codePoint": 994957,
+      "canonicalName": "two descenders with spine and stem and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-1-5-extended-right-middle-leg",
+      "glyphName": "uF2CA7.middleRight",
+      "codePoint": 994958,
+      "canonicalName": "descender with stem and spine and ascender and long tail",
+      "shaftRecipe": "0xf2a16"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-left-middle-leg",
+      "glyphName": "uF2CAE.middleLeft",
+      "codePoint": 994961,
+      "canonicalName": "long stem with descender and spine and two stems",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-0-extended-right-middle-leg",
+      "glyphName": "uF2CAE.middleRight",
+      "codePoint": 994962,
+      "canonicalName": "long stem with stem and spine and ascender and stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-left-middle-leg",
+      "glyphName": "uF2CB0.middleLeft",
+      "codePoint": 994965,
+      "canonicalName": "long stem with descender and spine and stem and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-2-extended-right-middle-leg",
+      "glyphName": "uF2CB0.middleRight",
+      "codePoint": 994966,
+      "canonicalName": "long stem with stem and spine and ascender and descender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-left-middle-leg",
+      "glyphName": "uF2CB2.middleLeft",
+      "codePoint": 994969,
+      "canonicalName": "long stem with descender and spine and stem and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-4-extended-right-middle-leg",
+      "glyphName": "uF2CB2.middleRight",
+      "codePoint": 994970,
+      "canonicalName": "long stem with stem and spine and ascender and tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-left-middle-leg",
+      "glyphName": "uF2CAF.middleLeft",
+      "codePoint": 994973,
+      "canonicalName": "long stem with descender and spine and stem and ascender",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-1-extended-right-middle-leg",
+      "glyphName": "uF2CAF.middleRight",
+      "codePoint": 994974,
+      "canonicalName": "long stem with stem and spine and two ascenders",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-left-middle-leg",
+      "glyphName": "uF2CB1.middleLeft",
+      "codePoint": 994977,
+      "canonicalName": "long stem with descender and spine and stem and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-3-extended-right-middle-leg",
+      "glyphName": "uF2CB1.middleRight",
+      "codePoint": 994978,
+      "canonicalName": "long stem with stem and spine and ascender and long stem",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-left-middle-leg",
+      "glyphName": "uF2CB3.middleLeft",
+      "codePoint": 994981,
+      "canonicalName": "long stem with descender and spine and stem and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-3-5-extended-right-middle-leg",
+      "glyphName": "uF2CB3.middleRight",
+      "codePoint": 994982,
+      "canonicalName": "long stem with stem and spine and ascender and long tail",
+      "shaftRecipe": "0xf2a1a"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-left-middle-leg",
+      "glyphName": "uF2CBA.middleLeft",
+      "codePoint": 994985,
+      "canonicalName": "long hook with descender and spine and two stems",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-0-extended-right-middle-leg",
+      "glyphName": "uF2CBA.middleRight",
+      "codePoint": 994986,
+      "canonicalName": "long hook with stem and spine and ascender and stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-left-middle-leg",
+      "glyphName": "uF2CBC.middleLeft",
+      "codePoint": 994989,
+      "canonicalName": "long hook with descender and spine and stem and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-2-extended-right-middle-leg",
+      "glyphName": "uF2CBC.middleRight",
+      "codePoint": 994990,
+      "canonicalName": "long hook with stem and spine and ascender and descender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-left-middle-leg",
+      "glyphName": "uF2CBE.middleLeft",
+      "codePoint": 994993,
+      "canonicalName": "long hook with descender and spine and stem and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-4-extended-right-middle-leg",
+      "glyphName": "uF2CBE.middleRight",
+      "codePoint": 994994,
+      "canonicalName": "long hook with stem and spine and ascender and tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-left-middle-leg",
+      "glyphName": "uF2CBB.middleLeft",
+      "codePoint": 994997,
+      "canonicalName": "long hook with descender and spine and stem and ascender",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-1-extended-right-middle-leg",
+      "glyphName": "uF2CBB.middleRight",
+      "codePoint": 994998,
+      "canonicalName": "long hook with stem and spine and two ascenders",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-left-middle-leg",
+      "glyphName": "uF2CBD.middleLeft",
+      "codePoint": 995001,
+      "canonicalName": "long hook with descender and spine and stem and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-3-extended-right-middle-leg",
+      "glyphName": "uF2CBD.middleRight",
+      "codePoint": 995002,
+      "canonicalName": "long hook with stem and spine and ascender and long stem",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-left-middle-leg",
+      "glyphName": "uF2CBF.middleLeft",
+      "codePoint": 995005,
+      "canonicalName": "long hook with descender and spine and stem and long tail",
+      "shaftRecipe": "0xf2a1e"
+    },
+    {
+      "glyphId": "double-arched-opposed-bowls-5-5-extended-right-middle-leg",
+      "glyphName": "uF2CBF.middleRight",
+      "codePoint": 995006,
+      "canonicalName": "long hook with stem and spine and ascender and long tail",
+      "shaftRecipe": "0xf2a1e"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "focusedTestMethods": 9,
+  "changedItalicGlyphs": 150,
+  "sourceMasters": 2,
+  "testedWeights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "sourceBaseAxisChecks": 36,
+  "sourceInheritedShaftChecks": 270,
+  "sourceIntraGlyphPreservationChecks": 300,
+  "compiledSourceGeometryChecks": 1050,
+  "exactDesktopWebfontOutlineComparisons": 1050,
+  "sourceOrderedPairs": 1711500,
+  "compiledOrderedPairs": 1711500,
+  "totalOrderedPairs": 3423000,
+  "filledOutlineFallbacks": 226292,
+  "collisionCount": 0,
+  "visualReview": "visual-review.json",
+  "proofIndex": "docs/images/italic-shaft-alignment/index.html",
+  "reports": {
+    "source-alignment": "4c1373ad43b05c136c2406c1e3476f344b44ebdcd4660cfe3382dfd718b77545",
+    "companion-preservation": "e7f40c7eb24e1f84f32a5dccefdb333fcd9955025305cdd532efe5d082f2f692",
+    "source-pairs": "30555e3806754c75b2f36579140072e65205ae370a0cb0307fd8dfaab18b3b18",
+    "compiled-variable": "86f967cf46e3122977aa274114f69699a2a66af2334752c4b32629273056ced0",
+    "static-webfonts-and-dependencies": "ffd5a3dcb397a09c964d2796a376bbef64f81abca1c5d388e45536bb5ff2903d"
+  }
+}

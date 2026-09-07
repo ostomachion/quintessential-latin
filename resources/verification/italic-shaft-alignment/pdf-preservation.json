@@ -1,0 +1,17 @@
+{
+  "before": {
+    "quintessential-latin-catalogue.pdf": "4657b3dd238d93f3015d49628616754b72b388e06e07aa092e086a52596b7251",
+    "quintessential-latin-extended-a.pdf": "f9e8be468ba3f0cd48dc4092a5e57129da6fa81e663acd9e845d92172bd7aa8c",
+    "quintessential-latin-extended-b.pdf": "4637bbd54ec5e3987bdbed377bc17dfdc47b6b39b3592ce33956e9abf55a9e3c",
+    "quintessential-latin-proposal.pdf": "89686dfe51272cc07738ffb0d7ec6b15444b35109f963f50f55e601623d140b8",
+    "quintessential-latin.pdf": "2767bc1ba4c2c28a944bfe7b7325869c696c741e79fe186b2033da2e9281f5ae"
+  },
+  "after": {
+    "quintessential-latin-catalogue.pdf": "4657b3dd238d93f3015d49628616754b72b388e06e07aa092e086a52596b7251",
+    "quintessential-latin-extended-a.pdf": "f9e8be468ba3f0cd48dc4092a5e57129da6fa81e663acd9e845d92172bd7aa8c",
+    "quintessential-latin-extended-b.pdf": "4637bbd54ec5e3987bdbed377bc17dfdc47b6b39b3592ce33956e9abf55a9e3c",
+    "quintessential-latin-proposal.pdf": "89686dfe51272cc07738ffb0d7ec6b15444b35109f963f50f55e601623d140b8",
+    "quintessential-latin.pdf": "2767bc1ba4c2c28a944bfe7b7325869c696c741e79fe186b2033da2e9281f5ae"
+  },
+  "allByteIdentical": true
+}

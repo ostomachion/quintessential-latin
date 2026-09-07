@@ -1,0 +1,656 @@
+{
+  "passed": true,
+  "testsRun": 3,
+  "variableFontSha256": "9f8541500b021f7fe3c9eb5c443ff8aa169c27a26b9d5b484d0f30b3d93951d1",
+  "maximumAngleDifferenceDegrees": 0.15,
+  "maximumJoinDeviationUnits": 0.3,
+  "targets": [
+    {
+      "glyphName": "uF2A02",
+      "codePoint": "U+F2A05"
+    },
+    {
+      "glyphName": "uF2A03",
+      "codePoint": "U+F2A06"
+    },
+    {
+      "glyphName": "uF2A04",
+      "codePoint": "U+F2A07"
+    },
+    {
+      "glyphName": "uF2A05",
+      "codePoint": "U+F2A08"
+    },
+    {
+      "glyphName": "uF2A07",
+      "codePoint": "U+F2A0A"
+    },
+    {
+      "glyphName": "uF2A0A",
+      "codePoint": "U+F2A0F"
+    },
+    {
+      "glyphName": "uF2A0C",
+      "codePoint": "U+F2A15"
+    },
+    {
+      "glyphName": "uF2A0D",
+      "codePoint": "U+F2A0D"
+    },
+    {
+      "glyphName": "uF2A0E",
+      "codePoint": "U+F2A10"
+    },
+    {
+      "glyphName": "uF2A0F",
+      "codePoint": "U+F2A13"
+    },
+    {
+      "glyphName": "uF2A10",
+      "codePoint": "U+F2A16"
+    },
+    {
+      "glyphName": "uF2A11",
+      "codePoint": "U+F2A0E"
+    },
+    {
+      "glyphName": "uF2A12",
+      "codePoint": "U+F2A11"
+    },
+    {
+      "glyphName": "uF2A13",
+      "codePoint": "U+F2A14"
+    },
+    {
+      "glyphName": "uF2A14",
+      "codePoint": "U+F2A17"
+    },
+    {
+      "glyphName": "uF2A16",
+      "codePoint": "U+F2A27"
+    },
+    {
+      "glyphName": "uF2A46",
+      "codePoint": "U+F2A4E"
+    },
+    {
+      "glyphName": "uF2A46.middle",
+      "codePoint": "U+F2A4F"
+    },
+    {
+      "glyphName": "uF2A5E",
+      "codePoint": "U+F2A66"
+    },
+    {
+      "glyphName": "uF2A5E.middle",
+      "codePoint": "U+F2A67"
+    },
+    {
+      "glyphName": "uF2B4D",
+      "codePoint": "U+F2B1E"
+    },
+    {
+      "glyphName": "uF2B4D.middle",
+      "codePoint": "U+F2B1F"
+    },
+    {
+      "glyphName": "uF2B41",
+      "codePoint": "U+F2B06"
+    },
+    {
+      "glyphName": "uF2B41.middle",
+      "codePoint": "U+F2B07"
+    },
+    {
+      "glyphName": "uF2B5E",
+      "codePoint": "U+F2B54"
+    },
+    {
+      "glyphName": "uF2B5E.middle",
+      "codePoint": "U+F2B55"
+    },
+    {
+      "glyphName": "uF2B5F",
+      "codePoint": "U+F2B5A"
+    },
+    {
+      "glyphName": "uF2B5F.middle",
+      "codePoint": "U+F2B5B"
+    },
+    {
+      "glyphName": "uF2B60",
+      "codePoint": "U+F2B56"
+    },
+    {
+      "glyphName": "uF2B60.middle",
+      "codePoint": "U+F2B57"
+    },
+    {
+      "glyphName": "uF2B61",
+      "codePoint": "U+F2B5C"
+    },
+    {
+      "glyphName": "uF2B61.middle",
+      "codePoint": "U+F2B5D"
+    },
+    {
+      "glyphName": "uF2B62",
+      "codePoint": "U+F2B58"
+    },
+    {
+      "glyphName": "uF2B62.middle",
+      "codePoint": "U+F2B59"
+    },
+    {
+      "glyphName": "uF2B63",
+      "codePoint": "U+F2B5E"
+    },
+    {
+      "glyphName": "uF2B63.middle",
+      "codePoint": "U+F2B5F"
+    },
+    {
+      "glyphName": "uF2CA2",
+      "codePoint": "U+F2E78"
+    },
+    {
+      "glyphName": "uF2CA2.middle",
+      "codePoint": "U+F2E7B"
+    },
+    {
+      "glyphName": "uF2CA3",
+      "codePoint": "U+F2E84"
+    },
+    {
+      "glyphName": "uF2CA3.middle",
+      "codePoint": "U+F2E87"
+    },
+    {
+      "glyphName": "uF2CA4",
+      "codePoint": "U+F2E7C"
+    },
+    {
+      "glyphName": "uF2CA4.middle",
+      "codePoint": "U+F2E7F"
+    },
+    {
+      "glyphName": "uF2CA5",
+      "codePoint": "U+F2E88"
+    },
+    {
+      "glyphName": "uF2CA5.middle",
+      "codePoint": "U+F2E8B"
+    },
+    {
+      "glyphName": "uF2CA6",
+      "codePoint": "U+F2E80"
+    },
+    {
+      "glyphName": "uF2CA6.middle",
+      "codePoint": "U+F2E83"
+    },
+    {
+      "glyphName": "uF2CA7",
+      "codePoint": "U+F2E8C"
+    },
+    {
+      "glyphName": "uF2CA7.middle",
+      "codePoint": "U+F2E8F"
+    },
+    {
+      "glyphName": "uF2CA2.middleLeft",
+      "codePoint": "U+F2E79"
+    },
+    {
+      "glyphName": "uF2CA2.middleRight",
+      "codePoint": "U+F2E7A"
+    },
+    {
+      "glyphName": "uF2CA3.middleLeft",
+      "codePoint": "U+F2E85"
+    },
+    {
+      "glyphName": "uF2CA3.middleRight",
+      "codePoint": "U+F2E86"
+    },
+    {
+      "glyphName": "uF2CA4.middleLeft",
+      "codePoint": "U+F2E7D"
+    },
+    {
+      "glyphName": "uF2CA4.middleRight",
+      "codePoint": "U+F2E7E"
+    },
+    {
+      "glyphName": "uF2CA5.middleLeft",
+      "codePoint": "U+F2E89"
+    },
+    {
+      "glyphName": "uF2CA5.middleRight",
+      "codePoint": "U+F2E8A"
+    },
+    {
+      "glyphName": "uF2CA6.middleLeft",
+      "codePoint": "U+F2E81"
+    },
+    {
+      "glyphName": "uF2CA6.middleRight",
+      "codePoint": "U+F2E82"
+    },
+    {
+      "glyphName": "uF2CA7.middleLeft",
+      "codePoint": "U+F2E8D"
+    },
+    {
+      "glyphName": "uF2CA7.middleRight",
+      "codePoint": "U+F2E8E"
+    },
+    {
+      "glyphName": "uF2A1A",
+      "codePoint": "U+F2A28"
+    },
+    {
+      "glyphName": "uF2A4A",
+      "codePoint": "U+F2A50"
+    },
+    {
+      "glyphName": "uF2A4A.middle",
+      "codePoint": "U+F2A51"
+    },
+    {
+      "glyphName": "uF2A62",
+      "codePoint": "U+F2A68"
+    },
+    {
+      "glyphName": "uF2A62.middle",
+      "codePoint": "U+F2A69"
+    },
+    {
+      "glyphName": "uF2B51",
+      "codePoint": "U+F2B20"
+    },
+    {
+      "glyphName": "uF2B51.middle",
+      "codePoint": "U+F2B21"
+    },
+    {
+      "glyphName": "uF2B45",
+      "codePoint": "U+F2B08"
+    },
+    {
+      "glyphName": "uF2B45.middle",
+      "codePoint": "U+F2B09"
+    },
+    {
+      "glyphName": "uF2B6A",
+      "codePoint": "U+F2B60"
+    },
+    {
+      "glyphName": "uF2B6A.middle",
+      "codePoint": "U+F2B61"
+    },
+    {
+      "glyphName": "uF2B6B",
+      "codePoint": "U+F2B66"
+    },
+    {
+      "glyphName": "uF2B6B.middle",
+      "codePoint": "U+F2B67"
+    },
+    {
+      "glyphName": "uF2B6C",
+      "codePoint": "U+F2B62"
+    },
+    {
+      "glyphName": "uF2B6C.middle",
+      "codePoint": "U+F2B63"
+    },
+    {
+      "glyphName": "uF2B6D",
+      "codePoint": "U+F2B68"
+    },
+    {
+      "glyphName": "uF2B6D.middle",
+      "codePoint": "U+F2B69"
+    },
+    {
+      "glyphName": "uF2B6E",
+      "codePoint": "U+F2B64"
+    },
+    {
+      "glyphName": "uF2B6E.middle",
+      "codePoint": "U+F2B65"
+    },
+    {
+      "glyphName": "uF2B6F",
+      "codePoint": "U+F2B6A"
+    },
+    {
+      "glyphName": "uF2B6F.middle",
+      "codePoint": "U+F2B6B"
+    },
+    {
+      "glyphName": "uF2CAE",
+      "codePoint": "U+F2E90"
+    },
+    {
+      "glyphName": "uF2CAE.middle",
+      "codePoint": "U+F2E93"
+    },
+    {
+      "glyphName": "uF2CAF",
+      "codePoint": "U+F2E9C"
+    },
+    {
+      "glyphName": "uF2CAF.middle",
+      "codePoint": "U+F2E9F"
+    },
+    {
+      "glyphName": "uF2CB0",
+      "codePoint": "U+F2E94"
+    },
+    {
+      "glyphName": "uF2CB0.middle",
+      "codePoint": "U+F2E97"
+    },
+    {
+      "glyphName": "uF2CB1",
+      "codePoint": "U+F2EA0"
+    },
+    {
+      "glyphName": "uF2CB1.middle",
+      "codePoint": "U+F2EA3"
+    },
+    {
+      "glyphName": "uF2CB2",
+      "codePoint": "U+F2E98"
+    },
+    {
+      "glyphName": "uF2CB2.middle",
+      "codePoint": "U+F2E9B"
+    },
+    {
+      "glyphName": "uF2CB3",
+      "codePoint": "U+F2EA4"
+    },
+    {
+      "glyphName": "uF2CB3.middle",
+      "codePoint": "U+F2EA7"
+    },
+    {
+      "glyphName": "uF2CAE.middleLeft",
+      "codePoint": "U+F2E91"
+    },
+    {
+      "glyphName": "uF2CAE.middleRight",
+      "codePoint": "U+F2E92"
+    },
+    {
+      "glyphName": "uF2CAF.middleLeft",
+      "codePoint": "U+F2E9D"
+    },
+    {
+      "glyphName": "uF2CAF.middleRight",
+      "codePoint": "U+F2E9E"
+    },
+    {
+      "glyphName": "uF2CB0.middleLeft",
+      "codePoint": "U+F2E95"
+    },
+    {
+      "glyphName": "uF2CB0.middleRight",
+      "codePoint": "U+F2E96"
+    },
+    {
+      "glyphName": "uF2CB1.middleLeft",
+      "codePoint": "U+F2EA1"
+    },
+    {
+      "glyphName": "uF2CB1.middleRight",
+      "codePoint": "U+F2EA2"
+    },
+    {
+      "glyphName": "uF2CB2.middleLeft",
+      "codePoint": "U+F2E99"
+    },
+    {
+      "glyphName": "uF2CB2.middleRight",
+      "codePoint": "U+F2E9A"
+    },
+    {
+      "glyphName": "uF2CB3.middleLeft",
+      "codePoint": "U+F2EA5"
+    },
+    {
+      "glyphName": "uF2CB3.middleRight",
+      "codePoint": "U+F2EA6"
+    },
+    {
+      "glyphName": "uF2A1E",
+      "codePoint": "U+F2A29"
+    },
+    {
+      "glyphName": "uF2A4E",
+      "codePoint": "U+F2A52"
+    },
+    {
+      "glyphName": "uF2A4E.middle",
+      "codePoint": "U+F2A53"
+    },
+    {
+      "glyphName": "uF2A66",
+      "codePoint": "U+F2A6A"
+    },
+    {
+      "glyphName": "uF2A66.middle",
+      "codePoint": "U+F2A6B"
+    },
+    {
+      "glyphName": "uF2B55",
+      "codePoint": "U+F2B22"
+    },
+    {
+      "glyphName": "uF2B55.middle",
+      "codePoint": "U+F2B23"
+    },
+    {
+      "glyphName": "uF2B49",
+      "codePoint": "U+F2B0A"
+    },
+    {
+      "glyphName": "uF2B49.middle",
+      "codePoint": "U+F2B0B"
+    },
+    {
+      "glyphName": "uF2B76",
+      "codePoint": "U+F2B6C"
+    },
+    {
+      "glyphName": "uF2B76.middle",
+      "codePoint": "U+F2B6D"
+    },
+    {
+      "glyphName": "uF2B77",
+      "codePoint": "U+F2B72"
+    },
+    {
+      "glyphName": "uF2B77.middle",
+      "codePoint": "U+F2B73"
+    },
+    {
+      "glyphName": "uF2B78",
+      "codePoint": "U+F2B6E"
+    },
+    {
+      "glyphName": "uF2B78.middle",
+      "codePoint": "U+F2B6F"
+    },
+    {
+      "glyphName": "uF2B79",
+      "codePoint": "U+F2B74"
+    },
+    {
+      "glyphName": "uF2B79.middle",
+      "codePoint": "U+F2B75"
+    },
+    {
+      "glyphName": "uF2B7A",
+      "codePoint": "U+F2B70"
+    },
+    {
+      "glyphName": "uF2B7A.middle",
+      "codePoint": "U+F2B71"
+    },
+    {
+      "glyphName": "uF2B7B",
+      "codePoint": "U+F2B76"
+    },
+    {
+      "glyphName": "uF2B7B.middle",
+      "codePoint": "U+F2B77"
+    },
+    {
+      "glyphName": "uF2CBA",
+      "codePoint": "U+F2EA8"
+    },
+    {
+      "glyphName": "uF2CBA.middle",
+      "codePoint": "U+F2EAB"
+    },
+    {
+      "glyphName": "uF2CBB",
+      "codePoint": "U+F2EB4"
+    },
+    {
+      "glyphName": "uF2CBB.middle",
+      "codePoint": "U+F2EB7"
+    },
+    {
+      "glyphName": "uF2CBC",
+      "codePoint": "U+F2EAC"
+    },
+    {
+      "glyphName": "uF2CBC.middle",
+      "codePoint": "U+F2EAF"
+    },
+    {
+      "glyphName": "uF2CBD",
+      "codePoint": "U+F2EB8"
+    },
+    {
+      "glyphName": "uF2CBD.middle",
+      "codePoint": "U+F2EBB"
+    },
+    {
+      "glyphName": "uF2CBE",
+      "codePoint": "U+F2EB0"
+    },
+    {
+      "glyphName": "uF2CBE.middle",
+      "codePoint": "U+F2EB3"
+    },
+    {
+      "glyphName": "uF2CBF",
+      "codePoint": "U+F2EBC"
+    },
+    {
+      "glyphName": "uF2CBF.middle",
+      "codePoint": "U+F2EBF"
+    },
+    {
+      "glyphName": "uF2CBA.middleLeft",
+      "codePoint": "U+F2EA9"
+    },
+    {
+      "glyphName": "uF2CBA.middleRight",
+      "codePoint": "U+F2EAA"
+    },
+    {
+      "glyphName": "uF2CBB.middleLeft",
+      "codePoint": "U+F2EB5"
+    },
+    {
+      "glyphName": "uF2CBB.middleRight",
+      "codePoint": "U+F2EB6"
+    },
+    {
+      "glyphName": "uF2CBC.middleLeft",
+      "codePoint": "U+F2EAD"
+    },
+    {
+      "glyphName": "uF2CBC.middleRight",
+      "codePoint": "U+F2EAE"
+    },
+    {
+      "glyphName": "uF2CBD.middleLeft",
+      "codePoint": "U+F2EB9"
+    },
+    {
+      "glyphName": "uF2CBD.middleRight",
+      "codePoint": "U+F2EBA"
+    },
+    {
+      "glyphName": "uF2CBE.middleLeft",
+      "codePoint": "U+F2EB1"
+    },
+    {
+      "glyphName": "uF2CBE.middleRight",
+      "codePoint": "U+F2EB2"
+    },
+    {
+      "glyphName": "uF2CBF.middleLeft",
+      "codePoint": "U+F2EBD"
+    },
+    {
+      "glyphName": "uF2CBF.middleRight",
+      "codePoint": "U+F2EBE"
+    }
+  ],
+  "measurements": [],
+  "pairMeasurements": [],
+  "compiledMeasurements": [
+    {
+      "artifact": "static-Italic",
+      "glyphCount": 150,
+      "outlineToleranceUnits": 0.75,
+      "failures": []
+    },
+    {
+      "artifact": "static-BoldItalic",
+      "glyphCount": 150,
+      "outlineToleranceUnits": 0.75,
+      "failures": []
+    }
+  ],
+  "dependencyAudit": {
+    "currentItalicConstructions": 1216,
+    "retainedShafts": 135,
+    "discardedCalls": [],
+    "sourceSha256": {
+      "tools/test_italic_shaft_alignment.py": "d90e3b68a41d2dd23f5170e99692f788c4611ced210bfd63254d3a9abad91b41",
+      "tools/import_stix_foundation.py": "5453ae368a966f2a396e729bfc257f8086bf23e24e220d4108410d7ea97f391e",
+      "tools/quintessential_font.py": "0730e9eed8bfa9c56ebf1914a82ab24ea6624d5fd8cf8f527bf1d7c694d2bf29",
+      "resources/quintessential-latin-allocation.json": "d9c20a367c2de8aad4913382d58146ce36f3b81c7943cfce434c8a4085fa09f2",
+      "resources/italic-shaft-targets.json": "af71481e57da994a9f8877c3f56fdc2d5de7e6ad2839216792aa5a68d363feb9",
+      "tools/stix_arch_spine_joins.py": "e23bd676868c0d16f6397b365777b9870dbbcc2db39f4451a85d0898ec101606",
+      "tools/stix_arched_opposed_bowls.py": "66ad494a320478bdb9266de4b5925dc6f2e213032ae85fa29ea8fd70b1217cfc",
+      "tools/stix_arched_terminals.py": "58538b546545c0872255e11c5e3b12f1077e111c0d3c2842e362c26fbab17a21",
+      "tools/stix_bowled_spine.py": "db43c817a0693395e1c91ee4340f61b620d11a530b89bc3f2bb94f100ffd338f",
+      "tools/stix_bowled_spine_italic.py": "8a8cf9e44e8f8bbd22387fce48dd277b3f87834d4653c7cf62e125008ecf3913",
+      "tools/stix_bowled_spine_italic_normal.py": "128004ae6913d0b082ad9d3c9c40232c420b3f8f8f03debf132127787643900c",
+      "tools/stix_bowled_spine_normal.py": "f29a44dac26e2b9856b4d22c86f47ab3bbe208e1066127d210f637fa17fc50dc",
+      "tools/stix_compact_spine.py": "dcc48dbc39b2ff7c1f7aa747e3f4abae8aeb2860e7e0a80e31c2dd90509a65ad",
+      "tools/stix_double_bowl.py": "b068231c4674fc515392fcf808b0905742f675115ef9d4bcbc597b3fa261b1b9",
+      "tools/stix_double_bowl_italic.py": "a8c06404672605f3ceb0df7e7dd605c34e264daa0a283c5ef22c400068f538da",
+      "tools/stix_extensions.py": "6d93d57c6e709e15d7d5744e720d5e9cdea1f060fba017aa14dc49ceea5d9d07",
+      "tools/stix_extensions_italic.py": "869a8cd7629fcc9433b02ca2ff7f531787e03a03c61a77ae1dce140bd2084cd5",
+      "tools/stix_middle_hook_joins.py": "337e46d4ca6a8387f0ea18dfcb5c07b20a958d30c16e3ee100471e2e7f217518",
+      "tools/stix_middle_legs.py": "7782bd328a4e8db2f9852e89f4de461043703da66256c71d68d5012d3cfb92b3",
+      "tools/stix_middle_terminals.py": "c9d7fe0e3853a06ab0c390334b796838e4f4683323b54a82a3b849b733844578",
+      "tools/stix_opposed_bowls.py": "e269f82d105161f520f7342762d72dc9da954a2daa523887dcd2c706280cf242",
+      "tools/stix_opposed_bowls_italic.py": "024b2d98fa9c166a69216d7f8b5ce3d00234b5a1edbe12b5246b236ea9c78284",
+      "tools/stix_repeated_arch.py": "30de8f3cc45868655637055f846f7826993420e545128511cd761fbfc8e33cce",
+      "tools/stix_stemless.py": "eae52b00a819b3336c52b437d28c36e9afc7b0b0521753059365ae04ffb38dae"
+    }
+  }
+}

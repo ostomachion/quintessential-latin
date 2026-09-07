@@ -34,53 +34,53 @@
     </contour>
     <contour>
       <point x="74.465753" y="150.0" type="qcurve" smooth="yes"/>
-      <point x="121" y="365" type="line"/>
-      <point x="121" y="365"/>
-      <point x="124" y="387"/>
-      <point x="124" y="396" type="qcurve" smooth="yes"/>
-      <point x="124" y="410"/>
-      <point x="110" y="425"/>
-      <point x="91" y="425" type="qcurve" smooth="yes"/>
-      <point x="83" y="425"/>
-      <point x="61" y="423"/>
-      <point x="61" y="423" type="qcurve"/>
-      <point x="61" y="465" type="line"/>
-      <point x="225" y="476" type="line"/>
-      <point x="272" y="476" type="line"/>
-      <point x="223" y="286" type="line"/>
-      <point x="252" y="286" type="line"/>
+      <point x="116.740623" y="365" type="line"/>
+      <point x="116.740623" y="365"/>
+      <point x="119.30478" y="387"/>
+      <point x="119.126481" y="396" type="qcurve" smooth="yes"/>
+      <point x="118.849126" y="410"/>
+      <point x="104.55196" y="425"/>
+      <point x="85.55196" y="425" type="qcurve" smooth="yes"/>
+      <point x="77.55196" y="425"/>
+      <point x="55.591582" y="423"/>
+      <point x="55.591582" y="423" type="qcurve"/>
+      <point x="54.759518" y="465" type="line"/>
+      <point x="218.541596" y="476" type="line"/>
+      <point x="265.541596" y="476" type="line"/>
+      <point x="220.305697" y="286" type="line"/>
+      <point x="249.305697" y="286" type="line"/>
       <point x="219.664336" y="150" type="line" smooth="yes"/>
-      <point x="218.67365999999998" y="145.833333375"/>
-      <point x="216.61400702982954" y="137.50000008617423"/>
-      <point x="214.4963921690341" y="129.16666676609847"/>
-      <point x="212.33945957386368" y="120.83333342171719"/>
-      <point x="210.1618534005682" y="112.50000005997475"/>
-      <point x="207.9822178053977" y="104.16666668781568"/>
-      <point x="205.81919694460225" y="95.83333331218435"/>
-      <point x="203.69143497443181" y="87.49999994002528"/>
-      <point x="201.61757605113638" y="79.16666657828284"/>
-      <point x="199.6162643309659" y="70.83333323390153"/>
-      <point x="197.70614397017044" y="62.499999913825775"/>
-      <point x="195.905859125" y="54.166666625000005"/>
-      <point x="195.070804" y="50.0" type="qcurve" smooth="yes"/>
-      <point x="167.814605" y="-86" type="line"/>
-      <point x="166.814605" y="-93"/>
-      <point x="163.814605" y="-118"/>
-      <point x="163.814605" y="-124" type="qcurve" smooth="yes"/>
-      <point x="163.814605" y="-145"/>
-      <point x="204.814605" y="-178"/>
-      <point x="264.814605" y="-178" type="qcurve"/>
-      <point x="255.814605" y="-220" type="line"/>
-      <point x="-4.185395" y="-220" type="line"/>
-      <point x="53.639226" y="50" type="line" smooth="yes"/>
-      <point x="54.977758875000006" y="56.24999993749999"/>
-      <point x="57.599084149832585" y="68.7499998967634"/>
-      <point x="60.18273145786831" y="81.24999991462053"/>
-      <point x="62.74519265457589" y="93.74999996763391"/>
-      <point x="65.3029595954241" y="106.25000003236607"/>
-      <point x="67.8725241358817" y="118.75000008537947"/>
-      <point x="70.47037813141742" y="131.2500001032366"/>
-      <point x="73.1130134375" y="143.75000006250002"/>
+      <point x="218.57457999999997" y="145.00000005"/>
+      <point x="216.31923642244442" y="135.00000009488892"/>
+      <point x="214.01027418388887" y="125.00000009777779"/>
+      <point x="211.6680237503333" y="115.00000007066666"/>
+      <point x="209.31281558777775" y="105.00000002555556"/>
+      <point x="206.96498016222222" y="94.99999997444444"/>
+      <point x="204.64484793966665" y="84.99999992933334"/>
+      <point x="202.3727493861111" y="74.99999990222221"/>
+      <point x="200.16901496755557" y="64.99999990511111"/>
+      <point x="198.05397514999999" y="54.99999994999999"/>
+      <point x="197.051909" y="50.0" type="qcurve" smooth="yes"/>
+      <point x="169.795711" y="-86" type="line"/>
+      <point x="168.795711" y="-93"/>
+      <point x="165.795711" y="-118"/>
+      <point x="165.795711" y="-124" type="qcurve" smooth="yes"/>
+      <point x="165.795711" y="-145"/>
+      <point x="206.795711" y="-178"/>
+      <point x="266.795711" y="-178" type="qcurve"/>
+      <point x="257.795711" y="-220" type="line"/>
+      <point x="-2.204289" y="-220" type="line"/>
+      <point x="55.620331" y="50" type="line" smooth="yes"/>
+      <point x="56.6911573" y="54.99999995"/>
+      <point x="58.72190238244444" y="64.99999990511112"/>
+      <point x="60.663952863888895" y="74.99999990222221"/>
+      <point x="62.53763921033333" y="84.99999992933334"/>
+      <point x="64.36329188777776" y="94.99999997444444"/>
+      <point x="66.16124136222221" y="105.00000002555556"/>
+      <point x="67.95181809966665" y="115.00000007066666"/>
+      <point x="69.75535256611113" y="125.00000009777779"/>
+      <point x="71.59217522755554" y="135.00000009488892"/>
+      <point x="73.48261655000002" y="145.00000005"/>
     </contour>
     <contour>
       <point x="406.043303" y="350" type="line"/>
@@ -187,7 +187,7 @@
         <key>lowerBowlTurned</key>
         <true/>
         <key>method</key>
-        <string>Native Italic STIX Two Text bodies and endings, with independently drawn epsilon lobes for double bowls and turned-a diagonal counters for spines. Native arch ribbons translate rigidly; shared-shaft joins follow their receiving axes. Internal free legs retain native terminals.</string>
+        <string>Native side arch joined through its shared shaft to the compact opposed-bowl body; two unchanged diagonal body counters and native outer-shaft endings. The sigmoid is translated rigidly when needed and keeps its native width. Roman only.</string>
         <key>nativePosture</key>
         <string>Italic</string>
         <key>opticalRevision</key>

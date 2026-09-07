@@ -1,0 +1,10 @@
+shaft pairs compiled-400: 342300 ordered pairs; 4997 filled-outline fallbacks; no collisions
+shaft pairs compiled-500: 342300 ordered pairs; 18682 filled-outline fallbacks; no collisions
+shaft pairs compiled-550: 342300 ordered pairs; 22354 filled-outline fallbacks; no collisions
+shaft pairs compiled-600: 342300 ordered pairs; 31010 filled-outline fallbacks; no collisions
+shaft pairs compiled-700: 342300 ordered pairs; 37186 filled-outline fallbacks; no collisions
+..
+----------------------------------------------------------------------
+Ran 2 tests in 544.283s
+
+OK

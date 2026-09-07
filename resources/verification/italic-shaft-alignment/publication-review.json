@@ -1,0 +1,63 @@
+{
+  "scope": "Publication refresh after Italic shaft alignment; all five PDFs use Roman 400",
+  "pdfs": {
+    "quintessential-latin-catalogue.pdf": {
+      "pages": 33,
+      "sha256": "4657b3dd238d93f3015d49628616754b72b388e06e07aa092e086a52596b7251"
+    },
+    "quintessential-latin-extended-a.pdf": {
+      "pages": 7,
+      "sha256": "f9e8be468ba3f0cd48dc4092a5e57129da6fa81e663acd9e845d92172bd7aa8c"
+    },
+    "quintessential-latin-extended-b.pdf": {
+      "pages": 20,
+      "sha256": "4637bbd54ec5e3987bdbed377bc17dfdc47b6b39b3592ce33956e9abf55a9e3c"
+    },
+    "quintessential-latin-proposal.pdf": {
+      "pages": 10,
+      "sha256": "89686dfe51272cc07738ffb0d7ec6b15444b35109f963f50f55e601623d140b8"
+    },
+    "quintessential-latin.pdf": {
+      "pages": 6,
+      "sha256": "2767bc1ba4c2c28a944bfe7b7325869c696c741e79fe186b2033da2e9281f5ae"
+    }
+  },
+  "contactSheetsInspected": [
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-1.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-2.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-3.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-4.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-5.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-6.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-7.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-8.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/contact-9.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-a/contact-1.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-a/contact-2.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/contact-1.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/contact-2.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/contact-3.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/contact-4.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/contact-5.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-proposal/contact-1.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-proposal/contact-2.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-proposal/contact-3.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin/contact-1.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin/contact-2.png"
+  ],
+  "fullSizePagesInspected": [
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-catalogue/page-11.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-extended-b/page-02.png",
+    ".tmp/italic-shaft-pdf-review/quintessential-latin-proposal/page-03.png"
+  ],
+  "pdfFindings": "All 76 pages inspected on contact sheets, with three dense/specimen pages inspected individually. No clipping, missing glyphs, table collisions, broken pagination or footer problems observed. All five PDFs are byte-identical to the pre-correction outputs.",
+  "browserChecks": 231,
+  "browserScreenshotsInspected": {
+    "charts-italic-700.png": "a097b60839bf36939aea83b444941c3538164845762f6502043b9b9030fee11f",
+    "character-dialog-375.png": "07e9ad72d357aa51807539cbd7e7ac16effcc239508a0dadb9e280daf069144d",
+    "chart-sheet-375.png": "d9e926ccee7908b2516bb5a2fc2978a2e21f8a8f57d60ce8ca99f259d4da1ae1",
+    "index-desktop.png": "65a2d57536bc068d784043a22dce339f4ce6bca57edbd213aec2ba2c0e44eb40"
+  },
+  "browserFindings": "Current Italic 700 chart and 375px character dialog render cleanly. The 375px chart fits its responsive sheet; current introduction desktop remains intact.",
+  "limits": "Agent visual inspection is distinct from user design acceptance. These Roman PDFs do not provide optical evidence for corrected Italic glyphs."
+}

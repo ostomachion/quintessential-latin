@@ -7,6 +7,9 @@ preserved by that allocation migration; public code points change without compat
 The subsequent [stemless terminal revision](stemless-terminals.md) adds a second
 bulb to the spine and both turned open bowls in all four masters, preserving
 their advances, body placement, and kerning.
+The [Italic shaft alignment](italic-shaft-alignment.md) then aligns the donor
+halves of eighteen assembled Italic shafts and their derivatives, preserving
+advances and pairs between unrelated forms.
 The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.
@@ -14,8 +17,8 @@ STIX Two Text donors. Donor checksums are verified before compilation.
 ## Invariants
 
 - All 1,216 Roman and Italic forms retain their construction identities, internal
-  glyph names, advances, and effective kerning pairs from 0.240. Only the three
-  stemless forms have the subsequent terminal changes described above.
+  glyph names and advances from 0.240. The stemless, hip-tail, and Italic shaft
+  revisions document subsequent outline changes and their spacing boundaries.
   The current numeric map is U+F2A00–U+F2EBF; earlier code-point assignments
   are historical and must not be used to identify current glyphs.
 - Roman and Italic remain separate variable fonts with compatible 400/700

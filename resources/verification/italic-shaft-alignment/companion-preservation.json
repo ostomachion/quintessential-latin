@@ -1,0 +1,612 @@
+{
+  "passed": true,
+  "testsRun": 1,
+  "variableFontSha256": "7354697c07d3a88e2921a64042917f34f9cfa91a7c976cca71e138ecec25371b",
+  "maximumAngleDifferenceDegrees": 0.15,
+  "maximumJoinDeviationUnits": 0.3,
+  "targets": [
+    {
+      "glyphName": "uF2A02",
+      "codePoint": "U+F2A05"
+    },
+    {
+      "glyphName": "uF2A03",
+      "codePoint": "U+F2A06"
+    },
+    {
+      "glyphName": "uF2A04",
+      "codePoint": "U+F2A07"
+    },
+    {
+      "glyphName": "uF2A05",
+      "codePoint": "U+F2A08"
+    },
+    {
+      "glyphName": "uF2A07",
+      "codePoint": "U+F2A0A"
+    },
+    {
+      "glyphName": "uF2A0A",
+      "codePoint": "U+F2A0F"
+    },
+    {
+      "glyphName": "uF2A0C",
+      "codePoint": "U+F2A15"
+    },
+    {
+      "glyphName": "uF2A0D",
+      "codePoint": "U+F2A0D"
+    },
+    {
+      "glyphName": "uF2A0E",
+      "codePoint": "U+F2A10"
+    },
+    {
+      "glyphName": "uF2A0F",
+      "codePoint": "U+F2A13"
+    },
+    {
+      "glyphName": "uF2A10",
+      "codePoint": "U+F2A16"
+    },
+    {
+      "glyphName": "uF2A11",
+      "codePoint": "U+F2A0E"
+    },
+    {
+      "glyphName": "uF2A12",
+      "codePoint": "U+F2A11"
+    },
+    {
+      "glyphName": "uF2A13",
+      "codePoint": "U+F2A14"
+    },
+    {
+      "glyphName": "uF2A14",
+      "codePoint": "U+F2A17"
+    },
+    {
+      "glyphName": "uF2A16",
+      "codePoint": "U+F2A27"
+    },
+    {
+      "glyphName": "uF2A46",
+      "codePoint": "U+F2A4E"
+    },
+    {
+      "glyphName": "uF2A46.middle",
+      "codePoint": "U+F2A4F"
+    },
+    {
+      "glyphName": "uF2A5E",
+      "codePoint": "U+F2A66"
+    },
+    {
+      "glyphName": "uF2A5E.middle",
+      "codePoint": "U+F2A67"
+    },
+    {
+      "glyphName": "uF2B4D",
+      "codePoint": "U+F2B1E"
+    },
+    {
+      "glyphName": "uF2B4D.middle",
+      "codePoint": "U+F2B1F"
+    },
+    {
+      "glyphName": "uF2B41",
+      "codePoint": "U+F2B06"
+    },
+    {
+      "glyphName": "uF2B41.middle",
+      "codePoint": "U+F2B07"
+    },
+    {
+      "glyphName": "uF2B5E",
+      "codePoint": "U+F2B54"
+    },
+    {
+      "glyphName": "uF2B5E.middle",
+      "codePoint": "U+F2B55"
+    },
+    {
+      "glyphName": "uF2B5F",
+      "codePoint": "U+F2B5A"
+    },
+    {
+      "glyphName": "uF2B5F.middle",
+      "codePoint": "U+F2B5B"
+    },
+    {
+      "glyphName": "uF2B60",
+      "codePoint": "U+F2B56"
+    },
+    {
+      "glyphName": "uF2B60.middle",
+      "codePoint": "U+F2B57"
+    },
+    {
+      "glyphName": "uF2B61",
+      "codePoint": "U+F2B5C"
+    },
+    {
+      "glyphName": "uF2B61.middle",
+      "codePoint": "U+F2B5D"
+    },
+    {
+      "glyphName": "uF2B62",
+      "codePoint": "U+F2B58"
+    },
+    {
+      "glyphName": "uF2B62.middle",
+      "codePoint": "U+F2B59"
+    },
+    {
+      "glyphName": "uF2B63",
+      "codePoint": "U+F2B5E"
+    },
+    {
+      "glyphName": "uF2B63.middle",
+      "codePoint": "U+F2B5F"
+    },
+    {
+      "glyphName": "uF2CA2",
+      "codePoint": "U+F2E78"
+    },
+    {
+      "glyphName": "uF2CA2.middle",
+      "codePoint": "U+F2E7B"
+    },
+    {
+      "glyphName": "uF2CA3",
+      "codePoint": "U+F2E84"
+    },
+    {
+      "glyphName": "uF2CA3.middle",
+      "codePoint": "U+F2E87"
+    },
+    {
+      "glyphName": "uF2CA4",
+      "codePoint": "U+F2E7C"
+    },
+    {
+      "glyphName": "uF2CA4.middle",
+      "codePoint": "U+F2E7F"
+    },
+    {
+      "glyphName": "uF2CA5",
+      "codePoint": "U+F2E88"
+    },
+    {
+      "glyphName": "uF2CA5.middle",
+      "codePoint": "U+F2E8B"
+    },
+    {
+      "glyphName": "uF2CA6",
+      "codePoint": "U+F2E80"
+    },
+    {
+      "glyphName": "uF2CA6.middle",
+      "codePoint": "U+F2E83"
+    },
+    {
+      "glyphName": "uF2CA7",
+      "codePoint": "U+F2E8C"
+    },
+    {
+      "glyphName": "uF2CA7.middle",
+      "codePoint": "U+F2E8F"
+    },
+    {
+      "glyphName": "uF2CA2.middleLeft",
+      "codePoint": "U+F2E79"
+    },
+    {
+      "glyphName": "uF2CA2.middleRight",
+      "codePoint": "U+F2E7A"
+    },
+    {
+      "glyphName": "uF2CA3.middleLeft",
+      "codePoint": "U+F2E85"
+    },
+    {
+      "glyphName": "uF2CA3.middleRight",
+      "codePoint": "U+F2E86"
+    },
+    {
+      "glyphName": "uF2CA4.middleLeft",
+      "codePoint": "U+F2E7D"
+    },
+    {
+      "glyphName": "uF2CA4.middleRight",
+      "codePoint": "U+F2E7E"
+    },
+    {
+      "glyphName": "uF2CA5.middleLeft",
+      "codePoint": "U+F2E89"
+    },
+    {
+      "glyphName": "uF2CA5.middleRight",
+      "codePoint": "U+F2E8A"
+    },
+    {
+      "glyphName": "uF2CA6.middleLeft",
+      "codePoint": "U+F2E81"
+    },
+    {
+      "glyphName": "uF2CA6.middleRight",
+      "codePoint": "U+F2E82"
+    },
+    {
+      "glyphName": "uF2CA7.middleLeft",
+      "codePoint": "U+F2E8D"
+    },
+    {
+      "glyphName": "uF2CA7.middleRight",
+      "codePoint": "U+F2E8E"
+    },
+    {
+      "glyphName": "uF2A1A",
+      "codePoint": "U+F2A28"
+    },
+    {
+      "glyphName": "uF2A4A",
+      "codePoint": "U+F2A50"
+    },
+    {
+      "glyphName": "uF2A4A.middle",
+      "codePoint": "U+F2A51"
+    },
+    {
+      "glyphName": "uF2A62",
+      "codePoint": "U+F2A68"
+    },
+    {
+      "glyphName": "uF2A62.middle",
+      "codePoint": "U+F2A69"
+    },
+    {
+      "glyphName": "uF2B51",
+      "codePoint": "U+F2B20"
+    },
+    {
+      "glyphName": "uF2B51.middle",
+      "codePoint": "U+F2B21"
+    },
+    {
+      "glyphName": "uF2B45",
+      "codePoint": "U+F2B08"
+    },
+    {
+      "glyphName": "uF2B45.middle",
+      "codePoint": "U+F2B09"
+    },
+    {
+      "glyphName": "uF2B6A",
+      "codePoint": "U+F2B60"
+    },
+    {
+      "glyphName": "uF2B6A.middle",
+      "codePoint": "U+F2B61"
+    },
+    {
+      "glyphName": "uF2B6B",
+      "codePoint": "U+F2B66"
+    },
+    {
+      "glyphName": "uF2B6B.middle",
+      "codePoint": "U+F2B67"
+    },
+    {
+      "glyphName": "uF2B6C",
+      "codePoint": "U+F2B62"
+    },
+    {
+      "glyphName": "uF2B6C.middle",
+      "codePoint": "U+F2B63"
+    },
+    {
+      "glyphName": "uF2B6D",
+      "codePoint": "U+F2B68"
+    },
+    {
+      "glyphName": "uF2B6D.middle",
+      "codePoint": "U+F2B69"
+    },
+    {
+      "glyphName": "uF2B6E",
+      "codePoint": "U+F2B64"
+    },
+    {
+      "glyphName": "uF2B6E.middle",
+      "codePoint": "U+F2B65"
+    },
+    {
+      "glyphName": "uF2B6F",
+      "codePoint": "U+F2B6A"
+    },
+    {
+      "glyphName": "uF2B6F.middle",
+      "codePoint": "U+F2B6B"
+    },
+    {
+      "glyphName": "uF2CAE",
+      "codePoint": "U+F2E90"
+    },
+    {
+      "glyphName": "uF2CAE.middle",
+      "codePoint": "U+F2E93"
+    },
+    {
+      "glyphName": "uF2CAF",
+      "codePoint": "U+F2E9C"
+    },
+    {
+      "glyphName": "uF2CAF.middle",
+      "codePoint": "U+F2E9F"
+    },
+    {
+      "glyphName": "uF2CB0",
+      "codePoint": "U+F2E94"
+    },
+    {
+      "glyphName": "uF2CB0.middle",
+      "codePoint": "U+F2E97"
+    },
+    {
+      "glyphName": "uF2CB1",
+      "codePoint": "U+F2EA0"
+    },
+    {
+      "glyphName": "uF2CB1.middle",
+      "codePoint": "U+F2EA3"
+    },
+    {
+      "glyphName": "uF2CB2",
+      "codePoint": "U+F2E98"
+    },
+    {
+      "glyphName": "uF2CB2.middle",
+      "codePoint": "U+F2E9B"
+    },
+    {
+      "glyphName": "uF2CB3",
+      "codePoint": "U+F2EA4"
+    },
+    {
+      "glyphName": "uF2CB3.middle",
+      "codePoint": "U+F2EA7"
+    },
+    {
+      "glyphName": "uF2CAE.middleLeft",
+      "codePoint": "U+F2E91"
+    },
+    {
+      "glyphName": "uF2CAE.middleRight",
+      "codePoint": "U+F2E92"
+    },
+    {
+      "glyphName": "uF2CAF.middleLeft",
+      "codePoint": "U+F2E9D"
+    },
+    {
+      "glyphName": "uF2CAF.middleRight",
+      "codePoint": "U+F2E9E"
+    },
+    {
+      "glyphName": "uF2CB0.middleLeft",
+      "codePoint": "U+F2E95"
+    },
+    {
+      "glyphName": "uF2CB0.middleRight",
+      "codePoint": "U+F2E96"
+    },
+    {
+      "glyphName": "uF2CB1.middleLeft",
+      "codePoint": "U+F2EA1"
+    },
+    {
+      "glyphName": "uF2CB1.middleRight",
+      "codePoint": "U+F2EA2"
+    },
+    {
+      "glyphName": "uF2CB2.middleLeft",
+      "codePoint": "U+F2E99"
+    },
+    {
+      "glyphName": "uF2CB2.middleRight",
+      "codePoint": "U+F2E9A"
+    },
+    {
+      "glyphName": "uF2CB3.middleLeft",
+      "codePoint": "U+F2EA5"
+    },
+    {
+      "glyphName": "uF2CB3.middleRight",
+      "codePoint": "U+F2EA6"
+    },
+    {
+      "glyphName": "uF2A1E",
+      "codePoint": "U+F2A29"
+    },
+    {
+      "glyphName": "uF2A4E",
+      "codePoint": "U+F2A52"
+    },
+    {
+      "glyphName": "uF2A4E.middle",
+      "codePoint": "U+F2A53"
+    },
+    {
+      "glyphName": "uF2A66",
+      "codePoint": "U+F2A6A"
+    },
+    {
+      "glyphName": "uF2A66.middle",
+      "codePoint": "U+F2A6B"
+    },
+    {
+      "glyphName": "uF2B55",
+      "codePoint": "U+F2B22"
+    },
+    {
+      "glyphName": "uF2B55.middle",
+      "codePoint": "U+F2B23"
+    },
+    {
+      "glyphName": "uF2B49",
+      "codePoint": "U+F2B0A"
+    },
+    {
+      "glyphName": "uF2B49.middle",
+      "codePoint": "U+F2B0B"
+    },
+    {
+      "glyphName": "uF2B76",
+      "codePoint": "U+F2B6C"
+    },
+    {
+      "glyphName": "uF2B76.middle",
+      "codePoint": "U+F2B6D"
+    },
+    {
+      "glyphName": "uF2B77",
+      "codePoint": "U+F2B72"
+    },
+    {
+      "glyphName": "uF2B77.middle",
+      "codePoint": "U+F2B73"
+    },
+    {
+      "glyphName": "uF2B78",
+      "codePoint": "U+F2B6E"
+    },
+    {
+      "glyphName": "uF2B78.middle",
+      "codePoint": "U+F2B6F"
+    },
+    {
+      "glyphName": "uF2B79",
+      "codePoint": "U+F2B74"
+    },
+    {
+      "glyphName": "uF2B79.middle",
+      "codePoint": "U+F2B75"
+    },
+    {
+      "glyphName": "uF2B7A",
+      "codePoint": "U+F2B70"
+    },
+    {
+      "glyphName": "uF2B7A.middle",
+      "codePoint": "U+F2B71"
+    },
+    {
+      "glyphName": "uF2B7B",
+      "codePoint": "U+F2B76"
+    },
+    {
+      "glyphName": "uF2B7B.middle",
+      "codePoint": "U+F2B77"
+    },
+    {
+      "glyphName": "uF2CBA",
+      "codePoint": "U+F2EA8"
+    },
+    {
+      "glyphName": "uF2CBA.middle",
+      "codePoint": "U+F2EAB"
+    },
+    {
+      "glyphName": "uF2CBB",
+      "codePoint": "U+F2EB4"
+    },
+    {
+      "glyphName": "uF2CBB.middle",
+      "codePoint": "U+F2EB7"
+    },
+    {
+      "glyphName": "uF2CBC",
+      "codePoint": "U+F2EAC"
+    },
+    {
+      "glyphName": "uF2CBC.middle",
+      "codePoint": "U+F2EAF"
+    },
+    {
+      "glyphName": "uF2CBD",
+      "codePoint": "U+F2EB8"
+    },
+    {
+      "glyphName": "uF2CBD.middle",
+      "codePoint": "U+F2EBB"
+    },
+    {
+      "glyphName": "uF2CBE",
+      "codePoint": "U+F2EB0"
+    },
+    {
+      "glyphName": "uF2CBE.middle",
+      "codePoint": "U+F2EB3"
+    },
+    {
+      "glyphName": "uF2CBF",
+      "codePoint": "U+F2EBC"
+    },
+    {
+      "glyphName": "uF2CBF.middle",
+      "codePoint": "U+F2EBF"
+    },
+    {
+      "glyphName": "uF2CBA.middleLeft",
+      "codePoint": "U+F2EA9"
+    },
+    {
+      "glyphName": "uF2CBA.middleRight",
+      "codePoint": "U+F2EAA"
+    },
+    {
+      "glyphName": "uF2CBB.middleLeft",
+      "codePoint": "U+F2EB5"
+    },
+    {
+      "glyphName": "uF2CBB.middleRight",
+      "codePoint": "U+F2EB6"
+    },
+    {
+      "glyphName": "uF2CBC.middleLeft",
+      "codePoint": "U+F2EAD"
+    },
+    {
+      "glyphName": "uF2CBC.middleRight",
+      "codePoint": "U+F2EAE"
+    },
+    {
+      "glyphName": "uF2CBD.middleLeft",
+      "codePoint": "U+F2EB9"
+    },
+    {
+      "glyphName": "uF2CBD.middleRight",
+      "codePoint": "U+F2EBA"
+    },
+    {
+      "glyphName": "uF2CBE.middleLeft",
+      "codePoint": "U+F2EB1"
+    },
+    {
+      "glyphName": "uF2CBE.middleRight",
+      "codePoint": "U+F2EB2"
+    },
+    {
+      "glyphName": "uF2CBF.middleLeft",
+      "codePoint": "U+F2EBD"
+    },
+    {
+      "glyphName": "uF2CBF.middleRight",
+      "codePoint": "U+F2EBE"
+    }
+  ],
+  "measurements": [],
+  "pairMeasurements": [],
+  "compiledMeasurements": []
+}

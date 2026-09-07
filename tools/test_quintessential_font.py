@@ -616,12 +616,21 @@ def scanline_crossings(glyph_set, name: str, y: float) -> list[float]:
 
 
 def assert_italic_stem_alignment(test: unittest.TestCase, glyph_set, name: str, italic_angle: float) -> None:
-    """Require a constructed splice to follow the font's native italic axis."""
+    """Require a constructed splice to continue its actual upper shaft axis."""
     top_y = 299.37
     top_crossings = scanline_crossings(glyph_set, name, top_y)
     test.assertEqual(len(top_crossings), 2, (name, top_y, top_crossings))
     top_center = sum(top_crossings) / 2
-    slant = -math.tan(math.radians(italic_angle))
+    # Below the cut, dotless-i's rising foot introduces four crossings. Read
+    # the straight upper shaft instead; the focused alignment suite separately
+    # measures each lower donor at its own safe straight-shaft interval.
+    upper_centers = []
+    for y in (310.37, 330.37):
+        crossings = scanline_crossings(glyph_set, name, y)
+        test.assertEqual(len(crossings), 2, (name, y, crossings))
+        upper_centers.append(sum(crossings) / 2)
+    slant = (upper_centers[1] - upper_centers[0]) / 20
+    test.assertGreater(slant, 0, (name, italic_angle, "Lost italic lean"))
     sampled = []
     for y in (150.37, 160.37, 170.37, 180.37, 190.37, 200.37, 210.37, 220.37,
               230.37, 240.37, 250.37, 260.37, 270.37, 280.37, 290.37, top_y):
@@ -648,7 +657,7 @@ def assert_italic_stem_alignment(test: unittest.TestCase, glyph_set, name: str, 
 
 def assert_translated_donor_region(test: unittest.TestCase, built_set, target: str,
                                    donor_set, donor_name: str, samples: tuple[float, ...],
-                                   side: str | None = None) -> None:
+                                   side: str | None = None, shear: float = 0.0) -> None:
     """Compare an entire terminal region after fitting one rigid x translation.
 
     The offset comes from visible geometry rather than construction metadata,
@@ -658,7 +667,7 @@ def assert_translated_donor_region(test: unittest.TestCase, built_set, target: s
     compared = 0
     for y in samples:
         actual = scanline_crossings(built_set, target, y)
-        expected = scanline_crossings(donor_set, donor_name, y)
+        expected = [x + shear * (y - 300) for x in scanline_crossings(donor_set, donor_name, y)]
         if side is not None:
             # A second ending can occupy the same height. Compare every
             # crossing of the selected native terminal, including its ball.
@@ -807,7 +816,7 @@ class QuintessentialFontTests(unittest.TestCase):
 
         for scale in (64, 4096, 65536):
             with self.subTest(scale=scale):
-                # The XOR is a one-unit-wide annulus: 10² - 9², not 10² + 9².
+                # The XOR is a one-unit-wide annulus: 10Ã‚Â² - 9Ã‚Â², not 10Ã‚Â² + 9Ã‚Â².
                 self.assertEqual(symmetric_difference_area([square(10, scale)], [square(9, scale)], scale), 19)
                 # Filling a real counter must still produce its whole area.
                 bowl = [square(10, scale), square(5, scale, reverse=True)]
@@ -948,7 +957,7 @@ class QuintessentialFontTests(unittest.TestCase):
                             self.assertEqual(len(counters), int(bowl), (name, "wrong counter count"))
                             if bowl:
                                 self.assertGreater(abs(pyclipper.Area(counters[0])) / 4096, 20_000)
-                            # Native m/ɯ/ɱ components overlap in Italic. At this
+                            # Native m/Ã‰Â¯/Ã‰Â± components overlap in Italic. At this
                             # common band their filled shape has three staves;
                             # a detached terminal cannot masquerade as an arch.
                             three_staves = bowl or name in REPEATED_ARCH_BODY_DONORS
@@ -2209,6 +2218,13 @@ class QuintessentialFontTests(unittest.TestCase):
             "uF2A0A": 0x70, "uF2A0E": 0x70, "uF2A0F": 0x70,
             "uF2A10": 0x70, "uF2A12": 0x70, "uF2A13": 0x261, "uF2A14": 0x261,
         }
+        # The shaft-alignment revision adapts upper donors by an explicitly
+        # recorded horizontal shear; lower native terminals stay rigid.
+        shears = {}
+        for endpoint, style in ((400, "Italic"), (700, "BoldItalic")):
+            with Font.open(SOURCES / f"QuintessentialSerif-{style}.ufo") as source:
+                shears[endpoint] = {name: source[name].lib["org.quintessential.construction"]["upperShear"]
+                                    for name in upper}
         for italic in (False, True):
             for weight in SAMPLE_WEIGHTS:
                 with self.subTest(italic=italic, weight=weight), \
@@ -2220,8 +2236,12 @@ class QuintessentialFontTests(unittest.TestCase):
                         (lower, (-30.37, -60.37, -100.37, -130.37, -160.37, -180.37, -200.37, -220.37, -240.37)),
                     ):
                         for target, code in targets.items():
+                            shear = 0.0
+                            if italic and targets is upper:
+                                factor = floatToFixedToFloat(piecewiseLinearMap((weight - 400) / 300, EXPECTED_AVAR), 14)
+                                shear = shears[400][target] + factor * (shears[700][target] - shears[400][target])
                             assert_translated_donor_region(self, built_set, target, donor_set,
-                                                           donor.getBestCmap()[code], samples)
+                                                           donor.getBestCmap()[code], samples, shear=shear)
 
     def test_static_faces_are_hinted_sparse_cff_fonts(self):
         for style, (weight, italic) in STATIC_FACES.items():
@@ -2547,7 +2567,8 @@ class QuintessentialFontTests(unittest.TestCase):
                          "tools/stix_bowled_spine_italic.py", "tools/stix_bowled_spine_italic_normal.py",
                          "tools/stix_opposed_bowls.py", "tools/stix_arched_opposed_bowls.py", "tools/stix_extensions.py",
                          "tools/stix_middle_legs.py", "tools/stix_middle_terminals.py", "tools/stix_middle_hook_joins.py",
-                         "tools/stix_stemless.py",
+                         "tools/stix_stemless.py", "tools/refine_italic_shafts.py",
+                         "resources/italic-shaft-targets.json",
                          "resources/quintessential-latin-allocation.json"}
                         <= set(manifest["sources"]))
         for name, digest in manifest["sources"].items():

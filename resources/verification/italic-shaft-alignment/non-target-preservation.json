@@ -1,0 +1,95 @@
+{
+  "faces": {
+    "BoldItalic": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic-400": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic-500": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic-550": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic-600": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    },
+    "Italic-700": {
+      "advances": 1218,
+      "unrelatedOutlines": 1068,
+      "unrelatedPairs": "preserved"
+    }
+  },
+  "tables": {
+    "QuintessentialSerif-Bold.otf": [],
+    "QuintessentialSerif-Bold.woff2": [],
+    "QuintessentialSerif-BoldItalic.otf": [
+      "CFF ",
+      "GPOS",
+      "head",
+      "hhea",
+      "hmtx"
+    ],
+    "QuintessentialSerif-BoldItalic.woff2": [
+      "CFF ",
+      "GPOS",
+      "head",
+      "hhea",
+      "hmtx"
+    ],
+    "QuintessentialSerif-Italic-Variable.ttf": [
+      "GDEF",
+      "GPOS",
+      "glyf",
+      "gvar",
+      "head",
+      "hhea",
+      "hmtx",
+      "loca"
+    ],
+    "QuintessentialSerif-Italic-Variable.woff2": [
+      "GDEF",
+      "GPOS",
+      "glyf",
+      "gvar",
+      "head",
+      "hhea",
+      "hmtx",
+      "loca"
+    ],
+    "QuintessentialSerif-Italic.otf": [
+      "CFF ",
+      "GPOS",
+      "head",
+      "hhea",
+      "hmtx"
+    ],
+    "QuintessentialSerif-Italic.woff2": [
+      "CFF ",
+      "GPOS",
+      "head",
+      "hhea",
+      "hmtx"
+    ],
+    "QuintessentialSerif-Regular.otf": [],
+    "QuintessentialSerif-Regular.woff2": [],
+    "QuintessentialSerif-Variable.ttf": [],
+    "QuintessentialSerif-Variable.woff2": []
+  }
+}

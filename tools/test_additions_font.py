@@ -33,6 +33,7 @@ from verify_logical_allocation import historical_entry
 from test_stemless_terminals import TARGET_IDS as REVISED_TERMINAL_IDS
 from test_stemless_terminals import recorded_outlines
 import hip_tail_revision
+import italic_shaft_revision
 from test_quintessential_font import (
     ALLOCATION, ALLOCATION_BY_ID, ALLOCATION_BY_NAME, ALLOCATION_ENTRIES,
     DONORS, DONOR_FILES, EXPECTED_AVAR, MAIN_SCRIPT_CMAP, OUTPUT, POSTURE_CMAPS, ROOT,
@@ -75,17 +76,21 @@ MAIN_NAMES = (".notdef", "space", *MAIN_SCRIPT_CMAP.values())
 COMPILED = True
 
 
+def has_verified_revision(face, name):
+    return name in hip_tail_revision.TARGET_NAMES or italic_shaft_revision.is_revised(face, name)
+
+
 def assert_hip_revision(test, current, previous, name, face, *, source=False, instantiated=False):
     actual, old = recorded_outlines(current, [name])[name], recorded_outlines(previous, [name])[name]
     test.assertEqual(hip_tail_revision.historical_outline(face, name, actual, source=source, instantiated=instantiated), old,
-                     (face, name, "Approved hip-tail revision"))
+                     (face, name, "Approved outline revisions"))
 
 
 def assert_historical_metrics(test, current, previous, name):
-    if name in hip_tail_revision.TARGET_NAMES and "glyf" in current:
+    if has_verified_revision(hip_tail_revision.compiled_face(current), name) and "glyf" in current:
         # The instance's exact glyph recording is pinned above. Its LSB must
         # equal that revised outline's xMin; only the unchanged advance is
-        # compared to the earlier, narrow-tail fixture.
+        # compared to the earlier fixture.
         test.assertEqual(current["hmtx"][name][0], previous["hmtx"][name][0], name)
         test.assertEqual(current["hmtx"][name][1], current["glyf"][name].xMin, name)
     else:
@@ -277,7 +282,7 @@ class AdditionsBaselineTests(unittest.TestCase):
                 for name in OLD_NAMES[italic]:
                     with self.subTest(style=style, glyph=name):
                         if name != CHANGED_NAME:
-                            if name in hip_tail_revision.TARGET_NAMES:
+                            if has_verified_revision(style, name):
                                 assert_hip_revision(self, after, before, name, style, source=True)
                             elif italic or name not in SHARED_SPINE_NAMES:
                                 self.assertEqual(outline(after, name), outline(before, name))
@@ -301,7 +306,7 @@ class AdditionsBaselineTests(unittest.TestCase):
         face = hip_tail_revision.compiled_face(after)
         for name in OLD_NAMES[italic]:
             if name != CHANGED_NAME:
-                if name in hip_tail_revision.TARGET_NAMES:
+                if has_verified_revision(face, name):
                     assert_hip_revision(self, current, original, name, face, instantiated="glyf" in after)
                 elif italic or name not in SHARED_SPINE_NAMES:
                     self.assertEqual(outline(current, name), outline(original, name), name)
@@ -1061,7 +1066,7 @@ class IndependentMain0150Tests(unittest.TestCase):
                 self.assertEqual(set(before.kerning), {(left, right) for left in MAIN_SCRIPT_CMAP.values()
                                                       for right in MAIN_SCRIPT_CMAP.values()})
                 for name in MAIN_NAMES:
-                    if name in hip_tail_revision.TARGET_NAMES:
+                    if has_verified_revision(style, name):
                         assert_hip_revision(self, after, before, name, style, source=True)
                     else:
                         self.assertEqual(outline(after, name), outline(before, name), (style, name))
@@ -1084,7 +1089,7 @@ class IndependentMain0150Tests(unittest.TestCase):
         original, current = before.getGlyphSet(), after.getGlyphSet()
         face = hip_tail_revision.compiled_face(after)
         for name in MAIN_NAMES:
-            if name in hip_tail_revision.TARGET_NAMES:
+            if has_verified_revision(face, name):
                 assert_hip_revision(self, current, original, name, face, instantiated="glyf" in after)
             else:
                 self.assertEqual(outline(current, name), outline(original, name), name)

@@ -1,0 +1,12 @@
+Geometry-only invocation of the five native-region tests: GPOS/GDEF were omitted before instantiation; actual gvar/HVAR outlines and advances were retained. Complete positioning was checked separately across 3,423,000 source and compiled ordered pairs.
+
+test_italic_constructed_stems_follow_the_native_axis_and_finish (test_quintessential_font.QuintessentialFontTests.test_italic_constructed_stems_follow_the_native_axis_and_finish) ... ok
+test_constructed_arm_terminals_preserve_their_native_donors (test_quintessential_font.QuintessentialFontTests.test_constructed_arm_terminals_preserve_their_native_donors) ... ok
+test_complete_arm_family_preserves_native_arm_regions (test_quintessential_font.QuintessentialFontTests.test_complete_arm_family_preserves_native_arm_regions) ... ok
+test_arch_bodies_preserve_their_native_free_side_curves (test_quintessential_font.QuintessentialFontTests.test_arch_bodies_preserve_their_native_free_side_curves) ... ok
+test_constructed_arch_terminals_preserve_their_native_donors (test_quintessential_font.QuintessentialFontTests.test_constructed_arch_terminals_preserve_their_native_donors) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 76.049s
+
+OK

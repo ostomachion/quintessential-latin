@@ -2,6 +2,7 @@
 
 Historical data is recovered only after the current bytes or outline/metric
 record matches this revision's independently frozen replacement evidence.
+The later Italic shaft correction is validated and rewound first.
 """
 from __future__ import annotations
 
@@ -14,6 +15,7 @@ from pathlib import Path
 import re
 
 from fontTools.ttLib import TTFont
+import italic_shaft_revision
 
 ROOT = Path(__file__).resolve().parent.parent
 BASELINE = ROOT / "resources/provenance/hip-tail-baseline.json.gz"
@@ -98,6 +100,7 @@ def load_revision():
 def historical_source_bytes(path, data=None):
     path = Path(path)
     data = path.read_bytes() if data is None else data
+    data = italic_shaft_revision.historical_source_bytes(path, data)
     relative = path.relative_to(ROOT).as_posix()
     if relative in load_baseline()["kerning"]:
         old = load_baseline()["kerning"][relative]
@@ -111,6 +114,8 @@ def historical_source_bytes(path, data=None):
 
 
 def historical_outline(face, name, actual, *, source=False, instantiated=False):
+    actual = italic_shaft_revision.historical_outline(face, name, actual,
+                                                     source=source, instantiated=instantiated)
     if name not in TARGET_NAMES:
         return actual
     if instantiated:
@@ -122,6 +127,7 @@ def historical_outline(face, name, actual, *, source=False, instantiated=False):
 
 
 def historical_metrics(face, name, actual):
+    actual = italic_shaft_revision.historical_metrics(face, name, actual)
     if name not in TARGET_NAMES:
         return actual
     assert list(actual) == load_revision()["geometry"][face][name]["metrics"], (face, name, "Unverified hip-tail metrics")
@@ -129,6 +135,7 @@ def historical_metrics(face, name, actual):
 
 
 def historical_tables(filename, actual):
+    actual = italic_shaft_revision.historical_tables(filename, actual)
     before = load_baseline()["tables"][filename]
     expected = {**before, **load_revision()["tables"][filename]}
     assert actual == expected, (filename, "Unverified hip-tail compiled table", sorted(
@@ -155,9 +162,10 @@ def verify_aggregate_metrics(path):
 
 
 def verify_sources():
+    italic_shaft_revision.verify_sources()
     revision = load_revision()
     for relative, expected in revision["sourceGlyphs"].items():
-        assert digest((ROOT / relative).read_bytes()) == expected, relative
+        assert digest(italic_shaft_revision.historical_source_bytes(ROOT / relative)) == expected, relative
     for relative in revision["kerning"]:
         historical_source_bytes(ROOT / relative)
     return len(revision["sourceGlyphs"])
@@ -165,6 +173,7 @@ def verify_sources():
 
 def historical_pairs(pairs, face, *, source=False):
     """Validate current target values, then restore only those pair adjustments."""
+    pairs = italic_shaft_revision.historical_pairs(pairs, face, source=source)
     key = f"source-{face}" if source else face
     current = load_revision()["geometry"][key]["pairs"]
     old = load_baseline()["targetPairs"][key]
@@ -185,6 +194,7 @@ def historical_source_pairs(source):
 
 
 def historical_pair_tables(face, actual):
+    actual = italic_shaft_revision.historical_pair_tables(face, actual)
     filename = "QuintessentialSerif-Italic-Variable.ttf" if face.startswith("Italic-") else "QuintessentialSerif-Variable.ttf"
     expected = {**load_baseline()["tables"][filename], **load_revision()["tables"][filename]}
     tags = load_baseline()["compiled"][face]["pairTables"]

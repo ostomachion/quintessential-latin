@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "targetInventory": "resources/italic-shaft-targets.json",
+  "targetInventorySha256": "af71481e57da994a9f8877c3f56fdc2d5de7e6ad2839216792aa5a68d363feb9",
+  "directStemAndArmCount": 15,
+  "archBaseCount": 3,
+  "archShaftCountIncludingBases": 135,
+  "totalAffectedGlyphs": 150,
+  "postures": [
+    "Italic"
+  ],
+  "weights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "diagnosis": "Distinct native donor shaft angles were joined using a nominal Italic angle, producing a continuous but visibly changing centerline. Long-s upper shafts show the largest mismatch.",
+  "dependencyAudit": {
+    "method": "Run every current Italic construction recipe while tracing the three descending arch recipes, then mark only each native outer shaft contour and compare final output recordings.",
+    "tracedCandidates": 135,
+    "actualRetainedShafts": 135,
+    "discardedCalls": 0,
+    "baseShaftCopies": 45
+  },
+  "sourceGeometry": {
+    "measuredBaseShaftsPerMaster": 18,
+    "masterCount": 2,
+    "maximumAngleDifferenceDegrees": 3.104925118790902e-06,
+    "maximumJoinDeviationUnits": 8.815949740892393e-06,
+    "inheritedShaftChecks": 270,
+    "inheritedShaftToleranceUnits": 3e-06
+  },
+  "preservation": {
+    "revisedSourceGlyphs": 300,
+    "changedContoursPerGlyph": 1,
+    "companionContours": "Exact drawing recordings preserved for all independent arms, arches, bowls, and spines.",
+    "nativeLowerTerminals": "Rigid horizontal translation only, checked to 0.000003 units.",
+    "baseUpperRegions": "At 40 scanlines per glyph, preserve y coordinates and horizontal ink widths under only the documented upper shear, checked to 0.003 units."
+  },
+  "boundaries": "Direct native glyphs and other connected bowl/arch constructions are not normalized globally to the font post.italicAngle; their native curvature and stroke contrast remain design inputs."
+}

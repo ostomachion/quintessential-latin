@@ -8,7 +8,7 @@
     "weight": 400
   },
   "sources": {
-    "resources/catalogue.json": "fd3fb3a6e775f3847fa78d1e0b7ab70491072b622590ae3237c16a94e50135bf",
+    "resources/catalogue.json": "763775f360109202271952a5524e5aec3c218ca8a8d074762059423962967b6f",
     "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
     "docs/proposal.json": "83837aaa6229b690cf0781d3e105e1240c9650cec61d6188c9d8a854fd67bfeb",
     "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "ded19d02500bc4626102047d4c61967c1824011fbba11fe75b2bc31bccee6f52",
