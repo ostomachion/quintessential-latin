@@ -2,20 +2,22 @@ import {available,normalizeSettings,searchEntries,code,anchor,glyphSize} from '.
 import {typeGuidesMarkup} from './type-guides.mjs';
 const storageKey='quintessential-latin-font';
 let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}');}catch{}
-let settings=normalizeSettings(saved),catalogue,byId,byCode,activeEntry,announcementTimer,fontRequest=0;
+let settings=normalizeSettings(saved),catalogue,byId,byCode,orderedEntries=[],activeEntry,announcementTimer,fontRequest=0;
 const $=selector=>document.querySelector(selector);
 const $$=selector=>[...document.querySelectorAll(selector)];
-const weight=$('#font-weight'),italic=$('#font-italic'),fontStatus=$('#font-status');
+const weights=$$('#font-weight,#dialog-font-weight'),italics=$$('#font-italic,#dialog-font-italic');
+const fontStatuses=$$('#font-status,#dialog-font-status');
 const dialog=$('#character-dialog');
 let dialogChartOrigin;
 document.documentElement.classList.add('enhanced');
 function announce(message){$('#announcement').textContent=message;clearTimeout(announcementTimer);announcementTimer=setTimeout(()=>{$('#announcement').textContent='';},3500);}
 function applyPosture(root=document){root.querySelectorAll('[data-form]').forEach(element=>{const pending=settings.italic&&element.dataset.italic!=='true';element.classList.toggle('is-pending',pending);const link=element.closest('[data-glyph]');if(link){link.classList.toggle('is-pending',pending);const label=link.getAttribute('aria-label');if(label){link.setAttribute('aria-label',label.replace(/ — Italic pending$/,'')+(pending?' — Italic pending':''));}}});}
 function saveSettings(){try{localStorage.setItem(storageKey,JSON.stringify(settings));}catch{}}
-async function loadFont(){const request=++fontRequest;document.body.dataset.fonts='loading';fontStatus.classList.remove('error');fontStatus.textContent='Loading reference font…';try{const sample=$('[data-italic="true"] .glyph')?.textContent||String.fromCodePoint(0xf2a07);const faces=await document.fonts.load(`${settings.italic?'italic':'normal'} ${settings.weight} 30px "Quintessential Serif"`,sample);if(!faces.length)throw new Error('Reference font was not loaded');if(request!==fontRequest)return;document.body.dataset.fonts='ready';document.documentElement.classList.remove('font-failed');fontStatus.textContent='';}catch{if(request!==fontRequest)return;document.body.dataset.fonts='error';document.documentElement.classList.add('font-failed');fontStatus.classList.add('error');fontStatus.textContent='Reference font could not load. Reload this page to retry.';}}
-function applySettings(persist=true){if(weight)weight.value=settings.weight;if(italic)italic.checked=settings.italic;if($('#font-weight-value'))$('#font-weight-value').value=String(settings.weight);document.documentElement.style.setProperty('--script-weight',settings.weight);document.documentElement.style.setProperty('--script-style',settings.italic?'italic':'normal');document.documentElement.dataset.posture=settings.italic?'Italic':'Roman';$$('[data-print-posture]').forEach(item=>{item.textContent=settings.italic?'Italic':'Roman';});$$('[data-print-weight]').forEach(item=>{item.textContent=settings.weight;});applyPosture();if(catalogue)updateDialog();if(persist)saveSettings();loadFont();}
-weight?.addEventListener('input',()=>{settings=normalizeSettings({...settings,weight:Number(weight.value)});applySettings();});
-italic?.addEventListener('change',()=>{settings={...settings,italic:italic.checked};applySettings();});
+function setFontStatus(message,error=false){fontStatuses.forEach(status=>{status.classList.toggle('error',error);status.textContent=message;});}
+async function loadFont(){const request=++fontRequest;document.body.dataset.fonts='loading';setFontStatus('Loading reference font…');try{const sample=$('[data-italic="true"] .glyph')?.textContent||String.fromCodePoint(0xf2a07);const faces=await document.fonts.load(`${settings.italic?'italic':'normal'} ${settings.weight} 30px "Quintessential Serif"`,sample);if(!faces.length)throw new Error('Reference font was not loaded');if(request!==fontRequest)return;document.body.dataset.fonts='ready';document.documentElement.classList.remove('font-failed');setFontStatus('');}catch{if(request!==fontRequest)return;document.body.dataset.fonts='error';document.documentElement.classList.add('font-failed');setFontStatus('Reference font could not load. Reload this page to retry.',true);}}
+function applySettings(persist=true){weights.forEach(input=>{input.value=settings.weight;});italics.forEach(input=>{input.checked=settings.italic;});$$('#font-weight-value,#dialog-font-weight-value').forEach(output=>{output.value=String(settings.weight);});document.documentElement.style.setProperty('--script-weight',settings.weight);document.documentElement.style.setProperty('--script-style',settings.italic?'italic':'normal');document.documentElement.dataset.posture=settings.italic?'Italic':'Roman';$$('[data-print-posture]').forEach(item=>{item.textContent=settings.italic?'Italic':'Roman';});$$('[data-print-weight]').forEach(item=>{item.textContent=settings.weight;});applyPosture();if(persist)saveSettings();loadFont();}
+weights.forEach(input=>input.addEventListener('input',()=>{settings=normalizeSettings({...settings,weight:Number(input.value)});applySettings();}));
+italics.forEach(input=>input.addEventListener('change',()=>{settings={...settings,italic:input.checked};applySettings();}));
 window.addEventListener('storage',event=>{if(event.key!==storageKey)return;try{settings=normalizeSettings(JSON.parse(event.newValue||'{}'));applySettings(false);}catch{}});
 applySettings(false);
 function makeGlyph(entry,width=48,maximum=32){const wrap=document.createElement('span');wrap.className='glyph-wrap';wrap.dataset.form=entry.glyphId;wrap.dataset.italic=String(entry.postures.includes('Italic'));const character=document.createElement('span');character.className='glyph';character.textContent=String.fromCodePoint(entry.codePoint);character.setAttribute('aria-hidden','true');character.style.setProperty('--glyph-size',`${glyphSize(entry,width,maximum).toFixed(2)}px`);const pending=document.createElement('span');pending.className='pending-label';pending.textContent='Italic pending';wrap.append(character,pending);wrap.classList.toggle('is-pending',!available(entry,settings.italic));return wrap;}
@@ -26,8 +28,35 @@ function sizeDialogStudy(){
   // Reserve the left gutter for metric labels, including on a narrow phone.
   study.style.setProperty('--study-size',`${glyphSize(activeEntry,Math.max(40,study.clientWidth-92),145).toFixed(2)}px`);
 }
-function updateDialog(){if(!activeEntry)return;const entry=activeEntry;$('#dialog-code').textContent=code(entry.codePoint);$('#dialog-name').textContent=entry.name;const study=document.createElement('div');study.className='type-study';study.innerHTML=typeGuidesMarkup(true);study.append(makeGlyph(entry));$('#dialog-glyph').replaceChildren(study);sizeDialogStudy();const family=catalogue.families.find(item=>item.id===entry.familyId),block=catalogue.blocks.find(item=>item.id===entry.blockId);$('#dialog-meta').textContent=`${block?.title||''} · ${family?.title||''}. ${entry.postures.includes('Italic')?'Roman and native Italic available.':'Roman available; native Italic pending.'}`;$('#character-permalink').href=`charts.html#${anchor(entry.codePoint)}`;}
+function updateDialog(){
+  if(!activeEntry)return;
+  const entry=activeEntry,index=orderedEntries.indexOf(entry);
+  $('#dialog-code').textContent=code(entry.codePoint);
+  $('#dialog-name').textContent=entry.name;
+  const study=document.createElement('div');study.className='type-study';study.innerHTML=typeGuidesMarkup(true);study.append(makeGlyph(entry));
+  $('#dialog-glyph').replaceChildren(study);sizeDialogStudy();
+  $('#character-permalink').href=`charts.html#${anchor(entry.codePoint)}`;
+  $('#previous-character').disabled=index<=0;
+  $('#next-character').disabled=index>=orderedEntries.length-1;
+}
 function openCharacter(entry,updateHistory=true,origin){if(!entry)return;dialogChartOrigin=origin?{code:origin.dataset.code,block:origin.closest(".chart-block")}:undefined;activeEntry=entry;updateDialog();if(!dialog.open)dialog.showModal();sizeDialogStudy();if(updateHistory)history.replaceState(null,'',`#${anchor(entry.codePoint)}`);}
+function moveCharacter(delta){
+  if(!activeEntry)return;
+  const entry=orderedEntries[orderedEntries.indexOf(activeEntry)+delta];
+  if(!entry)return;
+  const focusedButton=document.activeElement.closest('.dialog-navigation button');
+  activeEntry=entry;updateDialog();
+  history.replaceState(null,'',`#${anchor(entry.codePoint)}`);
+  // Keep keyboard paging inside the modal when its focused button reaches an end.
+  if(focusedButton?.disabled)$('#close-dialog').focus({preventScroll:true});
+}
+$('#previous-character').addEventListener('click',()=>moveCharacter(-1));
+$('#next-character').addEventListener('click',()=>moveCharacter(1));
+dialog.addEventListener('keydown',event=>{
+  if(event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||event.target.closest('input,textarea,select,[contenteditable]:not([contenteditable="false"])'))return;
+  if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+  event.preventDefault();moveCharacter(event.key==='ArrowLeft'?-1:1);
+});
 window.addEventListener('resize',sizeDialogStudy);
 $('#close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('close',()=>{
@@ -63,4 +92,4 @@ if(typeof ResizeObserver!=='undefined'){
   $$('.chart-block').forEach(block=>chartResize.observe(block));
 }
 document.addEventListener('keydown',event=>{const current=event.target.closest('.chart-cell');if(!current||event.altKey||event.ctrlKey||event.metaKey)return;const deltas={ArrowLeft:-16,ArrowRight:16,ArrowUp:-1,ArrowDown:1};const grid=current.closest('table'),links=[...grid.querySelectorAll('.chart-cell')];let destination;if(event.key==='Home')destination=links.find(link=>Number(link.dataset.code)%16===Number(current.dataset.code)%16);else if(event.key==='End')destination=links.filter(link=>Number(link.dataset.code)%16===Number(current.dataset.code)%16).at(-1);else if(event.key in deltas){const delta=deltas[event.key],currentCode=Number(current.dataset.code),vertical=Math.abs(delta)===1,columnStart=currentCode-currentCode%16,minimum=vertical?columnStart:Number(grid.dataset.start),maximum=vertical?columnStart+15:Number(grid.dataset.end);let candidate=currentCode+delta;while(candidate>=minimum&&candidate<=maximum){destination=grid.querySelector(`[data-code="${candidate}"]`);if(destination)break;candidate+=delta;}}else return;event.preventDefault();destination?.focus();});
-try{const response=await fetch(new URL('../data/catalogue.json',import.meta.url));if(!response.ok)throw new Error('Catalogue response failed');catalogue=await response.json();byId=new Map(catalogue.entries.map(entry=>[entry.glyphId,entry]));byCode=new Map(catalogue.entries.map(entry=>[entry.codePoint,entry]));document.body.dataset.catalogue='ready';renderSearch();openHash();}catch{document.body.dataset.catalogue='error';fontStatus.textContent='Character data could not load. Static charts remain available; reload to retry.';fontStatus.classList.add('error');}
+try{const response=await fetch(new URL('../data/catalogue.json',import.meta.url));if(!response.ok)throw new Error('Catalogue response failed');catalogue=await response.json();byId=new Map(catalogue.entries.map(entry=>[entry.glyphId,entry]));byCode=new Map(catalogue.entries.map(entry=>[entry.codePoint,entry]));orderedEntries=[...catalogue.entries].sort((a,b)=>a.codePoint-b.codePoint);document.body.dataset.catalogue='ready';renderSearch();openHash();}catch{document.body.dataset.catalogue='error';setFontStatus('Character data could not load. Static charts remain available; reload to retry.',true);}

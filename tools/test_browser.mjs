@@ -7,6 +7,8 @@ import {chromium} from 'playwright';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const catalogue = JSON.parse(await readFile(path.join(root,'resources/catalogue.json'),'utf8'));
+const orderedEntries=[...catalogue.entries].sort((a,b)=>a.codePoint-b.codePoint);
+const pointLabel=point=>`U+${point.toString(16).toUpperCase()}`;
 const pointFor=id=>catalogue.entries.find(entry=>entry.glyphId===id).codePoint;
 const markPoint=pointFor('opposed-bowls-0-0');
 const asymmetricPoints=['double-arched-arm-extended-left-middle-leg','double-arched-arm-extended-right-middle-leg'].map(pointFor);
@@ -42,6 +44,15 @@ try {
     await page.goto(new URL(file,base).href,{waitUntil:'load'});
     await page.waitForFunction(()=>document.body.dataset.fonts==='ready',{timeout:20000});
     await page.evaluate(()=>document.fonts.ready);
+  };
+  const checkDialogIdentity=async(label,entry,dialogPage=page)=>{
+    checkEqual(`${label}: detail identity, specimen, and permalink agree`,await dialogPage.evaluate(()=>({
+      code:document.querySelector('#dialog-code').textContent,
+      name:document.querySelector('#dialog-name').textContent,
+      glyph:document.querySelector('#dialog-glyph .glyph').textContent,
+      link:new URL(document.querySelector('#character-permalink').href).hash,
+      hash:location.hash
+    })),{code:pointLabel(entry.codePoint),name:entry.name,glyph:String.fromCodePoint(entry.codePoint),link:`#u-${entry.codePoint.toString(16)}`,hash:`#u-${entry.codePoint.toString(16)}`});
   };
   for(const file of ['index.html','construction.html','charts.html','proposal.html','downloads.html']){
     await navigate(file);
@@ -115,6 +126,29 @@ try {
   check('Copy preserves one supplementary-plane scalar and its UTF-16 pair',copied===String.fromCodePoint(0xF2B00)&&[...copied].length===1&&copied.length===2);
   await page.locator('#copy-code').click();
   check('Copy code uses Unicode notation',await page.evaluate(()=>navigator.clipboard.readText())==='U+F2B00');
+  const searchedEntry=orderedEntries.find(entry=>entry.codePoint===0xF2B00);
+  check('Character details omit redundant family and availability prose',await page.locator('#dialog-meta').count()===0&&!/Roman and native Italic available|Double arches\./.test(await page.locator('#character-dialog').innerText()));
+  checkEqual('Dialog weight exposes the full variable range and an associated label',await page.locator('#dialog-font-weight').evaluate(input=>({min:input.min,max:input.max,step:input.step,labels:[...input.labels].map(label=>label.textContent.trim())})),{min:'400',max:'700',step:'1',labels:['Weight']});
+  check('Dialog controls inherit the global font settings',await page.locator('#dialog-font-weight').inputValue()==='401'&&await page.locator('#dialog-font-weight-value').textContent()==='401'&&!(await page.locator('#dialog-font-italic').isChecked()));
+  await page.locator('#dialog-font-weight').focus();
+  await page.keyboard.press('End');
+  await page.keyboard.press('ArrowLeft');
+  await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+  check('Dialog slider keeps native arrow adjustment and synchronizes both weight controls',await page.locator('#dialog-font-weight').inputValue()==='699'&&await page.locator('#font-weight').inputValue()==='699'&&await page.locator('#dialog-font-weight-value').textContent()==='699'&&await page.locator('#font-weight-value').textContent()==='699');
+  await checkDialogIdentity('Adjusting the weight does not page the character',searchedEntry);
+  await page.locator('#dialog-font-italic').check();
+  await page.keyboard.press('ArrowRight');
+  await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+  check('Dialog Italic synchronizes the page and native specimen style',await page.locator('#font-italic').isChecked()&&await page.locator('#dialog-glyph .glyph').evaluate(glyph=>getComputedStyle(glyph).fontWeight==='699'&&getComputedStyle(glyph).fontStyle==='italic'&&getComputedStyle(glyph).fontSynthesis==='none'));
+  await checkDialogIdentity('Arrow keys on an input do not page the character',searchedEntry);
+  await page.reload({waitUntil:'load'});
+  await page.waitForFunction(()=>document.body.dataset.fonts==='ready'&&document.querySelector('#character-dialog').open);
+  check('Dialog font changes persist through reload and deep-link reopening',await page.locator('#dialog-font-weight').inputValue()==='699'&&await page.locator('#font-weight').inputValue()==='699'&&await page.locator('#dialog-font-italic').isChecked()&&await page.locator('#font-italic').isChecked());
+  await page.locator('#dialog-font-weight').focus();
+  await page.keyboard.press('Home');
+  await page.keyboard.press('ArrowRight');
+  await page.locator('#dialog-font-italic').uncheck();
+  await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
   await page.keyboard.press('Escape');
   check('Escape closes character details',!(await page.locator('#character-dialog').isVisible()));
   await page.locator('#character-search').fill(copied);
@@ -155,6 +189,68 @@ try {
   await navigate('charts.html#u-f2b00');
   check('Character deep link resolves',await page.locator('#u-f2b00').count()===1);
   if(await page.locator('#character-dialog').isVisible())await page.keyboard.press('Escape');
+
+  const openChartCharacter=async entry=>{
+    await page.locator(`${visibleScreen} .chart-cell[data-code="${entry.codePoint}"]`).focus();
+    await page.keyboard.press('Enter');
+  };
+  await openChartCharacter(searchedEntry);
+  await page.locator('#next-character').click();
+  const followingEntry=orderedEntries[orderedEntries.indexOf(searchedEntry)+1];
+  await checkDialogIdentity('Next character button',followingEntry);
+  await page.locator('#copy-character').click();
+  check('Copy character follows dialog navigation',await page.evaluate(()=>navigator.clipboard.readText())===String.fromCodePoint(followingEntry.codePoint));
+  await page.locator('#copy-code').click();
+  check('Copy code follows dialog navigation',await page.evaluate(()=>navigator.clipboard.readText())===pointLabel(followingEntry.codePoint));
+  await page.locator('#previous-character').click();
+  await checkDialogIdentity('Previous character button',searchedEntry);
+  await page.locator('#copy-character').focus();
+  for(const modifier of ['altKey','ctrlKey','metaKey','shiftKey']){
+    await page.locator('#copy-character').dispatchEvent('keydown',{key:'ArrowRight',[modifier]:true});
+  }
+  await checkDialogIdentity('Modified arrow shortcuts do not page the character',searchedEntry);
+  await page.keyboard.press('ArrowRight');
+  await checkDialogIdentity('Right arrow pages while a dialog button is focused',followingEntry);
+  await page.keyboard.press('ArrowLeft');
+  await checkDialogIdentity('Left arrow pages while a dialog button is focused',searchedEntry);
+  await page.keyboard.press('Escape');
+  for(const block of catalogue.blocks.slice(1)){
+    const firstInBlock=orderedEntries.find(entry=>entry.blockId===block.id);
+    const previous=orderedEntries[orderedEntries.indexOf(firstInBlock)-1];
+    await openChartCharacter(previous);
+    await page.locator('#next-character').click();
+    await checkDialogIdentity(`Next crosses into ${block.title}`,firstInBlock);
+    await page.locator('#previous-character').click();
+    await checkDialogIdentity(`Previous crosses out of ${block.title}`,previous);
+    await page.keyboard.press('Escape');
+  }
+  for(const [entry,disabledId,key] of [[orderedEntries[0],'previous-character','ArrowLeft'],[orderedEntries.at(-1),'next-character','ArrowRight']]){
+    const adjacent=entry===orderedEntries[0]?orderedEntries[1]:orderedEntries.at(-2);
+    await openChartCharacter(adjacent);
+    await page.locator(`#${disabledId}`).click();
+    check(`${pointLabel(entry.codePoint)}: navigation stops at the catalogue boundary`,await page.locator(`#${disabledId}`).isDisabled());
+    check(`${pointLabel(entry.codePoint)}: disabling the clicked navigation button keeps focus inside the dialog`,await page.evaluate(()=>Boolean(document.activeElement?.closest('#character-dialog'))));
+    await page.keyboard.press(key==='ArrowLeft'?'ArrowRight':'ArrowLeft');
+    await checkDialogIdentity(`${pointLabel(entry.codePoint)}: arrow navigation works immediately after reaching the boundary`,adjacent);
+    await page.keyboard.press(key);
+    await page.locator('#copy-character').focus();
+    await page.keyboard.press(key);
+    await checkDialogIdentity(`${pointLabel(entry.codePoint)}: keyboard navigation does not wrap`,entry);
+    await page.keyboard.press('Escape');
+  }
+
+  // The current allocation is contiguous. An isolated response fixture checks
+  // that future vacancies and data ordering do not become navigation targets.
+  const sparsePage=await context.newPage();
+  const omittedPoint=orderedEntries[10].codePoint;
+  await sparsePage.route('**/data/catalogue.json',route=>route.fulfill({json:{...catalogue,entries:orderedEntries.filter(entry=>entry.codePoint!==omittedPoint).reverse()}}));
+  await sparsePage.goto(new URL(`charts.html#u-${orderedEntries[9].codePoint.toString(16)}`,base).href,{waitUntil:'load'});
+  await sparsePage.waitForFunction(()=>document.body.dataset.catalogue==='ready'&&document.querySelector('#character-dialog').open);
+  await sparsePage.locator('#next-character').click();
+  await checkDialogIdentity('Next skips an unallocated position in numeric order',orderedEntries[11],sparsePage);
+  await sparsePage.locator('#previous-character').click();
+  await checkDialogIdentity('Previous skips an unallocated position in numeric order',orderedEntries[9],sparsePage);
+  await sparsePage.close();
 
   for(const width of [320,375,768,1440]){
     await page.setViewportSize({width,height:1000});
@@ -202,6 +298,22 @@ try {
         const unobscured=await page.addStyleTag({content:'.font-bar{position:static!important}'});
         await page.locator('.reference-sheet:visible').first().screenshot({path:path.join(output,`chart-sheet-${width}.png`)});
         await unobscured.evaluate(style=>style.remove());
+        const longestName=orderedEntries.reduce((longest,entry)=>entry.name.length>longest.name.length?entry:longest);
+        await openChartCharacter(longestName);
+        await page.locator('#dialog-font-weight').focus();
+        await page.keyboard.press('End');
+        await page.locator('#dialog-font-italic').check();
+        await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+        const dialogFits=await page.locator('#character-dialog').evaluate(dialog=>{
+          const bounds=dialog.getBoundingClientRect();
+          return bounds.left>=0&&bounds.right<=innerWidth+1&&bounds.top>=0&&bounds.bottom<=innerHeight+1&&dialog.scrollWidth<=dialog.clientWidth+1&&[...dialog.querySelectorAll('button,input,a,output')].every(control=>{const box=control.getBoundingClientRect();return box.left>=bounds.left&&box.right<=bounds.right+1;});
+        });
+        check(`${width}px: longest character name and all dialog controls fit without horizontal overflow`,dialogFits&&await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+        await page.screenshot({path:path.join(output,`character-dialog-${width}.png`)});
+        await page.locator('#dialog-font-italic').uncheck();
+        await page.locator('#dialog-font-weight').evaluate((input,value)=>{input.value=value;input.dispatchEvent(new Event('input',{bubbles:true}));},initialWeight);
+        await page.waitForFunction(()=>document.body.dataset.fonts==='ready');
+        await page.keyboard.press('Escape');
       }
       if(file==='index.html'){
         const before=await controls(),headerBounds=await page.locator('.brand-icon').boundingBox(),heroBounds=await page.locator('.emblem-glyph').boundingBox();
@@ -226,10 +338,14 @@ try {
   }
   await page.locator(`${visibleScreen} .chart-cell[data-code="${0xf2a00}"]`).focus();
   await page.keyboard.press('Enter');
+  await page.locator('#next-character').click();
+  await page.locator('#next-character').click();
+  await checkDialogIdentity('Paging before a responsive resize',orderedEntries[2]);
   await page.setViewportSize({width:375,height:1000});
+  check('Resizing while paging keeps keyboard focus inside the dialog',await page.evaluate(()=>Boolean(document.activeElement?.closest('#character-dialog'))));
   await page.keyboard.press('Escape');
   await page.waitForFunction(point=>document.activeElement?.dataset.code===String(point)&&document.activeElement.getClientRects().length>0,0xf2a00);
-  check('Closing character details after resize restores the visible originating chart cell',!(await page.locator('#character-dialog').isVisible())&&await page.evaluate(()=>document.activeElement.closest('table').dataset.columns)==='8');
+  check('Closing character details after paging and resize restores the visible originating chart cell',!(await page.locator('#character-dialog').isVisible())&&await page.evaluate(()=>document.activeElement.closest('table').dataset.columns)==='8');
   await page.setViewportSize({width:1440,height:1000});
   await page.locator('#font-weight').focus();await page.keyboard.press('End');
   await page.locator('#font-italic').check();
