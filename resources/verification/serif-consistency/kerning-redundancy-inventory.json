@@ -1,0 +1,59 @@
+{
+  "purpose": "Read-only source kerning redundancy inventory. Zero-valued records are retained by current strict preservation contracts; removal requires a separate effective-pair audit.",
+  "masters": [
+    {
+      "master": "QuintessentialSerif-Bold.ufo",
+      "explicitPairs": 1478656,
+      "zeroPairs": 1407843,
+      "nonzeroPairs": 70813,
+      "leftKeys": 1216,
+      "leftKeysWithOnlyZeroPairs": 479,
+      "kerningGroupKeys": 0,
+      "kerningPlistBytes": 72083493
+    },
+    {
+      "master": "QuintessentialSerif-BoldItalic.ufo",
+      "explicitPairs": 1478656,
+      "zeroPairs": 1456313,
+      "nonzeroPairs": 22343,
+      "leftKeys": 1216,
+      "leftKeysWithOnlyZeroPairs": 227,
+      "kerningGroupKeys": 0,
+      "kerningPlistBytes": 72060953
+    },
+    {
+      "master": "QuintessentialSerif-Italic.ufo",
+      "explicitPairs": 1478656,
+      "zeroPairs": 1475557,
+      "nonzeroPairs": 3099,
+      "leftKeys": 1216,
+      "leftKeysWithOnlyZeroPairs": 825,
+      "kerningGroupKeys": 0,
+      "kerningPlistBytes": 72044545
+    },
+    {
+      "master": "QuintessentialSerif-Regular.ufo",
+      "explicitPairs": 1478656,
+      "zeroPairs": 1443102,
+      "nonzeroPairs": 35554,
+      "leftKeys": 1216,
+      "leftKeysWithOnlyZeroPairs": 802,
+      "kerningGroupKeys": 0,
+      "kerningPlistBytes": 72046757
+    }
+  ],
+  "bothMasterZeroPairs": [
+    {
+      "posture": "Roman",
+      "pairKeysZeroInBothMasters": 1407714,
+      "pairKeysNonzeroInEitherMaster": 70942,
+      "fullCartesianPairMatrixVerified": true
+    },
+    {
+      "posture": "Italic",
+      "pairKeysZeroInBothMasters": 1456313,
+      "pairKeysNonzeroInEitherMaster": 22343,
+      "fullCartesianPairMatrixVerified": true
+    }
+  ]
+}

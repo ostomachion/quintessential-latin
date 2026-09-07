@@ -4,17 +4,11 @@ The original bodies, counters, width and incoming-arch ports stay fixed.
 Only the free end of a shared shaft acquires its native p foot or d head.
 """
 
+from stix_geometry import clean_metadata
+
 
 def _move(recording, dx=0):
     return [(op, tuple((x + dx, y) for x, y in points)) for op, points in recording]
-
-
-def _clean(value):
-    if isinstance(value, dict):
-        return {key: _clean(item) for key, item in value.items() if item is not None}
-    if isinstance(value, (tuple, list)):
-        return [_clean(item) for item in value if item is not None]
-    return value
 
 
 def _spine(font, turned):
@@ -55,7 +49,7 @@ def _spine(font, turned):
 
 def _bowl(font, kind, turned):
     import import_stix_foundation as s
-    from stix_double_bowl import fit_operation
+    from stix_geometry import fit_operation
     italic = bool(font["post"].italicAngle)
     if italic and kind == "double-bowl":
         from stix_double_bowl_italic import italic_normal_double_terminal, italic_turned_double_terminal
@@ -155,12 +149,12 @@ def prepared_terminal(font, kind, turned, extended=True):
     if not extended:
         from stix_extensions import _terminal
         recording, center, metadata = _terminal(font, kind, turned)
-        return s.rounded_recording(recording), _clean(metadata), center
+        return s.rounded_recording(recording), clean_metadata(metadata), center
     recording, metadata, center = _spine(font, turned) if kind == "spine" else _bowl(font, kind, turned)
     metadata.update(middleLegs="extended", extendedSharedStemDirection="ascender" if turned else "descender",
                     extendedSharedStemCenterX=center,
                     freeLegDonorCodePoint=0x64 if turned else 0x70)
-    return s.rounded_recording(recording), _clean(metadata), center
+    return s.rounded_recording(recording), clean_metadata(metadata), center
 
 
 def opposed_terminal(font, left_variant, right_variant, side="left", extended=True):
@@ -221,4 +215,4 @@ def opposed_terminal(font, left_variant, right_variant, side="left", extended=Tr
                     middleTerminalSourceCodePoint=code,
                     sourceLeftVariant=source_left, sourceRightVariant=source_right,
                     sigmoidAdvanceWidth=metadata["advanceWidth"])
-    return s.rounded_recording([*outer, *sum(contours[1:], [])]), _clean(metadata), tuple(centers)
+    return s.rounded_recording([*outer, *sum(contours[1:], [])]), clean_metadata(metadata), tuple(centers)

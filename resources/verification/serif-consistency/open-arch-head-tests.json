@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "weights": [
+    400,
+    500,
+    550,
+    600,
+    700
+  ],
+  "inventorySha256": "4b36502347fb8757c4fedb68c5ecca28a12209f0b18b00c72bcefd12034b31f7",
+  "sourceAndCompiledCaps": {
+    "sourceHeads": 966,
+    "uniqueHeadsPerFace": 483,
+    "compiled": [
+      {
+        "face": "Regular",
+        "heads": 483,
+        "maximumCoordinateDelta": 5.086263058728946e-06,
+        "fontSha256": "0dc2175677d9e85b54d6b72b158695702406fbc25fd9f6d576ad8cd5a5c37d7d"
+      },
+      {
+        "face": "Bold",
+        "heads": 483,
+        "maximumCoordinateDelta": 6.5822227384160215e-06,
+        "fontSha256": "ea010185eb2a98e282c5be98c466e7075a599107154f85bf49ff123e7a6b1cc0"
+      },
+      {
+        "face": "Roman-400",
+        "heads": 483,
+        "maximumCoordinateDelta": 0.5,
+        "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e"
+      },
+      {
+        "face": "Roman-500",
+        "heads": 483,
+        "maximumCoordinateDelta": 0.5767676091957128,
+        "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e"
+      },
+      {
+        "face": "Roman-550",
+        "heads": 483,
+        "maximumCoordinateDelta": 0.6131209188432649,
+        "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e"
+      },
+      {
+        "face": "Roman-600",
+        "heads": 483,
+        "maximumCoordinateDelta": 0.65064983875601,
+        "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e"
+      },
+      {
+        "face": "Roman-700",
+        "heads": 483,
+        "maximumCoordinateDelta": 0.7388059701493148,
+        "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e"
+      }
+    ],
+    "trueTypeCoordinateTolerance": 1.01,
+    "cffVersusQuantizedEndpointTolerance": 0.0001
+  },
+  "generatorDependencyClosure": [
+    {
+      "master": "Regular",
+      "glyphs": 1216,
+      "changed": 328
+    },
+    {
+      "master": "Bold",
+      "glyphs": 1216,
+      "changed": 328
+    },
+    {
+      "master": "Italic",
+      "glyphs": 1216,
+      "changed": 0
+    },
+    {
+      "master": "BoldItalic",
+      "glyphs": 1216,
+      "changed": 0
+    }
+  ],
+  "nativeDonorHeads": {
+    "heads": 25,
+    "maximumCoordinateDelta": 4.999999987376214e-07,
+    "endpointCurveTolerance": 1e-10,
+    "nonCapOperationsExact": true
+  }
+}

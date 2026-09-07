@@ -1,0 +1,14 @@
+test_all_unrelated_source_bytes_including_italic_and_kerning_are_frozen (__main__.SerifConsistencyPreservationTests.test_all_unrelated_source_bytes_including_italic_and_kerning_are_frozen) ... ok
+serif preservation capture Regular
+serif preservation capture Bold
+serif preservation capture Roman-400
+serif preservation capture Roman-500
+serif preservation capture Roman-550
+serif preservation capture Roman-600
+serif preservation capture Roman-700
+test_every_font_preserves_unrelated_ink_all_advances_mappings_and_positioning (__main__.SerifConsistencyPreservationTests.test_every_font_preserves_unrelated_ink_all_advances_mappings_and_positioning) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 28.853s
+
+OK

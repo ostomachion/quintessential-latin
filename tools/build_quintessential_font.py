@@ -507,10 +507,20 @@ def make_proof_data(donor_manifest: dict, donor_paths: dict[str, Path]) -> dict:
         ],
         "faces": [],
     }
+    head_targets = {entry['glyphName'] for entry in json.loads(
+        (ROOT / 'resources/serif-consistency-targets.json').read_text(encoding='utf-8'))['entries']}
     for posture in POSTURES:
         variable_path = OUTPUT / f"{posture.variable_basename}.ttf"
         built_variable = TTFont(variable_path)
         donor_variable = TTFont(donor_paths[posture.name])
+        # Proofs contain isolated outlines and advances, never positioned
+        # pairs. Avoid instantiating the dense kerning matrix for every proof
+        # weight. These are private in-memory copies; font outputs keep GPOS
+        # and GDEF intact. Outline/advance variation tables remain available.
+        for font in (built_variable, donor_variable):
+            for tag in ("GPOS", "GDEF"):
+                if tag in font:
+                    del font[tag]
         for weight, weight_name in NAMED_WEIGHTS:
             built = instantiateVariableFont(
                 built_variable, {AXIS_TAG: weight}, inplace=False, optimize=True
@@ -566,6 +576,12 @@ def make_proof_data(donor_manifest: dict, donor_paths: dict[str, Path]) -> dict:
                     "builtPath": path,
                     "adaptation": spec.adaptation_for(posture.italic),
                     "references": references,
+                    **({"openArchHeadRevision": {
+                        "design": "native-u-left-arm-right-stem-1",
+                        "donorCodePoint": 0x75,
+                        "donorPath": outline_data(donor, donor_cmap[0x75])[0],
+                        "note": "Free Roman heads use native u; the adaptation and references above describe the retained base recipe.",
+                    }} if not posture.italic and spec.glyph_name in head_targets else {}),
                 })
             proof["faces"].append(face)
             built.close()
@@ -631,6 +647,8 @@ def source_hashes() -> dict[str, str]:
         Path(__file__),
         Path(__file__).with_name("quintessential_font.py"),
         Path(__file__).with_name("import_stix_foundation.py"),
+        Path(__file__).with_name("stix_geometry.py"),
+        Path(__file__).with_name("refine_open_arch_heads.py"),
         Path(__file__).with_name("stix_arched_terminals.py"),
         Path(__file__).with_name("stix_repeated_arch.py"),
         Path(__file__).with_name("stix_double_bowl.py"),
@@ -658,6 +676,7 @@ def source_hashes() -> dict[str, str]:
         Path(__file__).with_name("export_glyph_catalogue.js"),
         ROOT / "resources/quintessential-latin-allocation.json",
         ROOT / "resources/italic-shaft-targets.json",
+        ROOT / "resources/serif-consistency-targets.json",
     ]
     files = []
     for path in paths:

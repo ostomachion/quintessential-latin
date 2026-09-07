@@ -34,6 +34,7 @@ from test_stemless_terminals import TARGET_IDS as REVISED_TERMINAL_IDS
 from test_stemless_terminals import recorded_outlines
 import hip_tail_revision
 import italic_shaft_revision
+import serif_consistency_revision
 from test_quintessential_font import (
     ALLOCATION, ALLOCATION_BY_ID, ALLOCATION_BY_NAME, ALLOCATION_ENTRIES,
     DONORS, DONOR_FILES, EXPECTED_AVAR, MAIN_SCRIPT_CMAP, OUTPUT, POSTURE_CMAPS, ROOT,
@@ -77,7 +78,8 @@ COMPILED = True
 
 
 def has_verified_revision(face, name):
-    return name in hip_tail_revision.TARGET_NAMES or italic_shaft_revision.is_revised(face, name)
+    return (name in hip_tail_revision.TARGET_NAMES or italic_shaft_revision.is_revised(face, name)
+            or serif_consistency_revision.is_revised(face, name))
 
 
 def assert_hip_revision(test, current, previous, name, face, *, source=False, instantiated=False):

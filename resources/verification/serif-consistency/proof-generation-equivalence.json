@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "comparison": "Fresh outline-only proof equals original full-layout proof in every existing field. Only explicit Roman u-head revision metadata was added.",
+  "glyphFaceRecordsCompared": 9728,
+  "addedHeadRevisionRecords": 1312,
+  "optimizedProofSeconds": 18.779,
+  "proofSha256": "55715ade65df2b8c8ed19efaaa89ae6e8d17e9a687e16245a72a9a2ac191d0a4"
+}

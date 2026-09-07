@@ -86,7 +86,7 @@ def _close_lower_hook(font, recording, metadata):
 def _close_descending_feet(font, recording, metadata):
     """The two native serif feet share a bar, with a smooth inner p/q return."""
     import import_stix_foundation as s
-    from stix_bowled_spine import fit_operation
+    from stix_geometry import fit_operation
     cmap = font.getBestCmap()
     left = _move(s.decomposed_recording(font, cmap[0x70]), metadata["leftLowerOffsetX"])
     right = _move(s.decomposed_recording(font, cmap[0x71]), metadata["rightLowerOffsetX"])
@@ -110,7 +110,7 @@ def _close_descending_feet(font, recording, metadata):
 
 def opposed_bowls_outline(font, code_point):
     import import_stix_foundation as s
-    from stix_bowled_spine import fit_operation
+    from stix_geometry import fit_operation
     from stix_bowled_spine_normal import _counter
 
     if font["post"].italicAngle:

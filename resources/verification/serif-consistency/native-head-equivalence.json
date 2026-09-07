@@ -1,0 +1,217 @@
+{
+  "purpose": "Independent elementary-quadratic check of all replaced native donor heads and exact retention outside the cap slots.",
+  "weights": [
+    400,
+    450,
+    500,
+    600,
+    700
+  ],
+  "headsChecked": 25,
+  "coordinateToleranceFontUnits": 1e-06,
+  "toleranceReason": "Existing six-decimal recording rounding of newly explicit implied quadratic midpoints.",
+  "endpointMastersExactlyEqual": true,
+  "maximumCoordinateDelta": 4.999999987376214e-07,
+  "results": [
+    {
+      "weight": 400,
+      "donorCodePoint": 613,
+      "slot": 6,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 400,
+      "donorCodePoint": 613,
+      "slot": 15,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 400,
+      "donorCodePoint": 623,
+      "slot": 2,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 400,
+      "donorCodePoint": 623,
+      "slot": 11,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 400,
+      "donorCodePoint": 623,
+      "slot": 29,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 450,
+      "donorCodePoint": 613,
+      "slot": 6,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 4.99999991632194e-07,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 450,
+      "donorCodePoint": 613,
+      "slot": 15,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 4.999999987376214e-07,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 450,
+      "donorCodePoint": 623,
+      "slot": 2,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 4.999999418942025e-07,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 450,
+      "donorCodePoint": 623,
+      "slot": 11,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 4.999999418942025e-07,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 450,
+      "donorCodePoint": 623,
+      "slot": 29,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 4.99999991632194e-07,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 500,
+      "donorCodePoint": 613,
+      "slot": 6,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0.0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 500,
+      "donorCodePoint": 613,
+      "slot": 15,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0.0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 500,
+      "donorCodePoint": 623,
+      "slot": 2,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 5.684341886080802e-14,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 500,
+      "donorCodePoint": 623,
+      "slot": 11,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 1.1368683772161603e-13,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 500,
+      "donorCodePoint": 623,
+      "slot": 29,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0.0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 600,
+      "donorCodePoint": 613,
+      "slot": 6,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 7.105427357601002e-15,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 600,
+      "donorCodePoint": 613,
+      "slot": 15,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0.0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 600,
+      "donorCodePoint": 623,
+      "slot": 2,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0.0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 600,
+      "donorCodePoint": 623,
+      "slot": 11,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 1.1368683772161603e-13,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 600,
+      "donorCodePoint": 623,
+      "slot": 29,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 7.105427357601002e-15,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 700,
+      "donorCodePoint": 613,
+      "slot": 6,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 700,
+      "donorCodePoint": 613,
+      "slot": 15,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 700,
+      "donorCodePoint": 623,
+      "slot": 2,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 700,
+      "donorCodePoint": 623,
+      "slot": 11,
+      "uHeadSide": "right",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    },
+    {
+      "weight": 700,
+      "donorCodePoint": 623,
+      "slot": 29,
+      "uHeadSide": "left",
+      "maximumElementaryCoordinateDelta": 0,
+      "bodyOperationsOutsideCapsExact": true
+    }
+  ]
+}

@@ -5,7 +5,7 @@ A rigid half-turn preserves its native slope for the lower-bowled forms;
 alpha/d/q/g supply the correctly oriented shaft endings.
 """
 
-from stix_bowled_spine import fit_operation, move
+from stix_geometry import fit_operation, move
 
 
 def italic_turned_spine(font, variant, *, arch_port=False):

@@ -5,7 +5,7 @@ the lower one. Paired counters describe one shared diagonal; every terminal
 and side-arch product reuses this body at its unchanged native span.
 """
 
-from stix_double_bowl import move, fit_operation
+from stix_geometry import fit_operation, move
 from stix_double_bowl_italic import _head, _native
 
 

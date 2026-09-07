@@ -7,20 +7,7 @@ Both endpoints execute the same operations; stems and endings stay native.
 """
 
 
-def move(recording, dx=0, dy=0, turn=False):
-    sign = -1 if turn else 1
-    return [(op, tuple((sign*x+dx, sign*y+dy) for x, y in points))
-            for op, points in recording]
-
-
-def fit_operation(operation, old_start, old_end, new_start, new_end):
-    op, points = operation
-    def fit(point):
-        return tuple(new_start[i] + (point[i]-old_start[i]) *
-                     (new_end[i]-new_start[i])/(old_end[i]-old_start[i])
-                     if old_end[i] != old_start[i] else point[i]+new_start[i]-old_start[i]
-                     for i in (0, 1))
-    return op, tuple(fit(point) for point in points)
+from stix_geometry import fit_operation, move
 
 
 def normal_body(font, body_code=0x62):

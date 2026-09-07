@@ -10,6 +10,12 @@ their advances, body placement, and kerning.
 The [Italic shaft alignment](italic-shaft-alignment.md) then aligns the donor
 halves of eighteen assembled Italic shafts and their derivatives, preserving
 advances and pairs between unrelated forms.
+The [serif consistency audit](serif-consistency-audit.md) subsequently unifies
+483 free open-arch heads in 328 Roman forms around native u, preserving every
+advance, kerning pair and contour outside the head regions. Reconstruct only
+those sources with `python tools/refine_open_arch_heads.py`; `--check` verifies
+the same reconstruction. The audit also records remaining terminal and join
+code that may benefit from consolidation.
 The four UFO masters
 and two designspaces are editable source; routine builds use only the checked-in
 STIX Two Text donors. Donor checksums are verified before compilation.

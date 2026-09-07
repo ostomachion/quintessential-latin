@@ -7,6 +7,8 @@ No prior family helper, donor, body counter, or sigmoid width is modified.
 Italic uses its independently drawn shafts and ribbons in a separate helper.
 """
 
+from stix_geometry import clean_metadata
+
 
 EXTENSION_FAMILIES = (
     (0xF2C00, 12, 0xF2A45), (0xF2C0C, 12, 0xF2A51),
@@ -26,15 +28,6 @@ FAMILY_NAMES = (
 
 def _move(recording, dx):
     return [(op, tuple((x + dx, y) for x, y in points)) for op, points in recording]
-
-
-def _plist_metadata(value):
-    """Omit absent optional recipe fields throughout the UFO lib tree."""
-    if isinstance(value, dict):
-        return {key: _plist_metadata(item) for key, item in value.items() if item is not None}
-    if isinstance(value, (tuple, list)):
-        return [_plist_metadata(item) for item in value if item is not None]
-    return value
 
 
 def _terminal(font, kind, turned):
@@ -154,7 +147,7 @@ def _triple_arch(font, code_point):
     contours = list(s.native_recording_contours(result))
     donor = metadata["archDonorCodePoint"]
     if donor == 0x26F:
-        source = s.decomposed_recording(font, font.getBestCmap()[0x26F])
+        source = s.open_arch_recording(font, 0x26F)
         native = list(s.native_recording_contours(source))
         left = s.contour_edges(native[1])[1]
         middle = s.contour_edges(native[0])[1]
@@ -263,4 +256,4 @@ def extensions_outline(font, code_point):
         metadata.update(arch_metadata)
     metadata.update(family=FAMILY_NAMES[index], extensionBaseCodePoint=base + variant,
                     shaftCount=4 if index in (1, 3, 4, 7, 8, 9) else 3)
-    return s.rounded_recording(result), _plist_metadata(metadata)
+    return s.rounded_recording(result), clean_metadata(metadata)

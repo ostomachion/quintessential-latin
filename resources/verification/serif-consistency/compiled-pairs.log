@@ -1,0 +1,11 @@
+serif compiled pairs Roman-400: 690112 ordered pairs; 3527 filled-intersection checks
+serif compiled pairs Roman-500: 690112 ordered pairs; 3709 filled-intersection checks
+serif compiled pairs Roman-550: 690112 ordered pairs; 20683 filled-intersection checks
+serif compiled pairs Roman-600: 690112 ordered pairs; 29513 filled-intersection checks
+serif compiled pairs Roman-700: 690112 ordered pairs; 38617 filled-intersection checks
+test_revised_caps_clear_every_catalogue_neighbor_in_both_directions_at_five_weights (test_serif_consistency_preservation.SerifConsistencyPreservationTests.test_revised_caps_clear_every_catalogue_neighbor_in_both_directions_at_five_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 192.438s
+
+OK

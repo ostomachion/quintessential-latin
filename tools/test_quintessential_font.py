@@ -1527,6 +1527,10 @@ class QuintessentialFontTests(unittest.TestCase):
                     for name, code in REPEATED_ARCH_BODY_DONORS.items():
                         with self.subTest(italic=italic, weight=weight, glyph=name):
                             expected = repeated_native_curve_segments(native, donor.getBestCmap()[code], code, italic)
+                            if code == 0x26F and not italic:
+                                # Open-arch heads now use u; their exact donor
+                                # curves are checked in test_open_arch_heads.
+                                expected = [segment for segment in expected if min(y for _, y in segment) < 350]
                             assert_contains_quadratics(self, quadratic_segments(glyphs, name), expected, 0.75,
                                                        (italic, weight, name))
                     for names, code, side, samples in (
@@ -1794,10 +1798,12 @@ class QuintessentialFontTests(unittest.TestCase):
                     for target in replaced_feet:
                         samples = (0.37, 25.37, 50.37, 100.37, 175.37, 250.37, 275.37)
                         if target == "uF2A1B":
-                            samples += (325.37, 375.37, 425.37, 450.37, 470.37)
+                            samples += ((325.37, 375.37, 425.37, 450.37, 470.37) if italic
+                                        else (325.37, 345.37))
                         # Replacing the half-serif must preserve both native
                         # shaft edges and the arch. The plain form also keeps
-                        # its native short heads above the bowl-height region.
+                        # its native short heads in Italic. Roman u heads have
+                        # separate donor-equality and localized-change checks.
                         for y in samples:
                             actual = scanline_crossings(built_set, target, y)
                             expected = scanline_crossings(donor_set, original, y)
@@ -2135,6 +2141,10 @@ class QuintessentialFontTests(unittest.TestCase):
                         donor_cmap = donor.getBestCmap()
                         built_set, donor_set = built.getGlyphSet(), donor.getGlyphSet()
                         direct_donors = {**DIRECT_DONORS, **({"uF2A0B": 0x0279} if italic else {})}
+                        if not italic:
+                            # Turned-m's bodies remain native; its three open
+                            # heads follow the same u rule as turned-h.
+                            direct_donors.pop("uF2A53")
                         for target, code_point in direct_donors.items():
                             original = donor_cmap[code_point]
                             coordinate_delta = maximum_coordinate_delta(
@@ -2416,12 +2426,19 @@ class QuintessentialFontTests(unittest.TestCase):
             {0x68}, {0x68, 0x70}, {0x265, 0x70, 0x251}, {0x265, 0x6C, 0x70, 0x251},
             {0x266}, {0x266, 0x70}, {0x75, 0x261, 0x251}, {0x75, 0x6C, 0x261, 0x251},
         )
+        head_targets = {entry['glyphName'] for entry in json.loads(
+            (ROOT / 'resources/serif-consistency-targets.json').read_text(encoding='utf-8'))['entries']}
         for face in proof["faces"]:
             face_codes = POSTURE_CMAPS[face["italic"]]
             self.assertEqual(tuple(glyph["codePoint"] for glyph in face["glyphs"]), tuple(face_codes))
             self.assertEqual({glyph["codePoint"]: glyph["id"] for glyph in face["glyphs"]},
                              {code: proof_ids[code] for code in face_codes})
             for glyph in face["glyphs"]:
+                revised_head = not face['italic'] and glyph['glyphName'] in head_targets
+                self.assertEqual('openArchHeadRevision' in glyph, revised_head)
+                if revised_head:
+                    self.assertEqual(glyph['openArchHeadRevision']['donorCodePoint'], 0x75)
+                    self.assertTrue(glyph['openArchHeadRevision']['donorPath'])
                 self.assertTrue(glyph["builtPath"])
                 self.assertTrue(glyph["adaptation"])
                 self.assertEqual(len(glyph["bounds"]), 4)

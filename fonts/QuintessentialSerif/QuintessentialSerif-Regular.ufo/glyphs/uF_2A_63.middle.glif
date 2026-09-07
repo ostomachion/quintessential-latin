@@ -58,16 +58,15 @@
       <point x="563" y="52"/>
       <point x="621" y="80"/>
       <point x="658" y="114" type="qcurve"/>
-      <point x="658" y="374" type="line" smooth="yes"/>
-      <point x="658" y="406"/>
-      <point x="636" y="421"/>
-      <point x="614" y="421" type="qcurve" smooth="yes"/>
-      <point x="604" y="421"/>
-      <point x="589" y="419"/>
-      <point x="589" y="419" type="qcurve"/>
-      <point x="589" y="448" type="line"/>
-      <point x="715" y="476" type="line"/>
-      <point x="741" y="476" type="line"/>
+      <point x="658" y="377" type="line" smooth="yes"/>
+      <point x="658" y="404"/>
+      <point x="644" y="428"/>
+      <point x="626.5" y="431.5" type="qcurve" smooth="yes"/>
+      <point x="609" y="435"/>
+      <point x="577" y="435" type="qcurve"/>
+      <point x="577" y="463" type="line"/>
+      <point x="717" y="478" type="line"/>
+      <point x="741" y="478" type="line"/>
       <point x="741" y="0" type="line" smooth="yes"/>
       <point x="741.0" y="-8.3333335"/>
       <point x="741.0" y="-25.0"/>
@@ -147,6 +146,10 @@
         <integer>1</integer>
         <key>middleLegs</key>
         <string>extended</string>
+        <key>openArchHeadDesign</key>
+        <string>native-u-left-arm-right-stem-1</string>
+        <key>openArchHeadDonorCodePoint</key>
+        <integer>117</integer>
         <key>recipeCodePoint</key>
         <integer>993891</integer>
         <key>sharedStemOwner</key>

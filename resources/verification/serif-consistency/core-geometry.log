@@ -1,0 +1,13 @@
+test_master_pairs_are_interpolation_compatible (test_quintessential_font.QuintessentialFontTests.test_master_pairs_are_interpolation_compatible) ... ok
+test_every_script_glyph_interpolates_at_sampled_weights (test_quintessential_font.QuintessentialFontTests.test_every_script_glyph_interpolates_at_sampled_weights) ... ok
+test_component_contours_stay_simple_and_keep_their_winding (test_quintessential_font.QuintessentialFontTests.test_component_contours_stay_simple_and_keep_their_winding) ... ok
+test_repeated_arches_preserve_native_arch_curves_and_middle_staves (test_quintessential_font.QuintessentialFontTests.test_repeated_arches_preserve_native_arch_curves_and_middle_staves) ... ok
+test_arch_bodies_preserve_their_native_free_side_curves (test_quintessential_font.QuintessentialFontTests.test_arch_bodies_preserve_their_native_free_side_curves) ... ok
+test_constructed_arch_terminals_preserve_their_native_donors (test_quintessential_font.QuintessentialFontTests.test_constructed_arch_terminals_preserve_their_native_donors) ... ok
+test_extended_arches_preserve_native_curves_and_existing_endings (test_quintessential_font.QuintessentialFontTests.test_extended_arches_preserve_native_curves_and_existing_endings) ... ok
+test_direct_mappings_match_stix_at_sampled_weights (test_quintessential_font.QuintessentialFontTests.test_direct_mappings_match_stix_at_sampled_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1357.995s
+
+OK

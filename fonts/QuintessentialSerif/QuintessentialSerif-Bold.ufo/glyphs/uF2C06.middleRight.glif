@@ -48,16 +48,15 @@
       <point x="768" y="84"/>
       <point x="816" y="108"/>
       <point x="836" y="128" type="qcurve"/>
-      <point x="836" y="365" type="line" smooth="yes"/>
-      <point x="836" y="399"/>
-      <point x="808" y="414"/>
-      <point x="785" y="414" type="qcurve" smooth="yes"/>
-      <point x="775" y="414"/>
-      <point x="759" y="412"/>
-      <point x="759" y="412" type="qcurve"/>
-      <point x="759" y="454" type="line"/>
-      <point x="909" y="482" type="line"/>
-      <point x="979" y="482" type="line"/>
+      <point x="836" y="363" type="line" smooth="yes"/>
+      <point x="836" y="392"/>
+      <point x="821" y="418"/>
+      <point x="802.5" y="421" type="qcurve" smooth="yes"/>
+      <point x="784" y="424"/>
+      <point x="751" y="424" type="qcurve"/>
+      <point x="751" y="465" type="line"/>
+      <point x="938" y="478" type="line"/>
+      <point x="979" y="478" type="line"/>
       <point x="979" y="250" type="line" smooth="yes"/>
       <point x="979.0" y="241.666666625"/>
       <point x="979.1164772727274" y="224.99999991382575"/>
@@ -101,16 +100,15 @@
       <point x="296" y="-12"/>
       <point x="212" y="84"/>
       <point x="212" y="183" type="qcurve" smooth="yes"/>
-      <point x="212" y="365" type="line" smooth="yes"/>
-      <point x="212" y="399"/>
-      <point x="184" y="414"/>
-      <point x="161" y="414" type="qcurve" smooth="yes"/>
-      <point x="151" y="414"/>
-      <point x="135" y="412"/>
-      <point x="135" y="412" type="qcurve"/>
-      <point x="135" y="454" type="line"/>
-      <point x="285" y="482" type="line"/>
-      <point x="355" y="482" type="line"/>
+      <point x="212" y="359" type="line" smooth="yes"/>
+      <point x="212" y="390"/>
+      <point x="200" y="417"/>
+      <point x="184.5" y="420.5" type="qcurve" smooth="yes"/>
+      <point x="169" y="424"/>
+      <point x="142" y="424" type="qcurve"/>
+      <point x="142" y="465" type="line"/>
+      <point x="308" y="478" type="line"/>
+      <point x="355" y="478" type="line"/>
       <point x="355" y="205" type="line" smooth="yes"/>
       <point x="355" y="158"/>
       <point x="372" y="105"/>
@@ -177,6 +175,10 @@
         <string>partial</string>
         <key>nativePosture</key>
         <string>Roman</string>
+        <key>openArchHeadDesign</key>
+        <string>native-u-left-arm-right-stem-1</string>
+        <key>openArchHeadDonorCodePoint</key>
+        <integer>117</integer>
         <key>recipeCodePoint</key>
         <integer>994310</integer>
         <key>rightArchAttachmentY</key>

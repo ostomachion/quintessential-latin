@@ -2,6 +2,7 @@
 
 Current replacement records are verified before older preservation tests may
 recover the exact preceding source bytes, outlines, metrics, or font tables.
+The later Roman u-head correction is validated and rewound first.
 """
 from __future__ import annotations
 
@@ -21,6 +22,7 @@ from fontTools.varLib.instancer import instantiateVariableFont
 from ufoLib2 import Font
 
 from font_geometry_helpers import outline
+import serif_consistency_revision
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
@@ -144,6 +146,7 @@ def load_revision():
 def historical_source_bytes(path, data=None):
     path = Path(path)
     data = path.read_bytes() if data is None else data
+    data = serif_consistency_revision.historical_source_bytes(path, data)
     relative = path.relative_to(ROOT).as_posix()
     if relative in load_baseline()["kerning"]:
         assert digest(data) == load_revision()["kerning"][relative], (relative, "Unverified aligned Italic kerning")
@@ -156,6 +159,8 @@ def historical_source_bytes(path, data=None):
 
 
 def historical_outline(face, name, actual, *, source=False, instantiated=False):
+    actual = serif_consistency_revision.historical_outline(face, name, actual,
+                                                          source=source, instantiated=instantiated)
     if not is_revised(face, name):
         return actual
     if instantiated:
@@ -167,6 +172,7 @@ def historical_outline(face, name, actual, *, source=False, instantiated=False):
 
 
 def historical_metrics(face, name, actual):
+    actual = serif_consistency_revision.historical_metrics(face, name, actual)
     if not is_revised(face, name):
         return actual
     assert list(actual) == load_revision()["geometry"][face][name]["metrics"], (face, name, "Unverified aligned Italic metrics")
@@ -174,6 +180,7 @@ def historical_metrics(face, name, actual):
 
 
 def historical_tables(filename, actual):
+    actual = serif_consistency_revision.historical_tables(filename, actual)
     before = load_baseline()["tables"][filename]
     expected = {**before, **load_revision()["tables"][filename]}
     assert actual == expected, (filename, "Unverified aligned Italic font table", sorted(
@@ -221,6 +228,7 @@ def verify_aggregate_metrics(path):
 
 
 def verify_sources():
+    serif_consistency_revision.verify_sources()
     for relative, expected in load_revision()["sourceGlyphs"].items():
         assert digest((ROOT / relative).read_bytes()) == expected, relative
     for relative in load_revision()["kerning"]:

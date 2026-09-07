@@ -64,16 +64,15 @@
       <point x="505" y="52"/>
       <point x="563" y="80"/>
       <point x="600" y="114" type="qcurve"/>
-      <point x="600" y="374" type="line" smooth="yes"/>
-      <point x="600" y="406"/>
-      <point x="578" y="421"/>
-      <point x="556" y="421" type="qcurve" smooth="yes"/>
-      <point x="546" y="421"/>
-      <point x="531" y="419"/>
-      <point x="531" y="419" type="qcurve"/>
-      <point x="531" y="448" type="line"/>
-      <point x="657" y="476" type="line"/>
-      <point x="683" y="476" type="line"/>
+      <point x="600" y="377" type="line" smooth="yes"/>
+      <point x="600" y="404"/>
+      <point x="586" y="428"/>
+      <point x="568.5" y="431.5" type="qcurve" smooth="yes"/>
+      <point x="551" y="435"/>
+      <point x="519" y="435" type="qcurve"/>
+      <point x="519" y="463" type="line"/>
+      <point x="659" y="478" type="line"/>
+      <point x="683" y="478" type="line"/>
       <point x="683" y="0" type="line" smooth="yes"/>
       <point x="683.0" y="-8.3333335"/>
       <point x="683.0" y="-25.0"/>
@@ -138,6 +137,10 @@
         <string>turned-arched-bowled-spine-descender</string>
         <key>method</key>
         <string>Native a/turned-a diagonal belly with a separate enclosed counter, native upright stem endings, a flat lower epsilon finish in upper-bowled forms and a's native upper ball in lower-bowled forms; fitted stem joins.</string>
+        <key>openArchHeadDesign</key>
+        <string>native-u-left-arm-right-stem-1</string>
+        <key>openArchHeadDonorCodePoint</key>
+        <integer>117</integer>
         <key>recipeCodePoint</key>
         <integer>994130</integer>
         <key>shaftOffsetX</key>

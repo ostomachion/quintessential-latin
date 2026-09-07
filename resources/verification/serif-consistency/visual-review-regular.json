@@ -1,0 +1,27 @@
+{
+  "reviewer": "root",
+  "status": "no new visible glyph defects observed",
+  "coverage": "All 328 Regular before/after pairs, plus endpoint base specimens",
+  "files": {
+    "docs\\images\\open-arch-heads\\all-400-01.png": "e2ae2fbf82bf0b05f379bbbba79bd1224b30b5d6dbd4992117fe62777fbe4bf1",
+    "docs\\images\\open-arch-heads\\all-400-02.png": "bcc48b6161df8b7c57dec2e6bec88a94382f33ad2311130a26828e33fef6dd9e",
+    "docs\\images\\open-arch-heads\\all-400-03.png": "a51f637fb1e5a0709614f1749a6babb92f078df1eca43ab95a4cf498a1fa079e",
+    "docs\\images\\open-arch-heads\\all-400-04.png": "090d6bb80b8de15e555b3e3189dfea7bd6eaeed0fcc4abaf87c1b5f0f1651c5c",
+    "docs\\images\\open-arch-heads\\all-400-05.png": "5bdf6336569b7d64a728d2e3e4cab88e67146b67e5d19501ddc914a314e0c876",
+    "docs\\images\\open-arch-heads\\all-400-06.png": "20644348cd512587398963ab0ca484133b24e62ffe65285280a99d5238f73a2b",
+    "docs\\images\\open-arch-heads\\all-400-07.png": "e5a3b12f041de79c501e458d7370a5baf02ce1c09a83242942b243afe952ebf4",
+    "docs\\images\\open-arch-heads\\all-400-08.png": "91fecec2e4b1420a256ec9b372688c0fa6db1682e81c5d92012f8a6e490051eb",
+    "docs\\images\\open-arch-heads\\all-400-09.png": "fe206d3ebb7cece11ca111e17c79484779fb91ddce92f64cecf7d59da450ac08",
+    "docs\\images\\open-arch-heads\\all-400-10.png": "a602cb0cec62dcd6e84bd62d07b9ad7d2f5184469bbf92d85fc1d4daca49793e",
+    "docs\\images\\open-arch-heads\\all-400-11.png": "feca8e11a1cdc40330ba6e197c8b4c45c19e8c9e570926639ade655ed5fd8f86",
+    "docs\\images\\open-arch-heads\\base-400.png": "67919cf54dca29ba1a2045ac940bd2a60ebd5ec8d4e1bd0b854fa3aa2bafe9cd",
+    "docs\\images\\open-arch-heads\\base-700.png": "5a77db11c7f18a1dd787704951bb4d8fecffc03fbaa1f0bd643beee6be46f334"
+  },
+  "findings": [
+    "The u-based heads have consistent top heights and smoother entrances.",
+    "Shaft connections remain straight; bowls, arch curves and counters retain their prior appearance.",
+    "No glyph clipping observed. Text-size samples fit below display samples.",
+    "Long proof captions are abbreviated; the complete names are in docs/open-arch-head-inventory.md."
+  ],
+  "authorAcceptance": false
+}

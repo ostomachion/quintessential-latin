@@ -1,0 +1,79 @@
+{
+  "purpose": "Exhaustive generator dependency closure of native u-head normalization; geometry only, metadata ignored.",
+  "baseline": "Current generators with only import_stix_foundation.open_arch_recording replaced by raw pinned donor decomposition.",
+  "inventoryFile": "resources/serif-consistency-targets.json",
+  "inventorySha256": "4b36502347fb8757c4fedb68c5ecca28a12209f0b18b00c72bcefd12034b31f7",
+  "masters": [
+    {
+      "master": "Regular",
+      "glyphsChecked": 1216,
+      "changedGlyphs": 328,
+      "unchangedGlyphs": 888,
+      "matchesIndependentTargetInventory": true,
+      "unexpectedChangedGlyphNames": [],
+      "missingChangedGlyphNames": [],
+      "baselineOutlinesSha256": "c646a3fb7210c2e4a77eaacdbebc503b8fc71ee66955b444bcdc31e80584c80a",
+      "currentOutlinesSha256": "2bb5a4ab2d2daf770de71224be8686b149d6a3c86c6f4f357204cf120a72d5fc"
+    },
+    {
+      "master": "Bold",
+      "glyphsChecked": 1216,
+      "changedGlyphs": 328,
+      "unchangedGlyphs": 888,
+      "matchesIndependentTargetInventory": true,
+      "unexpectedChangedGlyphNames": [],
+      "missingChangedGlyphNames": [],
+      "baselineOutlinesSha256": "2430dc8035ea409da13cefb87fe93d9b077ad4cfb5fbadad1beb7571ec5d672f",
+      "currentOutlinesSha256": "9fa44d4e9e08a82405d4420231312ee91e6404157af015001af95ada8522bb84"
+    },
+    {
+      "master": "Italic",
+      "glyphsChecked": 1216,
+      "changedGlyphs": 0,
+      "unchangedGlyphs": 1216,
+      "matchesIndependentTargetInventory": true,
+      "unexpectedChangedGlyphNames": [],
+      "missingChangedGlyphNames": [],
+      "baselineOutlinesSha256": "7267e572ac25402fcd52d3d4e8210f8462d8d8f3123b8c9e77a6d9a995f91df3",
+      "currentOutlinesSha256": "7267e572ac25402fcd52d3d4e8210f8462d8d8f3123b8c9e77a6d9a995f91df3"
+    },
+    {
+      "master": "BoldItalic",
+      "glyphsChecked": 1216,
+      "changedGlyphs": 0,
+      "unchangedGlyphs": 1216,
+      "matchesIndependentTargetInventory": true,
+      "unexpectedChangedGlyphNames": [],
+      "missingChangedGlyphNames": [],
+      "baselineOutlinesSha256": "53babb337d46d48192aea8fba78efaef2fbd725dd693d7cdce6bdf6249f73fac",
+      "currentOutlinesSha256": "53babb337d46d48192aea8fba78efaef2fbd725dd693d7cdce6bdf6249f73fac"
+    }
+  ],
+  "glyphMasterComparisons": 4864,
+  "allChangedSetsMatch": true,
+  "inputSha256": {
+    "tools/import_stix_foundation.py": "b6a7632594fb7b07a0cd7e80c08cd9f2e17ebbc0a97832368697cfcc89497068",
+    "tools/quintessential_font.py": "0730e9eed8bfa9c56ebf1914a82ab24ea6624d5fd8cf8f527bf1d7c694d2bf29",
+    "tools/stix_arch_spine_joins.py": "e23bd676868c0d16f6397b365777b9870dbbcc2db39f4451a85d0898ec101606",
+    "tools/stix_arched_opposed_bowls.py": "66ad494a320478bdb9266de4b5925dc6f2e213032ae85fa29ea8fd70b1217cfc",
+    "tools/stix_arched_terminals.py": "58538b546545c0872255e11c5e3b12f1077e111c0d3c2842e362c26fbab17a21",
+    "tools/stix_bowled_spine.py": "a78a24e2d7289dfa9b7eaabecc925a358281cf60532c1de698a70b4a436e8839",
+    "tools/stix_bowled_spine_italic.py": "881d74dbc487e5d71c81cec490ec945170dd8a9c0109f70c44275d31b0d60dff",
+    "tools/stix_bowled_spine_italic_normal.py": "128004ae6913d0b082ad9d3c9c40232c420b3f8f8f03debf132127787643900c",
+    "tools/stix_bowled_spine_normal.py": "f29a44dac26e2b9856b4d22c86f47ab3bbe208e1066127d210f637fa17fc50dc",
+    "tools/stix_compact_spine.py": "dcc48dbc39b2ff7c1f7aa747e3f4abae8aeb2860e7e0a80e31c2dd90509a65ad",
+    "tools/stix_double_bowl.py": "11789f859699a7eb17e77415d242b7b32b1caa5c2daed3c9efcce76680f722a3",
+    "tools/stix_double_bowl_italic.py": "2658e4a9efd6f58f8fa4dc8622af0bbc57173181ac7aacfded1710cd4805edae",
+    "tools/stix_extensions.py": "2768197ab64bedbe65cb825730379f49797e28287baeadb7c4099abc037d5093",
+    "tools/stix_extensions_italic.py": "33d8014844559bc13f0664da39cb798ba61f0c66145377ac09097f005721ae15",
+    "tools/stix_geometry.py": "f1d227cbd67ed7ca087bae1a663bf8d570413d7fb8d6c805756584c14f14b970",
+    "tools/stix_middle_hook_joins.py": "337e46d4ca6a8387f0ea18dfcb5c07b20a958d30c16e3ee100471e2e7f217518",
+    "tools/stix_middle_legs.py": "e34ab3144a8c4bde0b7a39cd6a08c8dab5106ccfbbd269f6fe5389956a055a30",
+    "tools/stix_middle_terminals.py": "34765708f46865cb420f5bcdf7b27632c6d2833b5a4b2cfad94ddef708aa79d7",
+    "tools/stix_opposed_bowls.py": "d10bec3f9ebb1f58ed3688959df401758c32e21912d375681d3e94430b84938e",
+    "tools/stix_opposed_bowls_italic.py": "7955d91f187e0efc965897fa29748942fd595f63a15b8671ebc1edc54685b228",
+    "tools/stix_repeated_arch.py": "e973b07e1108ef6d3af5ebeb13ee1faff2952052bfcdc749ec218ae74c3055ae",
+    "tools/stix_stemless.py": "eae52b00a819b3336c52b437d28c36e9afc7b0b0521753059365ae04ffb38dae"
+  },
+  "elapsedSeconds": 43.3
+}

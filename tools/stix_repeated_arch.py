@@ -145,7 +145,7 @@ def repeated_arch_outline(font, code_point):
     body_code, left_upper, left_lower, right_upper, right_lower = REPEATED_ARCH_RECIPES[code_point]
     italic = bool(font["post"].italicAngle)
     name = font.getBestCmap()[body_code]
-    result = stix.decomposed_recording(font, name)
+    result = stix.open_arch_recording(font, body_code)
     metadata = {"archDonorCodePoint": body_code, "archCount": 2,
                 "advanceWidth": font["hmtx"][name][0]}
     if not any((left_upper, left_lower, right_upper, right_lower)):

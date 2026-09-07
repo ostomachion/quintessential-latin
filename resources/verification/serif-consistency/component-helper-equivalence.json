@@ -1,0 +1,29 @@
+{
+  "purpose": "Exact duplicate helper consolidation only; old definitions captured before editing",
+  "moduleBindings": 16,
+  "masters": [
+    {
+      "master": "Regular",
+      "glyphs": 1216,
+      "identicalOutlinesAndMetadata": true
+    },
+    {
+      "master": "Bold",
+      "glyphs": 1216,
+      "identicalOutlinesAndMetadata": true
+    },
+    {
+      "master": "Italic",
+      "glyphs": 1216,
+      "identicalOutlinesAndMetadata": true
+    },
+    {
+      "master": "BoldItalic",
+      "glyphs": 1216,
+      "identicalOutlinesAndMetadata": true
+    }
+  ],
+  "totalGlyphs": 4864,
+  "elapsedSeconds": 29.13,
+  "capturedDefinitionsSha256": "2839b2c1e8c7fa0ac38efd94a2ccba12d4f47ec215ef3da894ec09191dbd3e1f"
+}

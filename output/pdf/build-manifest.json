@@ -8,10 +8,10 @@
     "weight": 400
   },
   "sources": {
-    "resources/catalogue.json": "763775f360109202271952a5524e5aec3c218ca8a8d074762059423962967b6f",
+    "resources/catalogue.json": "07ad0ed04781e7edb9527cc66d291e7bb5ffa78b47783bdaadb951ce4ce352e2",
     "resources/chart-presentation.json": "3a3f99275e4c9dde49f1c46ad2b04445c3a82c085a8e40e8fb8eec3420c53aa9",
     "docs/proposal.json": "83837aaa6229b690cf0781d3e105e1240c9650cec61d6188c9d8a854fd67bfeb",
-    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "ded19d02500bc4626102047d4c61967c1824011fbba11fe75b2bc31bccee6f52",
+    "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e",
     "resources/fonts/STIXTwoText/STIXTwoText-VariableFont_wght.ttf": "9a8cb68386dc968c6bbd52f5ec4be384a289d114a2b8d21b5620b273face0072",
     "resources/fonts/SourceSans3/SourceSans3-Light.ttf": "fcc10d83a12844e7dc699b1bb85f65f0d1bb0179de216feb5d28f806500f7cef",
     "resources/fonts/SourceSans3/SourceSans3-Regular.ttf": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f",
@@ -22,23 +22,23 @@
   },
   "outputs": {
     "quintessential-latin.pdf": {
-      "sha256": "2767bc1ba4c2c28a944bfe7b7325869c696c741e79fe186b2033da2e9281f5ae",
-      "bytes": 100454,
+      "sha256": "4fa32a60bff2a8ee94a30da31de2cbda3396d371e359c516b1fe7537479e1339",
+      "bytes": 100496,
       "pages": 6
     },
     "quintessential-latin-extended-a.pdf": {
-      "sha256": "f9e8be468ba3f0cd48dc4092a5e57129da6fa81e663acd9e845d92172bd7aa8c",
-      "bytes": 105996,
+      "sha256": "2e9058fee68bb194be7b48d4bf6c7a6108b2370fa081fda94d9fe8ab7c83e974",
+      "bytes": 106004,
       "pages": 7
     },
     "quintessential-latin-extended-b.pdf": {
-      "sha256": "4637bbd54ec5e3987bdbed377bc17dfdc47b6b39b3592ce33956e9abf55a9e3c",
-      "bytes": 171011,
+      "sha256": "b98d4f61605abac698ec5b13773eac55af7fc8eb2af073f81c8531e98d15a747",
+      "bytes": 171039,
       "pages": 20
     },
     "quintessential-latin-catalogue.pdf": {
-      "sha256": "4657b3dd238d93f3015d49628616754b72b388e06e07aa092e086a52596b7251",
-      "bytes": 238247,
+      "sha256": "48f6b601a16c5050f4a6dc84f5130328957a09358b09eeb0405cb3f0740f93fb",
+      "bytes": 238320,
       "pages": 33
     },
     "quintessential-latin-proposal.pdf": {

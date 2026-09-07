@@ -82,16 +82,15 @@
       <point x="547" y="52"/>
       <point x="605" y="80"/>
       <point x="642" y="114" type="qcurve"/>
-      <point x="642" y="374" type="line" smooth="yes"/>
-      <point x="642" y="406"/>
-      <point x="620" y="421"/>
-      <point x="598" y="421" type="qcurve" smooth="yes"/>
-      <point x="588" y="421"/>
-      <point x="573" y="419"/>
-      <point x="573" y="419" type="qcurve"/>
-      <point x="573" y="448" type="line"/>
-      <point x="699" y="476" type="line"/>
-      <point x="725" y="476" type="line"/>
+      <point x="642" y="377" type="line" smooth="yes"/>
+      <point x="642" y="404"/>
+      <point x="628" y="428"/>
+      <point x="610.5" y="431.5" type="qcurve" smooth="yes"/>
+      <point x="593" y="435"/>
+      <point x="561" y="435" type="qcurve"/>
+      <point x="561" y="463" type="line"/>
+      <point x="701" y="478" type="line"/>
+      <point x="725" y="478" type="line"/>
       <point x="725" y="0" type="line" smooth="yes"/>
       <point x="725.0" y="-8.3333335"/>
       <point x="725.0" y="-25.0"/>
@@ -175,6 +174,10 @@
         <integer>42</integer>
         <key>method</key>
         <string>Native side arch joined through its shared shaft to the compact opposed-bowl body; two unchanged diagonal body counters and native outer-shaft endings. The sigmoid is translated rigidly when needed and keeps its native width. Roman only.</string>
+        <key>openArchHeadDesign</key>
+        <string>native-u-left-arm-right-stem-1</string>
+        <key>openArchHeadDonorCodePoint</key>
+        <integer>117</integer>
         <key>opticalReference</key>
         <string>STIX Two Text a, turned a, b, p and alpha</string>
         <key>opticalRevision</key>

@@ -5,7 +5,8 @@ interior ribbon adds the third arch by translation; receiving terminals keep
 their own slanted shafts and body counters. No Roman contour is transformed.
 """
 
-from stix_extensions import EXTENSION_FAMILIES, FAMILY_NAMES, _move, _plist_metadata
+from stix_extensions import EXTENSION_FAMILIES, FAMILY_NAMES, _move
+from stix_geometry import clean_metadata
 
 
 def italic_terminal(font, kind, turned):
@@ -215,4 +216,4 @@ def italic_extensions_outline(font, code_point):
         metadata.update(arch_metadata)
     metadata.update(family=FAMILY_NAMES[index], extensionBaseCodePoint=base + variant,
                     shaftCount=4 if index in (1, 3, 4, 7, 8, 9) else 3)
-    return s.rounded_recording(result), _plist_metadata(metadata)
+    return s.rounded_recording(result), clean_metadata(metadata)

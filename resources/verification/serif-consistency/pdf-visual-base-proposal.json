@@ -1,0 +1,84 @@
+{
+  "reviewer": "root",
+  "scope": "Rendered layout and glyph placement review; no publication or author acceptance claimed.",
+  "documents": [
+    {
+      "pdf": "quintessential-latin-proposal.pdf",
+      "pageCount": 10,
+      "pages": [
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-01.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-02.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-03.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-04.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-05.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-06.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-07.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-08.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-09.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/page-10.png"
+      ],
+      "contacts": [
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-1.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-2.png",
+        ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-3.png"
+      ],
+      "pdfSha256": "89686dfe51272cc07738ffb0d7ec6b15444b35109f963f50f55e601623d140b8",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-01.png": "6b704920826a1cacbec437c392aadce2a3bf360ebbaecb19e3460422bd23a499",
+        "page-02.png": "f7025b049a8074e3b38097e6782accf502a203caffa8a811d7a838882392f6a2",
+        "page-03.png": "e04182d39590440e3c7e1e8ccad74f4d8988950b841431691de8bdb2167b74bd",
+        "page-04.png": "ce4a772486136e4695bd473126c694157ddc88d18924bc6eb7f6e0e0ac767713",
+        "page-05.png": "13ea3916b7037da9a055a0bfb99c4539bb59066845290a7ffd7b1197cdce8166",
+        "page-06.png": "8878e937ef0b92d04c8a2ca51613bc650c3cd4e69bf144041e239969b345f420",
+        "page-07.png": "6c1e1a330bdb17d772896cc2d53660360d91a0fbafddbf631d5c53c0ffb7f560",
+        "page-08.png": "ae33536351e282d85537150517fc403010d3a99b399231abc4ec254c15434ff0",
+        "page-09.png": "579ae13a56a92cf14e6c626b9b02f739052dc240110455166e1be7dbeed5d43e",
+        "page-10.png": "1dadf6cdb24be78580e188ecac63e28102c1e48fac1c048e12762d1a5ee2006e"
+      }
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "pageCount": 6,
+      "pages": [
+        ".tmp/serif-pdf-review/quintessential-latin/page-1.png",
+        ".tmp/serif-pdf-review/quintessential-latin/page-2.png",
+        ".tmp/serif-pdf-review/quintessential-latin/page-3.png",
+        ".tmp/serif-pdf-review/quintessential-latin/page-4.png",
+        ".tmp/serif-pdf-review/quintessential-latin/page-5.png",
+        ".tmp/serif-pdf-review/quintessential-latin/page-6.png"
+      ],
+      "contacts": [
+        ".tmp/serif-pdf-review/quintessential-latin/contact-1.png",
+        ".tmp/serif-pdf-review/quintessential-latin/contact-2.png"
+      ],
+      "pdfSha256": "4fa32a60bff2a8ee94a30da31de2cbda3396d371e359c516b1fe7537479e1339",
+      "dpi": 110,
+      "renderer": "pdftoppm version 26.07.0",
+      "renderedPageSha256": {
+        "page-1.png": "059a743e62b30063913f3647ae239f6b88bd4ce7600b31572a35786bbe872581",
+        "page-2.png": "0e39babcd59c65814f3fa5d14aeda1cf3d087cb56efb418dc4e732dc3f043d84",
+        "page-3.png": "1b653cc691a4a9bf27e2734d2a51fe915d0fe1d3ca2cd8e3039bb8f5270d00de",
+        "page-4.png": "cef1b89492e038692983396c996c17e5711e2264f5211c1be359e37e20d84b31",
+        "page-5.png": "ee22b2be8327dd9250f1760c0e3db351544ed4a1ed59f3350e29e11a10a8db27",
+        "page-6.png": "52a5b735525074daa7b5071e3a238a998d32399a56dbfbc4a6a9862001dceab0"
+      }
+    }
+  ],
+  "reviewedContactSheets": [
+    ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-1.png",
+    ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-2.png",
+    ".tmp/serif-pdf-review/quintessential-latin-proposal/contact-3.png",
+    ".tmp/serif-pdf-review/quintessential-latin/contact-1.png",
+    ".tmp/serif-pdf-review/quintessential-latin/contact-2.png"
+  ],
+  "reviewedFullPages": [
+    ".tmp/serif-pdf-review/quintessential-latin/page-2.png"
+  ],
+  "findings": [
+    "All 16 base-chart/proposal pages reviewed on five contact sheets; base chart page 2 inspected at full rendering size.",
+    "No clipped glyphs, text overflow, overlapping entries, broken headers or footer collisions found.",
+    "U+F2A2B aligns with its u-based neighbors in the base chart. Final short name-list page and proposal reference continuation are intact."
+  ]
+}

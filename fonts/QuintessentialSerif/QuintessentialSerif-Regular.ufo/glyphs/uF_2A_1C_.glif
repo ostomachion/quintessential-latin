@@ -15,16 +15,15 @@
       <point x="101" y="77"/>
       <point x="91" y="142"/>
       <point x="91" y="173" type="qcurve" smooth="yes"/>
-      <point x="91" y="380" type="line" smooth="yes"/>
-      <point x="91" y="412"/>
-      <point x="69" y="427"/>
-      <point x="47" y="427" type="qcurve" smooth="yes"/>
-      <point x="37" y="427"/>
-      <point x="22" y="425"/>
-      <point x="22" y="425" type="qcurve"/>
-      <point x="22" y="454" type="line"/>
-      <point x="148" y="482" type="line"/>
-      <point x="174" y="482" type="line"/>
+      <point x="91" y="376" type="line" smooth="yes"/>
+      <point x="91" y="403"/>
+      <point x="80" y="428"/>
+      <point x="65" y="431.5" type="qcurve" smooth="yes"/>
+      <point x="50" y="435"/>
+      <point x="23" y="435" type="qcurve"/>
+      <point x="23" y="463" type="line"/>
+      <point x="152" y="478" type="line"/>
+      <point x="174" y="478" type="line"/>
       <point x="174" y="203" type="line" smooth="yes"/>
       <point x="174" y="162"/>
       <point x="186" y="93"/>
@@ -93,6 +92,10 @@
         <integer>295</integer>
         <key>method</key>
         <string>Native turned-h arch with the l ascender and complete p descender finish on the right; the turned-h advance is retained.</string>
+        <key>openArchHeadDesign</key>
+        <string>native-u-left-arm-right-stem-1</string>
+        <key>openArchHeadDonorCodePoint</key>
+        <integer>117</integer>
         <key>recipeCodePoint</key>
         <integer>993820</integer>
         <key>upperBodyCutY</key>

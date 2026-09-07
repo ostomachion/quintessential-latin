@@ -370,5 +370,5 @@ def middle_legs_outline(font, recipe_code_point, middle_leg_extensions=None):
         metadata.update(middleLegExtensions=list(selection), middleLegCount=len(selection),
                         extendedMiddleLegCount=sum(selection),
                         middleLegs="extended" if all(selection) else "partial" if any(selection) else "short")
-    from stix_extensions import _plist_metadata
-    return s.rounded_recording(result), _plist_metadata(metadata)
+    from stix_geometry import clean_metadata
+    return s.rounded_recording(result), clean_metadata(metadata)

@@ -377,6 +377,41 @@ def roman_turned_arm_outline(font: TTFont) -> tuple[list[tuple[str, tuple]], flo
     return rounded_recording(recording), rounded(offset)
 
 
+def open_arch_recording(font: TTFont, code: int) -> list[tuple[str, tuple]]:
+    """Use native u heads on Roman turned-h/m open arches.
+
+    The body, shaft widths and advance remain native. Keep the operation
+    slots used by the pinned donor splice recipes: u's three quadratic
+    segments are split at an implied on-curve point, without refitting them.
+    Left and middle arms use u's left head; the final stem uses its right
+    head. Italic already has the appropriate entrance and stays unchanged.
+    """
+    base = decomposed_recording(font, font.getBestCmap()[code])
+    if font["post"].italicAngle or code not in (0x265, 0x26F):
+        return base
+    u = decomposed_recording(font, font.getBestCmap()[0x75])
+    slots = ((6, 2), (15, 10)) if code == 0x265 else ((2, 2), (11, 10), (29, 2))
+    if len(base) != (24 if code == 0x265 else 42) or len(u) != 25:
+        raise RuntimeError("Unexpected Roman open-arch donor topology")
+    for start, donor_start in slots:
+        old = base[start:start + 6]
+        cap = u[donor_start:donor_start + 5]
+        if [op for op, _ in old] != ["lineTo", "qCurveTo", "qCurveTo", "lineTo", "lineTo", "lineTo"]:
+            raise RuntimeError("Unexpected Roman open-arch head topology")
+        dx = old[0][1][-1][0] - cap[0][1][-1][0]
+        if abs(old[-1][1][-1][0] - cap[-1][1][-1][0] - dx) > 0.000002:
+            raise RuntimeError("Roman u and open-arch shaft widths differ")
+        cap = [(op, tuple((x + dx, y) for x, y in points)) for op, points in cap]
+        controls = cap[1][1]
+        if cap[1][0] != "qCurveTo" or len(controls) != 4:
+            raise RuntimeError("Unexpected Roman u head curve")
+        midpoint = tuple((a + b) / 2 for a, b in zip(controls[1], controls[2]))
+        base[start:start + 6] = [cap[0],
+            ("qCurveTo", (*controls[:2], midpoint)),
+            ("qCurveTo", controls[2:]), *cap[2:]]
+    return rounded_recording(base)
+
+
 def endpoint_slope(segment: Segment, at_start: bool) -> float:
     if not segment.controls:
         first, second = (segment.start, segment.end) if at_start else (segment.end, segment.start)
@@ -871,7 +906,7 @@ def arch_outline(font: TTFont, code_point: int) -> tuple[list[tuple[str, tuple]]
     """
     body_code, ascender, descender, tail = ARCH_RECIPES[code_point]
     italic = bool(font["post"].italicAngle)
-    base = decomposed_recording(font, font.getBestCmap()[body_code])
+    base = open_arch_recording(font, body_code)
     metadata = {"archDonorCodePoint": body_code}
 
     if descender:
@@ -1009,7 +1044,12 @@ def splice_arch_terminal(recording, source_edges, cut_y, terminal, *, above):
 
 
 def donor_contour_edges(font, code, contour_index=0):
-    recording = decomposed_recording(font, font.getBestCmap()[code])
+    """Construction edges, including the normalized Roman open-arch heads.
+
+    Use decomposed_recording for raw immutable donor evidence. Returning the
+    same head geometry as the body keeps subsequent splice references exact.
+    """
+    recording = open_arch_recording(font, code)
     start = 0
     for stop, (operation, _) in enumerate(recording):
         if operation == "closePath":
@@ -1522,7 +1562,7 @@ def legacy_outline(donor, spec, italic=None):
         }
     elif spec.direct_donor is not None:
         donor_name = cmap[spec.direct_donor]
-        recording = decomposed_recording(donor, donor_name)
+        recording = open_arch_recording(donor, spec.direct_donor)
         construction = {
             "donorCodePoint": spec.direct_donor,
             "donorGlyph": donor_name,

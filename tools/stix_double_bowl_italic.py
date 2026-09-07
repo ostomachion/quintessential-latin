@@ -5,7 +5,7 @@ STIX b and alpha provide the receiving slanted shafts and bowl quarters;
 all heads, feet and hooks are native Italic regions, never sheared Romans.
 """
 
-from stix_double_bowl import fit_operation, move
+from stix_geometry import fit_operation, move
 
 
 def _native(font, code):

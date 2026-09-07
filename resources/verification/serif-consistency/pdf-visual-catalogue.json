@@ -1,0 +1,212 @@
+{
+  "reviewer": "serif_audit subagent",
+  "reviewType": "Read-only visual inspection of fresh Poppler-rendered catalogue PDF",
+  "pdf": "output/pdf/quintessential-latin-catalogue.pdf",
+  "pdfSha256": "48f6b601a16c5050f4a6dc84f5130328957a09358b09eeb0405cb3f0740f93fb",
+  "font": "resources/fonts/QuintessentialSerif/QuintessentialSerif-Variable.ttf",
+  "fontSha256": "fbf062cf970558ebd42a5476f96ddf45e0483b29c71ad72054d56c29c19f002e",
+  "referencePosture": "Roman",
+  "referenceWeight": 400,
+  "renderManifest": ".tmp/serif-pdf-review/manifest.json",
+  "renderManifestSha256": "2f1317b70a19d57f4e4f0b5edb25aa9bf9374d6ed4ba9c1f5935d7c5c3a0ba17",
+  "renderer": "pdftoppm version 26.07.0",
+  "dpi": 110,
+  "pageCount": 33,
+  "contactSheetsViewed": [
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-1.png",
+      "sha256": "d0456389423c57987700397f1636d29944e7cf7ecdad71f2d495f6a1cef861ef",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-2.png",
+      "sha256": "1d2cd431050248c5cee2c679629030b047cc0080605a7a2c6e781c287c08a464",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-3.png",
+      "sha256": "4e09b1706cc538067fa287cb3984c8d71ab41ab06a6dd9bdb7c3b29e2164000d",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-4.png",
+      "sha256": "ab8d2170f744f5f34b8d3920616b009d96a5c37373a2ab17be67b2b697fb496c",
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-5.png",
+      "sha256": "351d591348f054b606d97a6dc38c0d644aba3515b5935f92d1a4758a43bd4a2b",
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-6.png",
+      "sha256": "ce866edabea555f996860c28c6a1075939522071c635c5764984d9878aadddf3",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-7.png",
+      "sha256": "36dce9d8bee61a74478a5b726f50c0a1fa596ce19a07d16a149732e206ec196c",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-8.png",
+      "sha256": "a7991defb00c56b0c6e63a548cbe9e8e149d500096730b4d2d83fae27dbe99b8",
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    },
+    {
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/contact-9.png",
+      "sha256": "1fee1983fb5207c29d89f4560bd240bca6875b198a674910e5018da4640dcf3c",
+      "pages": [
+        33
+      ],
+      "viewedWith": "view_image",
+      "finding": "Page layout, headers, footers, tables and column flow inspected; no clipping, overlap, missing-glyph boxes or broken table rules observed."
+    }
+  ],
+  "fullSizePagesViewed": [
+    {
+      "page": 2,
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/page-02.png",
+      "sha256": "0e39babcd59c65814f3fa5d14aeda1cf3d087cb56efb418dc4e732dc3f043d84",
+      "viewedWith": "view_image, original detail",
+      "finding": "Full-size main chart inspected, including U+F2A2B and its U+F2A2A/U+F2A2C neighbors. Revised caps render coherently, glyphs fit their cells, and code labels remain clear."
+    },
+    {
+      "page": 3,
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/page-03.png",
+      "sha256": "1b653cc691a4a9bf27e2734d2a51fe915d0fe1d3ca2cd8e3039bb8f5270d00de",
+      "viewedWith": "view_image, original detail",
+      "finding": "Full-size names page inspected, including the U+F2A2B entry. Representative glyphs and multiline names remain separated; no row or column collision is visible."
+    },
+    {
+      "page": 15,
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/page-15.png",
+      "sha256": "4b67c7afe25c81abe3c4892de09dcbea6af797ce570d4e4d745575a2755c7021",
+      "viewedWith": "view_image, original detail",
+      "finding": "Full-size Extended-B chart F2BC0-F2CBF inspected. Dense repeated-arch forms fit within cells; their short caps and mixed ascender/descender states remain distinguishable."
+    },
+    {
+      "page": 17,
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/page-17.png",
+      "sha256": "9c4befdfce14d0c041fad6720ff5fafc628ae60be5b6de5758d46325bb5a8593",
+      "viewedWith": "view_image, original detail",
+      "finding": "Full-size Extended-B chart F2DC0-F2EBF inspected. Dense shared-spine and bilateral arch forms retain open counters and fit within table boundaries, including changed right-hand heads."
+    },
+    {
+      "page": 30,
+      "file": ".tmp/serif-pdf-review/quintessential-latin-catalogue/page-30.png",
+      "sha256": "9960e7d8d5d0f9de3939f03375f85b2094f339c9f54899427d6b7699f6ab91ec",
+      "viewedWith": "view_image, original detail",
+      "finding": "Full-size dense names page F2E24-F2E51 inspected. Long wrapped canonical names, small glyph specimens and the family heading retain clear separation; bottom rows remain above the footer."
+    }
+  ],
+  "coverage": {
+    "allPagesReviewedViaContacts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "fullSizePages": [
+      2,
+      3,
+      15,
+      17,
+      30
+    ],
+    "contactSheetCount": 9
+  },
+  "result": "No new visible PDF or glyph-rendering defects found.",
+  "findings": [
+    "All33 pages were inspected on nine contact sheets; five dense or specifically affected pages were also inspected at original rendered resolution.",
+    "Head normalization is visible coherently in the F2A2B chart/name specimens and repeated-arch extensions.",
+    "No visible glyph clipping, missing-glyph boxes, damaged table rules, overlapping labels, obstructed counters or footer collisions found.",
+    "Short final name-list sections leave white space before the next block begins; block introductions and page numbering remain coherent."
+  ],
+  "scopeLimit": "Visual catalogue review only; outline preservation and exact character, name, range and manifest validation are separate checks. Agent review does not imply user aesthetic acceptance."
+}

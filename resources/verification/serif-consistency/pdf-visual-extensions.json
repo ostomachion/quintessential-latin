@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "scope": "Visual review of regenerated Extended-A and Extended-B PDFs only.",
+  "renderManifest": ".tmp/serif-pdf-review/manifest.json",
+  "renderManifestSha256": "2f1317b70a19d57f4e4f0b5edb25aa9bf9374d6ed4ba9c1f5935d7c5c3a0ba17",
+  "pdfs": [
+    {
+      "pdf": "output/pdf/quintessential-latin-extended-a.pdf",
+      "pdfSha256": "2e9058fee68bb194be7b48d4bf6c7a6108b2370fa081fda94d9fe8ab7c83e974",
+      "pageCount": 7,
+      "allPagesReviewedInContactSheets": true,
+      "contactSheetsReviewed": [
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-a/contact-1.png",
+          "sha256": "8ac5d49d587fff7a534d493a9f05e50d6559242bb45c76ba5b1461921cc4d8cc"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-a/contact-2.png",
+          "sha256": "b473b6df48f805bcd1fd767e7cfd7d3e271582fa459234d29f7fdf7ca18de3fb"
+        }
+      ],
+      "fullSizePagesReviewed": [
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-a/page-2.png",
+          "sha256": "e810b0b0080a76b0f44f13d900241bde002dd2715ac2c57de5f275823724a84b"
+        }
+      ],
+      "renderer": "pdftoppm version 26.07.0",
+      "dpi": 110,
+      "findings": []
+    },
+    {
+      "pdf": "output/pdf/quintessential-latin-extended-b.pdf",
+      "pdfSha256": "b98d4f61605abac698ec5b13773eac55af7fc8eb2af073f81c8531e98d15a747",
+      "pageCount": 20,
+      "allPagesReviewedInContactSheets": true,
+      "contactSheetsReviewed": [
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/contact-1.png",
+          "sha256": "38b702b2f74497698789ad18a50a695a2999c4a17086abc0c11a1cf6ff5256b2"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/contact-2.png",
+          "sha256": "d892fa0d9ec4b8b2eab4cdea771bdda1153159baa8da528d9595fefafec992df"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/contact-3.png",
+          "sha256": "d9e1403a815b2a8118f63b040bebb071001bb85cec3045a4ca234ce8213bfc6a"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/contact-4.png",
+          "sha256": "55fdf525dbf4b5763d439478a60cdbf2606126a6e99586d76acd16f848812f5f"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/contact-5.png",
+          "sha256": "c597b3c75e1d19856320f91cb2f7c1dfe8ca71370db666807c4b21f67cc585e7"
+        }
+      ],
+      "fullSizePagesReviewed": [
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/page-02.png",
+          "sha256": "dae2f5b9ae64049bf9556d3b0d67511962a846eb0d26058a3848b980b43d87fa"
+        },
+        {
+          "path": ".tmp/serif-pdf-review/quintessential-latin-extended-b/page-17.png",
+          "sha256": "cf14b185617f25391d35f16eb379751d5e42e5e04f3cdcd4561f75b272032d1a"
+        }
+      ],
+      "renderer": "pdftoppm version 26.07.0",
+      "dpi": 110,
+      "findings": []
+    }
+  ],
+  "observations": [
+    "All 27 pages were inspected through all seven contact sheets; the dense Extended-A chart, Extended-B first chart and Extended-B name-list page 17 were additionally inspected at original render size.",
+    "Charts retain aligned row and column labels, intact cell borders, readable code labels and consistent glyph placement; no visibly clipped glyphs, detached cap artifacts, missing-glyph boxes or chart overflow were observed.",
+    "The revised open-arch heads appear consistent within related forms at this chart scale; taller native ascender heads remain intentionally different.",
+    "Two-column name lists retain readable glyph samples, complete wrapped names, section headings and clean column/page boundaries. Headers, footers and page numbers remain separated from content.",
+    "Partly filled final name-list pages are normal continuation pages, without orphaned headings or cropped rows."
+  ],
+  "limitations": "This is publication-layout and representative chart-scale visual QA at 110 dpi; exhaustive cap geometry and interpolation are covered by the separate native/source/compiled head tests."
+}
