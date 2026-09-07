@@ -1,0 +1,214 @@
+[
+  {
+    "glyphId": "turned-arm-tail",
+    "codePoint": "U+F2A14",
+    "archReference": "turned-arch-tail",
+    "bowlReference": "turned-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": false,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      38,
+      26,
+      2,
+      2,
+      60
+    ]
+  },
+  {
+    "glyphId": "turned-arm-ascender-tail",
+    "codePoint": "U+F2A17",
+    "archReference": "turned-arch-tail",
+    "bowlReference": "turned-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": false,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      38,
+      26,
+      2,
+      2,
+      60
+    ]
+  },
+  {
+    "glyphId": "turned-arched-arm-tail",
+    "codePoint": "U+F2A58",
+    "archReference": "turned-double-arch-tail",
+    "bowlReference": "turned-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      79,
+      49,
+      1,
+      6
+    ]
+  },
+  {
+    "glyphId": "turned-arched-arm-tail-extended-middle-legs",
+    "codePoint": "U+F2A59",
+    "archReference": "turned-double-arch-tail",
+    "bowlReference": "turned-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      79,
+      49,
+      1,
+      6
+    ]
+  },
+  {
+    "glyphId": "turned-arched-arm-ascender-tail",
+    "codePoint": "U+F2A5E",
+    "archReference": "turned-double-arch-tail",
+    "bowlReference": "turned-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      79,
+      49,
+      1,
+      6
+    ]
+  },
+  {
+    "glyphId": "turned-arched-arm-ascender-tail-extended-middle-legs",
+    "codePoint": "U+F2A5F",
+    "archReference": "turned-double-arch-tail",
+    "bowlReference": "turned-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      79,
+      49,
+      1,
+      6
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-tail",
+    "codePoint": "U+F2BE0",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-tail-extended-left-middle-leg",
+    "codePoint": "U+F2BE1",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-tail-extended-right-middle-leg",
+    "codePoint": "U+F2BE2",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-tail-extended-middle-legs",
+    "codePoint": "U+F2BE3",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-ascender-tail",
+    "codePoint": "U+F2BEC",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-ascender-tail-extended-left-middle-leg",
+    "codePoint": "U+F2BED",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-ascender-tail-extended-right-middle-leg",
+    "codePoint": "U+F2BEE",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  },
+  {
+    "glyphId": "turned-double-arched-arm-ascender-tail-extended-middle-legs",
+    "codePoint": "U+F2BEF",
+    "archReference": "turned-triple-arch-tail",
+    "bowlReference": "turned-double-arched-bowl-tail",
+    "archTailRowsEqual": true,
+    "lowerRowsEqualBowl": true,
+    "finalRowEqualBowl": true,
+    "tailRows": [
+      87,
+      41,
+      1,
+      2
+    ]
+  }
+]

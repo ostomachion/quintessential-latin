@@ -561,8 +561,8 @@ ARM_RECIPES = {
     0xF2A10: (True, 0x6C, 0x70),
     0xF2A11: (False, 0x17F, None),
     0xF2A12: (False, 0x17F, 0x70),
-    0xF2A13: (True, None, 0x237),
-    0xF2A14: (True, 0x6C, 0x237),
+    0xF2A13: (True, None, 0x261),
+    0xF2A14: (True, 0x6C, 0x261),
 }
 
 
@@ -594,9 +594,13 @@ def arm_outline(font: TTFont, code_point: int) -> tuple[list[tuple[str, tuple]],
         upper = upper.translated(upper_dx)
         # The turned-r baseline curve rises to y=214. Preserve it whole by
         # cutting the native shaft above it, at y=220, for the ascender-only form.
-        lower_cut = 220.0 if turned and not lower_code else ITALIC_LOWER_CUT
-        lower = (native_terminal(font, lower_code, lower_cut, False) if lower_code
-                 else native_region(stem, lower_cut, False))
+        lower_cut = (50.0 if lower_code == 0x261 else
+                     220.0 if turned and not lower_code else ITALIC_LOWER_CUT)
+        # The broad g tail shares a contour with its bowl. Retain only its
+        # complete lower sweep, including the ball, between the shaft edges.
+        lower = (bowl_lower_terminal(font, lower_code, lower_cut) if lower_code == 0x261 else
+                 native_terminal(font, lower_code, lower_cut, False) if lower_code else
+                 native_region(stem, lower_cut, False))
         slope = -math.tan(math.radians(font["post"].italicAngle))
         lower_dx = upper.center - slope * (UPPER_CUT - lower_cut) - lower.center
         recording = [*join_native_regions(upper, lower.translated(lower_dx)), *arm]
@@ -620,11 +624,25 @@ def arm_outline(font: TTFont, code_point: int) -> tuple[list[tuple[str, tuple]],
             recording += base[5:10]  # Upright native u head.
         if lower_code:
             cut = float(base[16][1][-1][1])
-            lower = native_terminal(font, lower_code, cut, False)
-            dx = shaft_center - lower.center
-            lower = lower.translated(dx)
-            recording += [("lineTo", (lower.start,)), *lower.operations, *base[17:]]
-            metadata.update(lowerCutY=cut, lowerOffsetX=rounded(dx))
+            if lower_code == 0x261:
+                lower = bowl_lower_terminal(font, lower_code, cut)
+                # Keep the hip's complete inner attachment and donor curves.
+                # Match the receiving inner shaft exactly; a short tangent
+                # bridge absorbs the native g/u outer-shaft width difference.
+                dx = base[16][1][-1][0] - lower.end[0]
+                lower = lower.translated(dx)
+                body_cut = (base[9][1][-1][0], 250.0)
+                bridge = tangent_connector(body_cut, lower.start, 0.0, lower.slope(True))
+                recording += [("lineTo", (body_cut,)), bridge.operation(),
+                              *lower.operations, *base[17:]]
+                metadata.update(lowerBodyCutY=250.0, lowerCutY=50.0,
+                                hipAttachmentY=cut, lowerOffsetX=rounded(dx))
+            else:
+                lower = native_terminal(font, lower_code, cut, False)
+                dx = shaft_center - lower.center
+                lower = lower.translated(dx)
+                recording += [("lineTo", (lower.start,)), *lower.operations, *base[17:]]
+                metadata.update(lowerCutY=cut, lowerOffsetX=rounded(dx))
         else:
             recording += base[10:]
         return rounded_recording(recording), metadata

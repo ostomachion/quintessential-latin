@@ -1,0 +1,3 @@
+npm notice run quintessential-latin@0.250.0 test:browser
+npm notice run node tools/test_browser.mjs
+Passed 196 browser checks; screenshots in .tmp/browser-review.

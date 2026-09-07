@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "pages": 76,
+  "unchangedPages": 72,
+  "changedPages": [
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "page": 2,
+      "changedPixels": 275,
+      "differenceBounds": [
+        196,
+        289,
+        207,
+        441
+      ],
+      "targetPlacements": 2,
+      "render": ".tmp/hip-tail-pdf-after/quintessential-latin-catalogue/page-02.png"
+    },
+    {
+      "pdf": "quintessential-latin-catalogue.pdf",
+      "page": 3,
+      "changedPixels": 73,
+      "differenceBounds": [
+        127,
+        542,
+        132,
+        618
+      ],
+      "targetPlacements": 2,
+      "render": ".tmp/hip-tail-pdf-after/quintessential-latin-catalogue/page-03.png"
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "page": 2,
+      "changedPixels": 275,
+      "differenceBounds": [
+        196,
+        289,
+        207,
+        441
+      ],
+      "targetPlacements": 2,
+      "render": ".tmp/hip-tail-pdf-after/quintessential-latin/page-2.png"
+    },
+    {
+      "pdf": "quintessential-latin.pdf",
+      "page": 3,
+      "changedPixels": 73,
+      "differenceBounds": [
+        127,
+        542,
+        132,
+        618
+      ],
+      "targetPlacements": 2,
+      "render": ".tmp/hip-tail-pdf-after/quintessential-latin/page-3.png"
+    }
+  ],
+  "scope": "Every differing rendered pixel is within a cell containing U+F2A14 or U+F2A17.",
+  "beforeHashes": {
+    "quintessential-latin.pdf": "27515c7fffc6cbcb2a4f60a17422ae0083d48aad80467cd23bd759e07a5d91b7",
+    "quintessential-latin-extended-a.pdf": "8e4fc7db0b16bd483f6ed1c71d760ff8db4d98044e98afea2920f6ec16492742",
+    "quintessential-latin-extended-b.pdf": "ba789c82ae88664eb4510f6c45cc41b726bef8cec2b999993c3f68759e52d866",
+    "quintessential-latin-catalogue.pdf": "34eb34819e39d2eec0eda27788e6e0db7febca205d74a66f9dfdc5d7f8a51dab",
+    "quintessential-latin-proposal.pdf": "39c0331c9003dcb8af836f6c7e3c783fa3648ce0a313948a6088c76414e7476a"
+  },
+  "afterHashes": {
+    "quintessential-latin-catalogue.pdf": "4657b3dd238d93f3015d49628616754b72b388e06e07aa092e086a52596b7251",
+    "quintessential-latin-extended-a.pdf": "f9e8be468ba3f0cd48dc4092a5e57129da6fa81e663acd9e845d92172bd7aa8c",
+    "quintessential-latin-extended-b.pdf": "4637bbd54ec5e3987bdbed377bc17dfdc47b6b39b3592ce33956e9abf55a9e3c",
+    "quintessential-latin-proposal.pdf": "89686dfe51272cc07738ffb0d7ec6b15444b35109f963f50f55e601623d140b8",
+    "quintessential-latin.pdf": "2767bc1ba4c2c28a944bfe7b7325869c696c741e79fe186b2033da2e9281f5ae"
+  }
+}

@@ -1,0 +1,35 @@
+Hip-tail source reconstruction verification
+
+Recorded from checks actually executed by the source implementation agent.
+Runtime: C:/Users/User/Documents/conlang/.venv-fonts/Scripts/python.exe
+
+Final command:
+  python tools/refine_hip_tails.py --check
+Final observed output:
+  Prepared Regular: 0 changed target pairs
+  Prepared Bold: 0 changed target pairs
+  Prepared Italic: 0 changed target pairs
+  Prepared BoldItalic: 0 changed target pairs
+  Verified two hip-tail glyphs in four masters; 0 files written; 0 changed target pairs; all advances and unrelated pairs preserved.
+
+This final check ran after the scanline helper received its explicit original
+edge-inclusion predicate. It reconstructed both glyphs in all four masters,
+verified compatible master topology, and compared the generated GLIF and
+target-pair kerning serializations with the authoritative files.
+
+Fast-profile equality check:
+  Compared complete profile dictionaries from the updater's edge accumulation
+  helper and import_stix_foundation.kerning_profile for uF2A13, uF2A14, and
+  uF2B1C in Regular, Bold, Italic, and BoldItalic: 12 exact matches.
+Observed output:
+  Edge accumulation profiles exactly match foundation scanlines for 12 representative source glyphs.
+This equality check preceded the final boundary-predicate tightening; it was
+not an exhaustive comparison across all 1,216 glyphs. The final reconstruction
+check above confirmed no resulting source or kerning change.
+
+Additional observed checks:
+  All eight revised source glyphs formed one filled root with zero holes.
+  Both edited source modules and the updater parsed successfully.
+  git -c core.whitespace=cr-at-eol diff --check passed for the implementation
+  files and editable font sources. Unmodified historical line endings were
+  preserved.

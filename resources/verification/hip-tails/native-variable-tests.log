@@ -1,0 +1,8 @@
+test_complete_arm_family_preserves_native_arm_regions (__main__.QuintessentialFontTests.test_complete_arm_family_preserves_native_arm_regions) ... ok
+test_constructed_arm_terminals_preserve_their_native_donors (__main__.QuintessentialFontTests.test_constructed_arm_terminals_preserve_their_native_donors) ... ok
+test_variable_structure_axis_names_and_sparse_coverage (__main__.QuintessentialFontTests.test_variable_structure_axis_names_and_sparse_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 529.489s
+
+OK

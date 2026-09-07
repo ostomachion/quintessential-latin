@@ -213,14 +213,14 @@ GLYPHS = (
     ),
     GlyphSpec(
         "turned-arm-tail", 0xF2A13, "Turned arm with lower hook", 0x279, None,
-        (("arm", 0x279, "turned r"), ("lower-hook", 0x237, "dotless j")),
-        "Native turned-r arm with the dotless-j lower hook; Roman retains the upright u head.",
+        (("arm", 0x279, "turned r"), ("lower-hook", 0x261, "single-story g")),
+        "Native turned-r hip with the broad single-story-g lower hook; Roman retains the upright u head.",
         roman_stem_donor=0x75,
     ),
     GlyphSpec(
         "turned-arm-ascender-tail", 0xF2A14, "Turned arm with ascender and lower hook", 0x279, None,
-        (("arm", 0x279, "turned r"), ("ascender", 0x6C, "lowercase l"), ("lower-hook", 0x237, "dotless j")),
-        "Native turned-r arm with the l ascender and dotless-j lower hook.",
+        (("arm", 0x279, "turned r"), ("ascender", 0x6C, "lowercase l"), ("lower-hook", 0x261, "single-story g")),
+        "Native turned-r hip with the l ascender and broad single-story-g lower hook.",
     ),
     GlyphSpec(
         "arch", 0xF2A15, "Arch", 0x6E, 0x6E,

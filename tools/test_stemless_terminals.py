@@ -14,6 +14,7 @@ import json
 import math
 from pathlib import Path
 import unittest
+import hip_tail_revision
 
 import pyclipper
 from fontTools.ttLib import TTFont
@@ -34,13 +35,14 @@ STYLES = {"Regular": (False, 400), "Bold": (False, 700),
 COMPILED_FACES = None
 
 
-def assert_preserved_outlines(test, actual, captured, context):
+def assert_preserved_outlines(test, actual, captured, context, *, source=False, instantiated=False):
     """Permit only the three approved outline edits; protect every advance."""
     test.assertEqual(set(actual), set(captured), context)
     for name, old in captured.items():
         test.assertEqual(actual[name][0], old[0], (context, name, "Advance changed"))
         if name not in TARGET_NAMES:
-            test.assertEqual(actual[name], old, (context, name, "Unrelated outline changed"))
+            historical = hip_tail_revision.historical_outline(context, name, actual[name], source=source, instantiated=instantiated)
+            test.assertEqual(historical, old, (context, name, "Unrelated outline changed"))
 
 
 def digest(value):
@@ -58,7 +60,7 @@ def pairs_digest(pairs):
                          if tuple(value) != ZERO_PAIR))
 
 
-def target_pair_values(font, normalized_location):
+def target_pair_values(font, normalized_location, target_names=TARGET_NAMES):
     """Resolve actual GPOS VariationIndex values only for the affected pairs."""
     from fontTools.varLib.varStore import VarStoreInstancer
     from test_quintessential_font import dflt_kern_lookups
@@ -72,7 +74,7 @@ def target_pair_values(font, normalized_location):
             for left, pair_set in zip(table.Coverage.glyphs, table.PairSet):
                 for record in pair_set.PairValueRecord:
                     right = record.SecondGlyph
-                    if left not in TARGET_NAMES and right not in TARGET_NAMES:
+                    if left not in target_names and right not in target_names:
                         continue
                     assert record.Value2 is None or not any(vars(record.Value2).values())
                     value = record.Value1
@@ -86,7 +88,7 @@ def target_pair_values(font, normalized_location):
     return result
 
 
-def capture(folder):
+def capture(folder, target_names=TARGET_NAMES):
     """Capture actual pre-edit files, independently of the construction code."""
     entries = json.loads((folder / "quintessential-latin-allocation.json").read_text())["entries"]
     result = {"schemaVersion": 1, "revision": "stemless-two-bulbs-1", "weights": WEIGHTS,
@@ -100,7 +102,7 @@ def capture(folder):
             result["sources"][style] = {"outlines": recorded_outlines(source, names), "order": names,
                 "pairs": pairs_digest({pair: (0, 0, value, 0, 0, 0, 0, 0) for pair, value in source.kerning.items()}),
                 "cmap": {name: source[name].unicodes for name in names},
-                "targets": {name: {"recording": outline(source, name), "lib": source[name].lib} for name in TARGET_NAMES}}
+                "targets": {name: {"recording": outline(source, name), "lib": source[name].lib} for name in target_names}}
         with TTFont(folder / "compiled" / f"QuintessentialSerif-{style}.otf") as font:
             result["compiled"][style] = {"outlines": recorded_outlines(font.getGlyphSet(), names),
                 "pairs": pairs_digest(effective_pairs(font)), "order": font.getGlyphOrder(), "hmtx": font["hmtx"].metrics}
@@ -139,9 +141,9 @@ class StemlessTerminalTests(unittest.TestCase):
                 captured = baseline["sources"][style]
                 names = source.lib["public.glyphOrder"]
                 self.assertEqual(names, captured["order"], style)
-                assert_preserved_outlines(self, recorded_outlines(source, names), captured["outlines"], style)
+                assert_preserved_outlines(self, recorded_outlines(source, names), captured["outlines"], style, source=True)
                 self.assertEqual(pairs_digest({pair: (0, 0, value, 0, 0, 0, 0, 0)
-                    for pair, value in source.kerning.items()}), captured["pairs"], style)
+                    for pair, value in hip_tail_revision.historical_source_pairs(source).items()}), captured["pairs"], style)
                 self.assertEqual({name: source[name].unicodes for name in names}, captured["cmap"], style)
                 for name in TARGET_NAMES:
                     self.assertNotEqual(recorded_outlines(source, [name])[name], captured["outlines"][name], (style, name))
@@ -150,7 +152,7 @@ class StemlessTerminalTests(unittest.TestCase):
         self.assertEqual(actual_files, set(baseline["sourceFiles"]))
         for relative, expected in baseline["sourceFiles"].items():
             if relative not in allowed:
-                self.assertEqual(hashlib.sha256((SOURCES / relative).read_bytes()).hexdigest(), expected, relative)
+                self.assertEqual(hashlib.sha256(hip_tail_revision.historical_source_bytes(SOURCES / relative)).hexdigest(), expected, relative)
 
     def test_all_unrelated_compiled_ink_and_all_advances_pairs_and_gid_orders_are_preserved(self):
         baseline = json.loads(gzip.decompress(BASELINE.read_bytes()))
@@ -176,13 +178,13 @@ class StemlessTerminalTests(unittest.TestCase):
                     metrics = font["hmtx"][name]
                     self.assertEqual(metrics[0], old[0], (face, name, "Advance changed"))
                     if name not in TARGET_NAMES:
-                        self.assertEqual(list(metrics), old, (face, name, "Unrelated sidebearing changed"))
+                        self.assertEqual(list(hip_tail_revision.historical_metrics(face, name, metrics)), old, (face, name, "Unrelated sidebearing changed"))
                 assert_preserved_outlines(self, recorded_outlines(glyphs, names), captured["outlines"], face)
                 if weight is None:
-                    self.assertEqual(pairs_digest(effective_pairs(font)), captured["pairs"], face)
+                    self.assertEqual(pairs_digest(hip_tail_revision.historical_pairs(effective_pairs(font), face)), captured["pairs"], face)
                 else:
-                    self.assertEqual({tag: hashlib.sha256(font.getTableData(tag)).hexdigest()
-                                      for tag in ("GPOS", "GDEF") if tag in font}, captured["pairTables"], face)
+                    self.assertEqual(hip_tail_revision.historical_pair_tables(face, {tag: hashlib.sha256(font.getTableData(tag)).hexdigest()
+                                      for tag in ("GPOS", "GDEF") if tag in font}), captured["pairTables"], face)
                 print(f"terminal preservation {face}: {len(names) - len(TARGET_NAMES)} unrelated outlines/sidebearings; all advances/pairs", flush=True)
 
     def test_both_pair_directions_clear_the_complete_catalogue_at_five_weights(self):

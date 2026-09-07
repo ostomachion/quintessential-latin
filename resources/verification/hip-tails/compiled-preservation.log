@@ -1,0 +1,21 @@
+hip-tail preservation Bold: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation BoldItalic: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic-400: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic-500: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic-550: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic-600: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Italic-700: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Regular: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Roman-400: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Roman-500: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Roman-550: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Roman-600: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+hip-tail preservation Roman-700: 1216 unchanged outlines; all advances/mappings and unrelated pairs
+test_non_target_compiled_outlines_pairs_and_all_advances_order_and_cmap_are_preserved (__main__.HipTailTests.test_non_target_compiled_outlines_pairs_and_all_advances_order_and_cmap_are_preserved) ... ok
+test_revised_static_glyphs_match_variable_endpoints (__main__.HipTailTests.test_revised_static_glyphs_match_variable_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 127.100s
+
+OK

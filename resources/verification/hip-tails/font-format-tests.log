@@ -1,0 +1,7 @@
+test_woff2_files_preserve_sfnt_tables (__main__.QuintessentialFontTests.test_woff2_files_preserve_sfnt_tables) ... ok
+test_static_faces_are_hinted_sparse_cff_fonts (__main__.QuintessentialFontTests.test_static_faces_are_hinted_sparse_cff_fonts) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.768s
+
+OK

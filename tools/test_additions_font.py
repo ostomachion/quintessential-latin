@@ -31,6 +31,8 @@ from font_geometry_helpers import counter_recordings, interpolate_points, polygo
 from font_geometry_helpers import effective_pairs, outline, ZERO_PAIR
 from verify_logical_allocation import historical_entry
 from test_stemless_terminals import TARGET_IDS as REVISED_TERMINAL_IDS
+from test_stemless_terminals import recorded_outlines
+import hip_tail_revision
 from test_quintessential_font import (
     ALLOCATION, ALLOCATION_BY_ID, ALLOCATION_BY_NAME, ALLOCATION_ENTRIES,
     DONORS, DONOR_FILES, EXPECTED_AVAR, MAIN_SCRIPT_CMAP, OUTPUT, POSTURE_CMAPS, ROOT,
@@ -71,6 +73,25 @@ OLD_CMAPS = {
 OLD_NAMES = {italic: (".notdef", "space", *cmap.values()) for italic, cmap in OLD_CMAPS.items()}
 MAIN_NAMES = (".notdef", "space", *MAIN_SCRIPT_CMAP.values())
 COMPILED = True
+
+
+def assert_hip_revision(test, current, previous, name, face, *, source=False, instantiated=False):
+    actual, old = recorded_outlines(current, [name])[name], recorded_outlines(previous, [name])[name]
+    test.assertEqual(hip_tail_revision.historical_outline(face, name, actual, source=source, instantiated=instantiated), old,
+                     (face, name, "Approved hip-tail revision"))
+
+
+def assert_historical_metrics(test, current, previous, name):
+    if name in hip_tail_revision.TARGET_NAMES and "glyf" in current:
+        # The instance's exact glyph recording is pinned above. Its LSB must
+        # equal that revised outline's xMin; only the unchanged advance is
+        # compared to the earlier, narrow-tail fixture.
+        test.assertEqual(current["hmtx"][name][0], previous["hmtx"][name][0], name)
+        test.assertEqual(current["hmtx"][name][1], current["glyf"][name].xMin, name)
+    else:
+        face = hip_tail_revision.compiled_face(current)
+        test.assertEqual(list(hip_tail_revision.historical_metrics(face, name, current["hmtx"][name])),
+                         list(previous["hmtx"][name]), name)
 
 SPECIAL_DONORS = {
     "special-ring": 0x6F,
@@ -256,7 +277,9 @@ class AdditionsBaselineTests(unittest.TestCase):
                 for name in OLD_NAMES[italic]:
                     with self.subTest(style=style, glyph=name):
                         if name != CHANGED_NAME:
-                            if italic or name not in SHARED_SPINE_NAMES:
+                            if name in hip_tail_revision.TARGET_NAMES:
+                                assert_hip_revision(self, after, before, name, style, source=True)
+                            elif italic or name not in SHARED_SPINE_NAMES:
                                 self.assertEqual(outline(after, name), outline(before, name))
                             else:
                                 from reviewed_spine_connections import assert_preserved_connections
@@ -265,7 +288,7 @@ class AdditionsBaselineTests(unittest.TestCase):
                             self.assertEqual(after[name].width, before[name].width)
                         expected = [ALLOCATION_BY_NAME[name]["codePoint"]] if name in ALLOCATION_BY_NAME else before[name].unicodes
                         self.assertEqual(after[name].unicodes, expected)
-                self.assert_pairs_preserved(before.kerning, after.kerning, OLD_NAMES[italic], 0)
+                self.assert_pairs_preserved(before.kerning, hip_tail_revision.historical_source_pairs(after), OLD_NAMES[italic], 0)
             finally:
                 before.close()
                 after.close()
@@ -275,17 +298,20 @@ class AdditionsBaselineTests(unittest.TestCase):
         self.assertEqual(after.getBestCmap(), {0x20: "space", **POSTURE_CMAPS[italic]})
         self.assertEqual(tuple(after.getGlyphOrder()[:len(OLD_NAMES[italic])]), OLD_NAMES[italic])
         original, current = before.getGlyphSet(), after.getGlyphSet()
+        face = hip_tail_revision.compiled_face(after)
         for name in OLD_NAMES[italic]:
             if name != CHANGED_NAME:
-                if italic or name not in SHARED_SPINE_NAMES:
+                if name in hip_tail_revision.TARGET_NAMES:
+                    assert_hip_revision(self, current, original, name, face, instantiated="glyf" in after)
+                elif italic or name not in SHARED_SPINE_NAMES:
                     self.assertEqual(outline(current, name), outline(original, name), name)
                 else:
                     from reviewed_spine_connections import assert_preserved_connections
                     assert_preserved_connections(outline(original, name), outline(current, name),
                                                  ALLOCATION_BY_NAME[name], self.connection_metadata(name, weight),
                                                  tolerance=1 / 64)
-                self.assertEqual(after["hmtx"][name], before["hmtx"][name], name)
-        self.assert_pairs_preserved(effective_pairs(before), effective_pairs(after), OLD_NAMES[italic], ZERO_PAIR)
+                assert_historical_metrics(self, after, before, name)
+        self.assert_pairs_preserved(effective_pairs(before), hip_tail_revision.historical_pairs(effective_pairs(after), face), OLD_NAMES[italic], ZERO_PAIR)
 
     def test_all_prior_static_outlines_metrics_and_semantic_pairs_are_preserved(self):
         if not COMPILED:
@@ -1035,12 +1061,16 @@ class IndependentMain0150Tests(unittest.TestCase):
                 self.assertEqual(set(before.kerning), {(left, right) for left in MAIN_SCRIPT_CMAP.values()
                                                       for right in MAIN_SCRIPT_CMAP.values()})
                 for name in MAIN_NAMES:
-                    self.assertEqual(outline(after, name), outline(before, name), (style, name))
+                    if name in hip_tail_revision.TARGET_NAMES:
+                        assert_hip_revision(self, after, before, name, style, source=True)
+                    else:
+                        self.assertEqual(outline(after, name), outline(before, name), (style, name))
                     self.assertEqual(after[name].width, before[name].width)
                     expected = [ALLOCATION_BY_NAME[name]["codePoint"]] if name in ALLOCATION_BY_NAME else before[name].unicodes
                     self.assertEqual(after[name].unicodes, expected)
+                historical_pairs = hip_tail_revision.historical_source_pairs(after)
                 for pair, value in before.kerning.items():
-                    self.assertEqual(after.kerning.get(pair, 0), value, (style, pair))
+                    self.assertEqual(historical_pairs.get(pair, 0), value, (style, pair))
             finally:
                 before.close()
                 after.close()
@@ -1052,10 +1082,14 @@ class IndependentMain0150Tests(unittest.TestCase):
                           for name in MAIN_SCRIPT_CMAP.values()},
                          {ALLOCATION_BY_NAME[name]["codePoint"]: name for name in MAIN_SCRIPT_CMAP.values()})
         original, current = before.getGlyphSet(), after.getGlyphSet()
+        face = hip_tail_revision.compiled_face(after)
         for name in MAIN_NAMES:
-            self.assertEqual(outline(current, name), outline(original, name), name)
-            self.assertEqual(after["hmtx"][name], before["hmtx"][name], name)
-        self.assert_pairs(effective_pairs(before), effective_pairs(after))
+            if name in hip_tail_revision.TARGET_NAMES:
+                assert_hip_revision(self, current, original, name, face, instantiated="glyf" in after)
+            else:
+                self.assertEqual(outline(current, name), outline(original, name), name)
+            assert_historical_metrics(self, after, before, name)
+        self.assert_pairs(effective_pairs(before), hip_tail_revision.historical_pairs(effective_pairs(after), face))
 
     def test_main_129_static_outlines_metrics_and_all_pairs(self):
         if not COMPILED:

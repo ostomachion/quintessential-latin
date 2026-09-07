@@ -8,8 +8,8 @@
     700
   ],
   "fontHashes": {
-    "QuintessentialSerif-Variable.ttf": "7577bf4d366637c2c39a116ef8af80e6e8ba1da94ec70d3203b9f852c30d0325",
-    "QuintessentialSerif-Italic-Variable.ttf": "77fa344c5a5a4f5dcc1e4e8726f0b5360e4e162998c885bd5d568dd8c0815218"
+    "QuintessentialSerif-Variable.ttf": "ded19d02500bc4626102047d4c61967c1824011fbba11fe75b2bc31bccee6f52",
+    "QuintessentialSerif-Italic-Variable.ttf": "204eb04a272eb942d5fda5cb55cb07fbd780d8856ab61df044b2b09c7a51aee8"
   },
   "entries": {
     "special-ring": {
@@ -496,17 +496,17 @@
       "Roman": {
         "advance": 449,
         "bounds": [
-          0,
+          -106,
           -235,
-          355,
+          360.0,
           478
         ]
       },
       "Italic": {
         "advance": 462,
         "bounds": [
-          -62,
-          -230,
+          -153,
+          -225,
           411,
           473
         ]
@@ -556,17 +556,17 @@
       "Roman": {
         "advance": 449,
         "bounds": [
-          0,
+          -106,
           -235,
-          355,
+          360.0,
           706
         ]
       },
       "Italic": {
         "advance": 462,
         "bounds": [
-          -62,
-          -230,
+          -153,
+          -225,
           450,
           705
         ]

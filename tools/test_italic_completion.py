@@ -26,6 +26,7 @@ from ufoLib2 import Font
 from font_geometry_helpers import effective_pairs, ZERO_PAIR, outline, polygons_from_recording, counter_recordings
 from verify_logical_allocation import historical_entry, current_unicode_map
 from test_stemless_terminals import assert_preserved_outlines
+import hip_tail_revision
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "fonts/QuintessentialSerif"
@@ -80,7 +81,7 @@ def source_pair_digest(source, names):
     # This project's editable kerning has explicit glyph pairs, no classes.
     assert not source.groups
     return pair_digest({pair: (0, 0, value, 0, 0, 0, 0, 0)
-                        for pair, value in source.kerning.items()}, names)
+                        for pair, value in hip_tail_revision.historical_source_pairs(source).items()}, names)
 
 
 def previous_order(entries, posture):
@@ -149,7 +150,7 @@ class ItalicCompletionTests(unittest.TestCase):
                 names = tuple(captured["outlines"])
                 order = previous_order(self.baseline["entries"], "Italic" if "Italic" in style else "Roman")
                 self.assertEqual(source.lib["public.glyphOrder"][:len(order)], order, style)
-                assert_preserved_outlines(self, outlines(source, names), captured["outlines"], style)
+                assert_preserved_outlines(self, outlines(source, names), captured["outlines"], style, source=True)
                 self.assertEqual(source_pair_digest(source, names), captured["pairs"], style)
                 self.assertEqual({name: source[name].unicodes for name in names}, current_unicode_map(captured["cmap"]), style)
 
@@ -166,8 +167,8 @@ class ItalicCompletionTests(unittest.TestCase):
                     font = instantiateVariableFont(font, {"wght": int(weight)}, inplace=True)
                 order = previous_order(self.baseline["entries"], "Italic" if "Italic" in face else "Roman")
                 self.assertEqual(font.getGlyphOrder()[:len(order)], order, face)
-                assert_preserved_outlines(self, outlines(font.getGlyphSet(), names), captured["outlines"], face)
-                self.assertEqual(pair_digest(effective_pairs(font), names), captured["pairs"], face)
+                assert_preserved_outlines(self, outlines(font.getGlyphSet(), names), captured["outlines"], face, instantiated=weight is not None)
+                self.assertEqual(pair_digest(hip_tail_revision.historical_pairs(effective_pairs(font), face), names), captured["pairs"], face)
 
     def test_new_italic_endpoints_are_compatible_and_differ_from_roman(self):
         new = [entry for entry in self.baseline["entries"] if "Italic" not in entry["postures"]]

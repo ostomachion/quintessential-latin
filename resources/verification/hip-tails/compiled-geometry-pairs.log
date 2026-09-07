@@ -1,0 +1,18 @@
+test_complete_native_g_tail_and_unchanged_hip_and_head_curves_survive_compilation (__main__.HipTailTests.test_complete_native_g_tail_and_unchanged_hip_and_head_curves_survive_compilation) ... ok
+test_targets_keep_simple_contours_one_connected_filled_shape_and_no_holes (__main__.HipTailTests.test_targets_keep_simple_contours_one_connected_filled_shape_and_no_holes) ... ok
+hip-tail pairs (False, 400, 'compiled'): 4860 ordered pairs; 2434 exact filled intersections
+hip-tail pairs (False, 500, 'compiled'): 4860 ordered pairs; 2438 exact filled intersections
+hip-tail pairs (False, 550, 'compiled'): 4860 ordered pairs; 2264 exact filled intersections
+hip-tail pairs (False, 600, 'compiled'): 4860 ordered pairs; 2252 exact filled intersections
+hip-tail pairs (False, 700, 'compiled'): 4860 ordered pairs; 1142 exact filled intersections
+hip-tail pairs (True, 400, 'compiled'): 4860 ordered pairs; 2485 exact filled intersections
+hip-tail pairs (True, 500, 'compiled'): 4860 ordered pairs; 2580 exact filled intersections
+hip-tail pairs (True, 550, 'compiled'): 4860 ordered pairs; 2580 exact filled intersections
+hip-tail pairs (True, 600, 'compiled'): 4860 ordered pairs; 2710 exact filled intersections
+hip-tail pairs (True, 700, 'compiled'): 4860 ordered pairs; 2712 exact filled intersections
+test_compiled_target_pairs_clear_at_all_five_weights (__main__.HipTailTests.test_compiled_target_pairs_clear_at_all_five_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 235.526s
+
+OK

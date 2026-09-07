@@ -2,6 +2,30 @@
 
 Current reference font **0.250**, allocation **0.250**, canonical naming **3**.
 
+## Broad tails below hips
+
+U+F2A14 and U+F2A17 now use the full single-story-g tail already used below
+bowls and arches, in Roman and native Italic at weights 400–700. All other
+outlines, advances and assignments remain unchanged. Exactly 2,914 kerning
+values involving these two forms changed; all unrelated pairs are preserved.
+
+Both source and compiled-font checks cover 48,600 ordered pairs at five
+weights with zero collisions. Native donor-curve and contour checks pass, as
+do master compatibility, the existing arm-family donor tests, static hinting,
+and lossless WOFF2 checks. Both compiled proof sheets were visually inspected
+at display and text sizes. Unifont's fourteen related drawings already use
+matching contextual tails and were left unchanged.
+
+All twelve font exports, the compressed proof, coverage, catalogue, website
+and five reference PDFs were rebuilt. All nine PDF tests and 196 browser
+checks pass. A comparison of all 76 rendered PDF pages found 72 pixel-identical
+pages; the four changed chart/name pages differ only inside the cells for
+these two characters. The affected pages were also visually inspected.
+
+See the [design and proofs](hip-tails.md) and
+[verification records](../resources/verification/hip-tails/). This is a local
+font-design revision; character allocation and version 0.250 are unchanged.
+
 ## Lowercase letter clarification
 
 On 6 September 2026 the author clarified that all **1,216 characters** are

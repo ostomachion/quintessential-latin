@@ -2207,7 +2207,7 @@ class QuintessentialFontTests(unittest.TestCase):
         }
         lower = {
             "uF2A0A": 0x70, "uF2A0E": 0x70, "uF2A0F": 0x70,
-            "uF2A10": 0x70, "uF2A12": 0x70, "uF2A13": 0x237, "uF2A14": 0x237,
+            "uF2A10": 0x70, "uF2A12": 0x70, "uF2A13": 0x261, "uF2A14": 0x261,
         }
         for italic in (False, True):
             for weight in SAMPLE_WEIGHTS:

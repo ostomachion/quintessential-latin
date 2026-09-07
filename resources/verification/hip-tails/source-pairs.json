@@ -1,0 +1,21 @@
+{
+  "test": "HipTailTests.test_source_target_pairs_clear_at_all_five_weights",
+  "status": "passed",
+  "scope": "Both ordering directions between either revised hip-tail glyph and all 1216 catalogue glyphs",
+  "orderedPairsPerSample": 4860,
+  "samples": [
+    {"posture": "Roman", "weight": 400, "filledIntersectionChecks": 2434},
+    {"posture": "Roman", "weight": 500, "filledIntersectionChecks": 2438},
+    {"posture": "Roman", "weight": 550, "filledIntersectionChecks": 2264},
+    {"posture": "Roman", "weight": 600, "filledIntersectionChecks": 2252},
+    {"posture": "Roman", "weight": 700, "filledIntersectionChecks": 1140},
+    {"posture": "Italic", "weight": 400, "filledIntersectionChecks": 2482},
+    {"posture": "Italic", "weight": 500, "filledIntersectionChecks": 2580},
+    {"posture": "Italic", "weight": 550, "filledIntersectionChecks": 2580},
+    {"posture": "Italic", "weight": 600, "filledIntersectionChecks": 2710},
+    {"posture": "Italic", "weight": 700, "filledIntersectionChecks": 2712}
+  ],
+  "orderedPairsTotal": 48600,
+  "filledIntersectionChecksTotal": 23592,
+  "collisions": 0
+}
